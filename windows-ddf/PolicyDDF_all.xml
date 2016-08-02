@@ -21,7 +21,7 @@
             <Permanent />
           </Scope>
           <DFType>
-            <MIME>com.microsoft/4.0/MDM/Policy</MIME>
+            <MIME>com.microsoft/4.1/MDM/Policy</MIME>
           </DFType>
         </DFProperties>
         <Node>
@@ -645,7 +645,7 @@
             <Permanent />
           </Scope>
           <DFType>
-            <MIME>com.microsoft/4.0/MDM/Policy</MIME>
+            <MIME>com.microsoft/4.1/MDM/Policy</MIME>
           </DFType>
         </DFProperties>
         <Node>
@@ -1500,6 +1500,34 @@
                 </AccessType>
                 <DFFormat>
                   <int />
+                </DFFormat>
+                <Occurrence>
+                  <ZeroOrOne />
+                </Occurrence>
+                <Scope>
+                  <Dynamic />
+                </Scope>
+                <DFType>
+                  <MIME>text/plain</MIME>
+                </DFType>
+              </DFProperties>
+            </Node>
+            <Node>
+              <NodeName>AllowMicrosoftCompatibilityList</NodeName>
+              <DFProperties>
+                <AccessType>
+                  <Add />
+                  <Delete />
+                  <Get />
+                  <Replace />
+                </AccessType>
+                <Description>This policy setting lets you decide whether the Microsoft Compatibility List is enabled or disabled in Microsoft Edge. This feature uses a Microsoft-provided list to ensure that any sites with known compatibility issues are displayed correctly when a user navigates to them. By default, the Microsoft Compatibility List is enabled and can be viewed by navigating to about:compat.
+
+If you enable or don’t configure this setting, Microsoft Edge will periodically download the latest version of the list from Microsoft and will apply the configurations specified there during browser navigation. If a user visits a site on the Microsoft Compatibility List, he or she will be prompted to open the site in Internet Explorer 11. Once in Internet Explorer, the site will automatically be rendered as if the user is viewing it in the previous version of Internet Explorer it requires to display correctly.
+
+If you disable this setting, the Microsoft Compatibility List will not be used during browser navigation.</Description>
+                <DFFormat>
+                  <int/>
                 </DFFormat>
                 <Occurrence>
                   <ZeroOrOne />
@@ -7813,6 +7841,29 @@
               </DFProperties>
             </Node>
             <Node>
+              <NodeName>DisableDualScan</NodeName>
+              <DFProperties>
+                <AccessType>
+                  <Add />
+                  <Delete />
+                  <Get />
+                  <Replace />
+                </AccessType>
+                <DFFormat>
+                  <int />
+                </DFFormat>
+                <Occurrence>
+                  <ZeroOrOne />
+                </Occurrence>
+                <Scope>
+                  <Dynamic />
+                </Scope>
+                <DFType>
+                  <MIME>text/plain</MIME>
+                </DFType>
+              </DFProperties>
+            </Node>
+            <Node>
               <NodeName>RequireDeferUpgrade</NodeName>
               <DFProperties>
                 <AccessType>
@@ -7938,6 +7989,29 @@
                 </AccessType>
                 <DFFormat>
                   <chr />
+                </DFFormat>
+                <Occurrence>
+                  <ZeroOrOne />
+                </Occurrence>
+                <Scope>
+                  <Dynamic />
+                </Scope>
+                <DFType>
+                  <MIME>text/plain</MIME>
+                </DFType>
+              </DFProperties>
+            </Node>
+            <Node>
+              <NodeName>FillEmptyContentUrls</NodeName>
+              <DFProperties>
+                <AccessType>
+                  <Add />
+                  <Delete />
+                  <Get />
+                  <Replace />
+                </AccessType>
+                <DFFormat>
+                  <int />
                 </DFFormat>
                 <Occurrence>
                   <ZeroOrOne />
@@ -8955,6 +9029,32 @@
                 <DefaultValue>1</DefaultValue>
                 <DFFormat>
                   <int />
+                </DFFormat>
+                <Occurrence>
+                  <One />
+                </Occurrence>
+                <Scope>
+                  <Permanent />
+                </Scope>
+                <DFType>
+                  <MIME>text/plain</MIME>
+                </DFType>
+              </DFProperties>
+            </Node>
+            <Node>
+              <NodeName>AllowMicrosoftCompatibilityList</NodeName>
+              <DFProperties>
+                <AccessType>
+                  <Get />
+                </AccessType>
+                <Description>This policy setting lets you decide whether the Microsoft Compatibility List is enabled or disabled in Microsoft Edge. This feature uses a Microsoft-provided list to ensure that any sites with known compatibility issues are displayed correctly when a user navigates to them. By default, the Microsoft Compatibility List is enabled and can be viewed by navigating to about:compat.
+
+If you enable or don’t configure this setting, Microsoft Edge will periodically download the latest version of the list from Microsoft and will apply the configurations specified there during browser navigation. If a user visits a site on the Microsoft Compatibility List, he or she will be prompted to open the site in Internet Explorer 11. Once in Internet Explorer, the site will automatically be rendered as if the user is viewing it in the previous version of Internet Explorer it requires to display correctly.
+
+If you disable this setting, the Microsoft Compatibility List will not be used during browser navigation.</Description>
+                <DefaultValue>1</DefaultValue>
+                <DFFormat>
+                  <int/>
                 </DFFormat>
                 <Occurrence>
                   <One />
@@ -14619,6 +14719,27 @@
               </DFProperties>
             </Node>
             <Node>
+              <NodeName>DisableDualScan</NodeName>
+              <DFProperties>
+                <AccessType>
+                  <Get />
+                </AccessType>
+                <DefaultValue>0</DefaultValue>
+                <DFFormat>
+                  <int />
+                </DFFormat>
+                <Occurrence>
+                  <One />
+                </Occurrence>
+                <Scope>
+                  <Permanent />
+                </Scope>
+                <DFType>
+                  <MIME>text/plain</MIME>
+                </DFType>
+              </DFProperties>
+            </Node>
+            <Node>
               <NodeName>RequireDeferUpgrade</NodeName>
               <DFProperties>
                 <AccessType>
@@ -14732,6 +14853,27 @@
                 <DefaultValue></DefaultValue>
                 <DFFormat>
                   <chr />
+                </DFFormat>
+                <Occurrence>
+                  <One />
+                </Occurrence>
+                <Scope>
+                  <Permanent />
+                </Scope>
+                <DFType>
+                  <MIME>text/plain</MIME>
+                </DFType>
+              </DFProperties>
+            </Node>
+            <Node>
+              <NodeName>FillEmptyContentUrls</NodeName>
+              <DFProperties>
+                <AccessType>
+                  <Get />
+                </AccessType>
+                <DefaultValue>0</DefaultValue>
+                <DFFormat>
+                  <int />
                 </DFFormat>
                 <Occurrence>
                   <One />
