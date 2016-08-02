@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+ï»¿<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE MgmtTree PUBLIC " -//OMA//DTD-DM-DDF 1.2//EN"
   "http://www.openmobilealliance.org/tech/DTD/DM_DDF-V1_2.dtd"
   [<?oma-dm-ddf-ver supported-versions="1.2"?>]>
@@ -3659,7 +3659,7 @@
                   <Get />
                   <Replace />
                 </AccessType>
-                <Description>Specifies how many passwords can be stored in the history that can’t be used.</Description>
+                <Description>Specifies how many passwords can be stored in the history that canâ€™t be used.</Description>
                 <DFFormat>
                   <int />
                 </DFFormat>
@@ -7583,6 +7583,29 @@
               </DFProperties>
             </Node>
             <Node>
+              <NodeName>AutoRestartDeadlinePeriodInDays</NodeName>
+              <DFProperties>
+                <AccessType>
+                  <Add />
+                  <Delete />
+                  <Get />
+                  <Replace />
+                </AccessType>
+                <DFFormat>
+                  <int />
+                </DFFormat>
+                <Occurrence>
+                  <ZeroOrOne />
+                </Occurrence>
+                <Scope>
+                  <Dynamic />
+                </Scope>
+                <DFType>
+                  <MIME>text/plain</MIME>
+                </DFType>
+              </DFProperties>
+            </Node>
+            <Node>
               <NodeName>BranchReadinessLevel</NodeName>
               <DFProperties>
                 <AccessType>
@@ -7883,6 +7906,29 @@
             </Node>
             <Node>
               <NodeName>UpdateServiceUrl</NodeName>
+              <DFProperties>
+                <AccessType>
+                  <Add />
+                  <Delete />
+                  <Get />
+                  <Replace />
+                </AccessType>
+                <DFFormat>
+                  <chr />
+                </DFFormat>
+                <Occurrence>
+                  <ZeroOrOne />
+                </Occurrence>
+                <Scope>
+                  <Dynamic />
+                </Scope>
+                <DFType>
+                  <MIME>text/plain</MIME>
+                </DFType>
+              </DFProperties>
+            </Node>
+            <Node>
+              <NodeName>UpdateServiceUrlAlternate</NodeName>
               <DFProperties>
                 <AccessType>
                   <Add />
@@ -10861,7 +10907,7 @@
                   <Get />
                 </AccessType>
                 <DefaultValue>0</DefaultValue>
-                <Description>Specifies how many passwords can be stored in the history that can’t be used.</Description>
+                <Description>Specifies how many passwords can be stored in the history that canâ€™t be used.</Description>
                 <DFFormat>
                   <int />
                 </DFFormat>
@@ -14665,6 +14711,48 @@
                 <DefaultValue>CorpWSUS</DefaultValue>
                 <DFFormat>
                   <chr />
+                </DFFormat>
+                <Occurrence>
+                  <One />
+                </Occurrence>
+                <Scope>
+                  <Permanent />
+                </Scope>
+                <DFType>
+                  <MIME>text/plain</MIME>
+                </DFType>
+              </DFProperties>
+            </Node>
+            <Node>
+              <NodeName>UpdateServiceUrlAlternate</NodeName>
+              <DFProperties>
+                <AccessType>
+                  <Get />
+                </AccessType>
+                <DefaultValue></DefaultValue>
+                <DFFormat>
+                  <chr />
+                </DFFormat>
+                <Occurrence>
+                  <One />
+                </Occurrence>
+                <Scope>
+                  <Permanent />
+                </Scope>
+                <DFType>
+                  <MIME>text/plain</MIME>
+                </DFType>
+              </DFProperties>
+            </Node>
+            <Node>
+              <NodeName>AutoRestartDeadlinePeriodInDays</NodeName>
+              <DFProperties>
+                <AccessType>
+                  <Get />
+                </AccessType>
+                <DefaultValue>7</DefaultValue>
+                <DFFormat>
+                  <int />
                 </DFFormat>
                 <Occurrence>
                   <One />
