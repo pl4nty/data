@@ -22,7 +22,7 @@
                 <Permanent />
             </Scope>
             <DFType>
-                <DDFName>urn:oma:mo:oma-dm-dmacc:1.0</DDFName>
+                <DDFName>urn:oma:mo:oma-dm-dmacc:1.1</DDFName>
             </DFType>
         </DFProperties>
         <Node>
@@ -803,6 +803,29 @@
                             <DFTitle>SSLCLIENTCERTSEARCHCRITERIA</DFTitle>
                             <DFType>
                                 <MIME>text/plain</MIME>
+                            </DFType>
+                        </DFProperties>
+                    </Node>
+                    <Node>
+                        <NodeName>InitiateSession</NodeName>
+                        <DFProperties>
+                            <AccessType>
+                                <Add />
+                                <Replace />
+                            </AccessType>
+                            <Description>When this node is added, a session is started with the MDM server.</Description>
+                            <DFFormat>
+                                <null />
+                            </DFFormat>
+                            <Occurrence>
+                                <ZeroOrOne />
+                            </Occurrence>
+                            <Scope>
+                                <Dynamic />
+                            </Scope>
+                            <DFTitle></DFTitle>
+                            <DFType>
+                                <DDFName></DDFName>
                             </DFType>
                         </DFProperties>
                     </Node>

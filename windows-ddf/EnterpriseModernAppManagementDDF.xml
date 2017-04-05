@@ -401,6 +401,7 @@
                                 <Add />
                                 <Delete />
                                 <Get />
+                                <Replace />
                             </AccessType>
                             <DFFormat>
                                 <node />
@@ -523,6 +524,29 @@
                     </DFType>
                 </DFProperties>
             </Node>
+            <Node>
+                <NodeName>RemovePackage</NodeName>
+                <DFProperties>
+                    <AccessType>
+                        <Exec />
+                        <Add />
+                        <Delete />
+                        <Get />
+                    </AccessType>
+                    <DFFormat>
+                        <xml />
+                    </DFFormat>
+                    <Occurrence>
+                        <One />
+                    </Occurrence>
+                    <Scope>
+                        <Permanent />
+                    </Scope>
+                    <DFType>
+                        <MIME>text/plain</MIME>
+                    </DFType>
+                </DFProperties>
+            </Node>
         </Node>
         <Node>
             <NodeName>AppInstallation</NodeName>
@@ -571,6 +595,9 @@
                     <DFProperties>
                         <AccessType>
                             <Exec />
+                            <Add />
+                            <Delete />
+                            <Get />
                         </AccessType>
                         <DFFormat>
                             <xml />
@@ -591,6 +618,9 @@
                     <DFProperties>
                         <AccessType>
                             <Exec />
+                            <Add />
+                            <Delete />
+                            <Get />
                         </AccessType>
                         <DFFormat>
                             <xml />

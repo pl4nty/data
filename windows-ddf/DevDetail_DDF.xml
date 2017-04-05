@@ -21,7 +21,7 @@
         <Permanent />
       </Scope>
       <DFType>
-        <DDFName>urn:oma:mo:oma-dm-devdetail:1.0</DDFName>
+        <DDFName>urn:oma:mo:oma-dm-devdetail:1.1</DDFName>
       </DFType>
     </DFProperties>
     <Node>
@@ -625,6 +625,27 @@
           </Occurrence>
           <Scope>
             <Dynamic />
+          </Scope>
+          <DFType>
+            <MIME>text/plain</MIME>
+          </DFType>
+        </DFProperties>
+      </Node>
+      <Node>
+        <NodeName>DeviceHardwareData</NodeName>
+        <DFProperties>
+          <AccessType>
+            <Get />
+          </AccessType>
+          <Description>Added in Windows 10 version 1703. Returns a base64 encoded string of the hardware parameters of a device.</Description>
+          <DFFormat>
+            <chr />
+          </DFFormat>
+          <Occurrence>
+            <One />
+          </Occurrence>
+          <Scope>
+            <Permanent />
           </Scope>
           <DFType>
             <MIME>text/plain</MIME>

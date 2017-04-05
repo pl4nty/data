@@ -21,7 +21,7 @@
                 <Permanent />
             </Scope>
             <DFType>
-                <DDFName>com.microsoft/1.2/MDM/DMClient</DDFName>
+                <DDFName>com.microsoft/1.3/MDM/DMClient</DDFName>
             </DFType>
         </DFProperties>
         <Node>
@@ -553,6 +553,30 @@
                     </DFProperties>
                 </Node>
                 <Node>
+                    <NodeName>ManagementServerToUpgradeTo</NodeName>
+                    <DFProperties>
+                        <AccessType>
+                            <Add />
+                            <Delete />
+                            <Get />
+                            <Replace />
+                        </AccessType>
+                        <Description>Specify the Discovery server URL of the MDM server to upgrade to for a MAM enrolled device</Description>
+                        <DFFormat>
+                            <chr />
+                        </DFFormat>
+                        <Occurrence>
+                            <ZeroOrOne />
+                        </Occurrence>
+                        <Scope>
+                            <Dynamic />
+                        </Scope>
+                        <DFType>
+                            <MIME>text/plain</MIME>
+                        </DFType>
+                    </DFProperties>
+                </Node>
+                <Node>
                     <NodeName>Push</NodeName>
                     <DFProperties>
                         <AccessType>
@@ -843,6 +867,120 @@
                         </DFProperties>
                     </Node>
                 </Node>
+                <Node>
+                    <NodeName>CustomEnrollmentCompletePage</NodeName>
+                    <DFProperties>
+                        <AccessType>
+                            <Add />
+                            <Delete />
+                            <Get />
+                        </AccessType>
+                        <DFFormat>
+                            <node />
+                        </DFFormat>
+                        <Occurrence>
+                            <ZeroOrOne />
+                        </Occurrence>
+                        <Scope>
+                            <Dynamic />
+                        </Scope>
+                        <DFType>
+                            <DDFName></DDFName>
+                        </DFType>
+                    </DFProperties>
+                    <Node>
+                        <NodeName>Title</NodeName>
+                        <DFProperties>
+                            <AccessType>
+                                <Add />
+                                <Delete />
+                                <Get />
+                                <Replace />
+                            </AccessType>
+                            <DFFormat>
+                                <chr />
+                            </DFFormat>
+                            <Occurrence>
+                                <ZeroOrOne />
+                            </Occurrence>
+                            <Scope>
+                                <Dynamic />
+                            </Scope>
+                            <DFType>
+                                <MIME>text/plain</MIME>
+                            </DFType>
+                        </DFProperties>
+                    </Node>
+                    <Node>
+                        <NodeName>BodyText</NodeName>
+                        <DFProperties>
+                            <AccessType>
+                                <Add />
+                                <Delete />
+                                <Get />
+                                <Replace />
+                            </AccessType>
+                            <DFFormat>
+                                <chr />
+                            </DFFormat>
+                            <Occurrence>
+                                <ZeroOrOne />
+                            </Occurrence>
+                            <Scope>
+                                <Dynamic />
+                            </Scope>
+                            <DFType>
+                                <MIME>text/plain</MIME>
+                            </DFType>
+                        </DFProperties>
+                    </Node>
+                    <Node>
+                        <NodeName>HyperlinkHref</NodeName>
+                        <DFProperties>
+                            <AccessType>
+                                <Add />
+                                <Delete />
+                                <Get />
+                                <Replace />
+                            </AccessType>
+                            <DFFormat>
+                                <chr />
+                            </DFFormat>
+                            <Occurrence>
+                                <ZeroOrOne />
+                            </Occurrence>
+                            <Scope>
+                                <Dynamic />
+                            </Scope>
+                            <DFType>
+                                <MIME>text/plain</MIME>
+                            </DFType>
+                        </DFProperties>
+                    </Node>
+                    <Node>
+                        <NodeName>HyperlinkText</NodeName>
+                        <DFProperties>
+                            <AccessType>
+                                <Add />
+                                <Delete />
+                                <Get />
+                                <Replace />
+                            </AccessType>
+                            <DFFormat>
+                                <chr />
+                            </DFFormat>
+                            <Occurrence>
+                                <ZeroOrOne />
+                            </Occurrence>
+                            <Scope>
+                                <Dynamic />
+                            </Scope>
+                            <DFType>
+                                <MIME>text/plain</MIME>
+                            </DFType>
+                        </DFProperties>
+                    </Node>
+                </Node>
             </Node>
         </Node>
         <Node>
@@ -872,6 +1010,26 @@
                 <AccessType>
                     <Get />
                     <Replace />
+                </AccessType>
+                <DFFormat>
+                    <chr />
+                </DFFormat>
+                <Occurrence>
+                    <ZeroOrOne />
+                </Occurrence>
+                <Scope>
+                    <Dynamic />
+                </Scope>
+                <DFType>
+                    <MIME>text/plain</MIME>
+                </DFType>
+            </DFProperties>
+        </Node>
+        <Node>
+            <NodeName>HWDevID</NodeName>
+            <DFProperties>
+                <AccessType>
+                    <Get />
                 </AccessType>
                 <DFFormat>
                     <chr />

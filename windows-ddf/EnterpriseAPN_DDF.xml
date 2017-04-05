@@ -21,7 +21,7 @@
             <Permanent />
           </Scope>
           <DFType>
-            <MIME>com.microsoft/1.1/MDM/EnterpriseAPN</MIME>
+            <MIME>com.microsoft/1.2/MDM/EnterpriseAPN</MIME>
           </DFType>
         </DFProperties>
         <Node>
@@ -331,6 +331,35 @@
                 <CIS />
               </CaseSense>
               <DFTitle>Enabled</DFTitle>
+              <DFType>
+                <MIME>text/plain</MIME>
+              </DFType>
+            </DFProperties>
+          </Node>
+          <Node>
+            <NodeName>Roaming</NodeName>
+            <DFProperties>
+              <AccessType>
+                <Add />
+                <Delete />
+                <Get />
+                <Replace />
+              </AccessType>
+              <DefaultValue>1</DefaultValue>
+              <Description>Roaming setting that specifies whether the connection should be activated when the device is roaming. 0: Disallowed, 1: Allowed, 2: DomesticRoaming, 3: UseOnlyForDomesticRoaming, 4: UseOnlyForNonDomesticRoaming, 5: UseOnlyForRoaming. Default is 1 (all roam allowed).</Description>
+              <DFFormat>
+                <chr />
+              </DFFormat>
+              <Occurrence>
+                <ZeroOrOne />
+              </Occurrence>
+              <Scope>
+                <Dynamic />
+              </Scope>
+              <CaseSense>
+                <CIS />
+              </CaseSense>
+              <DFTitle>Roaming</DFTitle>
               <DFType>
                 <MIME>text/plain</MIME>
               </DFType>

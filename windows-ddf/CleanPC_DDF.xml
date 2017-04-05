@@ -5,12 +5,13 @@
 <MgmtTree xmlns:MSFT="http://schemas.microsoft.com/MobileDevice/DM">
     <VerDTD>1.2</VerDTD>
     <Node>
-        <NodeName>RemoteWipe</NodeName>
-        <Path>./Vendor/MSFT</Path>
+        <NodeName>CleanPC</NodeName>
+        <Path>./Device/Vendor/MSFT</Path>
         <DFProperties>
             <AccessType>
                 <Get />
             </AccessType>
+            <Description>Allow removal of user installed and pre-installed applications, with option to persist user data</Description>
             <DFFormat>
                 <node />
             </DFFormat>
@@ -21,39 +22,39 @@
                 <Permanent />
             </Scope>
             <DFType>
-                <DDFName></DDFName>
+                <MIME>com.microsoft/1.0/MDM/CleanPC</MIME>
             </DFType>
-            <Description>The root node for remote wipe function.</Description>
         </DFProperties>
         <Node>
-            <NodeName>doWipe</NodeName>
+            <NodeName>CleanPCWithoutRetainingUserData</NodeName>
             <DFProperties>
-                <AccessType>
+                <AccessType>                    
                     <Exec />
                 </AccessType>
+                <Description>CleanPC operation without any retention of User data</Description>
                 <DFFormat>
-                    <chr />
+                    <int />
                 </DFFormat>
                 <Occurrence>
                     <One />
                 </Occurrence>
                 <Scope>
                     <Permanent />
-                </Scope>
+                </Scope>         
                 <DFType>
                     <MIME>text/plain</MIME>
                 </DFType>
-                <Description>Exec on this node will perform a remote wipe on the device. The return status code shows whether the device accepted the Exec command.</Description>
             </DFProperties>
         </Node>
         <Node>
-            <NodeName>doWipePersistProvisionedData</NodeName>
+            <NodeName>CleanPCRetainingUserData</NodeName>
             <DFProperties>
                 <AccessType>
                     <Exec />
                 </AccessType>
+                <Description>CleanPC operation with retention of User data</Description>
                 <DFFormat>
-                    <chr />
+                    <int />
                 </DFFormat>
                 <Occurrence>
                     <One />
@@ -64,7 +65,6 @@
                 <DFType>
                     <MIME>text/plain</MIME>
                 </DFType>
-                <Description>Exec on this node will back up provisioning data to a persistent location and perform a remote wipe on the device. The information that was backed up will be restored and applied to the device when it resumes. The return status code shows whether the device accepted the Exec command.</Description>
             </DFProperties>
         </Node>
     </Node>

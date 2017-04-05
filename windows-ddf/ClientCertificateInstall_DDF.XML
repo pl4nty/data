@@ -23,6 +23,9 @@
             <DFType>
                 <DDFName></DDFName>
             </DFType>
+            <DFType>
+                <MIME>com.microsoft/1.1/MDM/ClientCertificateInstall</MIME>
+            </DFType>
         </DFProperties>
         <Node>
             <NodeName>PFXCertInstall</NodeName>
@@ -894,6 +897,30 @@ Supported operation is Exec.</Description>
                             </DFType>
                         </DFProperties>
                     </Node>
+                  <Node>
+                <NodeName>AADKeyIdentifierList</NodeName>
+                <DFProperties>
+                  <AccessType>
+                    <Get />
+                    <Add />
+                    <Delete />
+                    <Replace />
+                  </AccessType>
+                  <Description>Optional. Specify the AAD Key Identifier List as a semicolon separated values. On Enroll, the values in this list are validated against the AAD Key present on the device. If no match is found, enrollment will fail.</Description>
+                  <DFFormat>
+                    <chr />
+                  </DFFormat>
+                  <Occurrence>
+                    <ZeroOrOne />
+                  </Occurrence>
+                  <Scope>
+                    <Dynamic />
+                  </Scope>
+                  <DFType>
+                    <MIME>text/plain</MIME>
+                  </DFType>
+                </DFProperties>
+              </Node>
                 </Node>
                 <Node>
                     <NodeName>CertThumbprint</NodeName>

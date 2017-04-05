@@ -22,7 +22,7 @@
             <Permanent />
           </Scope>
           <DFType>
-            <MIME>com.microsoft/1.0/MDM/SecureAssessment</MIME>
+            <MIME>com.microsoft/1.1/MDM/SecureAssessment</MIME>
           </DFType>
         </DFProperties>
         <Node>
@@ -70,6 +70,84 @@
             </Occurrence>
             <Scope>
               <Dynamic />
+            </Scope>
+            <CaseSense>
+              <CIS />
+            </CaseSense>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>AllowScreenMonitoring</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+              <Replace />
+            </AccessType>
+            <DefaultValue>false</DefaultValue>
+            <Description>Indicates if screen monitoring is allowed by the app.</Description>
+            <DFFormat>
+              <bool />
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <CaseSense>
+              <CIS />
+            </CaseSense>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>RequirePrinting</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+              <Replace />
+            </AccessType>
+            <DefaultValue>false</DefaultValue>
+            <Description>Indicates if printing is required by the app.</Description>
+            <DFFormat>
+              <bool />
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <CaseSense>
+              <CIS />
+            </CaseSense>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>AllowTextSuggestions</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+              <Replace />
+            </AccessType>
+            <DefaultValue>false</DefaultValue>
+            <Description>Indicates if keyboard text suggestions are allowed by the app.</Description>
+            <DFFormat>
+              <bool />
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
             </Scope>
             <CaseSense>
               <CIS />

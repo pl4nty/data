@@ -21,7 +21,7 @@
             <Permanent />
           </Scope>
           <DFType>
-            <MIME>com.microsoft/1.1/MDM/WindowsLicensing</MIME>
+            <MIME>com.microsoft/1.2/MDM/WindowsLicensing</MIME>
           </DFType>
         </DFProperties>
         <Node>
@@ -31,6 +31,30 @@
               <Exec />
             </AccessType>
             <Description>Enter a product key for an edition upgrade of Windows 10 desktop devices. Requires reboot.</Description>
+            <DFFormat>
+              <chr />
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <CaseSense>
+              <CIS />
+            </CaseSense>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>ChangeProductKey</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Exec />
+            </AccessType>
+            <Description>Installs a product key for Windows 10 desktop devices. Does not reboot.</Description>
             <DFFormat>
               <chr />
             </DFFormat>

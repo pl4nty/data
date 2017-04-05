@@ -1274,6 +1274,28 @@
                                 </DFType>
                             </DFProperties>
                         </Node>
+                        <Node>
+                            <NodeName>RetryAfterExpiryInterval</NodeName>
+                            <DFProperties>
+                                <AccessType>
+                                    <Get />
+                                    <Set />
+                                </AccessType>
+                                <Description>How long after the enrollment cert has expiried to keep trying to renew</Description>
+                                <DFFormat>
+                                    <null />
+                                </DFFormat>
+                                <Occurrence>
+                                    <One />
+                                </Occurrence>
+                                <Scope>
+                                    <Dynamic />
+                                </Scope>
+                                <DFType>
+                                    <MIME>text/plain</MIME>
+                                </DFType>
+                            </DFProperties>
+                        </Node>
                     </Node>                    
                 </Node>
             </Node>
