@@ -529,8 +529,6 @@
                 <DFProperties>
                     <AccessType>
                         <Exec />
-                        <Add />
-                        <Delete />
                         <Get />
                     </AccessType>
                     <DFFormat>

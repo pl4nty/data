@@ -21,7 +21,7 @@
                 <Permanent />
             </Scope>
             <DFType>
-                <MIME>com.microsoft/1.2/MDM/HealthAttestation</MIME>
+                <MIME>com.microsoft/1.3/MDM/HealthAttestation</MIME>
             </DFType>
         </DFProperties>
         <Node>
@@ -182,6 +182,70 @@
                     <MIME>text/plain</MIME>
                 </DFType>
             </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>CurrentProtocolVersion</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <Description>Provides the current protocol version that the client is using to communicate with the Health Attestation Service.</Description>
+            <DFFormat>
+              <int />
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+      </Node>
+        <Node>
+          <NodeName>PreferredMaxProtocolVersion</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>Provides the maximum preferred protocol version that the client is configured to communicate over. If this is higher than the protocol versions supported by the client it will use the highest protocol version available to it.</Description>
+            <DFFormat>
+              <int />
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>MaxSupportedProtocolVersion</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <Description>Returns the maximum protocol version that this client can support.</Description>
+            <DFFormat>
+              <int />
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
         </Node>
     </Node>
 </MgmtTree>

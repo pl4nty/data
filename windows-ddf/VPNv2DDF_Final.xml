@@ -23,7 +23,7 @@
                 <Permanent />
             </Scope>
             <DFType>
-				<MIME>com.microsoft/1.2/MDM/VPNv2</MIME>
+                <MIME>com.microsoft/1.3/MDM/VPNv2</MIME>
             </DFType>
         </DFProperties>
         <Node>
@@ -285,7 +285,7 @@
                                 <Delete />
                                 <Replace />
                             </AccessType>
-                            <Description>                          
+                            <Description>
                               False = This Route will direct traffic over the VPN
                               True = This Route will direct traffic over the physical interface
                               By default, this value is false.
@@ -927,6 +927,70 @@
                         <MIME>text/plain</MIME>
                     </DFType>
                 </DFProperties>
+            </Node>
+            <Node>
+                <NodeName>DeviceTunnel</NodeName>
+                <DFProperties>
+                    <AccessType>
+                        <Add />
+                        <Delete />
+                        <Get />
+                        <Replace />
+                    </AccessType>
+                    <Description>
+                        False = This is not a Device Tunnel profile and it is the default value.
+                        True = This is a Device Tunnel profile.
+
+                        If turned on a device tunnel profile does four things.
+                        First, it automatically becomes an always on profile.
+                        Second, it does not require the presence or logging in
+                        of any user to the machine in order for it to connect.
+                        Third, no other Device Tunnel profile maybe be present on the
+                        Same machine.
+
+                        A device tunnel profile must be deleted before another device tunnel
+                        profile can be added, removed, or connected.
+                    </Description>
+                    <DFFormat>
+                        <bool />
+                    </DFFormat>
+                    <Occurrence>
+                        <ZeroOrOne />
+                    </Occurrence>
+                    <Scope>
+                        <Dynamic />
+                    </Scope>
+                    <DFType>
+                        <MIME>text/plain</MIME>
+                    </DFType>
+                </DFProperties>
+            </Node>
+            <Node>
+                <NodeName>RegisterDNS</NodeName>
+                <DFProperties>
+                    <AccessType>
+                        <Add />
+                        <Delete />
+                        <Get />
+                        <Replace />
+                    </AccessType>
+                    <Description>
+                        False = Do not register the connection's address in DNS (default).
+                        True = Register the connection's addresses in DNS.
+                    </Description>
+                    <DFFormat>
+                        <bool />
+                    </DFFormat>
+                    <Occurrence>
+                        <ZeroOrOne />
+                    </Occurrence>
+                    <Scope>
+                        <Dynamic />
+                    </Scope>
+                    <DFType>
+                        <MIME>text/plain</MIME>
+                    </DFType>
+                </DFProperties
             </Node>
             <Node>
                 <NodeName>DnsSuffix</NodeName>
@@ -1971,6 +2035,8 @@
                       -- AES128
                       -- AES192
                       -- AES256
+                      -- AES_GCM_128
+                      -- AES_GCM_256
                     </Description>
                     <DFFormat>
                       <chr />
@@ -2155,7 +2221,7 @@
                 <Permanent />
             </Scope>
             <DFType>
-                <DDFName></DDFName>
+                <MIME>com.microsoft/1.3/MDM/VPNv2</MIME>
             </DFType>
         </DFProperties>
         <Node>
@@ -4062,6 +4128,8 @@
                       -- AES128
                       -- AES192
                       -- AES256
+                      -- AES_GCM_128
+                      -- AES_GCM_256
                     </Description>
                     <DFFormat>
                       <chr />

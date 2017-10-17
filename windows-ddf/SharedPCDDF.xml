@@ -21,7 +21,7 @@
                 <Permanent />
             </Scope>
             <DFType>
-                <MIME>com.microsoft/1.1/MDM/SharedPC</MIME>
+                <MIME>com.microsoft/1.2/MDM/SharedPC</MIME>
             </DFType>
         </DFProperties>
         <Node>
@@ -29,6 +29,8 @@
             <DFProperties>
                 <AccessType>
                     <Get />
+                    <Add />
+                    <Delete />
                     <Replace />
                 </AccessType>
                 <DefaultValue>false</DefaultValue>
@@ -40,7 +42,7 @@
                     <One />
                 </Occurrence>
                 <Scope>
-                    <Permanent />
+                    <Dynamic />
                 </Scope>
                 <DFTitle>Enable shared PC mode</DFTitle>
                 <DFType>
@@ -53,10 +55,12 @@
             <DFProperties>
                 <AccessType>
                     <Get />
+                    <Add />
+                    <Delete />
                     <Replace />
                 </AccessType>
                 <DefaultValue>false</DefaultValue>
-                <Description>Set a list of EDU policies. This node is independent of EnableSharedPCMode.</Description>
+                <Description>Set a list of EDU policies.</Description>
                 <DFFormat>
                     <bool />
                 </DFFormat>
@@ -64,7 +68,7 @@
                     <One />
                 </Occurrence>
                 <Scope>
-                    <Permanent />
+                    <Dynamic />
                 </Scope>
                 <DFTitle>Set EDU policies</DFTitle>
                 <DFType>
@@ -77,10 +81,12 @@
             <DFProperties>
                 <AccessType>
                     <Get />
+                    <Add />
+                    <Delete />
                     <Replace />
                 </AccessType>
-                <DefaultValue>true</DefaultValue>
-                <Description>Specify that the power policies should be set when configuring SharedPC mode. This node is optional. If used, it needs to be set before the action on "EnableSharedPCMode" node is taken.</Description>
+                <DefaultValue>false</DefaultValue>
+                <Description>Set a list of power policies.</Description>
                 <DFFormat>
                     <bool />
                 </DFFormat>
@@ -88,7 +94,7 @@
                     <One />
                 </Occurrence>
                 <Scope>
-                    <Permanent />
+                    <Dynamic />
                 </Scope>
                 <DFTitle>Set power policies</DFTitle>
                 <DFType>
@@ -101,10 +107,12 @@
             <DFProperties>
                 <AccessType>
                     <Get />
+                    <Add />
+                    <Delete />
                     <Replace />
                 </AccessType>
                 <DefaultValue>0</DefaultValue>
-                <Description>Daily start time of maintenance hour. Given in minutes from midnight. Default is 0 (12am). This node is optional. If used, it needs to be set before the action on "EnableSharedPCMode" node is taken.</Description>
+                <Description>Daily start time of maintenance hour. Given in minutes from midnight. Default is 0 (12am).</Description>
                 <DFFormat>
                     <int />
                 </DFFormat>
@@ -112,7 +120,7 @@
                     <One />
                 </Occurrence>
                 <Scope>
-                    <Permanent />
+                    <Dynamic />
                 </Scope>
                 <DFTitle>Maintenance start time</DFTitle>
                 <DFType>
@@ -125,10 +133,12 @@
             <DFProperties>
                 <AccessType>
                     <Get />
+                    <Add />
+                    <Delete />
                     <Replace />
                 </AccessType>
-                <DefaultValue>true</DefaultValue>
-                <Description>Require signing in on waking up from sleep. This node is optional. If used, it needs to be set before the action on "EnableSharedPCMode" node is taken.</Description>
+                <DefaultValue>false</DefaultValue>
+                <Description>Require signing in on waking up from sleep.</Description>
                 <DFFormat>
                     <bool />
                 </DFFormat>
@@ -136,7 +146,7 @@
                     <One />
                 </Occurrence>
                 <Scope>
-                    <Permanent />
+                    <Dynamic />
                 </Scope>
                 <DFTitle>Sign-in on resume</DFTitle>
                 <DFType>
@@ -149,10 +159,12 @@
             <DFProperties>
                 <AccessType>
                     <Get />
+                    <Add />
+                    <Delete />
                     <Replace />
                 </AccessType>
                 <DefaultValue>300</DefaultValue>
-                <Description>The amount of time before the PC sleeps, giving in seconds. 0 means the PC never sleeps. Default is 5 minutes. This node is optional. If used, it needs to be set before the action on "EnableSharedPCMode" node is taken.</Description>
+                <Description>The amount of time before the PC sleeps, giving in seconds. 0 means the PC never sleeps. Default is 5 minutes.</Description>
                 <DFFormat>
                     <int />
                 </DFFormat>
@@ -160,7 +172,7 @@
                     <One />
                 </Occurrence>
                 <Scope>
-                    <Permanent />
+                    <Dynamic />
                 </Scope>
                 <DFTitle>Sleep timeout</DFTitle>
                 <DFType>
@@ -173,9 +185,11 @@
             <DFProperties>
                 <AccessType>
                     <Get />
+                    <Add />
+                    <Delete />
                     <Replace />
                 </AccessType>
-                <DefaultValue>true</DefaultValue>
+                <DefaultValue>false</DefaultValue>
                 <Description>Enable the account manager for shared PC mode.</Description>
                 <DFFormat>
                     <bool />
@@ -184,7 +198,7 @@
                     <One />
                 </Occurrence>
                 <Scope>
-                    <Permanent />
+                    <Dynamic />
                 </Scope>
                 <DFTitle>Enable account manager</DFTitle>
                 <DFType>
@@ -197,6 +211,8 @@
             <DFProperties>
                 <AccessType>
                     <Get />
+                    <Add />
+                    <Delete />
                     <Replace />
                 </AccessType>
                 <DefaultValue>0</DefaultValue>
@@ -208,7 +224,7 @@
                     <One />
                 </Occurrence>
                 <Scope>
-                    <Permanent />
+                    <Dynamic />
                 </Scope>
                 <DFTitle>Account model</DFTitle>
                 <DFType>
@@ -221,6 +237,8 @@
             <DFProperties>
                 <AccessType>
                     <Get />
+                    <Add />
+                    <Delete />
                     <Replace />
                 </AccessType>
                 <DefaultValue>1</DefaultValue>
@@ -232,7 +250,7 @@
                     <One />
                 </Occurrence>
                 <Scope>
-                    <Permanent />
+                    <Dynamic />
                 </Scope>
                 <DFTitle>Account deletion policy</DFTitle>
                 <DFType>
@@ -245,6 +263,8 @@
             <DFProperties>
                 <AccessType>
                     <Get />
+                    <Add />
+                    <Delete />
                     <Replace />
                 </AccessType>
                 <DefaultValue>25</DefaultValue>
@@ -256,7 +276,7 @@
                     <One />
                 </Occurrence>
                 <Scope>
-                    <Permanent />
+                    <Dynamic />
                 </Scope>
                 <DFTitle>Disk space threshold for account deletion</DFTitle>
                 <DFType>
@@ -269,6 +289,8 @@
             <DFProperties>
                 <AccessType>
                     <Get />
+                    <Add />
+                    <Delete />
                     <Replace />
                 </AccessType>
                 <DefaultValue>50</DefaultValue>
@@ -280,7 +302,7 @@
                     <One />
                 </Occurrence>
                 <Scope>
-                    <Permanent />
+                    <Dynamic />
                 </Scope>
                 <DFTitle>Disk space threshold for account caching</DFTitle>
                 <DFType>
@@ -293,10 +315,12 @@
             <DFProperties>
                 <AccessType>
                     <Get />
+                    <Add />
+                    <Delete />
                     <Replace />
                 </AccessType>
-                <DefaultValue>true</DefaultValue>
-                <Description>Restricts the user from using local storage. This node is optional. If used, it needs to be set before the action on "EnableSharedPCMode" node is taken.</Description>
+                <DefaultValue>false</DefaultValue>
+                <Description>Restricts the user from using local storage. This node is optional.</Description>
                 <DFFormat>
                     <bool />
                 </DFFormat>
@@ -304,7 +328,7 @@
                     <One />
                 </Occurrence>
                 <Scope>
-                    <Permanent />
+                    <Dynamic />
                 </Scope>
                 <DFTitle>Restrict local storage</DFTitle>
                 <DFType>
@@ -317,9 +341,11 @@
             <DFProperties>
                 <AccessType>
                     <Get />
+                    <Add />
+                    <Delete />
                     <Replace />
                 </AccessType>
-                <Description>Specifies the AUMID of the app to use with assigned access. This node is optional. If used, it needs to be set before the action on "EnableSharedPCMode" node is taken.</Description>
+                <Description>Specifies the AUMID of the app to use with assigned access.</Description>
                 <DFFormat>
                     <chr />
                 </DFFormat>
@@ -327,7 +353,7 @@
                     <One />
                 </Occurrence>
                 <Scope>
-                    <Permanent />
+                    <Dynamic />
                 </Scope>
                 <DFTitle>Kiosk mode AUMID</DFTitle>
                 <DFType>
@@ -340,9 +366,11 @@
             <DFProperties>
                 <AccessType>
                     <Get />
+                    <Add />
+                    <Delete />
                     <Replace />
                 </AccessType>
-                <Description>Specifies the display text for the account shown on the sign-in screen which launches the app specified by KioskModeAUMID. This node is optional. If used, it needs to be set before the action on "EnableSharedPCMode" node is taken.</Description>
+                <Description>Specifies the display text for the account shown on the sign-in screen which launches the app specified by KioskModeAUMID.</Description>
                 <DFFormat>
                     <chr />
                 </DFFormat>
@@ -350,7 +378,7 @@
                     <One />
                 </Occurrence>
                 <Scope>
-                    <Permanent />
+                    <Dynamic />
                 </Scope>
                 <DFTitle>Kiosk mode user tile display text</DFTitle>
                 <DFType>
@@ -363,6 +391,8 @@
             <DFProperties>
                 <AccessType>
                     <Get />
+                    <Add />
+                    <Delete />
                     <Replace />
                 </AccessType>
                 <DefaultValue>30</DefaultValue>
@@ -374,7 +404,7 @@
                     <One />
                 </Occurrence>
                 <Scope>
-                    <Permanent />
+                    <Dynamic />
                 </Scope>
                 <DFTitle>Account inactive threshold</DFTitle>
                 <DFType>
@@ -387,10 +417,12 @@
             <DFProperties>
                 <AccessType>
                     <Get />
+                    <Add />
+                    <Delete />
                     <Replace />
                 </AccessType>
                 <DefaultValue>1024</DefaultValue>
-                <Description>Maximum size of the paging file in MB. Applies only to systems with less than 32 GB storage and at least 3 GB of RAM. This node is optional. If used, it needs to be set before the action on "EnableSharedPCMode" node is taken.</Description>
+                <Description>Maximum size of the paging file in MB. Applies only to systems with less than 32 GB storage and at least 3 GB of RAM.</Description>
                 <DFFormat>
                     <int />
                 </DFFormat>
@@ -398,7 +430,7 @@
                     <One />
                 </Occurrence>
                 <Scope>
-                    <Permanent />
+                    <Dynamic />
                 </Scope>
                 <DFTitle>Maximum PageFile size</DFTitle>
                 <DFType>

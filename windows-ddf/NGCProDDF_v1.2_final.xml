@@ -21,7 +21,7 @@
             <Permanent />
           </Scope>
           <DFType>
-            <MIME>com.microsoft/1.3/MDM/PassportForWork</MIME>
+            <MIME>com.microsoft/1.4/MDM/PassportForWork</MIME>
           </DFType>
         </DFProperties>
         <Node>
@@ -544,58 +544,58 @@ If you disable or do not configure this policy setting, the TPM is still preferr
               </DFProperties>
             </Node>
             <Node>
-                <NodeName>ExcludeSecurityDevices</NodeName>
+              <NodeName>ExcludeSecurityDevices</NodeName>
+              <DFProperties>
+                <AccessType>
+                  <Add />
+                  <Delete />
+                  <Get />
+                </AccessType>
+                <Description>Root node for excluded security devices.</Description>
+                <DFFormat>
+                  <node />
+                </DFFormat>
+                <Occurrence>
+                  <One />
+                </Occurrence>
+                <Scope>
+                  <Dynamic />
+                </Scope>
+                <DFTitle>ExcludeSecurityDevices</DFTitle>
+                <DFType>
+                  <DDFName></DDFName>
+                </DFType>
+              </DFProperties>
+              <Node>
+                <NodeName>TPM12</NodeName>
                 <DFProperties>
-                    <AccessType>
-                        <Add />
-                        <Delete />
-                        <Get />
-                    </AccessType>
-                    <Description>Root node for excluded security devices.</Description>
-                    <DFFormat>
-                        <node />
-                    </DFFormat>
-                    <Occurrence>
-                        <One />
-                    </Occurrence>
-                    <Scope>
-                        <Dynamic />
-                    </Scope>
-                    <DFTitle>ExcludeSecurityDevices</DFTitle>
-                    <DFType>
-                        <DDFName></DDFName>
-                    </DFType>
-                </DFProperties>
-                <Node>
-                    <NodeName>TPM12</NodeName>
-                    <DFProperties>
-                        <AccessType>
-                            <Add />
-                            <Delete />
-                            <Get />
-                            <Replace />
-                        </AccessType>
-                        <DefaultValue>False</DefaultValue>
-                        <Description>Some Trusted Platform Modules (TPMs) are only compliant with the older 1.2 revision of the TPM specification defined by the Trusted Computing Group (TCG).
+                  <AccessType>
+                    <Add />
+                    <Delete />
+                    <Get />
+                    <Replace />
+                  </AccessType>
+                  <DefaultValue>False</DefaultValue>
+                  <Description>Some Trusted Platform Modules (TPMs) are only compliant with the older 1.2 revision of the TPM specification defined by the Trusted Computing Group (TCG).
 
 If you enable this policy setting, TPM revision 1.2 modules will be disallowed from being used with Windows Hello for Business.
 
 If you disable or do not configure this policy setting, TPM revision 1.2 modules will be allowed to be used with Windows Hello for Business.</Description>
-                        <DFFormat>
-                            <bool />
-                        </DFFormat>
-                        <Occurrence>
-                            <ZeroOrOne />
-                        </Occurrence>
-                        <Scope>
-                            <Dynamic />
-                        </Scope>
-                        <DFType>
-                            <MIME>text/plain</MIME>
-                        </DFType>
-                    </DFProperties>
-                </Node>
-            </Node>    
+                  <DFFormat>
+                    <bool />
+                  </DFFormat>
+                  <Occurrence>
+                    <ZeroOrOne />
+                  </Occurrence>
+                  <Scope>
+                    <Dynamic />
+                  </Scope>
+                  <DFType>
+                    <MIME>text/plain</MIME>
+                  </DFType>
+                </DFProperties>
+              </Node>
+            </Node>
             <Node>
               <NodeName>EnablePinRecovery</NodeName>
               <DFProperties>
@@ -1062,13 +1062,176 @@ NOTE: Disabling this policy prevents the use of biometric gestures on the device
               <DefaultValue>False</DefaultValue>
               <Description>This setting determines whether enhanced anti-spoofing is required for Windows Hello face authentication.
 
-If you enable or don't configure this setting, Windows requires all users on managed devices to use enhanced anti-spoofing for Windows Hello face authentication. This disables Windows Hello face authentication on devices that do not support enhanced anti-spoofing.
+If you enable this setting, Windows requires all users on managed devices to use enhanced anti-spoofing for Windows Hello face authentication. This disables Windows Hello face authentication on devices that do not support enhanced anti-spoofing.
 
-If you disable this setting, Windows doesn't require enhanced anti-spoofing for Windows Hello face authentication.
+If you disable or do not configure this setting, Windows doesn't require enhanced anti-spoofing for Windows Hello face authentication.
 
 Note that enhanced anti-spoofing for Windows Hello face authentication is not required on unmanaged devices.</Description>
               <DFFormat>
                 <bool />
+              </DFFormat>
+              <Occurrence>
+                <ZeroOrOne />
+              </Occurrence>
+              <Scope>
+                <Dynamic />
+              </Scope>
+              <DFType>
+                <MIME>text/plain</MIME>
+              </DFType>
+            </DFProperties>
+          </Node>
+        </Node>
+        <Node>
+          <NodeName>DeviceUnlock</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <Description>Device Unlock</Description>
+            <DFFormat>
+              <node />
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <DDFName></DDFName>
+            </DFType>
+          </DFProperties>
+          <Node>
+            <NodeName>GroupA</NodeName>
+            <DFProperties>
+              <AccessType>
+                <Get />
+                <Add />
+                <Delete />
+                <Replace />
+              </AccessType>
+              <Description>Contains a list of providers by GUID that are to be considered for the first step of authentication</Description>
+              <DFFormat>
+                <chr />
+              </DFFormat>
+              <Occurrence>
+                <ZeroOrOne />
+              </Occurrence>
+              <Scope>
+                <Dynamic />
+              </Scope>
+              <DFType>
+                <MIME>text/plain</MIME>
+              </DFType>
+            </DFProperties>
+          </Node>
+          <Node>
+            <NodeName>GroupB</NodeName>
+            <DFProperties>
+              <AccessType>
+                <Get />
+                <Add />
+                <Delete />
+                <Replace />
+              </AccessType>
+              <Description>Contains a list of providers by GUID that are to be considered for the second step of authentication</Description>
+              <DFFormat>
+                <chr />
+              </DFFormat>
+              <Occurrence>
+                <ZeroOrOne />
+              </Occurrence>
+              <Scope>
+                <Dynamic />
+              </Scope>
+              <DFType>
+                <MIME>text/plain</MIME>
+              </DFType>
+            </DFProperties>
+          </Node>
+          <Node>
+            <NodeName>Plugins</NodeName>
+            <DFProperties>
+              <AccessType>
+                <Get />
+                <Add />
+                <Delete />
+                <Replace />
+              </AccessType>
+              <Description>List of plugins that the passive provider monitors to detect user presence</Description>
+              <DFFormat>
+                <chr />
+              </DFFormat>
+              <Occurrence>
+                <ZeroOrOne />
+              </Occurrence>
+              <Scope>
+                <Dynamic />
+              </Scope>
+              <DFType>
+                <MIME>text/plain</MIME>
+              </DFType>
+            </DFProperties>
+          </Node>
+        </Node>
+        <Node>
+          <NodeName>DynamicLock</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <Description>Dynamic Lock</Description>
+            <DFFormat>
+              <node />
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <DDFName></DDFName>
+            </DFType>
+          </DFProperties>
+          <Node>
+            <NodeName>DynamicLock</NodeName>
+            <DFProperties>
+                <AccessType>
+                    <Get />
+                    <Add />
+                    <Delete />
+                    <Replace />
+                </AccessType>
+                <DefaultValue>False</DefaultValue>
+                <Description>Enables/Disables Dyanamic Lock</Description>
+                <DFFormat>
+                    <bool />
+                </DFFormat>
+                <Occurrence>
+                    <ZeroOrOne />
+                </Occurrence>
+                <Scope>
+                    <Dynamic />
+                </Scope>
+                <DFType>
+                    <MIME>text/plain</MIME>
+                </DFType>
+            </DFProperties>
+          </Node>
+          <Node>
+            <NodeName>Plugins</NodeName>
+            <DFProperties>
+              <AccessType>
+                <Get />
+                <Add />
+                <Delete />
+                <Replace />
+              </AccessType>
+              <Description>List of plugins that the passive provider monitors to detect user absence</Description>
+              <DFFormat>
+                <chr />
               </DFFormat>
               <Occurrence>
                 <ZeroOrOne />

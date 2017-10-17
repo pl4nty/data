@@ -21,7 +21,7 @@
             <Permanent />
           </Scope>
           <DFType>
-            <MIME>com.microsoft/1.0/MDM/DeviceManageability</MIME>
+            <MIME>com.microsoft/1.1/MDM/DeviceManageability</MIME>
           </DFType>
         </DFProperties>
         <Node>
@@ -63,6 +63,103 @@
                 <MIME>text/plain</MIME>
               </DFType>
             </DFProperties>
+          </Node>
+        </Node>
+        <Node>
+          <NodeName>Provider</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+              <Add />
+              <Delete />
+            </AccessType>
+            <DFFormat>
+              <node />
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFTitle>Provider</DFTitle>
+            <DFType>
+              <DDFName></DDFName>
+            </DFType>
+          </DFProperties>
+          <Node>
+            <NodeName></NodeName>
+            <DFProperties>
+              <AccessType>
+                <Get />
+                <Add />
+                <Delete />
+              </AccessType>
+              <Description>Provider ID String of the Configuration Source</Description>
+              <DFFormat>
+                <node />
+              </DFFormat>
+              <Occurrence>
+                <One />
+              </Occurrence>
+              <Scope>
+                <Dynamic />
+              </Scope>
+              <DFTitle>ProviderID</DFTitle>
+              <DFType>
+                <DDFName></DDFName>
+              </DFType>
+            </DFProperties>
+            <Node>
+              <NodeName>ConfigInfo</NodeName>
+              <DFProperties>
+                <AccessType>
+                  <Get />
+                  <Replace />
+                  <Add />
+                  <Delete />
+                </AccessType>
+                <Description>Configuration Info string value set by the config source. Recommended to be used during sync session.</Description>
+                <DFFormat>
+                  <chr />
+                </DFFormat>
+                <Occurrence>
+                  <One />
+                </Occurrence>
+                <Scope>
+                  <Dynamic />
+                </Scope>
+                <DFTitle>ConfigInfo</DFTitle>
+                <DFType>
+                  <MIME>text/plain</MIME>
+                </DFType>
+              </DFProperties>
+            </Node>
+            <Node>
+              <NodeName>EnrollmentInfo</NodeName>
+              <DFProperties>
+                <AccessType>
+                  <Get />
+                  <Add />
+                  <Delete />
+                  <Replace />
+                </AccessType>
+                <Description>Enrollment Info string value set by the config source. Recommended to sent to server during MDM enrollment.</Description>
+                <DFFormat>
+                  <chr />
+                </DFFormat>
+                <Occurrence>
+                  <One />
+                </Occurrence>
+                <Scope>
+                  <Dynamic />
+                </Scope>
+                <DFTitle>EnrollmentInfo</DFTitle>
+                <DFType>
+                  <MIME>text/plain</MIME>
+                </DFType>
+              </DFProperties>
+            </Node>
           </Node>
         </Node>
       </Node>
