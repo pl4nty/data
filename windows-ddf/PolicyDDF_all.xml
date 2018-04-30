@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE MgmtTree PUBLIC " -//OMA//DTD-DM-DDF 1.2//EN"
   "http://www.openmobilealliance.org/tech/DTD/DM_DDF-V1_2.dtd"
   [<?oma-dm-ddf-ver supported-versions="1.2"?>]>
@@ -8089,6 +8089,30 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <Description></Description>
             <DFFormat>
               <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>PageVisibilityList</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description></Description>
+            <DFFormat>
+              <chr/>
             </DFFormat>
             <Occurrence>
               <ZeroOrOne />
@@ -17246,6 +17270,33 @@ Due to Protected Settings (aka.ms/browserpolicy), this policy will only apply on
             <MSFT:ADMXMapped>Taskbar.admx</MSFT:ADMXMapped>
             <MSFT:ADMXCategory>Taskbar~AT~StartMenu~TPMCategory</MSFT:ADMXCategory>
             <MSFT:ADMXPolicyName>ConfigureTaskbarCalendar</MSFT:ADMXPolicyName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>PageVisibilityList</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue></DefaultValue>
+            <Description></Description>
+            <DFFormat>
+              <chr/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:ADMXMapped>ControlPanel.admx</MSFT:ADMXMapped>
+            <MSFT:ADMXMappedElement>SettingsPageVisibilityBox</MSFT:ADMXMappedElement>
+            <MSFT:ADMXCategory>ControlPanel~AT~ControlPanel</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>SettingsPageVisibility</MSFT:ADMXPolicyName>
             <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -31181,118 +31232,6 @@ Default: This policy is not defined and CD-ROM access is not restricted to the l
           </DFProperties>
         </Node>
         <Node>
-          <NodeName>DomainMember_DigitallyEncryptOrSignSecureChannelDataAlways</NodeName>
-          <DFProperties>
-            <AccessType>
-              <Add />
-              <Delete />
-              <Get />
-              <Replace />
-            </AccessType>
-            <Description>Domain member: Digitally encrypt or sign secure channel data (always)
-
-This security setting determines whether all secure channel traffic initiated by the domain member must be signed or encrypted.
-
-When a computer joins a domain, a computer account is created. After that, when the system starts, it uses the computer account password to create a secure channel with a domain controller for its domain. This secure channel is used to perform operations such as NTLM pass through authentication, LSA SID/name Lookup etc.
-
-This setting determines whether or not all secure channel traffic initiated by the domain member meets minimum security requirements. Specifically it determines whether all secure channel traffic initiated by the domain member must be signed or encrypted. If this policy is enabled, then the secure channel will not be established unless either signing or encryption of all secure channel traffic is negotiated. If this policy is disabled, then encryption and signing of all secure channel traffic is negotiated with the Domain Controller in which case the level of signing and encryption depends on the version of the Domain Controller and the settings of the following two policies:
-
-Domain member: Digitally encrypt secure channel data (when possible)
-Domain member: Digitally sign secure channel data (when possible)
-
-Default: Enabled.
-
-Notes:
-
-If this policy is enabled, the policy Domain member: Digitally sign secure channel data (when possible) is assumed to be enabled regardless of its current setting. This ensures that the domain member attempts to negotiate at least signing of the secure channel traffic.
-If this policy is enabled, the policy Domain member: Digitally sign secure channel data (when possible) is assumed to be enabled regardless of its current setting. This ensures that the domain member attempts to negotiate at least signing of the secure channel traffic.
-Logon information transmitted over the secure channel is always encrypted regardless of whether encryption of ALL other secure channel traffic is negotiated or not.</Description>
-            <DFFormat>
-              <int/>
-            </DFFormat>
-            <Occurrence>
-              <ZeroOrOne />
-            </Occurrence>
-            <Scope>
-              <Dynamic />
-            </Scope>
-            <DFType>
-              <MIME>text/plain</MIME>
-            </DFType>
-          </DFProperties>
-        </Node>
-        <Node>
-          <NodeName>DomainMember_DigitallyEncryptSecureChannelDataWhenPossible</NodeName>
-          <DFProperties>
-            <AccessType>
-              <Add />
-              <Delete />
-              <Get />
-              <Replace />
-            </AccessType>
-            <Description>Domain member: Digitally encrypt secure channel data (when possible)
-
-This security setting determines whether a domain member attempts to negotiate encryption for all secure channel traffic that it initiates.
-
-When a computer joins a domain, a computer account is created. After that, when the system starts, it uses the computer account password to create a secure channel with a domain controller for its domain. This secure channel is used to perform operations such as NTLM pass-through authentication, LSA SID/name Lookup etc.
-
-This setting determines whether or not the domain member attempts to negotiate encryption for all secure channel traffic that it initiates. If enabled, the domain member will request encryption of all secure channel traffic. If the domain controller supports encryption of all secure channel traffic, then all secure channel traffic will be encrypted. Otherwise only logon information transmitted over the secure channel will be encrypted. If this setting is disabled, then the domain member will not attempt to negotiate secure channel encryption.
-
-Default: Enabled.
-
-Important
-
-There is no known reason for disabling this setting. Besides unnecessarily reducing the potential confidentiality level of the secure channel, disabling this setting may unnecessarily reduce secure channel throughput, because concurrent API calls that use the secure channel are only possible when the secure channel is signed or encrypted.
-
-Note: Domain controllers are also domain members and establish secure channels with other domain controllers in the same domain as well as domain controllers in trusted domains.</Description>
-            <DFFormat>
-              <int/>
-            </DFFormat>
-            <Occurrence>
-              <ZeroOrOne />
-            </Occurrence>
-            <Scope>
-              <Dynamic />
-            </Scope>
-            <DFType>
-              <MIME>text/plain</MIME>
-            </DFType>
-          </DFProperties>
-        </Node>
-        <Node>
-          <NodeName>DomainMember_DisableMachineAccountPasswordChanges</NodeName>
-          <DFProperties>
-            <AccessType>
-              <Add />
-              <Delete />
-              <Get />
-              <Replace />
-            </AccessType>
-            <Description>Domain member: Disable machine account password changes
-
-Determines whether a domain member periodically changes its computer account password. If this setting is enabled, the domain member does not attempt to change its computer account password. If this setting is disabled, the domain member attempts to change its computer account password as specified by the setting for Domain Member: Maximum age for machine account password, which by default is every 30 days.
-
-Default: Disabled.
-
-Notes
-
-This security setting should not be enabled. Computer account passwords are used to establish secure channel communications between members and domain controllers and, within the domain, between the domain controllers themselves. Once it is established, the secure channel is used to transmit sensitive information that is necessary for making authentication and authorization decisions.
-This setting should not be used in an attempt to support dual-boot scenarios that use the same computer account. If you want to dual-boot two installations that are joined to the same domain, give the two installations different computer names.</Description>
-            <DFFormat>
-              <int/>
-            </DFFormat>
-            <Occurrence>
-              <ZeroOrOne />
-            </Occurrence>
-            <Scope>
-              <Dynamic />
-            </Scope>
-            <DFType>
-              <MIME>text/plain</MIME>
-            </DFType>
-          </DFProperties>
-        </Node>
-        <Node>
           <NodeName>InteractiveLogon_DisplayUserInformationWhenTheSessionIsLocked</NodeName>
           <DFProperties>
             <AccessType>
@@ -31531,6 +31470,52 @@ Default: This policy is not defined, which means that the system treats it as No
 On Windows Vista and above: For this setting to work, the Smart Card Removal Policy service must be started.</Description>
             <DFFormat>
               <chr/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>MicrosoftNetworkClient_DigitallySignCommunicationsAlways</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>Microsoft network client: Digitally sign communications (always)
+
+This security setting determines whether packet signing is required by the SMB client component.
+
+The server message block (SMB) protocol provides the basis for Microsoft file and print sharing and many other networking operations, such as remote Windows administration. To prevent man-in-the-middle attacks that modify SMB packets in transit, the SMB protocol supports the digital signing of SMB packets. This policy setting determines whether SMB packet signing must be negotiated before further communication with an SMB server is permitted.
+
+If this setting is enabled, the Microsoft network client will not communicate with a Microsoft network server unless that server agrees to perform SMB packet signing. If this policy is disabled, SMB packet signing is negotiated between the client and server.
+
+Default: Disabled.
+
+Important
+
+For this policy to take effect on computers running Windows 2000, client-side packet signing must also be enabled. To enable client-side SMB packet signing, set Microsoft network client: Digitally sign communications (if server agrees).
+
+Notes
+
+All Windows operating systems support both a client-side SMB component and a server-side SMB component. On Windows 2000 and later operating systems, enabling or requiring packet signing for client and server-side SMB components is controlled by the following four policy settings:
+Microsoft network client: Digitally sign communications (always) - Controls whether or not the client-side SMB component requires packet signing.
+Microsoft network client: Digitally sign communications (if server agrees) - Controls whether or not the client-side SMB component has packet signing enabled.
+Microsoft network server: Digitally sign communications (always) - Controls whether or not the server-side SMB component requires packet signing.
+Microsoft network server: Digitally sign communications (if client agrees) - Controls whether or not the server-side SMB component has packet signing enabled.
+SMB packet signing can significantly degrade SMB performance, depending on dialect version, OS version, file sizes, processor offloading capabilities, and application IO behaviors.
+For more information, reference: https://go.microsoft.com/fwlink/?LinkID=787136.</Description>
+            <DFFormat>
+              <int/>
             </DFFormat>
             <Occurrence>
               <ZeroOrOne />
@@ -31881,6 +31866,44 @@ This policy is supported on at least Windows Server 2016.</Description>
           </DFProperties>
         </Node>
         <Node>
+          <NodeName>NetworkSecurity_AllowLocalSystemToUseComputerIdentityForNTLM</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>Network security: Allow Local System to use computer identity for NTLM
+
+This policy setting allows Local System services that use Negotiate to use the computer identity when reverting to NTLM authentication.
+
+If you enable this policy setting, services running as Local System that use Negotiate will use the computer identity. This might cause some authentication requests between Windows operating systems to fail and log an error.
+
+If you disable this policy setting, services running as Local System that use Negotiate when reverting to NTLM authentication will authenticate anonymously.
+
+By default, this policy is enabled on Windows 7 and above.
+
+By default, this policy is disabled on Windows Vista.
+
+This policy is supported on at least Windows Vista or Windows Server 2008.
+
+Note: Windows Vista or Windows Server 2008 do not expose this setting in Group Policy.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
           <NodeName>NetworkSecurity_AllowPKU2UAuthenticationRequests</NodeName>
           <DFProperties>
             <AccessType>
@@ -31977,6 +32000,41 @@ Windows 2000 and windows XP: send LM and NTLM responses
 Windows Server 2003: Send NTLM response only
 
 Windows Vista, Windows Server 2008, Windows 7, and Windows Server 2008 R2: Send NTLMv2 response only</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>NetworkSecurity_MinimumSessionSecurityForNTLMSSPBasedClients</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>Network security: Minimum session security for NTLM SSP based (including secure RPC) clients
+
+This security setting allows a client to require the negotiation of 128-bit encryption and/or NTLMv2 session security. These values are dependent on the LAN Manager Authentication Level security setting value. The options are:
+
+Require NTLMv2 session security: The connection will fail if NTLMv2 protocol is not negotiated.
+Require 128-bit encryption: The connection will fail if strong encryption (128-bit) is not negotiated.
+
+Default:
+
+Windows XP, Windows Vista, Windows 2000 Server, Windows Server 2003, and Windows Server 2008: No requirements.
+
+Windows 7 and Windows Server 2008 R2: Require 128-bit encryption</Description>
             <DFFormat>
               <int/>
             </DFFormat>
@@ -39002,7 +39060,7 @@ Caution: If a Restricted Groups policy is applied, any current member not on the
               <Get />
               <Replace />
             </AccessType>
-            <Description>This setting determines whether the service's start type is Automaic(2), Manual(3), Disabled(4). Default: Manual.</Description>
+            <Description>This setting determines whether the service's start type is Automatic(2), Manual(3), Disabled(4). Default: Manual.</Description>
             <DFFormat>
               <int/>
             </DFFormat>
@@ -39026,7 +39084,7 @@ Caution: If a Restricted Groups policy is applied, any current member not on the
               <Get />
               <Replace />
             </AccessType>
-            <Description>This setting determines whether the service's start type is Automaic(2), Manual(3), Disabled(4). Default: Manual.</Description>
+            <Description>This setting determines whether the service's start type is Automatic(2), Manual(3), Disabled(4). Default: Manual.</Description>
             <DFFormat>
               <int/>
             </DFFormat>
@@ -39050,7 +39108,7 @@ Caution: If a Restricted Groups policy is applied, any current member not on the
               <Get />
               <Replace />
             </AccessType>
-            <Description>This setting determines whether the service's start type is Automaic(2), Manual(3), Disabled(4). Default: Manual.</Description>
+            <Description>This setting determines whether the service's start type is Automatic(2), Manual(3), Disabled(4). Default: Manual.</Description>
             <DFFormat>
               <int/>
             </DFFormat>
@@ -39074,7 +39132,7 @@ Caution: If a Restricted Groups policy is applied, any current member not on the
               <Get />
               <Replace />
             </AccessType>
-            <Description>This setting determines whether the service's start type is Automaic(2), Manual(3), Disabled(4). Default: Manual.</Description>
+            <Description>This setting determines whether the service's start type is Automatic(2), Manual(3), Disabled(4). Default: Manual.</Description>
             <DFFormat>
               <int/>
             </DFFormat>
@@ -39098,7 +39156,7 @@ Caution: If a Restricted Groups policy is applied, any current member not on the
               <Get />
               <Replace />
             </AccessType>
-            <Description>This setting determines whether the service's start type is Automaic(2), Manual(3), Disabled(4). Default: Manual.</Description>
+            <Description>This setting determines whether the service's start type is Automatic(2), Manual(3), Disabled(4). Default: Manual.</Description>
             <DFFormat>
               <int/>
             </DFFormat>
@@ -39122,7 +39180,7 @@ Caution: If a Restricted Groups policy is applied, any current member not on the
               <Get />
               <Replace />
             </AccessType>
-            <Description>This setting determines whether the service's start type is Automaic(2), Manual(3), Disabled(4). Default: Manual.</Description>
+            <Description>This setting determines whether the service's start type is Automatic(2), Manual(3), Disabled(4). Default: Manual.</Description>
             <DFFormat>
               <int/>
             </DFFormat>
@@ -57926,127 +57984,6 @@ Default: This policy is not defined and CD-ROM access is not restricted to the l
           </DFProperties>
         </Node>
         <Node>
-          <NodeName>DomainMember_DigitallyEncryptOrSignSecureChannelDataAlways</NodeName>
-          <DFProperties>
-            <AccessType>
-              <Get />
-            </AccessType>
-            <DefaultValue>1</DefaultValue>
-            <Description>Domain member: Digitally encrypt or sign secure channel data (always)
-
-This security setting determines whether all secure channel traffic initiated by the domain member must be signed or encrypted.
-
-When a computer joins a domain, a computer account is created. After that, when the system starts, it uses the computer account password to create a secure channel with a domain controller for its domain. This secure channel is used to perform operations such as NTLM pass through authentication, LSA SID/name Lookup etc.
-
-This setting determines whether or not all secure channel traffic initiated by the domain member meets minimum security requirements. Specifically it determines whether all secure channel traffic initiated by the domain member must be signed or encrypted. If this policy is enabled, then the secure channel will not be established unless either signing or encryption of all secure channel traffic is negotiated. If this policy is disabled, then encryption and signing of all secure channel traffic is negotiated with the Domain Controller in which case the level of signing and encryption depends on the version of the Domain Controller and the settings of the following two policies:
-
-Domain member: Digitally encrypt secure channel data (when possible)
-Domain member: Digitally sign secure channel data (when possible)
-
-Default: Enabled.
-
-Notes:
-
-If this policy is enabled, the policy Domain member: Digitally sign secure channel data (when possible) is assumed to be enabled regardless of its current setting. This ensures that the domain member attempts to negotiate at least signing of the secure channel traffic.
-If this policy is enabled, the policy Domain member: Digitally sign secure channel data (when possible) is assumed to be enabled regardless of its current setting. This ensures that the domain member attempts to negotiate at least signing of the secure channel traffic.
-Logon information transmitted over the secure channel is always encrypted regardless of whether encryption of ALL other secure channel traffic is negotiated or not.</Description>
-            <DFFormat>
-              <int/>
-            </DFFormat>
-            <Occurrence>
-              <One />
-            </Occurrence>
-            <Scope>
-              <Permanent />
-            </Scope>
-            <DFType>
-              <MIME>text/plain</MIME>
-            </DFType>
-            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
-            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
-            <MSFT:GPRegistryMappedCategory>Windows Settings~Security Settings~Local Policies~Security Options</MSFT:GPRegistryMappedCategory>
-            <MSFT:GPRegistryMappedName>Domain member: Digitally encrypt or sign secure channel data (always)</MSFT:GPRegistryMappedName>
-            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
-          </DFProperties>
-        </Node>
-        <Node>
-          <NodeName>DomainMember_DigitallyEncryptSecureChannelDataWhenPossible</NodeName>
-          <DFProperties>
-            <AccessType>
-              <Get />
-            </AccessType>
-            <DefaultValue>1</DefaultValue>
-            <Description>Domain member: Digitally encrypt secure channel data (when possible)
-
-This security setting determines whether a domain member attempts to negotiate encryption for all secure channel traffic that it initiates.
-
-When a computer joins a domain, a computer account is created. After that, when the system starts, it uses the computer account password to create a secure channel with a domain controller for its domain. This secure channel is used to perform operations such as NTLM pass-through authentication, LSA SID/name Lookup etc.
-
-This setting determines whether or not the domain member attempts to negotiate encryption for all secure channel traffic that it initiates. If enabled, the domain member will request encryption of all secure channel traffic. If the domain controller supports encryption of all secure channel traffic, then all secure channel traffic will be encrypted. Otherwise only logon information transmitted over the secure channel will be encrypted. If this setting is disabled, then the domain member will not attempt to negotiate secure channel encryption.
-
-Default: Enabled.
-
-Important
-
-There is no known reason for disabling this setting. Besides unnecessarily reducing the potential confidentiality level of the secure channel, disabling this setting may unnecessarily reduce secure channel throughput, because concurrent API calls that use the secure channel are only possible when the secure channel is signed or encrypted.
-
-Note: Domain controllers are also domain members and establish secure channels with other domain controllers in the same domain as well as domain controllers in trusted domains.</Description>
-            <DFFormat>
-              <int/>
-            </DFFormat>
-            <Occurrence>
-              <One />
-            </Occurrence>
-            <Scope>
-              <Permanent />
-            </Scope>
-            <DFType>
-              <MIME>text/plain</MIME>
-            </DFType>
-            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
-            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
-            <MSFT:GPRegistryMappedCategory>Windows Settings~Security Settings~Local Policies~Security Options</MSFT:GPRegistryMappedCategory>
-            <MSFT:GPRegistryMappedName>Domain member: Digitally encrypt secure channel data (when possible)</MSFT:GPRegistryMappedName>
-            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
-          </DFProperties>
-        </Node>
-        <Node>
-          <NodeName>DomainMember_DisableMachineAccountPasswordChanges</NodeName>
-          <DFProperties>
-            <AccessType>
-              <Get />
-            </AccessType>
-            <DefaultValue>0</DefaultValue>
-            <Description>Domain member: Disable machine account password changes
-
-Determines whether a domain member periodically changes its computer account password. If this setting is enabled, the domain member does not attempt to change its computer account password. If this setting is disabled, the domain member attempts to change its computer account password as specified by the setting for Domain Member: Maximum age for machine account password, which by default is every 30 days.
-
-Default: Disabled.
-
-Notes
-
-This security setting should not be enabled. Computer account passwords are used to establish secure channel communications between members and domain controllers and, within the domain, between the domain controllers themselves. Once it is established, the secure channel is used to transmit sensitive information that is necessary for making authentication and authorization decisions.
-This setting should not be used in an attempt to support dual-boot scenarios that use the same computer account. If you want to dual-boot two installations that are joined to the same domain, give the two installations different computer names.</Description>
-            <DFFormat>
-              <int/>
-            </DFFormat>
-            <Occurrence>
-              <One />
-            </Occurrence>
-            <Scope>
-              <Permanent />
-            </Scope>
-            <DFType>
-              <MIME>text/plain</MIME>
-            </DFType>
-            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
-            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
-            <MSFT:GPRegistryMappedCategory>Windows Settings~Security Settings~Local Policies~Security Options</MSFT:GPRegistryMappedCategory>
-            <MSFT:GPRegistryMappedName>Domain member: Disable machine account password changes</MSFT:GPRegistryMappedName>
-            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
-          </DFProperties>
-        </Node>
-        <Node>
           <NodeName>InteractiveLogon_DisplayUserInformationWhenTheSessionIsLocked</NodeName>
           <DFProperties>
             <AccessType>
@@ -58316,6 +58253,55 @@ On Windows Vista and above: For this setting to work, the Smart Card Removal Pol
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:GPRegistryMappedCategory>Windows Settings~Security Settings~Local Policies~Security Options</MSFT:GPRegistryMappedCategory>
             <MSFT:GPRegistryMappedName>Interactive logon: Smart card removal behavior</MSFT:GPRegistryMappedName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>MicrosoftNetworkClient_DigitallySignCommunicationsAlways</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>0</DefaultValue>
+            <Description>Microsoft network client: Digitally sign communications (always)
+
+This security setting determines whether packet signing is required by the SMB client component.
+
+The server message block (SMB) protocol provides the basis for Microsoft file and print sharing and many other networking operations, such as remote Windows administration. To prevent man-in-the-middle attacks that modify SMB packets in transit, the SMB protocol supports the digital signing of SMB packets. This policy setting determines whether SMB packet signing must be negotiated before further communication with an SMB server is permitted.
+
+If this setting is enabled, the Microsoft network client will not communicate with a Microsoft network server unless that server agrees to perform SMB packet signing. If this policy is disabled, SMB packet signing is negotiated between the client and server.
+
+Default: Disabled.
+
+Important
+
+For this policy to take effect on computers running Windows 2000, client-side packet signing must also be enabled. To enable client-side SMB packet signing, set Microsoft network client: Digitally sign communications (if server agrees).
+
+Notes
+
+All Windows operating systems support both a client-side SMB component and a server-side SMB component. On Windows 2000 and later operating systems, enabling or requiring packet signing for client and server-side SMB components is controlled by the following four policy settings:
+Microsoft network client: Digitally sign communications (always) - Controls whether or not the client-side SMB component requires packet signing.
+Microsoft network client: Digitally sign communications (if server agrees) - Controls whether or not the client-side SMB component has packet signing enabled.
+Microsoft network server: Digitally sign communications (always) - Controls whether or not the server-side SMB component requires packet signing.
+Microsoft network server: Digitally sign communications (if client agrees) - Controls whether or not the server-side SMB component has packet signing enabled.
+SMB packet signing can significantly degrade SMB performance, depending on dialect version, OS version, file sizes, processor offloading capabilities, and application IO behaviors.
+For more information, reference: https://go.microsoft.com/fwlink/?LinkID=787136.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:GPRegistryMappedCategory>Windows Settings~Security Settings~Local Policies~Security Options</MSFT:GPRegistryMappedCategory>
+            <MSFT:GPRegistryMappedName>Microsoft network client: Digitally sign communications (always)</MSFT:GPRegistryMappedName>
             <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -58683,6 +58669,47 @@ This policy is supported on at least Windows Server 2016.</Description>
           </DFProperties>
         </Node>
         <Node>
+          <NodeName>NetworkSecurity_AllowLocalSystemToUseComputerIdentityForNTLM</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>1</DefaultValue>
+            <Description>Network security: Allow Local System to use computer identity for NTLM
+
+This policy setting allows Local System services that use Negotiate to use the computer identity when reverting to NTLM authentication.
+
+If you enable this policy setting, services running as Local System that use Negotiate will use the computer identity. This might cause some authentication requests between Windows operating systems to fail and log an error.
+
+If you disable this policy setting, services running as Local System that use Negotiate when reverting to NTLM authentication will authenticate anonymously.
+
+By default, this policy is enabled on Windows 7 and above.
+
+By default, this policy is disabled on Windows Vista.
+
+This policy is supported on at least Windows Vista or Windows Server 2008.
+
+Note: Windows Vista or Windows Server 2008 do not expose this setting in Group Policy.</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues low="0" high="1"></MSFT:SupportedValues>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:GPRegistryMappedCategory>Windows Settings~Security Settings~Local Policies~Security Options</MSFT:GPRegistryMappedCategory>
+            <MSFT:GPRegistryMappedName>Network security: Allow Local System to use computer identity for NTLM</MSFT:GPRegistryMappedName>
+            <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
           <NodeName>NetworkSecurity_AllowPKU2UAuthenticationRequests</NodeName>
           <DFProperties>
             <AccessType>
@@ -58799,6 +58826,44 @@ Windows Vista, Windows Server 2008, Windows 7, and Windows Server 2008 R2: Send 
             <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
             <MSFT:GPRegistryMappedCategory>Windows Settings~Security Settings~Local Policies~Security Options</MSFT:GPRegistryMappedCategory>
             <MSFT:GPRegistryMappedName>Network security: LAN Manager authentication level</MSFT:GPRegistryMappedName>
+            <MSFT:ConflictResolution>HighestValueMostSecure</MSFT:ConflictResolution>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>NetworkSecurity_MinimumSessionSecurityForNTLMSSPBasedClients</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DefaultValue>0</DefaultValue>
+            <Description>Network security: Minimum session security for NTLM SSP based (including secure RPC) clients
+
+This security setting allows a client to require the negotiation of 128-bit encryption and/or NTLMv2 session security. These values are dependent on the LAN Manager Authentication Level security setting value. The options are:
+
+Require NTLMv2 session security: The connection will fail if NTLMv2 protocol is not negotiated.
+Require 128-bit encryption: The connection will fail if strong encryption (128-bit) is not negotiated.
+
+Default:
+
+Windows XP, Windows Vista, Windows 2000 Server, Windows Server 2003, and Windows Server 2008: No requirements.
+
+Windows 7 and Windows Server 2008 R2: Require 128-bit encryption</Description>
+            <DFFormat>
+              <int/>
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues AllowedValues="0,524288,536870912,537395200"></MSFT:SupportedValues>
+            <MSFT:NotSupportedOnPlatform>phone</MSFT:NotSupportedOnPlatform>
+            <MSFT:GPRegistryMappedCategory>Windows Settings~Security Settings~Local Policies~Security Options</MSFT:GPRegistryMappedCategory>
+            <MSFT:GPRegistryMappedName>Network security: Minimum session security for NTLM SSP based (including secure RPC) clients</MSFT:GPRegistryMappedName>
             <MSFT:ConflictResolution>HighestValueMostSecure</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -66464,8 +66529,8 @@ Caution: If a Restricted Groups policy is applied, any current member not on the
             <AccessType>
               <Get />
             </AccessType>
-            <DefaultValue>0</DefaultValue>
-            <Description>This setting determines whether the service's start type is Automaic(2), Manual(3), Disabled(4). Default: Manual.</Description>
+            <DefaultValue>3</DefaultValue>
+            <Description>This setting determines whether the service's start type is Automatic(2), Manual(3), Disabled(4). Default: Manual.</Description>
             <DFFormat>
               <int/>
             </DFFormat>
@@ -66491,8 +66556,8 @@ Caution: If a Restricted Groups policy is applied, any current member not on the
             <AccessType>
               <Get />
             </AccessType>
-            <DefaultValue>0</DefaultValue>
-            <Description>This setting determines whether the service's start type is Automaic(2), Manual(3), Disabled(4). Default: Manual.</Description>
+            <DefaultValue>3</DefaultValue>
+            <Description>This setting determines whether the service's start type is Automatic(2), Manual(3), Disabled(4). Default: Manual.</Description>
             <DFFormat>
               <int/>
             </DFFormat>
@@ -66518,8 +66583,8 @@ Caution: If a Restricted Groups policy is applied, any current member not on the
             <AccessType>
               <Get />
             </AccessType>
-            <DefaultValue>0</DefaultValue>
-            <Description>This setting determines whether the service's start type is Automaic(2), Manual(3), Disabled(4). Default: Manual.</Description>
+            <DefaultValue>3</DefaultValue>
+            <Description>This setting determines whether the service's start type is Automatic(2), Manual(3), Disabled(4). Default: Manual.</Description>
             <DFFormat>
               <int/>
             </DFFormat>
@@ -66545,8 +66610,8 @@ Caution: If a Restricted Groups policy is applied, any current member not on the
             <AccessType>
               <Get />
             </AccessType>
-            <DefaultValue>0</DefaultValue>
-            <Description>This setting determines whether the service's start type is Automaic(2), Manual(3), Disabled(4). Default: Manual.</Description>
+            <DefaultValue>3</DefaultValue>
+            <Description>This setting determines whether the service's start type is Automatic(2), Manual(3), Disabled(4). Default: Manual.</Description>
             <DFFormat>
               <int/>
             </DFFormat>
@@ -66572,8 +66637,8 @@ Caution: If a Restricted Groups policy is applied, any current member not on the
             <AccessType>
               <Get />
             </AccessType>
-            <DefaultValue>0</DefaultValue>
-            <Description>This setting determines whether the service's start type is Automaic(2), Manual(3), Disabled(4). Default: Manual.</Description>
+            <DefaultValue>3</DefaultValue>
+            <Description>This setting determines whether the service's start type is Automatic(2), Manual(3), Disabled(4). Default: Manual.</Description>
             <DFFormat>
               <int/>
             </DFFormat>
@@ -66599,8 +66664,8 @@ Caution: If a Restricted Groups policy is applied, any current member not on the
             <AccessType>
               <Get />
             </AccessType>
-            <DefaultValue>0</DefaultValue>
-            <Description>This setting determines whether the service's start type is Automaic(2), Manual(3), Disabled(4). Default: Manual.</Description>
+            <DefaultValue>3</DefaultValue>
+            <Description>This setting determines whether the service's start type is Automatic(2), Manual(3), Disabled(4). Default: Manual.</Description>
             <DFFormat>
               <int/>
             </DFFormat>
