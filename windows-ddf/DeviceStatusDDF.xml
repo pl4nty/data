@@ -447,6 +447,27 @@
               </DFType>
             </DFProperties>
           </Node>
+          <Node>
+            <NodeName>Mode</NodeName>
+            <DFProperties>
+              <AccessType>
+                <Get />
+              </AccessType>
+              <DefaultValue>Not available</DefaultValue>
+              <DFFormat>
+                <chr />
+              </DFFormat>
+              <Occurrence>
+                <One />
+              </Occurrence>
+              <Scope>
+                <Permanent />
+              </Scope>
+              <DFType>
+                <MIME>text/plain</MIME>
+              </DFType>
+            </DFProperties>
+          </Node>
         </Node>
         <Node>
           <NodeName>Antivirus</NodeName>

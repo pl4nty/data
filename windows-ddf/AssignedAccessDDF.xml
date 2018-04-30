@@ -23,7 +23,7 @@
                 <Permanent />
             </Scope>
             <DFType>
-                <MIME>com.microsoft/1.1/MDM/AssignedAccess</MIME>
+                <MIME>com.microsoft/2.0/MDM/AssignedAccess</MIME>
             </DFType>
         </DFProperties>
         <Node>
@@ -69,6 +69,84 @@ This node supports Add, Delete, Replace and Get methods. When there's no configu
                     <Replace />
                 </AccessType>
                 <Description>This node accepts an AssignedAccessConfiguration xml as input. Please check out samples and required xsd on MSDN.</Description>
+                <DFFormat>
+                    <chr />
+                </DFFormat>
+                <Occurrence>
+                    <One />
+                </Occurrence>
+                <Scope>
+                    <Dynamic />
+                </Scope>
+                <CaseSense>
+                    <CIS />
+                </CaseSense>
+                <DFType>
+                    <MIME>text/plain</MIME>
+                </DFType>
+            </DFProperties>
+        </Node>
+        <Node>
+            <NodeName>Status</NodeName>
+            <DFProperties>
+                <AccessType>
+                    <Get />
+                </AccessType>
+                <Description>This read only node contains kiosk health event xml</Description>
+                <DFFormat>
+                    <chr />
+                </DFFormat>
+                <Occurrence>
+                    <One />
+                </Occurrence>
+                <Scope>
+                    <Permanent />
+                </Scope>
+                <CaseSense>
+                    <CIS />
+                </CaseSense>
+                <DFType>
+                    <MIME>text/plain</MIME>
+                </DFType>
+            </DFProperties>
+        </Node>
+        <Node>
+            <NodeName>ShellLauncher</NodeName>
+            <DFProperties>
+                <AccessType>
+                    <Get />
+                    <Add />
+                    <Delete />
+                    <Replace />
+                </AccessType>
+                <Description>This node accepts a ShellLauncherConfiguration xml as input. Please check out samples and required xsd on MSDN.</Description>
+                <DFFormat>
+                    <chr />
+                </DFFormat>
+                <Occurrence>
+                    <One />
+                </Occurrence>
+                <Scope>
+                    <Dynamic />
+                </Scope>
+                <CaseSense>
+                    <CIS />
+                </CaseSense>
+                <DFType>
+                    <MIME>text/plain</MIME>
+                </DFType>
+            </DFProperties>
+        </Node>
+        <Node>
+            <NodeName>StatusConfiguration</NodeName>
+            <DFProperties>
+                <AccessType>
+                    <Get />
+                    <Add />
+                    <Delete />
+                    <Replace />
+                </AccessType>
+                <Description>This node accepts a StatusConfiguration xml as input. Please check out samples and required xsd on MSDN.</Description>
                 <DFFormat>
                     <chr />
                 </DFFormat>

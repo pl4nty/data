@@ -1079,6 +1079,10 @@ Note that enhanced anti-spoofing for Windows Hello face authentication is not re
               <DFType>
                 <MIME>text/plain</MIME>
               </DFType>
+              <MSFT:SupportedValues AllowedValues="true,false">
+                <MSFT:SupportedValue value="true" description="Windows will require all users on managed devices to use enhanced anti-spoofing for Windows Hello face authentication. This disables Windows Hello face authentication on devices that do not support enhanced anti-spoofing."/>
+                <MSFT:SupportedValue value="false" description="Enhanced anti-spoofing is not required for Windows Hello face authentication."/>
+              </MSFT:SupportedValues>
             </DFProperties>
           </Node>
         </Node>

@@ -6,7 +6,7 @@
     <VerDTD>1.2</VerDTD>
     <Node>
         <NodeName>eUICCs</NodeName>
-        <Path>./Vendor/MSFT</Path>
+        <Path>./Device/Vendor/MSFT</Path>
         <DFProperties>
             <AccessType>
                 <Get />
@@ -25,7 +25,7 @@
                 <CIS />
             </CaseSense>
             <DFType>
-                <MIME>com.microsoft/1.0/MDM/eUICCs</MIME>
+                <MIME>com.microsoft/1.1/MDM/eUICCs</MIME>
             </DFType>
         </DFProperties>
         <Node>
@@ -197,6 +197,29 @@
                             <Description>Current state of the profile (Installing = 1, Installed = 2, Deleting = 3, Error = 4). Queried by the CSP and only updated by the LPA.</Description>
                             <DFFormat>
                                 <int />
+                            </DFFormat>
+                            <Occurrence>
+                                <One />
+                            </Occurrence>
+                            <Scope>
+                                <Dynamic />
+                            </Scope>
+                            <DFType>
+                                <MIME>text/plain</MIME>
+                            </DFType>
+                        </DFProperties>
+                    </Node>
+                    <Node>
+                        <NodeName>IsEnabled</NodeName>
+                        <DFProperties>
+                            <AccessType>
+                                <Get />
+                                <Add />
+                                <Replace />
+                            </AccessType>
+                            <Description>Indicates whether this profile is enabled. Can be set by the MDM when the ICCID subtree is created. Can also be queried and updated by the CSP.</Description>
+                            <DFFormat>
+                                <bool />
                             </DFFormat>
                             <Occurrence>
                                 <One />

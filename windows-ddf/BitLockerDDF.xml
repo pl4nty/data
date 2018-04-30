@@ -67,6 +67,10 @@
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1">
+              <MSFT:SupportedValue value="0" description="Default when policy is not set."/>
+              <MSFT:SupportedValue value="1" description="Allows the admin to require storage card encryption."/>
+            </MSFT:SupportedValues>
           </DFProperties>
         </Node>
         <Node>
@@ -110,6 +114,10 @@
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues low="0" high="1">
+              <MSFT:SupportedValue value="0" description="Default when policy is not set."/>
+              <MSFT:SupportedValue value="1" description="Allows the admin to require encryption."/>
+            </MSFT:SupportedValues>
           </DFProperties>
         </Node>
         <Node>
@@ -166,6 +174,9 @@
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ADMXBacked>VolumeEncryption.admx</MSFT:ADMXBacked>
+            <MSFT:ADMXCategory>VolumeEncryption~AT~WindowsComponents~FVECategory</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>EncryptionMethodWithXts_Name</MSFT:ADMXPolicyName>
           </DFProperties>
         </Node>
         <Node>
@@ -233,6 +244,9 @@
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ADMXBacked>VolumeEncryption.admx</MSFT:ADMXBacked>
+            <MSFT:ADMXCategory>VolumeEncryption~AT~WindowsComponents~FVECategory~FVEOSCategory</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>ConfigureAdvancedStartup_Name</MSFT:ADMXPolicyName>
           </DFProperties>
         </Node>
         <Node>
@@ -247,7 +261,7 @@
             <Description>This policy setting allows you to configure a minimum length for a Trusted Platform Module (TPM) startup PIN. This policy setting is applied when you turn on BitLocker. The startup PIN must have a minimum length of 4 digits and can have a maximum length of 20 digits.
                          If you enable this policy setting, you can require a minimum number of digits to be used when setting the startup PIN.
                          If you disable or do not configure this policy setting, users can configure a startup PIN of any length between 6 and 20 digits.
-                         NOTE: If minimum PIN length is set below 6 digits, Windows will attempt to update the TPM 2.0 lockout period to be greater than the default when a PIN is changed. If successful, Windows will only reset the TPM lockout period back to default if the TPM is reset.  
+                         NOTE: If minimum PIN length is set below 6 digits, Windows will attempt to update the TPM 2.0 lockout period to be greater than the default when a PIN is changed. If successful, Windows will only reset the TPM lockout period back to default if the TPM is reset.
                          The format is string.
                          Sample value for this node to enable this policy is:
                          &lt;enabled/&gt;&lt;data id=&quot;MinPINLength&quot; value=&quot;xx&quot;/&gt;
@@ -281,6 +295,9 @@
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ADMXBacked>VolumeEncryption.admx</MSFT:ADMXBacked>
+            <MSFT:ADMXCategory>VolumeEncryption~AT~WindowsComponents~FVECategory~FVEOSCategory</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>MinimumPINLength_Name</MSFT:ADMXPolicyName>
           </DFProperties>
         </Node>
         <Node>
@@ -338,6 +355,9 @@
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ADMXBacked>VolumeEncryption.admx</MSFT:ADMXBacked>
+            <MSFT:ADMXCategory>VolumeEncryption~AT~WindowsComponents~FVECategory~FVEOSCategory</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>PrebootRecoveryInfo_Name</MSFT:ADMXPolicyName>
           </DFProperties>
         </Node>
         <Node>
@@ -404,6 +424,9 @@
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ADMXBacked>VolumeEncryption.admx</MSFT:ADMXBacked>
+            <MSFT:ADMXCategory>VolumeEncryption~AT~WindowsComponents~FVECategory~FVEOSCategory</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>OSRecoveryUsage_Name</MSFT:ADMXPolicyName>
           </DFProperties>
         </Node>
         <Node>
@@ -470,6 +493,9 @@
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ADMXBacked>VolumeEncryption.admx</MSFT:ADMXBacked>
+            <MSFT:ADMXCategory>VolumeEncryption~AT~WindowsComponents~FVECategory~FVEFDVCategory</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>FDVRecoveryUsage_Name</MSFT:ADMXPolicyName>
           </DFProperties>
         </Node>
         <Node>
@@ -517,6 +543,9 @@
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ADMXBacked>VolumeEncryption.admx</MSFT:ADMXBacked>
+            <MSFT:ADMXCategory>VolumeEncryption~AT~WindowsComponents~FVECategory~FVEFDVCategory</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>FDVDenyWriteAccess_Name</MSFT:ADMXPolicyName>
           </DFProperties>
         </Node>
         <Node>
@@ -570,6 +599,9 @@
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:ADMXBacked>VolumeEncryption.admx</MSFT:ADMXBacked>
+            <MSFT:ADMXCategory>VolumeEncryption~AT~WindowsComponents~FVECategory~FVERDVCategory</MSFT:ADMXCategory>
+            <MSFT:ADMXPolicyName>RDVDenyWriteAccess_Name</MSFT:ADMXPolicyName>
           </DFProperties>
         </Node>
         <Node>
@@ -612,6 +644,10 @@
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
+            <MSFT:SupportedValues AllowedValues="0,1">
+              <MSFT:SupportedValue value="0" description="Disables the warning prompt for other disk encryption."/>
+              <MSFT:SupportedValue value="1" description="Default when policy is not set."/>
+            </MSFT:SupportedValues>
           </DFProperties>
         </Node>
       </Node>
