@@ -22,7 +22,7 @@
             <Permanent />
           </Scope>
           <DFType>
-            <MIME>com.microsoft/1.3/MDM/Office</MIME>
+            <MIME>com.microsoft/1.5/MDM/Office</MIME>
           </DFType>
         </DFProperties>
         <Node>
@@ -112,6 +112,27 @@
                 </DFType>
               </DFProperties>
             </Node>
+            <Node>
+              <NodeName>FinalStatus</NodeName>
+              <DFProperties>
+                <AccessType>
+                  <Get />
+                </AccessType>
+                <Description>Final Office 365 installation status.</Description>
+                <DFFormat>
+                  <int />
+                </DFFormat>
+                <Occurrence>
+                  <One />
+                </Occurrence>
+                <Scope>
+                  <Dynamic />
+                </Scope>
+                <DFType>
+                  <MIME>text/plain</MIME>
+                </DFType>
+              </DFProperties>
+            </Node>
           </Node>
           <Node>
             <NodeName>CurrentStatus</NodeName>
@@ -153,7 +174,7 @@
             <Permanent />
           </Scope>
           <DFType>
-            <MIME>com.microsoft/1.3/MDM/Office</MIME>
+            <MIME>com.microsoft/1.5/MDM/Office</MIME>
           </DFType>
         </DFProperties>
         <Node>
@@ -225,6 +246,27 @@
                 <AccessType>
                   <Get />
                 </AccessType>
+                <DFFormat>
+                  <int />
+                </DFFormat>
+                <Occurrence>
+                  <One />
+                </Occurrence>
+                <Scope>
+                  <Dynamic />
+                </Scope>
+                <DFType>
+                  <MIME>text/plain</MIME>
+                </DFType>
+              </DFProperties>
+            </Node>
+            <Node>
+              <NodeName>FinalStatus</NodeName>
+              <DFProperties>
+                <AccessType>
+                  <Get />
+                </AccessType>
+                <Description>Final Office 365 installation status.</Description>
                 <DFFormat>
                   <int />
                 </DFFormat>

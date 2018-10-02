@@ -21,7 +21,7 @@
             <Permanent />
           </Scope>
           <DFType>
-            <MIME>com.microsoft/1.2/MDM/WindowsLicensing</MIME>
+            <MIME>com.microsoft/1.3/MDM/WindowsLicensing</MIME>
           </DFType>
         </DFProperties>
         <Node>
@@ -271,6 +271,101 @@
                 </DFType>
               </DFProperties>
             </Node>
+          </Node>
+        </Node>
+        <Node>
+          <NodeName>SMode</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DFFormat>
+              <node />
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <DDFName></DDFName>
+            </DFType>
+          </DFProperties>
+          <Node>
+            <NodeName>SwitchingPolicy</NodeName>
+            <DFProperties>
+              <AccessType>
+                <Get />
+                <Delete />
+                <Replace />
+                <Add />
+              </AccessType>
+              <Description>Policy that determines whether a consumer can switch the device out of S mode</Description>
+              <DFFormat>
+                <int />
+              </DFFormat>
+              <Occurrence>
+                <One />
+              </Occurrence>
+              <Scope>
+                <Dynamic />
+              </Scope>
+              <CaseSense>
+                <CIS />
+              </CaseSense>
+              <DFType>
+                <MIME>text/plain</MIME>
+              </DFType>
+            </DFProperties>
+          </Node>
+          <Node>
+            <NodeName>SwitchFromSMode</NodeName>
+            <DFProperties>
+              <AccessType>
+                <Exec />
+              </AccessType>
+              <Description>Switches a device out of S mode if possible. Does not reboot.</Description>
+              <DFFormat>
+                <null />
+              </DFFormat>
+              <Occurrence>
+                <One />
+              </Occurrence>
+              <Scope>
+                <Permanent />
+              </Scope>
+              <CaseSense>
+                <CIS />
+              </CaseSense>
+              <DFType>
+                <MIME>text/plain</MIME>
+              </DFType>
+            </DFProperties>
+          </Node>
+          <Node>
+            <NodeName>Status</NodeName>
+            <DFProperties>
+              <AccessType>
+                <Get />
+              </AccessType>
+              <Description>Returns the status of the latest SwitchFromSMode or SwitchingPolicy set request.</Description>
+              <DFFormat>
+                <int />
+              </DFFormat>
+              <Occurrence>
+                <One />
+              </Occurrence>
+              <Scope>
+                <Permanent />
+              </Scope>
+              <CaseSense>
+                <CIS />
+              </CaseSense>
+              <DFType>
+                <MIME>text/plain</MIME>
+              </DFType>
+            </DFProperties>
           </Node>
         </Node>
       </Node>

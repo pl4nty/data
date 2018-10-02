@@ -1,0 +1,919 @@
+<!--
+Copyright (c) Microsoft Corporation.  All rights reserved.
+-->
+<!--
+Use of this source code is subject to the terms of the Microsoft
+premium shared source license agreement under which you licensed
+this source code. If you did not accept the terms of the license
+agreement, you are not authorized to use this source code.
+For the terms of the license, please see the license agreement
+signed by you and Microsoft.
+THE SOURCE CODE IS PROVIDED "AS IS", WITH NO WARRANTIES OR INDEMNITIES.
+-->
+<MgmtTree xmlns:MSFT="http://schemas.microsoft.com/MobileDevice/DM">
+    <VerDTD>1.2</VerDTD>
+    <Node>
+        <NodeName>NAP</NodeName>
+        <Path>./Vendor/MSFT</Path>
+        <DFProperties>
+            <AccessType>
+                <Get />
+            </AccessType>
+            <DFFormat>
+                <node />
+            </DFFormat>
+            <Occurrence>
+                <One />
+            </Occurrence>
+            <Scope>
+                <Permanent />
+            </Scope>
+            <MSFT:RWAccess>3</MSFT:RWAccess>
+            <MSFT:MinValue></MSFT:MinValue>
+            <MSFT:MaxValue></MSFT:MaxValue>
+            <MSFT:MaxLength></MSFT:MaxLength>
+            <Description>A NAP object defines a Network Access Point.  This may be a wireless data connection (GPRS, 1xRTT, EV-DO), dial-up connection, desktop pass-through connection, etc.
+
+All NAP objects must be mapped to one or more corresponding ACCESS objects.  Together, these define a destination network and the means of getting there.  E.G. the NAP "My GPRS" could be used to connect to "The Internet".
+
+Connection Manager uses this information to determine which path/resources to use when a client requests a network connection.
+
+For more info, see "OMA Device Management - Standardized Connectivity Management Objects".</Description>
+        </DFProperties>
+        <Node>
+            <NodeName>*</NodeName>
+            <DFProperties>
+                <AccessType>
+                    <Add />
+                    <Get />
+                    <Delete />
+                </AccessType>
+                <DFFormat>
+                    <node />
+                </DFFormat>
+                <Occurrence>
+                    <ZeroOrMore />
+                </Occurrence>
+                <Scope>
+                    <Dynamic />
+                </Scope>
+                <MSFT:RWAccess>3</MSFT:RWAccess>
+                <MSFT:MinValue></MSFT:MinValue>
+                <MSFT:MaxValue></MSFT:MaxValue>
+                <MSFT:MaxLength></MSFT:MaxLength>
+                <Description>The value of x should be a connection name.  An example would be "My%20GPRS" (without the quotes).
+
+NOTE: one will typically use the same string for this node and for the child field NapID.  E.G.:
+
+./Vendor/MSFT/NAP/My%20GPRS/NapId = My%20GPRS
+
+
+Need to specify all mandatory fields (fields whose occurrence is at least 1). 
+
+The addition, update, and deletion of this sub-tree of nodes have to be specified in a single atomic transaction.</Description>
+            </DFProperties>
+            <Node>
+                <NodeName>NapId</NodeName>
+                <DFProperties>
+                    <AccessType>
+                        <Add />
+                        <Get />
+                        <Replace />
+                    </AccessType>
+                    <DFFormat>
+                        <chr />
+                    </DFFormat>
+                    <Occurrence>
+                        <One />
+                    </Occurrence>
+                    <Scope>
+                        <Dynamic />
+                    </Scope>
+                    <MSFT:RWAccess>3</MSFT:RWAccess>
+                    <DFType>
+                        <MIME>text/plain</MIME>
+                    </DFType>
+                    <MSFT:MinValue></MSFT:MinValue>
+                    <MSFT:MaxValue></MSFT:MaxValue>
+                    <MSFT:MaxLength></MSFT:MaxLength>
+                    <Description>The value of this field should be a Network Access Point name.  An example would be "My%20GPRS" (without the quotes).
+
+NapId is synonymous with ConRef.  When an ACCESS object requires a ConRef, use the value of the NapId field.</Description>
+                </DFProperties>
+            </Node>
+            <Node>
+                <NodeName>Name</NodeName>
+                <DFProperties>
+                    <AccessType>
+                        <Add />
+                        <Get />
+                        <Delete />
+                        <Replace />
+                    </AccessType>
+                    <DFFormat>
+                        <chr />
+                    </DFFormat>
+                    <Occurrence>
+                        <ZeroOrOne />
+                    </Occurrence>
+                    <Scope>
+                        <Dynamic />
+                    </Scope>
+                    <MSFT:RWAccess>3</MSFT:RWAccess>
+                    <DFType>
+                        <MIME>text/plain</MIME>
+                    </DFType>
+                    <MSFT:MinValue></MSFT:MinValue>
+                    <MSFT:MaxValue></MSFT:MaxValue>
+                    <MSFT:MaxLength></MSFT:MaxLength>
+                    <Description>The value of this field should be a short, descriptive name for the NAP.  An example would be "My GPRS" (without the quotes).
+
+NOTE: This field is reserved for future use, but is currently ignored by Windows Mobile.</Description>
+                </DFProperties>
+            </Node>
+            <Node>
+                <NodeName>Addr</NodeName>
+                <DFProperties>
+                    <AccessType>
+                        <Add />
+                        <Get />
+                        <Replace />
+                    </AccessType>
+                    <DFFormat>
+                        <chr />
+                    </DFFormat>
+                    <Occurrence>
+                        <One />
+                    </Occurrence>
+                    <Scope>
+                        <Dynamic />
+                    </Scope>
+                    <MSFT:RWAccess>3</MSFT:RWAccess>
+                    <DFType>
+                        <MIME>text/plain</MIME>
+                    </DFType>
+                    <MSFT:MinValue></MSFT:MinValue>
+                    <MSFT:MaxValue></MSFT:MaxValue>
+                    <MSFT:MaxLength></MSFT:MaxLength>
+                    <Description>The value of this field should be a destination address for the NAP.  This would be the APN name for a GPRS access point, or the phone number for a dial-up connection.</Description>
+                </DFProperties>
+            </Node>
+            <Node>
+                <NodeName>AddrType</NodeName>
+                <DFProperties>
+                    <AccessType>
+                        <Add />
+                        <Get />
+                        <Replace />
+                    </AccessType>
+                    <DFFormat>
+                        <chr />
+                    </DFFormat>
+                    <Occurrence>
+                        <One />
+                    </Occurrence>
+                    <Scope>
+                        <Dynamic />
+                    </Scope>
+                    <MSFT:RWAccess>3</MSFT:RWAccess>
+                    <DFType>
+                        <MIME>text/plain</MIME>
+                    </DFType>
+                    <MSFT:MinValue></MSFT:MinValue>
+                    <MSFT:MaxValue></MSFT:MaxValue>
+                    <MSFT:MaxLength></MSFT:MaxLength>
+                    <Description>one of IPv4,IPv6,E164,ALPHA,APN,SCODE,TETRA-ITSI,MAN</Description>
+                </DFProperties>
+            </Node>
+            <Node>
+                <NodeName>IPv4</NodeName>
+                <DFProperties>
+                    <AccessType>
+                        <Add />
+                        <Get />
+                        <Delete />
+                    </AccessType>
+                    <DFFormat>
+                        <node />
+                    </DFFormat>
+                    <Occurrence>
+                        <ZeroOrOne />
+                    </Occurrence>
+                    <Scope>
+                        <Dynamic />
+                    </Scope>
+                    <MSFT:RWAccess>3</MSFT:RWAccess>
+                    <MSFT:MinValue></MSFT:MinValue>
+                    <MSFT:MaxValue></MSFT:MaxValue>
+                    <MSFT:MaxLength></MSFT:MaxLength>
+                    <Description></Description>
+                </DFProperties>
+                <Node>
+                    <NodeName>AutoConfig</NodeName>
+                    <DFProperties>
+                        <AccessType>
+                            <Add />
+                            <Get />
+                            <Delete />
+                            <Replace />
+                        </AccessType>
+                        <DFFormat>
+                            <bool />
+                        </DFFormat>
+                        <Occurrence>
+                            <ZeroOrOne />
+                        </Occurrence>
+                        <Scope>
+                            <Dynamic />
+                        </Scope>
+                        <MSFT:RWAccess>3</MSFT:RWAccess>
+                        <DFType>
+                            <MIME>text/plain</MIME>
+                        </DFType>
+                        <MSFT:MinValue></MSFT:MinValue>
+                        <MSFT:MaxValue></MSFT:MaxValue>
+                        <MSFT:MaxLength></MSFT:MaxLength>
+                        <Description></Description>
+                    </DFProperties>
+                </Node>
+                <Node>
+                    <NodeName>LocalAddr</NodeName>
+                    <DFProperties>
+                        <AccessType>
+                            <Add />
+                            <Get />
+                            <Replace />
+                        </AccessType>
+                        <DFFormat>
+                            <chr />
+                        </DFFormat>
+                        <Occurrence>
+                            <One />
+                        </Occurrence>
+                        <Scope>
+                            <Dynamic />
+                        </Scope>
+                        <MSFT:RWAccess>3</MSFT:RWAccess>
+                        <DFType>
+                            <MIME>text/plain</MIME>
+                        </DFType>
+                        <MSFT:MinValue></MSFT:MinValue>
+                        <MSFT:MaxValue></MSFT:MaxValue>
+                        <MSFT:MaxLength></MSFT:MaxLength>
+                        <Description></Description>
+                    </DFProperties>
+                </Node>
+                <Node>
+                    <NodeName>NetMask</NodeName>
+                    <DFProperties>
+                        <AccessType>
+                            <Add />
+                            <Get />
+                            <Replace />
+                        </AccessType>
+                        <DFFormat>
+                            <chr />
+                        </DFFormat>
+                        <Occurrence>
+                            <One />
+                        </Occurrence>
+                        <Scope>
+                            <Dynamic />
+                        </Scope>
+                        <MSFT:RWAccess>3</MSFT:RWAccess>
+                        <DFType>
+                            <MIME>text/plain</MIME>
+                        </DFType>
+                        <MSFT:MinValue></MSFT:MinValue>
+                        <MSFT:MaxValue></MSFT:MaxValue>
+                        <MSFT:MaxLength></MSFT:MaxLength>
+                        <Description></Description>
+                    </DFProperties>
+                </Node>
+                <Node>
+                    <NodeName>Gateway</NodeName>
+                    <DFProperties>
+                        <AccessType>
+                            <Add />
+                            <Get />
+                            <Delete />
+                            <Replace />
+                        </AccessType>
+                        <DFFormat>
+                            <chr />
+                        </DFFormat>
+                        <Occurrence>
+                            <ZeroOrOne />
+                        </Occurrence>
+                        <Scope>
+                            <Dynamic />
+                        </Scope>
+                        <MSFT:RWAccess>3</MSFT:RWAccess>
+                        <DFType>
+                            <MIME>text/plain</MIME>
+                        </DFType>
+                        <MSFT:MinValue></MSFT:MinValue>
+                        <MSFT:MaxValue></MSFT:MaxValue>
+                        <MSFT:MaxLength></MSFT:MaxLength>
+                        <Description></Description>
+                    </DFProperties>
+                </Node>
+                <Node>
+                    <NodeName>DNS</NodeName>
+                    <DFProperties>
+                        <AccessType>
+                            <Add />
+                            <Get />
+                            <Delete />
+                        </AccessType>
+                        <DFFormat>
+                            <node />
+                        </DFFormat>
+                        <Occurrence>
+                            <ZeroOrOne />
+                        </Occurrence>
+                        <Scope>
+                            <Dynamic />
+                        </Scope>
+                        <MSFT:RWAccess>3</MSFT:RWAccess>
+                        <MSFT:MinValue></MSFT:MinValue>
+                        <MSFT:MaxValue></MSFT:MaxValue>
+                        <MSFT:MaxLength></MSFT:MaxLength>
+                        <Description></Description>
+                    </DFProperties>
+                    <Node>
+                        <NodeName>*</NodeName>
+                        <DFProperties>
+                            <AccessType>
+                                <Add />
+                                <Get />
+                                <Delete />
+                            </AccessType>
+                            <DFFormat>
+                                <node />
+                            </DFFormat>
+                            <Occurrence>
+                                <OneOrMore />
+                            </Occurrence>
+                            <Scope>
+                                <Dynamic />
+                            </Scope>
+                            <MSFT:RWAccess>3</MSFT:RWAccess>
+                            <MSFT:MinValue></MSFT:MinValue>
+                            <MSFT:MaxValue></MSFT:MaxValue>
+                            <MSFT:MaxLength></MSFT:MaxLength>
+                            <Description></Description>
+                        </DFProperties>
+                        <Node>
+                            <NodeName>DNSAddr</NodeName>
+                            <DFProperties>
+                                <AccessType>
+                                    <Add />
+                                    <Get />
+                                    <Replace />
+                                </AccessType>
+                                <DFFormat>
+                                    <chr />
+                                </DFFormat>
+                                <Occurrence>
+                                    <One />
+                                </Occurrence>
+                                <Scope>
+                                    <Dynamic />
+                                </Scope>
+                                <MSFT:RWAccess>3</MSFT:RWAccess>
+                                <DFType>
+                                    <MIME>text/plain</MIME>
+                                </DFType>
+                                <MSFT:MinValue></MSFT:MinValue>
+                                <MSFT:MaxValue></MSFT:MaxValue>
+                                <MSFT:MaxLength></MSFT:MaxLength>
+                                <Description></Description>
+                            </DFProperties>
+                        </Node>
+                    </Node>
+                </Node>
+            </Node>
+            <Node>
+                <NodeName>IPv6</NodeName>
+                <DFProperties>
+                    <AccessType>
+                        <Add />
+                        <Get />
+                        <Delete />
+                    </AccessType>
+                    <DFFormat>
+                        <node />
+                    </DFFormat>
+                    <Occurrence>
+                        <ZeroOrOne />
+                    </Occurrence>
+                    <Scope>
+                        <Dynamic />
+                    </Scope>
+                    <MSFT:RWAccess>3</MSFT:RWAccess>
+                    <MSFT:MinValue></MSFT:MinValue>
+                    <MSFT:MaxValue></MSFT:MaxValue>
+                    <MSFT:MaxLength></MSFT:MaxLength>
+                    <Description></Description>
+                </DFProperties>
+                <Node>
+                    <NodeName>AutoConfig</NodeName>
+                    <DFProperties>
+                        <AccessType>
+                            <Add />
+                            <Get />
+                            <Delete />
+                            <Replace />
+                        </AccessType>
+                        <DFFormat>
+                            <bool />
+                        </DFFormat>
+                        <Occurrence>
+                            <ZeroOrOne />
+                        </Occurrence>
+                        <Scope>
+                            <Dynamic />
+                        </Scope>
+                        <MSFT:RWAccess>3</MSFT:RWAccess>
+                        <DFType>
+                            <MIME>text/plain</MIME>
+                        </DFType>
+                        <MSFT:MinValue></MSFT:MinValue>
+                        <MSFT:MaxValue></MSFT:MaxValue>
+                        <MSFT:MaxLength></MSFT:MaxLength>
+                        <Description></Description>
+                    </DFProperties>
+                </Node>
+                <Node>
+                    <NodeName>LocalAddr</NodeName>
+                    <DFProperties>
+                        <AccessType>
+                            <Add />
+                            <Get />
+                            <Replace />
+                        </AccessType>
+                        <DFFormat>
+                            <chr />
+                        </DFFormat>
+                        <Occurrence>
+                            <One />
+                        </Occurrence>
+                        <Scope>
+                            <Dynamic />
+                        </Scope>
+                        <MSFT:RWAccess>3</MSFT:RWAccess>
+                        <DFType>
+                            <MIME>text/plain</MIME>
+                        </DFType>
+                        <MSFT:MinValue></MSFT:MinValue>
+                        <MSFT:MaxValue></MSFT:MaxValue>
+                        <MSFT:MaxLength></MSFT:MaxLength>
+                        <Description></Description>
+                    </DFProperties>
+                </Node>
+            </Node>
+            <Node>
+                <NodeName>Linger</NodeName>
+                <DFProperties>
+                    <AccessType>
+                        <Add />
+                        <Get />
+                        <Delete />
+                        <Replace />
+                    </AccessType>
+                    <DFFormat>
+                        <int />
+                    </DFFormat>
+                    <Occurrence>
+                        <ZeroOrOne />
+                    </Occurrence>
+                    <Scope>
+                        <Dynamic />
+                    </Scope>
+                    <MSFT:RWAccess>3</MSFT:RWAccess>
+                    <DFType>
+                        <MIME>text/plain</MIME>
+                    </DFType>
+                    <MSFT:MinValue>0</MSFT:MinValue>
+                    <MSFT:MaxValue></MSFT:MaxValue>
+                    <MSFT:MaxLength></MSFT:MaxLength>
+                    <Description></Description>
+                </DFProperties>
+            </Node>
+            <Node>
+                <NodeName>AuthInfo</NodeName>
+                <DFProperties>
+                    <AccessType>
+                        <Add />
+                        <Get />
+                        <Delete />
+                    </AccessType>
+                    <DFFormat>
+                        <node />
+                    </DFFormat>
+                    <Occurrence>
+                        <ZeroOrOne />
+                    </Occurrence>
+                    <Scope>
+                        <Dynamic />
+                    </Scope>
+                    <MSFT:RWAccess>3</MSFT:RWAccess>
+                    <MSFT:MinValue></MSFT:MinValue>
+                    <MSFT:MaxValue></MSFT:MaxValue>
+                    <MSFT:MaxLength></MSFT:MaxLength>
+                    <Description></Description>
+                </DFProperties>
+                <Node>
+                    <NodeName>AuthType</NodeName>
+                    <DFProperties>
+                        <AccessType>
+                            <Add />
+                            <Get />
+                            <Replace />
+                        </AccessType>
+                        <DFFormat>
+                            <chr />
+                        </DFFormat>
+                        <Occurrence>
+                            <One />
+                        </Occurrence>
+                        <Scope>
+                            <Dynamic />
+                        </Scope>
+                        <MSFT:RWAccess>3</MSFT:RWAccess>
+                        <DFType>
+                            <MIME>text/plain</MIME>
+                        </DFType>
+                        <MSFT:MinValue></MSFT:MinValue>
+                        <MSFT:MaxValue></MSFT:MaxValue>
+                        <MSFT:MaxLength></MSFT:MaxLength>
+                        <Description>one of PAP,CHAP,HTTP-BASIC,HTTP-DIGEST,WTLS-SS,MD5</Description>
+                    </DFProperties>
+                </Node>
+                <Node>
+                    <NodeName>AuthName</NodeName>
+                    <DFProperties>
+                        <AccessType>
+                            <Add />
+                            <Get />
+                            <Delete />
+                            <Replace />
+                        </AccessType>
+                        <DFFormat>
+                            <chr />
+                        </DFFormat>
+                        <Occurrence>
+                            <ZeroOrOne />
+                        </Occurrence>
+                        <Scope>
+                            <Dynamic />
+                        </Scope>
+                        <MSFT:RWAccess>3</MSFT:RWAccess>
+                        <DFType>
+                            <MIME>text/plain</MIME>
+                        </DFType>
+                        <MSFT:MinValue></MSFT:MinValue>
+                        <MSFT:MaxValue></MSFT:MaxValue>
+                        <MSFT:MaxLength></MSFT:MaxLength>
+                        <Description></Description>
+                    </DFProperties>
+                </Node>
+                <Node>
+                    <NodeName>AuthSecret</NodeName>
+                    <DFProperties>
+                        <AccessType>
+                            <Add />
+                            <Get />
+                            <Delete />
+                            <Replace />
+                        </AccessType>
+                        <DFFormat>
+                            <chr />
+                        </DFFormat>
+                        <Occurrence>
+                            <ZeroOrOne />
+                        </Occurrence>
+                        <Scope>
+                            <Dynamic />
+                        </Scope>
+                        <MSFT:RWAccess>3</MSFT:RWAccess>
+                        <DFType>
+                            <MIME>text/password</MIME>
+                        </DFType>
+                        <MSFT:MinValue></MSFT:MinValue>
+                        <MSFT:MaxValue></MSFT:MaxValue>
+                        <MSFT:MaxLength></MSFT:MaxLength>
+                        <Description></Description>
+                    </DFProperties>
+                </Node>
+                <Node>
+                    <NodeName>AuthEntities</NodeName>
+                    <DFProperties>
+                        <AccessType>
+                            <Add />
+                            <Get />
+                            <Delete />
+                        </AccessType>
+                        <DFFormat>
+                            <node />
+                        </DFFormat>
+                        <Occurrence>
+                            <ZeroOrOne />
+                        </Occurrence>
+                        <Scope>
+                            <Dynamic />
+                        </Scope>
+                        <MSFT:RWAccess>3</MSFT:RWAccess>
+                        <MSFT:MinValue></MSFT:MinValue>
+                        <MSFT:MaxValue></MSFT:MaxValue>
+                        <MSFT:MaxLength></MSFT:MaxLength>
+                        <Description></Description>
+                    </DFProperties>
+                    <Node>
+                        <NodeName>*</NodeName>
+                        <DFProperties>
+                            <AccessType>
+                                <Add />
+                                <Get />
+                                <Delete />
+                            </AccessType>
+                            <DFFormat>
+                                <node />
+                            </DFFormat>
+                            <Occurrence>
+                                <OneOrMore />
+                            </Occurrence>
+                            <Scope>
+                                <Dynamic />
+                            </Scope>
+                            <MSFT:RWAccess>3</MSFT:RWAccess>
+                            <MSFT:MinValue></MSFT:MinValue>
+                            <MSFT:MaxValue></MSFT:MaxValue>
+                            <MSFT:MaxLength></MSFT:MaxLength>
+                            <Description></Description>
+                        </DFProperties>
+                        <Node>
+                            <NodeName>AuthEntity</NodeName>
+                            <DFProperties>
+                                <AccessType>
+                                    <Add />
+                                    <Get />
+                                    <Replace />
+                                </AccessType>
+                                <DFFormat>
+                                    <chr />
+                                </DFFormat>
+                                <Occurrence>
+                                    <One />
+                                </Occurrence>
+                                <Scope>
+                                    <Dynamic />
+                                </Scope>
+                                <MSFT:RWAccess>3</MSFT:RWAccess>
+                                <DFType>
+                                    <MIME>text/plain</MIME>
+                                </DFType>
+                                <MSFT:MinValue></MSFT:MinValue>
+                                <MSFT:MaxValue></MSFT:MaxValue>
+                                <MSFT:MaxLength></MSFT:MaxLength>
+                                <Description></Description>
+                            </DFProperties>
+                        </Node>
+                    </Node>
+                </Node>
+                <Node>
+                    <NodeName>SPI</NodeName>
+                    <DFProperties>
+                        <AccessType>
+                            <Add />
+                            <Get />
+                            <Delete />
+                            <Replace />
+                        </AccessType>
+                        <DFFormat>
+                            <bool />
+                        </DFFormat>
+                        <Occurrence>
+                            <ZeroOrOne />
+                        </Occurrence>
+                        <Scope>
+                            <Dynamic />
+                        </Scope>
+                        <MSFT:RWAccess>3</MSFT:RWAccess>
+                        <DFType>
+                            <MIME>text/plain</MIME>
+                        </DFType>
+                        <MSFT:MinValue></MSFT:MinValue>
+                        <MSFT:MaxValue></MSFT:MaxValue>
+                        <MSFT:MaxLength></MSFT:MaxLength>
+                        <Description></Description>
+                    </DFProperties>
+                </Node>
+            </Node>
+            <Node>
+                <NodeName>Bearer</NodeName>
+                <DFProperties>
+                    <AccessType>
+                        <Add />
+                        <Get />
+                    </AccessType>
+                    <DFFormat>
+                        <node />
+                    </DFFormat>
+                    <Occurrence>
+                        <One />
+                    </Occurrence>
+                    <Scope>
+                        <Dynamic />
+                    </Scope>
+                    <MSFT:RWAccess>3</MSFT:RWAccess>
+                    <MSFT:MinValue></MSFT:MinValue>
+                    <MSFT:MaxValue></MSFT:MaxValue>
+                    <MSFT:MaxLength></MSFT:MaxLength>
+                    <Description></Description>
+                </DFProperties>
+                <Node>
+                    <NodeName>BearerType</NodeName>
+                    <DFProperties>
+                        <AccessType>
+                            <Add />
+                            <Get />
+                            <Replace />
+                        </AccessType>
+                        <DFFormat>
+                            <chr />
+                        </DFFormat>
+                        <Occurrence>
+                            <One />
+                        </Occurrence>
+                        <Scope>
+                            <Dynamic />
+                        </Scope>
+                        <MSFT:RWAccess>3</MSFT:RWAccess>
+                        <DFType>
+                            <MIME>text/plain</MIME>
+                        </DFType>
+                        <MSFT:MinValue></MSFT:MinValue>
+                        <MSFT:MaxValue></MSFT:MaxValue>
+                        <MSFT:MaxLength></MSFT:MaxLength>
+                        <Description>one of GPRS,CDMA2000,WCDMA,TDMA,CSD,DTPT,WiFi</Description>
+                    </DFProperties>
+                </Node>
+            </Node>
+            <Node>
+                <NodeName>Ext</NodeName>
+                <DFProperties>
+                    <AccessType>
+                        <Get />
+                    </AccessType>
+                    <DFFormat>
+                        <node />
+                    </DFFormat>
+                    <Occurrence>
+                        <ZeroOrOne />
+                    </Occurrence>
+                    <Scope>
+                        <Dynamic />
+                    </Scope>
+                    <MSFT:RWAccess>1</MSFT:RWAccess>
+                    <MSFT:MinValue></MSFT:MinValue>
+                    <MSFT:MaxValue></MSFT:MaxValue>
+                    <MSFT:MaxLength></MSFT:MaxLength>
+                    <Description></Description>
+                </DFProperties>
+                <Node>
+                    <NodeName>Microsoft</NodeName>
+                    <DFProperties>
+                        <AccessType>
+                            <Get />
+                        </AccessType>
+                        <DFFormat>
+                            <node />
+                        </DFFormat>
+                        <Occurrence>
+                            <One />
+                        </Occurrence>
+                        <Scope>
+                            <Dynamic />
+                        </Scope>
+                        <MSFT:RWAccess>1</MSFT:RWAccess>
+                        <MSFT:MinValue></MSFT:MinValue>
+                        <MSFT:MaxValue></MSFT:MaxValue>
+                        <MSFT:MaxLength></MSFT:MaxLength>
+                        <Description></Description>
+                    </DFProperties>
+                    <Node>
+                        <NodeName>Guid</NodeName>
+                        <DFProperties>
+                            <AccessType>
+                                <Get />
+                            </AccessType>
+                            <DFFormat>
+                                <chr />
+                            </DFFormat>
+                            <Occurrence>
+                                <One />
+                            </Occurrence>
+                            <Scope>
+                                <Dynamic />
+                            </Scope>
+                            <MSFT:RWAccess>1</MSFT:RWAccess>
+                            <DFType>
+                                <MIME>text/plain</MIME>
+                            </DFType>
+                            <MSFT:MinValue></MSFT:MinValue>
+                            <MSFT:MaxValue></MSFT:MaxValue>
+                            <MSFT:MaxLength></MSFT:MaxLength>
+                            <Description></Description>
+                        </DFProperties>
+                    </Node>
+                    <Node>
+                        <NodeName>AlwaysOn</NodeName>
+                        <DFProperties>
+                            <AccessType>
+                                <Add />
+                                <Get />
+                                <Delete />
+                                <Replace />
+                            </AccessType>
+                            <DFFormat>
+                                <bool />
+                            </DFFormat>
+                            <Occurrence>
+                                <ZeroOrOne />
+                            </Occurrence>
+                            <Scope>
+                                <Dynamic />
+                            </Scope>
+                            <MSFT:RWAccess>3</MSFT:RWAccess>
+                            <DFType>
+                                <MIME>text/plain</MIME>
+                            </DFType>
+                            <MSFT:MinValue></MSFT:MinValue>
+                            <MSFT:MaxValue></MSFT:MaxValue>
+                            <MSFT:MaxLength></MSFT:MaxLength>
+                            <Description>Specifies whether the connection should be marked as ALWAYS-ON or not.</Description>
+                        </DFProperties>
+                    </Node>
+                    <Node>
+                        <NodeName>Secure</NodeName>
+                        <DFProperties>
+                            <AccessType>
+                                <Add />
+                                <Get />
+                                <Delete />
+                                <Replace />
+                            </AccessType>
+                            <DFFormat>
+                                <bool />
+                            </DFFormat>
+                            <Occurrence>
+                                <ZeroOrOne />
+                            </Occurrence>
+                            <Scope>
+                                <Dynamic />
+                            </Scope>
+                            <MSFT:RWAccess>3</MSFT:RWAccess>
+                            <DFType>
+                                <MIME>text/plain</MIME>
+                            </DFType>
+                            <MSFT:MinValue></MSFT:MinValue>
+                            <MSFT:MaxValue></MSFT:MaxValue>
+                            <MSFT:MaxLength></MSFT:MaxLength>
+                            <Description>Specifies whether the connection should be marked as SECURE or not.</Description>
+                        </DFProperties>
+                    </Node>
+                    <Node>
+                        <NodeName>SecureLevel</NodeName>
+                        <DFProperties>
+                            <AccessType>
+                                <Add />
+                                <Get />
+                                <Delete />
+                                <Replace />
+                            </AccessType>
+                            <DFFormat>
+                                <int />
+                            </DFFormat>
+                            <Occurrence>
+                                <ZeroOrOne />
+                            </Occurrence>
+                            <Scope>
+                                <Dynamic />
+                            </Scope>
+                            <MSFT:RWAccess>3</MSFT:RWAccess>
+                            <DFType>
+                                <MIME>text/plain</MIME>
+                            </DFType>
+                            <MSFT:MinValue></MSFT:MinValue>
+                            <MSFT:MaxValue></MSFT:MaxValue>
+                            <MSFT:MaxLength></MSFT:MaxLength>
+                            <Description>If the connection is marked as SECURE, this parameter specifies the absolute (secure level) order with respect to other connections. The secure level is consulted when a connection establishment is attempted.</Description>
+                        </DFProperties>
+                    </Node>
+                </Node>
+            </Node>
+        </Node>
+    </Node>
+</MgmtTree>

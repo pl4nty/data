@@ -21,7 +21,7 @@
             <Permanent />
           </Scope>
           <DFType>
-            <MIME>com.microsoft/1.4/MDM/PassportForWork</MIME>
+            <MIME>com.microsoft/1.5/MDM/PassportForWork</MIME>
           </DFType>
         </DFProperties>
         <Node>
@@ -963,6 +963,35 @@ Default value is false. If you enable this setting, a desktop device will allow 
                   </DFType>
                 </DFProperties>
               </Node>
+            </Node>
+            <Node>
+              <NodeName>UseHelloCertificatesAsSmartCardCertificates</NodeName>
+              <DFProperties>
+                <AccessType>
+                  <Get />
+                  <Add />
+                  <Delete />
+                  <Replace />
+                </AccessType>
+                <DefaultValue>False</DefaultValue>
+                <Description>If you enable this policy setting, applications use Windows Hello for Business certificates as smart card certificates. Biometric factors are unavailable when a user is asked to authorize the use of the certificate's private key. This policy setting is designed to allow compatibility with applications that rely exclusively on smart card certificates.
+
+If you disable or do not configure this policy setting, applications do not use Windows Hello for Business certificates as smart card certificates, and biometric factors are available when a user is asked to authorize the use of the certificate's private key.
+
+Windows requires a user to lock and unlock their session after changing this setting if the user is currently signed in.</Description>
+                <DFFormat>
+                  <bool />
+                </DFFormat>
+                <Occurrence>
+                  <ZeroOrOne />
+                </Occurrence>
+                <Scope>
+                  <Dynamic />
+                </Scope>
+                <DFType>
+                  <MIME>text/plain</MIME>
+                </DFType>
+              </DFProperties>
             </Node>
           </Node>
         </Node>

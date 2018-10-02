@@ -21,7 +21,7 @@
             <Permanent />
           </Scope>
           <DFType>
-            <MIME>com.microsoft/1.1/MDM/Defender</MIME>
+            <MIME>com.microsoft/1.2/MDM/Defender</MIME>
           </DFType>
         </DFProperties>
         <Node>
@@ -264,6 +264,26 @@
               <DDFName></DDFName>
             </DFType>
           </DFProperties>
+          <Node>
+            <NodeName>ProductStatus</NodeName>
+            <DFProperties>
+              <AccessType>
+                <Get />
+              </AccessType>
+              <DFFormat>
+                <int />
+              </DFFormat>
+              <Occurrence>
+                <One />
+              </Occurrence>
+              <Scope>
+                <Dynamic />
+              </Scope>
+              <DFType>
+                <MIME>text/plain</MIME>
+              </DFType>
+            </DFProperties>
+          </Node>
           <Node>
             <NodeName>ComputerState</NodeName>
             <DFProperties>

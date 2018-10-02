@@ -21,7 +21,7 @@
             <Permanent />
           </Scope>
           <DFType>
-            <MIME>com.microsoft/1.4/MDM/DeviceStatus</MIME>
+            <MIME>com.microsoft/1.5/MDM/DeviceStatus</MIME>
           </DFType>
         </DFProperties>
         <Node>

@@ -21,7 +21,7 @@
             <Permanent />
           </Scope>
           <DFType>
-            <MIME>com.microsoft/1.0/MDM/BitLocker</MIME>
+            <MIME>com.microsoft/3.0/MDM/BitLocker</MIME>
             <DDFName></DDFName>
           </DFType>
         </DFProperties>
@@ -613,10 +613,18 @@
               <Get />
               <Replace />
             </AccessType>
-            <Description>Allows the Admin to disable the warning prompt for other disk encryption on the user machines.
+            <Description>Allows Admin to disable all UI (notification for encryption and warning prompt for other disk encryption)
+                         and turn on encryption on the user machines silently.
+                         Warning: When you enable BitLocker on a device with third party encryption, it may render the device unusable and will
+                         require reinstallation of Windows.
+                         Note: This policy takes effect only if "RequireDeviceEncryption" policy is set to 1.
                          The format is integer.
-                         The expected values for this policy are: 0 / 1. 1 being the default, when the policy is not set.
-                         Admin should set the value to 0 to disable the warning.
+                         The expected values for this policy are: 
+
+                         1 = This is the default, when the policy is not set. Warning prompt and encryption notification is allowed.
+                         0 = Disables the warning prompt and encryption notification. Starting in Windows 10, next major update, 
+                             the value 0 only takes affect on Azure Active Directory joined devices. 
+                             Windows will attempt to silently enable BitLocker for value 0.
 
                          If you want to disable this policy use the following SyncML:
                          <Replace>
@@ -645,8 +653,61 @@
               <MIME>text/plain</MIME>
             </DFType>
             <MSFT:SupportedValues AllowedValues="0,1">
-              <MSFT:SupportedValue value="0" description="Disables the warning prompt for other disk encryption."/>
+              <MSFT:SupportedValue value="0" description="Disables the warning prompt. Starting in Windows 10, next major update, the value 0 only takes affect on Azure Active Directory joined devices. Windows will attempt to silently enable BitLocker for value 0."/>
               <MSFT:SupportedValue value="1" description="Default when policy is not set."/>
+            </MSFT:SupportedValues>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>AllowStandardUserEncryption</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>Allows Admin to enforce "RequireDeviceEncryption" policy for scenarios where policy is pushed while current logged on user is non-admin/standard user.
+                         "AllowStandardUserEncryption" policy is tied to "AllowWarningForOtherDiskEncryption" policy  being set to "0", i.e, Silent encryption is enforced.
+                         If "AllowWarningForOtherDiskEncryption" is not set, or is set to "1", "RequireDeviceEncryption" policy will not try to encrypt drive(s) if a standard user
+                         is the current logged on user in the system.
+
+                         The expected values for this policy are: 
+
+                         1 = "RequireDeviceEncryption" policy will try to enable encryption on all fixed drives even if a current logged in user is standard user.
+                         0 = This is the default, when the policy is not set. If current logged on user is a standard user, "RequireDeviceEncryption" policy
+                             will not try to enable encryption on any drive.
+
+                         If you want to disable this policy use the following SyncML:
+                         <Replace>
+                         <CmdID>111</CmdID>
+                           <Item>
+                             <Target>
+                                 <LocURI>./Device/Vendor/MSFT/BitLocker/AllowStandardUserEncryption</LocURI>
+                             </Target>
+                             <Meta>
+                                 <Format xmlns="syncml:metinf">int</Format>
+                             </Meta>
+                             <Data>0</Data>
+                           </Item>
+                         </Replace>
+            </Description>
+            <DFFormat>
+              <int />
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+            <MSFT:SupportedValues AllowedValues="0,1">
+              <MSFT:SupportedValue value="0" description="This is the default when the policy is not set. If current logged on user is a standard user, RequireDeviceEncryption policy
+                             will not try to enable encryption on any drive."/>
+              <MSFT:SupportedValue value="1" description="RequireDeviceEncryption policy will try to enable encryption on all fixed drives even if a current logged in user is standard user."/>
             </MSFT:SupportedValues>
           </DFProperties>
         </Node>

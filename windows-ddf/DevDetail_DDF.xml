@@ -21,7 +21,7 @@
         <Permanent />
       </Scope>
       <DFType>
-        <DDFName>urn:oma:mo:oma-dm-devdetail:1.1</DDFName>
+        <DDFName>urn:oma:mo:oma-dm-devdetail:1.2</DDFName>
       </DFType>
     </DFProperties>
     <Node>
@@ -492,6 +492,27 @@
             <Description>Total available memory in MB on the device (may be less than total physical memory).</Description>
             <DFFormat>
               <int />
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <MIME>text/plain</MIME>
+            </DFType>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>SMBIOSSerialNumber</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <Description>SMBIOS Serial Number of the device.</Description>
+            <DFFormat>
+              <chr />
             </DFFormat>
             <Occurrence>
               <One />
