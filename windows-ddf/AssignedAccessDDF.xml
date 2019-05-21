@@ -23,7 +23,7 @@
                 <Permanent />
             </Scope>
             <DFType>
-                <MIME>com.microsoft/3.0/MDM/AssignedAccess</MIME>
+                <MIME>com.microsoft/4.0/MDM/AssignedAccess</MIME>
             </DFType>
         </DFProperties>
         <Node>

@@ -21,7 +21,7 @@
             <Permanent />
           </Scope>
           <DFType>
-            <MIME>com.microsoft/1.5/MDM/PassportForWork</MIME>
+            <MIME>com.microsoft/1.6/MDM/PassportForWork</MIME>
           </DFType>
         </DFProperties>
         <Node>
@@ -1275,6 +1275,52 @@ Note that enhanced anti-spoofing for Windows Hello face authentication is not re
               <DFType>
                 <MIME>text/plain</MIME>
               </DFType>
+            </DFProperties>
+          </Node>
+        </Node>
+        <Node>
+          <NodeName>SecurityKey</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <Description>Security Key</Description>
+            <DFFormat>
+              <node />
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFType>
+              <DDFName></DDFName>
+            </DFType>
+          </DFProperties>
+          <Node>
+            <NodeName>UseSecurityKeyForSignin</NodeName>
+            <DFProperties>
+                <AccessType>
+                    <Get />
+                    <Add />
+                    <Delete />
+                    <Replace />
+                </AccessType>
+                <DefaultValue>0</DefaultValue>
+                <Description>Use security key for signin. 0 is disabled. 1 is enable. If you do not configure this policy setting, the default is disabled.</Description>
+                <DFFormat>
+                    <int />
+                </DFFormat>
+                <Occurrence>
+                    <ZeroOrOne />
+                </Occurrence>
+                <Scope>
+                    <Dynamic />
+                </Scope>
+                <DFType>
+                    <MIME>text/plain</MIME>
+                </DFType>
             </DFProperties>
           </Node>
         </Node>
