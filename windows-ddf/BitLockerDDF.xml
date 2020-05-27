@@ -21,7 +21,7 @@
             <Permanent />
           </Scope>
           <DFType>
-            <MIME>com.microsoft/4.0/MDM/BitLocker</MIME>
+            <MIME>com.microsoft/5.0/MDM/BitLocker</MIME>
             <DDFName></DDFName>
           </DFType>
         </DFProperties>
@@ -795,7 +795,7 @@ Supported Values: String form of request ID. Example format of request ID is GUI
                                  <LocURI>./Device/Vendor/MSFT/BitLocker/RotateRecoveryPasswords</LocURI>
                              </Target>
                              <Meta>
-                                 <Format xmlns="syncml:metinf">int</Format>
+                                 <Format xmlns="syncml:metinf">chr</Format>
                              </Meta>
                              <Data>&lt;RequestID/&gt;</Data>
                            </Item>

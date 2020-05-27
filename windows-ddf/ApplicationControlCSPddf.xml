@@ -119,9 +119,9 @@
                   <AccessType>
                     <Get />
                   </AccessType>
-                  <Description>Version of the Policy indicated by the GUID</Description>
+                  <Description>Version of the Policy indicated by the GUID, as a string. When parsing use a uint64 as the containing data type</Description>
                   <DFFormat>
-                    <int />
+                    <chr />
                   </DFFormat>
                   <Occurrence>
                     <One />
@@ -246,8 +246,209 @@
                 </DFProperties>
               </Node>
             </Node>
+            <Node>
+              <NodeName>Token</NodeName>
+              <DFProperties>
+                <AccessType>
+                  <Get />
+                </AccessType>
+                <Description>Token that authorizes the Policy indicated by the GUID</Description>
+                <DFFormat>
+                  <node />
+                </DFFormat>
+                <Occurrence>
+                  <One />
+                </Occurrence>
+                <Scope>
+                  <Dynamic />
+                </Scope>
+                <DFTitle>Token</DFTitle>
+                <DFType>
+                  <DDFName></DDFName>
+                </DFType>
+              </DFProperties>
+              <Node>
+                <NodeName></NodeName>
+                <DFProperties>
+                  <AccessType>
+                    <Get />
+                  </AccessType>
+                  <Description>The corresponding ID of the token in ./User/Vendor/MSFT/ApplicationControl/Tokens/</Description>
+                  <DFFormat>
+                    <chr />
+                  </DFFormat>
+                  <Occurrence>
+                    <OneOrMore />
+                  </Occurrence>
+                  <Scope>
+                    <Dynamic />
+                  </Scope>
+                  <DFTitle>TokenID</DFTitle>
+                  <DFType>
+                    <MIME>text/plain</MIME>
+                  </DFType>
+                </DFProperties>
+              </Node>
+            </Node>
           </Node>
         </Node>
+        <Node>
+          <NodeName>Tokens</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <Description>Beginning of a Subtree that contains all tokens</Description>
+            <DFFormat>
+              <node />
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Permanent />
+            </Scope>
+            <DFTitle>Tokens</DFTitle>
+            <DFType>
+              <DDFName></DDFName>
+            </DFType>
+          </DFProperties>
+          <Node>
+            <NodeName></NodeName>
+            <DFProperties>
+              <AccessType>
+                <Get />
+              </AccessType>
+              <Description>Arbitrary ID used to differentiate tokens</Description>
+              <DFFormat>
+                <node />
+              </DFFormat>
+              <Occurrence>
+                <ZeroOrMore />
+              </Occurrence>
+              <Scope>
+                <Dynamic />
+              </Scope>
+              <DFTitle>ID</DFTitle>
+              <DFType>
+                <DDFName></DDFName>
+              </DFType>
+            </DFProperties>
+            <Node>
+              <NodeName>Token</NodeName>
+              <DFProperties>
+                <AccessType>
+                  <Get />
+                  <Add />
+                  <Delete />
+                </AccessType>
+                <Description>The token binary format encoded as base64</Description>
+                <DFFormat>
+                  <b64 />
+                </DFFormat>
+                <Occurrence>
+                  <One />
+                </Occurrence>
+                <Scope>
+                  <Dynamic />
+                </Scope>
+                <DFTitle>Token</DFTitle>
+                <DFType>
+                  <DDFName></DDFName>
+                </DFType>
+              </DFProperties>
+            </Node>
+            <Node>
+              <NodeName>TokenInfo</NodeName>
+              <DFProperties>
+                <AccessType>
+                  <Get />
+                </AccessType>
+                <Description>Information Describing the Token indicated by the corresponding ID.</Description>
+                <DFFormat>
+                  <node />
+                </DFFormat>
+                <Occurrence>
+                  <One />
+                </Occurrence>
+                <Scope>
+                  <Dynamic />
+                </Scope>
+                <DFTitle>TokenInfo</DFTitle>
+                <DFType>
+                  <DDFName></DDFName>
+                </DFType>
+              </DFProperties>
+              <Node>
+                <NodeName>Status</NodeName>
+                <DFProperties>
+                  <AccessType>
+                    <Get />
+                  </AccessType>
+                  <Description>The Current Status of the Token Indicated by the Token ID</Description>
+                  <DFFormat>
+                    <int />
+                  </DFFormat>
+                  <Occurrence>
+                    <One />
+                  </Occurrence>
+                  <Scope>
+                    <Dynamic />
+                  </Scope>
+                  <DFTitle>Status</DFTitle>
+                  <DFType>
+                    <MIME>text/plain</MIME>
+                  </DFType>
+                </DFProperties>
+              </Node>
+            </Node>
+            <Node>
+              <NodeName>PolicyIDs</NodeName>
+              <DFProperties>
+                <AccessType>
+                  <Get />
+                </AccessType>
+                <Description>The PolicyIDs authorized by this token</Description>
+                <DFFormat>
+                  <node />
+                </DFFormat>
+                <Occurrence>
+                  <One />
+                </Occurrence>
+                <Scope>
+                  <Dynamic />
+                </Scope>
+                <DFTitle>PolicyIDs</DFTitle>
+                <DFType>
+                  <DDFName></DDFName>
+                </DFType>
+              </DFProperties>
+              <Node>
+                <NodeName></NodeName>
+                <DFProperties>
+                  <AccessType>
+                    <Get />
+                  </AccessType>
+                  <Description>A policy ID authorized by this token</Description>
+                  <DFFormat>
+                    <chr />
+                  </DFFormat>
+                  <Occurrence>
+                    <OneOrMore />
+                  </Occurrence>
+                  <Scope>
+                    <Dynamic />
+                  </Scope>
+                  <DFTitle>Policy GUID</DFTitle>
+                  <DFType>
+                    <MIME>text/plain</MIME>
+                  </DFType>
+                </DFProperties>
+              </Node>
+            </Node>
+          </Node>
+        </Node>
+        <Node>
           <NodeName>TenantID</NodeName>
           <DFProperties>
             <AccessType>

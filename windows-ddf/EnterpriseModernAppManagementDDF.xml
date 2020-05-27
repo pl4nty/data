@@ -369,6 +369,26 @@
                 </DFType>
               </DFProperties>
             </Node>
+            <Node>
+              <NodeName>IsStub</NodeName>
+              <DFProperties>
+                <AccessType>
+                  <Get />
+                </AccessType>
+                <DFFormat>
+                  <int />
+                </DFFormat>
+                <Occurrence>
+                  <One />
+                </Occurrence>
+                <Scope>
+                  <Dynamic />
+                </Scope>
+                <DFType>
+                  <MIME>text/plain</MIME>
+                </DFType>
+              </DFProperties>
+            </Node>
           </Node>
           <Node>
             <NodeName>DoNotUpdate</NodeName>
@@ -496,6 +516,7 @@
               <Get />
               <Add />
               <Delete />
+              <Replace />
             </AccessType>
             <DFFormat>
               <node />
@@ -517,6 +538,7 @@
                 <Get />
                 <Add />
                 <Delete />
+                <Replace />
               </AccessType>
               <DFFormat>
                 <node />
@@ -556,7 +578,7 @@
               </DFProperties>
             </Node>
             <Node>
-              <NodeName>ReleaseId</NodeName>
+              <NodeName>ReleaseManagementId</NodeName>
               <DFProperties>
                 <AccessType>
                   <Get />
@@ -618,7 +640,7 @@
                 </DFProperties>
               </Node>
               <Node>
-                <NodeName>ReleaseId</NodeName>
+                <NodeName>ReleaseManagementId</NodeName>
                 <DFProperties>
                   <AccessType>
                     <Get />

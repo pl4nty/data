@@ -806,6 +806,33 @@
                             </DFType>
                         </DFProperties>
                     </Node>
+                    <Node>
+                        <NodeName>Direction</NodeName>
+                        <DFProperties>
+                            <AccessType>
+                                <Get />
+                                <Add />
+                                <Delete />
+                                <Replace />
+                            </AccessType>
+                            <Description>
+                                Outbound - The traffic filter allows traffic to reach destinations matching this rule. This is the default.
+                                Inbound - The traffic filter allows traffic coming from external locations matching this rule.
+                            </Description>
+                            <DFFormat>
+                                <chr />
+                            </DFFormat>
+                            <Occurrence>
+                                <ZeroOrOne />
+                            </Occurrence>
+                            <Scope>
+                                <Dynamic />
+                            </Scope>
+                            <DFType>
+                                <MIME>text/plain</MIME>
+                            </DFType>
+                        </DFProperties>
+                    </Node>
                 </Node>
             </Node>
             <Node>
@@ -1601,6 +1628,76 @@
                         </DFType>
                     </DFProperties>
                 </Node>
+                <Node>
+                    <NodeName>WebAuth</NodeName>
+                    <DFProperties>
+                        <AccessType>
+                            <Add />
+                            <Get />
+                        </AccessType>
+                        <Description>Nodes under WebAuth can be used to enable WebToken based authentication for 3rd Party Plugin VPN Profiles.</Description>
+                        <DFFormat>
+                            <node />
+                        </DFFormat>
+                        <Occurrence>
+                            <ZeroOrOne />
+                        </Occurrence>
+                        <Scope>
+                            <Dynamic />
+                        </Scope>
+                        <DFType>
+                            <DDFName></DDFName>
+                        </DFType>
+                    </DFProperties>
+                    <Node>
+                        <NodeName>Enabled</NodeName>
+                        <DFProperties>
+                            <AccessType>
+                                <Add />
+                                <Delete />
+                                <Get />
+                                <Replace />
+                            </AccessType>
+                            <Description>Enables the WebToken based authentication flow.</Description>
+                            <DFFormat>
+                                <bool />
+                            </DFFormat>
+                            <Occurrence>
+                                <One />
+                            </Occurrence>
+                            <Scope>
+                                <Dynamic />
+                            </Scope>
+                            <DFType>
+                                <MIME>text/plain</MIME>
+                            </DFType>
+                        </DFProperties>
+                    </Node>
+                    <Node>
+                        <NodeName>ClientId</NodeName>
+                        <DFProperties>
+                            <AccessType>
+                                <Add />
+                                <Delete />
+                                <Get />
+                                <Replace />
+                            </AccessType>
+                            <Description>The client ID to specify when communicating with the Web Account provider in retrieving the token.</Description>
+                            <DFFormat>
+                                <chr />
+                            </DFFormat>
+                            <Occurrence>
+                                <One />
+                            </Occurrence>
+                            <Scope>
+                                <Dynamic />
+                            </Scope>
+                            <DFType>
+                                <MIME>text/plain</MIME>
+                            </DFType>
+                        </DFProperties>
+                    </Node>
+                </Node>
             </Node>
             <Node>
                 <NodeName>NativeProfile</NodeName>
@@ -2201,6 +2298,33 @@
                   </DFType>
                 </DFProperties>
               </Node>
+              <Node>
+                <NodeName>PlumbIKEv2TSAsRoutes</NodeName>
+                <DFProperties>
+                    <AccessType>
+                        <Add />
+                        <Delete />
+                        <Get />
+                        <Replace />
+                    </AccessType>
+                    <Description>
+                        True: Plumb traffic selectors as routes onto VPN interface
+                        False: Do not plumb traffic selectors as routes
+                    </Description>
+                    <DFFormat>
+                        <bool />
+                    </DFFormat>
+                    <Occurrence>
+                        <ZeroOrOne />
+                    </Occurrence>
+                    <Scope>
+                        <Dynamic />
+                    </Scope>
+                    <DFType>
+                        <MIME>text/plain</MIME>
+                    </DFType>
+                </DFProperties>
+            </Node>
             </Node>
         </Node>
     </Node>
@@ -3694,6 +3818,76 @@
                         </DFType>
                     </DFProperties>
                 </Node>
+                <Node>
+                    <NodeName>WebAuth</NodeName>
+                    <DFProperties>
+                        <AccessType>
+                            <Add />
+                            <Get />
+                        </AccessType>
+                        <Description>Nodes under WebAuth can be used to enable WebToken based authentication for 3rd Party Plugin VPN Profiles.</Description>
+                        <DFFormat>
+                            <node />
+                        </DFFormat>
+                        <Occurrence>
+                            <ZeroOrOne />
+                        </Occurrence>
+                        <Scope>
+                            <Dynamic />
+                        </Scope>
+                        <DFType>
+                            <DDFName></DDFName>
+                        </DFType>
+                    </DFProperties>
+                    <Node>
+                        <NodeName>Enabled</NodeName>
+                        <DFProperties>
+                            <AccessType>
+                                <Add />
+                                <Delete />
+                                <Get />
+                                <Replace />
+                            </AccessType>
+                            <Description>Enables the WebToken based authentication flow.</Description>
+                            <DFFormat>
+                                <bool />
+                            </DFFormat>
+                            <Occurrence>
+                                <One />
+                            </Occurrence>
+                            <Scope>
+                                <Dynamic />
+                            </Scope>
+                            <DFType>
+                                <MIME>text/plain</MIME>
+                            </DFType>
+                        </DFProperties>
+                    </Node>
+                    <Node>
+                        <NodeName>ClientId</NodeName>
+                        <DFProperties>
+                            <AccessType>
+                                <Add />
+                                <Delete />
+                                <Get />
+                                <Replace />
+                            </AccessType>
+                            <Description>The client ID to specify when communicating with the Web Account provider in retrieving the token.</Description>
+                            <DFFormat>
+                                <chr />
+                            </DFFormat>
+                            <Occurrence>
+                                <One />
+                            </Occurrence>
+                            <Scope>
+                                <Dynamic />
+                            </Scope>
+                            <DFType>
+                                <MIME>text/plain</MIME>
+                            </DFType>
+                        </DFProperties>
+                    </Node>
+                </Node>
             </Node>
             <Node>
                 <NodeName>NativeProfile</NodeName>
@@ -4294,6 +4488,33 @@
                   </DFType>
                 </DFProperties>
               </Node>
+              <Node>
+                <NodeName>PlumbIKEv2TSAsRoutes</NodeName>
+                <DFProperties>
+                    <AccessType>
+                        <Add />
+                        <Delete />
+                        <Get />
+                        <Replace />
+                    </AccessType>
+                    <Description>
+                        True: Plumb traffic selectors as routes onto VPN interface
+                        False: Do not plumb traffic selectors as routes
+                    </Description>
+                    <DFFormat>
+                        <bool />
+                    </DFFormat>
+                    <Occurrence>
+                        <ZeroOrOne />
+                    </Occurrence>
+                    <Scope>
+                        <Dynamic />
+                    </Scope>
+                    <DFType>
+                        <MIME>text/plain</MIME>
+                    </DFType>
+                </DFProperties>
+            </Node>
             </Node>
         </Node>
     </Node>
