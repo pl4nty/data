@@ -19165,7 +19165,7 @@ Related policy:
             <MSFT:ADMXMapped>ControlPanel.admx</MSFT:ADMXMapped>
             <MSFT:ADMXMappedElement>SettingsPageVisibilityBox</MSFT:ADMXMappedElement>
             <MSFT:ADMXCategory>ControlPanel~AT~ControlPanel</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>SettingsPageVisibilityForBoth</MSFT:ADMXPolicyName>
+            <MSFT:ADMXPolicyName>SettingsPageVisibility</MSFT:ADMXPolicyName>
             <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -46236,34 +46236,6 @@ The following list shows the supported values:
 0 (default) – The new Microsoft Japanese IME is on by default. Allow to control Microsoft Japanese IME version to use.
 1 - The previous version of Microsoft Japanese IME is always selected.  Not allowed to control Microsoft Japanese IME version to use.
 2 - The new Microsoft Japanese IME is always selected.  Not allowed to control Microsoft Japanese IME version to use.</Description>
-            <DFFormat>
-              <int/>
-            </DFFormat>
-            <Occurrence>
-              <ZeroOrOne />
-            </Occurrence>
-            <Scope>
-              <Dynamic />
-            </Scope>
-            <DFType>
-              <MIME>text/plain</MIME>
-            </DFType>
-          </DFProperties>
-        </Node>
-        <Node>
-          <NodeName>ConfigureKoreanIMEVersion</NodeName>
-          <DFProperties>
-            <AccessType>
-              <Add />
-              <Delete />
-              <Get />
-              <Replace />
-            </AccessType>
-            <Description>This policy allows the IT admin to configure the Microsoft Korean IME version in the desktop.
-The following list shows the supported values:
-0 (default) – The new Microsoft Korean IME is on by default. Allow to control Microsoft Korean IME version to use.
-1 - The previous version of Microsoft Korean IME is always selected.  Not allowed to control Microsoft Korean IME version to use.
-2 - The new Microsoft Korean IME is always selected.  Not allowed to control Microsoft Korean IME version to use.</Description>
             <DFFormat>
               <int/>
             </DFFormat>
@@ -77087,7 +77059,7 @@ Caution: If a Restricted Groups policy is applied, any current member not on the
             <MSFT:ADMXMapped>ControlPanel.admx</MSFT:ADMXMapped>
             <MSFT:ADMXMappedElement>SettingsPageVisibilityBox</MSFT:ADMXMappedElement>
             <MSFT:ADMXCategory>ControlPanel~AT~ControlPanel</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>SettingsPageVisibilityForBoth</MSFT:ADMXPolicyName>
+            <MSFT:ADMXPolicyName>SettingsPageVisibility</MSFT:ADMXPolicyName>
             <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
           </DFProperties>
         </Node>
@@ -79532,37 +79504,6 @@ The following list shows the supported values:
           </DFProperties>
         </Node>
         <Node>
-          <NodeName>ConfigureKoreanIMEVersion</NodeName>
-          <DFProperties>
-            <AccessType>
-              <Get />
-            </AccessType>
-            <DefaultValue>0</DefaultValue>
-            <Description>This policy allows the IT admin to configure the Microsoft Korean IME version in the desktop.
-The following list shows the supported values:
-0 (default) – The new Microsoft Korean IME is on by default. Allow to control Microsoft Korean IME version to use.
-1 - The previous version of Microsoft Korean IME is always selected.  Not allowed to control Microsoft Korean IME version to use.
-2 - The new Microsoft Korean IME is always selected.  Not allowed to control Microsoft Korean IME version to use.</Description>
-            <DFFormat>
-              <int/>
-            </DFFormat>
-            <Occurrence>
-              <One />
-            </Occurrence>
-            <Scope>
-              <Permanent />
-            </Scope>
-            <DFType>
-              <MIME>text/plain</MIME>
-            </DFType>
-            <MSFT:SupportedValues low="0" high="2"></MSFT:SupportedValues>
-            <MSFT:ADMXMapped>EAIME.admx</MSFT:ADMXMapped>
-            <MSFT:ADMXCategory>EAIME~AT~WindowsComponents~L_IME</MSFT:ADMXCategory>
-            <MSFT:ADMXPolicyName>L_ConfigureKoreanImeVersion</MSFT:ADMXPolicyName>
-            <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
-          </DFProperties>
-        </Node>
-        <Node>
           <NodeName>ConfigureSimplifiedChineseIMEVersion</NodeName>
           <DFProperties>
             <AccessType>
@@ -80164,7 +80105,7 @@ Enabling this policy allows you to configure how recommended troubleshooting is 
             <DFType>
               <MIME>text/plain</MIME>
             </DFType>
-            <MSFT:SupportedValues low="0" high="7"></MSFT:SupportedValues>
+            <MSFT:SupportedValues low="0" high="6"></MSFT:SupportedValues>
             <MSFT:ADMXMapped>WindowsUpdate.admx</MSFT:ADMXMapped>
             <MSFT:ADMXMappedElement>AutoUpdateMode</MSFT:ADMXMappedElement>
             <MSFT:ADMXCategory>WindowsUpdate~AT~WindowsComponents~WindowsUpdateCat</MSFT:ADMXCategory>
