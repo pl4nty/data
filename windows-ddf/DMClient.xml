@@ -1,9 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE MgmtTree PUBLIC " -//OMA//DTD-DM-DDF 1.2//EN"
   "http://www.openmobilealliance.org/tech/DTD/DM_DDF-V1_2.dtd"
   [<?oma-dm-ddf-ver supported-versions="1.2"?>]>
 <MgmtTree xmlns:MSFT="http://schemas.microsoft.com/MobileDevice/DM">
   <VerDTD>1.2</VerDTD>
+  <MSFT:Diagnostics></MSFT:Diagnostics>
   <Node>
     <NodeName>DMClient</NodeName>
     <Path>./User/Vendor/MSFT</Path>
@@ -11,6 +12,7 @@
       <AccessType>
         <Get />
       </AccessType>
+      <Description>Root node for the CSP.</Description>
       <DFFormat>
         <node />
       </DFFormat>
@@ -21,8 +23,13 @@
         <Permanent />
       </Scope>
       <DFType>
-        <MIME>com.microsoft/1.5/MDM/DMClient</MIME>
+        <MIME />
       </DFType>
+      <MSFT:Applicability>
+        <MSFT:OsBuildVersion>10.0.10240</MSFT:OsBuildVersion>
+        <MSFT:CspVersion>1.0</MSFT:CspVersion>
+        <MSFT:EditionAllowList>0x4;0x1B;0x30;0x31;0x48;0x54;0x62;0x63;0x64;0x65;0x77;0x79;0x7A;0x7D;0x7E;0x81;0x82;0x87;0x88;0x88*;0x8A;0x8B;0xA1;0xA2;0xA4;0xA5;0xAB;0xAC;0xAF;0xB4;0xBC;0xBF;0xCA;0xCB;0xCD;</MSFT:EditionAllowList>
+      </MSFT:Applicability>
     </DFProperties>
     <Node>
       <NodeName>Provider</NodeName>
@@ -30,6 +37,7 @@
         <AccessType>
           <Get />
         </AccessType>
+        <Description>The root node for all settings that belong to a single management server.</Description>
         <DFFormat>
           <node />
         </DFFormat>
@@ -40,7 +48,7 @@
           <Permanent />
         </Scope>
         <DFType>
-          <DDFName></DDFName>
+          <DDFName />
         </DFType>
       </DFProperties>
       <Node>
@@ -51,6 +59,7 @@
             <Delete />
             <Get />
           </AccessType>
+          <Description>This node contains the URI-encoded value of the bootstrapped device management account’s Provider ID. Scope is dynamic. This value is set and controlled by the MDM server. As a best practice, use text that doesn’t require XML/URI escaping.</Description>
           <DFFormat>
             <node />
           </DFFormat>
@@ -60,9 +69,14 @@
           <Scope>
             <Dynamic />
           </Scope>
+          <DFTitle>ProviderID</DFTitle>
           <DFType>
-            <MIME>text/plain</MIME>
+            <MIME />
           </DFType>
+          <MSFT:DynamicNodeNaming>
+            <MSFT:ServerGeneratedUniqueIdentifier />
+          </MSFT:DynamicNodeNaming>
+          <MSFT:AllowedValues ValueType="None"></MSFT:AllowedValues>
         </DFProperties>
         <Node>
           <NodeName>FirstSyncStatus</NodeName>
@@ -82,8 +96,12 @@
               <Dynamic />
             </Scope>
             <DFType>
-              <DDFName></DDFName>
+              <DDFName />
             </DFType>
+            <MSFT:Applicability>
+              <MSFT:OsBuildVersion>10.0.16299</MSFT:OsBuildVersion>
+              <MSFT:CspVersion>1.4</MSFT:CspVersion>
+            </MSFT:Applicability>
           </DFProperties>
           <Node>
             <NodeName>ExpectedPolicies</NodeName>
@@ -105,8 +123,11 @@
                 <Dynamic />
               </Scope>
               <DFType>
-                <MIME>text/plain</MIME>
+                <MIME />
               </DFType>
+              <MSFT:AllowedValues ValueType="None">
+                <MSFT:List Delimiter="\xF000" />
+              </MSFT:AllowedValues>
             </DFProperties>
           </Node>
           <Node>
@@ -129,8 +150,11 @@
                 <Dynamic />
               </Scope>
               <DFType>
-                <MIME>text/plain</MIME>
+                <MIME />
               </DFType>
+              <MSFT:AllowedValues ValueType="None">
+                <MSFT:List Delimiter="\xF000" />
+              </MSFT:AllowedValues>
             </DFProperties>
           </Node>
           <Node>
@@ -153,8 +177,11 @@
                 <Dynamic />
               </Scope>
               <DFType>
-                <MIME>text/plain</MIME>
+                <MIME />
               </DFType>
+              <MSFT:AllowedValues ValueType="None">
+                <MSFT:List Delimiter="\xF000" />
+              </MSFT:AllowedValues>
             </DFProperties>
           </Node>
           <Node>
@@ -177,8 +204,11 @@
                 <Dynamic />
               </Scope>
               <DFType>
-                <MIME>text/plain</MIME>
+                <MIME />
               </DFType>
+              <MSFT:AllowedValues ValueType="None">
+                <MSFT:List Delimiter="\xF000" />
+              </MSFT:AllowedValues>
             </DFProperties>
           </Node>
           <Node>
@@ -201,8 +231,11 @@
                 <Dynamic />
               </Scope>
               <DFType>
-                <MIME>text/plain</MIME>
+                <MIME />
               </DFType>
+              <MSFT:AllowedValues ValueType="None">
+                <MSFT:List Delimiter="\xF000" />
+              </MSFT:AllowedValues>
             </DFProperties>
           </Node>
           <Node>
@@ -225,8 +258,11 @@
                 <Dynamic />
               </Scope>
               <DFType>
-                <MIME>text/plain</MIME>
+                <MIME />
               </DFType>
+              <MSFT:AllowedValues ValueType="None">
+                <MSFT:List Delimiter="\xF000" />
+              </MSFT:AllowedValues>
             </DFProperties>
           </Node>
           <Node>
@@ -247,8 +283,18 @@
                 <Permanent />
               </Scope>
               <DFType>
-                <MIME>text/plain</MIME>
+                <MIME />
               </DFType>
+              <MSFT:AllowedValues ValueType="ENUM">
+                <MSFT:Enum>
+                  <MSFT:Value>false</MSFT:Value>
+                  <MSFT:ValueDescription>Server has not finished provisioning</MSFT:ValueDescription>
+                </MSFT:Enum>
+                <MSFT:Enum>
+                  <MSFT:Value>true</MSFT:Value>
+                  <MSFT:ValueDescription>Server has finished provisioning</MSFT:ValueDescription>
+                </MSFT:Enum>
+              </MSFT:AllowedValues>
             </DFProperties>
           </Node>
           <Node>
@@ -269,8 +315,18 @@
                 <Permanent />
               </Scope>
               <DFType>
-                <MIME>text/plain</MIME>
+                <MIME />
               </DFType>
+              <MSFT:AllowedValues ValueType="ENUM">
+                <MSFT:Enum>
+                  <MSFT:Value>false</MSFT:Value>
+                  <MSFT:ValueDescription>The user is not finished provisioning</MSFT:ValueDescription>
+                </MSFT:Enum>
+                <MSFT:Enum>
+                  <MSFT:Value>true</MSFT:Value>
+                  <MSFT:ValueDescription>The user has finished provisoining.</MSFT:ValueDescription>
+                </MSFT:Enum>
+              </MSFT:AllowedValues>
             </DFProperties>
           </Node>
           <Node>
@@ -291,8 +347,22 @@
                 <Permanent />
               </Scope>
               <DFType>
-                <MIME>text/plain</MIME>
+                <MIME />
               </DFType>
+              <MSFT:AllowedValues ValueType="ENUM">
+                <MSFT:Enum>
+                  <MSFT:Value>0</MSFT:Value>
+                  <MSFT:ValueDescription>The device has failed to provision the user</MSFT:ValueDescription>
+                </MSFT:Enum>
+                <MSFT:Enum>
+                  <MSFT:Value>1</MSFT:Value>
+                  <MSFT:ValueDescription>The device has successfully provisioned the user.</MSFT:ValueDescription>
+                </MSFT:Enum>
+                <MSFT:Enum>
+                  <MSFT:Value>2</MSFT:Value>
+                  <MSFT:ValueDescription>Provisoining is in progress.</MSFT:ValueDescription>
+                </MSFT:Enum>
+              </MSFT:AllowedValues>
             </DFProperties>
           </Node>
           <Node>
@@ -313,12 +383,26 @@
               <Scope>
                 <Permanent />
               </Scope>
+              <DFType>
+                <MIME />
+              </DFType>
               <CaseSense>
                 <CIS />
               </CaseSense>
-              <DFType>
-                <MIME>text/plain</MIME>
-              </DFType>
+              <MSFT:Applicability>
+                <MSFT:OsBuildVersion>10.0.17134</MSFT:OsBuildVersion>
+                <MSFT:CspVersion>1.5</MSFT:CspVersion>
+              </MSFT:Applicability>
+              <MSFT:AllowedValues ValueType="ENUM">
+                <MSFT:Enum>
+                  <MSFT:Value>false</MSFT:Value>
+                  <MSFT:ValueDescription>Do not show the Collect Logs button on the progress page.</MSFT:ValueDescription>
+                </MSFT:Enum>
+                <MSFT:Enum>
+                  <MSFT:Value>true</MSFT:Value>
+                  <MSFT:ValueDescription>Show the Collect Logs button on the progress page.</MSFT:ValueDescription>
+                </MSFT:Enum>
+              </MSFT:AllowedValues>
             </DFProperties>
           </Node>
           <Node>
@@ -326,8 +410,6 @@
             <DFProperties>
               <AccessType>
                 <Get />
-                <Add />
-                <Delete />
                 <Replace />
               </AccessType>
               <Description>This node allows the MDM to set custom error text, detailing what the user needs to do in case of error.  This node only applies to the user MDM status page (on a per user basis).</Description>
@@ -340,12 +422,17 @@
               <Scope>
                 <Permanent />
               </Scope>
+              <DFType>
+                <MIME />
+              </DFType>
               <CaseSense>
                 <CIS />
               </CaseSense>
-              <DFType>
-                <MIME>text/plain</MIME>
-              </DFType>
+              <MSFT:Applicability>
+                <MSFT:OsBuildVersion>10.0.17134</MSFT:OsBuildVersion>
+                <MSFT:CspVersion>1.5</MSFT:CspVersion>
+              </MSFT:Applicability>
+              <MSFT:AllowedValues ValueType="None"></MSFT:AllowedValues>
             </DFProperties>
           </Node>
         </Node>
@@ -359,6 +446,7 @@
       <AccessType>
         <Get />
       </AccessType>
+      <Description>Root node for the CSP.</Description>
       <DFFormat>
         <node />
       </DFFormat>
@@ -369,8 +457,13 @@
         <Permanent />
       </Scope>
       <DFType>
-        <MIME>com.microsoft/1.4/MDM/DMClient</MIME>
+        <MIME />
       </DFType>
+      <MSFT:Applicability>
+        <MSFT:OsBuildVersion>10.0.10240</MSFT:OsBuildVersion>
+        <MSFT:CspVersion>1.0</MSFT:CspVersion>
+        <MSFT:EditionAllowList>0x4;0x1B;0x30;0x31;0x48;0x54;0x62;0x63;0x64;0x65;0x77;0x79;0x7A;0x7D;0x7E;0x81;0x82;0x87;0x88;0x88*;0x8A;0x8B;0xA1;0xA2;0xA4;0xA5;0xAB;0xAC;0xAF;0xB4;0xBC;0xBF;0xCA;0xCB;0xCD;</MSFT:EditionAllowList>
+      </MSFT:Applicability>
     </DFProperties>
     <Node>
       <NodeName>Provider</NodeName>
@@ -378,6 +471,7 @@
         <AccessType>
           <Get />
         </AccessType>
+        <Description>The root node for all settings that belong to a single management server.</Description>
         <DFFormat>
           <node />
         </DFFormat>
@@ -388,7 +482,7 @@
           <Permanent />
         </Scope>
         <DFType>
-          <DDFName></DDFName>
+          <DDFName />
         </DFType>
       </DFProperties>
       <Node>
@@ -399,6 +493,7 @@
             <Delete />
             <Get />
           </AccessType>
+          <Description>This node contains the URI-encoded value of the bootstrapped device management account’s Provider ID. Scope is dynamic. This value is set and controlled by the MDM server. As a best practice, use text that doesn’t require XML/URI escaping.</Description>
           <DFFormat>
             <node />
           </DFFormat>
@@ -408,9 +503,14 @@
           <Scope>
             <Dynamic />
           </Scope>
+          <DFTitle>ProviderID</DFTitle>
           <DFType>
-            <MIME>text/plain</MIME>
+            <MIME />
           </DFType>
+          <MSFT:DynamicNodeNaming>
+            <MSFT:ServerGeneratedUniqueIdentifier />
+          </MSFT:DynamicNodeNaming>
+          <MSFT:AllowedValues ValueType="None"></MSFT:AllowedValues>
         </DFProperties>
         <Node>
           <NodeName>EntDeviceName</NodeName>
@@ -421,6 +521,7 @@
               <Get />
               <Replace />
             </AccessType>
+            <Description>Character string that contains the user-friendly device name used by the IT admin console. The value is set during the enrollment process by way of the DMClient CSP. You can retrieve it later during an OMA DM session.</Description>
             <DFFormat>
               <chr />
             </DFFormat>
@@ -431,8 +532,9 @@
               <Dynamic />
             </Scope>
             <DFType>
-              <MIME>text/plain</MIME>
+              <MIME />
             </DFType>
+            <MSFT:AllowedValues ValueType="None"></MSFT:AllowedValues>
           </DFProperties>
         </Node>
         <Node>
@@ -444,6 +546,7 @@
               <Get />
               <Replace />
             </AccessType>
+            <Description>Character string that contains the unique Exchange device ID used by the Outlook account of the user the session is running against. This is useful for the enterprise management server to correlate and merge records for a device that is managed by exchange and natively managed by a dedicated management server.</Description>
             <DFFormat>
               <chr />
             </DFFormat>
@@ -454,8 +557,9 @@
               <Dynamic />
             </Scope>
             <DFType>
-              <MIME>text/plain</MIME>
+              <MIME />
             </DFType>
+            <MSFT:AllowedValues ValueType="None"></MSFT:AllowedValues>
           </DFProperties>
         </Node>
         <Node>
@@ -467,6 +571,7 @@
               <Get />
               <Replace />
             </AccessType>
+            <Description>Character string that contains the unique enterprise device ID. The value is set by the management server during the enrollment process by way of the DMClient CSP. You can retrieve it later during an OMA DM session.</Description>
             <DFFormat>
               <chr />
             </DFFormat>
@@ -477,8 +582,9 @@
               <Dynamic />
             </Scope>
             <DFType>
-              <MIME>text/plain</MIME>
+              <MIME />
             </DFType>
+            <MSFT:AllowedValues ValueType="None"></MSFT:AllowedValues>
           </DFProperties>
         </Node>
         <Node>
@@ -490,6 +596,7 @@
               <Get />
               <Replace />
             </AccessType>
+            <Description>Character string that contains the device ID. This node and the nodes CertRenewTimeStamp can be used by the MDM server to verify client identity in order to update the registration record after the device certificate is renewed. The device signs the EntDMID with the old client certificate during the certificate renewal process and saves the signature locally.</Description>
             <DFFormat>
               <chr />
             </DFFormat>
@@ -500,8 +607,9 @@
               <Dynamic />
             </Scope>
             <DFType>
-              <MIME>text/plain</MIME>
+              <MIME />
             </DFType>
+            <MSFT:AllowedValues ValueType="None"></MSFT:AllowedValues>
           </DFProperties>
         </Node>
         <Node>
@@ -513,6 +621,7 @@
               <Get />
               <Replace />
             </AccessType>
+            <Description>The time in OMA DM standard time format. This node is designed to reduce the risk of the certificate being used by another device. The device records the time that the new certificate was created.</Description>
             <DFFormat>
               <chr />
             </DFFormat>
@@ -523,12 +632,12 @@
               <Dynamic />
             </Scope>
             <DFType>
-              <MIME>text/plain</MIME>
+              <MIME />
             </DFType>
+            <MSFT:AllowedValues ValueType="None"></MSFT:AllowedValues>
           </DFProperties>
         </Node>
         <Node>
-          <!-- DEPRECATED : FROM PHONE 8.1 -->
           <NodeName>PublisherDeviceID</NodeName>
           <DFProperties>
             <AccessType>
@@ -537,6 +646,7 @@
               <Get />
               <Replace />
             </AccessType>
+            <Description><![CDATA[The PublisherDeviceID is a device-unique ID created based on the enterprise Publisher ID. Publisher ID is created based on the enterprise application token and enterprise ID via ./Vendor/MSFT/EnterpriseAppManagement/<enterprise id>/EnrollmentToken. It is to ensure that for one enterprise, each device has a unique ID associated with it. For the same device, if it has multiple enterprises’ applications, each enterprise is identified differently.]]></Description>
             <DFFormat>
               <chr />
             </DFFormat>
@@ -547,10 +657,10 @@
               <Dynamic />
             </Scope>
             <DFType>
-              <MIME>text/plain</MIME>
+              <MIME />
             </DFType>
+            <MSFT:AllowedValues ValueType="None"></MSFT:AllowedValues>
           </DFProperties>
-          <!-- DEPRECATED : FROM PHONE 8.1 -->
         </Node>
         <Node>
           <NodeName>ManagementServiceAddress</NodeName>
@@ -559,6 +669,7 @@
               <Get />
               <Replace />
             </AccessType>
+            <Description><![CDATA[The character string that contains the device management server address. It can be updated during an OMA DM session by the management server to allow the server to load balance to another server in situations where too many devices are connected to the server. The DMClient CSP will save the address to the same location as the w7 and DMS CSPs to ensure the management client has a single place to retrieve the current server address. The initial value for this node is the same server address value as bootstrapped via the w7 APPLICATION configuration service provider. Starting in Windows 10, version 1511, this node supports multiple server addresses in the format <URL1><URL2><URL3>. If there is only a single URL, then the <> are not required. This is supported for both desktop and mobile devices. During a DM session, the device will use the first address on the list and then keep going down the list until a successful connection is achieved. The DM client should cache the successfully connected server URL for the next session.]]></Description>
             <DFFormat>
               <chr />
             </DFFormat>
@@ -569,8 +680,17 @@
               <Dynamic />
             </Scope>
             <DFType>
-              <MIME>text/plain</MIME>
+              <MIME />
             </DFType>
+            <MSFT:AllowedValues ValueType="None"></MSFT:AllowedValues>
+            <MSFT:DependencyBehavior>
+              <MSFT:DependencyGroup FriendlyId="ManageServerAddressListBlock">
+                <MSFT:Dependency Type="Not">
+                  <MSFT:DependencyUri>Device/Vendor/MSFT/DMClient/Provider/[ProviderID]/ManagementServerAddressList</MSFT:DependencyUri>
+                  <MSFT:DependencyAllowedValue ValueType="None"></MSFT:DependencyAllowedValue>
+                </MSFT:Dependency>
+              </MSFT:DependencyGroup>
+            </MSFT:DependencyBehavior>
           </DFProperties>
         </Node>
         <Node>
@@ -581,6 +701,7 @@
               <Get />
               <Replace />
             </AccessType>
+            <Description>Allows the management server to update the User Principal Name (UPN) of the enrolled user. This is useful in scenarios where the user email address changes in the identity system, or in the scenario where the user enters an invalid UPN during enrollment, and fixes the UPN during federated enrollment. The UPN will be recorded and the UX will reflect the updated UPN.</Description>
             <DFFormat>
               <chr />
             </DFFormat>
@@ -591,8 +712,9 @@
               <Dynamic />
             </Scope>
             <DFType>
-              <MIME>text/plain</MIME>
+              <MIME />
             </DFType>
+            <MSFT:AllowedValues ValueType="None"></MSFT:AllowedValues>
           </DFProperties>
         </Node>
         <Node>
@@ -604,6 +726,7 @@
               <Get />
               <Replace />
             </AccessType>
+            <Description>The character string that allows the user experience to include a customized help phone number that the end user will be able to view and use if they need help or support.</Description>
             <DFFormat>
               <chr />
             </DFFormat>
@@ -614,8 +737,9 @@
               <Dynamic />
             </Scope>
             <DFType>
-              <MIME>text/plain</MIME>
+              <MIME />
             </DFType>
+            <MSFT:AllowedValues ValueType="None"></MSFT:AllowedValues>
           </DFProperties>
         </Node>
         <Node>
@@ -627,6 +751,7 @@
               <Get />
               <Replace />
             </AccessType>
+            <Description>The character string that allows the user experience to include a customized help website that the end user will be able to view and use if they need help or support.</Description>
             <DFFormat>
               <chr />
             </DFFormat>
@@ -637,8 +762,9 @@
               <Dynamic />
             </Scope>
             <DFType>
-              <MIME>text/plain</MIME>
+              <MIME />
             </DFType>
+            <MSFT:AllowedValues ValueType="None"></MSFT:AllowedValues>
           </DFProperties>
         </Node>
         <Node>
@@ -650,6 +776,7 @@
               <Get />
               <Replace />
             </AccessType>
+            <Description>The character string that allows the user experience to include a customized help email address that the end user will be able to view and use if they need help or support.</Description>
             <DFFormat>
               <chr />
             </DFFormat>
@@ -660,8 +787,9 @@
               <Dynamic />
             </Scope>
             <DFType>
-              <MIME>text/plain</MIME>
+              <MIME />
             </DFType>
+            <MSFT:AllowedValues ValueType="None"></MSFT:AllowedValues>
           </DFProperties>
         </Node>
         <Node>
@@ -673,6 +801,8 @@
               <Get />
               <Replace />
             </AccessType>
+            <DefaultValue>false</DefaultValue>
+            <Description>Primarily used for SSL bridging mode where firewalls and proxies are deployed and where device client identity is required. When enabled, every SyncML message from the device will carry an additional HTTP header named MDM-Signature. This header contains BASE64-encoded Cryptographic Message Syntax using a Detached Signature of the complete SyncML message SHA-2 (inclusive of the SyncHdr and SyncBody). Signing is performed using the private key of the management session certificate that was enrolled as part of the enrollment process. The device public key and PKCS9 UTC signing time stamp are included as part of the authenticated attributes in the signature. When enabled, the MDM server should validate the signature and the timestamp using the device identify certificate enrolled as part of MS-MDE, ensure the certificate and time are valid, and verify that the signature is trusted by the MDM server.</Description>
             <DFFormat>
               <bool />
             </DFFormat>
@@ -683,8 +813,18 @@
               <Dynamic />
             </Scope>
             <DFType>
-              <MIME>text/plain</MIME>
+              <MIME />
             </DFType>
+            <MSFT:AllowedValues ValueType="ENUM">
+              <MSFT:Enum>
+                <MSFT:Value>false</MSFT:Value>
+                <MSFT:ValueDescription>The device management client does not include authentication information in the management session HTTP header.</MSFT:ValueDescription>
+              </MSFT:Enum>
+              <MSFT:Enum>
+                <MSFT:Value>true</MSFT:Value>
+                <MSFT:ValueDescription>The client authentication information is provided in the management session HTTP header.</MSFT:ValueDescription>
+              </MSFT:Enum>
+            </MSFT:AllowedValues>
           </DFProperties>
         </Node>
         <Node>
@@ -696,6 +836,8 @@
               <Get />
               <Replace />
             </AccessType>
+            <DefaultValue>1.0</DefaultValue>
+            <Description>Used by the management server to set the DM session version that the server and device should use. Default is 1.0. In Windows 10, the DM session protocol version of the client is 2.0. If the server is updated to support 2.0, then you should set this value to 2.0. In the next session, check to see if there is a client behavior change between 1.0 and 2.0.</Description>
             <DFFormat>
               <chr />
             </DFFormat>
@@ -706,8 +848,11 @@
               <Dynamic />
             </Scope>
             <DFType>
-              <MIME>text/plain</MIME>
+              <MIME />
             </DFType>
+            <MSFT:AllowedValues ValueType="RegEx">
+              <MSFT:Value>^(\d\.)?(\d)$</MSFT:Value>
+            </MSFT:AllowedValues>
           </DFProperties>
         </Node>
         <Node>
@@ -716,6 +861,7 @@
             <AccessType>
               <Get />
             </AccessType>
+            <Description>Used by the client to indicate the latest DM session version that it supports.</Description>
             <DFFormat>
               <chr />
             </DFFormat>
@@ -726,7 +872,7 @@
               <Dynamic />
             </Scope>
             <DFType>
-              <MIME>text/plain</MIME>
+              <MIME />
             </DFType>
           </DFProperties>
         </Node>
@@ -737,6 +883,7 @@
               <Exec />
               <Get />
             </AccessType>
+            <Description><![CDATA[The node accepts unenrollment requests by way of the OMA DM Exec command and calls the enrollment client to unenroll the device from the management server whose provider ID is specified in the <Data> tag under the <Item> element.]]></Description>
             <DFFormat>
               <null />
             </DFFormat>
@@ -747,7 +894,7 @@
               <Permanent />
             </Scope>
             <DFType>
-              <MIME>text/plain</MIME>
+              <MIME />
             </DFType>
           </DFProperties>
         </Node>
@@ -759,6 +906,7 @@
               <Get />
               <Replace />
             </AccessType>
+            <Description>This is the ResourceID used when requesting the user token from the OMA DM session for Azure Active Directory (Azure AD) enrollments (Azure AD Join or Add Accounts). The token is audience-specific, which allows for different service principals (enrollment vs. device management). It can be an application ID or the endpoint that you are trying to access.</Description>
             <DFFormat>
               <chr />
             </DFFormat>
@@ -769,8 +917,9 @@
               <Dynamic />
             </Scope>
             <DFType>
-              <MIME>text/plain</MIME>
+              <MIME />
             </DFType>
+            <MSFT:AllowedValues ValueType="None"></MSFT:AllowedValues>
           </DFProperties>
         </Node>
         <Node>
@@ -790,8 +939,12 @@
               <Dynamic />
             </Scope>
             <DFType>
-              <MIME>text/plain</MIME>
+              <MIME />
             </DFType>
+            <MSFT:Applicability>
+              <MSFT:OsBuildVersion>10.0.14393</MSFT:OsBuildVersion>
+              <MSFT:CspVersion>1.2</MSFT:CspVersion>
+            </MSFT:Applicability>
           </DFProperties>
         </Node>
         <Node>
@@ -800,7 +953,7 @@
             <AccessType>
               <Get />
             </AccessType>
-            <Description>Type of MDM enrollment</Description>
+            <Description>Type of MDM enrollment  (Device or Full).</Description>
             <DFFormat>
               <chr />
             </DFFormat>
@@ -811,8 +964,12 @@
               <Dynamic />
             </Scope>
             <DFType>
-              <MIME>text/plain</MIME>
+              <MIME />
             </DFType>
+            <MSFT:Applicability>
+              <MSFT:OsBuildVersion>10.0.14393</MSFT:OsBuildVersion>
+              <MSFT:CspVersion>1.2</MSFT:CspVersion>
+            </MSFT:Applicability>
           </DFProperties>
         </Node>
         <Node>
@@ -822,6 +979,8 @@
               <Get />
               <Replace />
             </AccessType>
+            <DefaultValue>false</DefaultValue>
+            <Description>A boolean value that specifies whether the DM client should send out a request pending alert in case the device response to a DM request is too slow. When the server sends a configuration request, sometimes it takes the client longer than the HTTP timeout to get all information together and then the session ends unexpectedly due to timeout. By default, the MDM client does not send an alert that a DM request is pending. To work around the timeout, you can use this setting to keep the session alive by sending a heartbeat message back to the server. This is achieved by sending a SyncML message with a specific device alert element in the body until the client is able to respond back to the server with the requested information.</Description>
             <DFFormat>
               <bool />
             </DFFormat>
@@ -832,8 +991,22 @@
               <Dynamic />
             </Scope>
             <DFType>
-              <MIME>text/plain</MIME>
+              <MIME />
             </DFType>
+            <MSFT:Applicability>
+              <MSFT:OsBuildVersion>10.0.10586</MSFT:OsBuildVersion>
+              <MSFT:CspVersion>1.1</MSFT:CspVersion>
+            </MSFT:Applicability>
+            <MSFT:AllowedValues ValueType="ENUM">
+              <MSFT:Enum>
+                <MSFT:Value>false</MSFT:Value>
+                <MSFT:ValueDescription>Enable message</MSFT:ValueDescription>
+              </MSFT:Enum>
+              <MSFT:Enum>
+                <MSFT:Value>true</MSFT:Value>
+                <MSFT:ValueDescription>Disable message</MSFT:ValueDescription>
+              </MSFT:Enum>
+            </MSFT:AllowedValues>
           </DFProperties>
         </Node>
         <Node>
@@ -842,6 +1015,7 @@
             <AccessType>
               <Get />
             </AccessType>
+            <Description>Returns the hardware device ID.</Description>
             <DFFormat>
               <chr />
             </DFFormat>
@@ -852,8 +1026,12 @@
               <Dynamic />
             </Scope>
             <DFType>
-              <MIME>text/plain</MIME>
+              <MIME />
             </DFType>
+            <MSFT:Applicability>
+              <MSFT:OsBuildVersion>10.0.14393</MSFT:OsBuildVersion>
+              <MSFT:CspVersion>1.2</MSFT:CspVersion>
+            </MSFT:Applicability>
           </DFProperties>
         </Node>
         <Node>
@@ -863,6 +1041,7 @@
               <Get />
               <Replace />
             </AccessType>
+            <Description><![CDATA[The list of management server URLs in the format <URL1><URL2><URL3>, and so on. If there is only one, the angle brackets (<>) are not required. The < and > should be escaped. If ManagementServerAddressList node is set, the device will only use the server URL configured in this node and ignore the ManagementServiceAddress value. When the server is not responding after a specified number of retries, the device tries to use the next server URL in the list until it gets a successful connection. After the server list is updated, the client uses the updated list at the next session starting with the first on in the list.]]></Description>
             <DFFormat>
               <chr />
             </DFFormat>
@@ -873,8 +1052,13 @@
               <Dynamic />
             </Scope>
             <DFType>
-              <MIME>text/plain</MIME>
+              <MIME />
             </DFType>
+            <MSFT:Applicability>
+              <MSFT:OsBuildVersion>10.0.14393</MSFT:OsBuildVersion>
+              <MSFT:CspVersion>1.2</MSFT:CspVersion>
+            </MSFT:Applicability>
+            <MSFT:AllowedValues ValueType="None"></MSFT:AllowedValues>
           </DFProperties>
         </Node>
         <Node>
@@ -886,6 +1070,7 @@
               <Get />
               <Replace />
             </AccessType>
+            <Description> Configures the identifier used to uniquely associate this diagnostic data of this device as belonging to a given organization. If your organization is participating in a program that requires this device to be identified as belonging to your organization then use this setting to provide that identification. The value for this setting will be provided by Microsoft as part of the onboarding process for the program. If you disable or do not configure this policy setting, then Microsoft will not be able to use this identifier to associate this machine and its diagnostic data with your organization.</Description>
             <DFFormat>
               <chr />
             </DFFormat>
@@ -896,8 +1081,13 @@
               <Dynamic />
             </Scope>
             <DFType>
-              <MIME>text/plain</MIME>
+              <MIME />
             </DFType>
+            <MSFT:Applicability>
+              <MSFT:OsBuildVersion>10.0.14393</MSFT:OsBuildVersion>
+              <MSFT:CspVersion>1.2</MSFT:CspVersion>
+            </MSFT:Applicability>
+            <MSFT:AllowedValues ValueType="None"></MSFT:AllowedValues>
           </DFProperties>
         </Node>
         <Node>
@@ -920,8 +1110,13 @@
               <Dynamic />
             </Scope>
             <DFType>
-              <MIME>text/plain</MIME>
+              <MIME />
             </DFType>
+            <MSFT:Applicability>
+              <MSFT:OsBuildVersion>10.0.15063</MSFT:OsBuildVersion>
+              <MSFT:CspVersion>1.3</MSFT:CspVersion>
+            </MSFT:Applicability>
+            <MSFT:AllowedValues ValueType="None"></MSFT:AllowedValues>
           </DFProperties>
         </Node>
         <Node>
@@ -944,8 +1139,13 @@
               <Dynamic />
             </Scope>
             <DFType>
-              <MIME>text/plain</MIME>
+              <MIME />
             </DFType>
+            <MSFT:Applicability>
+              <MSFT:OsBuildVersion>10.0.16299</MSFT:OsBuildVersion>
+              <MSFT:CspVersion>1.4</MSFT:CspVersion>
+            </MSFT:Applicability>
+            <MSFT:AllowedValues ValueType="None"></MSFT:AllowedValues>
           </DFProperties>
         </Node>
         <Node>
@@ -957,7 +1157,7 @@
               <Get />
               <Replace />
             </AccessType>
-            <Description>Send the device AAD token, if the user one can't be returned</Description>
+            <Description>For Azure AD backed enrollments, this will cause the client to send a Device Token if the User Token cannot be obtained.</Description>
             <DFFormat>
               <bool />
             </DFFormat>
@@ -968,8 +1168,72 @@
               <Dynamic />
             </Scope>
             <DFType>
-              <MIME>text/plain</MIME>
+              <MIME />
             </DFType>
+            <MSFT:Applicability>
+              <MSFT:OsBuildVersion>10.0.17134</MSFT:OsBuildVersion>
+              <MSFT:CspVersion>1.5</MSFT:CspVersion>
+            </MSFT:Applicability>
+            <MSFT:AllowedValues ValueType="ENUM">
+              <MSFT:Enum>
+                <MSFT:Value>false</MSFT:Value>
+                <MSFT:ValueDescription>Do not send Device Token if User Token cannot be obtained.</MSFT:ValueDescription>
+              </MSFT:Enum>
+              <MSFT:Enum>
+                <MSFT:Value>true</MSFT:Value>
+                <MSFT:ValueDescription>Send Device Token if User Token cannot be obtained.</MSFT:ValueDescription>
+              </MSFT:Enum>
+            </MSFT:AllowedValues>
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>ForceAadToken</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Add />
+              <Delete />
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>Force device to send device AAD token during checkin as a separate header.</Description>
+            <DFFormat>
+              <bool />
+            </DFFormat>
+            <Occurrence>
+              <ZeroOrOne />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME />
+            </DFType>
+            <MSFT:Applicability>
+              <MSFT:OsBuildVersion>10.0.22621, 10.0.22000.739, 10.0.19044.1766, 10.0.19043.1766, 10.0.19042.1766</MSFT:OsBuildVersion>
+              <MSFT:CspVersion>1.6</MSFT:CspVersion>
+            </MSFT:Applicability>
+            <MSFT:AllowedValues ValueType="ENUM">
+              <MSFT:Enum>
+                <MSFT:Value>0</MSFT:Value>
+                <MSFT:ValueDescription>ForceAadTokenNotDefined: the value is not defined(default)</MSFT:ValueDescription>
+              </MSFT:Enum>
+              <MSFT:Enum>
+                <MSFT:Value>1</MSFT:Value>
+                <MSFT:ValueDescription>AlwaysSendAadDeviceTokenCheckIn: always send AAD device token during checkin as a separate header section(not as Bearer token).</MSFT:ValueDescription>
+              </MSFT:Enum>
+              <MSFT:Enum>
+                <MSFT:Value>2</MSFT:Value>
+                <MSFT:ValueDescription>Reserved for future. AlwaysSendAadUserTokenCheckin: always send AAD user token during checkin as a separate header section(not as Bearer toekn).</MSFT:ValueDescription>
+              </MSFT:Enum>
+              <MSFT:Enum>
+                <MSFT:Value>4</MSFT:Value>
+                <MSFT:ValueDescription>SendAadDeviceTokenForAuth: to replace AADSendDeviceToken, send AAD Device token for auth as Bearer token.</MSFT:ValueDescription>
+              </MSFT:Enum>
+              <MSFT:Enum>
+                <MSFT:Value>8</MSFT:Value>
+                <MSFT:ValueDescription>Reserved for future. ForceAadTokenMaxAllowed: max value allowed.</MSFT:ValueDescription>
+              </MSFT:Enum>
+            </MSFT:AllowedValues>
           </DFProperties>
         </Node>
         <Node>
@@ -980,6 +1244,7 @@
               <Delete />
               <Get />
             </AccessType>
+            <Description>Not configurable during WAP Provisioning XML. If removed, DM sessions triggered by Push will no longer be supported.</Description>
             <DFFormat>
               <node />
             </DFFormat>
@@ -990,7 +1255,7 @@
               <Dynamic />
             </Scope>
             <DFType>
-              <DDFName></DDFName>
+              <DDFName />
             </DFType>
           </DFProperties>
           <Node>
@@ -1002,6 +1267,7 @@
                 <Get />
                 <Replace />
               </AccessType>
+              <Description> A string provided by the Windows 10 ecosystem for an MDM solution. Used to register a device for Push Notifications. The server must use the same PFN as the devices it is managing.</Description>
               <DFFormat>
                 <chr />
               </DFFormat>
@@ -1012,8 +1278,9 @@
                 <Dynamic />
               </Scope>
               <DFType>
-                <MIME>text/plain</MIME>
+                <MIME />
               </DFType>
+              <MSFT:AllowedValues ValueType="None"></MSFT:AllowedValues>
             </DFProperties>
           </Node>
           <Node>
@@ -1022,6 +1289,7 @@
               <AccessType>
                 <Get />
               </AccessType>
+              <Description>A string that contains the channel that the WNS client has negotiated for the OMA DM client on the device based on the PFN that was provided. If no valid PFN is currently set, ChannelURI will return null.</Description>
               <DFFormat>
                 <chr />
               </DFFormat>
@@ -1032,7 +1300,7 @@
                 <Dynamic />
               </Scope>
               <DFType>
-                <MIME>text/plain</MIME>
+                <MIME />
               </DFType>
             </DFProperties>
           </Node>
@@ -1042,6 +1310,7 @@
               <AccessType>
                 <Get />
               </AccessType>
+              <Description>An integer that maps to a known error state or condition on the system. Valid values are: 0 - Success, 1 - Failure: invalid PFN, 2 - Failure: invalid or expired device authentication with MSA, 3 - Failure: WNS client registration failed due to an invalid or revoked PFN, 4 - Failure: no Channel URI assigned, 5 - Failure: Channel URI has expired, 6 - Failure: Channel URI failed to be revoked, 7 -  Failure: push notification received, but unable to establish an OMA-DM session due to power or connectivity limitations, 8 - Unknown error</Description>
               <DFFormat>
                 <int />
               </DFFormat>
@@ -1052,7 +1321,7 @@
                 <Dynamic />
               </Scope>
               <DFType>
-                <MIME>text/plain</MIME>
+                <MIME />
               </DFType>
             </DFProperties>
           </Node>
@@ -1065,6 +1334,7 @@
               <Delete />
               <Get />
             </AccessType>
+            <Description> Polling schedules must utilize the DMClient CSP. The Registry paths previously associated with polling using the Registry CSP are now deprecated. There are three schedules managed under the Poll node which enable a rich polling schedule experience to provide greater flexibility in managing the way in which devices poll the management server. There are a variety of ways in which polling schedules may be set. If an invalid polling configuration is set, the device will correct or remove the schedules in order to restore the polling schedules back to a valid configuration. If there is no infinite schedule set, then a 24-hour schedule is created and scheduled to launch in the maintenance window.</Description>
             <DFFormat>
               <node />
             </DFFormat>
@@ -1075,7 +1345,7 @@
               <Dynamic />
             </Scope>
             <DFType>
-              <DDFName></DDFName>
+              <DDFName />
             </DFType>
           </DFProperties>
           <Node>
@@ -1087,6 +1357,7 @@
                 <Get />
                 <Replace />
               </AccessType>
+              <Description><![CDATA[The waiting time (in minutes) for the initial set of retries as specified by the number of retries in /<ProviderID>/Poll/NumberOfFirstRetries. If IntervalForFirstSetOfRetries is not set, then the default value is used. The default value is 15. If the value is set to 0, this schedule is disabled.]]></Description>
               <DFFormat>
                 <int />
               </DFFormat>
@@ -1097,8 +1368,9 @@
                 <Dynamic />
               </Scope>
               <DFType>
-                <MIME>text/plain</MIME>
+                <MIME />
               </DFType>
+              <MSFT:AllowedValues ValueType="None"></MSFT:AllowedValues>
             </DFProperties>
           </Node>
           <Node>
@@ -1110,6 +1382,7 @@
                 <Get />
                 <Replace />
               </AccessType>
+              <Description>The number of times the DM client should retry to connect to the server when the client is initially configured or enrolled to communicate with the server. If the value is set to 0 and the IntervalForFirstSetOfRetries value is not 0, then the schedule will be set to repeat an infinite number of times and second set and this set of schedule will not set in this case. The default value is 10. The first set of retries is intended to give the management server some buffered time to be ready to send policies and settings configuration to the device. The total time for first set of retries should not be more than a few hours. The server should not set NumberOfFirstRetries to be 0. RemainingScheduledRetries is used for the long run device polling schedule.</Description>
               <DFFormat>
                 <int />
               </DFFormat>
@@ -1120,8 +1393,9 @@
                 <Dynamic />
               </Scope>
               <DFType>
-                <MIME>text/plain</MIME>
+                <MIME />
               </DFType>
+              <MSFT:AllowedValues ValueType="None"></MSFT:AllowedValues>
             </DFProperties>
           </Node>
           <Node>
@@ -1133,6 +1407,7 @@
                 <Get />
                 <Replace />
               </AccessType>
+              <Description><![CDATA[The waiting time (in minutes) for the second set of retries as specified by the number of retries in /<ProviderID>/Poll/NumberOfSecondRetries. Default value is 0. If this value is set to zero, then this schedule is disabled.]]></Description>
               <DFFormat>
                 <int />
               </DFFormat>
@@ -1143,8 +1418,9 @@
                 <Dynamic />
               </Scope>
               <DFType>
-                <MIME>text/plain</MIME>
+                <MIME />
               </DFType>
+              <MSFT:AllowedValues ValueType="None"></MSFT:AllowedValues>
             </DFProperties>
           </Node>
           <Node>
@@ -1156,6 +1432,7 @@
                 <Get />
                 <Replace />
               </AccessType>
+              <Description>The number of times the DM client should retry a second round of connecting to the server when the client is initially configured/enrolled to communicate with the server. Default value is 0. If the value is set to 0 and IntervalForSecondSetOfRetries is not set to 0 AND the first set of retries is not set as infinite retries, then the schedule repeats an infinite number of times. However, if the first set of retries is set at infinite, then this schedule is disabled. The second set of retries is also optional and temporarily retries that the total duration should be last for more than a day. And the IntervalForSecondSetOfRetries should be longer than IntervalForFirstSetOfRetries. RemainingScheduledRetries is used for the long run device polling schedule.</Description>
               <DFFormat>
                 <int />
               </DFFormat>
@@ -1166,8 +1443,9 @@
                 <Dynamic />
               </Scope>
               <DFType>
-                <MIME>text/plain</MIME>
+                <MIME />
               </DFType>
+              <MSFT:AllowedValues ValueType="None"></MSFT:AllowedValues>
             </DFProperties>
           </Node>
           <Node>
@@ -1179,6 +1457,7 @@
                 <Get />
                 <Replace />
               </AccessType>
+              <Description><![CDATA[The waiting time (in minutes) for the initial set of retries as specified by the number of retries in /<ProviderID>/Poll/NumberOfRemainingScheduledRetries. Default value is 0. If IntervalForRemainingScheduledRetries is set to 0, then this schedule is disabled.]]></Description>
               <DFFormat>
                 <int />
               </DFFormat>
@@ -1189,8 +1468,9 @@
                 <Dynamic />
               </Scope>
               <DFType>
-                <MIME>text/plain</MIME>
+                <MIME />
               </DFType>
+              <MSFT:AllowedValues ValueType="None"></MSFT:AllowedValues>
             </DFProperties>
           </Node>
           <Node>
@@ -1202,6 +1482,7 @@
                 <Get />
                 <Replace />
               </AccessType>
+              <Description>The number of times the DM client should retry connecting to the server when the client is initially configured/enrolled to communicate with the server. Default value is 0. If the value is set to 0 and IntervalForRemainingScheduledRetries AND the first and second set of retries are not set as infinite retries, then the schedule will be set to repeat for an infinite number of times. However, if either or both of the first and second set of retries are set as infinite, then this schedule will be disabled. The RemainingScheduledRetries is used for the long run device polling schedule. IntervalForRemainingScheduledRetries should not be set smaller than 1440 minutes (24 hours) in Windows Phone 8.1 device. Windows Phone 8.1 supports MDM server push.</Description>
               <DFFormat>
                 <int />
               </DFFormat>
@@ -1212,8 +1493,9 @@
                 <Dynamic />
               </Scope>
               <DFType>
-                <MIME>text/plain</MIME>
+                <MIME />
               </DFType>
+              <MSFT:AllowedValues ValueType="None"></MSFT:AllowedValues>
             </DFProperties>
           </Node>
           <Node>
@@ -1225,6 +1507,8 @@
                 <Get />
                 <Replace />
               </AccessType>
+              <DefaultValue>false</DefaultValue>
+              <Description>Boolean value that allows the IT admin to require the device to start a management session on any user login, regardless of if the user has preciously logged in. Login is not the same as device unlock. Default value is false, where polling is disabled on first login. Supported values are true or false.</Description>
               <DFFormat>
                 <bool />
               </DFFormat>
@@ -1235,8 +1519,18 @@
                 <Dynamic />
               </Scope>
               <DFType>
-                <MIME>text/plain</MIME>
+                <MIME />
               </DFType>
+              <MSFT:AllowedValues ValueType="ENUM">
+                <MSFT:Enum>
+                  <MSFT:Value>false</MSFT:Value>
+                  <MSFT:ValueDescription>Polling is disabled on first login</MSFT:ValueDescription>
+                </MSFT:Enum>
+                <MSFT:Enum>
+                  <MSFT:Value>true</MSFT:Value>
+                  <MSFT:ValueDescription>Polling is enabled on first login.</MSFT:ValueDescription>
+                </MSFT:Enum>
+              </MSFT:AllowedValues>
             </DFProperties>
           </Node>
           <Node>
@@ -1248,6 +1542,8 @@
                 <Get />
                 <Replace />
               </AccessType>
+              <DefaultValue>false</DefaultValue>
+              <Description>Boolean value that allows the IT admin to require the device to start a management session on first user login for all NT users. A session is only kicked off the first time a user logs in to the system; subsequent logins will not trigger an MDM session. Login is not the same as device unlock. Default value is false, where polling is disabled on first login. Supported values are true or false.</Description>
               <DFFormat>
                 <bool />
               </DFFormat>
@@ -1258,8 +1554,18 @@
                 <Dynamic />
               </Scope>
               <DFType>
-                <MIME>text/plain</MIME>
+                <MIME />
               </DFType>
+              <MSFT:AllowedValues ValueType="ENUM">
+                <MSFT:Enum>
+                  <MSFT:Value>false</MSFT:Value>
+                  <MSFT:ValueDescription>Polling is disabled on first login</MSFT:ValueDescription>
+                </MSFT:Enum>
+                <MSFT:Enum>
+                  <MSFT:Value>true</MSFT:Value>
+                  <MSFT:ValueDescription>Polling is enabled on first login.</MSFT:ValueDescription>
+                </MSFT:Enum>
+              </MSFT:AllowedValues>
             </DFProperties>
           </Node>
         </Node>
@@ -1271,6 +1577,7 @@
               <Delete />
               <Get />
             </AccessType>
+            <Description>These nodes provision custom text for the enrollment page.</Description>
             <DFFormat>
               <node />
             </DFFormat>
@@ -1281,8 +1588,12 @@
               <Dynamic />
             </Scope>
             <DFType>
-              <DDFName></DDFName>
+              <DDFName />
             </DFType>
+            <MSFT:Applicability>
+              <MSFT:OsBuildVersion>10.0.15063</MSFT:OsBuildVersion>
+              <MSFT:CspVersion>1.3</MSFT:CspVersion>
+            </MSFT:Applicability>
           </DFProperties>
           <Node>
             <NodeName>Title</NodeName>
@@ -1293,6 +1604,7 @@
                 <Get />
                 <Replace />
               </AccessType>
+              <Description>Specifies the title of the all done page that appears at the end of the MDM enrollment flow.</Description>
               <DFFormat>
                 <chr />
               </DFFormat>
@@ -1303,8 +1615,9 @@
                 <Dynamic />
               </Scope>
               <DFType>
-                <MIME>text/plain</MIME>
+                <MIME />
               </DFType>
+              <MSFT:AllowedValues ValueType="None"></MSFT:AllowedValues>
             </DFProperties>
           </Node>
           <Node>
@@ -1316,6 +1629,7 @@
                 <Get />
                 <Replace />
               </AccessType>
+              <Description>Specifies the body text of the all done page that appears at the end of the MDM enrollment flow.</Description>
               <DFFormat>
                 <chr />
               </DFFormat>
@@ -1326,8 +1640,9 @@
                 <Dynamic />
               </Scope>
               <DFType>
-                <MIME>text/plain</MIME>
+                <MIME />
               </DFType>
+              <MSFT:AllowedValues ValueType="None"></MSFT:AllowedValues>
             </DFProperties>
           </Node>
           <Node>
@@ -1339,6 +1654,7 @@
                 <Get />
                 <Replace />
               </AccessType>
+              <Description>Specifies the URL that is shown at the end of the MDM enrollment flow.</Description>
               <DFFormat>
                 <chr />
               </DFFormat>
@@ -1349,8 +1665,9 @@
                 <Dynamic />
               </Scope>
               <DFType>
-                <MIME>text/plain</MIME>
+                <MIME />
               </DFType>
+              <MSFT:AllowedValues ValueType="None"></MSFT:AllowedValues>
             </DFProperties>
           </Node>
           <Node>
@@ -1362,6 +1679,7 @@
                 <Get />
                 <Replace />
               </AccessType>
+              <Description>Specifies the display text for the URL that is shown at the end of the MDM enrollment flow.</Description>
               <DFFormat>
                 <chr />
               </DFFormat>
@@ -1372,8 +1690,9 @@
                 <Dynamic />
               </Scope>
               <DFType>
-                <MIME>text/plain</MIME>
+                <MIME />
               </DFType>
+              <MSFT:AllowedValues ValueType="None"></MSFT:AllowedValues>
             </DFProperties>
           </Node>
         </Node>
@@ -1395,8 +1714,12 @@
               <Dynamic />
             </Scope>
             <DFType>
-              <DDFName></DDFName>
+              <DDFName />
             </DFType>
+            <MSFT:Applicability>
+              <MSFT:OsBuildVersion>10.0.16299</MSFT:OsBuildVersion>
+              <MSFT:CspVersion>1.4</MSFT:CspVersion>
+            </MSFT:Applicability>
           </DFProperties>
           <Node>
             <NodeName>ExpectedPolicies</NodeName>
@@ -1418,8 +1741,11 @@
                 <Dynamic />
               </Scope>
               <DFType>
-                <MIME>text/plain</MIME>
+                <MIME />
               </DFType>
+              <MSFT:AllowedValues ValueType="None">
+                <MSFT:List Delimiter="\xF000" />
+              </MSFT:AllowedValues>
             </DFProperties>
           </Node>
           <Node>
@@ -1442,8 +1768,11 @@
                 <Dynamic />
               </Scope>
               <DFType>
-                <MIME>text/plain</MIME>
+                <MIME />
               </DFType>
+              <MSFT:AllowedValues ValueType="None">
+                <MSFT:List Delimiter="\xF000" />
+              </MSFT:AllowedValues>
             </DFProperties>
           </Node>
           <Node>
@@ -1466,8 +1795,11 @@
                 <Dynamic />
               </Scope>
               <DFType>
-                <MIME>text/plain</MIME>
+                <MIME />
               </DFType>
+              <MSFT:AllowedValues ValueType="None">
+                <MSFT:List Delimiter="\xF000" />
+              </MSFT:AllowedValues>
             </DFProperties>
           </Node>
           <Node>
@@ -1490,8 +1822,11 @@
                 <Dynamic />
               </Scope>
               <DFType>
-                <MIME>text/plain</MIME>
+                <MIME />
               </DFType>
+              <MSFT:AllowedValues ValueType="None">
+                <MSFT:List Delimiter="\xF000" />
+              </MSFT:AllowedValues>
             </DFProperties>
           </Node>
           <Node>
@@ -1514,8 +1849,11 @@
                 <Dynamic />
               </Scope>
               <DFType>
-                <MIME>text/plain</MIME>
+                <MIME />
               </DFType>
+              <MSFT:AllowedValues ValueType="None">
+                <MSFT:List Delimiter="\xF000" />
+              </MSFT:AllowedValues>
             </DFProperties>
           </Node>
           <Node>
@@ -1538,8 +1876,11 @@
                 <Dynamic />
               </Scope>
               <DFType>
-                <MIME>text/plain</MIME>
+                <MIME />
               </DFType>
+              <MSFT:AllowedValues ValueType="None">
+                <MSFT:List Delimiter="\xF000" />
+              </MSFT:AllowedValues>
             </DFProperties>
           </Node>
           <Node>
@@ -1549,6 +1890,7 @@
                 <Get />
                 <Replace />
               </AccessType>
+              <DefaultValue>60</DefaultValue>
               <Description>This node determines how long we will poll until we surface an error message to the user.  The unit of measurement is minutes.  Default value will be 60, while maximum value will be 1,440 (one day).</Description>
               <DFFormat>
                 <int />
@@ -1560,8 +1902,11 @@
                 <Permanent />
               </Scope>
               <DFType>
-                <MIME>text/plain</MIME>
+                <MIME />
               </DFType>
+              <MSFT:AllowedValues ValueType="Range">
+                <MSFT:Value>[1-1440]</MSFT:Value>
+              </MSFT:AllowedValues>
             </DFProperties>
           </Node>
           <Node>
@@ -1582,8 +1927,18 @@
                 <Permanent />
               </Scope>
               <DFType>
-                <MIME>text/plain</MIME>
+                <MIME />
               </DFType>
+              <MSFT:AllowedValues ValueType="ENUM">
+                <MSFT:Enum>
+                  <MSFT:Value>false</MSFT:Value>
+                  <MSFT:ValueDescription>Server has not finished provisioning</MSFT:ValueDescription>
+                </MSFT:Enum>
+                <MSFT:Enum>
+                  <MSFT:Value>true</MSFT:Value>
+                  <MSFT:ValueDescription>Server has finished provisioning</MSFT:ValueDescription>
+                </MSFT:Enum>
+              </MSFT:AllowedValues>
             </DFProperties>
           </Node>
           <Node>
@@ -1604,8 +1959,18 @@
                 <Permanent />
               </Scope>
               <DFType>
-                <MIME>text/plain</MIME>
+                <MIME />
               </DFType>
+              <MSFT:AllowedValues ValueType="ENUM">
+                <MSFT:Enum>
+                  <MSFT:Value>false</MSFT:Value>
+                  <MSFT:ValueDescription>The device is not finished provisioning</MSFT:ValueDescription>
+                </MSFT:Enum>
+                <MSFT:Enum>
+                  <MSFT:Value>true</MSFT:Value>
+                  <MSFT:ValueDescription>The device has finished provisoining.</MSFT:ValueDescription>
+                </MSFT:Enum>
+              </MSFT:AllowedValues>
             </DFProperties>
           </Node>
           <Node>
@@ -1626,8 +1991,22 @@
                 <Permanent />
               </Scope>
               <DFType>
-                <MIME>text/plain</MIME>
+                <MIME />
               </DFType>
+              <MSFT:AllowedValues ValueType="ENUM">
+                <MSFT:Enum>
+                  <MSFT:Value>0</MSFT:Value>
+                  <MSFT:ValueDescription>The device has failed to provision the device</MSFT:ValueDescription>
+                </MSFT:Enum>
+                <MSFT:Enum>
+                  <MSFT:Value>1</MSFT:Value>
+                  <MSFT:ValueDescription>The device has successfully provisioned the device.</MSFT:ValueDescription>
+                </MSFT:Enum>
+                <MSFT:Enum>
+                  <MSFT:Value>2</MSFT:Value>
+                  <MSFT:ValueDescription>Provisoining is in progress.</MSFT:ValueDescription>
+                </MSFT:Enum>
+              </MSFT:AllowedValues>
             </DFProperties>
           </Node>
           <Node>
@@ -1648,12 +2027,34 @@
               <Scope>
                 <Permanent />
               </Scope>
+              <DFType>
+                <MIME />
+              </DFType>
               <CaseSense>
                 <CIS />
               </CaseSense>
-              <DFType>
-                <MIME>text/plain</MIME>
-              </DFType>
+              <MSFT:Applicability>
+                <MSFT:OsBuildVersion>10.0.17134</MSFT:OsBuildVersion>
+                <MSFT:CspVersion>1.5</MSFT:CspVersion>
+              </MSFT:Applicability>
+              <MSFT:AllowedValues ValueType="Flag">
+                <MSFT:Enum>
+                  <MSFT:Value>0x0</MSFT:Value>
+                  <MSFT:ValueDescription>Allow the user to exit the page before provisioning completes.</MSFT:ValueDescription>
+                </MSFT:Enum>
+                <MSFT:Enum>
+                  <MSFT:Value>0x1</MSFT:Value>
+                  <MSFT:ValueDescription>Block the user on the page and show the Reset PC button on failure.</MSFT:ValueDescription>
+                </MSFT:Enum>
+                <MSFT:Enum>
+                  <MSFT:Value>0x2</MSFT:Value>
+                  <MSFT:ValueDescription>Block the user on the page and show the Try Again button on failure.</MSFT:ValueDescription>
+                </MSFT:Enum>
+                <MSFT:Enum>
+                  <MSFT:Value>0x4</MSFT:Value>
+                  <MSFT:ValueDescription>Block the user on the page and show the Continue Anyway button on failure.</MSFT:ValueDescription>
+                </MSFT:Enum>
+              </MSFT:AllowedValues>
             </DFProperties>
           </Node>
           <Node>
@@ -1674,21 +2075,35 @@
               <Scope>
                 <Dynamic />
               </Scope>
+              <DFType>
+                <MIME />
+              </DFType>
               <CaseSense>
                 <CIS />
               </CaseSense>
-              <DFType>
-                <MIME>text/plain</MIME>
-              </DFType>
+              <MSFT:Applicability>
+                <MSFT:OsBuildVersion>10.0.17134</MSFT:OsBuildVersion>
+                <MSFT:CspVersion>1.5</MSFT:CspVersion>
+              </MSFT:Applicability>
+              <MSFT:AllowedValues ValueType="ENUM">
+                <MSFT:Enum>
+                  <MSFT:Value>false</MSFT:Value>
+                  <MSFT:ValueDescription>Do not show the Collect Logs button on the progress page.</MSFT:ValueDescription>
+                </MSFT:Enum>
+                <MSFT:Enum>
+                  <MSFT:Value>true</MSFT:Value>
+                  <MSFT:ValueDescription>Show the Collect Logs button on the progress page.</MSFT:ValueDescription>
+                </MSFT:Enum>
+              </MSFT:AllowedValues>
             </DFProperties>
           </Node>
           <Node>
             <NodeName>CustomErrorText</NodeName>
             <DFProperties>
               <AccessType>
-                <Get />
                 <Add />
                 <Delete />
+                <Get />
                 <Replace />
               </AccessType>
               <Description>This node allows the MDM to set custom error text, detailing what the user needs to do in case of error.  This node only applies to the user MDM status page (on a per user basis).</Description>
@@ -1701,12 +2116,17 @@
               <Scope>
                 <Dynamic />
               </Scope>
+              <DFType>
+                <MIME />
+              </DFType>
               <CaseSense>
                 <CIS />
               </CaseSense>
-              <DFType>
-                <MIME>text/plain</MIME>
-              </DFType>
+              <MSFT:Applicability>
+                <MSFT:OsBuildVersion>10.0.17134</MSFT:OsBuildVersion>
+                <MSFT:CspVersion>1.5</MSFT:CspVersion>
+              </MSFT:Applicability>
+              <MSFT:AllowedValues ValueType="None"></MSFT:AllowedValues>
             </DFProperties>
           </Node>
           <Node>
@@ -1727,12 +2147,26 @@
               <Scope>
                 <Permanent />
               </Scope>
+              <DFType>
+                <MIME />
+              </DFType>
               <CaseSense>
                 <CIS />
               </CaseSense>
-              <DFType>
-                <MIME>text/plain</MIME>
-              </DFType>
+              <MSFT:Applicability>
+                <MSFT:OsBuildVersion>10.0.17134</MSFT:OsBuildVersion>
+                <MSFT:CspVersion>1.5</MSFT:CspVersion>
+              </MSFT:Applicability>
+              <MSFT:AllowedValues ValueType="ENUM">
+                <MSFT:Enum>
+                  <MSFT:Value>false</MSFT:Value>
+                  <MSFT:ValueDescription>Do not skip the device progress page after Azure AD joined or Hybrid Azure AD joined in OOBE</MSFT:ValueDescription>
+                </MSFT:Enum>
+                <MSFT:Enum>
+                  <MSFT:Value>true</MSFT:Value>
+                  <MSFT:ValueDescription>Skip the device progress page after Azure AD joined or Hybrid Azure AD joined in OOBE</MSFT:ValueDescription>
+                </MSFT:Enum>
+              </MSFT:AllowedValues>
             </DFProperties>
           </Node>
           <Node>
@@ -1753,12 +2187,26 @@
               <Scope>
                 <Permanent />
               </Scope>
+              <DFType>
+                <MIME />
+              </DFType>
               <CaseSense>
                 <CIS />
               </CaseSense>
-              <DFType>
-                <MIME>text/plain</MIME>
-              </DFType>
+              <MSFT:Applicability>
+                <MSFT:OsBuildVersion>10.0.17134</MSFT:OsBuildVersion>
+                <MSFT:CspVersion>1.5</MSFT:CspVersion>
+              </MSFT:Applicability>
+              <MSFT:AllowedValues ValueType="ENUM">
+                <MSFT:Enum>
+                  <MSFT:Value>false</MSFT:Value>
+                  <MSFT:ValueDescription>Do not skip the MGM user progress page after Azure AD joined or Hybrid Azure AD joined in OOBE.</MSFT:ValueDescription>
+                </MSFT:Enum>
+                <MSFT:Enum>
+                  <MSFT:Value>true</MSFT:Value>
+                  <MSFT:ValueDescription>Skip the MGM user progress page after Azure AD joined or Hybrid Azure AD joined in OOBE</MSFT:ValueDescription>
+                </MSFT:Enum>
+              </MSFT:AllowedValues>
             </DFProperties>
           </Node>
         </Node>
@@ -1778,18 +2226,23 @@
               <Dynamic />
             </Scope>
             <DFType>
-              <DDFName></DDFName>
+              <DDFName />
             </DFType>
+            <MSFT:Applicability>
+              <MSFT:OsBuildVersion>10.0.16299</MSFT:OsBuildVersion>
+              <MSFT:CspVersion>1.4</MSFT:CspVersion>
+            </MSFT:Applicability>
           </DFProperties>
           <Node>
             <NodeName>SecurityMode</NodeName>
             <DFProperties>
               <AccessType>
-                <Get />
                 <Add />
                 <Delete />
+                <Get />
                 <Replace />
               </AccessType>
+              <DefaultValue>0</DefaultValue>
               <Description>This node specifies how the client will perform the app layer signing and encryption. 0: no op; 1: sign only; 2: encrypt only; 3: sign and encrypt. The default value is 0.</Description>
               <DFFormat>
                 <int />
@@ -1801,19 +2254,38 @@
                 <Dynamic />
               </Scope>
               <DFType>
-                <MIME>text/plain</MIME>
+                <MIME />
               </DFType>
+              <MSFT:AllowedValues ValueType="ENUM">
+                <MSFT:Enum>
+                  <MSFT:Value>0</MSFT:Value>
+                  <MSFT:ValueDescription>no op</MSFT:ValueDescription>
+                </MSFT:Enum>
+                <MSFT:Enum>
+                  <MSFT:Value>1</MSFT:Value>
+                  <MSFT:ValueDescription>sign only</MSFT:ValueDescription>
+                </MSFT:Enum>
+                <MSFT:Enum>
+                  <MSFT:Value>2</MSFT:Value>
+                  <MSFT:ValueDescription>encrypt only</MSFT:ValueDescription>
+                </MSFT:Enum>
+                <MSFT:Enum>
+                  <MSFT:Value>3</MSFT:Value>
+                  <MSFT:ValueDescription>sign and encrypt</MSFT:ValueDescription>
+                </MSFT:Enum>
+              </MSFT:AllowedValues>
             </DFProperties>
           </Node>
           <Node>
             <NodeName>UseCertIfRevocationCheckOffline</NodeName>
             <DFProperties>
               <AccessType>
-                <Get />
                 <Add />
                 <Delete />
+                <Get />
                 <Replace />
               </AccessType>
+              <DefaultValue>false</DefaultValue>
               <Description>This node, when it is set, tells the client to use the certificate even when the client cannot check the certificate's revocation status because the device is offline. The default value is set.</Description>
               <DFFormat>
                 <bool />
@@ -1825,17 +2297,27 @@
                 <Dynamic />
               </Scope>
               <DFType>
-                <MIME>text/plain</MIME>
+                <MIME />
               </DFType>
+              <MSFT:AllowedValues ValueType="ENUM">
+                <MSFT:Enum>
+                  <MSFT:Value>false</MSFT:Value>
+                  <MSFT:ValueDescription>False</MSFT:ValueDescription>
+                </MSFT:Enum>
+                <MSFT:Enum>
+                  <MSFT:Value>true</MSFT:Value>
+                  <MSFT:ValueDescription>True</MSFT:ValueDescription>
+                </MSFT:Enum>
+              </MSFT:AllowedValues>
             </DFProperties>
           </Node>
           <Node>
             <NodeName>Cert0</NodeName>
             <DFProperties>
               <AccessType>
-                <Get />
                 <Add />
                 <Delete />
+                <Get />
                 <Replace />
               </AccessType>
               <Description>The node contains the primary certificate - the public key to use.</Description>
@@ -1849,17 +2331,18 @@
                 <Dynamic />
               </Scope>
               <DFType>
-                <MIME>text/plain</MIME>
+                <MIME />
               </DFType>
+              <MSFT:AllowedValues ValueType="None"></MSFT:AllowedValues>
             </DFProperties>
           </Node>
           <Node>
             <NodeName>Cert1</NodeName>
             <DFProperties>
               <AccessType>
-                <Get />
                 <Add />
                 <Delete />
+                <Get />
                 <Replace />
               </AccessType>
               <Description>The node contains the secondary certificate - the public key to use.</Description>
@@ -1873,7 +2356,533 @@
                 <Dynamic />
               </Scope>
               <DFType>
-                <MIME>text/plain</MIME>
+                <MIME />
+              </DFType>
+              <MSFT:AllowedValues ValueType="None"></MSFT:AllowedValues>
+            </DFProperties>
+          </Node>
+        </Node>
+        <Node>
+          <NodeName>ConfigLock</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DFFormat>
+              <node />
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <DDFName />
+            </DFType>
+            <MSFT:Applicability>
+              <MSFT:OsBuildVersion>10.0.22000</MSFT:OsBuildVersion>
+              <MSFT:CspVersion>1.6</MSFT:CspVersion>
+            </MSFT:Applicability>
+          </DFProperties>
+          <Node>
+            <NodeName>Lock</NodeName>
+            <DFProperties>
+              <AccessType>
+                <Add />
+                <Delete />
+                <Get />
+                <Replace />
+              </AccessType>
+              <DefaultValue>0</DefaultValue>
+              <Description>This node specifies how the client will perform the lock mode for SecureCore PC. 0: unlock; 1: lock. The default value is 0.</Description>
+              <DFFormat>
+                <int />
+              </DFFormat>
+              <Occurrence>
+                <One />
+              </Occurrence>
+              <Scope>
+                <Dynamic />
+              </Scope>
+              <DFType>
+                <MIME />
+              </DFType>
+              <MSFT:AllowedValues ValueType="ENUM">
+                <MSFT:Enum>
+                  <MSFT:Value>0</MSFT:Value>
+                  <MSFT:ValueDescription>Unlock</MSFT:ValueDescription>
+                </MSFT:Enum>
+                <MSFT:Enum>
+                  <MSFT:Value>1</MSFT:Value>
+                  <MSFT:ValueDescription>Lock</MSFT:ValueDescription>
+                </MSFT:Enum>
+              </MSFT:AllowedValues>
+            </DFProperties>
+          </Node>
+          <Node>
+            <NodeName>UnlockDuration</NodeName>
+            <DFProperties>
+              <AccessType>
+                <Add />
+                <Delete />
+                <Get />
+                <Replace />
+              </AccessType>
+              <DefaultValue>480</DefaultValue>
+              <Description>This node, when it is set, tells the client to set how many minutes the device should be temporarily unlocked from SecureCore settings protection. The default value is 480.</Description>
+              <DFFormat>
+                <int />
+              </DFFormat>
+              <Occurrence>
+                <One />
+              </Occurrence>
+              <Scope>
+                <Dynamic />
+              </Scope>
+              <DFType>
+                <MIME />
+              </DFType>
+              <MSFT:AllowedValues ValueType="None"></MSFT:AllowedValues>
+            </DFProperties>
+          </Node>
+          <Node>
+            <NodeName>SecureCore</NodeName>
+            <DFProperties>
+              <AccessType>
+                <Get />
+              </AccessType>
+              <Description>The node returns the boolean value whether the device is a SecureCore PC. </Description>
+              <DFFormat>
+                <bool />
+              </DFFormat>
+              <Occurrence>
+                <One />
+              </Occurrence>
+              <Scope>
+                <Dynamic />
+              </Scope>
+              <DFType>
+                <MIME />
+              </DFType>
+            </DFProperties>
+          </Node>
+        </Node>
+        <Node>
+          <NodeName>LinkedEnrollment</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <Description>The interior node for linked enrollment</Description>
+            <DFFormat>
+              <node />
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <DDFName />
+            </DFType>
+            <MSFT:Applicability>
+              <MSFT:OsBuildVersion>10.0.22621, 10.0.22000.918, 10.0.19044.2193, 10.0.19043.2193, 10.0.19042.2193</MSFT:OsBuildVersion>
+              <MSFT:CspVersion>1.6</MSFT:CspVersion>
+            </MSFT:Applicability>
+          </DFProperties>
+          <Node>
+            <NodeName>Priority</NodeName>
+            <DFProperties>
+              <AccessType>
+                <Add />
+                <Delete />
+                <Get />
+                <Replace />
+              </AccessType>
+              <Description>Optional. Allowed value is 0 or 1. 0 means the main enrollment has authority for mdm settings and resources, 1 means the linked enrollment has authority.</Description>
+              <DFFormat>
+                <int />
+              </DFFormat>
+              <Occurrence>
+                <ZeroOrOne />
+              </Occurrence>
+              <Scope>
+                <Dynamic />
+              </Scope>
+              <DFType>
+                <MIME />
+              </DFType>
+              <MSFT:AllowedValues ValueType="ENUM">
+                <MSFT:Enum>
+                  <MSFT:Value>0</MSFT:Value>
+                  <MSFT:ValueDescription>The main enrollment has priority over linked enrollment.</MSFT:ValueDescription>
+                </MSFT:Enum>
+                <MSFT:Enum>
+                  <MSFT:Value>1</MSFT:Value>
+                  <MSFT:ValueDescription>The linked enrollment has priority over the main enrollment.</MSFT:ValueDescription>
+                </MSFT:Enum>
+              </MSFT:AllowedValues>
+            </DFProperties>
+          </Node>
+          <Node>
+            <NodeName>LastError</NodeName>
+            <DFProperties>
+              <AccessType>
+                <Get />
+              </AccessType>
+              <Description>return the last error for enroll/unenroll.</Description>
+              <DFFormat>
+                <int />
+              </DFFormat>
+              <Occurrence>
+                <One />
+              </Occurrence>
+              <Scope>
+                <Dynamic />
+              </Scope>
+              <DFType>
+                <MIME />
+              </DFType>
+            </DFProperties>
+          </Node>
+          <Node>
+            <NodeName>EnrollStatus</NodeName>
+            <DFProperties>
+              <AccessType>
+                <Get />
+              </AccessType>
+              <Description>Returns the current enrollment or un-enrollment status of the linked enrollment.</Description>
+              <DFFormat>
+                <int />
+              </DFFormat>
+              <Occurrence>
+                <One />
+              </Occurrence>
+              <Scope>
+                <Dynamic />
+              </Scope>
+              <DFType>
+                <MIME />
+              </DFType>
+              <MSFT:AllowedValues ValueType="ENUM">
+                <MSFT:Enum>
+                  <MSFT:Value>0</MSFT:Value>
+                  <MSFT:ValueDescription>Undefined</MSFT:ValueDescription>
+                </MSFT:Enum>
+                <MSFT:Enum>
+                  <MSFT:Value>1</MSFT:Value>
+                  <MSFT:ValueDescription>Enrollment Not started.</MSFT:ValueDescription>
+                </MSFT:Enum>
+                <MSFT:Enum>
+                  <MSFT:Value>2</MSFT:Value>
+                  <MSFT:ValueDescription>Enrollment In Progress.</MSFT:ValueDescription>
+                </MSFT:Enum>
+                <MSFT:Enum>
+                  <MSFT:Value>3</MSFT:Value>
+                  <MSFT:ValueDescription>Enrollment Failed.</MSFT:ValueDescription>
+                </MSFT:Enum>
+                <MSFT:Enum>
+                  <MSFT:Value>4</MSFT:Value>
+                  <MSFT:ValueDescription>Enrollment Succeeded.</MSFT:ValueDescription>
+                </MSFT:Enum>
+                <MSFT:Enum>
+                  <MSFT:Value>5</MSFT:Value>
+                  <MSFT:ValueDescription>Unenrollment Not started.</MSFT:ValueDescription>
+                </MSFT:Enum>
+                <MSFT:Enum>
+                  <MSFT:Value>6</MSFT:Value>
+                  <MSFT:ValueDescription>UnEnrollment In Progress.</MSFT:ValueDescription>
+                </MSFT:Enum>
+                <MSFT:Enum>
+                  <MSFT:Value>7</MSFT:Value>
+                  <MSFT:ValueDescription>UnEnrollment Failed.</MSFT:ValueDescription>
+                </MSFT:Enum>
+                <MSFT:Enum>
+                  <MSFT:Value>8</MSFT:Value>
+                  <MSFT:ValueDescription>UnEnrollment Succeeded.</MSFT:ValueDescription>
+                </MSFT:Enum>
+              </MSFT:AllowedValues>
+            </DFProperties>
+          </Node>
+          <Node>
+            <NodeName>Enroll</NodeName>
+            <DFProperties>
+              <AccessType>
+                <Exec />
+              </AccessType>
+              <Description>Trigger to enroll for the Linked Enrollment</Description>
+              <DFFormat>
+                <null />
+              </DFFormat>
+              <Occurrence>
+                <One />
+              </Occurrence>
+              <Scope>
+                <Dynamic />
+              </Scope>
+              <DFType>
+                <MIME />
+              </DFType>
+            </DFProperties>
+          </Node>
+          <Node>
+            <NodeName>Unenroll</NodeName>
+            <DFProperties>
+              <AccessType>
+                <Exec />
+              </AccessType>
+              <Description>Trigger Unenroll for the Linked Enrollment</Description>
+              <DFFormat>
+                <null />
+              </DFFormat>
+              <Occurrence>
+                <One />
+              </Occurrence>
+              <Scope>
+                <Dynamic />
+              </Scope>
+              <DFType>
+                <MIME />
+              </DFType>
+            </DFProperties>
+          </Node>
+        </Node>
+        <Node>
+          <NodeName>MultipleSession</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <DFFormat>
+              <node />
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <DDFName />
+            </DFType>
+            <MSFT:Applicability>
+              <MSFT:OsBuildVersion>10.0.22000</MSFT:OsBuildVersion>
+              <MSFT:CspVersion>1.6</MSFT:CspVersion>
+              <MSFT:EditionAllowList>0xAF</MSFT:EditionAllowList>
+            </MSFT:Applicability>
+          </DFProperties>
+          <Node>
+            <NodeName>NumAllowedConcurrentUserSessionForBackgroundSync</NodeName>
+            <DFProperties>
+              <AccessType>
+                <Add />
+                <Delete />
+                <Get />
+                <Replace />
+              </AccessType>
+              <Description>Optional. Maximum number of concurrent user sync sessions in background. Default value is 25. 0 none, 1 sequential, anything else: parallel.</Description>
+              <DFFormat>
+                <int />
+              </DFFormat>
+              <Occurrence>
+                <ZeroOrOne />
+              </Occurrence>
+              <Scope>
+                <Dynamic />
+              </Scope>
+              <DFType>
+                <MIME />
+              </DFType>
+              <MSFT:AllowedValues ValueType="None"></MSFT:AllowedValues>
+            </DFProperties>
+          </Node>
+          <Node>
+            <NodeName>NumAllowedConcurrentUserSessionAtUserLogonSync</NodeName>
+            <DFProperties>
+              <AccessType>
+                <Add />
+                <Delete />
+                <Get />
+                <Replace />
+              </AccessType>
+              <Description>Optional. Maximum number of concurrent user sync sessions at User Login. Default value is 25. 0 none, 1 sequential, anything else: parallel.</Description>
+              <DFFormat>
+                <int />
+              </DFFormat>
+              <Occurrence>
+                <ZeroOrOne />
+              </Occurrence>
+              <Scope>
+                <Dynamic />
+              </Scope>
+              <DFType>
+                <MIME />
+              </DFType>
+              <MSFT:AllowedValues ValueType="None"></MSFT:AllowedValues>
+            </DFProperties>
+          </Node>
+          <Node>
+            <NodeName>IntervalForScheduledRetriesForUserSession</NodeName>
+            <DFProperties>
+              <AccessType>
+                <Add />
+                <Delete />
+                <Get />
+                <Replace />
+              </AccessType>
+              <Description><![CDATA[The waiting time (in minutes) for the initial set of retries as specified by the number of retries in NumberOfScheduledRetriesForUserSession. If IntervalForScheduledRetriesForUserSession is not set, then the default value is used. Default value is 1440. If the value is 0, this schedule is disabled.]]></Description>
+              <DFFormat>
+                <int />
+              </DFFormat>
+              <Occurrence>
+                <ZeroOrOne />
+              </Occurrence>
+              <Scope>
+                <Dynamic />
+              </Scope>
+              <DFType>
+                <MIME />
+              </DFType>
+              <MSFT:AllowedValues ValueType="None"></MSFT:AllowedValues>
+            </DFProperties>
+          </Node>
+          <Node>
+            <NodeName>NumberOfScheduledRetriesForUserSession</NodeName>
+            <DFProperties>
+              <AccessType>
+                <Add />
+                <Delete />
+                <Get />
+                <Replace />
+              </AccessType>
+              <Description>The number of times the DM client should retry connecting to the server when the client is initially configured/enrolled to communicate with the server. Default value is 0. If the value is 0 and IntervalForScheduledRetriesForUserSession is not 0, then the schedule will be set to repeat for an infinite number of times.</Description>
+              <DFFormat>
+                <int />
+              </DFFormat>
+              <Occurrence>
+                <ZeroOrOne />
+              </Occurrence>
+              <Scope>
+                <Dynamic />
+              </Scope>
+              <DFType>
+                <MIME />
+              </DFType>
+              <MSFT:AllowedValues ValueType="None"></MSFT:AllowedValues>
+            </DFProperties>
+          </Node>
+        </Node>
+        <Node>
+          <NodeName>Recovery</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+            </AccessType>
+            <Description>Parent node for Recovery nodes</Description>
+            <DFFormat>
+              <node />
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <DDFName />
+            </DFType>
+            <MSFT:Applicability>
+              <MSFT:OsBuildVersion>10.0.22621, 10.0.22000.1165</MSFT:OsBuildVersion>
+              <MSFT:CspVersion>1.6</MSFT:CspVersion>
+            </MSFT:Applicability>
+          </DFProperties>
+          <Node>
+            <NodeName>AllowRecovery</NodeName>
+            <DFProperties>
+              <AccessType>
+                <Get />
+                <Replace />
+              </AccessType>
+              <DefaultValue>0</DefaultValue>
+              <Description>This node determines whether or not the client will automatically initiate a MDM Recovery operation when it detects issues with the MDM certificate</Description>
+              <DFFormat>
+                <int />
+              </DFFormat>
+              <Occurrence>
+                <One />
+              </Occurrence>
+              <Scope>
+                <Dynamic />
+              </Scope>
+              <DFType>
+                <MIME />
+              </DFType>
+              <MSFT:AllowedValues ValueType="ENUM">
+                <MSFT:Enum>
+                  <MSFT:Value>1</MSFT:Value>
+                  <MSFT:ValueDescription>MDM Recovery is allowed.</MSFT:ValueDescription>
+                </MSFT:Enum>
+                <MSFT:Enum>
+                  <MSFT:Value>0</MSFT:Value>
+                  <MSFT:ValueDescription>MDM Recovery is not allowed.</MSFT:ValueDescription>
+                </MSFT:Enum>
+              </MSFT:AllowedValues>
+              <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+            </DFProperties>
+          </Node>
+          <Node>
+            <NodeName>InitiateRecovery</NodeName>
+            <DFProperties>
+              <AccessType>
+                <Exec />
+              </AccessType>
+              <DefaultValue>0</DefaultValue>
+              <Description>This node initiates a recovery action. The server can specify prerequisites before the action is taken.</Description>
+              <DFFormat>
+                <int />
+              </DFFormat>
+              <Occurrence>
+                <One />
+              </Occurrence>
+              <Scope>
+                <Dynamic />
+              </Scope>
+              <DFType>
+                <MIME />
+              </DFType>
+              <MSFT:AllowedValues ValueType="ENUM">
+                <MSFT:Enum>
+                  <MSFT:Value>0</MSFT:Value>
+                  <MSFT:ValueDescription>Initiate MDM Recovery</MSFT:ValueDescription>
+                </MSFT:Enum>
+                <MSFT:Enum>
+                  <MSFT:Value>1</MSFT:Value>
+                  <MSFT:ValueDescription>Initiate Recovery if Keys are not already protected by the TPM, there is a TPM to put the keys into, AAD keys are protected by TPM, and the TPM is ready for attestation.</MSFT:ValueDescription>
+                </MSFT:Enum>
+              </MSFT:AllowedValues>
+            </DFProperties>
+          </Node>
+          <Node>
+            <NodeName>RecoveryStatus</NodeName>
+            <DFProperties>
+              <AccessType>
+                <Get />
+              </AccessType>
+              <DefaultValue>0</DefaultValue>
+              <Description>This node tracks the status of a Recovery request from the InitiateRecovery node.  0 - No Recovery request has been processed.  1 - Recovery is in Process.  2 - Recovery has finished successfully. 3 - Recovery has failed to start because TPM is not available.  4 - Recovery has failed to start because AAD keys are not protected by the TPM. 5 - Recovery has failed to start because the MDM keys are already protected by the TPM. 6 - Recovery has failed to start because the TPM is not ready for attestation. 7 - Recovery has failed because the client cannot authenticate to the server.  8 - Recovery has failed because the server has rejected the client's request.</Description>
+              <DFFormat>
+                <int />
+              </DFFormat>
+              <Occurrence>
+                <One />
+              </Occurrence>
+              <Scope>
+                <Dynamic />
+              </Scope>
+              <DFType>
+                <MIME />
               </DFType>
             </DFProperties>
           </Node>
@@ -1887,6 +2896,7 @@
           <Exec />
           <Get />
         </AccessType>
+        <Description>&gt;<![CDATA[The node accepts unenrollment requests by way of the OMA DM Exec command and calls the enrollment client to unenroll the device from the management server whose provider ID is specified in the <Data> tag under the <Item> element. Scope is permanent.]]></Description>
         <DFFormat>
           <null />
         </DFFormat>
@@ -1897,7 +2907,7 @@
           <Permanent />
         </Scope>
         <DFType>
-          <MIME>text/plain</MIME>
+          <MIME />
         </DFType>
       </DFProperties>
     </Node>
@@ -1908,6 +2918,7 @@
           <Get />
           <Replace />
         </AccessType>
+        <Description>For provisioning packages only. Specifies the list of servers (semicolon delimited). The first server in the semicolon-delimited list is the server that will be used to instantiate MDM sessions. The list can be a permutation or a subset of the existing server list. You cannot add new servers to the list using this node.</Description>
         <DFFormat>
           <chr />
         </DFFormat>
@@ -1918,8 +2929,11 @@
           <Dynamic />
         </Scope>
         <DFType>
-          <MIME>text/plain</MIME>
+          <MIME />
         </DFType>
+        <MSFT:AllowedValues ValueType="None">
+          <MSFT:List Delimiter=";" />
+        </MSFT:AllowedValues>
       </DFProperties>
     </Node>
     <Node>
@@ -1928,6 +2942,7 @@
         <AccessType>
           <Get />
         </AccessType>
+        <Description>Returns the hardware device ID.</Description>
         <DFFormat>
           <chr />
         </DFFormat>
@@ -1938,8 +2953,12 @@
           <Dynamic />
         </Scope>
         <DFType>
-          <MIME>text/plain</MIME>
+          <MIME />
         </DFType>
+        <MSFT:Applicability>
+          <MSFT:OsBuildVersion>10.0.16299</MSFT:OsBuildVersion>
+          <MSFT:CspVersion>1.3</MSFT:CspVersion>
+        </MSFT:Applicability>
       </DFProperties>
     </Node>
   </Node>
