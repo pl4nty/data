@@ -193,7 +193,7 @@
       </DFProperties>
     </Node>
     <Node>
-      <NodeName>CaptureThreatWindow</NodeName>
+      <NodeName>AutomaticDataCollection</NodeName>
       <DFProperties>
         <AccessType>
           <Add />
@@ -201,7 +201,7 @@
           <Get />
           <Replace />
         </AccessType>
-        <Description>Configures Enhanced Phishing Protection notifications to allow to capture the suspicious window on client machines for further threat analysis.</Description>
+        <Description>Automatically collect website or app content when additional analysis is needed to help identify security threats.</Description>
         <DFFormat>
           <int />
         </DFFormat>
@@ -214,7 +214,7 @@
         <DFType>
           <MIME>text/plain</MIME>
         </DFType>
-        <DefaultValue>1</DefaultValue>
+        <DefaultValue>0</DefaultValue>
         <MSFT:Applicability>
           <MSFT:OsBuildVersion>99.9.99999</MSFT:OsBuildVersion>
           <MSFT:CspVersion>9.9</MSFT:CspVersion>
@@ -230,7 +230,7 @@
             <MSFT:ValueDescription>Enabled</MSFT:ValueDescription>
           </MSFT:Enum>
         </MSFT:AllowedValues>
-        <MSFT:GpMapping GpEnglishName="CaptureThreatWindow" GpAreaPath="WebThreatDefense~AT~WindowsComponents~WebThreatDefense" />
+        <MSFT:GpMapping GpEnglishName="AutomaticDataCollection" GpAreaPath="WebThreatDefense~AT~WindowsComponents~WebThreatDefense" />
         <MSFT:ConflictResolution>HighestValueMostSecure</MSFT:ConflictResolution>
       </DFProperties>
     </Node>

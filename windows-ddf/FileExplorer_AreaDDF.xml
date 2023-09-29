@@ -550,11 +550,11 @@
         <MSFT:AllowedValues ValueType="ENUM">
           <MSFT:Enum>
             <MSFT:Value>0</MSFT:Value>
-            <MSFT:ValueDescription>File Explorer will request cloud file metadata and display it in the Quick access view.</MSFT:ValueDescription>
+            <MSFT:ValueDescription>File Explorer will request cloud file metadata and display it in the homepage and other views.</MSFT:ValueDescription>
           </MSFT:Enum>
           <MSFT:Enum>
             <MSFT:Value>1</MSFT:Value>
-            <MSFT:ValueDescription>File Explorer will not request cloud file metadata or display it in the Quick access view.</MSFT:ValueDescription>
+            <MSFT:ValueDescription>File Explorer will not request cloud file metadata or display it in the homepage or other views.</MSFT:ValueDescription>
           </MSFT:Enum>
         </MSFT:AllowedValues>
         <MSFT:GpMapping GpEnglishName="DisableGraphRecentItems" GpAreaPath="Explorer~AT~WindowsExplorer" />

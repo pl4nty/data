@@ -507,5 +507,152 @@
         </DFProperties>
       </Node>
     </Node>
+    <Node>
+      <NodeName>NRPT</NodeName>
+      <DFProperties>
+        <AccessType>
+          <Get />
+        </AccessType>
+        <Description>Contains entries identifying which DNS server should be used for requests applying to specific domains.</Description>
+        <DFFormat>
+          <node />
+        </DFFormat>
+        <Occurrence>
+          <One />
+        </Occurrence>
+        <Scope>
+          <Permanent />
+        </Scope>
+        <DFTitle>Name Resolution Policy Table</DFTitle>
+        <DFType>
+          <DDFName />
+        </DFType>
+        <MSFT:AtomicRequired />
+      </DFProperties>
+      <Node>
+        <NodeName></NodeName>
+        <DFProperties>
+          <AccessType>
+            <Add />
+            <Delete />
+            <Get />
+            <Replace />
+          </AccessType>
+          <Description>A row in the name resolution policy table.</Description>
+          <DFFormat>
+            <node />
+          </DFFormat>
+          <Occurrence>
+            <ZeroOrMore />
+          </Occurrence>
+          <Scope>
+            <Dynamic />
+          </Scope>
+          <DFTitle>Policy Table Entry</DFTitle>
+          <DFType>
+            <DDFName />
+          </DFType>
+          <MSFT:DynamicNodeNaming>
+            <MSFT:UniqueName>Numerical identifier, in order.</MSFT:UniqueName>
+          </MSFT:DynamicNodeNaming>
+          <MSFT:AllowedValues ValueType="RegEx"></MSFT:AllowedValues>
+          <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
+          <MSFT:AtomicRequired />
+        </DFProperties>
+        <Node>
+          <NodeName>Namespace</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>The domain name being routed under this policy. Depending on the NamespaceType value, this may be any one of: FQDN, domain suffix, hostname (of any given domain), or IPv4 or IPv6 subnet.</Description>
+            <DFFormat>
+              <chr />
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFTitle>Entry namespace</DFTitle>
+            <DFType>
+              <MIME />
+            </DFType>
+            <MSFT:AtomicRequired />
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>NamespaceType</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>The type of the namespace declared by this table entry. This defines the scope that this policy applies to.</Description>
+            <DFFormat>
+              <chr />
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFType>
+              <MIME />
+            </DFType>
+            <MSFT:AllowedValues ValueType="ENUM">
+              <MSFT:Enum>
+                <MSFT:Value>FQDN</MSFT:Value>
+                <MSFT:ValueDescription>Fully-qualified domain name of a specific host</MSFT:ValueDescription>
+              </MSFT:Enum>
+              <MSFT:Enum>
+                <MSFT:Value>Suffix</MSFT:Value>
+                <MSFT:ValueDescription>A domain name consisting of one or more labels. Defines a scope consisting of all hosts and subdomains of the given domain.</MSFT:ValueDescription>
+              </MSFT:Enum>
+              <MSFT:Enum>
+                <MSFT:Value>Prefix</MSFT:Value>
+                <MSFT:ValueDescription>A specific hostname, on any given domain.</MSFT:ValueDescription>
+              </MSFT:Enum>
+              <MSFT:Enum>
+                <MSFT:Value>v4Subnet</MSFT:Value>
+                <MSFT:ValueDescription>An IPv4 subnet for reverse lookup</MSFT:ValueDescription>
+              </MSFT:Enum>
+              <MSFT:Enum>
+                <MSFT:Value>v6Subnet</MSFT:Value>
+                <MSFT:ValueDescription>An IPv6 subnet for reverse lookup</MSFT:ValueDescription>
+              </MSFT:Enum>
+            </MSFT:AllowedValues>
+            <MSFT:AtomicRequired />
+          </DFProperties>
+        </Node>
+        <Node>
+          <NodeName>DNSServers</NodeName>
+          <DFProperties>
+            <AccessType>
+              <Get />
+              <Replace />
+            </AccessType>
+            <Description>Space-separated list of IP addresses of DNS server(s) used to resolve names that match this policy.</Description>
+            <DFFormat>
+              <chr />
+            </DFFormat>
+            <Occurrence>
+              <One />
+            </Occurrence>
+            <Scope>
+              <Dynamic />
+            </Scope>
+            <DFTitle>DNS Servers</DFTitle>
+            <DFType>
+              <MIME />
+            </DFType>
+            <MSFT:AtomicRequired />
+          </DFProperties>
+        </Node>
+      </Node>
+    </Node>
   </Node>
 </MgmtTree>
