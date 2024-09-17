@@ -2934,11 +2934,11 @@
               <MSFT:AllowedValues ValueType="ENUM">
                 <MSFT:Enum>
                   <MSFT:Value>true</MSFT:Value>
-                  <MSFT:ValueDescription>ConfigRefresh is enabled.</MSFT:ValueDescription>
+                  <MSFT:ValueDescription>Enabled</MSFT:ValueDescription>
                 </MSFT:Enum>
                 <MSFT:Enum>
                   <MSFT:Value>false</MSFT:Value>
-                  <MSFT:ValueDescription>ConfigRefresh is disabled.</MSFT:ValueDescription>
+                  <MSFT:ValueDescription>Disabled</MSFT:ValueDescription>
                 </MSFT:Enum>
               </MSFT:AllowedValues>
               <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>

@@ -33,7 +33,7 @@
           <Get />
           <Replace />
         </AccessType>
-        <Description>This policy setting controls whether to allow create personal voices with SpeakForMe Accessibility Windows Application. If you enable this policy setting, then user can create their personal voice models. If you disable this policy setting, then user cannot create their personal voice models with SpeakForMe. If you do not configure this policy setting (default), then users can launch the training flow and create their personal voice model through SpeakForMe.</Description>
+        <Description>This policy setting controls whether to allow the creation of personal voices with SpeakForMe Accessibility Windows Application. If you enable this policy setting, then user can create their personal voice models. If you disable this policy setting, then user cannot create their personal voice models with SpeakForMe. If you do not configure this policy setting (default), then users can launch the training flow and create their personal voice model through SpeakForMe.</Description>
         <DFFormat>
           <int />
         </DFFormat>
@@ -46,10 +46,10 @@
         <DFType>
           <MIME>text/plain</MIME>
         </DFType>
-        <DefaultValue>0</DefaultValue>
+        <DefaultValue>1</DefaultValue>
         <MSFT:Applicability>
-          <MSFT:OsBuildVersion>99.9.99999</MSFT:OsBuildVersion>
-          <MSFT:CspVersion>9.9</MSFT:CspVersion>
+          <MSFT:OsBuildVersion>10.0.26100</MSFT:OsBuildVersion>
+          <MSFT:CspVersion>11.0</MSFT:CspVersion>
           <MSFT:EditionAllowList>0x4;0x1B;0x30;0x31;0x48;0x54;0x79;0x7A;0x7D;0x7E;0x81;0x82;0x8A;0x8B;0xA1;0xA2;0xA4;0xA5;0xAB;0xAC;0xBC;0xBF;0xCA;0xCB;0xCD;</MSFT:EditionAllowList>
         </MSFT:Applicability>
         <MSFT:AllowedValues ValueType="ENUM">

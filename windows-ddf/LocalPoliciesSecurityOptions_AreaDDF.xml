@@ -284,8 +284,8 @@
         </DFType>
         <DefaultValue>00</DefaultValue>
         <MSFT:Applicability>
-          <MSFT:OsBuildVersion>99.9.99999</MSFT:OsBuildVersion>
-          <MSFT:CspVersion>9.9</MSFT:CspVersion>
+          <MSFT:OsBuildVersion>10.0.26100</MSFT:OsBuildVersion>
+          <MSFT:CspVersion>11.0</MSFT:CspVersion>
           <MSFT:EditionAllowList>0x4;0x1B;0x30;0x31;0x48;0x54;0x79;0x7A;0x7D;0x7E;0x81;0x82;0x8A;0x8B;0xA1;0xA2;0xA4;0xA5;0xAB;0xAC;0xAF;0xBC;0xBF;0xCA;0xCB;0xCD;0xCF;0xD2;</MSFT:EditionAllowList>
         </MSFT:Applicability>
         <MSFT:AllowedValues ValueType="None">
@@ -318,8 +318,8 @@
         </DFType>
         <DefaultValue>1</DefaultValue>
         <MSFT:Applicability>
-          <MSFT:OsBuildVersion>99.9.99999</MSFT:OsBuildVersion>
-          <MSFT:CspVersion>9.9</MSFT:CspVersion>
+          <MSFT:OsBuildVersion>10.0.26100</MSFT:OsBuildVersion>
+          <MSFT:CspVersion>11.0</MSFT:CspVersion>
           <MSFT:EditionAllowList>0x4;0x1B;0x30;0x31;0x48;0x54;0x79;0x7A;0x7D;0x7E;0x81;0x82;0x8A;0x8B;0xA1;0xA2;0xA4;0xA5;0xAB;0xAC;0xAF;0xBC;0xBF;0xCA;0xCB;0xCD;0xCF;0xD2;</MSFT:EditionAllowList>
         </MSFT:Applicability>
         <MSFT:AllowedValues ValueType="Range">
@@ -352,8 +352,8 @@
         </DFType>
         <DefaultValue>0</DefaultValue>
         <MSFT:Applicability>
-          <MSFT:OsBuildVersion>99.9.99999</MSFT:OsBuildVersion>
-          <MSFT:CspVersion>9.9</MSFT:CspVersion>
+          <MSFT:OsBuildVersion>10.0.26100</MSFT:OsBuildVersion>
+          <MSFT:CspVersion>11.0</MSFT:CspVersion>
           <MSFT:EditionAllowList>0x4;0x1B;0x30;0x31;0x48;0x54;0x79;0x7A;0x7D;0x7E;0x81;0x82;0x8A;0x8B;0xA1;0xA2;0xA4;0xA5;0xAB;0xAC;0xAF;0xBC;0xBF;0xCA;0xCB;0xCD;0xCF;0xD2;</MSFT:EditionAllowList>
         </MSFT:Applicability>
         <MSFT:AllowedValues ValueType="Range">
@@ -534,8 +534,8 @@
         </DFType>
         <DefaultValue>0</DefaultValue>
         <MSFT:Applicability>
-          <MSFT:OsBuildVersion>99.9.99999</MSFT:OsBuildVersion>
-          <MSFT:CspVersion>9.9</MSFT:CspVersion>
+          <MSFT:OsBuildVersion>10.0.26100</MSFT:OsBuildVersion>
+          <MSFT:CspVersion>11.0</MSFT:CspVersion>
           <MSFT:EditionAllowList>0x4;0x1B;0x30;0x31;0x48;0x54;0x79;0x7A;0x7D;0x7E;0x81;0x82;0x8A;0x8B;0xA1;0xA2;0xA4;0xA5;0xAB;0xAC;0xAF;0xBC;0xBF;0xCA;0xCB;0xCD;0xCF;0xD2;</MSFT:EditionAllowList>
         </MSFT:Applicability>
         <MSFT:GpMapping GpEnglishName="Devices: Restrict floppy access to locally logged-on user only" GpAreaPath="Windows Settings~Security Settings~Local Policies~Security Options" />
@@ -566,8 +566,8 @@
         </DFType>
         <DefaultValue>1</DefaultValue>
         <MSFT:Applicability>
-          <MSFT:OsBuildVersion>99.9.99999</MSFT:OsBuildVersion>
-          <MSFT:CspVersion>9.9</MSFT:CspVersion>
+          <MSFT:OsBuildVersion>10.0.26100</MSFT:OsBuildVersion>
+          <MSFT:CspVersion>11.0</MSFT:CspVersion>
           <MSFT:EditionAllowList>0x4;0x1B;0x30;0x31;0x48;0x54;0x79;0x7A;0x7D;0x7E;0x81;0x82;0x8A;0x8B;0xA1;0xA2;0xA4;0xA5;0xAB;0xAC;0xAF;0xBC;0xBF;0xCA;0xCB;0xCD;0xCF;0xD2;</MSFT:EditionAllowList>
         </MSFT:Applicability>
         <MSFT:AllowedValues ValueType="Range">
@@ -601,8 +601,8 @@
         </DFType>
         <DefaultValue>1</DefaultValue>
         <MSFT:Applicability>
-          <MSFT:OsBuildVersion>99.9.99999</MSFT:OsBuildVersion>
-          <MSFT:CspVersion>9.9</MSFT:CspVersion>
+          <MSFT:OsBuildVersion>10.0.26100</MSFT:OsBuildVersion>
+          <MSFT:CspVersion>11.0</MSFT:CspVersion>
           <MSFT:EditionAllowList>0x4;0x1B;0x30;0x31;0x48;0x54;0x79;0x7A;0x7D;0x7E;0x81;0x82;0x8A;0x8B;0xA1;0xA2;0xA4;0xA5;0xAB;0xAC;0xAF;0xBC;0xBF;0xCA;0xCB;0xCD;0xCF;0xD2;</MSFT:EditionAllowList>
         </MSFT:Applicability>
         <MSFT:AllowedValues ValueType="Range">
@@ -636,8 +636,8 @@
         </DFType>
         <DefaultValue>1</DefaultValue>
         <MSFT:Applicability>
-          <MSFT:OsBuildVersion>99.9.99999</MSFT:OsBuildVersion>
-          <MSFT:CspVersion>9.9</MSFT:CspVersion>
+          <MSFT:OsBuildVersion>10.0.26100</MSFT:OsBuildVersion>
+          <MSFT:CspVersion>11.0</MSFT:CspVersion>
           <MSFT:EditionAllowList>0x4;0x1B;0x30;0x31;0x48;0x54;0x79;0x7A;0x7D;0x7E;0x81;0x82;0x8A;0x8B;0xA1;0xA2;0xA4;0xA5;0xAB;0xAC;0xAF;0xBC;0xBF;0xCA;0xCB;0xCD;0xCF;0xD2;</MSFT:EditionAllowList>
         </MSFT:Applicability>
         <MSFT:AllowedValues ValueType="Range">
@@ -671,8 +671,8 @@
         </DFType>
         <DefaultValue>0</DefaultValue>
         <MSFT:Applicability>
-          <MSFT:OsBuildVersion>99.9.99999</MSFT:OsBuildVersion>
-          <MSFT:CspVersion>9.9</MSFT:CspVersion>
+          <MSFT:OsBuildVersion>10.0.26100</MSFT:OsBuildVersion>
+          <MSFT:CspVersion>11.0</MSFT:CspVersion>
           <MSFT:EditionAllowList>0x4;0x1B;0x30;0x31;0x48;0x54;0x79;0x7A;0x7D;0x7E;0x81;0x82;0x8A;0x8B;0xA1;0xA2;0xA4;0xA5;0xAB;0xAC;0xAF;0xBC;0xBF;0xCA;0xCB;0xCD;0xCF;0xD2;</MSFT:EditionAllowList>
         </MSFT:Applicability>
         <MSFT:AllowedValues ValueType="Range">
@@ -706,8 +706,8 @@
         </DFType>
         <DefaultValue>30</DefaultValue>
         <MSFT:Applicability>
-          <MSFT:OsBuildVersion>99.9.99999</MSFT:OsBuildVersion>
-          <MSFT:CspVersion>9.9</MSFT:CspVersion>
+          <MSFT:OsBuildVersion>10.0.26100</MSFT:OsBuildVersion>
+          <MSFT:CspVersion>11.0</MSFT:CspVersion>
           <MSFT:EditionAllowList>0x4;0x1B;0x30;0x31;0x48;0x54;0x79;0x7A;0x7D;0x7E;0x81;0x82;0x8A;0x8B;0xA1;0xA2;0xA4;0xA5;0xAB;0xAC;0xAF;0xBC;0xBF;0xCA;0xCB;0xCD;0xCF;0xD2;</MSFT:EditionAllowList>
         </MSFT:Applicability>
         <MSFT:AllowedValues ValueType="Range">
@@ -741,8 +741,8 @@
         </DFType>
         <DefaultValue>1</DefaultValue>
         <MSFT:Applicability>
-          <MSFT:OsBuildVersion>99.9.99999</MSFT:OsBuildVersion>
-          <MSFT:CspVersion>9.9</MSFT:CspVersion>
+          <MSFT:OsBuildVersion>10.0.26100</MSFT:OsBuildVersion>
+          <MSFT:CspVersion>11.0</MSFT:CspVersion>
           <MSFT:EditionAllowList>0x4;0x1B;0x30;0x31;0x48;0x54;0x79;0x7A;0x7D;0x7E;0x81;0x82;0x8A;0x8B;0xA1;0xA2;0xA4;0xA5;0xAB;0xAC;0xAF;0xBC;0xBF;0xCA;0xCB;0xCD;0xCF;0xD2;</MSFT:EditionAllowList>
         </MSFT:Applicability>
         <MSFT:AllowedValues ValueType="Range">
@@ -952,8 +952,8 @@
         </DFType>
         <DefaultValue>0</DefaultValue>
         <MSFT:Applicability>
-          <MSFT:OsBuildVersion>99.9.99999</MSFT:OsBuildVersion>
-          <MSFT:CspVersion>9.9</MSFT:CspVersion>
+          <MSFT:OsBuildVersion>10.0.26100</MSFT:OsBuildVersion>
+          <MSFT:CspVersion>11.0</MSFT:CspVersion>
           <MSFT:EditionAllowList>0x4;0x1B;0x30;0x31;0x48;0x54;0x79;0x7A;0x7D;0x7E;0x81;0x82;0x8A;0x8B;0xA1;0xA2;0xA4;0xA5;0xAB;0xAC;0xAF;0xBC;0xBF;0xCA;0xCB;0xCD;0xCF;0xD2;</MSFT:EditionAllowList>
         </MSFT:Applicability>
         <MSFT:AllowedValues ValueType="Range">
@@ -1087,8 +1087,8 @@
         </DFType>
         <DefaultValue>10</DefaultValue>
         <MSFT:Applicability>
-          <MSFT:OsBuildVersion>99.9.99999</MSFT:OsBuildVersion>
-          <MSFT:CspVersion>9.9</MSFT:CspVersion>
+          <MSFT:OsBuildVersion>10.0.26100</MSFT:OsBuildVersion>
+          <MSFT:CspVersion>11.0</MSFT:CspVersion>
           <MSFT:EditionAllowList>0x4;0x1B;0x30;0x31;0x48;0x54;0x79;0x7A;0x7D;0x7E;0x81;0x82;0x8A;0x8B;0xA1;0xA2;0xA4;0xA5;0xAB;0xAC;0xAF;0xBC;0xBF;0xCA;0xCB;0xCD;0xCF;0xD2;</MSFT:EditionAllowList>
         </MSFT:Applicability>
         <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
@@ -1118,8 +1118,8 @@
         </DFType>
         <DefaultValue>5</DefaultValue>
         <MSFT:Applicability>
-          <MSFT:OsBuildVersion>99.9.99999</MSFT:OsBuildVersion>
-          <MSFT:CspVersion>9.9</MSFT:CspVersion>
+          <MSFT:OsBuildVersion>10.0.26100</MSFT:OsBuildVersion>
+          <MSFT:CspVersion>11.0</MSFT:CspVersion>
           <MSFT:EditionAllowList>0x4;0x1B;0x30;0x31;0x48;0x54;0x79;0x7A;0x7D;0x7E;0x81;0x82;0x8A;0x8B;0xA1;0xA2;0xA4;0xA5;0xAB;0xAC;0xAF;0xBC;0xBF;0xCA;0xCB;0xCD;0xCF;0xD2;</MSFT:EditionAllowList>
         </MSFT:Applicability>
         <MSFT:AllowedValues ValueType="Range">
@@ -1328,8 +1328,8 @@
         </DFType>
         <DefaultValue>99999</DefaultValue>
         <MSFT:Applicability>
-          <MSFT:OsBuildVersion>99.9.99999</MSFT:OsBuildVersion>
-          <MSFT:CspVersion>9.9</MSFT:CspVersion>
+          <MSFT:OsBuildVersion>10.0.26100</MSFT:OsBuildVersion>
+          <MSFT:CspVersion>11.0</MSFT:CspVersion>
           <MSFT:EditionAllowList>0x4;0x1B;0x30;0x31;0x48;0x54;0x79;0x7A;0x7D;0x7E;0x81;0x82;0x8A;0x8B;0xA1;0xA2;0xA4;0xA5;0xAB;0xAC;0xAF;0xBC;0xBF;0xCA;0xCB;0xCD;0xCF;0xD2;</MSFT:EditionAllowList>
         </MSFT:Applicability>
         <MSFT:AllowedValues ValueType="Range">
@@ -1447,8 +1447,8 @@
         </DFType>
         <DefaultValue>1</DefaultValue>
         <MSFT:Applicability>
-          <MSFT:OsBuildVersion>99.9.99999</MSFT:OsBuildVersion>
-          <MSFT:CspVersion>9.9</MSFT:CspVersion>
+          <MSFT:OsBuildVersion>10.0.26100</MSFT:OsBuildVersion>
+          <MSFT:CspVersion>11.0</MSFT:CspVersion>
           <MSFT:EditionAllowList>0x4;0x1B;0x30;0x31;0x48;0x54;0x79;0x7A;0x7D;0x7E;0x81;0x82;0x8A;0x8B;0xA1;0xA2;0xA4;0xA5;0xAB;0xAC;0xAF;0xBC;0xBF;0xCA;0xCB;0xCD;0xCF;0xD2;</MSFT:EditionAllowList>
         </MSFT:Applicability>
         <MSFT:AllowedValues ValueType="Range">
@@ -1481,8 +1481,8 @@
         </DFType>
         <DefaultValue>0</DefaultValue>
         <MSFT:Applicability>
-          <MSFT:OsBuildVersion>99.9.99999</MSFT:OsBuildVersion>
-          <MSFT:CspVersion>9.9</MSFT:CspVersion>
+          <MSFT:OsBuildVersion>10.0.26100</MSFT:OsBuildVersion>
+          <MSFT:CspVersion>11.0</MSFT:CspVersion>
           <MSFT:EditionAllowList>0x4;0x1B;0x30;0x31;0x48;0x54;0x79;0x7A;0x7D;0x7E;0x81;0x82;0x8A;0x8B;0xA1;0xA2;0xA4;0xA5;0xAB;0xAC;0xAF;0xBC;0xBF;0xCA;0xCB;0xCD;0xCF;0xD2;</MSFT:EditionAllowList>
         </MSFT:Applicability>
         <MSFT:AllowedValues ValueType="Range">
@@ -1515,8 +1515,8 @@
         </DFType>
         <DefaultValue>0</DefaultValue>
         <MSFT:Applicability>
-          <MSFT:OsBuildVersion>99.9.99999</MSFT:OsBuildVersion>
-          <MSFT:CspVersion>9.9</MSFT:CspVersion>
+          <MSFT:OsBuildVersion>10.0.26100</MSFT:OsBuildVersion>
+          <MSFT:CspVersion>11.0</MSFT:CspVersion>
           <MSFT:EditionAllowList>0x4;0x1B;0x30;0x31;0x48;0x54;0x79;0x7A;0x7D;0x7E;0x81;0x82;0x8A;0x8B;0xA1;0xA2;0xA4;0xA5;0xAB;0xAC;0xAF;0xBC;0xBF;0xCA;0xCB;0xCD;0xCF;0xD2;</MSFT:EditionAllowList>
         </MSFT:Applicability>
         <MSFT:AllowedValues ValueType="ENUM">
@@ -1641,8 +1641,8 @@
         </DFType>
         <DefaultValue>0</DefaultValue>
         <MSFT:Applicability>
-          <MSFT:OsBuildVersion>99.9.99999</MSFT:OsBuildVersion>
-          <MSFT:CspVersion>9.9</MSFT:CspVersion>
+          <MSFT:OsBuildVersion>10.0.26100</MSFT:OsBuildVersion>
+          <MSFT:CspVersion>11.0</MSFT:CspVersion>
           <MSFT:EditionAllowList>0x4;0x1B;0x30;0x31;0x48;0x54;0x79;0x7A;0x7D;0x7E;0x81;0x82;0x8A;0x8B;0xA1;0xA2;0xA4;0xA5;0xAB;0xAC;0xAF;0xBC;0xBF;0xCA;0xCB;0xCD;0xCF;0xD2;</MSFT:EditionAllowList>
         </MSFT:Applicability>
         <MSFT:AllowedValues ValueType="Range">
@@ -1675,8 +1675,8 @@
         </DFType>
         <DefaultValue>0</DefaultValue>
         <MSFT:Applicability>
-          <MSFT:OsBuildVersion>99.9.99999</MSFT:OsBuildVersion>
-          <MSFT:CspVersion>9.9</MSFT:CspVersion>
+          <MSFT:OsBuildVersion>10.0.26100</MSFT:OsBuildVersion>
+          <MSFT:CspVersion>11.0</MSFT:CspVersion>
           <MSFT:EditionAllowList>0x4;0x1B;0x30;0x31;0x48;0x54;0x79;0x7A;0x7D;0x7E;0x81;0x82;0x8A;0x8B;0xA1;0xA2;0xA4;0xA5;0xAB;0xAC;0xAF;0xBC;0xBF;0xCA;0xCB;0xCD;0xCF;0xD2;</MSFT:EditionAllowList>
         </MSFT:Applicability>
         <MSFT:AllowedValues ValueType="Range">
@@ -1709,8 +1709,8 @@
           <MIME>text/plain</MIME>
         </DFType>
         <MSFT:Applicability>
-          <MSFT:OsBuildVersion>99.9.99999</MSFT:OsBuildVersion>
-          <MSFT:CspVersion>9.9</MSFT:CspVersion>
+          <MSFT:OsBuildVersion>10.0.26100</MSFT:OsBuildVersion>
+          <MSFT:CspVersion>11.0</MSFT:CspVersion>
           <MSFT:EditionAllowList>0x4;0x1B;0x30;0x31;0x48;0x54;0x79;0x7A;0x7D;0x7E;0x81;0x82;0x8A;0x8B;0xA1;0xA2;0xA4;0xA5;0xAB;0xAC;0xAF;0xBC;0xBF;0xCA;0xCB;0xCD;0xCF;0xD2;</MSFT:EditionAllowList>
         </MSFT:Applicability>
         <MSFT:AllowedValues ValueType="None">
@@ -1742,8 +1742,8 @@
           <MIME>text/plain</MIME>
         </DFType>
         <MSFT:Applicability>
-          <MSFT:OsBuildVersion>99.9.99999</MSFT:OsBuildVersion>
-          <MSFT:CspVersion>9.9</MSFT:CspVersion>
+          <MSFT:OsBuildVersion>10.0.26100</MSFT:OsBuildVersion>
+          <MSFT:CspVersion>11.0</MSFT:CspVersion>
           <MSFT:EditionAllowList>0x4;0x1B;0x30;0x31;0x48;0x54;0x79;0x7A;0x7D;0x7E;0x81;0x82;0x8A;0x8B;0xA1;0xA2;0xA4;0xA5;0xAB;0xAC;0xAF;0xBC;0xBF;0xCA;0xCB;0xCD;0xCF;0xD2;</MSFT:EditionAllowList>
         </MSFT:Applicability>
         <MSFT:AllowedValues ValueType="None">
@@ -1775,8 +1775,8 @@
           <MIME>text/plain</MIME>
         </DFType>
         <MSFT:Applicability>
-          <MSFT:OsBuildVersion>99.9.99999</MSFT:OsBuildVersion>
-          <MSFT:CspVersion>9.9</MSFT:CspVersion>
+          <MSFT:OsBuildVersion>10.0.26100</MSFT:OsBuildVersion>
+          <MSFT:CspVersion>11.0</MSFT:CspVersion>
           <MSFT:EditionAllowList>0x4;0x1B;0x30;0x31;0x48;0x54;0x79;0x7A;0x7D;0x7E;0x81;0x82;0x8A;0x8B;0xA1;0xA2;0xA4;0xA5;0xAB;0xAC;0xAF;0xBC;0xBF;0xCA;0xCB;0xCD;0xCF;0xD2;</MSFT:EditionAllowList>
         </MSFT:Applicability>
         <MSFT:AllowedValues ValueType="None">
@@ -1881,8 +1881,8 @@
           <MIME>text/plain</MIME>
         </DFType>
         <MSFT:Applicability>
-          <MSFT:OsBuildVersion>99.9.99999</MSFT:OsBuildVersion>
-          <MSFT:CspVersion>9.9</MSFT:CspVersion>
+          <MSFT:OsBuildVersion>10.0.26100</MSFT:OsBuildVersion>
+          <MSFT:CspVersion>11.0</MSFT:CspVersion>
           <MSFT:EditionAllowList>0x4;0x1B;0x30;0x31;0x48;0x54;0x79;0x7A;0x7D;0x7E;0x81;0x82;0x8A;0x8B;0xA1;0xA2;0xA4;0xA5;0xAB;0xAC;0xAF;0xBC;0xBF;0xCA;0xCB;0xCD;0xCF;0xD2;</MSFT:EditionAllowList>
         </MSFT:Applicability>
         <MSFT:AllowedValues ValueType="None">
@@ -1915,8 +1915,8 @@
         </DFType>
         <DefaultValue>0</DefaultValue>
         <MSFT:Applicability>
-          <MSFT:OsBuildVersion>99.9.99999</MSFT:OsBuildVersion>
-          <MSFT:CspVersion>9.9</MSFT:CspVersion>
+          <MSFT:OsBuildVersion>10.0.26100</MSFT:OsBuildVersion>
+          <MSFT:CspVersion>11.0</MSFT:CspVersion>
           <MSFT:EditionAllowList>0x4;0x1B;0x30;0x31;0x48;0x54;0x79;0x7A;0x7D;0x7E;0x81;0x82;0x8A;0x8B;0xA1;0xA2;0xA4;0xA5;0xAB;0xAC;0xAF;0xBC;0xBF;0xCA;0xCB;0xCD;0xCF;0xD2;</MSFT:EditionAllowList>
         </MSFT:Applicability>
         <MSFT:AllowedValues ValueType="Range">
@@ -1991,8 +1991,8 @@
         </DFType>
         <DefaultValue>1</DefaultValue>
         <MSFT:Applicability>
-          <MSFT:OsBuildVersion>99.9.99999</MSFT:OsBuildVersion>
-          <MSFT:CspVersion>9.9</MSFT:CspVersion>
+          <MSFT:OsBuildVersion>10.0.26100</MSFT:OsBuildVersion>
+          <MSFT:CspVersion>11.0</MSFT:CspVersion>
           <MSFT:EditionAllowList>0x4;0x1B;0x30;0x31;0x48;0x54;0x79;0x7A;0x7D;0x7E;0x81;0x82;0x8A;0x8B;0xA1;0xA2;0xA4;0xA5;0xAB;0xAC;0xAF;0xBC;0xBF;0xCA;0xCB;0xCD;0xCF;0xD2;</MSFT:EditionAllowList>
         </MSFT:Applicability>
         <MSFT:AllowedValues ValueType="Range">
@@ -2110,8 +2110,8 @@
         </DFType>
         <DefaultValue>1</DefaultValue>
         <MSFT:Applicability>
-          <MSFT:OsBuildVersion>99.9.99999</MSFT:OsBuildVersion>
-          <MSFT:CspVersion>9.9</MSFT:CspVersion>
+          <MSFT:OsBuildVersion>10.0.26100</MSFT:OsBuildVersion>
+          <MSFT:CspVersion>11.0</MSFT:CspVersion>
           <MSFT:EditionAllowList>0x4;0x1B;0x30;0x31;0x48;0x54;0x79;0x7A;0x7D;0x7E;0x81;0x82;0x8A;0x8B;0xA1;0xA2;0xA4;0xA5;0xAB;0xAC;0xAF;0xBC;0xBF;0xCA;0xCB;0xCD;0xCF;0xD2;</MSFT:EditionAllowList>
         </MSFT:Applicability>
         <MSFT:AllowedValues ValueType="ENUM">
@@ -2210,8 +2210,8 @@
         </DFType>
         <DefaultValue>1</DefaultValue>
         <MSFT:Applicability>
-          <MSFT:OsBuildVersion>99.9.99999</MSFT:OsBuildVersion>
-          <MSFT:CspVersion>9.9</MSFT:CspVersion>
+          <MSFT:OsBuildVersion>10.0.26100</MSFT:OsBuildVersion>
+          <MSFT:CspVersion>11.0</MSFT:CspVersion>
           <MSFT:EditionAllowList>0x4;0x1B;0x30;0x31;0x48;0x54;0x79;0x7A;0x7D;0x7E;0x81;0x82;0x8A;0x8B;0xA1;0xA2;0xA4;0xA5;0xAB;0xAC;0xAF;0xBC;0xBF;0xCA;0xCB;0xCD;0xCF;0xD2;</MSFT:EditionAllowList>
         </MSFT:Applicability>
         <MSFT:AllowedValues ValueType="Range">
@@ -2516,8 +2516,8 @@
         </DFType>
         <DefaultValue>0</DefaultValue>
         <MSFT:Applicability>
-          <MSFT:OsBuildVersion>99.9.99999</MSFT:OsBuildVersion>
-          <MSFT:CspVersion>9.9</MSFT:CspVersion>
+          <MSFT:OsBuildVersion>10.0.26100</MSFT:OsBuildVersion>
+          <MSFT:CspVersion>11.0</MSFT:CspVersion>
           <MSFT:EditionAllowList>0x4;0x1B;0x30;0x31;0x48;0x54;0x79;0x7A;0x7D;0x7E;0x81;0x82;0x8A;0x8B;0xA1;0xA2;0xA4;0xA5;0xAB;0xAC;0xAF;0xBC;0xBF;0xCA;0xCB;0xCD;0xCF;0xD2;</MSFT:EditionAllowList>
         </MSFT:Applicability>
         <MSFT:AllowedValues ValueType="Range">
@@ -2551,8 +2551,8 @@
         </DFType>
         <DefaultValue>0</DefaultValue>
         <MSFT:Applicability>
-          <MSFT:OsBuildVersion>99.9.99999</MSFT:OsBuildVersion>
-          <MSFT:CspVersion>9.9</MSFT:CspVersion>
+          <MSFT:OsBuildVersion>10.0.26100</MSFT:OsBuildVersion>
+          <MSFT:CspVersion>11.0</MSFT:CspVersion>
           <MSFT:EditionAllowList>0x4;0x1B;0x30;0x31;0x48;0x54;0x79;0x7A;0x7D;0x7E;0x81;0x82;0x8A;0x8B;0xA1;0xA2;0xA4;0xA5;0xAB;0xAC;0xAF;0xBC;0xBF;0xCA;0xCB;0xCD;0xCF;0xD2;</MSFT:EditionAllowList>
         </MSFT:Applicability>
         <MSFT:AllowedValues ValueType="Range">
@@ -2669,8 +2669,8 @@
         </DFType>
         <DefaultValue>0</DefaultValue>
         <MSFT:Applicability>
-          <MSFT:OsBuildVersion>99.9.99999</MSFT:OsBuildVersion>
-          <MSFT:CspVersion>9.9</MSFT:CspVersion>
+          <MSFT:OsBuildVersion>10.0.26100</MSFT:OsBuildVersion>
+          <MSFT:CspVersion>11.0</MSFT:CspVersion>
           <MSFT:EditionAllowList>0x4;0x1B;0x30;0x31;0x48;0x54;0x79;0x7A;0x7D;0x7E;0x81;0x82;0x8A;0x8B;0xA1;0xA2;0xA4;0xA5;0xAB;0xAC;0xAF;0xBC;0xBF;0xCA;0xCB;0xCD;0xCF;0xD2;</MSFT:EditionAllowList>
         </MSFT:Applicability>
         <MSFT:AllowedValues ValueType="Range">
@@ -2703,8 +2703,8 @@
         </DFType>
         <DefaultValue>1</DefaultValue>
         <MSFT:Applicability>
-          <MSFT:OsBuildVersion>99.9.99999</MSFT:OsBuildVersion>
-          <MSFT:CspVersion>9.9</MSFT:CspVersion>
+          <MSFT:OsBuildVersion>10.0.26100</MSFT:OsBuildVersion>
+          <MSFT:CspVersion>11.0</MSFT:CspVersion>
           <MSFT:EditionAllowList>0x4;0x1B;0x30;0x31;0x48;0x54;0x79;0x7A;0x7D;0x7E;0x81;0x82;0x8A;0x8B;0xA1;0xA2;0xA4;0xA5;0xAB;0xAC;0xAF;0xBC;0xBF;0xCA;0xCB;0xCD;0xCF;0xD2;</MSFT:EditionAllowList>
         </MSFT:Applicability>
         <MSFT:AllowedValues ValueType="Range">
@@ -2738,8 +2738,8 @@
         </DFType>
         <DefaultValue>1</DefaultValue>
         <MSFT:Applicability>
-          <MSFT:OsBuildVersion>99.9.99999</MSFT:OsBuildVersion>
-          <MSFT:CspVersion>9.9</MSFT:CspVersion>
+          <MSFT:OsBuildVersion>10.0.26100</MSFT:OsBuildVersion>
+          <MSFT:CspVersion>11.0</MSFT:CspVersion>
           <MSFT:EditionAllowList>0x4;0x1B;0x30;0x31;0x48;0x54;0x79;0x7A;0x7D;0x7E;0x81;0x82;0x8A;0x8B;0xA1;0xA2;0xA4;0xA5;0xAB;0xAC;0xAF;0xBC;0xBF;0xCA;0xCB;0xCD;0xCF;0xD2;</MSFT:EditionAllowList>
         </MSFT:Applicability>
         <MSFT:AllowedValues ValueType="Range">
@@ -2891,7 +2891,7 @@
       </DFProperties>
     </Node>
     <Node>
-      <NodeName>UserAccountControl_BehaviorOfTheElevationPromptForEnhancedAdministrators</NodeName>
+      <NodeName>UserAccountControl_BehaviorOfTheElevationPromptForAdministratorProtection</NodeName>
       <DFProperties>
         <AccessType>
           <Add />
@@ -2899,7 +2899,7 @@
           <Get />
           <Replace />
         </AccessType>
-        <Description>User Account Control: Behavior of the elevation prompt for administrators running with enhanced privilege protection.  This policy setting controls the behavior of the elevation prompt for administrators.  The options are:  • Prompt for credentials on the secure desktop: When an operation requires elevation of privilege, the user is prompted on the secure desktop to enter a privileged user name and password. If the user enters valid credentials, the operation continues with the user's highest available privilege.  • Prompt for consent on the secure desktop: When an operation requires elevation of privilege, the user is prompted on the secure desktop to select either Permit or Deny. If the user selects Permit, the operation continues with the user's highest available privilege.</Description>
+        <Description>User Account Control: Behavior of the elevation prompt for administrators running with Administrator protection.  This policy setting controls the behavior of the elevation prompt for administrators.  The options are:  • Prompt for credentials on the secure desktop: When an operation requires elevation of privilege, the user is prompted on the secure desktop to enter a privileged credentials. If the user enters valid credentials, the operation continues with the user's highest available privilege.  • Prompt for consent on the secure desktop: When an operation requires elevation of privilege, the user is prompted on the secure desktop to select either Allow changes or Don't allow. If the user selects Allow changes, the operation continues with the user's highest available privilege.</Description>
         <DFFormat>
           <int />
         </DFFormat>
@@ -2912,7 +2912,7 @@
         <DFType>
           <MIME>text/plain</MIME>
         </DFType>
-        <DefaultValue>2</DefaultValue>
+        <DefaultValue>1</DefaultValue>
         <MSFT:Applicability>
           <MSFT:OsBuildVersion>99.9.99999</MSFT:OsBuildVersion>
           <MSFT:CspVersion>6.0</MSFT:CspVersion>
@@ -2928,7 +2928,7 @@
             <MSFT:ValueDescription>Prompt for consent on the secure desktop</MSFT:ValueDescription>
           </MSFT:Enum>
         </MSFT:AllowedValues>
-        <MSFT:GpMapping GpEnglishName="User Account Control: Behavior of the elevation prompt for administrators running with enhanced privilege protection" GpAreaPath="Windows Settings~Security Settings~Local Policies~Security Options" />
+        <MSFT:GpMapping GpEnglishName="User Account Control: Behavior of the elevation prompt for administrators running with Administrator protection" GpAreaPath="Windows Settings~Security Settings~Local Policies~Security Options" />
         <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
       </DFProperties>
     </Node>
@@ -3113,7 +3113,7 @@
           <Get />
           <Replace />
         </AccessType>
-        <Description>User Account Control: Configure type of Admin Approval Mode. This policy setting controls whether enhanced privilege protection is applied to admin approval mode elevations. If you change this policy setting, you must restart your computer. This policy is only supported on Windows Desktop, not Server. The options are: • Admin Approval Mode is running in legacy mode (default). • Admin Approval Mode is running with enhanced privilege protection.</Description>
+        <Description>User Account Control: Configure type of Admin Approval Mode. This policy setting controls whether Administrator protection is applied to admin approval mode elevations. If you change this policy setting, you must restart your computer. This policy is only supported on Windows Desktop, not Server. The options are: • Admin Approval Mode is running in legacy mode (default). • Admin Approval Mode is running with Administrator protection.</Description>
         <DFFormat>
           <int />
         </DFFormat>
@@ -3139,7 +3139,7 @@
           </MSFT:Enum>
           <MSFT:Enum>
             <MSFT:Value>2</MSFT:Value>
-            <MSFT:ValueDescription>Admin Approval Mode with enhanced privilege protection</MSFT:ValueDescription>
+            <MSFT:ValueDescription>Admin Approval Mode with Administrator protection</MSFT:ValueDescription>
           </MSFT:Enum>
         </MSFT:AllowedValues>
         <MSFT:GpMapping GpEnglishName="User Account Control: Configure type of Admin Approval Mode" GpAreaPath="Windows Settings~Security Settings~Local Policies~Security Options" />

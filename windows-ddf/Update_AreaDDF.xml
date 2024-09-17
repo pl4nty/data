@@ -2939,8 +2939,8 @@
         </DFType>
         <DefaultValue>0</DefaultValue>
         <MSFT:Applicability>
-          <MSFT:OsBuildVersion>99.9.99999</MSFT:OsBuildVersion>
-          <MSFT:CspVersion>9.9</MSFT:CspVersion>
+          <MSFT:OsBuildVersion>10.0.26100</MSFT:OsBuildVersion>
+          <MSFT:CspVersion>11.0</MSFT:CspVersion>
           <MSFT:EditionAllowList>0x4;0x1B;0x30;0x31;0x48;0x54;0x79;0x7A;0x7D;0x7E;0x81;0x82;0x8A;0x8B;0xA1;0xA2;0xA4;0xA5;0xAB;0xAC;0xBC;0xBF;0xCA;0xCB;0xCD;0xCF;0xD2;</MSFT:EditionAllowList>
         </MSFT:Applicability>
         <MSFT:AllowedValues ValueType="ENUM">
@@ -2981,8 +2981,8 @@
         </DFType>
         <DefaultValue>0</DefaultValue>
         <MSFT:Applicability>
-          <MSFT:OsBuildVersion>99.9.99999</MSFT:OsBuildVersion>
-          <MSFT:CspVersion>9.9</MSFT:CspVersion>
+          <MSFT:OsBuildVersion>10.0.26100</MSFT:OsBuildVersion>
+          <MSFT:CspVersion>11.0</MSFT:CspVersion>
           <MSFT:EditionAllowList>0x4;0x1B;0x30;0x31;0x48;0x54;0x79;0x7A;0x7D;0x7E;0x81;0x82;0x8A;0x8B;0xA1;0xA2;0xA4;0xA5;0xAB;0xAC;0xBC;0xBF;0xCA;0xCB;0xCD;0xCF;0xD2;</MSFT:EditionAllowList>
         </MSFT:Applicability>
         <MSFT:AllowedValues ValueType="ENUM">
@@ -3047,6 +3047,41 @@
         </MSFT:AllowedValues>
         <MSFT:GpMapping GpEnglishName="AllowOptionalContent" GpAreaPath="WindowsUpdate~AT~WindowsComponents~WindowsUpdateCat" />
         <MSFT:ConflictResolution>LowestValueMostSecure</MSFT:ConflictResolution>
+      </DFProperties>
+    </Node>
+    <Node>
+      <NodeName>AlwaysAutoRebootAtScheduledTimeMinutes</NodeName>
+      <DFProperties>
+        <AccessType>
+          <Add />
+          <Delete />
+          <Get />
+          <Replace />
+        </AccessType>
+        <Description>Enable the policy, a restart timer will always begin immediately after Windows Update installs important updates. The restart timer can be configured to start with any value from 15 to 180 minutes. When the timer runs out, the restart will proceed even if the PC has signed-in users. The default is 15 min.</Description>
+        <DFFormat>
+          <int />
+        </DFFormat>
+        <Occurrence>
+          <ZeroOrOne />
+        </Occurrence>
+        <Scope>
+          <Dynamic />
+        </Scope>
+        <DFType>
+          <MIME>text/plain</MIME>
+        </DFType>
+        <DefaultValue>15</DefaultValue>
+        <MSFT:Applicability>
+          <MSFT:OsBuildVersion>10.0.22621</MSFT:OsBuildVersion>
+          <MSFT:CspVersion>11.0</MSFT:CspVersion>
+          <MSFT:EditionAllowList>0x4;0x1B;0x30;0x31;0x48;0x54;0x79;0x7A;0x7D;0x7E;0x81;0x82;0x8A;0x8B;0xA1;0xA2;0xA4;0xA5;0xAB;0xAC;0xBC;0xBF;0xCA;0xCB;0xCD;0xCF;0xD2;</MSFT:EditionAllowList>
+        </MSFT:Applicability>
+        <MSFT:AllowedValues ValueType="Range">
+          <MSFT:Value>[15-180]</MSFT:Value>
+        </MSFT:AllowedValues>
+        <MSFT:GpMapping GpEnglishName="AlwaysAutoRebootAtScheduledTimeMinutes" GpAreaPath="WindowsUpdate~AT~WindowsComponents~WindowsUpdateCat" GpElement="AlwaysAutoRebootAtScheduledTimeMinutes" />
+        <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
       </DFProperties>
     </Node>
   </Node>

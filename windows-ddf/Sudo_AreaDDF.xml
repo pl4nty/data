@@ -48,8 +48,8 @@
         </DFType>
         <DefaultValue>3</DefaultValue>
         <MSFT:Applicability>
-          <MSFT:OsBuildVersion>99.9.99999</MSFT:OsBuildVersion>
-          <MSFT:CspVersion>9.9</MSFT:CspVersion>
+          <MSFT:OsBuildVersion>10.0.26100</MSFT:OsBuildVersion>
+          <MSFT:CspVersion>11.0</MSFT:CspVersion>
           <MSFT:EditionAllowList></MSFT:EditionAllowList>
         </MSFT:Applicability>
         <MSFT:AllowedValues ValueType="ENUM">

@@ -256,7 +256,7 @@
         <DFType>
           <MIME>text/plain</MIME>
         </DFType>
-        <DefaultValue>1</DefaultValue>
+        <DefaultValue>0</DefaultValue>
         <MSFT:Applicability>
           <MSFT:OsBuildVersion>10.0.14393</MSFT:OsBuildVersion>
           <MSFT:CspVersion>4.1</MSFT:CspVersion>
