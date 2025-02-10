@@ -68,7 +68,7 @@
 The allowable settings are:
 
 0=Disabled (password will not be backed up)
-1=Backup the password to Azure AD only
+1=Backup the password to Microsoft Entra ID only
 2=Backup the password to Active Directory only
 
 If not specified, this setting will default to 0.</Description>
@@ -91,7 +91,7 @@ If not specified, this setting will default to 0.</Description>
             </MSFT:Enum>
             <MSFT:Enum>
               <MSFT:Value>1</MSFT:Value>
-              <MSFT:ValueDescription>Backup the password to Azure AD only</MSFT:ValueDescription>
+              <MSFT:ValueDescription>Backup the password to Microsoft Entra ID only</MSFT:ValueDescription>
             </MSFT:Enum>
             <MSFT:Enum>
               <MSFT:Value>2</MSFT:Value>
@@ -114,7 +114,7 @@ If not specified, this setting will default to 0.</Description>
 
 If not specified, this setting will default to 30 days
 
-This setting has a minimum allowed value of 1 day when backing the password to onpremises Active Directory, and 7 days when backing the password to Azure AD.
+This setting has a minimum allowed value of 1 day when backing the password to onpremises Active Directory, and 7 days when backing the password to Microsoft Entra ID.
 
 This setting has a maximum allowed value of 365 days.</Description>
           <DFFormat>
@@ -142,7 +142,7 @@ This setting has a maximum allowed value of 365 days.</Description>
                 <MSFT:DependencyAllowedValue ValueType="ENUM">
                   <MSFT:Enum>
                     <MSFT:Value>1</MSFT:Value>
-                    <MSFT:ValueDescription>BackupDirectory configured to Azure AD</MSFT:ValueDescription>
+                    <MSFT:ValueDescription>BackupDirectory configured to Microsoft Entra ID</MSFT:ValueDescription>
                   </MSFT:Enum>
                 </MSFT:DependencyAllowedValue>
               </MSFT:Dependency>
@@ -430,7 +430,7 @@ If not specified, this setting defaults to True.</Description>
           <DefaultValue>True</DefaultValue>
           <Description>Use this setting to configure whether the password is encrypted before being stored in Active Directory.
 
-This setting is ignored if the password is currently being stored in Azure.
+This setting is ignored if the password is currently being stored in Microsoft Entra ID.
 
 This setting is only honored when the Active Directory domain is at Windows Server 2016 Domain Functional Level or higher.
 
@@ -487,7 +487,7 @@ If not specified, this setting defaults to True.</Description>
           </AccessType>
           <Description>Use this setting to configure the name or SID of a user or group that can decrypt the password stored in Active Directory.
 
-This setting is ignored if the password is currently being stored in Azure.
+This setting is ignored if the password is currently being stored in Microsoft Entra ID.
 
 If not specified, the password will be decryptable by the Domain Admins group in the device's domain.
 

@@ -817,7 +817,7 @@ If you disable or do not configure this policy setting, the PIN recovery secret 
               <MIME />
             </DFType>
             <MSFT:Applicability>
-              <MSFT:OsBuildVersion>99.9.99999</MSFT:OsBuildVersion>
+              <MSFT:OsBuildVersion>10.0.22621</MSFT:OsBuildVersion>
               <MSFT:CspVersion>1.6</MSFT:CspVersion>
             </MSFT:Applicability>
             <MSFT:AllowedValues ValueType="ENUM">

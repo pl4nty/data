@@ -83,8 +83,8 @@
           <DDFName />
         </DFType>
         <MSFT:Applicability>
-          <MSFT:OsBuildVersion>99.9.99999</MSFT:OsBuildVersion>
-          <MSFT:CspVersion>9.9</MSFT:CspVersion>
+          <MSFT:OsBuildVersion>10.0.26100</MSFT:OsBuildVersion>
+          <MSFT:CspVersion>1.0</MSFT:CspVersion>
         </MSFT:Applicability>
       </DFProperties>
       <Node>
@@ -109,10 +109,6 @@
           <DFType>
             <MIME />
           </DFType>
-          <MSFT:Applicability>
-            <MSFT:OsBuildVersion>99.9.99999</MSFT:OsBuildVersion>
-            <MSFT:CspVersion>9.9</MSFT:CspVersion>
-          </MSFT:Applicability>
           <MSFT:AllowedValues ValueType="ENUM">
             <MSFT:Enum>
               <MSFT:Value>0</MSFT:Value>
@@ -160,10 +156,6 @@
           <DFType>
             <MIME />
           </DFType>
-          <MSFT:Applicability>
-            <MSFT:OsBuildVersion>99.9.99999</MSFT:OsBuildVersion>
-            <MSFT:CspVersion>9.9</MSFT:CspVersion>
-          </MSFT:Applicability>
           <MSFT:AllowedValues ValueType="ENUM">
             <MSFT:Enum>
               <MSFT:Value>0</MSFT:Value>
@@ -211,10 +203,6 @@
           <DFType>
             <MIME />
           </DFType>
-          <MSFT:Applicability>
-            <MSFT:OsBuildVersion>99.9.99999</MSFT:OsBuildVersion>
-            <MSFT:CspVersion>9.9</MSFT:CspVersion>
-          </MSFT:Applicability>
           <MSFT:AllowedValues ValueType="ENUM">
             <MSFT:Enum>
               <MSFT:Value>0</MSFT:Value>
@@ -301,8 +289,8 @@
             <MIME />
           </DFType>
           <MSFT:Applicability>
-            <MSFT:OsBuildVersion>99.9.99999</MSFT:OsBuildVersion>
-            <MSFT:CspVersion>9.9</MSFT:CspVersion>
+            <MSFT:OsBuildVersion>10.0.26100</MSFT:OsBuildVersion>
+            <MSFT:CspVersion>1.0</MSFT:CspVersion>
           </MSFT:Applicability>
           <MSFT:AllowedValues ValueType="ENUM">
             <MSFT:Enum>
@@ -344,8 +332,8 @@
             <MIME />
           </DFType>
           <MSFT:Applicability>
-            <MSFT:OsBuildVersion>99.9.99999</MSFT:OsBuildVersion>
-            <MSFT:CspVersion>9.9</MSFT:CspVersion>
+            <MSFT:OsBuildVersion>10.0.26100</MSFT:OsBuildVersion>
+            <MSFT:CspVersion>1.0</MSFT:CspVersion>
           </MSFT:Applicability>
         </DFProperties>
       </Node>

@@ -33,7 +33,7 @@
           <Get />
           <Replace />
         </AccessType>
-        <Description>Specifies the download method that Delivery Optimization can use in downloads of Windows Updates, Apps and App updates. The default value is 1.</Description>
+        <Description>Specifies the method that Delivery Optimization can use to download content on behalf of various Microsoft products.</Description>
         <DFFormat>
           <int />
         </DFFormat>
@@ -55,27 +55,27 @@
         <MSFT:AllowedValues ValueType="ENUM">
           <MSFT:Enum>
             <MSFT:Value>0</MSFT:Value>
-            <MSFT:ValueDescription>HTTP only, no peering.</MSFT:ValueDescription>
+            <MSFT:ValueDescription>HTTP only, no peering</MSFT:ValueDescription>
           </MSFT:Enum>
           <MSFT:Enum>
             <MSFT:Value>1</MSFT:Value>
-            <MSFT:ValueDescription>HTTP blended with peering behind the same NAT.</MSFT:ValueDescription>
+            <MSFT:ValueDescription>HTTP blended with peering behind the same NAT</MSFT:ValueDescription>
           </MSFT:Enum>
           <MSFT:Enum>
             <MSFT:Value>2</MSFT:Value>
-            <MSFT:ValueDescription>When this option is selected, peering will cross NATs. To create a custom group use Group ID in combination with Mode 2.</MSFT:ValueDescription>
+            <MSFT:ValueDescription>HTTP blended with peering across a private group</MSFT:ValueDescription>
           </MSFT:Enum>
           <MSFT:Enum>
             <MSFT:Value>3</MSFT:Value>
-            <MSFT:ValueDescription>HTTP blended with Internet peering.</MSFT:ValueDescription>
+            <MSFT:ValueDescription>HTTP blended with Internet peering</MSFT:ValueDescription>
           </MSFT:Enum>
           <MSFT:Enum>
             <MSFT:Value>99</MSFT:Value>
-            <MSFT:ValueDescription>Simple download mode with no peering. Delivery Optimization downloads using HTTP only and does not attempt to contact the Delivery Optimization cloud services. Added in Windows 10, version 1607.</MSFT:ValueDescription>
+            <MSFT:ValueDescription>HTTP only, no peering, no use of DO cloud service</MSFT:ValueDescription>
           </MSFT:Enum>
           <MSFT:Enum>
             <MSFT:Value>100</MSFT:Value>
-            <MSFT:ValueDescription>Bypass mode. Windows 10: Do not use Delivery Optimization and use BITS instead. Windows 11: Deprecated, use Simple mode instead.</MSFT:ValueDescription>
+            <MSFT:ValueDescription>Bypass mode, deprecated in Windows 11</MSFT:ValueDescription>
           </MSFT:Enum>
         </MSFT:AllowedValues>
         <MSFT:GpMapping GpEnglishName="DownloadMode" GpAreaPath="DeliveryOptimization~AT~WindowsComponents~DeliveryOptimizationCat" GpElement="DownloadMode" />
@@ -91,7 +91,7 @@
           <Get />
           <Replace />
         </AccessType>
-        <Description>This Policy specifies an arbitrary group ID that the device belongs to. Use this if you need to create a single group for Local Network Peering for branches that are on different domains or are not on the same LAN. Note that this is a best effort optimization and should not be relied on for an authentication of identity. Note You must use a GUID as the group ID.</Description>
+        <Description>Specifies an arbitrary group ID that the device belongs to. A GUID must be used.</Description>
         <DFFormat>
           <chr />
         </DFFormat>
@@ -122,7 +122,7 @@
           <Get />
           <Replace />
         </AccessType>
-        <Description>Specifies the maximum cache size that Delivery Optimization can utilize, as a percentage of disk size (1-100). The default value is 20.</Description>
+        <Description>Specifies the maximum cache size that Delivery Optimization can utilize, as a percentage of the available drive space.</Description>
         <DFFormat>
           <int />
         </DFFormat>
@@ -157,7 +157,7 @@
           <Get />
           <Replace />
         </AccessType>
-        <Description>Specifies the maximum size in GB of Delivery Optimization cache. This policy overrides the DOMaxCacheSize policy. The value 0 (zero) means unlimited cache. Delivery Optimization will clear the cache when the device is running low on disk space. The default is to use the DOMaxCacheSize value.</Description>
+        <Description>Specifies the maximum size in GB of Delivery Optimization cache. This policy overrides the MaxCacheSize policy.</Description>
         <DFFormat>
           <int />
         </DFFormat>
@@ -192,7 +192,7 @@
           <Get />
           <Replace />
         </AccessType>
-        <Description>Specifies the maximum time in seconds that each file is held in the Delivery Optimization cache after downloading successfully. The value 0 (zero) means unlimited; Delivery Optimization will hold the files in the cache longer and make the files available for uploads to other devices, as long as the cache size has not exceeded. The value 0 is new in Windows 10, version 1607. The default value is 604800 seconds (7 days).</Description>
+        <Description>Specifies the maximum time in seconds that each file is held in the Delivery Optimization cache after downloading successfully.</Description>
         <DFFormat>
           <int />
         </DFFormat>
@@ -227,7 +227,7 @@
           <Get />
           <Replace />
         </AccessType>
-        <Description>Specifies the maximum total bytes in GB that Delivery Optimization is allowed to upload to Internet peers in each calendar month. The value 0 (zero) means unlimited; No monthly upload limit is applied if 0 is set. The default value is 5120 (5 TB).</Description>
+        <Description>Specifies the maximum bytes in GB that Delivery Optimization is allowed to upload to Internet peers in each calendar month.</Description>
         <DFFormat>
           <int />
         </DFFormat>
@@ -262,7 +262,7 @@
           <Get />
           <Replace />
         </AccessType>
-        <Description>Specifies the minimum download QoS (Quality of Service or speed) in KiloBytes/sec for background downloads. This policy affects the blending of peer and HTTP sources. Delivery Optimization complements the download from the HTTP source to achieve the minimum QoS value set. The default value is 20480 (20 MB/s).</Description>
+        <Description>Specifies the minimum download QoS (Quality of Service) in KiloBytes/sec for background downloads.</Description>
         <DFFormat>
           <int />
         </DFFormat>
@@ -297,7 +297,7 @@
           <Get />
           <Replace />
         </AccessType>
-        <Description>Specifies the drive that Delivery Optimization should use for its cache. The drive location can be specified using environment variables, drive letter or using a full path. By default, %SystemDrive% is used to store the cache.</Description>
+        <Description>Specifies the drive that Delivery Optimization should use for its cache. The drive location can be specified using environment variables, drive letter or using a full path.</Description>
         <DFFormat>
           <chr />
         </DFFormat>
@@ -328,7 +328,7 @@
           <Get />
           <Replace />
         </AccessType>
-        <Description></Description>
+        <Description>Specifies the maximum background download bandwidth in KiloBytes/second that the device can use across all concurrent download activities using Delivery Optimization.</Description>
         <DFFormat>
           <int />
         </DFFormat>
@@ -363,7 +363,7 @@
           <Get />
           <Replace />
         </AccessType>
-        <Description></Description>
+        <Description>Specifies the maximum foreground download bandwidth in KiloBytes/second that the device can use across all concurrent download activities using Delivery Optimization.</Description>
         <DFFormat>
           <int />
         </DFFormat>
@@ -398,7 +398,7 @@
           <Get />
           <Replace />
         </AccessType>
-        <Description>Specifies the maximum background download bandwidth that Delivery Optimization uses across all concurrent download activities as a percentage of available download bandwidth. The default value 0 (zero) means that Delivery Optimization dynamically adjusts to use the available bandwidth for background downloads. Note that downloads from LAN peers will not be throttled even when this policy is set.</Description>
+        <Description>Specifies the maximum background download bandwidth that Delivery Optimization uses across all concurrent download activities as a percentage of available download bandwidth.</Description>
         <DFFormat>
           <int />
         </DFFormat>
@@ -433,7 +433,7 @@
           <Get />
           <Replace />
         </AccessType>
-        <Description>Specifies the maximum foreground download bandwidth that Delivery Optimization uses across all concurrent download activities as a percentage of available download bandwidth. The default value 0 (zero) means that Delivery Optimization dynamically adjusts to use the available bandwidth for foreground downloads. Note that downloads from LAN peers will not be throttled even when this policy is set.</Description>
+        <Description>Specifies the maximum foreground download bandwidth that Delivery Optimization uses across all concurrent download activities as a percentage of available download bandwidth.</Description>
         <DFFormat>
           <int />
         </DFFormat>
@@ -468,7 +468,7 @@
           <Get />
           <Replace />
         </AccessType>
-        <Description>Specifies the minimum content file size in MB enabled to use Peer Caching. Recommended values: 1 MB to 100,000 MB. The default value is 100 MB.</Description>
+        <Description>Specifies the minimum content file size in MB eligible to use P2P.</Description>
         <DFFormat>
           <int />
         </DFFormat>
@@ -503,7 +503,7 @@
           <Get />
           <Replace />
         </AccessType>
-        <Description>Specifies whether the device is allowed to participate in Peer Caching while connected via VPN to the domain network. This means the device can download from or upload to other domain network devices, either on VPN or on the corporate domain network.</Description>
+        <Description>Specifies whether the device, with an active VPN connection, is allowed to participate in P2P or not.</Description>
         <DFFormat>
           <int />
         </DFFormat>
@@ -525,11 +525,11 @@
         <MSFT:AllowedValues ValueType="ENUM">
           <MSFT:Enum>
             <MSFT:Value>0</MSFT:Value>
-            <MSFT:ValueDescription>Not allowed.</MSFT:ValueDescription>
+            <MSFT:ValueDescription>Not allowed</MSFT:ValueDescription>
           </MSFT:Enum>
           <MSFT:Enum>
             <MSFT:Value>1</MSFT:Value>
-            <MSFT:ValueDescription>Allowed.</MSFT:ValueDescription>
+            <MSFT:ValueDescription>Allowed</MSFT:ValueDescription>
           </MSFT:Enum>
         </MSFT:AllowedValues>
         <MSFT:GpMapping GpEnglishName="AllowVPNPeerCaching" GpAreaPath="DeliveryOptimization~AT~WindowsComponents~DeliveryOptimizationCat" GpElement="AllowVPNPeerCaching" />
@@ -545,7 +545,7 @@
           <Get />
           <Replace />
         </AccessType>
-        <Description>Specifies the minimum RAM size in GB required to use Peer Caching. For example, if the minimum set is 1 GB, then devices with 1 GB or higher available RAM will be allowed to use Peer caching. Recommended values: 1 GB to 4 GB. The default value is 4 GB.</Description>
+        <Description>Specifies the minimum total RAM size in GB required to use P2P.</Description>
         <DFFormat>
           <int />
         </DFFormat>
@@ -580,7 +580,7 @@
           <Get />
           <Replace />
         </AccessType>
-        <Description>Specifies the required minimum disk size (capacity in GB) for the device to use Peer Caching. Recommended values: 64 GB to 256 GB. If the DOModifyCacheDrive policy is set, the disk size check will apply to the new working directory specified by that policy. The default value is 32 GB.</Description>
+        <Description>Specifies the required minimum total disk size in GB for the device to use P2P.</Description>
         <DFFormat>
           <int />
         </DFFormat>
@@ -615,7 +615,7 @@
           <Get />
           <Replace />
         </AccessType>
-        <Description>Specifies any value between 1 and 100 (in percentage) to allow the device to upload data to LAN and Group peers while on battery power. Uploads will automatically pause when the battery level drops below the set minimum battery level. The recommended value to set is 40 (for 40%) if you allow uploads on battery. The default value is 0. The value 0 (zero) means not limited and the cloud service default value will be used.</Description>
+        <Description>Specifies the minimum battery level required for uploading to peers, while on battery power.</Description>
         <DFFormat>
           <int />
         </DFFormat>
@@ -650,7 +650,7 @@
           <Get />
           <Replace />
         </AccessType>
-        <Description>This policy allows you to set one or more Microsoft Connected Cache servers that will be used by your client(s).</Description>
+        <Description>Specifies one or more Microsoft Connected Cache servers that will be used by your client(s). One or more values can be added as either fully qualified domain names (FQDN) or IP addresses. To add multiple values, separate each FQDN or IP address by commas.</Description>
         <DFFormat>
           <chr />
         </DFFormat>
@@ -684,7 +684,7 @@
           <Get />
           <Replace />
         </AccessType>
-        <Description>This policy allows you to specify how clients can discover Microsoft Connected Cache servers dynamically.</Description>
+        <Description>Specifies how your client(s) can discover Microsoft Connected Cache servers dynamically.</Description>
         <DFFormat>
           <int />
         </DFFormat>
@@ -703,8 +703,15 @@
           <MSFT:CspVersion>10.0</MSFT:CspVersion>
           <MSFT:EditionAllowList>0x4;0x1B;0x30;0x31;0x48;0x54;0x79;0x7A;0x7D;0x7E;0x81;0x82;0x88;0x8A;0x8B;0xA1;0xA2;0xA4;0xA5;0xAB;0xAC;0xAF;0xBC;0xBF;0xCA;0xCB;0xCD;0xCF;0xD2;</MSFT:EditionAllowList>
         </MSFT:Applicability>
-        <MSFT:AllowedValues ValueType="Range">
-          <MSFT:Value>[0-4294967295]</MSFT:Value>
+        <MSFT:AllowedValues ValueType="ENUM">
+          <MSFT:Enum>
+            <MSFT:Value>1</MSFT:Value>
+            <MSFT:ValueDescription>DHCP Option 235</MSFT:ValueDescription>
+          </MSFT:Enum>
+          <MSFT:Enum>
+            <MSFT:Value>2</MSFT:Value>
+            <MSFT:ValueDescription>DHCP Option 235 Force</MSFT:ValueDescription>
+          </MSFT:Enum>
         </MSFT:AllowedValues>
         <MSFT:GpMapping GpEnglishName="CacheHostSource" GpAreaPath="DeliveryOptimization~AT~WindowsComponents~DeliveryOptimizationCat" GpElement="CacheHostSource" />
         <MSFT:ConflictResolution>LastWrite</MSFT:ConflictResolution>
@@ -719,7 +726,7 @@
           <Get />
           <Replace />
         </AccessType>
-        <Description>Disallow downloads from Microsoft Connected Cache servers when the device connects via VPN. By default, the device is allowed to download from Microsoft Connected Cache when connected via VPN.</Description>
+        <Description>Specify to disallow downloads from Microsoft Connected Cache servers when the device has an active VPN connection. By default, the button is 'Not Set'. This means the device is allowed to download from Microsoft Connected Cache when the device has an active VPN connection. To block these downloads, turn the button on to 'Enabled'.</Description>
         <DFFormat>
           <int />
         </DFFormat>
@@ -741,11 +748,11 @@
         <MSFT:AllowedValues ValueType="ENUM">
           <MSFT:Enum>
             <MSFT:Value>0</MSFT:Value>
-            <MSFT:ValueDescription>Allowed</MSFT:ValueDescription>
+            <MSFT:ValueDescription>Not Set</MSFT:ValueDescription>
           </MSFT:Enum>
           <MSFT:Enum>
             <MSFT:Value>1</MSFT:Value>
-            <MSFT:ValueDescription>Not allowed</MSFT:ValueDescription>
+            <MSFT:ValueDescription>Enabled</MSFT:ValueDescription>
           </MSFT:Enum>
         </MSFT:AllowedValues>
         <MSFT:GpMapping GpEnglishName="AllowCacheHostWithVPN" GpAreaPath="DeliveryOptimization~AT~WindowsComponents~DeliveryOptimizationCat" GpElement="DisallowCacheServerDownloadsOnVPN" />
@@ -761,7 +768,7 @@
           <Get />
           <Replace />
         </AccessType>
-        <Description>Set this policy to restrict peer selection to a specific source. Available options are: 1 = AD Site, 2 = Authenticated domain SID, 3 = DHCP Option ID, 4 = DNS Suffix, 5 = AAD. When set, the Group ID will be assigned automatically from the selected source. This policy is ignored if the GroupID policy is also set. The options set in this policy only apply to Group (2) download mode. If Group (2) isn't set as Download mode, this policy will be ignored. For option 3 - DHCP Option ID, the client will query DHCP Option ID 234 and use the returned GUID value as the Group ID. Starting with Windows 10, version 1903, you can use the Azure Active Directory (AAD) Tenant ID as a means to define groups. To do this, set the value of DOGroupIdSource to 5.</Description>
+        <Description>Specifies the source of group ID used for peer selection.</Description>
         <DFFormat>
           <int />
         </DFFormat>
@@ -783,7 +790,7 @@
         <MSFT:AllowedValues ValueType="ENUM">
           <MSFT:Enum>
             <MSFT:Value>0</MSFT:Value>
-            <MSFT:ValueDescription>Unset</MSFT:ValueDescription>
+            <MSFT:ValueDescription>Not Set</MSFT:ValueDescription>
           </MSFT:Enum>
           <MSFT:Enum>
             <MSFT:Value>1</MSFT:Value>
@@ -795,15 +802,15 @@
           </MSFT:Enum>
           <MSFT:Enum>
             <MSFT:Value>3</MSFT:Value>
-            <MSFT:ValueDescription>DHCP user option</MSFT:ValueDescription>
+            <MSFT:ValueDescription>DHCP Option ID</MSFT:ValueDescription>
           </MSFT:Enum>
           <MSFT:Enum>
             <MSFT:Value>4</MSFT:Value>
-            <MSFT:ValueDescription>DNS suffix</MSFT:ValueDescription>
+            <MSFT:ValueDescription>DNS Suffix</MSFT:ValueDescription>
           </MSFT:Enum>
           <MSFT:Enum>
             <MSFT:Value>5</MSFT:Value>
-            <MSFT:ValueDescription>AAD</MSFT:ValueDescription>
+            <MSFT:ValueDescription>Entra ID Tenant ID</MSFT:ValueDescription>
           </MSFT:Enum>
         </MSFT:AllowedValues>
         <MSFT:GpMapping GpEnglishName="GroupIdSource" GpAreaPath="DeliveryOptimization~AT~WindowsComponents~DeliveryOptimizationCat" GpElement="GroupIdSource" />
@@ -819,7 +826,7 @@
           <Get />
           <Replace />
         </AccessType>
-        <Description>This policy allows you to delay the use of an HTTP source in a background download that is allowed to use peer-to-peer. After the max delay is reached, the download will resume using HTTP, either downloading the entire payload or complementing the bytes that could not be downloaded from peers. Note that a download that is waiting for peer sources, will appear to be stuck for the end user. The recommended value is 1 hour (3600).</Description>
+        <Description>For background downloads that use P2P, specifies the time to wait before starting to download from the HTTP source.</Description>
         <DFFormat>
           <int />
         </DFFormat>
@@ -854,7 +861,7 @@
           <Get />
           <Replace />
         </AccessType>
-        <Description>This policy allows you to delay the use of an HTTP source in a foreground (interactive) download that is allowed to use peer-to-peer. After the max delay has reached, the download will resume using HTTP, either downloading the entire payload or complementing the bytes that could not be downloaded from Peers. Note that a download that is waiting for peer sources, will appear to be stuck for the end user. The recommended value is 1 minute (60).</Description>
+        <Description>For foreground downloads that use P2P, specifies the time to wait before starting to download from the HTTP source.</Description>
         <DFFormat>
           <int />
         </DFFormat>
@@ -889,7 +896,7 @@
           <Get />
           <Replace />
         </AccessType>
-        <Description>Specifies the time in seconds to delay the fallback from Cache Server to the HTTP source for a background content download. Note that the DODelayBackgroundDownloadFromHttp policy takes precedence over this policy to allow downloads from peers first.</Description>
+        <Description>For background downloads that use a cache server, specifies the time to wait before falling back to download from the original HTTP source.</Description>
         <DFFormat>
           <int />
         </DFFormat>
@@ -924,7 +931,7 @@
           <Get />
           <Replace />
         </AccessType>
-        <Description>Specifies the time in seconds to delay the fallback from Cache Server to the HTTP source for foreground content download. Note that the DODelayForegroundDownloadFromHttp policy takes precedence over this policy to allow downloads from peers first.</Description>
+        <Description>For foreground downloads that use a cache server, specifies the time to wait before falling back to download from the original HTTP source.</Description>
         <DFFormat>
           <int />
         </DFFormat>
@@ -959,7 +966,7 @@
           <Get />
           <Replace />
         </AccessType>
-        <Description>Set this policy to restrict peer selection via selected option. Options available are: 1=Subnet mask, 2 = Local discovery (DNS-SD). These options apply to both Download Mode LAN (1) and Group (2).</Description>
+        <Description>Specifies to restrict peer selection using the selected method, in addition to the DownloadMode policy.</Description>
         <DFFormat>
           <int />
         </DFFormat>
@@ -981,15 +988,15 @@
         <MSFT:AllowedValues ValueType="ENUM">
           <MSFT:Enum>
             <MSFT:Value>0</MSFT:Value>
-            <MSFT:ValueDescription>None.</MSFT:ValueDescription>
+            <MSFT:ValueDescription>None</MSFT:ValueDescription>
           </MSFT:Enum>
           <MSFT:Enum>
             <MSFT:Value>1</MSFT:Value>
-            <MSFT:ValueDescription>Subnet mask.</MSFT:ValueDescription>
+            <MSFT:ValueDescription>Subnet mask</MSFT:ValueDescription>
           </MSFT:Enum>
           <MSFT:Enum>
             <MSFT:Value>2</MSFT:Value>
-            <MSFT:ValueDescription>Local peer discovery (DNS-SD).</MSFT:ValueDescription>
+            <MSFT:ValueDescription>Local discovery (DNS-SD)</MSFT:ValueDescription>
           </MSFT:Enum>
         </MSFT:AllowedValues>
         <MSFT:GpMapping GpEnglishName="RestrictPeerSelectionBy" GpAreaPath="DeliveryOptimization~AT~WindowsComponents~DeliveryOptimizationCat" GpElement="RestrictPeerSelectionBy" />
@@ -1005,7 +1012,7 @@
           <Get />
           <Replace />
         </AccessType>
-        <Description>This policy allows you to set one or more keywords used to recognize VPN connections.</Description>
+        <Description>Specifies one or more keywords used to recognize VPN connections. To add multiple keywords, separate each by a comma.</Description>
         <DFFormat>
           <chr />
         </DFFormat>
