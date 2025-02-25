@@ -11,6 +11,8 @@ on:
 jobs:
   scheduled:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - uses: denoland/setup-deno@v2
         with:
