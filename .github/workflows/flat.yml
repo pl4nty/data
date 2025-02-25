@@ -1,0 +1,22 @@
+name: Flat
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+  schedule:
+    - cron: '0 * * * *'
+
+jobs:
+  scheduled:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: denoland/setup-deno@v2
+        with:
+          deno-version: v2.x
+      - uses: actions/checkout@v2
+      - uses: githubocto/flat@v3
+        with:
+          http_url: https://api.steampowered.com/ISteamApps/GetSDRConfig/v1?appid=440
+          downloaded_filename: network_config_tf2.json
