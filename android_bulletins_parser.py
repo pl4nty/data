@@ -151,21 +151,6 @@ def extract_bulletin_sections(bulletin_entry: BulletinEntry) -> BulletinEntryDet
                 # skip over the empty fields
                 if column.text.strip() == '':
                     continue
-
-                # duplicate row, because I can't find a better way
-                if column.has_attr('rowspan'):
-                    rowspan = int(column['rowspan'])
-                    # Get the text content of this cell
-                    # Store the text for this cell and the next (rowspan-1) rows
-                    cell_text = ' '.join(column.get_text().replace('\n', ' ').strip().split('  ')[0].split())
-                    # Create entries for the spanned rows
-                    for i in range(rowspan):
-                        if i == 0:  # Current row
-                            entry[column_titles[n_cols]] = cell_text
-                        else:  # Future rows - will be handled in next iterations
-                            if len(sections[table_headers[n_tables]]) < 1:
-                                sections[table_headers[n_tables]].append({})
-                            sections[table_headers[n_tables]][-1][column_titles[n_cols]] = cell_text
                     
                 if table_descriptions[n_tables].startswith(NO_SECURITY_ISSUES_MSG):
                     n_cols += 1
@@ -222,6 +207,9 @@ def flatten_bulletin(bulletin: Dict) -> List[Dict]:
             if 'Component' in flattened_entry:
                 flattened_entry['Subcomponent'] = flattened_entry['Component']
             flattened_entry['Component'] = section_name
+            # filter out broken rows from td rowspan
+            if 'CVE' in flattened_entry and not (flattened_entry['CVE'].startswith('CVE-') or flattened_entry['CVE'].startswith('CVE-')):
+                continue
             flattened.append(flattened_entry)
     
     return flattened
@@ -252,8 +240,8 @@ def main() -> None:
     # sections for each entry
     for bulletin_table_entry in all_bulletin_entries:
         # test with a specific bulletin
-        # if 'security/bulletin/2020-11-01' not in bulletin_table_entry.bulletin_url:
-        #   continue
+        if 'security/bulletin/2020-11-01' not in bulletin_table_entry.bulletin_url:
+          continue
         try:
             sections = extract_bulletin_sections(bulletin_table_entry)
             all_bulletin_details.append(sections.to_dict())
