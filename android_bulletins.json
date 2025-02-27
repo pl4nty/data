@@ -1,0 +1,124 @@
+[
+    {
+        "bulletin_url": "https://source.android.com/docs/security/bulletin/pixel-watch/2024-12-01",
+        "published_date": "December 5, 2024",
+        "patch_level": [
+            "2024-12-05"
+        ],
+        "sections": {
+            "Qualcomm components": [
+                {
+                    "CVE": "CVE-2024-33039",
+                    "References": "A-344628792",
+                    "Severity": "Moderate",
+                    "Subcomponent": "Audio"
+                }
+            ]
+        }
+    },
+    {
+        "bulletin_url": "https://source.android.com/docs/security/bulletin/pixel-watch/2024-08-01",
+        "published_date": "August 6, 2024",
+        "patch_level": [
+            "2024-08-05"
+        ],
+        "sections": {}
+    },
+    {
+        "bulletin_url": "https://source.android.com/docs/security/bulletin/pixel-watch/2024-07-01",
+        "published_date": "July 16, 2024",
+        "patch_level": [
+            "2024-07-05"
+        ],
+        "sections": {}
+    },
+    {
+        "bulletin_url": "https://source.android.com/docs/security/bulletin/pixel-watch/2024-06-01",
+        "published_date": "June 11, 2024",
+        "patch_level": [
+            "2024-06-05"
+        ],
+        "sections": {}
+    },
+    {
+        "bulletin_url": "https://source.android.com/docs/security/bulletin/pixel-watch/2024-05-01",
+        "published_date": "May 7, 2024",
+        "patch_level": [
+            "2024-05-05"
+        ],
+        "sections": {}
+    },
+    {
+        "bulletin_url": "https://source.android.com/docs/security/bulletin/pixel-watch/2024-04-01",
+        "published_date": "April 5, 2024",
+        "patch_level": [
+            "2024-04-05"
+        ],
+        "sections": {}
+    },
+    {
+        "bulletin_url": "https://source.android.com/docs/security/bulletin/pixel-watch/2024-03-01",
+        "published_date": "March 4, 2024",
+        "patch_level": [
+            "2024-03-05"
+        ],
+        "sections": {}
+    },
+    {
+        "bulletin_url": "https://source.android.com/docs/security/bulletin/pixel-watch/2024-02-01",
+        "published_date": "February 5, 2024",
+        "patch_level": [
+            "2024-02-05"
+        ],
+        "sections": {}
+    },
+    {
+        "bulletin_url": "https://source.android.com/docs/security/bulletin/pixel-watch/2024-01-01",
+        "published_date": "January 8, 2024",
+        "patch_level": [
+            "2024-01-05"
+        ],
+        "sections": {}
+    },
+    {
+        "bulletin_url": "https://source.android.com/docs/security/bulletin/pixel-watch/2023/2023-12-01",
+        "published_date": "December 11, 2023",
+        "patch_level": [
+            "2023-12-05"
+        ],
+        "sections": {
+            "Announcements": [
+                {
+                    "CVE": "CVE-2023-48418",
+                    "References": "A-296051696",
+                    "Type": "EoP",
+                    "Severity": "High",
+                    "Component": "google_clockwork"
+                },
+                {
+                    "CVE": "CVE-2023-4164",
+                    "References": "A-294235313",
+                    "Type": "ID",
+                    "Severity": "Moderate",
+                    "Component": "WAC"
+                }
+            ]
+        }
+    },
+    {
+        "bulletin_url": "https://source.android.com/docs/security/bulletin/pixel-watch/2023/2023-09-01",
+        "published_date": "September 25, 2023",
+        "patch_level": [
+            "2023-09-05"
+        ],
+        "sections": {}
+    },
+    {
+        "bulletin_url": "https://source.android.com/docs/security/bulletin/pixel-watch/2023/2023-06-01",
+        "published_date": "June 13, 2023",
+        "patch_level": [
+            "2023-06-05"
+        ],
+        "sections": {}
+    }
+]
