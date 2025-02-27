@@ -22,3 +22,22 @@ jobs:
         with:
           http_url: https://api.steampowered.com/ISteamApps/GetSDRConfig/v1?appid=440
           downloaded_filename: network_config_tf2.json
+  scripts:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    strategy:
+      matrix:
+        cmd:
+          - python android_bulletins_parser.py
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5.4.0
+        with:
+          python-version: 3.x
+          cache: pip
+      - run: ${{ matrix.sh }}
+      - uses: EndBug/add-and-commit@v9.1.4
+        with:
+          default_author: github_actions
+          message: "change: ${{ matrix.sh }}"
