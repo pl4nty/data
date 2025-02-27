@@ -86,16 +86,17 @@ def extract_bulletin_sections(bulletin_entry: BulletinEntry) -> BulletinEntryDet
     # some advisories have invalid HTML
     html_parser = BeautifulSoup(html_page.content, 'lxml')
 
-
-    table_headers_ref = html_parser.find_all('h3')
-    if (len(table_headers_ref) > 3):
-        table_headers_ref = table_headers_ref[:-3]
-    else:
-      table_headers_ref = html_parser.find_all('h2')
+    table_headers_ref = html_parser.find_all('h4')
+    if (len(table_headers_ref) == 0):
+      table_headers_ref = html_parser.find_all('h3')
       if (len(table_headers_ref) > 3):
           table_headers_ref = table_headers_ref[:-3]
       else:
-        return BulletinEntryDetailed(bulletin_entry, {})
+        table_headers_ref = html_parser.find_all('h2')
+        if (len(table_headers_ref) > 3):
+          table_headers_ref = table_headers_ref[:-3]
+        else:
+          return BulletinEntryDetailed(bulletin_entry, {})
     if (table_headers_ref[-1].get_text().strip() == 'Common Questions and Answers'):
         table_headers_ref = table_headers_ref[:-1]
     if (table_headers_ref[-1].get_text().strip() == 'Versions'):
@@ -152,6 +153,7 @@ def extract_bulletin_sections(bulletin_entry: BulletinEntry) -> BulletinEntryDet
 
                 if (n_cols >= len(column_titles)):
                     print(f"column count {n_cols} exceeds column titles")
+                    print(rows)
                 entry[column_titles[n_cols]] = column.get_text().replace('\n', ' ').strip().split('  ')[0]
                 n_cols += 1 # advance columns
             if entry:  # Only append if entry is not empty
@@ -203,7 +205,7 @@ def main() -> None:
     # sections for each entry
     for bulletin_table_entry in all_bulletin_entries:
         # test with a specific bulletin
-        # if 'pixel-watch/' not in bulletin_table_entry.bulletin_url:
+        # if 'aaos/' not in bulletin_table_entry.bulletin_url:
         #   continue
         try:
             sections = extract_bulletin_sections(bulletin_table_entry)
