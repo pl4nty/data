@@ -14071,14 +14071,14 @@
                 },
                 {
                     "CVE": "CVE-2021-0436",
-                    "References": "A-176496160 \t[2]",
+                    "References": "A-176496160 [2]",
                     "Type": "ID",
                     "Severity": "High",
                     "Updated AOSP versions": "8.1, 9, 10, 11"
                 },
                 {
                     "CVE": "CVE-2021-0471",
-                    "References": "A-176444786 \t[2]",
+                    "References": "A-176444786 [2]",
                     "Type": "ID",
                     "Severity": "High",
                     "Updated AOSP versions": "8.1, 9, 10, 11"
@@ -14094,14 +14094,14 @@
                 },
                 {
                     "CVE": "CVE-2021-0429",
-                    "References": "A-175074139 \t[2]",
+                    "References": "A-175074139 [2]",
                     "Type": "EoP",
                     "Severity": "High",
                     "Updated AOSP versions": "8.1, 9, 10, 11"
                 },
                 {
                     "CVE": "CVE-2021-0433",
-                    "References": "A-171221090 \t[2]",
+                    "References": "A-171221090 [2]",
                     "Type": "EoP",
                     "Severity": "High",
                     "Updated AOSP versions": "8.1, 9, 10, 11"
