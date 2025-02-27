@@ -203,8 +203,8 @@ def main() -> None:
     # sections for each entry
     for bulletin_table_entry in all_bulletin_entries:
         # test with a specific bulletin
-        if 'pixel-watch/' not in bulletin_table_entry.bulletin_url:
-          continue
+        # if 'pixel-watch/' not in bulletin_table_entry.bulletin_url:
+        #   continue
         try:
             sections = extract_bulletin_sections(bulletin_table_entry)
             all_bulletin_details.append(sections.to_dict())
