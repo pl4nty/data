@@ -152,6 +152,21 @@ def extract_bulletin_sections(bulletin_entry: BulletinEntry) -> BulletinEntryDet
                 if column.text.strip() == '':
                     continue
 
+                # duplicate row, because I can't find a better way
+                if column.has_attr('rowspan'):
+                    rowspan = int(column['rowspan'])
+                    # Get the text content of this cell
+                    # Store the text for this cell and the next (rowspan-1) rows
+                    cell_text = ' '.join(column.get_text().replace('\n', ' ').strip().split('  ')[0].split())
+                    # Create entries for the spanned rows
+                    for i in range(rowspan):
+                        if i == 0:  # Current row
+                            entry[column_titles[n_cols]] = cell_text
+                        else:  # Future rows - will be handled in next iterations
+                            if len(sections[table_headers[n_tables]]) < 1:
+                                sections[table_headers[n_tables]].append({})
+                            sections[table_headers[n_tables]][-1][column_titles[n_cols]] = cell_text
+                    
                 if table_descriptions[n_tables].startswith(NO_SECURITY_ISSUES_MSG):
                     n_cols += 1
                     continue
@@ -237,7 +252,7 @@ def main() -> None:
     # sections for each entry
     for bulletin_table_entry in all_bulletin_entries:
         # test with a specific bulletin
-        # if 'pixel-watch/' not in bulletin_table_entry.bulletin_url:
+        # if 'security/bulletin/2020-11-01' not in bulletin_table_entry.bulletin_url:
         #   continue
         try:
             sections = extract_bulletin_sections(bulletin_table_entry)
