@@ -154,7 +154,7 @@ def extract_bulletin_sections(bulletin_entry: BulletinEntry) -> BulletinEntryDet
                 if (n_cols >= len(column_titles)):
                     print(f"column count {n_cols} exceeds column titles")
                     print(rows)
-                entry[column_titles[n_cols]] = column.get_text().replace('\n', ' ').strip().split('  ')[0]
+                entry[column_titles[n_cols]] = ' '.join(column.get_text().replace('\n', ' ').strip().split('  ')[0].split())
                 n_cols += 1 # advance columns
             if entry:  # Only append if entry is not empty
                 sections[table_headers[n_tables].replace('\n    ', ' ')].append(entry)
