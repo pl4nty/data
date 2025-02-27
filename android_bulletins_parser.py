@@ -97,6 +97,11 @@ def extract_bulletin_sections(bulletin_entry: BulletinEntry) -> BulletinEntryDet
           table_headers_ref = table_headers_ref[:-3]
         else:
           return BulletinEntryDetailed(bulletin_entry, {})
+    
+    if (table_headers_ref[0].get_text().strip() == 'Announcements'):
+        table_headers_ref = table_headers_ref[1:]
+    if (len(table_headers_ref) == 0):
+        return BulletinEntryDetailed(bulletin_entry, {})
     if (table_headers_ref[-1].get_text().strip() == 'Common Questions and Answers'):
         table_headers_ref = table_headers_ref[:-1]
     if (table_headers_ref[-1].get_text().strip() == 'Versions'):
@@ -187,7 +192,7 @@ def flatten_bulletin(bulletin: Dict) -> List[Dict]:
     base_info = {
         'Bulletin': bulletin['bulletin_url'],
         'Published': bulletin['published_date'],
-        'Patch Level': bulletin['patch_level'][0] if bulletin['patch_level'] else None
+        'Patch level': bulletin['patch_level'][0] if bulletin['patch_level'] else None
     }
     
     # If there are no sections, return just the base info
@@ -198,8 +203,10 @@ def flatten_bulletin(bulletin: Dict) -> List[Dict]:
     for section_name, entries in bulletin['sections'].items():
         for entry in entries:
             flattened_entry = base_info.copy()
-            flattened_entry['Component'] = section_name
             flattened_entry.update(entry)
+            if 'Component' in flattened_entry:
+                flattened_entry['Subcomponent'] = flattened_entry['Component']
+            flattened_entry['Component'] = section_name
             flattened.append(flattened_entry)
     
     return flattened
