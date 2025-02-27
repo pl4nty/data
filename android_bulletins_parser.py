@@ -179,6 +179,31 @@ def extract_bulletin_sources(html_parser: BeautifulSoup) -> List[str]:
     
     return sources
 
+def flatten_bulletin(bulletin: Dict) -> List[Dict]:
+    """Flatten a bulletin by creating separate entries for each CVE in each section"""
+    flattened = []
+    
+    # Extract base info that will be common to all entries
+    base_info = {
+        'Bulletin': bulletin['bulletin_url'],
+        'Published': bulletin['published_date'],
+        'Patch Level': bulletin['patch_level'][0] if bulletin['patch_level'] else None
+    }
+    
+    # If there are no sections, return just the base info
+    if not bulletin['sections']:
+        return [base_info]
+    
+    # Iterate through each section and its entries
+    for section_name, entries in bulletin['sections'].items():
+        for entry in entries:
+            flattened_entry = base_info.copy()
+            flattened_entry['Component'] = section_name
+            flattened_entry.update(entry)
+            flattened.append(flattened_entry)
+    
+    return flattened
+
 def main() -> None:
     sess = requests.Session()
     html_page = sess.get(url=URL)
@@ -205,7 +230,7 @@ def main() -> None:
     # sections for each entry
     for bulletin_table_entry in all_bulletin_entries:
         # test with a specific bulletin
-        # if 'aaos/' not in bulletin_table_entry.bulletin_url:
+        # if 'pixel-watch/' not in bulletin_table_entry.bulletin_url:
         #   continue
         try:
             sections = extract_bulletin_sections(bulletin_table_entry)
@@ -215,10 +240,15 @@ def main() -> None:
             print(f"Error processing bulletin {bulletin_table_entry.bulletin_url}: {e}")
             continue
 
-    # Write all bulletins to single JSON file
+    # Flatten all bulletins
+    flattened_bulletins = []
+    for bulletin in all_bulletin_details:
+        flattened_bulletins.extend(flatten_bulletin(bulletin))
+
+    # Write flattened bulletins to JSON file
     with open('android_bulletins.json', 'w', encoding='utf-8') as f:
-        json.dump(all_bulletin_details, f, ensure_ascii=False, indent=4)
-    print(f"Successfully saved {len(all_bulletin_details)} bulletins")
+        json.dump(flattened_bulletins, f, ensure_ascii=False, indent=4)
+    print(f"Successfully saved {len(flattened_bulletins)} bulletin entries")
 
 if __name__ == '__main__':
     main()
