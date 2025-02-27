@@ -61020,6 +61020,38 @@
         }
     },
     {
+        "bulletin_url": "https://source.android.com/docs/security/bulletin/aaos/2022-01-01",
+        "published_date": "January 4, 2022",
+        "patch_level": [
+            "2022-01-01"
+        ],
+        "sections": {
+            "AAOS": [
+                {
+                    "CVE": "CVE-2021-1035",
+                    "References": "A-195668284",
+                    "Type": "EoP",
+                    "Severity": "High",
+                    "Updated AOSP versions": "10, 12"
+                },
+                {
+                    "CVE": "CVE-2021-1036",
+                    "References": "A-182812255",
+                    "Type": "EoP",
+                    "Severity": "High",
+                    "Updated AOSP versions": "9, 10, 11, 12"
+                },
+                {
+                    "CVE": "CVE-2021-1037",
+                    "References": "A-162951906",
+                    "Type": "ID",
+                    "Severity": "High",
+                    "Updated AOSP versions": "9, 10, 11, 12"
+                }
+            ]
+        }
+    },
+    {
         "bulletin_url": "https://source.android.com/docs/security/bulletin/aaos/2021-12-01",
         "published_date": "December 6, 2021",
         "patch_level": [
