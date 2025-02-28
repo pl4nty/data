@@ -22,6 +22,35 @@ jobs:
         with:
           http_url: https://api.steampowered.com/ISteamApps/GetSDRConfig/v1?appid=440
           downloaded_filename: network_config_tf2.json
+      - uses: githubocto/flat@v3
+        with:
+          http_url: https://login.microsoftonline.com/common/discovery/instance?api-version=1.1&authorization_endpoint=https://login.microsoftonline.com/common/oauth2/v2.0/authorize
+          downloaded_filename: microsoft_instance_discovery.json
+      - uses: githubocto/flat@v3
+        with:
+          http_url: https://login.microsoftonline.com/common/.well-known/openid-configuration
+          downloaded_filename: microsoft_oidc_config.json
+      - uses: githubocto/flat@v3
+        with:
+          http_url: https://login.windows-ppe.net/common/.well-known/openid-configuration
+          downloaded_filename: microsoft_oidc_config_ppe.json
+      - uses: githubocto/flat@v3
+        with:
+          http_url: https://login.microsoftonline.com/common/discovery/keys
+          downloaded_filename: microsoft_jwks.json
+      - uses: githubocto/flat@v3
+        with:
+          http_url: https://login.microsoftonline.us/common/discovery/keys
+          downloaded_filename: microsoft_jwks_us.json
+      - uses: githubocto/flat@v3
+        with:
+          http_url: https://login.partner.microsoftonline.cn/common/discovery/keys
+          downloaded_filename: microsoft_jwks_cn.json
+      - uses: githubocto/flat@v3
+        with:
+          http_url: https://login.windows-ppe.net/common/discovery/keys
+          downloaded_filename: microsoft_jwks_ppe.json
+      # TODO decode https://login.microsoftonline.com/common/kerberos
   scripts:
     runs-on: ubuntu-latest
     permissions:
