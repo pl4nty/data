@@ -1,4 +1,4 @@
-name: Flat
+name: main
 
 on:
   push:
@@ -9,7 +9,7 @@ on:
     - cron: '0 * * * *'
 
 jobs:
-  scripts:
+  main:
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -18,6 +18,8 @@ jobs:
         cmd:
           - python android_bulletins_parser.py
           - python get_json.py
+          # 30s+ request
+          - python get_json.py https://3rdpartysource.microsoft.com/downloads microsoft_3rdpartysource.json
           # TODO decode https://login.microsoftonline.com/common/kerberos
     steps:
       - uses: actions/checkout@v4
