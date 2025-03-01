@@ -1,0 +1,9 @@
+include_rules = [
+  "+mojo/public",
+  "+mojo/core/embedder"
+]
+
+# Edge-only include rules:
+include_rules += [
+  "+chrome/common/edge_external_task_manager_shared.h",
+]

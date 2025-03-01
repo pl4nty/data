@@ -1,0 +1,14 @@
+include_rules = [
+  "+chrome/common/chrome_switches.h",
+  "+content/public/common/content_switches.h",
+  "+components/crash/core/app",
+  "+components/crash/content/app",
+  "+extensions/buildflags",
+  "+extensions/common",
+  "+device/base/synchronization"
+]
+
+# Edge-only include rules:
+include_rules += [
+  "+chrome/common/edge_external_task_manager_shared.h",
+]

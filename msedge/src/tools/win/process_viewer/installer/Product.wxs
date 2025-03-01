@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+  <Product Id="0F79339D-86EE-44E5-ABFE-6E27F9EA425A" Name="Edge Process Viewer" Language="1033" Version="1.0.0.0" Manufacturer="Microsoft Corporation" UpgradeCode="555491CA-3081-44F1-BE76-6827355D5238">
+    <Package InstallerVersion="200" Compressed="yes" InstallScope="perMachine" />
+
+    <MajorUpgrade DowngradeErrorMessage="A newer version of [ProductName] is already installed." />
+    <MediaTemplate EmbedCab="yes" />
+
+    <Directory Id="TARGETDIR" Name="SourceDir">
+      <Directory Id="ProgramMenuFolder" />
+      <Directory Id="ProgramFilesFolder">
+        <Directory Id="INSTALLFOLDER" Name="Edge Process Viewer" />
+      </Directory>
+    </Directory>
+
+    <DirectoryRef Id="INSTALLFOLDER">
+
+      <Component Id="EdgeProcessViewer.exe" Guid="BF5A8E73-6D33-4CC8-BAE1-AA37B82F5776">
+        <File Id="EdgeProcessViewer.exe" Source="..\EdgeProcessViewer\EdgeProcessViewer\bin\Release\EdgeProcessViewer.exe" KeyPath="yes" />
+      </Component>
+      <Component Id="edge_process_watcher.exe_x86" Guid="7A02726E-C295-4DF8-9F8D-57B4E33091C3" Win64="no">
+        <Condition>NOT Msix64</Condition>
+        <File Id="edge_process_watcher.exe_x86" Source="..\..\..\..\out\release_x86\edge_process_watcher.exe" KeyPath="yes" />
+      </Component>
+      <Component Id="edge_process_watcher.exe_x64" Guid="DDBE3CC4-36A1-4A14-AD9E-6AB2C3E59BF8" Win64="yes">
+        <Condition>Msix64</Condition>
+        <File Id="edge_process_watcher.exe_x64" Source="..\..\..\..\out\release_x64\edge_process_watcher.exe" KeyPath="yes" />
+      </Component>
+      <Component Id="process_viewer_data.dll_x86" Guid="F0E8DA05-1C15-47B9-856E-96CFFBA49D5D" Win64="no">
+        <Condition>NOT Msix64</Condition>
+        <File Id="process_viewer_data.dll_x86" Source="..\..\..\..\out\release_x86\process_viewer_data.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="process_viewer_data.dll_x64" Guid="9C1BFA97-6BC9-43B6-AAC2-740071A145A3" Win64="yes">
+        <Condition>Msix64</Condition>
+        <File Id="process_viewer_data.dll_x64" Source="..\..\..\..\out\release_x64\process_viewer_data.dll" KeyPath="yes" />
+      </Component>
+    </DirectoryRef>
+
+    <DirectoryRef Id="ProgramMenuFolder">
+      <Component Id="ApplicationShortcut" Guid="17CA1AB4-AC2D-428B-ABBB-0FAAA2504FB5">
+        <Shortcut Id="ApplicationStartMenuShortcut"
+                  Name="Edge Process Viewer"
+                  Target="[#EdgeProcessViewer.exe]"
+                  WorkingDirectory="APPLICATIONROOTDIRECTORY" />
+        <RegistryValue Root="HKCU" Key="Software\Microsoft\Edge Process Viewer" Name="installed" Type="integer" Value="1" KeyPath="yes" />
+      </Component>
+    </DirectoryRef>
+
+    <DirectoryRef Id="TARGETDIR">
+      <Component Id="RegistryEntries" Guid="327C8B42-74D3-4B3C-8187-F72CEE4E772A">
+        <RegistryKey Root="HKCU" Key="Software\Microsoft\Windows\CurrentVersion\Run">
+          <RegistryValue Type="string" Name="EdgeProcessWatcher" Value="[#edge_process_watcher.exe_x86]" KeyPath="yes"/>
+        </RegistryKey>
+      </Component>
+    </DirectoryRef>
+
+    <Feature Id="EdgeProcessViewerApp" Title="Edge Process Viewer" Level="1">
+      <ComponentRef Id="EdgeProcessViewer.exe" />
+      <ComponentRef Id="edge_process_watcher.exe_x86" />
+      <ComponentRef Id="edge_process_watcher.exe_x64" />
+      <ComponentRef Id="process_viewer_data.dll_x86" />
+      <ComponentRef Id="process_viewer_data.dll_x64" />
+      <ComponentRef Id="ApplicationShortcut" />
+      <ComponentRef Id="RegistryEntries" />
+    </Feature>
+
+    <Icon Id="EdgeProcessViewerIcon.exe" SourceFile="..\EdgeProcessViewer\EdgeProcessViewer\EdgeProcessViewer.ico" />
+    <Property Id="ARPPRODUCTICON" Value="EdgeProcessViewerIcon.exe" />
+    <Property Id="ARPNOMODIFY" Value="yes" Secure="yes" />
+
+    <CustomAction Id="LaunchWatcher" Directory="INSTALLFOLDER" ExeCommand="[INSTALLFOLDER]edge_process_watcher.exe" Return="asyncNoWait" />
+    <CustomAction Id="TerminateWatcher" Directory="INSTALLFOLDER" ExeCommand="[SYSTEMFOLDER]cmd.exe /c taskkill /f /im edge_process_watcher.exe" Return="ignore" />
+    <CustomAction Id="TerminateViewer" Directory="INSTALLFOLDER" ExeCommand="[SYSTEMFOLDER]cmd.exe /c taskkill /f /im EdgeProcessViewer.exe" Return="ignore" />
+    <InstallExecuteSequence>
+      <Custom Action="TerminateViewer" After="InstallInitialize">Installed</Custom>
+      <Custom Action="TerminateWatcher" After="TerminateViewer">Installed</Custom>
+      <Custom Action="LaunchWatcher" After="InstallFinalize">NOT REMOVE</Custom>
+    </InstallExecuteSequence>
+  </Product>
+</Wix>

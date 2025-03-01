@@ -1,0 +1,28 @@
+# Copyright 2017 The Chromium Authors. All rights reserved.
+# Copyright (C) Microsoft Corporation. All rights reserved.
+# Use of this source code is governed by a BSD-style license that can be
+# found in the LICENSE file.
+
+shared_library("msedgede") {
+  sources = [
+    "commands/crash_info_command.cc",
+    "commands/crash_info_command.h",
+    "commands/gwp_asan_command.cc",
+    "commands/gwp_asan_command.h",
+    "commands/hwnd_command.cc",
+    "commands/hwnd_command.h",
+    "msedgede.cc",
+    "msedgede.def",
+    "msedgede_command.cc",
+    "msedgede_command.h",
+  ]
+
+  deps = [
+    "//base",
+    "//components/gwp_asan/crash_handler",
+    "//components/gwp_asan/crash_handler:crash_proto",
+    "//third_party/crashpad/crashpad/client",
+    "//third_party/crashpad/crashpad/minidump",
+    "//third_party/crashpad/crashpad/snapshot",
+  ]
+}

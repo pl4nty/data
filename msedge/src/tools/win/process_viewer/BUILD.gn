@@ -1,0 +1,129 @@
+# Copyright (C) Microsoft Corporation. All rights reserved.
+# Use of this source code is governed by a BSD-style license that can be
+# found in the LICENSE file.
+
+import("//extensions/buildflags/buildflags.gni")
+import("//mojo/features.gni")
+import("//mojo/public/tools/bindings/mojom.gni")
+import("//testing/test.gni")
+
+executable("edge_process_list") {
+  sources = [ "edge_process_list/main.cc" ]
+
+  deps = [
+    ":data_provider",
+    "//base",
+    "//mojo/core/embedder:embedder",
+  ]
+}
+
+executable("edge_process_watcher") {
+  sources = [
+    "edge_process_watcher/browser_creation_watcher.cc",
+    "edge_process_watcher/browser_creation_watcher.h",
+    "edge_process_watcher/edge_watcher.cc",
+    "edge_process_watcher/edge_watcher.h",
+    "edge_process_watcher/edge_watcher_server.cc",
+    "edge_process_watcher/edge_watcher_server.h",
+    "edge_process_watcher/main.cc",
+  ]
+
+  deps = [
+    ":data_provider",
+    ":mojom",
+    "//base",
+    "//chrome/common:common_lib",
+    "//mojo/core/embedder:embedder",
+  ]
+
+  configs -= [ "//build/config/win:console" ]
+  configs += [ "//build/config/win:windowed" ]
+}
+
+shared_library("process_viewer_data") {
+  sources = [
+    "data_provider/edge_watcher_client_export.cc",
+    "data_provider/ie_task_provider_export.cc",
+    "data_provider/main_export.cc",
+    "data_provider/process_data_provider_export.cc",
+    "data_provider/task_export.cc",
+    "data_provider/task_export.h",
+    "data_provider/task_manager_client_export.cc",
+  ]
+
+  deps = [
+    ":data_provider",
+    "//base",
+    "//mojo/core/embedder:embedder",
+  ]
+}
+
+source_set("data_provider") {
+  sources = [
+    "//chrome/common/edge_external_task_manager_shared.h",
+    "common/edge_watcher_common.h",
+    "data_provider/edge_process.cc",
+    "data_provider/edge_process.h",
+    "data_provider/edge_process_constants.cc",
+    "data_provider/edge_process_constants.h",
+    "data_provider/edge_watcher_client.cc",
+    "data_provider/edge_watcher_client.h",
+    "data_provider/edge_webview_process.cc",
+    "data_provider/edge_webview_process.h",
+    "data_provider/ie_process.cc",
+    "data_provider/ie_process.h",
+    "data_provider/ie_task_provider.cc",
+    "data_provider/ie_task_provider.h",
+    "data_provider/ntdefs.h",
+    "data_provider/process.cc",
+    "data_provider/process.h",
+    "data_provider/process_data_provider.cc",
+    "data_provider/process_data_provider.h",
+    "data_provider/server_connection.cc",
+    "data_provider/server_connection.h",
+    "data_provider/task_manager_client.cc",
+    "data_provider/task_manager_client.h",
+    "data_provider/task_manager_client_sync.cc",
+    "data_provider/task_manager_client_sync.h",
+  ]
+
+  deps = [
+    ":mojom",
+    "//base",
+    "//device/base/synchronization",
+    "//mojo/core/embedder:embedder",
+  ]
+}
+
+mojom("mojom") {
+  # Don't generate Blink variants of these bindings.
+  disable_variants = true
+
+  sources = [ "common/edge_watcher.mojom" ]
+
+  deps = [ "//mojo/public/mojom/base" ]
+}
+
+test("process_viewer_unittests") {
+  sources = [
+    "data_provider/edge_process_constants_unittest.cc",
+    "test/run_all_unittests.cc",
+  ]
+
+  deps = [
+    ":data_provider",
+    "//base/test:test_support",
+    "//chrome/common:non_code_constants",
+    "//components/crash/core/app:run_as_crashpad_handler",
+    "//extensions/buildflags:buildflags",
+    "//testing/gtest",
+  ]
+
+  if (is_win && is_msedge_branded) {
+    deps += [ "//components/crash/core/app:crash_export_thunks" ]
+  }
+
+  if (enable_extensions) {
+    deps += [ "//extensions/common" ]
+  }
+}

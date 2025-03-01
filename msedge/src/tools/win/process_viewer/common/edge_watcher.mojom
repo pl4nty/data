@@ -1,0 +1,19 @@
+// Copyright (C) Microsoft Corporation. All rights reserved.
+// Use of this source code is governed by a BSD-style license that can be
+// found in the LICENSE file.
+
+module process_viewer.mojom;
+
+import "mojo/public/mojom/base/process_id.mojom";
+
+interface EdgeWatcher {
+  SetClient(mojo_base.mojom.ProcessId client_process_id,
+            pending_associated_remote<EdgeWatcherClient> client);
+};
+
+interface EdgeWatcherClient {
+  OnSharedMemoryRegionChanged(mojo_base.mojom.ProcessId browser_process_id,
+                              uint32 shared_mem_handle,
+                              uint64 shared_mem_size,
+                              uint64 guid_high, uint64 guid_low);
+};
