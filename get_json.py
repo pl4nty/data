@@ -2,12 +2,15 @@ import sys
 import requests
 import json
 
-def fetch_and_prettify_json(url, output_file):
+def fetch_and_prettify_json(url, output_file, key=None):
     try:
         # Fetching JSON data from the URL
         response = requests.get(url)
         response.raise_for_status()
         json_data = response.json()
+
+        if key is not None:
+            json_data = json_data[key]
 
         # Prettifying JSON data
         pretty_json = json.dumps(json_data, indent=4, sort_keys=True)
@@ -37,7 +40,7 @@ fetch_and_prettify_json("https://api.steampowered.com/ISteamApps/GetSDRConfig/v1
 fetch_and_prettify_json("https://login.microsoftonline.com/common/discovery/instance?api-version=1.1&authorization_endpoint=https://login.microsoftonline.com/common/oauth2/v2.0/authorize", "microsoft_instance_discovery.json")
 fetch_and_prettify_json("https://login.microsoftonline.com/common/.well-known/openid-configuration", "microsoft_oidc_config.json")
 fetch_and_prettify_json("https://login.windows-ppe.net/common/.well-known/openid-configuration", "microsoft_oidc_config_ppe.json")
-fetch_and_prettify_json("https://login.microsoftonline.com/common/discovery/keys", "microsoft_jwks.json")
-fetch_and_prettify_json("https://login.microsoftonline.us/common/discovery/keys", "microsoft_jwks_us.json")
-fetch_and_prettify_json("https://login.partner.microsoftonline.cn/common/discovery/keys", "microsoft_jwks_cn.json")
-fetch_and_prettify_json("https://login.windows-ppe.net/common/discovery/keys", "microsoft_jwks_ppe.json")
+fetch_and_prettify_json("https://login.microsoftonline.com/common/discovery/keys", "microsoft_jwks.json", "keys")
+fetch_and_prettify_json("https://login.microsoftonline.us/common/discovery/keys", "microsoft_jwks_us.json", "keys")
+fetch_and_prettify_json("https://login.partner.microsoftonline.cn/common/discovery/keys", "microsoft_jwks_cn.json", "keys")
+fetch_and_prettify_json("https://login.windows-ppe.net/common/discovery/keys", "microsoft_jwks_ppe.json", "keys")
