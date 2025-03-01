@@ -1,12 +1,10 @@
-name: main
+# some scripts are expensive
+name: nightly
 
 on:
-  push:
-    branches:
-      - main
   workflow_dispatch:
   schedule:
-    - cron: '0 * * * *'
+    - cron: '0 0 * * *'
 
 jobs:
   main:
@@ -16,9 +14,7 @@ jobs:
     strategy:
       matrix:
         cmd:
-          - python android_bulletins_parser.py
-          - python get_json.py
-          # TODO decode https://login.microsoftonline.com/common/kerberos
+          - python microsoft_3rdpartysource.py
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5.4.0
@@ -27,6 +23,9 @@ jobs:
           cache: pip
       - run: pip install -r requirements.txt
       - run: ${{ matrix.cmd }}
+        env:
+          AZURE_STORAGE_IN: ${{ secrets.AZURE_STORAGE_IN }}
+          AZURE_STORAGE_OUT: ${{ secrets.AZURE_STORAGE_OUT }}
       - uses: EndBug/add-and-commit@v9.1.4
         with:
           default_author: github_actions
