@@ -25,10 +25,19 @@ def fetch_and_prettify_json(url, output_file):
     except Exception as e:
         print(f"An unexpected error occurred: {e}")
 
-if __name__ == "__main__":
-    if len(sys.argv) != 3:
-        print("Usage: python json.py <URL> <output_file>")
-    else:
-        url = sys.argv[1]
-        output_file = sys.argv[2]
-        fetch_and_prettify_json(url, output_file)
+# if __name__ == "__main__":
+#     if len(sys.argv) != 3:
+#         print("Usage: python script.py <URL> <output_file>")
+#     else:
+#         url = sys.argv[1]
+#         output_file = sys.argv[2]
+#         fetch_and_prettify_json(url, output_file)
+
+fetch_and_prettify_json("https://api.steampowered.com/ISteamApps/GetSDRConfig/v1?appid=440", "network_config_tf2.json")
+fetch_and_prettify_json("https://login.microsoftonline.com/common/discovery/instance?api-version=1.1&authorization_endpoint=https://login.microsoftonline.com/common/oauth2/v2.0/authorize", "microsoft_instance_discovery.json")
+fetch_and_prettify_json("https://login.microsoftonline.com/common/.well-known/openid-configuration", "microsoft_oidc_config.json")
+fetch_and_prettify_json("https://login.windows-ppe.net/common/.well-known/openid-configuration", "microsoft_oidc_config_ppe.json")
+fetch_and_prettify_json("https://login.microsoftonline.com/common/discovery/keys", "microsoft_jwks.json")
+fetch_and_prettify_json("https://login.microsoftonline.us/common/discovery/keys", "microsoft_jwks_us.json")
+fetch_and_prettify_json("https://login.partner.microsoftonline.cn/common/discovery/keys", "microsoft_jwks_cn.json")
+fetch_and_prettify_json("https://login.windows-ppe.net/common/discovery/keys", "microsoft_jwks_ppe.json")
