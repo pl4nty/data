@@ -34,8 +34,8 @@ if __name__ == "__main__":
         fetch_and_prettify_json("https://login.microsoftonline.com/common/discovery/instance?api-version=1.1&authorization_endpoint=https://login.microsoftonline.com/common/oauth2/v2.0/authorize", "microsoft_instance_discovery.json")
         fetch_and_prettify_json("https://login.microsoftonline.com/common/.well-known/openid-configuration", "microsoft_oidc_config.json")
         fetch_and_prettify_json("https://login.windows-ppe.net/common/.well-known/openid-configuration", "microsoft_oidc_config_ppe.json")
-        fetch_and_prettify_json("https://login.microsoftonline.com/common/discovery/keys", "microsoft_jwks.json", "keys")
-        fetch_and_prettify_json("https://login.microsoftonline.us/common/discovery/keys", "microsoft_jwks_us.json", "keys")
+        # fetch_and_prettify_json("https://login.microsoftonline.com/common/discovery/keys", "microsoft_jwks.json", "keys")
+        # fetch_and_prettify_json("https://login.microsoftonline.us/common/discovery/keys", "microsoft_jwks_us.json", "keys")
         fetch_and_prettify_json("https://login.partner.microsoftonline.cn/common/discovery/keys", "microsoft_jwks_cn.json", "keys")
         fetch_and_prettify_json("https://login.windows-ppe.net/common/discovery/keys", "microsoft_jwks_ppe.json", "keys")
     else:
