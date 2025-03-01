@@ -10,7 +10,7 @@ from pathlib import Path
 from dotenv import load_dotenv
 from remotezip import RemoteZip
 import time
-from urllib.parse import urlparse, unquote
+from urllib.parse import urlparse
 from azure.storage.blob import ContainerClient, BlobClient
 load_dotenv()
 
