@@ -1,1 +1,2191 @@
-{"revision":1740780688,"pops":{"ams":{"desc":"Amsterdam (Netherlands)","geo":[4.90000000000000036,52.3699999999999974],"partners":1,"tier":1,"relays":[{"ipv4":"155.133.248.36","port_range":[27015,27060]},{"ipv4":"155.133.248.37","port_range":[27015,27060]},{"ipv4":"155.133.248.40","port_range":[27015,27060]},{"ipv4":"155.133.248.41","port_range":[27015,27060]}]},"atl":{"desc":"Atlanta (Georgia)","geo":[-84.3900000000000006,33.759999999999998],"partners":1,"tier":1,"relays":[{"ipv4":"162.254.199.166","port_range":[27015,27060]},{"ipv4":"162.254.199.170","port_range":[27015,27060]},{"ipv4":"162.254.199.173","port_range":[27015,27060]},{"ipv4":"162.254.199.178","port_range":[27015,27060]},{"ipv4":"162.254.199.179","port_range":[27015,27060]},{"ipv4":"162.254.199.180","port_range":[27015,27060]}]},"bom":{"desc":"Mumbai (India)","geo":[72.4899999999999949,18.5799999999999983],"partners":1,"tier":1},"dfw":{"desc":"Dallas (Texas)","geo":[-96.7999999999999972,32.7700000000000031],"partners":1,"tier":1,"relays":[{"ipv4":"155.133.253.38","port_range":[27015,27060]},{"ipv4":"155.133.253.39","port_range":[27015,27060]},{"ipv4":"155.133.253.54","port_range":[27015,27060]},{"ipv4":"155.133.253.55","port_range":[27015,27060]}]},"dxb":{"desc":"Dubai (United Arab Emirates)","geo":[55.2999999999999972,25.25],"partners":1,"tier":0,"relays":[{"ipv4":"185.25.183.163","port_range":[27015,27060]},{"ipv4":"185.25.183.179","port_range":[27015,27060]}]},"eat":{"aliases":["mwh"],"desc":"Moses Lake (Washington)","geo":[-119.280000000000001,47.1199999999999974],"partners":3,"tier":1},"eze":{"desc":"Buenos Aires (Argentina)","geo":[-58.3800000000000026,-34.6000000000000014],"partners":1,"tier":1,"relays":[{"ipv4":"155.133.255.98","port_range":[27015,27060]},{"ipv4":"155.133.255.99","port_range":[27015,27060]},{"ipv4":"155.133.255.162","port_range":[27015,27060]},{"ipv4":"155.133.255.163","port_range":[27015,27060]}]},"fra":{"desc":"Frankfurt (Germany)","geo":[8.67999999999999972,50.1199999999999974],"partners":1,"tier":0,"relays":[{"ipv4":"155.133.226.68","port_range":[27015,27060]},{"ipv4":"155.133.226.69","port_range":[27015,27060]},{"ipv4":"155.133.226.70","port_range":[27015,27060]},{"ipv4":"155.133.226.71","port_range":[27015,27060]},{"ipv4":"155.133.226.72","port_range":[27015,27060]},{"ipv4":"155.133.226.73","port_range":[27015,27060]},{"ipv4":"155.133.226.77","port_range":[27015,27060]},{"ipv4":"155.133.226.79","port_range":[27015,27060]},{"ipv4":"162.254.197.36","port_range":[27015,27060]},{"ipv4":"162.254.197.37","port_range":[27015,27060]},{"ipv4":"162.254.197.42","port_range":[27015,27060]},{"ipv4":"162.254.197.43","port_range":[27015,27060]},{"ipv4":"162.254.197.44","port_range":[27015,27060]},{"ipv4":"162.254.197.52","port_range":[27015,27060]}]},"gru":{"desc":"Sao Paulo (Brazil)","geo":[-46.6400000000000006,-23.5300000000000011],"partners":1,"tier":0,"relays":[{"ipv4":"155.133.227.35","port_range":[27015,27060]},{"ipv4":"155.133.227.36","port_range":[27015,27060]},{"ipv4":"155.133.227.40","port_range":[27015,27060]},{"ipv4":"155.133.227.41","port_range":[27015,27060]},{"ipv4":"155.133.227.51","port_range":[27015,27060]},{"ipv4":"155.133.227.52","port_range":[27015,27060]},{"ipv4":"155.133.227.56","port_range":[27015,27060]},{"ipv4":"155.133.227.57","port_range":[27015,27060]}]},"hel":{"aliases":["helm"],"desc":"Helsinki (Finland)","geo":[24.8500000000000014,60.1099999999999994],"partners":1,"tier":1,"relays":[{"ipv4":"37.27.120.221","port_range":[27015,27060]},{"ipv4":"37.27.120.222","port_range":[27015,27060]},{"ipv4":"37.27.120.223","port_range":[27015,27060]},{"ipv4":"65.21.124.102","port_range":[27015,27060]}]},"hkg":{"desc":"Hong Kong","geo":[113.920000000000002,22.3099999999999987],"partners":3,"tier":0,"relays":[{"ipv4":"103.28.54.163","port_range":[27015,27060]},{"ipv4":"103.28.54.164","port_range":[27015,27060]},{"ipv4":"103.28.54.167","port_range":[27015,27060]},{"ipv4":"103.28.54.172","port_range":[27015,27060]},{"ipv4":"103.28.54.174","port_range":[27015,27060]},{"ipv4":"103.28.54.179","port_range":[27015,27060]},{"ipv4":"103.28.54.180","port_range":[27015,27060]},{"ipv4":"103.28.54.183","port_range":[27015,27060]},{"ipv4":"103.28.54.188","port_range":[27015,27060]},{"ipv4":"103.28.54.189","port_range":[27015,27060]}]},"iad":{"desc":"Sterling (Virginia)","geo":[-77.4300000000000068,39.009999999999998],"partners":1,"tier":1,"relays":[{"ipv4":"162.254.192.66","port_range":[27015,27060]},{"ipv4":"162.254.192.67","port_range":[27015,27060]},{"ipv4":"162.254.192.68","port_range":[27015,27060]},{"ipv4":"162.254.192.70","port_range":[27015,27060]},{"ipv4":"162.254.192.72","port_range":[27015,27060]},{"ipv4":"162.254.192.73","port_range":[27015,27060]}]},"jfk":{"desc":"New York","geo":[-74.1400000000000006,40.6899999999999977],"partners":1,"tier":1},"jnb":{"desc":"Johannesburg (South Africa)","geo":[28,-26.1999999999999993],"partners":1,"tier":0,"relays":[{"ipv4":"155.133.238.178","port_range":[27015,27060]},{"ipv4":"155.133.238.194","port_range":[27015,27060]}]},"lax":{"desc":"Los Angeles (California)","geo":[-118.25,34.0499999999999972],"partners":1,"tier":1,"relays":[{"ipv4":"162.254.195.70","port_range":[27015,27060]},{"ipv4":"162.254.195.72","port_range":[27015,27060]},{"ipv4":"162.254.195.73","port_range":[27015,27060]},{"ipv4":"162.254.195.74","port_range":[27015,27060]}]},"lhr":{"desc":"London (England)","geo":[-0.130000000000000004,51.509999999999998],"partners":1,"tier":1,"relays":[{"ipv4":"162.254.196.66","port_range":[27015,27060]},{"ipv4":"162.254.196.70","port_range":[27015,27060]},{"ipv4":"162.254.196.82","port_range":[27015,27060]},{"ipv4":"162.254.196.85","port_range":[27015,27060]}]},"lim":{"desc":"Lima (Peru)","geo":[-77.0499999999999972,-12.0600000000000005],"partners":1,"tier":1,"relays":[{"ipv4":"155.133.244.35","port_range":[27015,27060]},{"ipv4":"155.133.244.36","port_range":[27015,27060]},{"ipv4":"155.133.244.51","port_range":[27015,27060]},{"ipv4":"155.133.244.52","port_range":[27015,27060]}]},"maa":{"desc":"Chennai - Thiruverkadu (India)","geo":[80.1299999999999955,13.0700000000000003],"partners":1,"tier":1},"mad":{"desc":"Madrid (Spain)","geo":[3.33999999999999986,40.2299999999999969],"partners":1,"tier":1,"relays":[{"ipv4":"155.133.246.34","port_range":[27015,27060]},{"ipv4":"155.133.246.39","port_range":[27015,27060]},{"ipv4":"155.133.246.40","port_range":[27015,27060]},{"ipv4":"155.133.246.50","port_range":[27015,27060]}]},"ord":{"desc":"Chicago (Illinois)","geo":[-87.6899999999999977,41.8400000000000034],"partners":1,"tier":0,"relays":[{"ipv4":"162.254.193.71","port_range":[27015,27060]},{"ipv4":"162.254.193.73","port_range":[27015,27060]},{"ipv4":"162.254.193.77","port_range":[27015,27060]},{"ipv4":"162.254.193.98","port_range":[27015,27060]},{"ipv4":"162.254.193.99","port_range":[27015,27060]},{"ipv4":"162.254.193.100","port_range":[27015,27060]}]},"par":{"desc":"Paris (France)","geo":[2.35000000000000009,48.8599999999999994],"partners":1,"tier":1,"relays":[{"ipv4":"185.25.182.18","port_range":[27015,27060]},{"ipv4":"185.25.182.19","port_range":[27015,27060]},{"ipv4":"185.25.182.50","port_range":[27015,27060]},{"ipv4":"185.25.182.51","port_range":[27015,27060]}]},"scl":{"desc":"Santiago (Chile)","geo":[-70.4699999999999989,-33.2299999999999969],"partners":1,"tier":1,"relays":[{"ipv4":"155.133.249.163","port_range":[27015,27060]},{"ipv4":"155.133.249.179","port_range":[27015,27060]}]},"sea":{"desc":"Seattle (Washington)","geo":[-122.329999999999998,47.6099999999999994],"partners":1,"tier":1,"relays":[{"ipv4":"205.196.6.210","port_range":[27015,27060]},{"ipv4":"205.196.6.211","port_range":[27015,27060]},{"ipv4":"205.196.6.212","port_range":[27015,27060]},{"ipv4":"205.196.6.213","port_range":[27015,27060]}]},"seo":{"desc":"Seoul (South Korea)","geo":[126.989999999999995,37.5600000000000023],"partners":1,"tier":1,"relays":[{"ipv4":"146.66.152.36","port_range":[27015,27060]},{"ipv4":"146.66.152.37","port_range":[27015,27060]},{"ipv4":"146.66.152.41","port_range":[27015,27060]},{"ipv4":"146.66.152.42","port_range":[27015,27060]}]},"sgp":{"desc":"Singapore","geo":[103.829999999999998,1.28000000000000003],"partners":3,"tier":0,"relays":[{"ipv4":"103.10.124.116","port_range":[27015,27060]},{"ipv4":"103.10.124.117","port_range":[27015,27060]},{"ipv4":"103.10.124.118","port_range":[27015,27060]},{"ipv4":"103.10.124.119","port_range":[27015,27060]},{"ipv4":"103.10.124.120","port_range":[27015,27060]},{"ipv4":"103.10.124.121","port_range":[27015,27060]}]},"sto":{"desc":"Stockholm - Kista (Sweden)","geo":[17.8999999999999986,59.3999999999999986],"partners":1,"tier":1,"relays":[{"ipv4":"162.254.198.41","port_range":[27015,27060]},{"ipv4":"162.254.198.42","port_range":[27015,27060]},{"ipv4":"162.254.198.43","port_range":[27015,27060]},{"ipv4":"162.254.198.47","port_range":[27015,27060]},{"ipv4":"162.254.198.49","port_range":[27015,27060]},{"ipv4":"162.254.198.50","port_range":[27015,27060]},{"ipv4":"162.254.198.51","port_range":[27015,27060]},{"ipv4":"162.254.198.101","port_range":[27015,27060]},{"ipv4":"162.254.198.102","port_range":[27015,27060]},{"ipv4":"162.254.198.103","port_range":[27015,27060]}]},"syd":{"desc":"Sydney (Australia)","geo":[151.210000000000008,-33.8599999999999994],"partners":3,"tier":0,"relays":[{"ipv4":"103.10.125.146","port_range":[27015,27060]},{"ipv4":"103.10.125.147","port_range":[27015,27060]},{"ipv4":"103.10.125.154","port_range":[27015,27060]}]},"tyo":{"aliases":["tyo1","tyo2","tyo3"],"desc":"Tokyo Koto City (Japan)","geo":[139.680000000000007,35.6799999999999997],"partners":3,"tier":1,"relays":[{"ipv4":"45.121.184.5","port_range":[27015,27060]},{"ipv4":"45.121.184.6","port_range":[27015,27060]},{"ipv4":"45.121.184.24","port_range":[27015,27060]},{"ipv4":"45.121.184.25","port_range":[27015,27060]},{"ipv4":"45.121.184.26","port_range":[27015,27060]},{"ipv4":"45.121.184.27","port_range":[27015,27060]}]},"vie":{"desc":"Vienna (Austria)","geo":[16.2199999999999989,48.1199999999999974],"partners":1,"tier":1,"relays":[{"ipv4":"146.66.155.66","port_range":[27015,27060]},{"ipv4":"146.66.155.67","port_range":[27015,27060]},{"ipv4":"146.66.155.68","port_range":[27015,27060]},{"ipv4":"146.66.155.69","port_range":[27015,27060]},{"ipv4":"146.66.155.72","port_range":[27015,27060]},{"ipv4":"146.66.155.73","port_range":[27015,27060]}]},"waw":{"desc":"Warsaw (Poland)","geo":[21,52.2199999999999989],"partners":1,"tier":1,"relays":[{"ipv4":"155.133.230.98","port_range":[27015,27060]},{"ipv4":"155.133.230.99","port_range":[27015,27060]},{"ipv4":"155.133.230.100","port_range":[27015,27060]},{"ipv4":"155.133.230.101","port_range":[27015,27060]},{"ipv4":"155.133.230.102","port_range":[27015,27060]},{"ipv4":"155.133.230.103","port_range":[27015,27060]}]},"bom2":{"desc":"Mumbai (India)","geo":[72.9899999999999949,19.1799999999999997],"partners":1,"tier":1,"relays":[{"ipv4":"155.133.224.20","port_range":[27015,27060]},{"ipv4":"155.133.224.21","port_range":[27015,27060]}]},"dfw2":{"aliases":["mdf2","dfwm"],"desc":"Multiplay Dallas (Texas)","geo":[-96.7999999999999972,32.7800000000000011],"partners":1,"relay_public_key":"EE417A05B87158644D9C9CDFEAB8A17B1DC2C8973AD51D4EAC3F090E028B4040","tier":2,"relays":[{"ipv4":"173.237.26.20","port_range":[27015,27076]},{"ipv4":"173.237.26.52","port_range":[27015,27076]},{"ipv4":"173.237.31.180","port_range":[27015,27076]}]},"maa2":{"desc":"Chennai - Ambattur (India)","geo":[80.1500000000000057,13.1099999999999994],"partners":1,"tier":1,"relays":[{"ipv4":"155.133.225.18","port_range":[27015,27078]},{"ipv4":"155.133.225.19","port_range":[27015,27078]}]},"sto2":{"desc":"Stockholm - Bromma (Sweden)","geo":[17.870000000000001,59.3400000000000034],"partners":1,"tier":0,"relays":[{"ipv4":"155.133.252.37","port_range":[27015,27060]},{"ipv4":"155.133.252.38","port_range":[27015,27060]},{"ipv4":"155.133.252.52","port_range":[27015,27060]},{"ipv4":"155.133.252.53","port_range":[27015,27060]},{"ipv4":"155.133.252.84","port_range":[27015,27060]},{"ipv4":"155.133.252.85","port_range":[27015,27060]},{"ipv4":"155.133.252.86","port_range":[27015,27060]},{"ipv4":"155.133.252.87","port_range":[27015,27060]},{"ipv4":"155.133.252.88","port_range":[27015,27060]},{"ipv4":"155.133.252.89","port_range":[27015,27060]}]},"ams4":{"aliases":["mam2","amsm"],"desc":"Multiplay Amsterdam (Netherlands)","geo":[4.90000000000000036,52.3699999999999974],"partners":1,"relay_public_key":"EE417A05B87158644D9C9CDFEAB8A17B1DC2C8973AD51D4EAC3F090E028B4040","tier":2,"relays":[{"ipv4":"172.255.8.172","port_range":[27015,27076]},{"ipv4":"188.42.106.164","port_range":[27015,27076]}]},"hkg4":{"aliases":["mhk2","hkgm"],"desc":"Multiplay Hong Kong","geo":[114.200000000000003,22.3000000000000007],"partners":3,"relay_public_key":"EE417A05B87158644D9C9CDFEAB8A17B1DC2C8973AD51D4EAC3F090E028B4040","tier":2,"relays":[{"ipv4":"169.150.222.50","port_range":[27015,27028]},{"ipv4":"169.150.222.51","port_range":[27015,27028]},{"ipv4":"169.150.222.52","port_range":[27015,27028]},{"ipv4":"169.150.222.53","port_range":[27015,27028]},{"ipv4":"169.150.222.54","port_range":[27015,27028]},{"ipv4":"169.150.222.55","port_range":[27015,27028]}]}},"certs":["Ii4IARIgSJbwDpn/07/GHiGMKio0Vh18VN3D/hKzQGh6n0Yx9qpFSAyYZ01ITp55KT6tfJIvitz8MkCR+2qOEMGikMt0GAY/25ud2SrUwAcU/xA9N4brtNyz8FtPxs53wJhniPFOBlWLYZg20SCyBaoWDVld+ApW4Y8B","Ii4IARIgmuygThdRzmJo1WkALKHh+hstvCbTa06joAg603KCm4RFSAyYZ01ITp55KT6tfJIvitz8MkA2nbhRGNuxo+jCSy62F6JlWvxjjLzrOEsy622cjs8+awxZKwZZTApN1jyq2TLDOeWrlLcAC8AFdmLSCMp6AxoL","Ij4IARIgpdtY6tZuJOfB3FHhsMDlJWo6EFDmRXVNMgEkptCg+YpFSAyYZ01Ic1prUJrVEFCO0iNQ+pQ+UIy8TSk+rXySL4rc/DJAX7DGTG59hc/VK0TIaOEcBfHA4TL5HUYzSrW9sM+PwRd3UGdm1XLvg+17eQnYWnXj6D0XYQDhQYDxgd0aj41bAg==","IjIIARIgQUoxHO4Sbn+7AsTGgtZ8J+dKW6pFwFhUKvU6Trq6AJFFSQyYZ01Jc1prUPbHRyk+rXySL4rc/DJAJXEC+8xS2ZTFLKFdPuEzUuh/vA/3mO8m0tnnQ8pnxpd5ZGoYBrlir2IWsb/qjRLxrErL4EAKGoQ7uz09URARBw==","IjIIARIgbQrsJLXGcVefebGt+C8PI+LV7KD9bCGsbotu1YvhgwVFSAyYZ01Ic1prUPbHRyk+rXySL4rc/DJAzfvChDjzTRq8ua4pE1iWHcjMa25pNUlviB4NbY4qJJrSMlgOoRh547wDdXLT4PKokscg1UQBlzyVLVoS87INBw==","IjIIARIgbcqFwE6OBNLPespNB9D6gAZ6T1JWxBX03eiwVJBA9hdFSAyYZ01Ic1prUPbHRyk+rXySL4rc/DJAENi/2USdJB1pHeo/Ia66K7jNLuFO+d6q1equn6N39WWV3nH28T+jFs6WuPTkzzdgId8MYEfjd/0o/nU5Sf23Dg==","IjIIARIgmu5Nv72Qm74PVBQ58hay4v13bw1B2qvq4mTP71HW9WpFSAyYZ01Ic1prUPi6WSk+rXySL4rc/DJAB01JF6WanWhGxuL99PgwXXWH0OZ+7WRy4Y+UV4x6kfGN8RUZ6KAq+Q7p3gmiHELzolgvshtg1MnKCGKrv/iyBg==","IjIIARIgpPJHtQVj8i8katUqP+SUJg9ii7nf00CWUrvoxrvqwa9FSAyYZ01Ic1prUNiiQSk+rXySL4rc/DJAnhq3xk5aAvQRJh+GxbVPfS4v1g/9I1wmBVbltEvEVF1hBorLrzJYZT6rhmZxhSbQP8BmW0Y/oEtnhFIcwhh9Bw==","IjMIARIgjvmzhZM/7rEuz0Xf4kej6l83AyVeRelJRMUt8wGo8oRFSQyYZ01Jc1prUIachwEpPq18ki+K3PwyQFv8jskXb4jeST9DhbAmdfQeOSAPUdo6usbwvebK3yyr+9H8XCV0+1rYDrxncN9U3s13cALiV6bRf4Y3E2udoAo=","IjYIARIg++XfexpF6c9GsYI97ywrpHyPZHvM5KeaY5k/c1NGgkpFSAyYZ01Ic1prUKSZFVDcoUIpPq18ki+K3PwyQJd8RcOyRCwObor3WvXWGzcskWhJk56yxYaW4AlE468UVK+S7hJ37xmh3Q8Pq633g/qNNE3Y3i9kiu1lhyGlkAg=","IjYIARIgGekPLsQIN1v2tQMkBDUvDTZEWLgupOPUejPUjH2k9JtFSAyYZ01Ic1prUPbHR1DsqmgpPq18ki+K3PwyQB+e3QocMfJ3KY9V0Bbks27EQ/kjCiR0LVdGv33e012x+u1v10SdRwVmoHCwbjA2djsNHSQUlw5GhXNWSoHQyQs=","IjYIARIgW0/njCUOhyUxNFu2OH4blGOOymFUKvVUuitYBC2WL7VFSAyYZ01Ic1prUJrWE1CK+BQpPq18ki+K3PwyQBfedM22iDDhh/Iv0MASwxAJuzOb6ViSD05963zmExLK4znIXtFDY/JLNFjqzZLeyBhwbWpn18F8kB/EwwUWqAo=","IjYIARIgXGZn3LJaYaLSiDnoQYGkHWpnY+M0Q00fHh9ni6+NLcBFSAyYZ01Ic1prUKSZFVDcoUIpPq18ki+K3PwyQNDq6FM8s4Mb8NSEP3GDVWgel8sk48EoUJp/Z1rzLlyu2rE1PhMFAu6w6Tm63Ou5WFnBZgAhTcZuXSL0cXRXlAg=","IjcIARIgIlvA41Mpb2Ja+PfJVrFEYx90ECXf55F5FxI1Pk79iY5FSAyYZ01Ic1prULgDUIgEUKoGKT6tfJIvitz8MkDy6hflIHRHTUW3c7qOrMObhezrUkdnvanCYMDLDt7U1wRpq51i77GXo846KGK1TdftNv7wV4qaYTXk5MOLMQUO","IjoIARIg8+9JL2vE+dNmhBPauZ/QZg7uQfZxiNCseZkk4XzGPlJFSAyYZ01Ic1prUKLCPlCS8z9Qmr5DKT6tfJIvitz8MkDj3kgm6eYPFyK+db7y0q1a3nRo7mXuwWHmxu0vaYaelsw6WcYoq2bkeCNLUwMxKPdeQqV7JJhJXdYxKyrn5ZkH","IjsIARIgeRDuFHa02m4l6xEIdUXY2jNxMKAPNn++rjUXeGxctqlFSAyYZ01Ic1prUMYFUNAFUNoFUJixECk+rXySL4rc/DJAocCGXO4ggyvrma4uHvLOTrlhJ/MCm2qAL7ryKLORQaXMxfzXvMf49bM3a1A3+GgnXyAYtQZNuKDxwvsTD5uXBA==","Ik0IARIg1Dgd2R8FszAqcaMuEmzMoli/lZC8dEqopsWXmQRE8dlFSAyYZ01Ic1prULoEULAGUICKD1DexwxQosI+UJLzP1CavkNQ9tmMASk+rXySL4rc/DJAETNFZjkozsPMoJSE/tjQ72X93e90A/UU1l2/n0jfpcx8A8+JLpX/lDrDBvmLvfT8OYTPzzUqhf7NFEwU/WKXDw==","IkAIARIgaMVHur3UExsppAQNmlq0lEm4VJJ2R+HAu3V2JFKxV8FFSAyYZ01Ic1prULLKNFDy6FZQqN++AVDQ8tQBKT6tfJIvitz8MkA5iz4sbyLEJTBZ8hgipcOuiivzHKnUERHOFQtluj4dRtSpcy5ABaf7u9SgJ54nS9/kaHan076uIiPCfQxSlS8P","IkoIARIgAMdpGLGVnpcF3RtvKZld2zISFKdkviQmghM9RBMrurdFSAyYZ01Ic1prUOyjHFDtoxxQ7qMcULLkHlC41DVQxIsaUNrcOCk+rXySL4rc/DJAVMSX3J7SEaE4JxqoEKPSXAOBveGIr0coYzjguRPra31ECscp9vAw1qdSuLOjhvTC49JQLfuHT6PGPifosUO1AA=="],"p2p_share_ip":{"cn":20,"default":40,"ru":20},"relay_public_key":"5AC884C1045BA0FF44142AC8DCA51B8A98C8F1CB4FEE36284AFBE92FCF594932","revoked_keys":["11146342570456886677"],"typical_pings":[["ams","ams4",0],["ams","fra",6],["ams","jnb",160],["ams","lhr",5],["ams","mad",30],["ams","par",10],["ams","sto",20],["ams","sto2",19],["ams","vie",16],["ams4","fra",7],["ams4","lhr",6],["ams4","par",12],["ams4","sto2",20],["atl","dfw",16],["atl","dfw2",15],["atl","eat",62],["atl","fra",101],["atl","iad",16],["atl","jfk",23],["atl","ord",17],["bom","bom2",1],["bom","dxb",38],["bom","maa",20],["bom","maa2",20],["bom","sgp",78],["bom2","dxb",27],["bom2","maa",20],["bom2","maa2",30],["bom2","sgp",61],["bom2","syd",154],["dfw","dfw2",0],["dfw","eat",49],["dfw","fra",120],["dfw","iad",38],["dfw","jfk",43],["dfw","lax",32],["dfw","ord",20],["dfw","sea",47],["dfw2","iad",31],["dfw2","ord",20],["dfw2","sto2",163],["dxb","hkg",119],["dxb","maa",58],["dxb","maa2",56],["dxb","sgp",87],["eat","lax",28],["eat","ord",48],["eat","sea",4],["eat","sto2",151],["eze","gru",28],["eze","iad",143],["eze","lim",49],["eze","ord",160],["eze","scl",20],["fra","gru",196],["fra","hel",30],["fra","iad",85],["fra","jfk",124],["fra","jnb",173],["fra","lax",145],["fra","lhr",13],["fra","mad",29],["fra","ord",100],["fra","par",9],["fra","sto",20],["fra","sto2",22],["fra","vie",11],["fra","waw",19],["gru","iad",115],["gru","lim",83],["gru","ord",168],["gru","scl",53],["hel","sto",6],["hel","sto2",7],["hel","vie",28],["hel","waw",18],["hkg","hkg4",0],["hkg","sea",139],["hkg","seo",76],["hkg","sgp",33],["hkg","syd",124],["hkg","tyo",46],["hkg4","sgp",35],["hkg4","tyo",51],["iad","jfk",6],["iad","ord",17],["jfk","ord",22],["jnb","lhr",155],["jnb","par",163],["jnb","sgp",173],["jnb","sto",180],["lax","lim",101],["lax","ord",46],["lax","scl",135],["lax","sea",23],["lhr","mad",26],["lhr","par",7],["lhr","sto",24],["lhr","sto2",24],["lim","ord",147],["lim","scl",43],["maa","maa2",0],["maa","sgp",58],["maa2","sgp",31],["maa2","syd",124],["mad","par",19],["mad","sto2",50],["ord","scl",185],["ord","sea",47],["ord","sto2",111],["par","sto2",29],["par","vie",20],["seo","sgp",107],["seo","tyo",30],["sgp","syd",92],["sgp","tyo",77],["sto","sto2",0],["sto","waw",20],["sto2","vie",30],["sto2","waw",20],["vie","waw",10]],"success":true}
+{
+    "certs": [
+        "Ii4IARIgSJbwDpn/07/GHiGMKio0Vh18VN3D/hKzQGh6n0Yx9qpFSAyYZ01ITp55KT6tfJIvitz8MkCR+2qOEMGikMt0GAY/25ud2SrUwAcU/xA9N4brtNyz8FtPxs53wJhniPFOBlWLYZg20SCyBaoWDVld+ApW4Y8B",
+        "Ii4IARIgmuygThdRzmJo1WkALKHh+hstvCbTa06joAg603KCm4RFSAyYZ01ITp55KT6tfJIvitz8MkA2nbhRGNuxo+jCSy62F6JlWvxjjLzrOEsy622cjs8+awxZKwZZTApN1jyq2TLDOeWrlLcAC8AFdmLSCMp6AxoL",
+        "Ij4IARIgpdtY6tZuJOfB3FHhsMDlJWo6EFDmRXVNMgEkptCg+YpFSAyYZ01Ic1prUJrVEFCO0iNQ+pQ+UIy8TSk+rXySL4rc/DJAX7DGTG59hc/VK0TIaOEcBfHA4TL5HUYzSrW9sM+PwRd3UGdm1XLvg+17eQnYWnXj6D0XYQDhQYDxgd0aj41bAg==",
+        "IjIIARIgQUoxHO4Sbn+7AsTGgtZ8J+dKW6pFwFhUKvU6Trq6AJFFSQyYZ01Jc1prUPbHRyk+rXySL4rc/DJAJXEC+8xS2ZTFLKFdPuEzUuh/vA/3mO8m0tnnQ8pnxpd5ZGoYBrlir2IWsb/qjRLxrErL4EAKGoQ7uz09URARBw==",
+        "IjIIARIgbQrsJLXGcVefebGt+C8PI+LV7KD9bCGsbotu1YvhgwVFSAyYZ01Ic1prUPbHRyk+rXySL4rc/DJAzfvChDjzTRq8ua4pE1iWHcjMa25pNUlviB4NbY4qJJrSMlgOoRh547wDdXLT4PKokscg1UQBlzyVLVoS87INBw==",
+        "IjIIARIgbcqFwE6OBNLPespNB9D6gAZ6T1JWxBX03eiwVJBA9hdFSAyYZ01Ic1prUPbHRyk+rXySL4rc/DJAENi/2USdJB1pHeo/Ia66K7jNLuFO+d6q1equn6N39WWV3nH28T+jFs6WuPTkzzdgId8MYEfjd/0o/nU5Sf23Dg==",
+        "IjIIARIgmu5Nv72Qm74PVBQ58hay4v13bw1B2qvq4mTP71HW9WpFSAyYZ01Ic1prUPi6WSk+rXySL4rc/DJAB01JF6WanWhGxuL99PgwXXWH0OZ+7WRy4Y+UV4x6kfGN8RUZ6KAq+Q7p3gmiHELzolgvshtg1MnKCGKrv/iyBg==",
+        "IjIIARIgpPJHtQVj8i8katUqP+SUJg9ii7nf00CWUrvoxrvqwa9FSAyYZ01Ic1prUNiiQSk+rXySL4rc/DJAnhq3xk5aAvQRJh+GxbVPfS4v1g/9I1wmBVbltEvEVF1hBorLrzJYZT6rhmZxhSbQP8BmW0Y/oEtnhFIcwhh9Bw==",
+        "IjMIARIgjvmzhZM/7rEuz0Xf4kej6l83AyVeRelJRMUt8wGo8oRFSQyYZ01Jc1prUIachwEpPq18ki+K3PwyQFv8jskXb4jeST9DhbAmdfQeOSAPUdo6usbwvebK3yyr+9H8XCV0+1rYDrxncN9U3s13cALiV6bRf4Y3E2udoAo=",
+        "IjYIARIg++XfexpF6c9GsYI97ywrpHyPZHvM5KeaY5k/c1NGgkpFSAyYZ01Ic1prUKSZFVDcoUIpPq18ki+K3PwyQJd8RcOyRCwObor3WvXWGzcskWhJk56yxYaW4AlE468UVK+S7hJ37xmh3Q8Pq633g/qNNE3Y3i9kiu1lhyGlkAg=",
+        "IjYIARIgGekPLsQIN1v2tQMkBDUvDTZEWLgupOPUejPUjH2k9JtFSAyYZ01Ic1prUPbHR1DsqmgpPq18ki+K3PwyQB+e3QocMfJ3KY9V0Bbks27EQ/kjCiR0LVdGv33e012x+u1v10SdRwVmoHCwbjA2djsNHSQUlw5GhXNWSoHQyQs=",
+        "IjYIARIgW0/njCUOhyUxNFu2OH4blGOOymFUKvVUuitYBC2WL7VFSAyYZ01Ic1prUJrWE1CK+BQpPq18ki+K3PwyQBfedM22iDDhh/Iv0MASwxAJuzOb6ViSD05963zmExLK4znIXtFDY/JLNFjqzZLeyBhwbWpn18F8kB/EwwUWqAo=",
+        "IjYIARIgXGZn3LJaYaLSiDnoQYGkHWpnY+M0Q00fHh9ni6+NLcBFSAyYZ01Ic1prUKSZFVDcoUIpPq18ki+K3PwyQNDq6FM8s4Mb8NSEP3GDVWgel8sk48EoUJp/Z1rzLlyu2rE1PhMFAu6w6Tm63Ou5WFnBZgAhTcZuXSL0cXRXlAg=",
+        "IjcIARIgIlvA41Mpb2Ja+PfJVrFEYx90ECXf55F5FxI1Pk79iY5FSAyYZ01Ic1prULgDUIgEUKoGKT6tfJIvitz8MkDy6hflIHRHTUW3c7qOrMObhezrUkdnvanCYMDLDt7U1wRpq51i77GXo846KGK1TdftNv7wV4qaYTXk5MOLMQUO",
+        "IjoIARIg8+9JL2vE+dNmhBPauZ/QZg7uQfZxiNCseZkk4XzGPlJFSAyYZ01Ic1prUKLCPlCS8z9Qmr5DKT6tfJIvitz8MkDj3kgm6eYPFyK+db7y0q1a3nRo7mXuwWHmxu0vaYaelsw6WcYoq2bkeCNLUwMxKPdeQqV7JJhJXdYxKyrn5ZkH",
+        "IjsIARIgeRDuFHa02m4l6xEIdUXY2jNxMKAPNn++rjUXeGxctqlFSAyYZ01Ic1prUMYFUNAFUNoFUJixECk+rXySL4rc/DJAocCGXO4ggyvrma4uHvLOTrlhJ/MCm2qAL7ryKLORQaXMxfzXvMf49bM3a1A3+GgnXyAYtQZNuKDxwvsTD5uXBA==",
+        "Ik0IARIg1Dgd2R8FszAqcaMuEmzMoli/lZC8dEqopsWXmQRE8dlFSAyYZ01Ic1prULoEULAGUICKD1DexwxQosI+UJLzP1CavkNQ9tmMASk+rXySL4rc/DJAETNFZjkozsPMoJSE/tjQ72X93e90A/UU1l2/n0jfpcx8A8+JLpX/lDrDBvmLvfT8OYTPzzUqhf7NFEwU/WKXDw==",
+        "IkAIARIgaMVHur3UExsppAQNmlq0lEm4VJJ2R+HAu3V2JFKxV8FFSAyYZ01Ic1prULLKNFDy6FZQqN++AVDQ8tQBKT6tfJIvitz8MkA5iz4sbyLEJTBZ8hgipcOuiivzHKnUERHOFQtluj4dRtSpcy5ABaf7u9SgJ54nS9/kaHan076uIiPCfQxSlS8P",
+        "IkoIARIgAMdpGLGVnpcF3RtvKZld2zISFKdkviQmghM9RBMrurdFSAyYZ01Ic1prUOyjHFDtoxxQ7qMcULLkHlC41DVQxIsaUNrcOCk+rXySL4rc/DJAVMSX3J7SEaE4JxqoEKPSXAOBveGIr0coYzjguRPra31ECscp9vAw1qdSuLOjhvTC49JQLfuHT6PGPifosUO1AA=="
+    ],
+    "p2p_share_ip": {
+        "cn": 20,
+        "default": 40,
+        "ru": 20
+    },
+    "pops": {
+        "ams": {
+            "desc": "Amsterdam (Netherlands)",
+            "geo": [
+                4.9,
+                52.37
+            ],
+            "partners": 1,
+            "relays": [
+                {
+                    "ipv4": "155.133.248.36",
+                    "port_range": [
+                        27015,
+                        27060
+                    ]
+                },
+                {
+                    "ipv4": "155.133.248.37",
+                    "port_range": [
+                        27015,
+                        27060
+                    ]
+                },
+                {
+                    "ipv4": "155.133.248.40",
+                    "port_range": [
+                        27015,
+                        27060
+                    ]
+                },
+                {
+                    "ipv4": "155.133.248.41",
+                    "port_range": [
+                        27015,
+                        27060
+                    ]
+                }
+            ],
+            "tier": 1
+        },
+        "ams4": {
+            "aliases": [
+                "mam2",
+                "amsm"
+            ],
+            "desc": "Multiplay Amsterdam (Netherlands)",
+            "geo": [
+                4.9,
+                52.37
+            ],
+            "partners": 1,
+            "relay_public_key": "EE417A05B87158644D9C9CDFEAB8A17B1DC2C8973AD51D4EAC3F090E028B4040",
+            "relays": [
+                {
+                    "ipv4": "172.255.8.172",
+                    "port_range": [
+                        27015,
+                        27076
+                    ]
+                },
+                {
+                    "ipv4": "188.42.106.164",
+                    "port_range": [
+                        27015,
+                        27076
+                    ]
+                }
+            ],
+            "tier": 2
+        },
+        "atl": {
+            "desc": "Atlanta (Georgia)",
+            "geo": [
+                -84.39,
+                33.76
+            ],
+            "partners": 1,
+            "relays": [
+                {
+                    "ipv4": "162.254.199.166",
+                    "port_range": [
+                        27015,
+                        27060
+                    ]
+                },
+                {
+                    "ipv4": "162.254.199.170",
+                    "port_range": [
+                        27015,
+                        27060
+                    ]
+                },
+                {
+                    "ipv4": "162.254.199.173",
+                    "port_range": [
+                        27015,
+                        27060
+                    ]
+                },
+                {
+                    "ipv4": "162.254.199.178",
+                    "port_range": [
+                        27015,
+                        27060
+                    ]
+                },
+                {
+                    "ipv4": "162.254.199.179",
+                    "port_range": [
+                        27015,
+                        27060
+                    ]
+                },
+                {
+                    "ipv4": "162.254.199.180",
+                    "port_range": [
+                        27015,
+                        27060
+                    ]
+                }
+            ],
+            "tier": 1
+        },
+        "bom": {
+            "desc": "Mumbai (India)",
+            "geo": [
+                72.49,
+                18.58
+            ],
+            "partners": 1,
+            "tier": 1
+        },
+        "bom2": {
+            "desc": "Mumbai (India)",
+            "geo": [
+                72.99,
+                19.18
+            ],
+            "partners": 1,
+            "relays": [
+                {
+                    "ipv4": "155.133.224.20",
+                    "port_range": [
+                        27015,
+                        27060
+                    ]
+                },
+                {
+                    "ipv4": "155.133.224.21",
+                    "port_range": [
+                        27015,
+                        27060
+                    ]
+                }
+            ],
+            "tier": 1
+        },
+        "dfw": {
+            "desc": "Dallas (Texas)",
+            "geo": [
+                -96.8,
+                32.77
+            ],
+            "partners": 1,
+            "relays": [
+                {
+                    "ipv4": "155.133.253.38",
+                    "port_range": [
+                        27015,
+                        27060
+                    ]
+                },
+                {
+                    "ipv4": "155.133.253.39",
+                    "port_range": [
+                        27015,
+                        27060
+                    ]
+                },
+                {
+                    "ipv4": "155.133.253.54",
+                    "port_range": [
+                        27015,
+                        27060
+                    ]
+                },
+                {
+                    "ipv4": "155.133.253.55",
+                    "port_range": [
+                        27015,
+                        27060
+                    ]
+                }
+            ],
+            "tier": 1
+        },
+        "dfw2": {
+            "aliases": [
+                "mdf2",
+                "dfwm"
+            ],
+            "desc": "Multiplay Dallas (Texas)",
+            "geo": [
+                -96.8,
+                32.78
+            ],
+            "partners": 1,
+            "relay_public_key": "EE417A05B87158644D9C9CDFEAB8A17B1DC2C8973AD51D4EAC3F090E028B4040",
+            "relays": [
+                {
+                    "ipv4": "173.237.26.20",
+                    "port_range": [
+                        27015,
+                        27076
+                    ]
+                },
+                {
+                    "ipv4": "173.237.26.52",
+                    "port_range": [
+                        27015,
+                        27076
+                    ]
+                },
+                {
+                    "ipv4": "173.237.31.180",
+                    "port_range": [
+                        27015,
+                        27076
+                    ]
+                }
+            ],
+            "tier": 2
+        },
+        "dxb": {
+            "desc": "Dubai (United Arab Emirates)",
+            "geo": [
+                55.3,
+                25.25
+            ],
+            "partners": 1,
+            "relays": [
+                {
+                    "ipv4": "185.25.183.163",
+                    "port_range": [
+                        27015,
+                        27060
+                    ]
+                },
+                {
+                    "ipv4": "185.25.183.179",
+                    "port_range": [
+                        27015,
+                        27060
+                    ]
+                }
+            ],
+            "tier": 0
+        },
+        "eat": {
+            "aliases": [
+                "mwh"
+            ],
+            "desc": "Moses Lake (Washington)",
+            "geo": [
+                -119.28,
+                47.12
+            ],
+            "partners": 3,
+            "tier": 1
+        },
+        "eze": {
+            "desc": "Buenos Aires (Argentina)",
+            "geo": [
+                -58.38,
+                -34.6
+            ],
+            "partners": 1,
+            "relays": [
+                {
+                    "ipv4": "155.133.255.98",
+                    "port_range": [
+                        27015,
+                        27060
+                    ]
+                },
+                {
+                    "ipv4": "155.133.255.99",
+                    "port_range": [
+                        27015,
+                        27060
+                    ]
+                },
+                {
+                    "ipv4": "155.133.255.162",
+                    "port_range": [
+                        27015,
+                        27060
+                    ]
+                },
+                {
+                    "ipv4": "155.133.255.163",
+                    "port_range": [
+                        27015,
+                        27060
+                    ]
+                }
+            ],
+            "tier": 1
+        },
+        "fra": {
+            "desc": "Frankfurt (Germany)",
+            "geo": [
+                8.68,
+                50.12
+            ],
+            "partners": 1,
+            "relays": [
+                {
+                    "ipv4": "155.133.226.68",
+                    "port_range": [
+                        27015,
+                        27060
+                    ]
+                },
+                {
+                    "ipv4": "155.133.226.69",
+                    "port_range": [
+                        27015,
+                        27060
+                    ]
+                },
+                {
+                    "ipv4": "155.133.226.70",
+                    "port_range": [
+                        27015,
+                        27060
+                    ]
+                },
+                {
+                    "ipv4": "155.133.226.71",
+                    "port_range": [
+                        27015,
+                        27060
+                    ]
+                },
+                {
+                    "ipv4": "155.133.226.72",
+                    "port_range": [
+                        27015,
+                        27060
+                    ]
+                },
+                {
+                    "ipv4": "155.133.226.73",
+                    "port_range": [
+                        27015,
+                        27060
+                    ]
+                },
+                {
+                    "ipv4": "155.133.226.77",
+                    "port_range": [
+                        27015,
+                        27060
+                    ]
+                },
+                {
+                    "ipv4": "155.133.226.79",
+                    "port_range": [
+                        27015,
+                        27060
+                    ]
+                },
+                {
+                    "ipv4": "162.254.197.36",
+                    "port_range": [
+                        27015,
+                        27060
+                    ]
+                },
+                {
+                    "ipv4": "162.254.197.37",
+                    "port_range": [
+                        27015,
+                        27060
+                    ]
+                },
+                {
+                    "ipv4": "162.254.197.42",
+                    "port_range": [
+                        27015,
+                        27060
+                    ]
+                },
+                {
+                    "ipv4": "162.254.197.43",
+                    "port_range": [
+                        27015,
+                        27060
+                    ]
+                },
+                {
+                    "ipv4": "162.254.197.44",
+                    "port_range": [
+                        27015,
+                        27060
+                    ]
+                },
+                {
+                    "ipv4": "162.254.197.52",
+                    "port_range": [
+                        27015,
+                        27060
+                    ]
+                }
+            ],
+            "tier": 0
+        },
+        "gru": {
+            "desc": "Sao Paulo (Brazil)",
+            "geo": [
+                -46.64,
+                -23.53
+            ],
+            "partners": 1,
+            "relays": [
+                {
+                    "ipv4": "155.133.227.35",
+                    "port_range": [
+                        27015,
+                        27060
+                    ]
+                },
+                {
+                    "ipv4": "155.133.227.36",
+                    "port_range": [
+                        27015,
+                        27060
+                    ]
+                },
+                {
+                    "ipv4": "155.133.227.40",
+                    "port_range": [
+                        27015,
+                        27060
+                    ]
+                },
+                {
+                    "ipv4": "155.133.227.41",
+                    "port_range": [
+                        27015,
+                        27060
+                    ]
+                },
+                {
+                    "ipv4": "155.133.227.51",
+                    "port_range": [
+                        27015,
+                        27060
+                    ]
+                },
+                {
+                    "ipv4": "155.133.227.52",
+                    "port_range": [
+                        27015,
+                        27060
+                    ]
+                },
+                {
+                    "ipv4": "155.133.227.56",
+                    "port_range": [
+                        27015,
+                        27060
+                    ]
+                },
+                {
+                    "ipv4": "155.133.227.57",
+                    "port_range": [
+                        27015,
+                        27060
+                    ]
+                }
+            ],
+            "tier": 0
+        },
+        "hel": {
+            "aliases": [
+                "helm"
+            ],
+            "desc": "Helsinki (Finland)",
+            "geo": [
+                24.85,
+                60.11
+            ],
+            "partners": 1,
+            "relays": [
+                {
+                    "ipv4": "37.27.120.221",
+                    "port_range": [
+                        27015,
+                        27060
+                    ]
+                },
+                {
+                    "ipv4": "37.27.120.222",
+                    "port_range": [
+                        27015,
+                        27060
+                    ]
+                },
+                {
+                    "ipv4": "37.27.120.223",
+                    "port_range": [
+                        27015,
+                        27060
+                    ]
+                },
+                {
+                    "ipv4": "65.21.124.102",
+                    "port_range": [
+                        27015,
+                        27060
+                    ]
+                }
+            ],
+            "tier": 1
+        },
+        "hkg": {
+            "desc": "Hong Kong",
+            "geo": [
+                113.92,
+                22.31
+            ],
+            "partners": 3,
+            "relays": [
+                {
+                    "ipv4": "103.28.54.163",
+                    "port_range": [
+                        27015,
+                        27060
+                    ]
+                },
+                {
+                    "ipv4": "103.28.54.164",
+                    "port_range": [
+                        27015,
+                        27060
+                    ]
+                },
+                {
+                    "ipv4": "103.28.54.167",
+                    "port_range": [
+                        27015,
+                        27060
+                    ]
+                },
+                {
+                    "ipv4": "103.28.54.172",
+                    "port_range": [
+                        27015,
+                        27060
+                    ]
+                },
+                {
+                    "ipv4": "103.28.54.174",
+                    "port_range": [
+                        27015,
+                        27060
+                    ]
+                },
+                {
+                    "ipv4": "103.28.54.179",
+                    "port_range": [
+                        27015,
+                        27060
+                    ]
+                },
+                {
+                    "ipv4": "103.28.54.180",
+                    "port_range": [
+                        27015,
+                        27060
+                    ]
+                },
+                {
+                    "ipv4": "103.28.54.183",
+                    "port_range": [
+                        27015,
+                        27060
+                    ]
+                },
+                {
+                    "ipv4": "103.28.54.188",
+                    "port_range": [
+                        27015,
+                        27060
+                    ]
+                },
+                {
+                    "ipv4": "103.28.54.189",
+                    "port_range": [
+                        27015,
+                        27060
+                    ]
+                }
+            ],
+            "tier": 0
+        },
+        "hkg4": {
+            "aliases": [
+                "mhk2",
+                "hkgm"
+            ],
+            "desc": "Multiplay Hong Kong",
+            "geo": [
+                114.2,
+                22.3
+            ],
+            "partners": 3,
+            "relay_public_key": "EE417A05B87158644D9C9CDFEAB8A17B1DC2C8973AD51D4EAC3F090E028B4040",
+            "relays": [
+                {
+                    "ipv4": "169.150.222.50",
+                    "port_range": [
+                        27015,
+                        27028
+                    ]
+                },
+                {
+                    "ipv4": "169.150.222.51",
+                    "port_range": [
+                        27015,
+                        27028
+                    ]
+                },
+                {
+                    "ipv4": "169.150.222.52",
+                    "port_range": [
+                        27015,
+                        27028
+                    ]
+                },
+                {
+                    "ipv4": "169.150.222.53",
+                    "port_range": [
+                        27015,
+                        27028
+                    ]
+                },
+                {
+                    "ipv4": "169.150.222.54",
+                    "port_range": [
+                        27015,
+                        27028
+                    ]
+                },
+                {
+                    "ipv4": "169.150.222.55",
+                    "port_range": [
+                        27015,
+                        27028
+                    ]
+                }
+            ],
+            "tier": 2
+        },
+        "iad": {
+            "desc": "Sterling (Virginia)",
+            "geo": [
+                -77.43,
+                39.01
+            ],
+            "partners": 1,
+            "relays": [
+                {
+                    "ipv4": "162.254.192.66",
+                    "port_range": [
+                        27015,
+                        27060
+                    ]
+                },
+                {
+                    "ipv4": "162.254.192.67",
+                    "port_range": [
+                        27015,
+                        27060
+                    ]
+                },
+                {
+                    "ipv4": "162.254.192.68",
+                    "port_range": [
+                        27015,
+                        27060
+                    ]
+                },
+                {
+                    "ipv4": "162.254.192.70",
+                    "port_range": [
+                        27015,
+                        27060
+                    ]
+                },
+                {
+                    "ipv4": "162.254.192.72",
+                    "port_range": [
+                        27015,
+                        27060
+                    ]
+                },
+                {
+                    "ipv4": "162.254.192.73",
+                    "port_range": [
+                        27015,
+                        27060
+                    ]
+                }
+            ],
+            "tier": 1
+        },
+        "jfk": {
+            "desc": "New York",
+            "geo": [
+                -74.14,
+                40.69
+            ],
+            "partners": 1,
+            "tier": 1
+        },
+        "jnb": {
+            "desc": "Johannesburg (South Africa)",
+            "geo": [
+                28,
+                -26.2
+            ],
+            "partners": 1,
+            "relays": [
+                {
+                    "ipv4": "155.133.238.178",
+                    "port_range": [
+                        27015,
+                        27060
+                    ]
+                },
+                {
+                    "ipv4": "155.133.238.194",
+                    "port_range": [
+                        27015,
+                        27060
+                    ]
+                }
+            ],
+            "tier": 0
+        },
+        "lax": {
+            "desc": "Los Angeles (California)",
+            "geo": [
+                -118.25,
+                34.05
+            ],
+            "partners": 1,
+            "relays": [
+                {
+                    "ipv4": "162.254.195.70",
+                    "port_range": [
+                        27015,
+                        27060
+                    ]
+                },
+                {
+                    "ipv4": "162.254.195.72",
+                    "port_range": [
+                        27015,
+                        27060
+                    ]
+                },
+                {
+                    "ipv4": "162.254.195.73",
+                    "port_range": [
+                        27015,
+                        27060
+                    ]
+                },
+                {
+                    "ipv4": "162.254.195.74",
+                    "port_range": [
+                        27015,
+                        27060
+                    ]
+                }
+            ],
+            "tier": 1
+        },
+        "lhr": {
+            "desc": "London (England)",
+            "geo": [
+                -0.13,
+                51.51
+            ],
+            "partners": 1,
+            "relays": [
+                {
+                    "ipv4": "162.254.196.66",
+                    "port_range": [
+                        27015,
+                        27060
+                    ]
+                },
+                {
+                    "ipv4": "162.254.196.70",
+                    "port_range": [
+                        27015,
+                        27060
+                    ]
+                },
+                {
+                    "ipv4": "162.254.196.82",
+                    "port_range": [
+                        27015,
+                        27060
+                    ]
+                },
+                {
+                    "ipv4": "162.254.196.85",
+                    "port_range": [
+                        27015,
+                        27060
+                    ]
+                }
+            ],
+            "tier": 1
+        },
+        "lim": {
+            "desc": "Lima (Peru)",
+            "geo": [
+                -77.05,
+                -12.06
+            ],
+            "partners": 1,
+            "relays": [
+                {
+                    "ipv4": "155.133.244.35",
+                    "port_range": [
+                        27015,
+                        27060
+                    ]
+                },
+                {
+                    "ipv4": "155.133.244.36",
+                    "port_range": [
+                        27015,
+                        27060
+                    ]
+                },
+                {
+                    "ipv4": "155.133.244.51",
+                    "port_range": [
+                        27015,
+                        27060
+                    ]
+                },
+                {
+                    "ipv4": "155.133.244.52",
+                    "port_range": [
+                        27015,
+                        27060
+                    ]
+                }
+            ],
+            "tier": 1
+        },
+        "maa": {
+            "desc": "Chennai - Thiruverkadu (India)",
+            "geo": [
+                80.13,
+                13.07
+            ],
+            "partners": 1,
+            "tier": 1
+        },
+        "maa2": {
+            "desc": "Chennai - Ambattur (India)",
+            "geo": [
+                80.15,
+                13.11
+            ],
+            "partners": 1,
+            "relays": [
+                {
+                    "ipv4": "155.133.225.18",
+                    "port_range": [
+                        27015,
+                        27078
+                    ]
+                },
+                {
+                    "ipv4": "155.133.225.19",
+                    "port_range": [
+                        27015,
+                        27078
+                    ]
+                }
+            ],
+            "tier": 1
+        },
+        "mad": {
+            "desc": "Madrid (Spain)",
+            "geo": [
+                3.34,
+                40.23
+            ],
+            "partners": 1,
+            "relays": [
+                {
+                    "ipv4": "155.133.246.34",
+                    "port_range": [
+                        27015,
+                        27060
+                    ]
+                },
+                {
+                    "ipv4": "155.133.246.39",
+                    "port_range": [
+                        27015,
+                        27060
+                    ]
+                },
+                {
+                    "ipv4": "155.133.246.40",
+                    "port_range": [
+                        27015,
+                        27060
+                    ]
+                },
+                {
+                    "ipv4": "155.133.246.50",
+                    "port_range": [
+                        27015,
+                        27060
+                    ]
+                }
+            ],
+            "tier": 1
+        },
+        "ord": {
+            "desc": "Chicago (Illinois)",
+            "geo": [
+                -87.69,
+                41.84
+            ],
+            "partners": 1,
+            "relays": [
+                {
+                    "ipv4": "162.254.193.71",
+                    "port_range": [
+                        27015,
+                        27060
+                    ]
+                },
+                {
+                    "ipv4": "162.254.193.73",
+                    "port_range": [
+                        27015,
+                        27060
+                    ]
+                },
+                {
+                    "ipv4": "162.254.193.77",
+                    "port_range": [
+                        27015,
+                        27060
+                    ]
+                },
+                {
+                    "ipv4": "162.254.193.98",
+                    "port_range": [
+                        27015,
+                        27060
+                    ]
+                },
+                {
+                    "ipv4": "162.254.193.99",
+                    "port_range": [
+                        27015,
+                        27060
+                    ]
+                },
+                {
+                    "ipv4": "162.254.193.100",
+                    "port_range": [
+                        27015,
+                        27060
+                    ]
+                }
+            ],
+            "tier": 0
+        },
+        "par": {
+            "desc": "Paris (France)",
+            "geo": [
+                2.35,
+                48.86
+            ],
+            "partners": 1,
+            "relays": [
+                {
+                    "ipv4": "185.25.182.18",
+                    "port_range": [
+                        27015,
+                        27060
+                    ]
+                },
+                {
+                    "ipv4": "185.25.182.19",
+                    "port_range": [
+                        27015,
+                        27060
+                    ]
+                },
+                {
+                    "ipv4": "185.25.182.50",
+                    "port_range": [
+                        27015,
+                        27060
+                    ]
+                },
+                {
+                    "ipv4": "185.25.182.51",
+                    "port_range": [
+                        27015,
+                        27060
+                    ]
+                }
+            ],
+            "tier": 1
+        },
+        "scl": {
+            "desc": "Santiago (Chile)",
+            "geo": [
+                -70.47,
+                -33.23
+            ],
+            "partners": 1,
+            "relays": [
+                {
+                    "ipv4": "155.133.249.163",
+                    "port_range": [
+                        27015,
+                        27060
+                    ]
+                },
+                {
+                    "ipv4": "155.133.249.179",
+                    "port_range": [
+                        27015,
+                        27060
+                    ]
+                }
+            ],
+            "tier": 1
+        },
+        "sea": {
+            "desc": "Seattle (Washington)",
+            "geo": [
+                -122.33,
+                47.61
+            ],
+            "partners": 1,
+            "relays": [
+                {
+                    "ipv4": "205.196.6.210",
+                    "port_range": [
+                        27015,
+                        27060
+                    ]
+                },
+                {
+                    "ipv4": "205.196.6.211",
+                    "port_range": [
+                        27015,
+                        27060
+                    ]
+                },
+                {
+                    "ipv4": "205.196.6.212",
+                    "port_range": [
+                        27015,
+                        27060
+                    ]
+                },
+                {
+                    "ipv4": "205.196.6.213",
+                    "port_range": [
+                        27015,
+                        27060
+                    ]
+                }
+            ],
+            "tier": 1
+        },
+        "seo": {
+            "desc": "Seoul (South Korea)",
+            "geo": [
+                126.99,
+                37.56
+            ],
+            "partners": 1,
+            "relays": [
+                {
+                    "ipv4": "146.66.152.36",
+                    "port_range": [
+                        27015,
+                        27060
+                    ]
+                },
+                {
+                    "ipv4": "146.66.152.37",
+                    "port_range": [
+                        27015,
+                        27060
+                    ]
+                },
+                {
+                    "ipv4": "146.66.152.41",
+                    "port_range": [
+                        27015,
+                        27060
+                    ]
+                },
+                {
+                    "ipv4": "146.66.152.42",
+                    "port_range": [
+                        27015,
+                        27060
+                    ]
+                }
+            ],
+            "tier": 1
+        },
+        "sgp": {
+            "desc": "Singapore",
+            "geo": [
+                103.83,
+                1.28
+            ],
+            "partners": 3,
+            "relays": [
+                {
+                    "ipv4": "103.10.124.116",
+                    "port_range": [
+                        27015,
+                        27060
+                    ]
+                },
+                {
+                    "ipv4": "103.10.124.117",
+                    "port_range": [
+                        27015,
+                        27060
+                    ]
+                },
+                {
+                    "ipv4": "103.10.124.118",
+                    "port_range": [
+                        27015,
+                        27060
+                    ]
+                },
+                {
+                    "ipv4": "103.10.124.119",
+                    "port_range": [
+                        27015,
+                        27060
+                    ]
+                },
+                {
+                    "ipv4": "103.10.124.120",
+                    "port_range": [
+                        27015,
+                        27060
+                    ]
+                },
+                {
+                    "ipv4": "103.10.124.121",
+                    "port_range": [
+                        27015,
+                        27060
+                    ]
+                }
+            ],
+            "tier": 0
+        },
+        "sto": {
+            "desc": "Stockholm - Kista (Sweden)",
+            "geo": [
+                17.9,
+                59.4
+            ],
+            "partners": 1,
+            "relays": [
+                {
+                    "ipv4": "162.254.198.41",
+                    "port_range": [
+                        27015,
+                        27060
+                    ]
+                },
+                {
+                    "ipv4": "162.254.198.42",
+                    "port_range": [
+                        27015,
+                        27060
+                    ]
+                },
+                {
+                    "ipv4": "162.254.198.43",
+                    "port_range": [
+                        27015,
+                        27060
+                    ]
+                },
+                {
+                    "ipv4": "162.254.198.47",
+                    "port_range": [
+                        27015,
+                        27060
+                    ]
+                },
+                {
+                    "ipv4": "162.254.198.49",
+                    "port_range": [
+                        27015,
+                        27060
+                    ]
+                },
+                {
+                    "ipv4": "162.254.198.50",
+                    "port_range": [
+                        27015,
+                        27060
+                    ]
+                },
+                {
+                    "ipv4": "162.254.198.51",
+                    "port_range": [
+                        27015,
+                        27060
+                    ]
+                },
+                {
+                    "ipv4": "162.254.198.101",
+                    "port_range": [
+                        27015,
+                        27060
+                    ]
+                },
+                {
+                    "ipv4": "162.254.198.102",
+                    "port_range": [
+                        27015,
+                        27060
+                    ]
+                },
+                {
+                    "ipv4": "162.254.198.103",
+                    "port_range": [
+                        27015,
+                        27060
+                    ]
+                }
+            ],
+            "tier": 1
+        },
+        "sto2": {
+            "desc": "Stockholm - Bromma (Sweden)",
+            "geo": [
+                17.87,
+                59.34
+            ],
+            "partners": 1,
+            "relays": [
+                {
+                    "ipv4": "155.133.252.37",
+                    "port_range": [
+                        27015,
+                        27060
+                    ]
+                },
+                {
+                    "ipv4": "155.133.252.38",
+                    "port_range": [
+                        27015,
+                        27060
+                    ]
+                },
+                {
+                    "ipv4": "155.133.252.52",
+                    "port_range": [
+                        27015,
+                        27060
+                    ]
+                },
+                {
+                    "ipv4": "155.133.252.53",
+                    "port_range": [
+                        27015,
+                        27060
+                    ]
+                },
+                {
+                    "ipv4": "155.133.252.84",
+                    "port_range": [
+                        27015,
+                        27060
+                    ]
+                },
+                {
+                    "ipv4": "155.133.252.85",
+                    "port_range": [
+                        27015,
+                        27060
+                    ]
+                },
+                {
+                    "ipv4": "155.133.252.86",
+                    "port_range": [
+                        27015,
+                        27060
+                    ]
+                },
+                {
+                    "ipv4": "155.133.252.87",
+                    "port_range": [
+                        27015,
+                        27060
+                    ]
+                },
+                {
+                    "ipv4": "155.133.252.88",
+                    "port_range": [
+                        27015,
+                        27060
+                    ]
+                },
+                {
+                    "ipv4": "155.133.252.89",
+                    "port_range": [
+                        27015,
+                        27060
+                    ]
+                }
+            ],
+            "tier": 0
+        },
+        "syd": {
+            "desc": "Sydney (Australia)",
+            "geo": [
+                151.21,
+                -33.86
+            ],
+            "partners": 3,
+            "relays": [
+                {
+                    "ipv4": "103.10.125.146",
+                    "port_range": [
+                        27015,
+                        27060
+                    ]
+                },
+                {
+                    "ipv4": "103.10.125.147",
+                    "port_range": [
+                        27015,
+                        27060
+                    ]
+                },
+                {
+                    "ipv4": "103.10.125.154",
+                    "port_range": [
+                        27015,
+                        27060
+                    ]
+                }
+            ],
+            "tier": 0
+        },
+        "tyo": {
+            "aliases": [
+                "tyo1",
+                "tyo2",
+                "tyo3"
+            ],
+            "desc": "Tokyo Koto City (Japan)",
+            "geo": [
+                139.68,
+                35.68
+            ],
+            "partners": 3,
+            "relays": [
+                {
+                    "ipv4": "45.121.184.5",
+                    "port_range": [
+                        27015,
+                        27060
+                    ]
+                },
+                {
+                    "ipv4": "45.121.184.6",
+                    "port_range": [
+                        27015,
+                        27060
+                    ]
+                },
+                {
+                    "ipv4": "45.121.184.24",
+                    "port_range": [
+                        27015,
+                        27060
+                    ]
+                },
+                {
+                    "ipv4": "45.121.184.25",
+                    "port_range": [
+                        27015,
+                        27060
+                    ]
+                },
+                {
+                    "ipv4": "45.121.184.26",
+                    "port_range": [
+                        27015,
+                        27060
+                    ]
+                },
+                {
+                    "ipv4": "45.121.184.27",
+                    "port_range": [
+                        27015,
+                        27060
+                    ]
+                }
+            ],
+            "tier": 1
+        },
+        "vie": {
+            "desc": "Vienna (Austria)",
+            "geo": [
+                16.22,
+                48.12
+            ],
+            "partners": 1,
+            "relays": [
+                {
+                    "ipv4": "146.66.155.66",
+                    "port_range": [
+                        27015,
+                        27060
+                    ]
+                },
+                {
+                    "ipv4": "146.66.155.67",
+                    "port_range": [
+                        27015,
+                        27060
+                    ]
+                },
+                {
+                    "ipv4": "146.66.155.68",
+                    "port_range": [
+                        27015,
+                        27060
+                    ]
+                },
+                {
+                    "ipv4": "146.66.155.69",
+                    "port_range": [
+                        27015,
+                        27060
+                    ]
+                },
+                {
+                    "ipv4": "146.66.155.72",
+                    "port_range": [
+                        27015,
+                        27060
+                    ]
+                },
+                {
+                    "ipv4": "146.66.155.73",
+                    "port_range": [
+                        27015,
+                        27060
+                    ]
+                }
+            ],
+            "tier": 1
+        },
+        "waw": {
+            "desc": "Warsaw (Poland)",
+            "geo": [
+                21,
+                52.22
+            ],
+            "partners": 1,
+            "relays": [
+                {
+                    "ipv4": "155.133.230.98",
+                    "port_range": [
+                        27015,
+                        27060
+                    ]
+                },
+                {
+                    "ipv4": "155.133.230.99",
+                    "port_range": [
+                        27015,
+                        27060
+                    ]
+                },
+                {
+                    "ipv4": "155.133.230.100",
+                    "port_range": [
+                        27015,
+                        27060
+                    ]
+                },
+                {
+                    "ipv4": "155.133.230.101",
+                    "port_range": [
+                        27015,
+                        27060
+                    ]
+                },
+                {
+                    "ipv4": "155.133.230.102",
+                    "port_range": [
+                        27015,
+                        27060
+                    ]
+                },
+                {
+                    "ipv4": "155.133.230.103",
+                    "port_range": [
+                        27015,
+                        27060
+                    ]
+                }
+            ],
+            "tier": 1
+        }
+    },
+    "relay_public_key": "5AC884C1045BA0FF44142AC8DCA51B8A98C8F1CB4FEE36284AFBE92FCF594932",
+    "revision": 1740780688,
+    "revoked_keys": [
+        "11146342570456886677"
+    ],
+    "success": true,
+    "typical_pings": [
+        [
+            "ams",
+            "ams4",
+            0
+        ],
+        [
+            "ams",
+            "fra",
+            6
+        ],
+        [
+            "ams",
+            "jnb",
+            160
+        ],
+        [
+            "ams",
+            "lhr",
+            5
+        ],
+        [
+            "ams",
+            "mad",
+            30
+        ],
+        [
+            "ams",
+            "par",
+            10
+        ],
+        [
+            "ams",
+            "sto",
+            20
+        ],
+        [
+            "ams",
+            "sto2",
+            19
+        ],
+        [
+            "ams",
+            "vie",
+            16
+        ],
+        [
+            "ams4",
+            "fra",
+            7
+        ],
+        [
+            "ams4",
+            "lhr",
+            6
+        ],
+        [
+            "ams4",
+            "par",
+            12
+        ],
+        [
+            "ams4",
+            "sto2",
+            20
+        ],
+        [
+            "atl",
+            "dfw",
+            16
+        ],
+        [
+            "atl",
+            "dfw2",
+            15
+        ],
+        [
+            "atl",
+            "eat",
+            62
+        ],
+        [
+            "atl",
+            "fra",
+            101
+        ],
+        [
+            "atl",
+            "iad",
+            16
+        ],
+        [
+            "atl",
+            "jfk",
+            23
+        ],
+        [
+            "atl",
+            "ord",
+            17
+        ],
+        [
+            "bom",
+            "bom2",
+            1
+        ],
+        [
+            "bom",
+            "dxb",
+            38
+        ],
+        [
+            "bom",
+            "maa",
+            20
+        ],
+        [
+            "bom",
+            "maa2",
+            20
+        ],
+        [
+            "bom",
+            "sgp",
+            78
+        ],
+        [
+            "bom2",
+            "dxb",
+            27
+        ],
+        [
+            "bom2",
+            "maa",
+            20
+        ],
+        [
+            "bom2",
+            "maa2",
+            30
+        ],
+        [
+            "bom2",
+            "sgp",
+            61
+        ],
+        [
+            "bom2",
+            "syd",
+            154
+        ],
+        [
+            "dfw",
+            "dfw2",
+            0
+        ],
+        [
+            "dfw",
+            "eat",
+            49
+        ],
+        [
+            "dfw",
+            "fra",
+            120
+        ],
+        [
+            "dfw",
+            "iad",
+            38
+        ],
+        [
+            "dfw",
+            "jfk",
+            43
+        ],
+        [
+            "dfw",
+            "lax",
+            32
+        ],
+        [
+            "dfw",
+            "ord",
+            20
+        ],
+        [
+            "dfw",
+            "sea",
+            47
+        ],
+        [
+            "dfw2",
+            "iad",
+            31
+        ],
+        [
+            "dfw2",
+            "ord",
+            20
+        ],
+        [
+            "dfw2",
+            "sto2",
+            163
+        ],
+        [
+            "dxb",
+            "hkg",
+            119
+        ],
+        [
+            "dxb",
+            "maa",
+            58
+        ],
+        [
+            "dxb",
+            "maa2",
+            56
+        ],
+        [
+            "dxb",
+            "sgp",
+            87
+        ],
+        [
+            "eat",
+            "lax",
+            28
+        ],
+        [
+            "eat",
+            "ord",
+            48
+        ],
+        [
+            "eat",
+            "sea",
+            4
+        ],
+        [
+            "eat",
+            "sto2",
+            151
+        ],
+        [
+            "eze",
+            "gru",
+            28
+        ],
+        [
+            "eze",
+            "iad",
+            143
+        ],
+        [
+            "eze",
+            "lim",
+            49
+        ],
+        [
+            "eze",
+            "ord",
+            160
+        ],
+        [
+            "eze",
+            "scl",
+            20
+        ],
+        [
+            "fra",
+            "gru",
+            196
+        ],
+        [
+            "fra",
+            "hel",
+            30
+        ],
+        [
+            "fra",
+            "iad",
+            85
+        ],
+        [
+            "fra",
+            "jfk",
+            124
+        ],
+        [
+            "fra",
+            "jnb",
+            173
+        ],
+        [
+            "fra",
+            "lax",
+            145
+        ],
+        [
+            "fra",
+            "lhr",
+            13
+        ],
+        [
+            "fra",
+            "mad",
+            29
+        ],
+        [
+            "fra",
+            "ord",
+            100
+        ],
+        [
+            "fra",
+            "par",
+            9
+        ],
+        [
+            "fra",
+            "sto",
+            20
+        ],
+        [
+            "fra",
+            "sto2",
+            22
+        ],
+        [
+            "fra",
+            "vie",
+            11
+        ],
+        [
+            "fra",
+            "waw",
+            19
+        ],
+        [
+            "gru",
+            "iad",
+            115
+        ],
+        [
+            "gru",
+            "lim",
+            83
+        ],
+        [
+            "gru",
+            "ord",
+            168
+        ],
+        [
+            "gru",
+            "scl",
+            53
+        ],
+        [
+            "hel",
+            "sto",
+            6
+        ],
+        [
+            "hel",
+            "sto2",
+            7
+        ],
+        [
+            "hel",
+            "vie",
+            28
+        ],
+        [
+            "hel",
+            "waw",
+            18
+        ],
+        [
+            "hkg",
+            "hkg4",
+            0
+        ],
+        [
+            "hkg",
+            "sea",
+            139
+        ],
+        [
+            "hkg",
+            "seo",
+            76
+        ],
+        [
+            "hkg",
+            "sgp",
+            33
+        ],
+        [
+            "hkg",
+            "syd",
+            124
+        ],
+        [
+            "hkg",
+            "tyo",
+            46
+        ],
+        [
+            "hkg4",
+            "sgp",
+            35
+        ],
+        [
+            "hkg4",
+            "tyo",
+            51
+        ],
+        [
+            "iad",
+            "jfk",
+            6
+        ],
+        [
+            "iad",
+            "ord",
+            17
+        ],
+        [
+            "jfk",
+            "ord",
+            22
+        ],
+        [
+            "jnb",
+            "lhr",
+            155
+        ],
+        [
+            "jnb",
+            "par",
+            163
+        ],
+        [
+            "jnb",
+            "sgp",
+            173
+        ],
+        [
+            "jnb",
+            "sto",
+            180
+        ],
+        [
+            "lax",
+            "lim",
+            101
+        ],
+        [
+            "lax",
+            "ord",
+            46
+        ],
+        [
+            "lax",
+            "scl",
+            135
+        ],
+        [
+            "lax",
+            "sea",
+            23
+        ],
+        [
+            "lhr",
+            "mad",
+            26
+        ],
+        [
+            "lhr",
+            "par",
+            7
+        ],
+        [
+            "lhr",
+            "sto",
+            24
+        ],
+        [
+            "lhr",
+            "sto2",
+            24
+        ],
+        [
+            "lim",
+            "ord",
+            147
+        ],
+        [
+            "lim",
+            "scl",
+            43
+        ],
+        [
+            "maa",
+            "maa2",
+            0
+        ],
+        [
+            "maa",
+            "sgp",
+            58
+        ],
+        [
+            "maa2",
+            "sgp",
+            31
+        ],
+        [
+            "maa2",
+            "syd",
+            124
+        ],
+        [
+            "mad",
+            "par",
+            19
+        ],
+        [
+            "mad",
+            "sto2",
+            50
+        ],
+        [
+            "ord",
+            "scl",
+            185
+        ],
+        [
+            "ord",
+            "sea",
+            47
+        ],
+        [
+            "ord",
+            "sto2",
+            111
+        ],
+        [
+            "par",
+            "sto2",
+            29
+        ],
+        [
+            "par",
+            "vie",
+            20
+        ],
+        [
+            "seo",
+            "sgp",
+            107
+        ],
+        [
+            "seo",
+            "tyo",
+            30
+        ],
+        [
+            "sgp",
+            "syd",
+            92
+        ],
+        [
+            "sgp",
+            "tyo",
+            77
+        ],
+        [
+            "sto",
+            "sto2",
+            0
+        ],
+        [
+            "sto",
+            "waw",
+            20
+        ],
+        [
+            "sto2",
+            "vie",
+            30
+        ],
+        [
+            "sto2",
+            "waw",
+            20
+        ],
+        [
+            "vie",
+            "waw",
+            10
+        ]
+    ]
+}
