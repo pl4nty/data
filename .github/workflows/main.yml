@@ -9,48 +9,6 @@ on:
     - cron: '0 * * * *'
 
 jobs:
-  scheduled:
-    runs-on: ubuntu-latest
-    permissions:
-      contents: write
-    steps:
-      - uses: denoland/setup-deno@v2
-        with:
-          deno-version: v2.x
-      - uses: actions/checkout@v2
-      - uses: githubocto/flat@v3
-        with:
-          http_url: https://api.steampowered.com/ISteamApps/GetSDRConfig/v1?appid=440
-          downloaded_filename: network_config_tf2.json
-      - uses: githubocto/flat@v3
-        with:
-          http_url: https://login.microsoftonline.com/common/discovery/instance?api-version=1.1&authorization_endpoint=https://login.microsoftonline.com/common/oauth2/v2.0/authorize
-          downloaded_filename: microsoft_instance_discovery.json
-      - uses: githubocto/flat@v3
-        with:
-          http_url: https://login.microsoftonline.com/common/.well-known/openid-configuration
-          downloaded_filename: microsoft_oidc_config.json
-      - uses: githubocto/flat@v3
-        with:
-          http_url: https://login.windows-ppe.net/common/.well-known/openid-configuration
-          downloaded_filename: microsoft_oidc_config_ppe.json
-      - uses: githubocto/flat@v3
-        with:
-          http_url: https://login.microsoftonline.com/common/discovery/keys
-          downloaded_filename: microsoft_jwks.json
-      - uses: githubocto/flat@v3
-        with:
-          http_url: https://login.microsoftonline.us/common/discovery/keys
-          downloaded_filename: microsoft_jwks_us.json
-      - uses: githubocto/flat@v3
-        with:
-          http_url: https://login.partner.microsoftonline.cn/common/discovery/keys
-          downloaded_filename: microsoft_jwks_cn.json
-      - uses: githubocto/flat@v3
-        with:
-          http_url: https://login.windows-ppe.net/common/discovery/keys
-          downloaded_filename: microsoft_jwks_ppe.json
-      # TODO decode https://login.microsoftonline.com/common/kerberos
   scripts:
     runs-on: ubuntu-latest
     permissions:
@@ -59,6 +17,15 @@ jobs:
       matrix:
         cmd:
           - python android_bulletins_parser.py
+          - python json.py https://api.steampowered.com/ISteamApps/GetSDRConfig/v1?appid=440 network_config_tf2.json
+          - python json.py https://login.microsoftonline.com/common/discovery/instance?api-version=1.1&authorization_endpoint=https://login.microsoftonline.com/common/oauth2/v2.0/authorize microsoft_instance_discovery.json
+          - python json.py https://login.microsoftonline.com/common/.well-known/openid-configuration microsoft_oidc_config.json
+          - python json.py https://login.windows-ppe.net/common/.well-known/openid-configuration microsoft_oidc_config_ppe.json
+          - python json.py https://login.microsoftonline.com/common/discovery/keys microsoft_jwks.json
+          - python json.py https://login.microsoftonline.us/common/discovery/keys microsoft_jwks_us.json
+          - python json.py https://login.partner.microsoftonline.cn/common/discovery/keys microsoft_jwks_cn.json
+          - python json.py https://login.windows-ppe.net/common/discovery/keys microsoft_jwks_ppe.json
+          # TODO decode https://login.microsoftonline.com/common/kerberos
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5.4.0
@@ -70,4 +37,4 @@ jobs:
       - uses: EndBug/add-and-commit@v9.1.4
         with:
           default_author: github_actions
-          message: "Flat: latest data (${{ matrix.cmd }})"
+          message: "data: ${{ matrix.cmd }}"
