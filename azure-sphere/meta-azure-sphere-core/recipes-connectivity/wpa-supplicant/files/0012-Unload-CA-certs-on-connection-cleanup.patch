@@ -1,0 +1,14 @@
+diff --git a/src/crypto/tls_wolfssl.c b/src/crypto/tls_wolfssl.c
+index 0759ac4..47c02f5 100644
+--- a/src/crypto/tls_wolfssl.c
++++ b/src/crypto/tls_wolfssl.c
+@@ -338,6 +338,9 @@ void tls_connection_deinit(void *tls_ctx, struct tls_connection *conn)
+ 
+ 	/* self */
+ 	os_free(conn);
++
++	/* clean up CAs loaded on CTX */
++	wolfSSL_CTX_UnloadCAs((WOLFSSL_CTX*)tls_ctx);
+ }
+ 
+ 

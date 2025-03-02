@@ -1,0 +1,119 @@
+From 04dbbd327869ad41a1cb72646a8f5c914bd3603d Mon Sep 17 00:00:00 2001
+From: Chris Ong <chong@microsoft.com>
+Date: Wed, 1 Jul 2020 19:06:27 +0000
+
+---
+ src/crypto/tls_wolfssl.c | 40 +++++++++++++++++++++-------------------
+ 1 file changed, 21 insertions(+), 19 deletions(-)
+
+diff --git a/src/crypto/tls_wolfssl.c b/src/crypto/tls_wolfssl.c
+index 3b5b8f1..874dd0c 100644
+--- a/src/crypto/tls_wolfssl.c
++++ b/src/crypto/tls_wolfssl.c
+@@ -579,7 +579,7 @@ static int tls_connection_private_key(void *tls_ctx,
+ static int tls_match_alt_subject_component(WOLFSSL_X509 *cert, int type,
+ 					   const char *value, size_t len)
+ {
+-	WOLFSSL_ASN1_OBJECT *gen;
++	WOLFSSL_GENERAL_NAME *gen;
+ 	void *ext;
+ 	int found = 0;
+ 	int i;
+@@ -588,14 +588,14 @@ static int tls_match_alt_subject_component(WOLFSSL_X509 *cert, int type,
+ 
+ 	for (i = 0; ext && i < wolfSSL_sk_num(ext); i++) {
+ 		gen = wolfSSL_sk_value(ext, i);
+-		if (gen->type != type)
++		if (gen == NULL || gen->type != type)
+ 			continue;
+-		if (os_strlen((char *) gen->obj) == len &&
+-		    os_memcmp(value, gen->obj, len) == 0)
++		if (wolfSSL_ASN1_STRING_length(gen->d.ia5) == len &&
++		    os_memcmp(value, wolfSSL_ASN1_STRING_data(gen->d.ia5), len) == 0)
+ 			found++;
+ 	}
+ 
+-	wolfSSL_sk_ASN1_OBJECT_free(ext);
++	wolfSSL_sk_GENERAL_NAME_free(ext);
+ 
+ 	return found;
+ }
+@@ -679,7 +679,7 @@ static int domain_suffix_match(const char *val, size_t len, const char *match,
+ static int tls_match_suffix_helper(WOLFSSL_X509 *cert, const char *match,
+ 				   size_t match_len, int full)
+ {
+-	WOLFSSL_ASN1_OBJECT *gen;
++	WOLFSSL_GENERAL_NAME *gen;
+ 	void *ext;
+ 	int i;
+ 	int j;
+@@ -693,13 +693,13 @@ static int tls_match_suffix_helper(WOLFSSL_X509 *cert, const char *match,
+ 
+ 	for (j = 0; ext && j < wolfSSL_sk_num(ext); j++) {
+ 		gen = wolfSSL_sk_value(ext, j);
+-		if (gen->type != ASN_DNS_TYPE)
++		if (gen == NULL || gen->type != ALT_NAMES_OID)
+ 			continue;
+ 		dns_name++;
+ 		wpa_hexdump_ascii(MSG_DEBUG, "TLS: Certificate dNSName",
+-				  gen->obj, os_strlen((char *)gen->obj));
+-		if (domain_suffix_match((const char *) gen->obj,
+-					os_strlen((char *) gen->obj), match,
++				  wolfSSL_ASN1_STRING_data(gen->d.ia5), wolfSSL_ASN1_STRING_length(gen->d.ia5));
++		if (domain_suffix_match((const char *) wolfSSL_ASN1_STRING_data(gen->d.ia5),
++					wolfSSL_ASN1_STRING_length(gen->d.ia5), match,
+ 					match_len, full) == 1) {
+ 			wpa_printf(MSG_DEBUG, "TLS: %s in dNSName found",
+ 				   full ? "Match" : "Suffix match");
+@@ -707,7 +707,7 @@ static int tls_match_suffix_helper(WOLFSSL_X509 *cert, const char *match,
+ 			return 1;
+ 		}
+ 	}
+-	wolfSSL_sk_ASN1_OBJECT_free(ext);
++	wolfSSL_sk_GENERAL_NAME_free(ext);
+ 
+ 	if (dns_name) {
+ 		wpa_printf(MSG_DEBUG, "TLS: None of the dNSName(s) matched");
+@@ -861,7 +861,7 @@ static void wolfssl_tls_cert_event(struct tls_connection *conn,
+ 	struct tls_context *context = conn->context;
+ 	char *alt_subject[TLS_MAX_ALT_SUBJECT];
+ 	int alt, num_alt_subject = 0;
+-	WOLFSSL_ASN1_OBJECT *gen;
++	WOLFSSL_GENERAL_NAME *gen;
+ 	void *ext;
+ 	int i;
+ #ifdef CONFIG_SHA256
+@@ -902,12 +902,13 @@ static void wolfssl_tls_cert_event(struct tls_connection *conn,
+ 		if (num_alt_subject == TLS_MAX_ALT_SUBJECT)
+ 			break;
+ 		gen = wolfSSL_sk_value((void *) ext, i);
+-		if (gen->type != GEN_EMAIL &&
+-		    gen->type != GEN_DNS &&
+-		    gen->type != GEN_URI)
++		if (gen == NULL || 
++			(gen->type != GEN_EMAIL && 
++			 gen->type != GEN_DNS && 
++			 gen->type != GEN_URI))
+ 			continue;
+ 
+-		pos = os_malloc(10 + os_strlen((char *) gen->obj) + 1);
++		pos = os_malloc(10 + wolfSSL_ASN1_STRING_length(gen->d.ia5) + 1);
+ 		if (!pos)
+ 			break;
+ 		alt_subject[num_alt_subject++] = pos;
+@@ -927,11 +928,12 @@ static void wolfssl_tls_cert_event(struct tls_connection *conn,
+ 			break;
+ 		}
+ 
+-		os_memcpy(pos, gen->obj, os_strlen((char *)gen->obj));
+-		pos += os_strlen((char *)gen->obj);
++		os_memcpy(pos, wolfSSL_ASN1_STRING_data(gen->d.ia5),
++		               wolfSSL_ASN1_STRING_length(gen->d.ia5));
++		pos += wolfSSL_ASN1_STRING_length(gen->d.ia5);
+ 		*pos = '\0';
+ 	}
+-	wolfSSL_sk_ASN1_OBJECT_free(ext);
++	wolfSSL_sk_GENERAL_NAME_free(ext);
+ 
+ 	for (alt = 0; alt < num_alt_subject; alt++)
+ 		ev.peer_cert.altsubject[alt] = alt_subject[alt];

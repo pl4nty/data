@@ -1,0 +1,421 @@
+From 07e2ccbadc8c059bc25fea97f4b6fe7e68d9da29 Mon Sep 17 00:00:00 2001
+From: Thales Carvalho <thalesc@microsoft.com>
+Date: Wed, 11 Sep 2019 07:11:33 -0700
+Subject: [PATCH] Azure Sphere Configuration Backend
+
+---
+ wpa_supplicant/Makefile          |   9 +
+ wpa_supplicant/config_azsphere.c | 384 +++++++++++++++++++++++++++++++
+ 2 files changed, 393 insertions(+)
+ create mode 100644 wpa_supplicant/config_azsphere.c
+
+diff --git a/wpa_supplicant/Makefile b/wpa_supplicant/Makefile
+index 664de74..2407458 100644
+--- a/wpa_supplicant/Makefile
++++ b/wpa_supplicant/Makefile
+@@ -212,6 +212,15 @@ ifeq ($(CONFIG_BACKEND), winreg)
+ OBJS += config_winreg.o
+ endif
+ 
++ifeq ($(CONFIG_BACKEND), azsphere)
++OBJS += config_file.o
++OBJS += config_azsphere.o
++NEED_BASE64=y
++NEED_JSON=y
++CFLAGS += -DCONFIG_BACKEND_FILE
++LDFLAGS += -Wl,--wrap=wpa_config_read -Wl,--wrap=wpa_config_write
++endif
++
+ ifeq ($(CONFIG_BACKEND), none)
+ OBJS += config_none.o
+ endif
+diff --git a/wpa_supplicant/config_azsphere.c b/wpa_supplicant/config_azsphere.c
+new file mode 100644
+index 0000000..b7928ab
+--- /dev/null
++++ b/wpa_supplicant/config_azsphere.c
+@@ -0,0 +1,384 @@
++/*
++ * WPA Supplicant / Configuration backend: Azure Sphere .json file.
++ *
++ * This file implements a configuration backend for Azuere Sphere.
++ * The primary configuration information is stored in a text file that uses the regular
++ * wpa_supplicant configuration format, for backwards compatibility. The secondary configuration
++ * (e.g., certificate blobs) is stored in a JSON file.
++ */
++
++#include <sys/mman.h>
++#include <fcntl.h>
++
++#include "includes.h"
++#include "common.h"
++#include "utils/json.h"
++#include "config.h"
++#include "base64.h"
++
++#if 0 // for debugging
++#undef wpa_printf
++#define wpa_printf(x, fmt, ...) printf(fmt "\n", ##__VA_ARGS__)
++#endif
++
++/* A string allocated in the heap. */
++struct MemMap
++{
++	char *data;
++	size_t size;
++};
++
++/* Frees and resets the MemMap struct. */
++static void FreeMemMap(struct MemMap *mmap)
++{
++	if (mmap->data)
++	{
++		munmap(mmap->data, mmap->size);
++	}
++	mmap->data = NULL;
++	mmap->size = 0;
++}
++
++/* The maximum size of the cert store file. */
++#define CERT_STORE_MAX_FILE_SIZE (16 * 1024)
++
++/* Reads the contents of a cert store file into a MemMap. */
++static struct MemMap MemMapCertStoreContents(const char *name)
++{
++	struct MemMap res = {.data = NULL, .size = 0};
++	int fd = -1;
++	off_t fsize;
++
++	fd = open(name, O_RDONLY);
++	if (fd < 0)
++	{
++		return res;
++	}
++
++	fsize = lseek(fd, 0, SEEK_END);
++	lseek(fd, 0, SEEK_SET);
++	if (fsize < 0)
++	{
++		close(fd);
++		return res;
++	}
++
++	if (fsize > CERT_STORE_MAX_FILE_SIZE)
++	{
++		errno = E2BIG;
++		close(fd);
++		return res;
++	}
++
++	res.data = mmap(NULL, fsize, PROT_READ, MAP_PRIVATE, fd, 0);
++	close(fd);
++	if (res.data == MAP_FAILED)
++	{
++		res.data = NULL;
++		return res;
++	}
++
++	res.size = fsize;
++	return res;
++}
++
++/**
++ * JsonExtractObjectMember - Helper to extract a member from a JSON_OBJECT
++ * @json: The json containing the member.
++ * @name: The name of the member.
++ * Returns: Pointer to the extracted member or %NULL if no member was found.
++ *
++ * This function removes the extract member from the parent and moves ownership to the caller.
++ */
++static struct json_token *JsonExtractObjectMember(struct json_token *json, const char *name)
++{
++	struct json_token *token, *prev = NULL, *ret = NULL;
++
++	if (json && json->type == JSON_OBJECT)
++	{
++		for (token = json->child; token; token = token->sibling)
++		{
++			if (token->name && os_strcmp(token->name, name) == 0)
++			{
++				ret = token;
++				break;
++			}
++
++			prev = token;
++		}
++
++		if (ret)
++		{
++			prev ? (prev->sibling = ret->sibling) : (json->child = ret->sibling);
++			ret->parent = NULL;
++			ret->sibling = NULL;
++		}
++	}
++
++	return ret;
++}
++
++/**
++ * JsonPopArrayElement - Helper to extract the first element of a JSON_ARRAY
++ * @json: The json containing the element.
++ * Returns: Pointer to the extracted element or %NULL if the parent is not a non-empty JSON_ARRAY.
++ *
++ * This function removes the extract element from the parent and moves ownership to the caller.
++ */
++static struct json_token *JsonPopArrayElement(struct json_token *json)
++{
++	struct json_token *ret = NULL;
++	if (json && json->type == JSON_ARRAY && json->child)
++	{
++		ret = json->child;
++		json->child = ret->sibling;
++		ret->parent = NULL;
++		ret->sibling = NULL;
++	}
++
++	return ret;
++}
++
++/**
++ * JsonExtractString - Helper to extract a string from a JSON_STRING.
++ * @json: The json with the string.
++ * Returns: Pointer to the extracted element or %NULL if the json is not a JSON_STRING.
++ *
++ * This function extracts the string from the json and moves owership to the caller.
++ */
++static char *JsonExtractString(struct json_token *json)
++{
++	char *ret = NULL;
++	if (json && json->type == JSON_STRING)
++	{
++		ret = json->string;
++		json->string = NULL;
++		json->type = JSON_NULL;
++	}
++	return ret;
++}
++
++/**
++ * RemoveWhiteSpacesInPlace - helper to remove all white spaces from a string.
++ * @value: Buffer with the string.
++ * Returns: The final length of the string.
++ *
++ * The function null-terminates the string as needed.
++ */
++static size_t RemoveWhiteSpacesInPlace(char *value)
++{
++	char *out = value;
++	char *in = value;
++
++	while (*in != '\0')
++	{
++		if (isspace(*in))
++		{
++			++in;
++		}
++		else
++		{
++			*out++ = *in++;
++		}
++	}
++
++	*out = '\0';
++
++	return out - value;
++}
++
++/**
++ * ExtractConfigBlob - helper to extract a wpa_config_blob from a JSON_OBJECT.
++ * @json: The json object.
++ * Returns: The extracted wpa_config_blob or %NULL if the object doesn't have the expected members.
++ *
++ * This functions looks for the "Identifier" and "Blob" strings in the json object and, if found,
++ * creates a wpa_config_blob with the data. This function modifies the contents of the json object
++ * to minimize memory allocations.
++ */
++static struct wpa_config_blob *ExtractConfigBlob(struct json_token *json)
++{
++	struct wpa_config_blob *blob = NULL;
++
++	char *name = JsonExtractString(json_get_member(json, "Identifier"));
++	char *encoded_blob = JsonExtractString(json_get_member(json, "Blob"));
++	u8 *data = NULL;
++
++	if (!name || !encoded_blob)
++	{
++		goto out;
++	}
++
++	wpa_printf(MSG_DEBUG, "Found cert '%s'", name);
++
++	size_t data_size;
++
++	// base64_decode returns a buffer allocated via os_malloc, and it's safe to move it to
++	// a wpa_config_blob that will be added to wpa_config.
++	data = base64_decode((unsigned char *)encoded_blob,
++				RemoveWhiteSpacesInPlace(encoded_blob), &data_size);
++	if (data == NULL)
++	{
++		wpa_printf(MSG_ERROR, "Failed to decode cert\n{\n%s\n\n}", encoded_blob);
++		goto out;
++	}
++
++	blob = os_zalloc(sizeof(*blob));
++	if (blob == NULL)
++	{
++		goto out;
++	}
++
++	wpa_printf(MSG_DEBUG, "Decoded cert '%s'", name);
++
++	// Move ownership to blob.
++	blob->name = name;
++	blob->data = data;
++	blob->len = data_size;
++	name = NULL;
++	data = NULL;
++
++out:
++	os_free(name);
++	os_free(encoded_blob);
++	os_free(data);
++	return blob;
++}
++
++static Boolean ends_with_suffix(const char *value, const char *suffix)
++{
++	size_t val_len = os_strlen(value);
++	size_t suffix_len = os_strlen(suffix);
++
++	return (val_len >= suffix_len) && (os_strcmp(value + val_len - suffix_len, suffix) == 0);
++}
++
++int WpaConfigAzSphereRead(const char *name, struct wpa_config *cfgp)
++{
++	wpa_printf(MSG_DEBUG, "Load AzSphere config '%s'", name);
++
++	struct MemMap txt;
++	struct json_token *json = NULL;
++	struct json_token *json_certs = NULL;
++	struct json_token *json_cert = NULL;
++
++	txt = MemMapCertStoreContents(name);
++	if (txt.data == NULL)
++	{
++		wpa_printf(MSG_ERROR, "Failed to load config file '%s', error: %d '%s'",
++				   name, errno, strerror(errno));
++		goto out;
++	}
++
++	json = json_parse(txt.data, txt.size);
++	if (json == NULL)
++	{
++		wpa_printf(MSG_ERROR, "Failed to parse json file '%s', error: %d '%s'",
++				   name, errno, strerror(errno));
++		goto out;
++	}
++
++	json_certs = JsonExtractObjectMember(json, "Certificates");
++	json_free(json);
++	json = NULL;
++
++	if (json_certs)
++	{
++		wpa_printf(MSG_DEBUG, "Certificates array found");
++	}
++
++	while ((json_cert = JsonPopArrayElement(json_certs)) != NULL)
++	{
++		struct wpa_config_blob *blob = ExtractConfigBlob(json_cert);
++		json_free(json_cert);
++
++		if (blob)
++		{
++			wpa_config_set_blob(cfgp, blob);
++		}
++	}
++
++out:
++	FreeMemMap(&txt);
++	json_free(json);
++	json_free(json_certs);
++	json_free(json_cert);
++	return 0;
++}
++
++/**
++ * The AzureSphere configuration backend wraps the base file back interface
++ * (the wpa_config_read and wpa_config_write functions).
++ */
++
++extern struct wpa_config *__real_wpa_config_read(const char *name, struct wpa_config *config);
++extern int __real_wpa_config_write(const char *name, struct wpa_config *config);
++
++/**
++ * wpa_config_read - Read and parse configuration database
++ * @name: Name of the configuration (e.g., path and file name for the
++ * configuration file)
++ * @config: Pointer to previously allocated configuration data or %NULL if none
++ * Returns: Pointer to allocated configuration data or %NULL on failure
++ *
++ * This function reads configuration data, parses its contents, and allocates
++ * data structures needed for storing configuration information. The allocated
++ * data can be freed with wpa_config_free().
++ *
++ * Each configuration backend needs to implement this function.
++ */
++struct wpa_config *__wrap_wpa_config_read(const char *name, struct wpa_config *config)
++{
++	wpa_printf(MSG_DEBUG, "Reading AzSphere configuration file '%s'", name);
++
++	if (!config && !ends_with_suffix(name, ".json"))
++	{
++		// Read the primary configuration from the default file backend.
++		config = __real_wpa_config_read(name, config);
++	}
++	else
++	{
++		// Read the secondary configuration (it overlays on an existing configuration)
++		// using the AzSphere JSON configuration.
++		if (WpaConfigAzSphereRead(name, config))
++		{
++			wpa_printf(MSG_ERROR, "Failed to load config file '%s', "
++								  "error: %s",
++					   name, strerror(errno));
++			config = NULL;
++		}
++	}
++
++	return config;
++}
++
++/**
++ * wpa_config_write - Write or update configuration data
++ * @name: Name of the configuration (e.g., path and file name for the
++ * configuration file)
++ * @config: Configuration data from wpa_config_read()
++ * Returns: 0 on success, -1 on failure
++ *
++ * This function write all configuration data into an external database (e.g.,
++ * a text file) in a format that can be read with wpa_config_read(). This can
++ * be used to allow wpa_supplicant to update its configuration, e.g., when a
++ * new network is added or a password is changed.
++ *
++ * Each configuration backend needs to implement this function.
++ */
++int __wrap_wpa_config_write(const char *name, struct wpa_config *config)
++{
++	wpa_printf(MSG_DEBUG, "Writing AzSphere configuration file '%s'", name);
++
++	// Temporarily remove the blobs from the configuration so the file backend won't
++	// write them to the text config file.
++
++	struct wpa_config_blob *save_blobs = config->blobs;
++	config->blobs = NULL;
++
++	int ret = __real_wpa_config_write(name, config);
++
++	config->blobs = save_blobs;
++
++	return ret;
++}

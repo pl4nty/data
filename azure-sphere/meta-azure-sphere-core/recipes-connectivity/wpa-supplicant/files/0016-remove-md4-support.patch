@@ -1,0 +1,43 @@
+diff --git a/src/crypto/crypto.h b/src/crypto/crypto.h
+index 15f8ad0..e2806d2 100644
+--- a/src/crypto/crypto.h
++++ b/src/crypto/crypto.h
+@@ -21,6 +21,7 @@
+ #ifndef CRYPTO_H
+ #define CRYPTO_H
+ 
++#ifndef CONFIG_NO_MD4
+ /**
+  * md4_vector - MD4 hash for data vector
+  * @num_elem: Number of elements in the data vector
+@@ -31,6 +32,8 @@
+  */
+ int md4_vector(size_t num_elem, const u8 *addr[], const size_t *len, u8 *mac);
+ 
++#endif /* CONFIG_NO_MD4 */
++
+ /**
+  * md5_vector - MD5 hash for data vector
+  * @num_elem: Number of elements in the data vector
+diff --git a/src/crypto/crypto_wolfssl.c b/src/crypto/crypto_wolfssl.c
+index 4cedab4..2b1edf5 100644
+--- a/src/crypto/crypto_wolfssl.c
++++ b/src/crypto/crypto_wolfssl.c
+@@ -30,7 +30,7 @@
+ 
+ 
+ #ifndef CONFIG_FIPS
+-
++#ifndef CONFIG_NO_MD4
+ int md4_vector(size_t num_elem, const u8 *addr[], const size_t *len, u8 *mac)
+ {
+ 	Md4 md4;
+@@ -48,7 +48,7 @@
+ 
+ 	return 0;
+ }
+-
++#endif /* CONFIG_NO_MD4 */
+ 
+ int md5_vector(size_t num_elem, const u8 *addr[], const size_t *len, u8 *mac)
+ {

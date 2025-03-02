@@ -1,0 +1,1300 @@
+From aba4a8be1184bf63e64ebf2f64b289ba9b34e091 Mon Sep 17 00:00:00 2001
+From: Andre Muezerie <andremue@ntdev.microsoft.com>
+Date: Tue, 19 Nov 2019 19:52:51 -0800
+Subject: [PATCH] Using config store for config and certs
+
+---
+ wpa_supplicant/Makefile          |   1 +
+ wpa_supplicant/config_azsphere.c | 345 +++++-------------
+ wpa_supplicant/config_store.c    | 605 +++++++++++++++++++++++++++++++
+ wpa_supplicant/config_store.h    | 211 +++++++++++
+ wpa_supplicant/main.c            |   2 +-
+ 5 files changed, 916 insertions(+), 248 deletions(-)
+ create mode 100644 wpa_supplicant/config_store.c
+ create mode 100644 wpa_supplicant/config_store.h
+
+diff --git a/wpa_supplicant/Makefile b/wpa_supplicant/Makefile
+index af365a2..a891e82 100644
+--- a/wpa_supplicant/Makefile
++++ b/wpa_supplicant/Makefile
+@@ -215,6 +215,7 @@ endif
+ ifeq ($(CONFIG_BACKEND), azsphere)
+ OBJS += config_file.o
+ OBJS += config_azsphere.o
++OBJS += config_store.o
+ NEED_BASE64=y
+ NEED_JSON=y
+ CFLAGS += -DCONFIG_BACKEND_FILE
+diff --git a/wpa_supplicant/config_azsphere.c b/wpa_supplicant/config_azsphere.c
+index b7928ab..d120269 100644
+--- a/wpa_supplicant/config_azsphere.c
++++ b/wpa_supplicant/config_azsphere.c
+@@ -12,297 +12,154 @@
+ 
+ #include "includes.h"
+ #include "common.h"
+-#include "utils/json.h"
+ #include "config.h"
+ #include "base64.h"
++#include "config_store.h"
++#include <libgen.h>
+ 
+ #if 0 // for debugging
+ #undef wpa_printf
+ #define wpa_printf(x, fmt, ...) printf(fmt "\n", ##__VA_ARGS__)
+ #endif
+ 
+-/* A string allocated in the heap. */
+-struct MemMap
+-{
+-	char *data;
+-	size_t size;
+-};
++static const size_t certs_max_store_size = 24 * 1024;
+ 
+-/* Frees and resets the MemMap struct. */
+-static void FreeMemMap(struct MemMap *mmap)
+-{
+-	if (mmap->data)
+-	{
+-		munmap(mmap->data, mmap->size);
+-	}
+-	mmap->data = NULL;
+-	mmap->size = 0;
+-}
++//--------------------------
++/// <summary>
++/// The range of ConfigStore keys reserved for certificates.
++/// </summary>
++static const ConfigStoreKey FirstCertDataKey = 0x8F00;
++static const ConfigStoreKey LastCertDataKey = 0x8F40;
+ 
+-/* The maximum size of the cert store file. */
+-#define CERT_STORE_MAX_FILE_SIZE (16 * 1024)
++#define CERT_IDENTIFIER_SIZE_MAX 20
+ 
+-/* Reads the contents of a cert store file into a MemMap. */
+-static struct MemMap MemMapCertStoreContents(const char *name)
+-{
+-	struct MemMap res = {.data = NULL, .size = 0};
+-	int fd = -1;
+-	off_t fsize;
++struct SerializedCertData {
++    /// <summary>
++    /// Null-terminated string containing the identifier of the certificate.
++    /// </summary>
++    char identifier[CERT_IDENTIFIER_SIZE_MAX];
+ 
+-	fd = open(name, O_RDONLY);
+-	if (fd < 0)
+-	{
+-		return res;
+-	}
++    /// <summary>
++    /// The size of the blob in bytes.
++    /// </summary>
++    uint16_t blob_size;
+ 
+-	fsize = lseek(fd, 0, SEEK_END);
+-	lseek(fd, 0, SEEK_SET);
+-	if (fsize < 0)
+-	{
+-		close(fd);
+-		return res;
+-	}
++    /// <summary>
++    /// The binary blob with of the certificate.
++    /// </summary>
++    uint8_t blob[];
++} __attribute__((packed));
+ 
+-	if (fsize > CERT_STORE_MAX_FILE_SIZE)
+-	{
+-		errno = E2BIG;
+-		close(fd);
+-		return res;
+-	}
++//--------------------------
+ 
+-	res.data = mmap(NULL, fsize, PROT_READ, MAP_PRIVATE, fd, 0);
+-	close(fd);
+-	if (res.data == MAP_FAILED)
+-	{
+-		res.data = NULL;
+-		return res;
+-	}
+-
+-	res.size = fsize;
+-	return res;
+-}
+-
+-/**
+- * JsonExtractObjectMember - Helper to extract a member from a JSON_OBJECT
+- * @json: The json containing the member.
+- * @name: The name of the member.
+- * Returns: Pointer to the extracted member or %NULL if no member was found.
+- *
+- * This function removes the extract member from the parent and moves ownership to the caller.
+- */
+-static struct json_token *JsonExtractObjectMember(struct json_token *json, const char *name)
++// Similar to strncpy, but ensures dst is zero-terminated.
++// Requires dst to be able to hold at least n+1 characters (strncpy requires only n)
++char *strncpyz(char *dst, const char *src, size_t n)
+ {
+-	struct json_token *token, *prev = NULL, *ret = NULL;
+-
+-	if (json && json->type == JSON_OBJECT)
+-	{
+-		for (token = json->child; token; token = token->sibling)
+-		{
+-			if (token->name && os_strcmp(token->name, name) == 0)
+-			{
+-				ret = token;
+-				break;
+-			}
+-
+-			prev = token;
+-		}
+-
+-		if (ret)
+-		{
+-			prev ? (prev->sibling = ret->sibling) : (json->child = ret->sibling);
+-			ret->parent = NULL;
+-			ret->sibling = NULL;
+-		}
+-	}
+-
+-	return ret;
++    strncpy(dst, src, n);
++    dst[n] = '\0'; // Ensures null terminator is present even when the 'n' first characters in src were not zero
++    return dst;
+ }
+ 
+-/**
+- * JsonPopArrayElement - Helper to extract the first element of a JSON_ARRAY
+- * @json: The json containing the element.
+- * Returns: Pointer to the extracted element or %NULL if the parent is not a non-empty JSON_ARRAY.
+- *
+- * This function removes the extract element from the parent and moves ownership to the caller.
+- */
+-static struct json_token *JsonPopArrayElement(struct json_token *json)
++static Boolean ends_with_suffix(const char *value, const char *suffix)
+ {
+-	struct json_token *ret = NULL;
+-	if (json && json->type == JSON_ARRAY && json->child)
+-	{
+-		ret = json->child;
+-		json->child = ret->sibling;
+-		ret->parent = NULL;
+-		ret->sibling = NULL;
+-	}
+-
+-	return ret;
+-}
++	size_t val_len = os_strlen(value);
++	size_t suffix_len = os_strlen(suffix);
+ 
+-/**
+- * JsonExtractString - Helper to extract a string from a JSON_STRING.
+- * @json: The json with the string.
+- * Returns: Pointer to the extracted element or %NULL if the json is not a JSON_STRING.
+- *
+- * This function extracts the string from the json and moves owership to the caller.
+- */
+-static char *JsonExtractString(struct json_token *json)
+-{
+-	char *ret = NULL;
+-	if (json && json->type == JSON_STRING)
+-	{
+-		ret = json->string;
+-		json->string = NULL;
+-		json->type = JSON_NULL;
+-	}
+-	return ret;
++	return (val_len >= suffix_len) && (os_strcmp(value + val_len - suffix_len, suffix) == 0);
+ }
+ 
+-/**
+- * RemoveWhiteSpacesInPlace - helper to remove all white spaces from a string.
+- * @value: Buffer with the string.
+- * Returns: The final length of the string.
+- *
+- * The function null-terminates the string as needed.
+- */
+-static size_t RemoveWhiteSpacesInPlace(char *value)
+-{
+-	char *out = value;
+-	char *in = value;
++bool IsKvpValidCert(ConfigStoreKvpHeader *it) {
++	struct SerializedCertData *cert = (struct SerializedCertData *)(it+1);
+ 
+-	while (*in != '\0')
+-	{
+-		if (isspace(*in))
+-		{
+-			++in;
+-		}
+-		else
+-		{
+-			*out++ = *in++;
+-		}
+-	}
++	bool valid = it &&
++				(FirstCertDataKey <= it->key) && (it->key < LastCertDataKey) &&
++				(cert->blob_size <= it->size - sizeof(struct SerializedCertData));
+ 
+-	*out = '\0';
+-
+-	return out - value;
++	return valid;
+ }
+ 
+ /**
+- * ExtractConfigBlob - helper to extract a wpa_config_blob from a JSON_OBJECT.
+- * @json: The json object.
+- * Returns: The extracted wpa_config_blob or %NULL if the object doesn't have the expected members.
+- *
+- * This functions looks for the "Identifier" and "Blob" strings in the json object and, if found,
+- * creates a wpa_config_blob with the data. This function modifies the contents of the json object
+- * to minimize memory allocations.
++ * ExtractConfigBlobFromKvp - Extract config blob from key-value pair
++ * @it: Pointer to the key-value pair
++ * Returns: Pointer to wpa_config_blob containing the config (certificate) information stored in the KVP or %NULL on failure
+  */
+-static struct wpa_config_blob *ExtractConfigBlob(struct json_token *json)
++static struct wpa_config_blob *ExtractConfigBlobFromKvp(ConfigStoreKvpHeader *it)
+ {
+-	struct wpa_config_blob *blob = NULL;
+-
+-	char *name = JsonExtractString(json_get_member(json, "Identifier"));
+-	char *encoded_blob = JsonExtractString(json_get_member(json, "Blob"));
+-	u8 *data = NULL;
+-
+-	if (!name || !encoded_blob)
+-	{
++	struct wpa_config_blob *wpa_blob = NULL;
++	char *name = NULL;
++	uint8_t *cert_blob = NULL;
++	struct SerializedCertData *cert = (struct SerializedCertData *)(it+1);
++
++	// Name
++	size_t cert_id_size = strnlen(cert->identifier, CERT_IDENTIFIER_SIZE_MAX);
++	name = os_malloc(cert_id_size + 1); // +1 for null terminator
++	if (!name) {
+ 		goto out;
+ 	}
++	strncpyz(name, cert->identifier, cert_id_size);
+ 
+-	wpa_printf(MSG_DEBUG, "Found cert '%s'", name);
+-
+-	size_t data_size;
+-
+-	// base64_decode returns a buffer allocated via os_malloc, and it's safe to move it to
+-	// a wpa_config_blob that will be added to wpa_config.
+-	data = base64_decode((unsigned char *)encoded_blob,
+-				RemoveWhiteSpacesInPlace(encoded_blob), &data_size);
+-	if (data == NULL)
+-	{
+-		wpa_printf(MSG_ERROR, "Failed to decode cert\n{\n%s\n\n}", encoded_blob);
++	// Blob
++	cert_blob = os_malloc(cert->blob_size);
++	if (!cert_blob) {
+ 		goto out;
+ 	}
++	os_memcpy(cert_blob, cert->blob, cert->blob_size);
+ 
+-	blob = os_zalloc(sizeof(*blob));
+-	if (blob == NULL)
+-	{
++	wpa_blob = os_zalloc(sizeof(*wpa_blob));
++	if (!wpa_blob) {
+ 		goto out;
+ 	}
+-
+-	wpa_printf(MSG_DEBUG, "Decoded cert '%s'", name);
+-
+-	// Move ownership to blob.
+-	blob->name = name;
+-	blob->data = data;
+-	blob->len = data_size;
++	wpa_blob->name = name;
++	wpa_blob->data = cert_blob;
++	wpa_blob->len = cert->blob_size;
+ 	name = NULL;
+-	data = NULL;
++	cert_blob = NULL;
++
++	wpa_printf(MSG_DEBUG, "ExtractConfigBlobFromKvp(cert_name='%s', data_len=%u)", wpa_blob->name, wpa_blob->len);
+ 
+ out:
+ 	os_free(name);
+-	os_free(encoded_blob);
+-	os_free(data);
+-	return blob;
+-}
+-
+-static Boolean ends_with_suffix(const char *value, const char *suffix)
+-{
+-	size_t val_len = os_strlen(value);
+-	size_t suffix_len = os_strlen(suffix);
++	os_free(cert_blob);
+ 
+-	return (val_len >= suffix_len) && (os_strcmp(value + val_len - suffix_len, suffix) == 0);
++	return wpa_blob;
+ }
+ 
++// Returns 0 on success, -1 on error.
+ int WpaConfigAzSphereRead(const char *name, struct wpa_config *cfgp)
+ {
+-	wpa_printf(MSG_DEBUG, "Load AzSphere config '%s'", name);
+-
+-	struct MemMap txt;
+-	struct json_token *json = NULL;
+-	struct json_token *json_certs = NULL;
+-	struct json_token *json_cert = NULL;
++	wpa_printf(MSG_DEBUG, "WpaConfigAzSphereRead(%s)", name);
++	ConfigStore cs;
++	ConfigStore_Init(&cs);
+ 
+-	txt = MemMapCertStoreContents(name);
+-	if (txt.data == NULL)
+-	{
+-		wpa_printf(MSG_ERROR, "Failed to load config file '%s', error: %d '%s'",
+-				   name, errno, strerror(errno));
+-		goto out;
++	if (ConfigStore_Open(&cs, name, certs_max_store_size, O_RDONLY | O_CLOEXEC, ConfigStoreReplica_None)) {
++		wpa_printf(MSG_DEBUG, "No certificates found (%s). Errno:%d", name, errno); // TODO: Handle gracefully case where file does not exist
++		return -1;
+ 	}
+ 
+-	json = json_parse(txt.data, txt.size);
+-	if (json == NULL)
+-	{
+-		wpa_printf(MSG_ERROR, "Failed to parse json file '%s', error: %d '%s'",
+-				   name, errno, strerror(errno));
+-		goto out;
+-	}
+-
+-	json_certs = JsonExtractObjectMember(json, "Certificates");
+-	json_free(json);
+-	json = NULL;
++	ConfigStoreKvpHeader *it = NULL;
++	ConfigStoreKvpHeader *it_end = ConfigStore_EndKvp(&cs);
+ 
+-	if (json_certs)
+-	{
+-		wpa_printf(MSG_DEBUG, "Certificates array found");
+-	}
++	// For all matching keys.
++	int cnt_certs = 0;
++	while (it_end = ConfigStore_EndKvp(&cs), it =
++		ConfigStore_GetNextKvpInRange(&cs, it, FirstCertDataKey, LastCertDataKey, 1), it != it_end) {
+ 
+-	while ((json_cert = JsonPopArrayElement(json_certs)) != NULL)
+-	{
+-		struct wpa_config_blob *blob = ExtractConfigBlob(json_cert);
+-		json_free(json_cert);
+-
+-		if (blob)
+-		{
+-			wpa_config_set_blob(cfgp, blob);
++		if (IsKvpValidCert(it)) {
++			wpa_printf(MSG_DEBUG, "Cert is valid");
++			struct wpa_config_blob *blob = ExtractConfigBlobFromKvp(it);
++			if (blob)
++			{
++				wpa_config_set_blob(cfgp, blob);
++				++cnt_certs;
++			}
++		} else {
++						wpa_printf(MSG_DEBUG, "Cert is NOT valid");
+ 		}
+ 	}
+ 
+-out:
+-	FreeMemMap(&txt);
+-	json_free(json);
+-	json_free(json_certs);
+-	json_free(json_cert);
++	ConfigStore_Close(&cs);
++	wpa_printf(MSG_DEBUG, "Number of certs read: %d", cnt_certs);
+ 	return 0;
+ }
+ 
+@@ -331,22 +188,16 @@ struct wpa_config *__wrap_wpa_config_read(const char *name, struct wpa_config *c
+ {
+ 	wpa_printf(MSG_DEBUG, "Reading AzSphere configuration file '%s'", name);
+ 
+-	if (!config && !ends_with_suffix(name, ".json"))
++	if (!config && !ends_with_suffix(name, "_certs.cfg"))
+ 	{
+ 		// Read the primary configuration from the default file backend.
+ 		config = __real_wpa_config_read(name, config);
+ 	}
+ 	else
+ 	{
+-		// Read the secondary configuration (it overlays on an existing configuration)
+-		// using the AzSphere JSON configuration.
+-		if (WpaConfigAzSphereRead(name, config))
+-		{
+-			wpa_printf(MSG_ERROR, "Failed to load config file '%s', "
+-								  "error: %s",
+-					   name, strerror(errno));
+-			config = NULL;
+-		}
++		// Read certificates
++		WpaConfigAzSphereRead(name, config);
++		// Ignore error reading certs
+ 	}
+ 
+ 	return config;
+diff --git a/wpa_supplicant/config_store.c b/wpa_supplicant/config_store.c
+new file mode 100644
+index 0000000..37af299
+--- /dev/null
++++ b/wpa_supplicant/config_store.c
+@@ -0,0 +1,605 @@
++#include "config_store.h"
++
++#include <errno.h>
++#include <fcntl.h>
++#include <stddef.h>
++#include <stdio.h>
++#include <stdlib.h>
++#include <sys/file.h>
++#include <sys/stat.h>
++#include <sys/types.h>
++#include <unistd.h>
++#include <unistd.h>
++
++static char *AppendString(const char *front, const char *back)
++{
++    size_t front_len = strlen(front);
++    size_t back_len = strlen(back);
++    char *dst = malloc(front_len + back_len + sizeof('\0'));
++    if (dst != NULL) {
++        strncpy(&dst[0], front, front_len);
++        strncpy(&dst[front_len], back, back_len);
++        dst[front_len + back_len] = '\0';
++    }
++
++    return dst;
++}
++
++static size_t GetDistance(const ConfigStoreKvpHeader *p, const ConfigStoreKvpHeader *pEnd)
++{
++    return (ptrdiff_t)pEnd - (ptrdiff_t)p;
++}
++
++size_t ConfigStore_GetKvpFullSize(const ConfigStoreKvpHeader *p, const ConfigStoreKvpHeader *pEnd)
++{
++    if (!p) {
++        return 0;
++    }
++
++    size_t avail_size = GetDistance(p, pEnd);
++
++    if (p->size <= avail_size) {
++        return p->size;
++    } else {
++        return avail_size;
++    }
++}
++
++bool ConfigStore_CanDereferenceKvp(const ConfigStoreKvpHeader *p, const ConfigStoreKvpHeader *pEnd)
++{
++    return p && (sizeof(*p) <= p->size) && (p->size <= GetDistance(p, pEnd));
++}
++
++ConfigStoreKvpHeader *ConfigStore_GetNextKvp(const ConfigStoreKvpHeader *p,
++                                             const ConfigStoreKvpHeader *pEnd)
++{
++    size_t dist;
++    if (!p) {
++        dist = 0;
++    } else if (ConfigStore_CanDereferenceKvp(p, pEnd)) {
++        dist = p->size;
++    } else {
++        dist = GetDistance(p, pEnd);
++    }
++    return (ConfigStoreKvpHeader *)((ptrdiff_t)p + dist);
++}
++
++uint32_t ConfigStore_AddCrc(uint32_t init, const uint8_t *data, size_t size)
++{
++    uint32_t crc = init;
++    const uint8_t *last = data + size;
++    while (data != last) {
++        crc = crc ^ *data++;
++        for (int j = 7; j >= 0; --j) {
++            uint32_t mask = -(crc & 1);
++            crc = (crc >> 1) ^ (0xEDB88320 & mask);
++        }
++    }
++    return crc;
++}
++
++void ConfigStore_Init(ConfigStore *p)
++{
++    memset(p, 0, sizeof(*p));
++    p->_fd = -1;
++}
++
++void ConfigStore_Close(ConfigStore *p)
++{
++    if (p->_fd >= 0) {
++        close(p->_fd);
++    }
++    free(p->_primary_path);
++    free(p->_replica_path);
++    free(p->_begin);
++    ConfigStore_Init(p);
++}
++
++void ConfigStore_Move(ConfigStore *pDst, ConfigStore *pSrc)
++{
++    if (pDst != pSrc) {
++        ConfigStore_Close(pDst);
++        memcpy(pDst, pSrc, sizeof(*pDst));
++        ConfigStore_Init(pSrc);
++    }
++}
++
++int ConfigStore_ReserveCapacity(ConfigStore *p, size_t capacity)
++{
++    if (capacity > p->_max_size) {
++        // Can't grow the file beyond max size.
++        errno = E2BIG;
++        return -1;
++    }
++
++    size_t current_capacity = p->_capacity - p->_begin;
++
++    if (capacity > current_capacity) {
++        uint8_t *new_begin = realloc(p->_begin, capacity);
++        if (new_begin == NULL) {
++            return -1;
++        }
++
++        p->_capacity = &new_begin[capacity];
++        p->_end = &new_begin[p->_end - p->_begin];
++        p->_begin = new_begin;
++    }
++
++    return 0;
++}
++
++static bool ConfigStore_InvariantsCheck(const ConfigStore *p)
++{
++    bool ok = (p) && (p->_fd >= 0) && (p->_begin + sizeof(ConfigStoreFileHeader) <= p->_end) &&
++              (p->_end <= p->_capacity);
++    return ok;
++}
++
++static bool ReplicaTypeIsValid(ConfigStoreReplicaType rtype)
++{
++    switch (rtype) {
++    case ConfigStoreReplica_None ... ConfigStoreReplica_Swap:
++        return true;
++    default:
++        return false;
++    }
++}
++
++static int Impl_Open(ConfigStore *p, const char *base_filepath, size_t max_size, int flags,
++                     ConfigStoreReplicaType rtype)
++{
++    if (!ReplicaTypeIsValid(rtype)) {
++        errno = EINVAL;
++        return -1;
++    }
++
++    p->_replica_type = rtype;
++    p->_max_size = max_size;
++
++    p->_primary_path = strdup(base_filepath);
++    if (p->_primary_path == NULL) {
++        return -1;
++    }
++
++    if (p->_replica_type == ConfigStoreReplica_Swap) {
++        p->_replica_path = AppendString(base_filepath, ".tmp");
++        if (p->_replica_path == NULL) {
++            return -1;
++        }
++
++        // For swap mode, remove the swap file preemptively, even for readers.
++        // If the swap exists on open, that means it's a leftover from a previous run that
++        // crashed/exited before swaping it with the primary file.
++        remove(p->_replica_path);
++    }
++
++    flags |= O_CLOEXEC;
++
++    p->_fd = open(p->_primary_path, flags, S_IRUSR | S_IWUSR);
++    if (p->_fd < 0) {
++        return -1;
++    }
++
++    bool read_only = ((flags & (O_WRONLY | O_RDWR)) == 0);
++
++    int lockmode = read_only ? (LOCK_SH | LOCK_NB) : (LOCK_EX | LOCK_NB);
++
++    if (flock(p->_fd, lockmode) < 0) {
++        return -1;
++    }
++
++    bool ok = false;
++    off_t ssize = lseek(p->_fd, 0, SEEK_END);
++    ok = (ssize >= 0) && (lseek(p->_fd, 0, SEEK_SET) == 0);
++    if (!ok) {
++        return -1;
++    }
++
++    size_t size = ssize;
++    bool is_new = (size == 0);
++    bool expects_new = (flags & (O_CREAT | O_TRUNC));
++
++    if (is_new) {
++        if (!expects_new) {
++            errno = ENOENT;
++            return -1;
++        }
++        size = sizeof(ConfigStoreFileHeader);
++    }
++
++    if (size < sizeof(ConfigStoreFileHeader)) {
++        errno = ERANGE;
++        return -1;
++    }
++
++    if (ConfigStore_ReserveCapacity(p, size)) {
++        return -1;
++    }
++
++    ConfigStoreFileHeader *header = (ConfigStoreFileHeader *)(p->_begin);
++
++    if (is_new) {
++        // For new files, start with a basic header.
++        header->header.size = sizeof(ConfigStoreFileHeader);
++        header->header.key = ConfigStoreFileHeaderKey;
++        header->signature = ConfigStoreFileSignature;
++        header->version = ConfigStoreFileVersion;
++        p->_end += sizeof(ConfigStoreFileHeader);
++    } else {
++        // For existing files, try to the store from them.
++        if (read(p->_fd, p->_begin, size) != ssize) {
++            return -1;
++        }
++
++        size_t content_size = ConfigStore_ValidateFormat(p->_begin, size);
++        if (content_size == 0) {
++            // Invalid content.
++            errno = EINVAL;
++            return -1;
++        }
++
++        bool must_truncate =
++            !read_only && (content_size < size) && (p->_replica_type != ConfigStoreReplica_Swap);
++
++        if (must_truncate) {
++            // The content is valid, but it's shorter than the file. The previous writer may have
++            // crashed after it wrote the content but before it truncated the file, so truncate it
++            // now.
++
++            if (ftruncate(p->_fd, content_size) != 0) {
++                return -1;
++            }
++
++            fsync(p->_fd);
++        }
++
++        p->_end += content_size;
++    }
++
++    return 0;
++}
++
++int ConfigStore_Open(ConfigStore *p, const char *base_filepath, size_t max_size, int flags,
++                     ConfigStoreReplicaType rtype)
++{
++    if (p->_fd >= 0) {
++        errno = EALREADY;
++        return -1;
++    }
++
++    ConfigStore temp;
++    ConfigStore_Init(&temp);
++
++    int res = Impl_Open(&temp, base_filepath, max_size, flags, rtype);
++
++    if (res == 0) {
++        ConfigStore_Move(p, &temp);
++    }
++
++    ConfigStore_Close(&temp);
++
++    return res;
++}
++
++static int Impl_WriteToFile(int fd, ConfigStore *p)
++{
++    if (lseek(fd, 0, SEEK_SET) < 0) {
++        return -1;
++    }
++
++    ssize_t total_size = p->_end - p->_begin;
++
++    if (write(fd, p->_begin, total_size) != total_size) {
++        return -1;
++    }
++
++    if (ftruncate(fd, total_size) != 0) {
++        return -1;
++    }
++
++    fsync(fd);
++
++    return 0;
++}
++
++int ConfigStore_Commit(ConfigStore *p)
++{
++    if (!ConfigStore_InvariantsCheck(p)) {
++        errno = EINVAL;
++        return -1;
++    }
++
++    uint32_t crc =
++        ConfigStore_AddCrc(ConfigStoreCrcInitValue, p->_begin + sizeof(ConfigStoreFileHeader),
++                           p->_end - p->_begin - sizeof(ConfigStoreFileHeader));
++
++    ConfigStoreKvpHeader *first = (ConfigStoreKvpHeader *)p->_begin;
++    ConfigStoreKvpHeader *last = (ConfigStoreKvpHeader *)p->_end;
++
++    if ((first != last) && (first->key == ConfigStoreFileHeaderKey)) {
++        ConfigStoreFileHeader *header = (ConfigStoreFileHeader *)(first);
++        header->file_size = (p->_end - p->_begin);
++        header->crc = crc;
++    }
++
++    if (p->_replica_type == ConfigStoreReplica_Swap) {
++        // Create the swap file always.
++        int fd = open(p->_replica_path, O_RDWR | O_CREAT | O_CLOEXEC | O_TRUNC, S_IRUSR | S_IWUSR);
++        if (fd < 0) {
++            return -1;
++        }
++        int res = Impl_WriteToFile(fd, p);
++        close(fd);
++        if (res < 0) {
++            return -1;
++        }
++        res = rename(p->_replica_path, p->_primary_path);
++        if (res < 0) {
++            return -1;
++        }
++
++        ConfigStore_Close(p);
++    } else {
++        return Impl_WriteToFile(p->_fd, p);
++    }
++
++    return 0;
++}
++
++ConfigStoreKvpHeader *ConfigStore_BeginKvp(const ConfigStore *p)
++{
++    return ConfigStore_GetNextKvp((ConfigStoreKvpHeader *)p->_begin,
++                                  (ConfigStoreKvpHeader *)p->_end);
++}
++
++ConfigStoreKvpHeader *ConfigStore_EndKvp(const ConfigStore *p)
++{
++    return (ConfigStoreKvpHeader *)p->_end;
++}
++
++ConfigStoreKvpHeader *ConfigStore_InsertKvp(ConfigStore *p, const ConfigStoreKvpHeader *pos,
++                                            ConfigStoreKey key, size_t size)
++{
++    uint16_t kvp_size;
++    if (__builtin_add_overflow(size, sizeof(ConfigStoreKvpHeader), &kvp_size)) {
++        return NULL;
++    }
++
++    size_t in_offset = (ptrdiff_t)pos - (ptrdiff_t)p->_begin;
++    size_t current_size = p->_end - p->_begin;
++
++    if (ConfigStore_ReserveCapacity(p, current_size + kvp_size)) {
++        return NULL;
++    }
++
++    uint8_t *in_pos = &p->_begin[in_offset];
++
++    memmove(&in_pos[kvp_size], in_pos, current_size - in_offset);
++
++    ConfigStoreKvpHeader *pKvp = (ConfigStoreKvpHeader *)(in_pos);
++    pKvp->size = kvp_size;
++    pKvp->key = key;
++
++    p->_end += kvp_size;
++
++    return pKvp;
++}
++
++static ConfigStoreKvpHeader *Impl_FindKey(ConfigStoreKey key, ConfigStoreKvpHeader *pFirst,
++                                          ConfigStoreKvpHeader *pLast)
++{
++    while ((pFirst != pLast) && (pFirst->key != key)) {
++        pFirst = ConfigStore_GetNextKvp(pFirst, pLast);
++    }
++
++    return pFirst;
++}
++
++ConfigStoreKvpHeader *ConfigStore_TryGetKey(const ConfigStore *p, ConfigStoreKey key)
++{
++    ConfigStoreKvpHeader *it = ConfigStore_BeginKvp(p);
++    ConfigStoreKvpHeader *it_end = ConfigStore_EndKvp(p);
++    it = Impl_FindKey(key, it, it_end);
++    return (it != it_end) ? it : NULL;
++}
++
++ConfigStoreKvpHeader *ConfigStore_PutUniqueKey(ConfigStore *p, ConfigStoreKey key,
++                                               const uint8_t *optional_data, size_t value_size)
++{
++    ConfigStoreKvpHeader *it = ConfigStore_BeginKvp(p);
++    ConfigStoreKvpHeader *it_end = NULL;
++
++    // For all matching keys.
++    while (it_end = ConfigStore_EndKvp(p), it = Impl_FindKey(key, it, it_end), it != it_end) {
++        if (it->size != value_size) {
++            // Not same size. Erase KVP and continue with next.
++            it = ConfigStore_EraseKvp(p, it);
++            continue;
++        }
++
++        // Found KVP with same size. Reuse it and erase any other occurrences of the same
++        // key after it, just in case.
++        ConfigStoreKvpHeader *it_erase = ConfigStore_GetNextKvp(it, it_end);
++        while (it_end = ConfigStore_EndKvp(p), it_erase = Impl_FindKey(key, it_erase, it_end),
++               it_erase != it_end) {
++            it_erase = ConfigStore_EraseKvp(p, it_erase);
++        }
++        break;
++    }
++
++    it_end = ConfigStore_EndKvp(p);
++    if (it == it_end) {
++        it = ConfigStore_InsertKvp(p, it_end, key, value_size);
++        if (it == ConfigStore_EndKvp(p)) {
++            // Space exhaustion.
++            return NULL;
++        }
++    }
++
++    if (optional_data != NULL) {
++        ConfigStore_WriteValue(it, 0, optional_data, value_size);
++    }
++
++    return it;
++}
++
++ConfigStoreKvpHeader *ConfigStore_EraseKvp(ConfigStore *p, const ConfigStoreKvpHeader *pos)
++{
++    size_t size = pos->size;
++    ptrdiff_t offset = (ptrdiff_t)pos - (ptrdiff_t)p->_begin;
++    uint8_t *out_pos = &p->_begin[offset];
++    memmove(&out_pos[0], &out_pos[size], p->_end - &out_pos[size]);
++    p->_end -= size;
++
++    return (ConfigStoreKvpHeader *)out_pos;
++}
++
++ConfigStoreKvpHeader *ConfigStore_AllocUniqueKvp(ConfigStore *p, ConfigStoreKey first_key,
++                                                 ConfigStoreKey last_key, size_t value_size,
++                                                 ConfigStoreKey key_increment)
++{
++    while (first_key < last_key) {
++
++        bool found = false;
++
++        ConfigStoreKvpHeader *kvp = ConfigStore_BeginKvp(p);
++        while (kvp != ConfigStore_EndKvp(p)) {
++            found = (kvp->key == first_key);
++            if (found) {
++                break;
++            }
++            kvp = ConfigStore_GetNextKvp(kvp, ConfigStore_EndKvp(p));
++        }
++
++        if (!found) {
++            break;
++        }
++
++        if (__builtin_add_overflow(first_key, key_increment, &first_key)) {
++            errno = ENOENT;
++            return NULL;
++        }
++    }
++
++    if (first_key >= last_key) {
++        errno = ENOENT;
++        return NULL;
++    }
++
++    return ConfigStore_InsertKvp(p, ConfigStore_EndKvp(p), first_key, value_size);
++}
++
++int ConfigStore_EraseKeysInRange(ConfigStore *p, ConfigStoreKey first_key, ConfigStoreKey last_key,
++                                 ConfigStoreKey key_increment)
++{
++    bool good_args = (p) && (first_key <= last_key) && (1 <= key_increment);
++    if (!good_args) {
++        errno = EINVAL;
++        return -1;
++    }
++
++    ConfigStoreKvpHeader *kvp = ConfigStore_BeginKvp(p);
++    while (kvp != ConfigStore_EndKvp(p)) {
++        bool match = (first_key <= kvp->key) && (kvp->key < last_key) &&
++                     (((kvp->key - first_key) % key_increment) == 0);
++        if (match) {
++            kvp = ConfigStore_EraseKvp(p, kvp);
++        } else {
++            kvp = ConfigStore_GetNextKvp(kvp, ConfigStore_EndKvp(p));
++        }
++    }
++
++    return 0;
++}
++
++ConfigStoreKvpHeader *ConfigStore_GetNextKvpInRange(ConfigStore *p, const ConfigStoreKvpHeader *pos,
++                                                    ConfigStoreKey first_key,
++                                                    ConfigStoreKey last_key,
++                                                    ConfigStoreKey key_increment)
++{
++    ConfigStoreKvpHeader *end_pos = ConfigStore_EndKvp(p);
++
++    pos = pos ? ConfigStore_GetNextKvp(pos, end_pos) : ConfigStore_BeginKvp(p);
++
++    while (pos != end_pos) {
++        bool match = (first_key <= pos->key) && (pos->key < last_key) &&
++                     (((pos->key - first_key) % key_increment) == 0);
++        if (match) {
++            break;
++        }
++        pos = ConfigStore_GetNextKvp(pos, end_pos);
++    }
++
++    return (ConfigStoreKvpHeader *)pos;
++}
++
++int ConfigStore_WriteValue(ConfigStoreKvpHeader *pos, size_t offset, const void *data, size_t size)
++{
++    size_t hdr_size = pos ? sizeof(*pos) : 0;
++    size_t dst_size = (pos && (pos->size > sizeof(*pos))) ? (pos->size - sizeof(*pos)) : 0;
++
++    uint8_t *dst_data = (uint8_t *)pos + hdr_size + offset;
++
++    size_t last_offset = offset + size;
++    if (dst_size < last_offset) {
++        errno = E2BIG;
++        return -1;
++    }
++
++    memcpy(dst_data, (uint8_t *)data, size);
++    memset(dst_data + last_offset, 0, dst_size - last_offset);
++
++    return 0;
++}
++
++size_t ConfigStore_ValidateFormat(const uint8_t *data, size_t size)
++{
++    const ConfigStoreKvpHeader *first = (const ConfigStoreKvpHeader *)data;
++    const ConfigStoreKvpHeader *last = (const ConfigStoreKvpHeader *)(data + size);
++
++    bool has_header = (first != NULL) && (first != last) &&
++                      (first->key == ConfigStoreFileHeaderKey) &&
++                      (first->size >= sizeof(ConfigStoreFileHeader));
++
++    if (!has_header) {
++        return 0;
++    }
++
++    const ConfigStoreFileHeader *header = (const ConfigStoreFileHeader *)first;
++
++    bool ok = (header->signature == ConfigStoreFileSignature) &&
++              (header->version == ConfigStoreFileVersion) &&
++              (header->header.size <= header->file_size) && (header->file_size <= size);
++    if (!ok) {
++        return 0;
++    }
++
++    size = header->file_size;
++
++    data += sizeof(ConfigStoreFileHeader);
++    size -= sizeof(ConfigStoreFileHeader);
++
++    uint32_t crc = ConfigStore_AddCrc(ConfigStoreCrcInitValue, data, size);
++
++    if (crc != header->crc) {
++        return 0;
++    }
++
++    ++first;
++
++    while ((first != NULL) && (first != last)) {
++        if (first->key == ConfigStoreFileHeaderKey) {
++            // The header key must only be used in the beginning of the file.
++            break;
++        }
++
++        first = ConfigStore_GetNextKvp(first, last);
++    }
++
++    if (first != last) {
++        // Didn't get to the end of the file.
++        return 0;
++    }
++
++    return header->file_size;
++}
+\ No newline at end of file
+diff --git a/wpa_supplicant/config_store.h b/wpa_supplicant/config_store.h
+new file mode 100644
+index 0000000..2862153
+--- /dev/null
++++ b/wpa_supplicant/config_store.h
+@@ -0,0 +1,211 @@
++#pragma once
++
++#include <stdbool.h>
++#include <stdint.h>
++#include <string.h>
++
++#ifdef __cplusplus
++extern "C" {
++#endif
++
++/// <summary> The key type. </summary>
++typedef uint16_t ConfigStoreKey;
++
++/// <summary> The serialized header of a key-value pair. </summary>
++typedef struct ConfigStoreKvpHeader {
++    ConfigStoreKey key; // The key of this KVP.
++    uint16_t size;      // The size of the key-value pair (including this header).
++} __attribute__((packed)) ConfigStoreKvpHeader;
++
++/// <summary> The serialized header of the store file. </summary>
++typedef struct ConfigStoreFileHeader {
++    ConfigStoreKvpHeader header; // Header
++    uint8_t signature;           // File signature.
++    uint8_t version;             // File version.
++    uint32_t file_size;          // The size of the file (including this header).
++    uint32_t crc;                // The CRC of the portion of the file after this field.
++} __attribute__((packed)) ConfigStoreFileHeader;
++
++/// <summary> Range of keys reserved for the store itself. </summary>
++static const uint16_t ConfigStoreMinKey = 0x0000;
++static const uint16_t ConfigStoreMaxKey = 0xFFFA;
++static const uint16_t ConfigStoreMinReservedKey = 0xFFFB;
++static const uint16_t ConfigStoreMaxReservedKey = 0xFFFF;
++static const uint16_t ConfigStoreInvalidKey = 0xFFFF;
++static const uint16_t ConfigStoreFileHeaderKey = 0xFFFB;
++static const uint32_t ConfigStoreCrcInitValue = 0xFFFFFFFF;
++
++static const uint8_t ConfigStoreFileSignature = 0xC6;
++static const uint8_t ConfigStoreFileVersion = 0;
++
++/// <summary>
++/// The type of replica to use.
++/// </summary>
++typedef enum ConfigStoreReplicaType {
++    /// <summary> Don't use replicas. The store file is overwritten in place. </summary>
++    ConfigStoreReplica_None = 0,
++    /// <summary> Use a swap file. The file is swapped atomically with a temp file. </summary>
++    ConfigStoreReplica_Swap = 1,
++} ConfigStoreReplicaType;
++
++/// <summary> Gets the full size of the KVP given the header. </summary>
++/// <returns> The full size of the KVP, or 0 if the KVP is invalid. </returns>
++size_t ConfigStore_GetKvpFullSize(const ConfigStoreKvpHeader *p, const ConfigStoreKvpHeader *pEnd);
++
++/// <summary> Checks if the KVP header is defined within the given size. </summary>
++/// <returns> true if the KVP can be dereferenced within the range; false otherwise. </summary>
++bool ConfigStore_CanDereferenceKvp(const ConfigStoreKvpHeader *p, const ConfigStoreKvpHeader *pEnd);
++
++/// <summary> Increments the pointer to the next KVP given the current and the "guard". </summary>
++/// <returns> The next KVP or <paramref name="pEnd" /> if at the end of the range. </summary>
++ConfigStoreKvpHeader *ConfigStore_GetNextKvp(const ConfigStoreKvpHeader *p,
++                                             const ConfigStoreKvpHeader *pEnd);
++
++/// <summary> The Config Store State. </summary>
++typedef struct ConfigStore {
++    int _fd;
++    uint8_t *_begin;
++    uint8_t *_end;
++    uint8_t *_capacity;
++    size_t _max_size;
++    ConfigStoreReplicaType _replica_type;
++    char *_primary_path;
++    char *_replica_path;
++} ConfigStore;
++
++/// <summary>
++/// Initializes the memory of a ConfigStore for usage. Equivalent to the constructor.
++/// </summary>
++void ConfigStore_Init(ConfigStore *p);
++
++/// <summary>
++/// Resets the memory of a ConfigStore. Disposes of any allocated resources. Equivalent to a
++/// destructor, but puts the store back into a initialized state.
++/// </summary>
++void ConfigStore_Close(ConfigStore *p);
++
++/// <summary>
++/// Transfers the resources of a ConfigStore to another.
++/// </summary>
++void ConfigStore_Move(ConfigStore *pDst, ConfigStore *pSrc);
++
++/// <summary>
++/// Reserves space to add one or more KVP. It's not necessary to call this before
++/// inserting a key, but it can help reduce memory fragmentation and re-allocation to pre-reserve
++/// space.
++/// </summary>
++/// <returns> 0 on success; -1 on failure with error indication in errno. </returns>
++int ConfigStore_ReserveCapacity(ConfigStore *p, size_t capacity);
++
++/// <summary>
++/// Opens the store for writing. If the file doesn't exist, the function creates one anew.
++/// </summary>
++/// <returns> 0 on success; -1 on failure with error indication in errno. </returns>
++int ConfigStore_Open(ConfigStore *p, const char *base_filepath, size_t max_size, int flags,
++                     ConfigStoreReplicaType rtype);
++
++/// <summary>
++/// Commits the in-memory changes back to persistent storage.
++/// Note:
++/// If the file was opened in ConfigStoreReplica_Swap replica mode, this call will also close the
++/// object. This is because the object can't re-acquire its lock on the file without re-opening it,
++/// which temporarily allows for other objects to open and lock it. In this case the object may as
++/// well close the file on commit.
++/// </summary>
++/// <returns> 0 on success; -1 on failure with error indication in errno. </returns>
++int ConfigStore_Commit(ConfigStore *p);
++
++/// <summary> Gets a pointer to the first KVP in the store. </summary>
++/// <param name="p"> Required pointer to the store. </param>
++/// <returns> A pointer for the KVP. </returns>
++ConfigStoreKvpHeader *ConfigStore_BeginKvp(const ConfigStore *p);
++
++/// <summary> Gets a pointer to the "guard" KVP of the store. </summary>
++/// <returns> A pointer for the guard KVP. </returns>
++ConfigStoreKvpHeader *ConfigStore_EndKvp(const ConfigStore *p);
++
++/// <summary> Inserts a KVP of a given size and at a given position. </summary>
++/// <returns> A pointer for the inserted KVP or the guard KVP on memory exhaustion. </returns>
++ConfigStoreKvpHeader *ConfigStore_InsertKvp(ConfigStore *p, const ConfigStoreKvpHeader *pos,
++                                            ConfigStoreKey key, size_t size);
++
++/// <summary> Erases a KVP in a given position. </summary>
++/// <returns> A pointer for the KVP following the one that was removed. </returns>
++ConfigStoreKvpHeader *ConfigStore_EraseKvp(ConfigStore *p, const ConfigStoreKvpHeader *pos);
++
++/// <summary>
++/// Allocates a KVP with a key that is unique in a given range and key-increment.
++/// </summary>
++/// <param name="first_key"> The first key in the searchable range. </param>
++/// <param name="last_key"> The last key (exclusive) in the searchable range. </param>
++/// <param name="value_size"> The size to reserve for the value. </param>
++/// <param name="key_increment"> The increment for each step. </param>
++/// <returns> The new KVP with a unique key or nullptr on failure. </returns>
++/// <remarks>
++/// On success, the key of the returned KVP will have the following invariants.
++///     first_key <= kvp->key() < last_key
++///     (kvp->key() - first_key) % key_increment == 0
++///     kvp->size() == value_size
++/// </remarks>
++/// <returns>
++/// Pointer to the inserted KVP on success; NULL on failure with error indication in errno.
++/// - ENOENT: no unique key could be allocated in the specified range.
++/// - ENOMEM: no space available to insert the KVP.
++/// </returns>
++ConfigStoreKvpHeader *ConfigStore_AllocUniqueKvp(ConfigStore *p, ConfigStoreKey first_key,
++                                                 ConfigStoreKey last_key, size_t value_size,
++                                                 ConfigStoreKey key_increment);
++
++/// <summary>
++/// Erases all KVP that match a key in the given range.
++/// Note the end of the range is **EXCLUSIVE**.
++/// </summary>
++/// <param name="first_key"> The first key in the range. </param>
++/// <param name="last_key"> The last key (exclusive) in the range. </param>
++/// <param name="key_increment"> The increment for each step. </param>
++/// <returns> 0 on success; -1 on failure with error indication in errno. </returns>
++int ConfigStore_EraseKeysInRange(ConfigStore *p, ConfigStoreKey first_key, ConfigStoreKey last_key,
++                                 ConfigStoreKey key_increment);
++
++/// <summary>
++/// Gets the next KVP in a range of keys.
++/// Note the end of the range is **EXCLUSIVE**.
++/// </summary>
++/// <param name="p"> The store. </param>
++/// <param name="pos"> The current KVP. If null, will return the first that matches the key range.
++/// </param>
++/// <param name="first_key"> The first key in the range. </param>
++/// <param name="last_key"> The last key (exclusive) in the range. </param>
++/// <param name="key_increment"> The increment for each step. </param>
++/// <returns> The next KVP that matches the criteria or ConfigStore_EndKvp at the end. </returns>
++ConfigStoreKvpHeader *ConfigStore_GetNextKvpInRange(ConfigStore *p, const ConfigStoreKvpHeader *pos,
++                                                    ConfigStoreKey first_key,
++                                                    ConfigStoreKey last_key,
++                                                    ConfigStoreKey key_increment);
++
++/// <summary> Attempts to get the first match of a key. </summary>
++/// <returns> Pointer to the KVP or null if the key is not found. </returns>
++ConfigStoreKvpHeader *ConfigStore_TryGetKey(const ConfigStore *p, ConfigStoreKey key);
++
++/// <summary>
++/// Puts a KVP in the store and ensures its key is unique by erasing any other KVP of same key.
++/// Optionally the function also copies a value to the KVP's value.
++/// </summary>
++ConfigStoreKvpHeader *ConfigStore_PutUniqueKey(ConfigStore *p, ConfigStoreKey key,
++                                               const uint8_t *optional_data, size_t value_size);
++
++/// <summary> Helper to write to a value of a KVP. </summary>
++/// <returns> 0 on success; -1 on failure with error indication in errno. </returns>
++int ConfigStore_WriteValue(ConfigStoreKvpHeader *pos, size_t offset, const void *data, size_t size);
++
++/// <summary> Checks if the contents of a buffer are a valid configuration store. </summary>
++/// <returns> 0 if the contents are invalid; the valid size if the contents are valid. </returns>
++size_t ConfigStore_ValidateFormat(const uint8_t *data, size_t size);
++
++/// <summary> Helper to compute CRC. </summary>
++/// <returns> The CRC value. </returns>
++uint32_t ConfigStore_AddCrc(uint32_t init, const uint8_t *data, size_t size);
++
++#ifdef __cplusplus
++}
++#endif
+\ No newline at end of file
+diff --git a/wpa_supplicant/main.c b/wpa_supplicant/main.c
+index 51a8a02..5b2866c 100644
+--- a/wpa_supplicant/main.c
++++ b/wpa_supplicant/main.c
+@@ -17,7 +17,6 @@
+ #include "driver_i.h"
+ #include "p2p_supplicant.h"
+ 
+-
+ static void usage(void)
+ {
+ 	int i;
+@@ -376,6 +375,7 @@ int main(int argc, char *argv[])
+ 			exitcode = -1;
+ 			break;
+ 		}
++
+ 		wpa_s = wpa_supplicant_add_iface(global, &ifaces[i], NULL);
+ 		if (wpa_s == NULL) {
+ 			exitcode = -1;

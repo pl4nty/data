@@ -1,0 +1,24 @@
+From 1875c18c777aa4b11b7b7fa94e1cb9336e287bbb Mon Sep 17 00:00:00 2001
+From: Azure Sphere Team <azuresphereoss@microsoft.com>
+Date: Sat, 6 Apr 2019 09:00:01 -0700
+Subject: [PATCH] Change startup with shell to not be the default
+
+---
+ gdb/gdbserver/server.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+[Rebased 06/2020]
+Signed-off-by: Alejandro Hernandez Samaniego <alhe@linux.microsoft.com>
+
+Index: gdb-9.1/gdb/gdbsupport/common-inferior.c
+===================================================================
+--- gdb-9.1.orig/gdb/gdbsupport/common-inferior.c
++++ gdb-9.1/gdb/gdbsupport/common-inferior.c
+@@ -23,4 +23,6 @@
+ 
+ /* See common-inferior.h.  */
+ 
+-bool startup_with_shell = true;
++/* Modified by Azure Sphere - there is no shell in
++the Azure Sphere OS so disable this by default */
++bool startup_with_shell = false;

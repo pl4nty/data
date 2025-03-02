@@ -1,0 +1,215 @@
+From 599930822f0719727d092d04adb517e773e67fc0 Mon Sep 17 00:00:00 2001
+From: Andre Muezerie <andremue@ntdev.microsoft.com>
+Date: Wed, 15 Apr 2020 14:52:47 -0700
+Subject: [PATCH] Returning number of read/parse errors with STATUS reply
+
+---
+ wpa_supplicant/config.h      |   8 +++
+ wpa_supplicant/config_file.c | 133 +++++++++++++++++++++--------------
+ wpa_supplicant/ctrl_iface.c  |   9 +++
+ 3 files changed, 96 insertions(+), 54 deletions(-)
+
+diff --git a/wpa_supplicant/config.h b/wpa_supplicant/config.h
+index 6a297ec..7f9edfe 100644
+--- a/wpa_supplicant/config.h
++++ b/wpa_supplicant/config.h
+@@ -1499,6 +1499,14 @@ struct wpa_config {
+ 	 * 1 = enabled (true)
+ 	 */
+ 	int coloc_intf_reporting;
++#ifdef WPA_IGNORE_CONFIG_ERRORS
++	/**
++	 * read_or_parse_error - Used when WPA_IGNORE_CONFIG_ERRORS is defined to
++	 *  indicate how many errors happened while reading and parsing the config
++	 *  file.
++	 */
++	int read_or_parse_errors;
++#endif
+ 
+ 	/**
+ 	 * p2p_device_random_mac_addr - P2P Device MAC address policy default
+diff --git a/wpa_supplicant/config_file.c b/wpa_supplicant/config_file.c
+index 0db4aed..ba8aedb 100644
+--- a/wpa_supplicant/config_file.c
++++ b/wpa_supplicant/config_file.c
+@@ -407,72 +407,96 @@ struct wpa_config * wpa_config_read(const char *name, struct wpa_config *cfgp)
+ 	if (f == NULL) {
+ 		wpa_printf(MSG_ERROR, "Failed to open config file '%s', "
+ 			   "error: %s", name, strerror(errno));
++#ifdef WPA_IGNORE_CONFIG_ERRORS
++		errors++;
++#else
+ 		if (config != cfgp)
+ 			os_free(config);
+ 		return NULL;
+-	}
+-
+-	while (wpa_config_get_line(buf, sizeof(buf), f, &line, &pos)) {
+-		if (os_strcmp(pos, "network={") == 0) {
+-			ssid = wpa_config_read_network(f, &line, id++);
+-			if (ssid == NULL) {
+-				wpa_printf(MSG_ERROR, "Line %d: failed to "
+-					   "parse network block.", line);
+-				errors++;
+-				continue;
+-			}
+-			if (head == NULL) {
+-				head = tail = ssid;
+-			} else {
+-				tail->next = ssid;
+-				tail = ssid;
+-			}
+-			if (wpa_config_add_prio_network(config, ssid)) {
+-				wpa_printf(MSG_ERROR, "Line %d: failed to add "
+-					   "network block to priority list.",
+-					   line);
+-				errors++;
+-				continue;
+-			}
+-		} else if (os_strcmp(pos, "cred={") == 0) {
+-			cred = wpa_config_read_cred(f, &line, cred_id++);
+-			if (cred == NULL) {
+-				wpa_printf(MSG_ERROR, "Line %d: failed to "
+-					   "parse cred block.", line);
+-				errors++;
+-				continue;
+-			}
+-			if (cred_head == NULL) {
+-				cred_head = cred_tail = cred;
+-			} else {
+-				cred_tail->next = cred;
+-				cred_tail = cred;
+-			}
+-#ifndef CONFIG_NO_CONFIG_BLOBS
+-		} else if (os_strncmp(pos, "blob-base64-", 12) == 0) {
+-			if (wpa_config_process_blob(config, f, &line, pos + 12)
+-			    < 0) {
+-				wpa_printf(MSG_ERROR, "Line %d: failed to "
+-					   "process blob.", line);
++#endif /* WPA_IGNORE_CONFIG_ERRORS */
++	} else {
++		while (wpa_config_get_line(buf, sizeof(buf), f, &line, &pos)) {
++			if (os_strcmp(pos, "network={") == 0) {
++				ssid = wpa_config_read_network(f, &line, id++);
++				if (ssid == NULL) {
++					wpa_printf(MSG_ERROR, "Line %d: failed to "
++						"parse network block.", line);
++					errors++;
++					continue;
++				}
++				if (head == NULL) {
++					head = tail = ssid;
++				} else {
++					tail->next = ssid;
++					tail = ssid;
++				}
++				if (wpa_config_add_prio_network(config, ssid)) {
++					wpa_printf(MSG_ERROR, "Line %d: failed to add "
++						"network block to priority list.",
++						line);
++					errors++;
++					continue;
++				}
++			} else if (os_strcmp(pos, "cred={") == 0) {
++				cred = wpa_config_read_cred(f, &line, cred_id++);
++				if (cred == NULL) {
++					wpa_printf(MSG_ERROR, "Line %d: failed to "
++						"parse cred block.", line);
++					errors++;
++					continue;
++				}
++				if (cred_head == NULL) {
++					cred_head = cred_tail = cred;
++				} else {
++					cred_tail->next = cred;
++					cred_tail = cred;
++				}
++	#ifndef CONFIG_NO_CONFIG_BLOBS
++			} else if (os_strncmp(pos, "blob-base64-", 12) == 0) {
++				if (wpa_config_process_blob(config, f, &line, pos + 12)
++					< 0) {
++					wpa_printf(MSG_ERROR, "Line %d: failed to "
++						"process blob.", line);
++					errors++;
++					continue;
++				}
++	#endif /* CONFIG_NO_CONFIG_BLOBS */
++			} else if (wpa_config_process_global(config, pos, line) < 0) {
++				wpa_printf(MSG_ERROR, "Line %d: Invalid configuration "
++					"line '%s'.", line, pos);
+ 				errors++;
+ 				continue;
+ 			}
+-#endif /* CONFIG_NO_CONFIG_BLOBS */
+-		} else if (wpa_config_process_global(config, pos, line) < 0) {
+-			wpa_printf(MSG_ERROR, "Line %d: Invalid configuration "
+-				   "line '%s'.", line, pos);
+-			errors++;
+-			continue;
+ 		}
+-	}
+ 
+-	fclose(f);
++		fclose(f);
++	}
+ 
+ 	config->ssid = head;
+ 	wpa_config_debug_dump_networks(config);
+ 	config->cred = cred_head;
+ 
+-#ifndef WPA_IGNORE_CONFIG_ERRORS
++#ifdef WPA_IGNORE_CONFIG_ERRORS
++	// When parsing fails there is a chance that ctrl_interface and
++	// ctrl_interface_group are not set. In that case  we set some default
++	// values so that the communication channel can be opened and the
++	// consumer can learn about the read/parsing errors.
++	// Note that "errors" might be zero even in case there are issues with
++	// the config file (e.g. empty file/file with only blanks)
++	if (!config->ctrl_interface) {
++		config->ctrl_interface = os_strdup("/var/run/wpa_supplicant");
++		++errors;
++	}
++	if (!config->ctrl_interface_group) {
++		config->ctrl_interface_group = os_strdup("net-adm");
++		++errors;
++	}
++
++	if (errors) {
++		config->read_or_parse_errors = errors;
++		config->update_config = 1;
++	}
++#else
+ 	if (errors) {
+ 		if (config != cfgp)
+ 			wpa_config_free(config);
+@@ -1627,8 +1651,9 @@ int wpa_config_write(const char *name, struct wpa_config *config)
+ 
+ 	/* Check if the temp config file is larger than it should be */
+ 	if (stat(tmp_name, &statbuf) < 0) {
++		int error = errno;
+ 		wpa_printf(MSG_WARNING, "Cannot stat the temp config file (%d, %s)", errno, strerror(errno));
+-		ret - 1;
++		ret = -error;
+ 	} else {
+ 		if (statbuf.st_size > CONFIG_TEMP_CONFIG_FILE_SIZE) {
+ 			wpa_printf(MSG_INFO, "Temporary config file is %d bytes, which is"
+diff --git a/wpa_supplicant/ctrl_iface.c b/wpa_supplicant/ctrl_iface.c
+index 104b192..30e7d0c 100644
+--- a/wpa_supplicant/ctrl_iface.c
++++ b/wpa_supplicant/ctrl_iface.c
+@@ -2362,6 +2362,15 @@ static int wpa_supplicant_ctrl_iface_status(struct wpa_supplicant *wpa_s,
+ 	}
+ #endif /* ANDROID */
+ 
++	int read_or_parse_errors = 0;
++#ifdef WPA_IGNORE_CONFIG_ERRORS
++	read_or_parse_errors = wpa_s->conf->read_or_parse_errors;
++#endif
++	ret = os_snprintf(pos, end - pos, "config_read_or_parse_errors=%d\n", read_or_parse_errors);
++	if (os_snprintf_error(end - pos, ret))
++		return pos - buf;
++	pos += ret;
++
+ 	return pos - buf;
+ }
+ 

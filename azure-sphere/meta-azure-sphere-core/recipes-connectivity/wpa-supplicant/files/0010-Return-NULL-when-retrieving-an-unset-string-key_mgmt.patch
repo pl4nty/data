@@ -1,0 +1,135 @@
+From 96b42f0e731859732c4cdc97fffd257a1613ef47 Mon Sep 17 00:00:00 2001
+From: Hassan Sufi <hasufi@microsoft.com>
+Date: Thu, 16 Jan 2020 13:14:24 -0800
+Subject: [PATCH] Return NULL when retrieving an unset string, key_mgmt, or eap
+ field
+
+---
+ wpa_supplicant/config.c     | 15 ++++++++++--
+ wpa_supplicant/ctrl_iface.c | 46 +++++++++++++++++++++++++++++--------
+ 2 files changed, 50 insertions(+), 11 deletions(-)
+
+diff --git a/wpa_supplicant/config.c b/wpa_supplicant/config.c
+index 7a62f96..5db352e 100644
+--- a/wpa_supplicant/config.c
++++ b/wpa_supplicant/config.c
+@@ -183,8 +183,11 @@ static char * wpa_config_write_str(const struct parse_data *data,
+ 	char **src;
+ 
+ 	src = (char **) (((u8 *) ssid) + (long) data->param1);
+-	if (*src == NULL)
++	if (*src == NULL) {
++		// The field is not set, set errno and return NULL
++		errno = -ENOENT;
+ 		return NULL;
++	}
+ 
+ 	if (data->param2)
+ 		len = *((size_t *) (((u8 *) ssid) + (long) data->param2));
+@@ -592,6 +595,8 @@ static char * wpa_config_write_psk(const struct parse_data *data,
+ 	if (ssid->psk_set)
+ 		return wpa_config_write_string_hex(ssid->psk, PMK_LEN);
+ 
++	// No PSK, set errno return NULL
++	errno = -ENOENT;
+ 	return NULL;
+ }
+ #endif /* NO_CONFIG_WRITE */
+@@ -1567,8 +1572,11 @@ static char * wpa_config_write_eap(const struct parse_data *data,
+ 	const struct eap_method_type *eap_methods = ssid->eap.eap_methods;
+ 	const char *name;
+ 
+-	if (eap_methods == NULL)
++	if (eap_methods == NULL) {
++		// The field is not set, set errno and return NULL
++		errno = -ENOENT;
+ 		return NULL;
++	}
+ 
+ 	pos = buf = os_zalloc(100);
+ 	if (buf == NULL)
+@@ -3125,7 +3133,10 @@ char * wpa_config_get_no_key(struct wpa_ssid *ssid, const char *var)
+ 					return os_strdup("*");
+ 				}
+ 
++				// Preserve errno
++				int error = errno;
+ 				os_free(res);
++				errno = error;
+ 				return NULL;
+ 			}
+ 			return res;
+diff --git a/wpa_supplicant/ctrl_iface.c b/wpa_supplicant/ctrl_iface.c
+index 8d5532d..104b192 100644
+--- a/wpa_supplicant/ctrl_iface.c
++++ b/wpa_supplicant/ctrl_iface.c
+@@ -3492,11 +3492,19 @@ static int wpa_supplicant_ctrl_iface_get_network(
+ 		return -1;
+ 	}
+ 
++	errno = 0;
+ 	value = wpa_config_get_no_key(ssid, name);
+ 	if (value == NULL) {
+-		wpa_printf(MSG_EXCESSIVE, "CTRL_IFACE: Failed to get network "
+-			   "variable '%s'", name);
+-		return -1;
++		int ret = -1;
++		if (errno == -ENOENT) {
++			wpa_printf(MSG_EXCESSIVE, "CTRL_IFACE: Network variable '%s' "
++			   "is unset", name);
++			ret = -ENOENT;
++		} else {
++			wpa_printf(MSG_EXCESSIVE, "CTRL_IFACE: Failed to get network "
++				"variable '%s'", name);
++		}
++		return ret;
+ 	}
+ 
+ 	res = os_strlcpy(buf, value, buflen);
+@@ -3553,9 +3561,16 @@ static int wpa_supplicant_ctrl_iface_dup_network(
+ 
+ 	value = wpa_config_get(ssid_s, name);
+ 	if (value == NULL) {
+-		wpa_printf(MSG_DEBUG, "CTRL_IFACE: Failed to get network "
+-			   "variable '%s'", name);
+-		return -1;
++		int ret = -1;
++		if (errno == -ENOENT) {
++			wpa_printf(MSG_EXCESSIVE, "CTRL_IFACE: Network variable '%s' "
++			   "is unset", name);
++			ret = -ENOENT;
++		} else {
++			wpa_printf(MSG_EXCESSIVE, "CTRL_IFACE: Failed to get network "
++				"variable '%s'", name);
++		}
++		return ret;
+ 	}
+ 
+ 	ret = wpa_supplicant_ctrl_iface_update_network(dst_wpa_s, ssid_d, name,
+@@ -10423,10 +10438,23 @@ char * wpa_supplicant_ctrl_iface_process(struct wpa_supplicant *wpa_s,
+ 	} else if (os_strncmp(buf, "GET_NETWORK ", 12) == 0) {
+ 		reply_len = wpa_supplicant_ctrl_iface_get_network(
+ 			wpa_s, buf + 12, reply, reply_size);
++		if (reply_len < 0) {
++			if (abs(reply_len) == ENOENT) {
++				os_memcpy(reply, "NULL\n", 5);
++				reply_len = 5;
++			}
++		}
+ 	} else if (os_strncmp(buf, "DUP_NETWORK ", 12) == 0) {
+-		if (wpa_supplicant_ctrl_iface_dup_network(wpa_s, buf + 12,
+-							  wpa_s))
+-			reply_len = -1;
++		int ret = wpa_supplicant_ctrl_iface_dup_network(wpa_s, buf + 12,
++							  wpa_s);
++		if (ret < 0) {
++			if (abs(ret) == ENOENT) {
++				os_memcpy(reply, "NULL\n", 5);
++				reply_len = 5;
++			} else {
++				reply_len = ret;
++			}
++		}
+ 	} else if (os_strcmp(buf, "LIST_CREDS") == 0) {
+ 		reply_len = wpa_supplicant_ctrl_iface_list_creds(
+ 			wpa_s, reply, reply_size);

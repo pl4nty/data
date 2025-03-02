@@ -1,0 +1,211 @@
+From bf42bf4d8d3550559e91e0b9954e9891df46ea48 Mon Sep 17 00:00:00 2001
+From: Andre Muezerie <andremue@ntdev.microsoft.com>
+Date: Wed, 8 Apr 2020 15:43:42 -0700
+Subject: [PATCH] Added consolidated events for extended network errors
+
+---
+ src/common/wpa_ctrl.h           | 12 ++++++++++++
+ src/eap_peer/eap.c              |  2 +-
+ wpa_supplicant/events.c         |  9 +++++++++
+ wpa_supplicant/notify.c         |  7 +++++--
+ wpa_supplicant/wpa_supplicant.c |  2 +-
+ 5 files changed, 28 insertions(+), 4 deletions(-)
+
+diff --git a/src/common/wpa_ctrl.h b/src/common/wpa_ctrl.h
+index e356bca..a83caea 100644
+--- a/src/common/wpa_ctrl.h
++++ b/src/common/wpa_ctrl.h
+@@ -79,8 +79,20 @@ extern "C" {
+ #define WPA_EVENT_BSS_ADDED "CTRL-EVENT-BSS-ADDED "
+ /** A BSS entry was removed (followed by BSS entry id and BSSID) */
+ #define WPA_EVENT_BSS_REMOVED "CTRL-EVENT-BSS-REMOVED "
++/** Network not ESS, PBSS or MBSS */
++#define WPA_EVENT_NETWORK_NOT_ESS_PBSS_MBSS "CTRL-EVENT-NETWORK-NOT-ESS-PBSS-MBSS "
++/** Network frequency not allowed */
++#define WPA_EVENT_NETWORK_FREQUENCY_NOT_ALLOWED "CTRL-EVENT-NETWORK-FREQUENCY-NOT-ALLOWED "
++/** Privacy mismatch */
++#define WPA_EVENT_NETWORK_PRIVACY_MISMATCH "CTRL-EVENT-NETWORK-PRIVACY-MISMATCH "
++/** Non-WPA Network */
++#define WPA_EVENT_NETWORK_NON_WPA "CTRL-EVENT-NETWORK-NON-WPA "
+ /** No suitable network was found */
+ #define WPA_EVENT_NETWORK_NOT_FOUND "CTRL-EVENT-NETWORK-NOT-FOUND "
++/** A specific network is not supported */
++#define WPA_EVENT_NETWORK_NOT_SUPPORTED "CTRL-EVENT-NETWORK-NOT-SUPPORTED "
++/** A specific network was found */
++#define WPA_EVENT_A_NETWORK_NOT_FOUND "CTRL-EVENT-A-NETWORK-NOT-FOUND "
+ /** Change in the signal level was reported by the driver */
+ #define WPA_EVENT_SIGNAL_CHANGE "CTRL-EVENT-SIGNAL-CHANGE "
+ /** Beacon loss reported by the driver */
+diff --git a/src/eap_peer/eap.c b/src/eap_peer/eap.c
+index ac15e0e..962cc1c 100644
+--- a/src/eap_peer/eap.c
++++ b/src/eap_peer/eap.c
+@@ -2075,7 +2075,7 @@ static void eap_peer_sm_tls_event(void *ctx, enum tls_event ev,
+ 		break;
+ 	case TLS_CERT_CHAIN_FAILURE:
+ 		wpa_msg(sm->msg_ctx, MSG_INFO, WPA_EVENT_EAP_TLS_CERT_ERROR
+-			"reason=%d depth=%d subject='%s' err='%s'",
++			"reason=%d depth=%d subject=\"%s\" err=\"%s\"",
+ 			data->cert_fail.reason,
+ 			data->cert_fail.depth,
+ 			data->cert_fail.subject,
+diff --git a/wpa_supplicant/events.c b/wpa_supplicant/events.c
+index 87dad08..89c045b 100644
+--- a/wpa_supplicant/events.c
++++ b/wpa_supplicant/events.c
+@@ -747,6 +747,10 @@ static int wpa_supplicant_ssid_bss_match(struct wpa_supplicant *wpa_s,
+ 		if (debug_print)
+ 			wpa_dbg(wpa_s, MSG_DEBUG,
+ 				"   skip - no WPA/RSN proto match");
++
++		wpa_msg_ctrl(wpa_s, MSG_INFO, WPA_EVENT_NETWORK_PRIVACY_MISMATCH"id=%u ssid=\"%s\"",
++			ssid->id, wpa_ssid_txt(ssid->ssid,ssid->ssid_len));
++
+ 		return 0;
+ 	}
+ 
+@@ -767,6 +771,9 @@ static int wpa_supplicant_ssid_bss_match(struct wpa_supplicant *wpa_s,
+ 		wpa_dbg(wpa_s, MSG_DEBUG,
+ 			"   reject due to mismatch with WPA/WPA2");
+ 
++	wpa_msg_ctrl(wpa_s, MSG_INFO, WPA_EVENT_NETWORK_PRIVACY_MISMATCH"id=%u ssid=\"%s\"",
++		ssid->id, wpa_ssid_txt(ssid->ssid,ssid->ssid_len));
++
+ 	return 0;
+ }
+ 
+@@ -1193,6 +1200,8 @@ struct wpa_ssid * wpa_scan_res_match(struct wpa_supplicant *wpa_s,
+ 		    !(ssid->key_mgmt & WPA_KEY_MGMT_WPS) &&
+ 		    !(ssid->key_mgmt & WPA_KEY_MGMT_OWE) &&
+ 		    !(ssid->key_mgmt & WPA_KEY_MGMT_IEEE8021X_NO_WPA)) {
++			wpa_msg_ctrl(wpa_s, MSG_INFO, WPA_EVENT_NETWORK_NON_WPA"id=%u ssid=\"%s\"",
++				ssid->id, wpa_ssid_txt(ssid->ssid,ssid->ssid_len));
+ 			if (debug_print)
+ 				wpa_dbg(wpa_s, MSG_DEBUG,
+ 					"   skip - non-WPA network not allowed");
+@@ -1216,6 +1225,8 @@ struct wpa_ssid * wpa_scan_res_match(struct wpa_supplicant *wpa_s,	
+ 		}
+
+ 		if (!wpa_supplicant_match_privacy(bss, ssid)) {
++			wpa_msg_ctrl(wpa_s, MSG_INFO, WPA_EVENT_NETWORK_PRIVACY_MISMATCH"id=%u ssid=\"%s\"",
++				ssid->id, wpa_ssid_txt(ssid->ssid,ssid->ssid_len));
+ 			if (debug_print)
+ 				wpa_dbg(wpa_s, MSG_DEBUG,
+ 					"   skip - privacy mismatch");
+@@ -1224,6 +1235,8 @@ struct wpa_ssid * wpa_scan_res_match(struct wpa_supplicant *wpa_s,	
+
+ 		if (ssid->mode != WPAS_MODE_MESH && !bss_is_ess(bss) &&
+ 		    !bss_is_pbss(bss)) {
++			wpa_msg_ctrl(wpa_s, MSG_INFO, WPA_EVENT_NETWORK_NOT_ESS_PBSS_MBSS"id=%u ssid=\"%s\"",
++				ssid->id, wpa_ssid_txt(ssid->ssid,ssid->ssid_len));
+ 			if (debug_print)
+ 				wpa_dbg(wpa_s, MSG_DEBUG,
+ 					"   skip - not ESS, PBSS, or MBSS");
+@@ -1239,6 +1252,8 @@ struct wpa_ssid * wpa_scan_res_match(struct wpa_supplicant *wpa_s,
+ 		}
+
+ 		if (!freq_allowed(ssid->freq_list, bss->freq)) {
++			wpa_msg_ctrl(wpa_s, MSG_INFO, WPA_EVENT_NETWORK_FREQUENCY_NOT_ALLOWED"id=%u ssid=\"%s\"",
++				ssid->id, wpa_ssid_txt(ssid->ssid,ssid->ssid_len));
+ 			if (debug_print)
+ 				wpa_dbg(wpa_s, MSG_DEBUG,
+ 					"   skip - frequency not allowed");
+@@ -1593,6 +1608,44 @@ int wpa_supplicant_connect(struct wpa_supplicant *wpa_s,	
+ }
+
+
++static int wpa_supplicant_does_ctrl_iface_scan_result_contain_known_ssid(
++	struct wpa_supplicant *wpa_s,
++	const struct wpa_bss *bss,
++	const u8 *known_ssid, size_t known_ssid_len)
++{
++	const u8 *p2p;
++	int found = 0;
++
++	p2p = wpa_bss_get_vendor_ie(bss, P2P_IE_VENDOR_TYPE);
++	if (!p2p)
++		p2p = wpa_bss_get_vendor_ie_beacon(bss, P2P_IE_VENDOR_TYPE);
++	if (p2p && bss->ssid_len == P2P_WILDCARD_SSID_LEN &&
++		os_memcmp(bss->ssid, P2P_WILDCARD_SSID, P2P_WILDCARD_SSID_LEN) == 0)
++		return 0; /* Do not show P2P listen discovery results here */
++
++	found = known_ssid_len == bss->ssid_len &&
++			memcmp(known_ssid, bss->ssid, known_ssid_len) == 0;
++
++	return found;
++}
++
++/* Returns true when known_ssid is found in scan_results */
++static int wpa_supplicant_do_ctrl_iface_scan_results_contain_known_ssid(
++	struct wpa_supplicant *wpa_s, const u8 *known_ssid, size_t known_ssid_len)
++{
++	struct wpa_bss *bss;
++	int ret = 0;
++
++	dl_list_for_each(bss, &wpa_s->bss_id, struct wpa_bss, list_id) {
++		ret = wpa_supplicant_does_ctrl_iface_scan_result_contain_known_ssid(
++			wpa_s, bss, known_ssid, known_ssid_len);
++		if (ret)
++			return ret;
++	}
++	return ret;
++}
++
++
+ static struct wpa_ssid *
+ wpa_supplicant_pick_new_network(struct wpa_supplicant *wpa_s)
+ {
+@@ -1604,6 +1657,13 @@ wpa_supplicant_pick_new_network(struct wpa_supplicant *wpa_s)
+ 		{
+ 			if (wpas_network_disabled(wpa_s, ssid))
+ 				continue;
++			else if (!wpa_supplicant_do_ctrl_iface_scan_results_contain_known_ssid(
++					wpa_s, ssid->ssid, ssid->ssid_len)) {
++
++				wpa_msg_ctrl(wpa_s, MSG_INFO, WPA_EVENT_A_NETWORK_NOT_FOUND"id=%u ssid=\"%s\"",
++					ssid->id, wpa_ssid_txt(ssid->ssid,ssid->ssid_len));
++			}
++
+ #ifndef CONFIG_IBSS_RSN
+ 			if (ssid->mode == WPAS_MODE_IBSS &&
+ 			    !(ssid->key_mgmt & (WPA_KEY_MGMT_NONE |
+@@ -1612,6 +1672,8 @@ wpa_supplicant_pick_new_network(struct wpa_supplicant *wpa_s)
+ 					"IBSS RSN not supported in the build - cannot use the profile for SSID '%s'",
+ 					wpa_ssid_txt(ssid->ssid,
+ 						     ssid->ssid_len));
++				wpa_msg_ctrl(wpa_s, MSG_INFO, WPA_EVENT_NETWORK_NOT_SUPPORTED"id=%u ssid=\"%s\"",
++					ssid->id, wpa_ssid_txt(ssid->ssid,ssid->ssid_len));
+ 				continue;
+ 			}
+ #endif /* !CONFIG_IBSS_RSN */
+diff --git a/wpa_supplicant/notify.c b/wpa_supplicant/notify.c
+index ff3f4d2..7003f36 100644
+--- a/wpa_supplicant/notify.c
++++ b/wpa_supplicant/notify.c
+@@ -875,8 +875,11 @@ void wpas_notify_eap_status(struct wpa_supplicant *wpa_s, const char *status,
+ {
+ 	wpas_dbus_signal_eap_status(wpa_s, status, parameter);
+ 	wpa_msg_ctrl(wpa_s, MSG_INFO, WPA_EVENT_EAP_STATUS
+-		     "status='%s' parameter='%s'",
+-		     status, parameter);
++				"id=%u ssid=\"%s\" status=\"%s\" parameter=\"%s\"",
++				wpa_s->current_ssid ? wpa_s->current_ssid->id : -1,
++				wpa_s->current_ssid && wpa_s->current_ssid->ssid ?
++					wpa_ssid_txt(wpa_s->current_ssid->ssid, wpa_s->current_ssid->ssid_len) : "",
++				status, parameter);
+ }
+ 
+ 
+diff --git a/wpa_supplicant/wpa_supplicant.c b/wpa_supplicant/wpa_supplicant.c
+index 911d79d..5d089fd 100644
+--- a/wpa_supplicant/wpa_supplicant.c
++++ b/wpa_supplicant/wpa_supplicant.c
+@@ -7078,7 +7078,7 @@ void wpas_auth_failed(struct wpa_supplicant *wpa_s, char *reason)
+ 	ssid->disabled_until.sec = now.sec + dur;
+ 
+ 	wpa_msg(wpa_s, MSG_INFO, WPA_EVENT_TEMP_DISABLED
+-		"id=%d ssid=\"%s\" auth_failures=%u duration=%d reason=%s",
++		"id=%d ssid=\"%s\" auth_failures=%u duration=%d reason=\"%s\"",
+ 		ssid->id, wpa_ssid_txt(ssid->ssid, ssid->ssid_len),
+ 		ssid->auth_failures, dur, reason);
+ }

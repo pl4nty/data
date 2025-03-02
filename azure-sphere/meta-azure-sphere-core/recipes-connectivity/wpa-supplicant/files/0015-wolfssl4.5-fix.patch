@@ -1,0 +1,20 @@
+From 11977d4db9e11fe8bc6e060e16621b51c59febb1 Mon Sep 17 00:00:00 2001
+From: Jewell Seay <Jewell.Seay@microsoft.com>
+Date: Wed, 2 Sep 2020 23:41:33 +0000
+
+---
+ src/crypto/tls_wolfssl.c | 1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/src/crypto/tls_wolfssl.c b/src/crypto/tls_wolfssl.c
+index 874dd0c..e69e047 100644
+--- a/src/crypto/tls_wolfssl.c
++++ b/src/crypto/tls_wolfssl.c
+@@ -19,6 +19,7 @@
+ #include <wolfssl/ssl.h>
+ #include <wolfssl/error-ssl.h>
+ #include <wolfssl/wolfcrypt/asn.h>
++#include <wolfssl/openssl/x509v3.h>
+ 
+ #if defined(EAP_FAST) || defined(EAP_FAST_DYNAMIC) || defined(EAP_SERVER_FAST)
+ #define HAVE_AESGCM

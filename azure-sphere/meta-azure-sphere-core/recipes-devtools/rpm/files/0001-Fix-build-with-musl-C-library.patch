@@ -1,0 +1,23 @@
+From 6660afb7ecfb0a2c7acf77a47bd6c427881fa841 Mon Sep 17 00:00:00 2001
+From: Alexander Kanavin <alex.kanavin@gmail.com>
+Date: Mon, 27 Feb 2017 14:43:21 +0200
+Subject: [PATCH] Fix build with musl C library.
+
+Upstream-Status: Pending
+Signed-off-by: Alexander Kanavin <alex.kanavin@gmail.com>
+
+---
+ rpmio/digest_nss.c | 1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/rpmio/digest_nss.c b/rpmio/digest_nss.c
+index 3a9977438..de2e532d9 100644
+--- a/rpmio/digest_nss.c
++++ b/rpmio/digest_nss.c
+@@ -1,5 +1,6 @@
+ #include "system.h"
+ 
++#include <signal.h>
+ #include <pthread.h>
+ #include <nss.h>
+ #include <sechash.h>

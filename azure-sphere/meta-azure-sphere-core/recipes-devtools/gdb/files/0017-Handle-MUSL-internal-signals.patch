@@ -1,0 +1,43 @@
+From cfab09d281072b24876642cfc7fb28ad945504dc Mon Sep 17 00:00:00 2001
+From: Dennis Liang <deliang@microsoft.com>
+Date: Mon, 1 Nov 2021 15:43:36 -0700
+Subject: [PATCH] Handle MUSL internal signals
+
+GDB does not handle MUSL internal signals. This change circumvents the problem
+by modifying the range of real-time signals to support the MUSL signals for
+pthread functions.
+
+This issue is described here and the fix was referenced by Rich Felker:
+https://sourceware.org/bugzilla/show_bug.cgi?id=23616
+
+Upstream-Status: Submitted
+
+Author: Samuel Holland
+https://github.com/smaeul/portage/commit/7d7bdaa41e30a2ac8c1ae38d21c8d55126c1b078
+Signed-off-by: Samuel Holland <samuel@sholland.org>
+Signed-off-by: Dennis Liang <deliang@microsoft.com>
+---
+ gdb/gdbsupport/signals.c | 7 +++++++
+ 1 file changed, 7 insertions(+)
+
+diff --git a/gdb/gdbsupport/signals.c b/gdb/gdbsupport/signals.c
+index 485e0f0..ab8d454 100644
+--- a/gdb/gdbsupport/signals.c
++++ b/gdb/gdbsupport/signals.c
+@@ -31,6 +31,13 @@ struct gdbarch;
+    _available_ realtime signal, not the lowest supported; glibc takes
+    several for its own use.  */
+ 
++#ifndef __SIGRTMIN
++# define __SIGRTMIN 32
++#endif
++#ifndef __SIGRTMAX
++# define __SIGRTMAX _NSIG
++#endif
++
+ #ifndef REALTIME_LO
+ # if defined(__SIGRTMIN)
+ #  define REALTIME_LO __SIGRTMIN
+-- 
+2.25.1
+
