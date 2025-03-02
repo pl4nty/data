@@ -12,6 +12,8 @@ from remotezip import RemoteZip
 import time
 from urllib.parse import urlparse
 from azure.storage.blob import ContainerClient, BlobClient
+from zipfile import ZipFile
+import py7zr
 load_dotenv()
 
 
@@ -42,6 +44,21 @@ def get_latest_edge_release(data):
         return version.parse(base_version)
 
     return max(edge_releases, key=lambda x: parse_version(x['release']))
+
+
+def get_latest_hsm_release(data):
+    hsm_releases = [
+        item for item in data
+        if item['product'] == 'Azure Cloud HSM'
+        and 'e2etests' in item.get('dependency', '').lower()
+    ]
+
+    def parse_version(ver_str):
+        # Handle 'x' in version strings by converting to 0
+        cleaned_version = ver_str.split('-')[0].replace('x', '0')
+        return version.parse(cleaned_version)
+
+    return max(hsm_releases, key=lambda x: parse_version(x['release']))
 
 
 def read_local_json(filename):
@@ -223,9 +240,53 @@ def delete_blob(blob_url):
         return False
 
 
+def download_and_extract_hsm(url, output_dir='azure-cloud-hsm'):
+    print(f"Downloading from {url}...")
+    response = requests.get(url)
+
+    with tempfile.TemporaryDirectory() as temp_dir:
+        zip_path = Path(temp_dir) / "download.zip"
+        zip_path.write_bytes(response.content)
+
+        with ZipFile(zip_path) as zip_ref:
+            seven_z_files = [
+                f for f in zip_ref.namelist() if f.endswith('.7z')]
+            if not seven_z_files:
+                raise ValueError("No .7z file found in download")
+
+            seven_z_path = Path(temp_dir) / seven_z_files[0]
+            zip_ref.extract(seven_z_files[0], temp_dir)
+
+            output_path = Path(output_dir)
+            shutil.rmtree(output_path, ignore_errors=True)
+            output_path.mkdir(exist_ok=True)
+
+            print(f"Extracting {seven_z_files[0]} to {output_path}...")
+            with py7zr.SevenZipFile(seven_z_path, 'r') as sz:
+                # Filter files during extraction
+                def should_extract(filename):
+                    if 'node_modules' not in filename and not (filename.endswith('.js') or filename.endswith('.js.map')):
+                        return True
+
+                    return '@microsoft' in filename
+
+                # Get filtered file list
+                all_files = sz.getnames()
+                files_to_extract = [f for f in all_files if should_extract(f)]
+
+                # Extract filtered files
+                sz.extract(path=output_path, targets=files_to_extract)
+
+
 def main():
     data = get_3rdparty_data()
     save_json(data, 'microsoft_3rdpartysource.json')
+
+    # Handle HSM download
+    latest_hsm = get_latest_hsm_release(data)
+    print(f"Latest HSM version: {latest_hsm['release']}")
+    download_and_extract_hsm(latest_hsm['url'])
+    print("HSM download and extraction completed")
 
     # Get latest Edge release
     latest_edge = get_latest_edge_release(data)
