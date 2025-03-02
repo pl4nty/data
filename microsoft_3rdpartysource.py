@@ -322,7 +322,8 @@ def download_and_extract_sphere(url, output_dir='azure-sphere'):
             print(f"Extracting {targz_files[0]} to {output_path}...")
             with tarfile.open(targz_path, 'r:gz') as tar:
                 for member in tar.getmembers():
-                    top_dir = member.name.split('/')[1]
+                    parts = member.name.split('/')
+                    top_dir = parts[1] if len(parts) > 1 else None
                     if top_dir not in excluded_dirs:
                         tar.extract(member, output_path)
 
