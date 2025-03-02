@@ -14,6 +14,7 @@ from urllib.parse import urlparse
 from azure.storage.blob import ContainerClient, BlobClient
 from zipfile import ZipFile
 import py7zr
+import tarfile
 load_dotenv()
 
 
@@ -59,6 +60,20 @@ def get_latest_hsm_release(data):
         return version.parse(cleaned_version)
 
     return max(hsm_releases, key=lambda x: parse_version(x['release']))
+
+
+def get_latest_sphere_release(data):
+    sphere_releases = [
+        item for item in data
+        if item['product'] == 'Azure Sphere'
+        and item.get('dependency', '').lower() == 'core os components'
+    ]
+
+    def parse_version(ver_str):
+        cleaned_version = ver_str.split('-')[0].replace('x', '0')
+        return version.parse(cleaned_version)
+
+    return max(sphere_releases, key=lambda x: parse_version(x['release']))
 
 
 def read_local_json(filename):
@@ -278,15 +293,59 @@ def download_and_extract_hsm(url, output_dir='azure-cloud-hsm'):
                 sz.extract(path=output_path, targets=files_to_extract)
 
 
+def download_and_extract_sphere(url, output_dir='azure-sphere'):
+    print(f"Downloading from {url}...")
+    response = requests.get(url)
+
+    with tempfile.TemporaryDirectory() as temp_dir:
+        # First extract the outer ZIP
+        zip_path = Path(temp_dir) / "download.zip"
+        zip_path.write_bytes(response.content)
+
+        with ZipFile(zip_path) as zip_ref:
+            # Find and extract the tar.gz
+            targz_files = [
+                f for f in zip_ref.namelist() if f.endswith('.tar.gz')]
+            if not targz_files:
+                raise ValueError("No .tar.gz file found in download")
+
+            targz_path = Path(temp_dir) / targz_files[0]
+            zip_ref.extract(targz_files[0], temp_dir)
+
+            # Extract tar.gz contents, filtering unwanted directories
+            output_path = Path(output_dir)
+            shutil.rmtree(output_path, ignore_errors=True)
+            output_path.mkdir(exist_ok=True)
+
+            excluded_dirs = {'meta-mingw', 'meta-openembedded', 'poky'}
+
+            print(f"Extracting {targz_files[0]} to {output_path}...")
+            with tarfile.open(targz_path, 'r:gz') as tar:
+                for member in tar.getmembers():
+                    top_dir = member.name.split('/')[1]
+                    if top_dir not in excluded_dirs:
+                        tar.extract(member, output_path)
+
+
 def main():
-    data = get_3rdparty_data()
-    save_json(data, 'microsoft_3rdpartysource.json')
+    # data = get_3rdparty_data()
+    # save_json(data, 'microsoft_3rdpartysource.json')
 
     # Handle HSM download
-    latest_hsm = get_latest_hsm_release(data)
-    print(f"Latest HSM version: {latest_hsm['release']}")
-    download_and_extract_hsm(latest_hsm['url'])
-    print("HSM download and extraction completed")
+    # latest_hsm = get_latest_hsm_release(data)
+    # print(f"Latest HSM version: {latest_hsm['release']}")
+    # download_and_extract_hsm(latest_hsm['url'])
+    # print("HSM download and extraction completed")
+
+    # Handle Sphere download
+    # latest_sphere = get_latest_sphere_release(data)
+    latest_sphere = {'url': 'https://3rdpartycodeprod.blob.core.windows.net/download/Azure%20Sphere/24.03/Core%20OS%20components.zip?sv=2021-12-02&st=2025-03-02T07%3A21%3A02Z&se=2025-03-02T09%3A01%3A02Z&sr=b&sp=r&sig=5%2FPgaEs5yRDcmYubdRzZkithgqjEWmnPHxwW7LCPkoA%3D'}
+
+    # print(f"\nLatest Sphere version: {latest_sphere['release']}")
+    download_and_extract_sphere(latest_sphere['url'])
+    print("Sphere download and extraction completed")
+
+    exit()
 
     # Get latest Edge release
     latest_edge = get_latest_edge_release(data)
