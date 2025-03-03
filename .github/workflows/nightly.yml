@@ -39,7 +39,7 @@ jobs:
         cmd:
           - |
             Invoke-WebRequest https://approdimedatapri.azureedge.net/IntuneWindowsAgent.msi -OutFile IntuneWindowsAgent.msi
-            Start-Process msiexec -ArgumentList /a, IntuneWindowsAgent.msi, /qn, TARGETDIR="$env:TEMP\IntuneWindowsAgent"
+            Start-Process -Wait msiexec -ArgumentList /a, IntuneWindowsAgent.msi, /qn, TARGETDIR="$env:TEMP\IntuneWindowsAgent"
             Remove-Item "$env:TEMP\IntuneWindowsAgent\*.msi"
             Move-Item "$env:TEMP\IntuneWindowsAgent\* ."
     steps:
