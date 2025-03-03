@@ -38,10 +38,10 @@ jobs:
       matrix:
         cmd:
           - |
-            Invoke-WebRequest https://approdimedatapri.azureedge.net/IntuneWindowsAgent.msi -OutFile IntuneWindowsAgent.msi
+            Invoke-WebRequest https://approdimedatapri.azureedge.net/IntuneWindowsAgent.msi -OutFile "$env:TEMP\IntuneWindowsAgent.msi"
             Start-Process -Wait msiexec -ArgumentList /a, IntuneWindowsAgent.msi, /qn, TARGETDIR="$env:TEMP\IntuneWindowsAgent"
             Remove-Item "$env:TEMP\IntuneWindowsAgent\*.msi"
-            Move-Item "$env:TEMP\IntuneWindowsAgent\* ."
+            Move-Item "$env:TEMP\IntuneWindowsAgent\*" .
     steps:
       - uses: actions/checkout@v4
       - run: ${{ matrix.cmd }}
