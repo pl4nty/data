@@ -30,22 +30,3 @@ jobs:
         with:
           default_author: github_actions
           message: "data: ${{ matrix.cmd }}"
-  windows:
-    runs-on: windows-latest
-    permissions:
-      contents: write
-    strategy:
-      matrix:
-        cmd:
-          - |
-            Invoke-WebRequest https://approdimedatapri.azureedge.net/IntuneWindowsAgent.msi -OutFile "$env:TEMP\IntuneWindowsAgent.msi"
-            Start-Process -Wait msiexec -ArgumentList /a, IntuneWindowsAgent.msi, /qn, TARGETDIR="$env:TEMP\IntuneWindowsAgent"
-            Remove-Item "$env:TEMP\IntuneWindowsAgent\*.msi"
-            Move-Item "$env:TEMP\IntuneWindowsAgent\*" .
-    steps:
-      - uses: actions/checkout@v4
-      - run: ${{ matrix.cmd }}
-      - uses: EndBug/add-and-commit@v9.1.4
-        with:
-          default_author: github_actions
-          message: "data: ${{ matrix.cmd }}"
