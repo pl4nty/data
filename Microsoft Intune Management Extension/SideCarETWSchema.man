@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<instrumentationManifest
+    xmlns="http://schemas.microsoft.com/win/2004/08/events"
+    >
+
+	<instrumentation
+			xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+			xmlns:xs="http://www.w3.org/2001/XMLSchema"
+			xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		>
+		<events xmlns="http://schemas.microsoft.com/win/2004/08/events">
+			<provider
+				name="Microsoft_SideCar"
+				guid="{1db28f2e-8f80-4027-8c5a-a11f7f10f62d}"
+				message="$(string.SideCar.ProviderName)"
+				symbol="Microsoft_SideCar"
+				messageFileName="%ProgramFiles(x86)%\Microsoft Intune Management Extension\Microsoft.Management.Services.IntuneWindowsAgent.SideCarETWProvider.dll"
+				resourceFileName="%ProgramFiles(x86)%\Microsoft Intune Management Extension\Microsoft.Management.Services.IntuneWindowsAgent.SideCarETWProvider.dll">
+				<!-- this is the runtime location -->
+
+				<keywords>
+					<keyword mask="0x1" name="Event-Telemetry" />
+					<keyword mask="0x2" name="Metric-Telemetry" />
+				</keywords>
+				<templates>
+					<template tid="tid_Event_Telemetry">
+						<data inType="win:UnicodeString" name="ApplicationName" outType="xs:string"/>
+						<data inType="win:UnicodeString" name="AgentVersion" outType="xs:string"/>
+						<data inType="win:UInt32" name="TraceLevel"/>
+						<data inType="win:UnicodeString" name="Message" outType="xs:string"/>
+						<data inType="win:UnicodeString" name="EventName" outType="xs:string"/>
+						<data inType="win:UnicodeString" name="ComponentName" outType="xs:string"/>
+						<data inType="win:UnicodeString" name="Col1" outType="xs:string"/>
+						<data inType="win:UnicodeString" name="Col2" outType="xs:string"/>
+						<data inType="win:UnicodeString" name="Col3" outType="xs:string"/>
+						<data inType="win:UnicodeString" name="Col4" outType="xs:string"/>
+						<data inType="win:UnicodeString" name="Col5" outType="xs:string"/>
+						<data inType="win:UnicodeString" name="Col6" outType="xs:string"/>
+						<data inType="win:UnicodeString" name="ColMetadata" outType="xs:string"/>
+					</template>
+					<template tid="tid_Metric_Telemetry">
+						<data inType="win:UnicodeString" name="ApplicationName" outType="xs:string"/>
+						<data inType="win:UnicodeString" name="AgentVersion" outType="xs:string"/>
+						<data inType="win:UInt32" name="TraceLevel"/>
+						<data inType="win:UnicodeString" name="MetricName" outType="xs:string"/>
+						<data inType="win:UInt32" name="MetricVersion" />
+						<data inType="win:Double" name="MetricValue" />
+						<data inType="win:UnicodeString" name="Dimension1" outType="xs:string"/>
+						<data inType="win:UnicodeString" name="Dimension2" outType="xs:string"/>
+						<data inType="win:UnicodeString" name="Dimension3" outType="xs:string"/>
+						<data inType="win:UnicodeString" name="Dimension4" outType="xs:string"/>
+						<data inType="win:UnicodeString" name="Dimension5" outType="xs:string"/>
+						<data inType="win:UnicodeString" name="Dimension6" outType="xs:string"/>
+						<data inType="win:UnicodeString" name="Dimension7" outType="xs:string"/>
+						<data inType="win:UnicodeString" name="Dimension8" outType="xs:string"/>
+						<data inType="win:UnicodeString" name="Dimension9" outType="xs:string"/>
+						<data inType="win:UnicodeString" name="Dimension10" outType="xs:string"/>
+						<data inType="win:UnicodeString" name="DimensionMetadata" outType="xs:string"/>
+					</template>
+				</templates>
+				<events>
+					<event
+						keywords="Event-Telemetry"
+						level="win:Informational"
+						message="$(string.SideCar.EventTelemetryMessage)"
+						opcode="win:Info"
+						symbol="EventTelemetry"
+						template="tid_Event_Telemetry"
+						value="1"
+					/>
+					<event
+						keywords="Metric-Telemetry"
+						level="win:Informational"
+						message="$(string.SideCar.MetricTelemetryMessage)"
+						opcode="win:Info"
+						symbol="MetricTelemetry"
+						template="tid_Metric_Telemetry"
+						value="2"
+					/>
+				</events>
+			</provider>
+		</events>
+	</instrumentation>
+
+	<localization>
+		<resources culture="en-US">
+			<stringTable>
+				<string id="SideCar.ProviderName" value="Microsoft_SideCar" />
+				<string id="SideCar.EventTelemetryMessage" value="SideCarEvent: [%6] (%5) %4 Col1=%7 Col2=%8 Col3=%9 Col4=%10 Col5=%11 Col6=%12 ColMetadata=%13" />
+				<string id="SideCar.MetricTelemetryMessage" value="SideCarMetric: [%4] (%5) %6 d1=%7 d2=%8 d3=%9 d4=%10 d5=%11 d6=%12 d7=%13 d8=%14 d9=%15 d10=%16 Metadata=%17" />
+			</stringTable>
+		</resources>
+	</localization>
+
+</instrumentationManifest>

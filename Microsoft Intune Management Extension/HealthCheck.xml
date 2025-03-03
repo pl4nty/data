@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" ?>
+<ClientHealth Version="1.0">
+  <HealthCheck Description="Verify Intune Management Extension service exists." ID="B862E7A7-FE34-47F3-A648-EDD4803F781A" Type="Services">
+    <Applicability OS="ALL" ClientVersion="ALL"/>
+    <PARAM Order="1" Description="Services Check">
+      ServiceExists
+    </PARAM>
+    <PARAM Order="2" Description="Service Name">
+      IntuneManagementExtension
+    </PARAM>
+  </HealthCheck>
+  <HealthCheck Description="Verify/Remediate Intune Management Extension Service startup type." ID="05980F21-0099-4AC4-8BA7-C9F5F0CD0B7F" Type="Services" DependsOn="B862E7A7-FE34-47F3-A648-EDD4803F781A">
+    <Applicability OS="ALL" ClientVersion="ALL"/>
+    <PARAM Order="1" Description="Service Check">
+      ServiceStartupType
+    </PARAM>
+    <PARAM Order="2" Description="Service Name">
+      IntuneManagementExtension
+    </PARAM>
+    <PARAM Order="3" Description="Expected Service Startup State">
+      Automatic
+    </PARAM>
+    <Remediate>
+      <PARAM Order="1" Description="Services Remediation">
+        ServiceStartupType
+      </PARAM>
+      <PARAM Order="2" Description="Service Name">
+        IntuneManagementExtension
+      </PARAM>
+      <PARAM Order="3" Description="Desired Service Startup State">
+        Automatic
+      </PARAM>
+    </Remediate>
+  </HealthCheck>
+  <HealthCheck Description="Verify/Remediate Intune Management Extension service status." ID="64103933-CDE5-419B-ABC7-4BFE5C535C4A" Type="Services" DependsOn="B862E7A7-FE34-47F3-A648-EDD4803F781A">
+    <Applicability OS="ALL" ClientVersion="ALL"/>
+    <PARAM Order="1" Description="Service Check">
+      ServiceStatus
+    </PARAM>
+    <PARAM Order="2" Description="Service Name">
+      IntuneManagementExtension
+    </PARAM>
+    <PARAM Order="3" Description="Expected Service Status">
+      Active
+    </PARAM>
+    <Remediate>
+      <PARAM Order="1" Description="Services Remediation">
+        ServiceStatus
+      </PARAM>
+      <PARAM Order="2" Description="Service Name">
+        IntuneManagementExtension
+      </PARAM>
+      <PARAM Order="3" Description="Desired Service Status">
+        Running
+      </PARAM>
+    </Remediate>
+  </HealthCheck>
+  <HealthCheck Description="Verify/Remediate Intune Management Extension memory usage." ID="0CF538CD-6BBA-4690-8776-E1F63F6D8D63" Type="Memory" DependsOn="B862E7A7-FE34-47F3-A648-EDD4803F781A">
+    <Applicability OS="ALL" ClientVersion="ALL"/>
+    <PARAM Order="1" Description="Memory Check">
+      Memorycheck
+    </PARAM>
+    <PARAM Order="2" Description="Process">
+      Microsoft.Management.Services.IntuneWindowsAgent
+    </PARAM>
+    <PARAM Order="3" Description="Memory threshold">
+      200
+    </PARAM>
+    <Remediate>
+      <Applicability OS="ALL" ClientVersion="ALL"/>
+      <PARAM Order="1" Description="Restart service">
+        RestartIntuneManagementExtensionService
+      </PARAM>
+    </Remediate>
+  </HealthCheck>
+</ClientHealth>
