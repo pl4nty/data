@@ -1,0 +1,25 @@
+{
+  "compileOnSave": true,
+  "compilerOptions": {
+    "alwaysStrict": true,
+    "target": "es2015",
+    "module": "commonjs",
+    "sourceMap": true,
+    "typeRoots": [
+      "node_modules/@types",
+      "typings"
+    ],
+    "lib": [
+      "dom",
+      "ES2018"
+    ]
+  },
+  "include": [
+    "./*.ts"
+    , "**/*.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "Screenshots"
+  ]
+}

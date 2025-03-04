@@ -1,0 +1,11 @@
+{
+  "list": "-",
+  "mocha-junit-reporter": {
+    "stdout": "junit.xml",
+    "options": {
+      "rootSuiteTitle": "E2E Test Suite",
+      "testsuitesTitle": "Cloud HSM Portal Extension",
+      "mochaFile": "junit.xml"
+    }
+  }
+}

@@ -1,0 +1,38 @@
+﻿{
+  "playwright": {
+    "browser": "chrome",
+    "resolution": {
+      "width": 1280,
+      "height": 960
+    },
+    "options": {
+      "headless": true
+    }
+  },
+  "capabilities": {
+    "browserName": "chrome",
+    "chromeOptions": {
+      "args": [
+        "no-sandbox",
+        "window-size=1280,960"
+      ]
+    }
+  },
+  "SECRET_PATH": "cloudhsmportale2etst@microsoft.com/signIn",
+  "USER_EMAIL_LIVE": "cloudhsmportale2etst@microsoft.com",
+  "allowUnauthorizedCert": "true",
+  "armEndpoint": "https://management.azure.com",
+  "armVersion": "2014-04-01",
+  "browserAutomation": "playwright",
+  "chromeDriverPath": "./node_modules/chromedriver/lib/chromedriver/chromedriver.exe",
+  "enableFiddler": "false",
+  "locationDescription": "UK West",
+  "locationId": "ukwest",
+  "managementEndpoint": "https://management.core.windows.net/",
+  "partnerTeamEmail": "kmi@service.microsoft.com",
+  "portalUrl": "https://portal.azure.com/?feature.customportal=false&feature.canmodifystamps=true&Microsoft_Azure_CloudHSM=stage1&Microsoft_Azure_CloudHSM_assettypeoptions=%7B%22CloudHSM%22%3A%7B%22options%22%3A%22%22%7D%7D",
+  "sideloadedURL": "https://localhost:1339/cloudhsm",
+  "subscriptionId": "3e1398f4-49b3-47bd-81a8-7ac520396295",
+  "subscriptionName": "Azure Cloud HSM Test Corp",
+  "testRetries": 2
+}
