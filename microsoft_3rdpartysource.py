@@ -404,6 +404,11 @@ def download_and_extract_sphere_linux(url, output_dir='azure-sphere/linux'):
                 # Extract and parse GeoPol.xml
                 xml_content = tar.extractfile(geopol_member).read()
                 include_patterns = parse_geopol_folders(xml_content)
+                include_patterns.append('.kernel-meta')
+                include_patterns.append('az-sphere-os-sdk.yaml')
+                include_patterns.append('azure-pipelines.yml')
+                include_patterns.append('GeoPol.xml')
+                include_patterns.append('servicetreeconfig.txt')
                 print(
                     f"Found {len(include_patterns)} include patterns in GeoPol.xml")
 
@@ -418,7 +423,6 @@ def download_and_extract_sphere_linux(url, output_dir='azure-sphere/linux'):
                     parts = Path(member.name).parts
                     if len(parts) > 1:
                         relative_path = '/'.join(parts)
-                        print(relative_path)
                         if should_extract_linux_file(relative_path, include_patterns):
                             tar.extract(member, output_path)
 
