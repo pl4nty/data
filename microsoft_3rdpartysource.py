@@ -15,6 +15,8 @@ from azure.storage.blob import ContainerClient, BlobClient
 from zipfile import ZipFile
 import py7zr
 import tarfile
+import xml.etree.ElementTree as ET
+import fnmatch
 load_dotenv()
 
 
@@ -74,6 +76,20 @@ def get_latest_sphere_release(data):
         return version.parse(cleaned_version)
 
     return max(sphere_releases, key=lambda x: parse_version(x['release']))
+
+
+def get_latest_sphere_linux_release(data):
+    linux_releases = [
+        item for item in data
+        if item['product'] == 'Azure Sphere'
+        and item.get('dependency', '').lower() == 'linux kernel'
+    ]
+
+    def parse_version(ver_str):
+        cleaned_version = ver_str.split('-')[0].replace('x', '0')
+        return version.parse(cleaned_version)
+
+    return max(linux_releases, key=lambda x: parse_version(x['release']))
 
 
 def read_local_json(filename):
@@ -328,25 +344,109 @@ def download_and_extract_sphere(url, output_dir='azure-sphere'):
                         tar.extract(member, output_path)
 
 
+def parse_geopol_folders(xml_content):
+    """Extract include folder paths from GeoPol XML"""
+    root = ET.fromstring(xml_content)
+    include_patterns = []
+
+    # Find all IncludeFolder elements
+    for folder in root.findall(".//Component/IncludeFolder"):
+        if folder.text:
+            # Convert Windows path separators to Unix style
+            pattern = folder.text.strip().replace('\\', '/')
+            include_patterns.append(pattern)
+
+    return include_patterns
+
+
+def should_extract_linux_file(filepath, include_patterns):
+    """Check if file matches any include pattern"""
+    for pattern in include_patterns:
+        # Handle glob patterns
+        if '*' in pattern:
+            if fnmatch.fnmatch(filepath, pattern):
+                return True
+        # Handle exact directory matches
+        elif filepath.startswith(pattern):
+            return True
+    return False
+
+
+def download_and_extract_sphere_linux(url, output_dir='azure-sphere/linux'):
+    print(f"Downloading Linux kernel from {url}...")
+    response = requests.get(url)
+
+    with tempfile.TemporaryDirectory() as temp_dir:
+        zip_path = Path(temp_dir) / "download.zip"
+        zip_path.write_bytes(response.content)
+
+        with ZipFile(zip_path) as zip_ref:
+            # Find and extract tar.gz
+            targz_files = [
+                f for f in zip_ref.namelist() if f.endswith('.tar.gz')]
+            if not targz_files:
+                raise ValueError("No .tar.gz file found in download")
+
+            targz_path = Path(temp_dir) / targz_files[0]
+            zip_ref.extract(targz_files[0], temp_dir)
+
+            # Extract GeoPol.xml and get include patterns
+            with tarfile.open(targz_path, 'r:gz') as tar:
+                geopol_member = None
+                for member in tar.getmembers():
+                    if member.name.endswith('/GeoPol.xml'):
+                        geopol_member = member
+                        break
+
+                if not geopol_member:
+                    raise ValueError("No GeoPol.xml found in tar.gz")
+
+                # Extract and parse GeoPol.xml
+                xml_content = tar.extractfile(geopol_member).read()
+                include_patterns = parse_geopol_folders(xml_content)
+                print(
+                    f"Found {len(include_patterns)} include patterns in GeoPol.xml")
+
+                # Extract filtered contents
+                output_path = Path(output_dir)
+                shutil.rmtree(output_path, ignore_errors=True)
+                output_path.mkdir(parents=True, exist_ok=True)
+
+                print(f"Extracting filtered contents to {output_path}...")
+                for member in tar.getmembers():
+                    # Skip the root directory level
+                    parts = Path(member.name).parts
+                    if len(parts) > 1:
+                        relative_path = '/'.join(parts)
+                        print(relative_path)
+                        if should_extract_linux_file(relative_path, include_patterns):
+                            tar.extract(member, output_path)
+
+
 def main():
-    # data = get_3rdparty_data()
-    # save_json(data, 'microsoft_3rdpartysource.json')
+    # latest_linux = {'url': 'https://3rdpartycodeprod.blob.core.windows.net/download/Azure%20Sphere/24.03/Linux%20kernel.zip?sv=2021-12-02&st=2025-03-04T10%3A22%3A25Z&se=2025-03-04T12%3A02%3A25Z&sr=b&sp=r&sig=GzoOEmJhWnxnDr0Qspmc20imu%2B%2F6kyGI4R9NCE%2FawQk%3D'}
+    data = get_3rdparty_data()
+    save_json(data, 'microsoft_3rdpartysource.json')
+
+    # Handle Linux kernel download
+    latest_linux = get_latest_sphere_linux_release(data)
+    print(f"\nLatest Sphere Linux version: {latest_linux['release']}")
+    download_and_extract_sphere_linux(latest_linux['url'])
+    print("Linux kernel extraction completed")
+
+    # exit()
 
     # Handle HSM download
-    # latest_hsm = get_latest_hsm_release(data)
-    # print(f"Latest HSM version: {latest_hsm['release']}")
-    # download_and_extract_hsm(latest_hsm['url'])
-    # print("HSM download and extraction completed")
+    latest_hsm = get_latest_hsm_release(data)
+    print(f"Latest HSM version: {latest_hsm['release']}")
+    download_and_extract_hsm(latest_hsm['url'])
+    print("HSM download and extraction completed")
 
     # Handle Sphere download
-    # latest_sphere = get_latest_sphere_release(data)
-    latest_sphere = {'url': 'https://3rdpartycodeprod.blob.core.windows.net/download/Azure%20Sphere/24.03/Core%20OS%20components.zip?sv=2021-12-02&st=2025-03-02T07%3A21%3A02Z&se=2025-03-02T09%3A01%3A02Z&sr=b&sp=r&sig=5%2FPgaEs5yRDcmYubdRzZkithgqjEWmnPHxwW7LCPkoA%3D'}
-
-    # print(f"\nLatest Sphere version: {latest_sphere['release']}")
+    latest_sphere = get_latest_sphere_release(data)
+    print(f"\nLatest Sphere version: {latest_sphere['release']}")
     download_and_extract_sphere(latest_sphere['url'])
     print("Sphere download and extraction completed")
-
-    exit()
 
     # Get latest Edge release
     latest_edge = get_latest_edge_release(data)
