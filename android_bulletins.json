@@ -64065,6 +64065,83 @@
         "Component": "Unbounded buffer read in libstagefright while parsing 3GPP metadata"
     },
     {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/pixel/2025-03-01",
+        "Published": "March 4, 2025",
+        "Patch level": "2025-03-05",
+        "CVE": "CVE-2025-22377",
+        "References": "A-383333278",
+        "Type": "EoP",
+        "Severity": "Critical",
+        "Subcomponent": "Pixel Modem",
+        "Component": "Pixel"
+    },
+    {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/pixel/2025-03-01",
+        "Published": "March 4, 2025",
+        "Patch level": "2025-03-05",
+        "CVE": "CVE-2024-56187",
+        "References": "A-306032268",
+        "Type": "ID",
+        "Severity": "High",
+        "Subcomponent": "LDFW",
+        "Component": "Pixel"
+    },
+    {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/pixel/2025-03-01",
+        "Published": "March 4, 2025",
+        "Patch level": "2025-03-05",
+        "CVE": "CVE-2024-56188",
+        "References": "A-303771271",
+        "Type": "DoS",
+        "Severity": "High",
+        "Subcomponent": "Modem",
+        "Component": "Pixel"
+    },
+    {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/pixel/2025-03-01",
+        "Published": "March 4, 2025",
+        "Patch level": "2025-03-05",
+        "CVE": "CVE-2024-56184",
+        "References": "A-359861209",
+        "Type": "ID",
+        "Severity": "Moderate",
+        "Subcomponent": "Trusty",
+        "Component": "Pixel"
+    },
+    {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/pixel/2025-03-01",
+        "Published": "March 4, 2025",
+        "Patch level": "2025-03-05",
+        "CVE": "CVE-2024-56185",
+        "References": "A-364794723",
+        "Type": "ID",
+        "Severity": "Moderate",
+        "Subcomponent": "Exynos RIL",
+        "Component": "Pixel"
+    },
+    {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/pixel/2025-03-01",
+        "Published": "March 4, 2025",
+        "Patch level": "2025-03-05",
+        "CVE": "CVE-2024-56186",
+        "References": "A-353680998",
+        "Type": "ID",
+        "Severity": "Moderate",
+        "Subcomponent": "Modem",
+        "Component": "Pixel"
+    },
+    {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/pixel/2025-03-01",
+        "Published": "March 4, 2025",
+        "Patch level": "2025-03-05",
+        "CVE": "CVE-2024-20003",
+        "References": "A-365755647",
+        "Type": "DoS",
+        "Severity": "Moderate",
+        "Subcomponent": "Pixel Modem",
+        "Component": "Pixel"
+    },
+    {
         "Bulletin": "https://source.android.com/docs/security/bulletin/pixel/2025-01-01",
         "Published": "February 4, 2025",
         "Patch level": "2025-02-05",
