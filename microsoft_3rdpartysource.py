@@ -251,12 +251,12 @@ def extract_third_party_metadata(zip_handle: RemoteZip):
                         'name': name,
                         'size': 0,
                         'file_count': 0,
-                        'last_modified': file_info.date_time
+                        'last_modified': f"{file_info.date_time[0]}-{file_info.date_time[1]:02d}-{file_info.date_time[2]:02d} {file_info.date_time[3]:02d}:{file_info.date_time[4]:02d}:{file_info.date_time[5]:02d}"
                     }
                 third_party[name]['size'] += file_info.file_size
                 third_party[name]['file_count'] += 1
 
-    return list(third_party.values())
+    return sorted(third_party.values(), key=lambda x: x['name'].lower())
 
 
 def delete_blob(blob_url):
@@ -419,16 +419,14 @@ def download_and_extract_sphere_linux(url, output_dir='azure-sphere/linux'):
 
                 print(f"Extracting filtered contents to {output_path}...")
                 for member in tar.getmembers():
-                    # Skip the root directory level
                     parts = Path(member.name).parts
-                    if len(parts) > 1:
-                        relative_path = '/'.join(parts)
-                        if should_extract_linux_file(relative_path, include_patterns):
-                            tar.extract(member, output_path)
-
+                    relative_path = '/'.join(parts)
+                    if should_extract_linux_file(relative_path, include_patterns):
+                        tar.extract(member, output_path)
+                        
 
 def main():
-    # latest_linux = {'url': 'https://3rdpartycodeprod.blob.core.windows.net/download/Azure%20Sphere/24.03/Linux%20kernel.zip?sv=2021-12-02&st=2025-03-04T10%3A22%3A25Z&se=2025-03-04T12%3A02%3A25Z&sr=b&sp=r&sig=GzoOEmJhWnxnDr0Qspmc20imu%2B%2F6kyGI4R9NCE%2FawQk%3D'}
+    # latest_linux = {'url': 'https://3rdpartycodeprod.blob.core.windows.net/download/Azure%20Sphere/24.03/Linux%20kernel.zip?sv=2021-12-02&st=2025-03-04T13%3A29%3A52Z&se=2025-03-04T15%3A09%3A52Z&sr=b&sp=r&sig=A6XGqamzw6Yn0ldNeuMdirqD2FzkjL2TIoc6xWc6AqE%3D'}
     data = get_3rdparty_data()
     save_json(data, 'microsoft_3rdpartysource.json')
 
