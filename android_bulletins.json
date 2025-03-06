@@ -88595,9 +88595,46 @@
         "Component": "System"
     },
     {
-        "Bulletin": "https://source.android.com/docs/security/bulletin/pixel-watch/2025-12-01",
+        "Bulletin": "https://source.android.com/docs/security/bulletin/pixel-watch/2025/2025-03-01",
         "Published": "March 5, 2025",
-        "Patch level": "2025-03-05"
+        "Patch level": "2025-03-05",
+        "CVE": "CVE-2024-56191",
+        "References": "A-369779393",
+        "Type": "EoP",
+        "Severity": "High",
+        "Subcomponent": "dhd4381",
+        "Component": "SoC"
+    },
+    {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/pixel-watch/2025/2025-03-01",
+        "Published": "March 5, 2025",
+        "Patch level": "2025-03-05",
+        "CVE": "CVE-2024-56192",
+        "References": "A-370519083",
+        "Type": "EoP",
+        "Severity": "High",
+        "Subcomponent": "dhd4381",
+        "Component": "SoC"
+    },
+    {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/pixel-watch/2025/2025-03-01",
+        "Published": "March 5, 2025",
+        "Patch level": "2025-03-05",
+        "CVE": "CVE-2024-43057",
+        "References": "A-364021259",
+        "Severity": "Moderate",
+        "Subcomponent": "Kernel",
+        "Component": "Qualcomm components"
+    },
+    {
+        "Bulletin": "https://source.android.com/docs/security/bulletin/pixel-watch/2025/2025-03-01",
+        "Published": "March 5, 2025",
+        "Patch level": "2025-03-05",
+        "CVE": "CVE-2024-38426",
+        "References": "A-364021142",
+        "Severity": "Moderate",
+        "Subcomponent": "Closed-source component",
+        "Component": "Qualcomm closed-source components"
     },
     {
         "Bulletin": "https://source.android.com/docs/security/bulletin/pixel-watch/2024-12-01",
