@@ -58,6 +58,8 @@ BASE_DECLARE_FEATURE(kEdgeContinuousCookiesImport);
 COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
 BASE_DECLARE_FEATURE(kEdgeContinuousPasswordImport);
 COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
+BASE_DECLARE_FEATURE(kEdgeOneTimeThemesImport);
+COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
 BASE_DECLARE_FEATURE(kEdgeContinuousMigrationLogging);
 // shopping campaign
 COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
@@ -108,10 +110,23 @@ COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
 BASE_DECLARE_FEATURE_TRIGGER(kCookieImportStarted);
 COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
 BASE_DECLARE_FEATURE_TRIGGER(kCookieImportBeforeMergingToDB);
+COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
+BASE_DECLARE_FEATURE_TRIGGER(kNewCIUserAndHighConfidenceChromePbUser);
+COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
+BASE_DECLARE_FEATURE_TRIGGER(kPasswordsImportStarted);
 
 // Flag to stop import for cookies to test user impact for reverse Experiment.
 COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
 BASE_DECLARE_FEATURE(kStopChromeCookieImportForReverseExperiment);
+
+// Flag to measure the user impact of Reverse Experiment on passwords.
+COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
+BASE_DECLARE_FEATURE(kChromePasswordImportForReverseExperiment);
+
+// To check if user belongs to treatment group for reverse experiment of
+// passwords.
+COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
+extern const base::FeatureParam<bool> kIsTreatment;
 
 // CI Engagement - Holdback group which will be controlled via ECS. By default
 // it's enabled for all users
