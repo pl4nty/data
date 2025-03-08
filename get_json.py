@@ -38,6 +38,7 @@ if __name__ == "__main__":
         # fetch_and_prettify_json("https://login.microsoftonline.us/common/discovery/keys", "microsoft_jwks_us.json", "keys")
         fetch_and_prettify_json("https://login.partner.microsoftonline.cn/common/discovery/keys", "microsoft_jwks_cn.json", "keys")
         fetch_and_prettify_json("https://login.windows-ppe.net/common/discovery/keys", "microsoft_jwks_ppe.json", "keys")
+        fetch_and_prettify_json("https://www.microsoft.com/releasecommunications/api/v1/m365", "microsoft_365_roadmap.json")
     else:
         url = sys.argv[1]
         output_file = sys.argv[2]
