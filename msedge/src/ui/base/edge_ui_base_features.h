@@ -563,6 +563,11 @@ extern bool EdgeIsVisualRejuvAcrylicEnabledForWebUi2();
 COMPONENT_EXPORT(UI_BASE_FEATURES)
 BASE_DECLARE_FEATURE_TRIGGER(kEdgeVisualRejuvAcrylicForWebUi2Trigger);
 
+COMPONENT_EXPORT(UI_BASE_FEATURES)
+BASE_DECLARE_FEATURE(kEdgeWebUIWebVitals);
+COMPONENT_EXPORT(UI_BASE_FEATURES)
+extern bool IsEdgeWebUIWebVitalsEnabled();
+
 // If enabled, user will have access to copy/paste for types other than text
 // in a WebView2 instance in a UWP app.
 COMPONENT_EXPORT(UI_BASE_FEATURES)

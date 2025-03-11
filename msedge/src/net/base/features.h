@@ -270,10 +270,6 @@ NET_EXPORT BASE_DECLARE_FEATURE(kWaitForFirstPartySetsInit);
 NET_EXPORT extern const base::FeatureParam<base::TimeDelta>
     kWaitForFirstPartySetsInitNavigationThrottleTimeout;
 
-// When enabled, a cross-site ancestor chain bit is included in the partition
-// key in partitioned cookies.
-NET_EXPORT BASE_DECLARE_FEATURE(kAncestorChainBitEnabledInPartitionedCookies);
-
 // When enabled, requestStorageAccessFor will require storage access permissions
 // granted by StorageAccessApi or StorageAccessHeaders to send cookies on
 // requests allowed because of requestStorageAccessFor instead of cors.
@@ -483,11 +479,6 @@ NET_EXPORT extern const base::FeatureParam<bool> kIpPrivacyFallbackToDirect;
 // value, 0, is not sent.
 NET_EXPORT extern const base::FeatureParam<int> kIpPrivacyDebugExperimentArm;
 
-// Caches tokens by geo allowing for tokens to be preserved on network/geo
-// changes. The default value of this feature is false which maintains existing
-// behavior by default.
-NET_EXPORT extern const base::FeatureParam<bool> kIpPrivacyCacheTokensByGeo;
-
 // When enabled and an IP protection delegate can be be created in the
 // `NetworkContext`, a `IpProtectionProxyDelegate` will ALWAYS be created even
 // for `NetworkContexts` that do not participate in IP protection. This is
@@ -588,6 +579,17 @@ NET_EXPORT BASE_DECLARE_FEATURE(kDeviceBoundSessions);
 // across restarts. This feature is only valid if `kDeviceBoundSessions` is
 // enabled.
 NET_EXPORT BASE_DECLARE_FEATURE(kPersistDeviceBoundSessions);
+// This feature will enable the Device Bound Session Credentials
+// protocol on all pages, ignoring the requirements for Origin Trial
+// headers. This is required because we cannot properly add the origin
+// trial header due to the circumstances outlined in
+// https://crbug.com/40860522. An EmbeddedTestServer cannot reliably be
+// started on one origin due to port randomization, an Origin Trial
+// cannot be generated dynamically, and a URLLoaderInterceptor will mock
+// the exact code we need to test.
+NET_EXPORT BASE_DECLARE_FEATURE_PARAM(
+    bool,
+    kDeviceBoundSessionsForceEnableForTesting);
 // This feature enables the Device Bound Session Credentials refresh quota.
 // This behavior is expected by default; disabling it should only be for
 // testing purposes.
