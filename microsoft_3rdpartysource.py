@@ -250,8 +250,7 @@ def extract_third_party_metadata(zip_handle: RemoteZip):
                     third_party[name] = {
                         'name': name,
                         'size': 0,
-                        'file_count': 0,
-                        'last_modified': f"{file_info.date_time[0]}-{file_info.date_time[1]:02d}-{file_info.date_time[2]:02d} {file_info.date_time[3]:02d}:{file_info.date_time[4]:02d}:{file_info.date_time[5]:02d}"
+                        'file_count': 0
                     }
                 third_party[name]['size'] += file_info.file_size
                 third_party[name]['file_count'] += 1
