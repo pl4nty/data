@@ -329,7 +329,6 @@ def download_and_extract_sphere(url, output_dir='azure-sphere'):
 
             # Extract tar.gz contents, filtering unwanted directories
             output_path = Path(output_dir)
-            shutil.rmtree(output_path, ignore_errors=True)
             output_path.mkdir(exist_ok=True)
 
             excluded_dirs = {'meta-mingw', 'meta-openembedded', 'poky'}
@@ -425,11 +424,11 @@ def download_and_extract_sphere_linux(url, output_dir='azure-sphere/linux'):
                         
 
 def main():
-    # latest_linux = {'url': 'https://3rdpartycodeprod.blob.core.windows.net/download/Azure%20Sphere/24.03/Linux%20kernel.zip?sv=2021-12-02&st=2025-03-04T13%3A29%3A52Z&se=2025-03-04T15%3A09%3A52Z&sr=b&sp=r&sig=A6XGqamzw6Yn0ldNeuMdirqD2FzkjL2TIoc6xWc6AqE%3D'}
+    # latest_linux = {'url': 'https://3rdpartycodeprod.blob.core.windows.net/download/Azure%20Sphere/24.03/Linux%20kernel.zip?sv=2021-12-02&st=2025-03-15T05%3A36%3A11Z&se=2025-03-15T07%3A16%3A11Z&sr=b&sp=r&sig=N%2B%2BPcB0%2FGqFR0mV3u78ER294y1%2BifcTesKS7yYAJ66k%3D'}
     data = get_3rdparty_data()
     save_json(data, 'microsoft_3rdpartysource.json')
 
-    # Handle Linux kernel download
+    # Azure Sphere kernel
     latest_linux = get_latest_sphere_linux_release(data)
     print(f"\nLatest Sphere Linux version: {latest_linux['release']}")
     download_and_extract_sphere_linux(latest_linux['url'])
@@ -437,19 +436,19 @@ def main():
 
     # exit()
 
-    # Handle HSM download
-    latest_hsm = get_latest_hsm_release(data)
-    print(f"Latest HSM version: {latest_hsm['release']}")
-    download_and_extract_hsm(latest_hsm['url'])
-    print("HSM download and extraction completed")
-
-    # Handle Sphere download
+    # Azure Sphere core
     latest_sphere = get_latest_sphere_release(data)
     print(f"\nLatest Sphere version: {latest_sphere['release']}")
     download_and_extract_sphere(latest_sphere['url'])
     print("Sphere download and extraction completed")
 
-    # Get latest Edge release
+    # Azure Cloud HSM e2etests
+    latest_hsm = get_latest_hsm_release(data)
+    print(f"Latest HSM version: {latest_hsm['release']}")
+    download_and_extract_hsm(latest_hsm['url'])
+    print("HSM download and extraction completed")
+
+    # Microsoft Edge for Windows
     latest_edge = get_latest_edge_release(data)
     print(f"Latest Edge version: {latest_edge['release']}")
 
