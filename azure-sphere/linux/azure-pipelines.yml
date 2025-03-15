@@ -1,0 +1,38 @@
+name: $(date:yyyyMMdd)$(rev:.rr)-$(BuildID)
+resources:
+  repositories:
+  - repository: self
+    clean: false
+  - repository: azsphere-os-sdk-metadata
+    clean: true
+    name: azsphere-os-sdk-metadata
+    type: git
+    ref: refs/heads/main
+  - repository: az-sphere-coverity
+    name: az-sphere-coverity
+    type: git
+    ref: refs/heads/main
+variables:
+  skipComponentGovernanceDetection: 'true'
+jobs:
+- job: MainBuild
+  displayName: 'Main build'
+  cancelTimeoutInMinutes: 1
+  pool:
+    name: AZS-1ES-L-MMS-ubuntu-20.04
+  steps:
+  - checkout: self
+    clean: false
+  - checkout: azsphere-os-sdk-metadata
+  - bash: |
+     chmod u+x $(Build.SourcesDirectory)/azsphere-os-sdk-metadata/install.sh
+     $(Build.SourcesDirectory)/azsphere-os-sdk-metadata/install.sh -y -d $(Build.ArtifactStagingDirectory)/os-sdk -u -i mt3620
+    displayName: 'Install OS SDK'
+    env:
+      SYSTEM_ACCESSTOKEN: $(System.AccessToken)
+  - bash: |
+      source $(Build.ArtifactStagingDirectory)/os-sdk/setup-env.sh && os build compile --verbose
+    displayName: Compile
+    workingDirectory: $(Build.SourcesDirectory)/$(Build.Repository.Name)  
+
+- template: templates/linux_kernel/pr-gate-scan-ext-linux-template.yml@az-sphere-coverity  # run Coverity PR gate

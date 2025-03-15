@@ -1,0 +1,20 @@
+config SECURITY_AZURE_SPHERE
+	bool "Azure Sphere LSM support"
+	depends on SECURITY
+	default n
+	help
+	  This enables the Azure Sphere LSM.
+
+config AZURE_SPHERE_MMAP_EXEC_PROTECTION
+	bool "Azure Sphere mmap protection"
+	depends on SECURITY_AZURE_SPHERE
+	default y
+	help
+		This enables memory protections to protect writable pages from being made executable
+
+config AZURE_SPHERE_ATTR
+	bool "Azure Sphere application attributes"
+	depends on SECURITY_AZURE_SPHERE
+	default n
+	help
+		This enables additional per application attributes via /proc/self/attr/azure_sphere

@@ -1,0 +1,90 @@
+#
+# scc v0.8
+# processed: Fri 29 Mar 2024 05:48:05 PM UTC
+#
+# This is a scc output file, do not edit
+#
+# _reloc_dir /mnt/vss/_work/1/b/out/OSS-archive/out/work/blanca-poky-linux-musleabi/linux-yocto-exp23/5.10.135+gitAUTOINC+4541b4e13b_bff94ec84b-r0.1
+# _mark blanca-tiny.scc start
+# _define KMACHINE 'blanca'
+# _define KTYPE 'tiny'
+# _define KARCH 'arm'
+# _mark common.scc start
+kconf /mnt/vss/_work/1/b/out/OSS-archive/out/work/blanca-poky-linux-musleabi/linux-yocto-exp23/5.10.135+gitAUTOINC+4541b4e13b_bff94ec84b-r0.1/az-sphere-kernel-meta/cfg/azure-sphere/azsp_defconfig.cfg # non-hardware
+kconf /mnt/vss/_work/1/b/out/OSS-archive/out/work/blanca-poky-linux-musleabi/linux-yocto-exp23/5.10.135+gitAUTOINC+4541b4e13b_bff94ec84b-r0.1/az-sphere-kernel-meta/cfg/azure-sphere/exp23.cfg # non-hardware
+kconf /mnt/vss/_work/1/b/out/OSS-archive/out/work/blanca-poky-linux-musleabi/linux-yocto-exp23/5.10.135+gitAUTOINC+4541b4e13b_bff94ec84b-r0.1/az-sphere-kernel-meta/bsp/azure-sphere-common/crypto.cfg # non-hardware
+kconf /mnt/vss/_work/1/b/out/OSS-archive/out/work/blanca-poky-linux-musleabi/linux-yocto-exp23/5.10.135+gitAUTOINC+4541b4e13b_bff94ec84b-r0.1/az-sphere-kernel-meta/cfg/net/net.cfg # non-hardware
+kconf /mnt/vss/_work/1/b/out/OSS-archive/out/work/blanca-poky-linux-musleabi/linux-yocto-exp23/5.10.135+gitAUTOINC+4541b4e13b_bff94ec84b-r0.1/az-sphere-kernel-meta/features/xip/xip.cfg # non-hardware
+kconf /mnt/vss/_work/1/b/out/OSS-archive/out/work/blanca-poky-linux-musleabi/linux-yocto-exp23/5.10.135+gitAUTOINC+4541b4e13b_bff94ec84b-r0.1/az-sphere-kernel-meta/features/power/powermgmt.cfg # non-hardware
+kconf /mnt/vss/_work/1/b/out/OSS-archive/out/work/blanca-poky-linux-musleabi/linux-yocto-exp23/5.10.135+gitAUTOINC+4541b4e13b_bff94ec84b-r0.1/az-sphere-kernel-meta/features/slip/slip.cfg # non-hardware
+kconf /mnt/vss/_work/1/b/out/OSS-archive/out/work/blanca-poky-linux-musleabi/linux-yocto-exp23/5.10.135+gitAUTOINC+4541b4e13b_bff94ec84b-r0.1/az-sphere-kernel-meta/features/cgroups/cgroups.cfg # non-hardware
+kconf /mnt/vss/_work/1/b/out/OSS-archive/out/work/blanca-poky-linux-musleabi/linux-yocto-exp23/5.10.135+gitAUTOINC+4541b4e13b_bff94ec84b-r0.1/az-sphere-kernel-meta/features/security/security.cfg # non-hardware
+kconf /mnt/vss/_work/1/b/out/OSS-archive/out/work/blanca-poky-linux-musleabi/linux-yocto-exp23/5.10.135+gitAUTOINC+4541b4e13b_bff94ec84b-r0.1/az-sphere-kernel-meta/cfg/vtconsole.cfg # non-hardware
+kconf /mnt/vss/_work/1/b/out/OSS-archive/out/work/blanca-poky-linux-musleabi/linux-yocto-exp23/5.10.135+gitAUTOINC+4541b4e13b_bff94ec84b-r0.1/az-sphere-kernel-meta/cfg/memory/memory.cfg # non-hardware
+kconf /mnt/vss/_work/1/b/out/OSS-archive/out/work/blanca-poky-linux-musleabi/linux-yocto-exp23/5.10.135+gitAUTOINC+4541b4e13b_bff94ec84b-r0.1/az-sphere-kernel-meta/bsp/azure-sphere-common/blockdev.cfg # non-hardware
+kconf /mnt/vss/_work/1/b/out/OSS-archive/out/work/blanca-poky-linux-musleabi/linux-yocto-exp23/5.10.135+gitAUTOINC+4541b4e13b_bff94ec84b-r0.1/az-sphere-kernel-meta/cfg/azure-sphere/exp23-sk.cfg # non-hardware
+kconf /mnt/vss/_work/1/b/out/OSS-archive/out/work/blanca-poky-linux-musleabi/linux-yocto-exp23/5.10.135+gitAUTOINC+4541b4e13b_bff94ec84b-r0.1/az-sphere-kernel-meta/cfg/debug/logging.cfg # non-hardware
+kconf /mnt/vss/_work/1/b/out/OSS-archive/out/work/blanca-poky-linux-musleabi/linux-yocto-exp23/5.10.135+gitAUTOINC+4541b4e13b_bff94ec84b-r0.1/az-sphere-kernel-meta/cfg/fs/fs.cfg # non-hardware
+kconf /mnt/vss/_work/1/b/out/OSS-archive/out/work/blanca-poky-linux-musleabi/linux-yocto-exp23/5.10.135+gitAUTOINC+4541b4e13b_bff94ec84b-r0.1/az-sphere-kernel-meta/features/netfilter/netfilter.cfg # non-hardware
+kconf /mnt/vss/_work/1/b/out/OSS-archive/out/work/blanca-poky-linux-musleabi/linux-yocto-exp23/5.10.135+gitAUTOINC+4541b4e13b_bff94ec84b-r0.1/az-sphere-kernel-meta/features/power/reset.cfg # non-hardware
+# _mark common.scc end
+# _mark blanca.scc start
+# _mark ethernet.scc start
+# _mark net.scc start
+kconf /mnt/vss/_work/1/b/out/OSS-archive/out/work/blanca-poky-linux-musleabi/linux-yocto-exp23/5.10.135+gitAUTOINC+4541b4e13b_bff94ec84b-r0.1/az-sphere-kernel-meta/features/net/net.cfg # non-hardware
+# _mark tcpip.scc start
+kconf /mnt/vss/_work/1/b/out/OSS-archive/out/work/blanca-poky-linux-musleabi/linux-yocto-exp23/5.10.135+gitAUTOINC+4541b4e13b_bff94ec84b-r0.1/az-sphere-kernel-meta/features/net/tcpip.cfg # non-hardware
+# _mark tcpip.scc end
+# _mark net.scc end
+kconf /mnt/vss/_work/1/b/out/OSS-archive/out/work/blanca-poky-linux-musleabi/linux-yocto-exp23/5.10.135+gitAUTOINC+4541b4e13b_bff94ec84b-r0.1/az-sphere-kernel-meta/features/net/ethernet.cfg # non-hardware
+# _mark ethernet.scc end
+# _mark iio.scc start
+# _define KFEATURE_DESCRIPTION 'Enable support for Industrial IO'
+# _define KFEATURE_COMPATIBILITY 'all'
+kconf /mnt/vss/_work/1/b/out/OSS-archive/out/work/blanca-poky-linux-musleabi/linux-yocto-exp23/5.10.135+gitAUTOINC+4541b4e13b_bff94ec84b-r0.1/az-sphere-kernel-meta/features/iio/iio.cfg # hardware
+# _mark iio.scc end
+# _mark gpio.scc start
+kconf /mnt/vss/_work/1/b/out/OSS-archive/out/work/blanca-poky-linux-musleabi/linux-yocto-exp23/5.10.135+gitAUTOINC+4541b4e13b_bff94ec84b-r0.1/az-sphere-kernel-meta/features/gpio/gpiolib.cfg # hardware
+# _mark gpio.scc end
+# _mark i2c.scc start
+kconf /mnt/vss/_work/1/b/out/OSS-archive/out/work/blanca-poky-linux-musleabi/linux-yocto-exp23/5.10.135+gitAUTOINC+4541b4e13b_bff94ec84b-r0.1/az-sphere-kernel-meta/features/i2c/i2c.cfg # hardware
+# _mark i2c.scc end
+# _mark spi.scc start
+kconf /mnt/vss/_work/1/b/out/OSS-archive/out/work/blanca-poky-linux-musleabi/linux-yocto-exp23/5.10.135+gitAUTOINC+4541b4e13b_bff94ec84b-r0.1/az-sphere-kernel-meta/features/spi/spi.cfg # hardware
+# _mark spi.scc end
+# _mark pwm.scc start
+# _define KFEATURE_DESCRIPTION 'Enable PWM Master'
+# _define KFEATURE_COMPATIBILITY 'board'
+kconf /mnt/vss/_work/1/b/out/OSS-archive/out/work/blanca-poky-linux-musleabi/linux-yocto-exp23/5.10.135+gitAUTOINC+4541b4e13b_bff94ec84b-r0.1/az-sphere-kernel-meta/features/pwm/pwm.cfg # hardware
+# _mark pwm.scc end
+# _mark serial.scc start
+kconf /mnt/vss/_work/1/b/out/OSS-archive/out/work/blanca-poky-linux-musleabi/linux-yocto-exp23/5.10.135+gitAUTOINC+4541b4e13b_bff94ec84b-r0.1/az-sphere-kernel-meta/features/serial/serial.cfg # hardware
+# _mark serial.scc end
+# _mark 8250.scc start
+kconf /mnt/vss/_work/1/b/out/OSS-archive/out/work/blanca-poky-linux-musleabi/linux-yocto-exp23/5.10.135+gitAUTOINC+4541b4e13b_bff94ec84b-r0.1/az-sphere-kernel-meta/features/serial/8250.cfg # hardware
+# _mark 8250.scc end
+# _mark wlan.scc start
+# _mark net.scc start
+kconf /mnt/vss/_work/1/b/out/OSS-archive/out/work/blanca-poky-linux-musleabi/linux-yocto-exp23/5.10.135+gitAUTOINC+4541b4e13b_bff94ec84b-r0.1/az-sphere-kernel-meta/features/net/net.cfg # non-hardware
+# _mark tcpip.scc start
+kconf /mnt/vss/_work/1/b/out/OSS-archive/out/work/blanca-poky-linux-musleabi/linux-yocto-exp23/5.10.135+gitAUTOINC+4541b4e13b_bff94ec84b-r0.1/az-sphere-kernel-meta/features/net/tcpip.cfg # non-hardware
+# _mark tcpip.scc end
+# _mark net.scc end
+kconf /mnt/vss/_work/1/b/out/OSS-archive/out/work/blanca-poky-linux-musleabi/linux-yocto-exp23/5.10.135+gitAUTOINC+4541b4e13b_bff94ec84b-r0.1/az-sphere-kernel-meta/features/net/wlan.cfg # non-hardware
+# _mark wlan.scc end
+kconf /mnt/vss/_work/1/b/out/OSS-archive/out/work/blanca-poky-linux-musleabi/linux-yocto-exp23/5.10.135+gitAUTOINC+4541b4e13b_bff94ec84b-r0.1/az-sphere-kernel-meta/cfg/debug/prod_debug_settings.cfg # non-hardware
+kconf /mnt/vss/_work/1/b/out/OSS-archive/out/work/blanca-poky-linux-musleabi/linux-yocto-exp23/5.10.135+gitAUTOINC+4541b4e13b_bff94ec84b-r0.1/az-sphere-kernel-meta/bsp/blanca/arch.cfg # hardware
+kconf /mnt/vss/_work/1/b/out/OSS-archive/out/work/blanca-poky-linux-musleabi/linux-yocto-exp23/5.10.135+gitAUTOINC+4541b4e13b_bff94ec84b-r0.1/az-sphere-kernel-meta/bsp/blanca/addrmap.cfg # hardware
+kconf /mnt/vss/_work/1/b/out/OSS-archive/out/work/blanca-poky-linux-musleabi/linux-yocto-exp23/5.10.135+gitAUTOINC+4541b4e13b_bff94ec84b-r0.1/az-sphere-kernel-meta/bsp/blanca/dma.cfg # hardware
+kconf /mnt/vss/_work/1/b/out/OSS-archive/out/work/blanca-poky-linux-musleabi/linux-yocto-exp23/5.10.135+gitAUTOINC+4541b4e13b_bff94ec84b-r0.1/az-sphere-kernel-meta/bsp/blanca/ethernet.cfg # hardware
+kconf /mnt/vss/_work/1/b/out/OSS-archive/out/work/blanca-poky-linux-musleabi/linux-yocto-exp23/5.10.135+gitAUTOINC+4541b4e13b_bff94ec84b-r0.1/az-sphere-kernel-meta/bsp/blanca/adc.cfg # hardware
+kconf /mnt/vss/_work/1/b/out/OSS-archive/out/work/blanca-poky-linux-musleabi/linux-yocto-exp23/5.10.135+gitAUTOINC+4541b4e13b_bff94ec84b-r0.1/az-sphere-kernel-meta/bsp/blanca/spi.cfg # hardware
+kconf /mnt/vss/_work/1/b/out/OSS-archive/out/work/blanca-poky-linux-musleabi/linux-yocto-exp23/5.10.135+gitAUTOINC+4541b4e13b_bff94ec84b-r0.1/az-sphere-kernel-meta/bsp/blanca/i2c.cfg # hardware
+kconf /mnt/vss/_work/1/b/out/OSS-archive/out/work/blanca-poky-linux-musleabi/linux-yocto-exp23/5.10.135+gitAUTOINC+4541b4e13b_bff94ec84b-r0.1/az-sphere-kernel-meta/bsp/blanca/pwm.cfg # hardware
+kconf /mnt/vss/_work/1/b/out/OSS-archive/out/work/blanca-poky-linux-musleabi/linux-yocto-exp23/5.10.135+gitAUTOINC+4541b4e13b_bff94ec84b-r0.1/az-sphere-kernel-meta/bsp/blanca/gpio.cfg # hardware
+kconf /mnt/vss/_work/1/b/out/OSS-archive/out/work/blanca-poky-linux-musleabi/linux-yocto-exp23/5.10.135+gitAUTOINC+4541b4e13b_bff94ec84b-r0.1/az-sphere-kernel-meta/bsp/blanca/uart.cfg # hardware
+kconf /mnt/vss/_work/1/b/out/OSS-archive/out/work/blanca-poky-linux-musleabi/linux-yocto-exp23/5.10.135+gitAUTOINC+4541b4e13b_bff94ec84b-r0.1/az-sphere-kernel-meta/bsp/blanca/mailbox.cfg # non-hardware
+kconf /mnt/vss/_work/1/b/out/OSS-archive/out/work/blanca-poky-linux-musleabi/linux-yocto-exp23/5.10.135+gitAUTOINC+4541b4e13b_bff94ec84b-r0.1/az-sphere-kernel-meta/bsp/blanca/rtc.cfg # non-hardware
+kconf /mnt/vss/_work/1/b/out/OSS-archive/out/work/blanca-poky-linux-musleabi/linux-yocto-exp23/5.10.135+gitAUTOINC+4541b4e13b_bff94ec84b-r0.1/az-sphere-kernel-meta/bsp/blanca/wifi.cfg # hardware
+# _mark blanca.scc end
+# _mark blanca-tiny.scc end

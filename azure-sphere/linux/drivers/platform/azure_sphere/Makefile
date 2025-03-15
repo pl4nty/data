@@ -1,0 +1,20 @@
+obj-$(CONFIG_AZURE_SPHERE_SECURITY_MONITOR)	+= attestation_runtime_operations.o
+obj-$(CONFIG_AZURE_SPHERE_SECURITY_MONITOR)	+= caller_security.o
+obj-$(CONFIG_AZURE_SPHERE_SECURITY_MONITOR)	+= mount_app.o
+obj-$(CONFIG_AZURE_SPHERE_SECURITY_MONITOR)	+= pluton.o
+obj-$(CONFIG_AZURE_SPHERE_SECURITY_MONITOR)	+= reconfig.o
+obj-$(CONFIG_AZURE_SPHERE_SECURITY_MONITOR)	+= rt_core_comm.o
+obj-$(CONFIG_AZURE_SPHERE_SECURITY_MONITOR)	+= sm_generic.o
+obj-$(CONFIG_AZURE_SPHERE_SECURITY_MONITOR)	+= sm_user.o
+obj-$(CONFIG_AZURE_SPHERE_SECURITY_MONITOR)	+= watchdog.o
+obj-$(CONFIG_AZURE_SPHERE_SECURITY_MONITOR)	+= security_monitor.o
+obj-$(CONFIG_AZURE_SPHERE_SECURITY_MONITOR)	+= syscall.o
+obj-$(CONFIG_AZURE_SPHERE_RESET)            += azsphere_reset.o
+obj-$(CONFIG_NULL_CONSOLE)                  += null_console.o
+obj-$(CONFIG_COREDUMP)                      += coredump.o
+
+obj-$(CONFIG_MT3620_PLUTON)                 += mt3620_pluton.o
+obj-$(CONFIG_MT3620_RT_CORE_COMM)			+= mt3620_rt_core_comm.o
+obj-$(CONFIG_CONUNDRUM_PLUTON)              += conundrum_pluton.o
+obj-$(CONFIG_PLUTON_OVER_MAILBOX)           += pluton_over_mailbox.o
+obj-$(CONFIG_PLUTON_REMOTEAPI)              += pluton_remoteapi.o

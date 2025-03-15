@@ -1,0 +1,7 @@
+name: Linux Kernel
+description:
+  Linux Kernel with Azure Sphere extensions
+targets:
+  - hlos-linux
+build-type: kbuild
+id: linux-kernel

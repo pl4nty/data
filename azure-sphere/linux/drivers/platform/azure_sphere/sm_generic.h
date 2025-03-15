@@ -1,0 +1,1 @@
+int security_monitor_smapi_command(void __user *arg, bool allow_kernel);

@@ -1,0 +1,81 @@
+menuconfig AZURE_SPHERE
+    bool "Azure Sphere platform support"
+    depends on ARM
+
+if AZURE_SPHERE
+
+config NULL_CONSOLE
+	bool "Null console device"
+	help
+	  Null console device that enables running without 
+	  serial or VT subsystems
+
+config AZURE_SPHERE_SECURITY_MONITOR
+	bool "Azure Sphere Security Monitor support"
+    depends on CPU_V7VE
+	help
+	  Security Monitor driver for Azure Sphere.
+
+config AZURE_SPHERE_SECURITY_MONITOR_DEBUG
+	bool "Azure Sphere Security Monitor debug output"
+	depends on AZURE_SPHERE_SECURITY_MONITOR
+	help
+	  Security Monitor driver debug output.
+
+config MT3620_PLUTON
+	tristate "MT3620 Pluton transport"
+	select MAILBOX
+	select MT3620_MAILBOX
+	depends on PLUTON_REMOTEAPI
+	help
+		MT3620 Pluton RemoteAPI support
+
+config CONUNDRUM_PLUTON
+	tristate "Mt Conundrum Pluton transport"
+	select MAILBOX
+	select CONUNDRUM_MAILBOX
+	depends on PLUTON_REMOTEAPI
+	help
+		Conundrum Pluton RemoteAPI support
+		
+config PLUTON_OVER_MAILBOX
+	bool "Pluton transport driver using two mailbox channels"
+	select MAILBOX
+	help
+	  Generic Pluton transport driver using separate TX and RX mailbox channels
+
+config PLUTON_MAILBOX_DEBUG
+	bool "Pluton mailbox debug logging"
+	depends on PLUTON_OVER_MAILBOX
+	help
+	  Debug logging for Pluton driver
+
+config PLUTON_REMOTEAPI
+	tristate "Pluton RemoteAPI support"
+	help
+	  Support for communicating with Pluton
+
+config PLUTON_REMOTEAPI_DEBUG
+	bool "Pluton RemoteAPI debug logging"
+	depends on PLUTON_REMOTEAPI
+	help
+	  Debug logging for Pluton RemoteAPI driver
+
+config AZURE_SPHERE_ASLR_PMD_ALIGN
+	bool "Align ASLR to L2 page middle directory"
+	help
+		Modify ASLR to align to L2 page middle directory to save on memory footprint
+
+config MT3620_RT_CORE_COMM
+	tristate "MT3620 Real time core communication support"
+	depends on AZSPIO
+	depends on AZURE_SPHERE_SECURITY_MONITOR
+	help
+	  MT3620 Support for communicating with RT Cores
+
+config AZURE_SPHERE_RESET
+	bool "AZSPHERE power-off and reset driver"
+	help
+	  Power off and reset support for AZSPHERE. 
+
+endif # AZURE_SPHERE

@@ -1,0 +1,28 @@
+#
+# Overview
+# 
+# This file describes the repository registration in Product Catalog and 
+# Service Tree, where services in Service Tree appear as Products in Product 
+# Catalog. Any manual changes to repository registration in Product Catalog
+# will be overwritten by the information in this file.
+# 
+
+#
+# Syntax
+#
+# This file should be valid YAML. There are two expected fields, "Services" and
+# "Classification".
+# 
+# "Services" indicates to which Service Tree entry the repository 
+# belongs. If a repository belongs to multiple Service Tree entries, then the 
+# value should be a YAML array such as ["product 1", "product 2"]
+# 
+# Classification indicates whether the repository is Production or Non-Production.
+# Production means that the loss of the repository would cause some kind of work
+# stoppage, so most repositories should be classified as Production. This field
+# should only contain one value, regardless of the number of associated Service
+# Tree entries. 
+#
+
+Services: Azure Sphere Gen1
+Classification: Production
