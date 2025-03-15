@@ -14,7 +14,7 @@ jobs:
     strategy:
       matrix:
         cmd:
-          - python microsoft_3rdpartysource.py
+          - python -u microsoft_3rdpartysource.py
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5.4.0
