@@ -92,6 +92,19 @@ def get_latest_sphere_linux_release(data):
     return max(linux_releases, key=lambda x: parse_version(x['release']))
 
 
+def get_latest_electron_release(data):
+    electron_releases = [
+        item for item in data
+        if item['product'] == 'Microsoft Electron'
+        and item['platform'] == 'Windows'
+    ]
+
+    def parse_electron_version(ver_str):
+        base_version = ver_str.split('@')[0]
+        return version.parse(base_version)
+    return max(electron_releases, key=lambda x: parse_electron_version(x['release']))
+
+
 def read_local_json(filename):
     try:
         with open(filename, 'r') as f:
@@ -185,12 +198,12 @@ def find_zip_in_output(out_sas_url):
 
 def should_extract_file(filename):
     """Determine if a file should be extracted based on patterns"""
-    # Check for features.h files
-    if filename.endswith('features.h'):
-        return True
-
     # Check for specific tool directories
     tool_patterns = [
+        # Electron
+        'src/microsoft/',
+
+        # Edge
         'src/tools/win/msedgede/',
         'src/tools/win/msedgejs/',
         'src/tools/win/process_viewer/'
@@ -208,6 +221,11 @@ def download_zip_contents(zip_handle, exclude_paths=None, output_dir='msedge'):
         # First check if it's in excluded paths
         if any(filename.startswith(p) for p in exclude_paths):
             return False
+        
+        # Check for Edge features.h files
+        if output_dir == 'msedge' and filename.endswith('features.h'):
+            return True
+        
         # Then check if it matches our extraction patterns
         return should_extract_file(filename)
 
@@ -421,10 +439,10 @@ def download_and_extract_sphere_linux(url, output_dir='azure-sphere/linux'):
                     relative_path = '/'.join(parts)
                     if should_extract_linux_file(relative_path, include_patterns):
                         tar.extract(member, output_path)
-                        
+
 
 def main():
-    # latest_linux = {'url': 'https://3rdpartycodeprod.blob.core.windows.net/download/Azure%20Sphere/24.03/Linux%20kernel.zip?sv=2021-12-02&st=2025-03-15T05%3A36%3A11Z&se=2025-03-15T07%3A16%3A11Z&sr=b&sp=r&sig=N%2B%2BPcB0%2FGqFR0mV3u78ER294y1%2BifcTesKS7yYAJ66k%3D'}
+    # latest_electron = {'url': 'https://3rdpartycodeprod.blob.core.windows.net/download/Microsoft%20Electron/35.0.1%40e2f3b486/Windows/microsoft-electron-v35.0.1-e2f3b48605f133115358cb59af57f202687665ed-windows.zip?sv=2021-12-02&st=2025-03-15T12%3A40%3A43Z&se=2025-03-15T14%3A20%3A43Z&sr=b&sp=r&sig=oSLunjT3k2shNeBIJjEYsLCe6lz7Se%2BGQ4uUqG4B4lE%3D'}
     data = get_3rdparty_data()
     save_json(data, 'microsoft_3rdpartysource.json')
 
@@ -433,8 +451,6 @@ def main():
     print(f"\nLatest Sphere Linux version: {latest_linux['release']}")
     download_and_extract_sphere_linux(latest_linux['url'])
     print("Linux kernel extraction completed")
-
-    # exit()
 
     # Azure Sphere core
     latest_sphere = get_latest_sphere_release(data)
@@ -448,25 +464,56 @@ def main():
     download_and_extract_hsm(latest_hsm['url'])
     print("HSM download and extraction completed")
 
-    # Microsoft Edge for Windows
-    latest_edge = get_latest_edge_release(data)
-    print(f"Latest Edge version: {latest_edge['release']}")
-
-    # Get destination SAS URL from environment
+    # unzip service using blobs and function trigger
     dest_sas_url = os.getenv('AZURE_STORAGE_IN')
     if not dest_sas_url:
         raise ValueError(
             "AZURE_STORAGE_IN environment variable not set")
+    out_sas_url = os.getenv('AZURE_STORAGE_OUT')
+    if not out_sas_url:
+        raise ValueError("AZURE_STORAGE_OUT environment variable not set")
+    
+    # Microsoft Electron for Windows
+    # zip isn't nested so we write straight to output
+    latest_electron = get_latest_electron_release(data)
+    print(f"Latest Electron version: {latest_electron['release']}")
+    source_url_electron = latest_electron['url']
+    success_electron = copy_to_azure_storage(source_url_electron, out_sas_url)
+    print(
+        f"Copy operation for Electron {'succeeded' if success_electron else 'failed'}")
+    zip_url = find_zip_in_output(out_sas_url)
 
-    # Perform server-side copy
+    # Microsoft Edge for Windows
+    latest_edge = get_latest_edge_release(data)
+    print(f"Latest Edge version: {latest_edge['release']}")
     source_url = latest_edge['url']
     success = copy_to_azure_storage(source_url, dest_sas_url)
     print(f"Copy operation {'succeeded' if success else 'failed'}")
 
-    # Wait for unzip completion
-    out_sas_url = os.getenv('AZURE_STORAGE_OUT')
-    if not out_sas_url:
-        raise ValueError("AZURE_STORAGE_OUT environment variable not set")
+    try:
+        # Process ZIP contents
+        print(f"\nProcessing ZIP: {zip_url}")
+        with RemoteZip(zip_url, support_suffix_range=False) as zip:
+            shutil.rmtree('mselectron', ignore_errors=True)
+            os.makedirs('mselectron', exist_ok=True)
+
+            # Extract metadata and files
+            metadata = extract_third_party_metadata(zip)
+            with open('mselectron/third_party.json', 'w') as f:
+                json.dump(metadata, f, indent=2)
+            print(f"Saved metadata for {len(metadata)} third_party components")
+
+            print("\nDownloading files...")
+            download_zip_contents(zip, exclude_paths=['src/third_party'], output_dir='mselectron')
+
+        # Delete output ZIPs after successful processing
+        if delete_blob(zip_url):
+            print("Deleted output ZIPs after processing")
+
+    except Exception as e:
+        print(f"Error during ZIP processing: {e}")
+
+    # exit()
 
     print("Waiting for unzip operation to complete...")
     if wait_for_unzip(out_sas_url):
