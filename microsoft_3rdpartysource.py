@@ -474,16 +474,13 @@ def main():
         raise ValueError("AZURE_STORAGE_OUT environment variable not set")
     
     # Microsoft Electron for Windows
-    # zip isn't nested so we write straight to output
+    # zip isn't nested so we carve directly. pretty slow from Aus but fast on GHA
     latest_electron = get_latest_electron_release(data)
     print(f"Latest Electron version: {latest_electron['release']}")
-    source_url_electron = latest_electron['url']
-    success_electron = copy_to_azure_storage(source_url_electron, out_sas_url)
-    print(
-        f"Copy operation for Electron {'succeeded' if success_electron else 'failed'}")
-    zip_url = find_zip_in_output(out_sas_url)
+    zip_url = latest_electron['url']
 
     # Microsoft Edge for Windows
+    # start extraction while Electron is processing
     latest_edge = get_latest_edge_release(data)
     print(f"Latest Edge version: {latest_edge['release']}")
     source_url = latest_edge['url']
