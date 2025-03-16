@@ -6,6 +6,8 @@ import shutil
 import concurrent.futures
 
 MODULES = [
+    'AzureADHybridAuthenticationManagement',
+    'AzureADKerberosTest',
     'DellBIOSProvider',
     'ExchangeOnlineManagement',
     'MicrosoftTeams',
