@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>DellBIOSProvider</id>
+    <version>2.9.0</version>
+    <authors>Dell BizClient Team</authors>
+    <owners>Dell Inc.</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <licenseUrl>http://en.community.dell.com/techcenter/enterprise-client/w/wiki/6901.dell-command-powershell-provider</licenseUrl>
+    <projectUrl>http://en.community.dell.com/techcenter/enterprise-client/w/wiki/6901.dell-command-powershell-provider</projectUrl>
+    <description>The 'Dell Command | PowerShell Provider' provides native configuration capability of Dell Optiplex, Latitude, Precision, XPS Notebook and Venue 11 systems within PowerShell.</description>
+    <releaseNotes>http://en.community.dell.com/techcenter/enterprise-client/w/wiki/6901.dell-command-powershell-provider</releaseNotes>
+    <copyright>Copyright 2015 - 2024 Dell Inc. All rights reserved.</copyright>
+    <tags>Dell Command BIOS System Configuration Management Provider PSModule PSIncludes_Function PSFunction_Set-Dell1stBootdevice PSFunction_Get-DellBiosSettings PSFunction_Clear-DellAdminPassword PSFunction_Set-DellAutoOnForSelectDays PSCommand_Set-Dell1stBootdevice PSCommand_Get-DellBiosSettings PSCommand_Clear-DellAdminPassword PSCommand_Set-DellAutoOnForSelectDays PSIncludes_DscResource PSDscResource_AdvancedBootOptions PSDscResource_AdvancedConfigurations PSDscResource_BIOSSetupAdvancedMode PSDscResource_BootSequence PSDscResource_IntelSoftwareGuardExtensions PSDscResource_Maintenance PSDscResource_Manageability PSDscResource_MiscellaneousDevices PSDscResource_Performance PSDscResource_POSTBehavior PSDscResource_PowerManagement PSDscResource_SecureBoot PSDscResource_Security PSDscResource_StealthModeControl PSDscResource_SupportAssistSystemResolution PSDscResource_SystemConfiguration PSDscResource_SystemLogs PSDscResource_TPMSecurity PSDscResource_USBConfiguration PSDscResource_Video PSDscResource_VirtualizationSupport PSDscResource_Wireless</tags>
+  </metadata>
+</package>

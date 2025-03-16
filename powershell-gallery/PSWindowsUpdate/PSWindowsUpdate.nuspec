@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>PSWindowsUpdate</id>
+    <version>2.2.1.5</version>
+    <authors>Michal Gajda</authors>
+    <owners>Michal Gajda</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <licenseUrl>https://github.com/mgajda83/PSWindowsUpdate/blob/main/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/mgajda83/PSWindowsUpdate</projectUrl>
+    <description>This module contain cmdlets to manage Windows Update Client.</description>
+    <releaseNotes>v2.2.1  - Set-WUSettings added params to control TargetRelease for control Feature Updates version and Windows Update for Business
+		- Fixed Remove-WindowsUpdate bug
+		- Fixed Get-WUHistory bug
+		- Fixed Get-WindowsUpdate sendreport bug
+		- Fixed Get-WindowsUpdate for Windows 11 H23H2 problem
+
+v2.2.0  - New cmdlet Reset-WUComponents, for reset Windows Updates components to default
+		- New cmdlet Get-WUOfflineMSU, for download offline msu package from microsoft Update Catalog
+
+v2.1.1  - Remove-WindowsUpdate added WU Api uninstallation mode
+		- Fixed bug with slow run cmdlets
+		- Added support for Office 365 users to send emails
+
+v2.1.0  - New cmdlet Set-PSWUSettings, for save PSWUSettings to xml file
+		- Param -SendReport can use smtp server credentials
+		- Install-WindowsUpdate added -RecurseCycle param, to install next updates after reboot
+		- Install-WindowsUpdate added new pre search criteria: DeploymentAction, IsAssigned, IsPresent, BrowseOnly and AutoSelectOnWebSites
+		- Change location of PSWindowsUpdate.log file to $Env:TEMP
+		- Fixed Get-WULastResults bugs
+		- Fixed Remove-WUServiceManager bugs
+
+v2.0.0 - Rewrite whole script module to binary module
+		
+Cmdlets maping for old module:
+v1.6.x                  =&gt; v2.0.x
+Add-WUOfflineSync       =&gt; Add-WUServiceManager
+Add-WUServiceManager    =&gt; Add-WUServiceManager
+-                       =&gt; Enable-WURemoting
+Get-WUHistory           =&gt; Get-WUHistory
+Get-WUList              =&gt; Get-WindowsUpdate
+Get-WUInstall           =&gt; Download-WindowsUpdate  (or Get-WindowsUpdate -Download)
+Get-WUInstall           =&gt; Install-WindowsUpdate   (or Get-WindowsUpdate -Install)
+Hide-WUUpdate           =&gt; Hide-WindowsUpdate      (or Get-WindowsUpdate -Hide)
+Get-WUInstallerStatus   =&gt; Get-WUInstallerStatus
+Get-WURebootStatus      =&gt; Get-WURebootStatus
+Get-WUServiceManager    =&gt; Get-WUServiceManager
+Get-WUUninstall         =&gt; Remove-WindowsUpdate
+Invoke-WUInstall        =&gt; Invoke-WUJob
+-                       =&gt; Get-WUJob
+Remove-WUOfflineSync    =&gt; Remove-WUServiceManager
+Remove-WUServiceManager =&gt; Remove-WUServiceManager
+Get-WUAPIVersion        =&gt; Get-WUAPIVersion
+Get-WULastResults       =&gt; Get-WULastResults
+Start-WUDetectNow       =&gt; -
+Start-WUService         =&gt; -
+Get-WUSettings          =&gt; Get-WUSettings
+Set-WUSettings          =&gt; Set-WUSettings
+Update-WUModule         =&gt; Update-WUModule</releaseNotes>
+    <copyright>(c) 2011-2024 Michal Gajda. All rights reserved.</copyright>
+    <tags>Microsoft Windows Update PSModule PSIncludes_Cmdlet PSCmdlet_Add-WUServiceManager PSCmdlet_Enable-WURemoting PSCmdlet_Get-WindowsUpdate PSCmdlet_Get-WUApiVersion PSCmdlet_Get-WUHistory PSCmdlet_Get-WUInstallerStatus PSCmdlet_Get-WUJob PSCmdlet_Get-WULastResults PSCmdlet_Get-WURebootStatus PSCmdlet_Get-WUServiceManager PSCmdlet_Get-WUSettings PSCmdlet_Invoke-WUJob PSCmdlet_Remove-WindowsUpdate PSCmdlet_Remove-WUServiceManager PSCmdlet_Set-WUSettings PSCmdlet_Update-WUModule PSCmdlet_Set-PSWUSettings PSCmdlet_Reset-WUComponents PSCmdlet_Get-WUOfflineMSU PSCommand_Add-WUServiceManager PSCommand_Enable-WURemoting PSCommand_Get-WindowsUpdate PSCommand_Get-WUApiVersion PSCommand_Get-WUHistory PSCommand_Get-WUInstallerStatus PSCommand_Get-WUJob PSCommand_Get-WULastResults PSCommand_Get-WURebootStatus PSCommand_Get-WUServiceManager PSCommand_Get-WUSettings PSCommand_Invoke-WUJob PSCommand_Remove-WindowsUpdate PSCommand_Remove-WUServiceManager PSCommand_Set-WUSettings PSCommand_Update-WUModule PSCommand_Set-PSWUSettings PSCommand_Reset-WUComponents PSCommand_Get-WUOfflineMSU PSCommand_Get-WUList PSCommand_Get-WUInstall PSCommand_Install-WindowsUpdate PSCommand_Download-WindowsUpdate PSCommand_Hide-WindowsUpdate PSCommand_UnHide-WindowsUpdate PSCommand_Show-WindowsUpdate PSCommand_Uninstall-WindowsUpdate PSCommand_Clear-WUJob</tags>
+  </metadata>
+</package>
