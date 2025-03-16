@@ -7,9 +7,7 @@ import concurrent.futures
 
 MODULES = [
     'MicrosoftTeams',
-    'CPC.DeployInfra',
     'DellBIOSProvider',
-    'PSWindowsUpdate'
 ]
 
 
@@ -54,7 +52,17 @@ def extract_module(content, module_name):
     os.makedirs(output_dir, exist_ok=True)
 
     with zipfile.ZipFile(io.BytesIO(content)) as zip_ref:
-        zip_ref.extractall(output_dir)
+        # Filter out unwanted paths
+        paths_to_extract = [
+            f for f in zip_ref.namelist()
+            if not (f.startswith('_rels/') or
+                    f.startswith('package/') or
+                    f.endswith('.nuspec') or
+                    f.endswith('[Content_Types].xml'))
+        ]
+        # Extract only wanted files
+        for file in paths_to_extract:
+            zip_ref.extract(file, output_dir)
 
     # Strip signatures from PowerShell files
     for root, _, files in os.walk(output_dir):
