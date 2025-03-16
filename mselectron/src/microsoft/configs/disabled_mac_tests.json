@@ -1,0 +1,26 @@
+[
+  "// According to @codebytere this is a problem in the tests, not prod,",
+  "// and it exists upstream too. Can be re-enabled when fixed upstream.",
+  "app module app.get/setLoginItemSettings API adds a login item that loads in hidden mode",
+  "app module app.get/setLoginItemSettings API correctly sets and unsets the LoginItem as hidden",
+  "app module app.get/setLoginItemSettings API correctly sets and unsets the LoginItem",
+  "app module app.get/setLoginItemSettings API sets and returns the app as a login item",
+  "app module app.get/setLoginItemSettings API using SMAppService can set a login item",
+  "app module app.get/setLoginItemSettings API using SMAppService can unset a login item",
+  "app module app.get/setLoginItemSettings API using SMAppService throws when getting non-default type with no name",
+
+  "// Disabled in i31 with root cause unknown; need to be investigated",
+  "navigator.clipboard.write returns an error when permission denied",
+  "navigator.clipboard.write returns clipboard contents when a PermissionRequestHandler is not defined",
+  "navigator.clipboard.write returns clipboard contents when permission is granted",
+  "session module DownloadItem session.downloadURL can perform a download",
+  "session module DownloadItem webContents.downloadURL can cancel download",
+  "session module DownloadItem webContents.downloadURL can download from custom protocols",
+  "session module DownloadItem webContents.downloadURL can generate a default filename",
+  "session module DownloadItem webContents.downloadURL can perform a download",
+  "session module DownloadItem webContents.downloadURL can set options for the save dialog",
+  "session module DownloadItem webContents.downloadURL when a save path is specified and the URL is unavailable does not display a save dialog and reports the done state as interrupted",
+  
+  "// Disabled due to focus failure when upgrading to v33.0.0-alpaha.4",
+  "navigator.clipboard.read returns an error when permission denied"
+]

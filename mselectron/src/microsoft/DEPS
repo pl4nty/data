@@ -1,0 +1,187 @@
+vars = {
+  # Internal repositories.
+  'microsoft_chromium_git': 'https://devdiv.visualstudio.com/DevDiv/_git/electron-chromium',
+  'microsoft_depot_tools_git': 'https://devdiv.visualstudio.com/DevDiv/_git/electron-depot-tools',
+  'microsoft_electron_git': 'https://devdiv.visualstudio.com/DevDiv/_git/electron-electron',
+  'microsoft_node_git': 'https://devdiv.visualstudio.com/DevDiv/_git/electron-node',
+  'microsoft_reclient_helper_git': 'https://devdiv.visualstudio.com/DevDiv/_git/electron-rbe-credential-helper',
+
+  # Electron checkout configuration.
+  # It should match the upstream and contents of the "gclient_gn_args" below.
+  'build_with_chromium': True,
+  'checkout_android': False,
+  'checkout_android_native_support': False,
+  'checkout_android_prebuilts_build_tools': False,
+  'checkout_clang_coverage_tools': False,
+  'checkout_clang_tidy': False,  # Doesn't match Electron.
+  'checkout_ios_webkit': False,
+  'checkout_nacl': False,
+  'checkout_openxr': False,
+  'checkout_pgo_profiles': True,
+  'checkout_src_internal': False,
+  'generate_location_tags': False,
+  'process_deps': True,
+  'sysroots_json_path': 'microsoft/build/sysroots.json',
+
+  # Internal checkout configuration.
+  'microsoft_check_electron_revision': True,
+  'microsoft_use_internal_chromium': True,
+  'microsoft_use_internal_node': True,
+
+  # Dependencies.
+  'microsoft_reclient_helper_revision': '6255a1f4ee45218ded7c2ccd9efecfa53d87893c',
+  # Chromium revision will be redefined in a gclient config because we use Chromium snapshots.
+  'microsoft_chromium_version': '134.0.6998.44',
+  'microsoft_depot_tools_revision': '37661eea7e53b6f72e4102ce3381c61c02ab5ba3',
+  'microsoft_electron_version': 'v35.0.1',
+  'microsoft_electron_revision': '079b2bbf970ecd15b43accad3589418a9cde983e',
+  'microsoft_node_version': 'v22.14.0',
+
+  # Override defaults of the Electron checkout.
+  'apply_patches': False,  # See comments below in the "hooks" section.
+  'checkout_chromium': 'not microsoft_use_internal_chromium',
+  'checkout_nan': False,
+  'checkout_node': 'not microsoft_use_internal_node',
+  'install_sysroot': False,
+}
+
+deps = {
+  'src': {
+    'url': Var('microsoft_chromium_git') + '@' + Var('microsoft_chromium_version'),
+    'condition': 'microsoft_use_internal_chromium',
+  },
+
+  'src/electron': {
+    'url': Var('microsoft_electron_git') + '@' + Var('microsoft_electron_revision'),
+  },
+
+  # We cannot easily use gclient's custom_deps, so we are going to checkout Node.js ourselves.
+  'src/third_party/electron_node': {
+    'url': Var('microsoft_node_git') + '@' + Var('microsoft_node_version'),
+    'condition': 'microsoft_use_internal_node',
+  },
+}
+
+hooks = [
+  {
+    'name': 'check_electron_revision',
+    'condition': 'microsoft_check_electron_revision',
+    'action': [
+      'python3',
+      'src/microsoft/scripts/electron_version.py',
+      '--validate',
+    ],
+  },
+  # When Microsoft-internal versions of Chromium and Node.js are used
+  # we have to make sure they match the Electron dependencies.
+  {
+    'name': 'check_chromium_version',
+    'condition': 'microsoft_use_internal_chromium',
+    'action': [
+      'python3',
+      'src/microsoft/scripts/chromium_version.py',
+      '--validate',
+    ],
+  },
+  {
+    'name': 'check_node_version',
+    'condition': 'microsoft_use_internal_node',
+    'action': [
+      'python3',
+      'src/microsoft/scripts/node_version.py',
+      '--validate',
+    ],
+  },
+
+  # Update the Windows toolchain if necessary.
+  {
+    # Case-insensitivity for the Win SDK. Must run before microsoft_win_toolchain below.
+    'name': 'ciopfs_linux',
+    'pattern': '.',
+    'condition': 'microsoft_use_internal_chromium and (checkout_win and host_os == "linux")',
+    'action': [ 'python3',
+                'src/third_party/depot_tools/download_from_google_storage.py',
+                '--no_resume',
+                '--no_auth',
+                '--bucket', 'chromium-browser-clang/ciopfs',
+                '-s', 'src/build/ciopfs.sha1',
+    ]
+  },
+  {
+    'name': 'microsoft_win_toolchain',
+    'pattern': '.',
+    'condition': 'checkout_win',
+    'action': [
+      'python3',
+      'src/microsoft/scripts/download_vs_toolchain.py',
+      '--install={microsoft_use_internal_chromium}',
+    ],
+  },
+
+  {
+    'name': 'import_patches',
+    'action': [
+      'python3',
+      'src/microsoft/scripts/import_patches.py'
+    ],
+  },
+
+  # Install Linux sysroots manually if we use a Chromium snapshot.
+  {
+    'name': 'sysroot_arm',
+    'pattern': '.',
+    'condition': '(microsoft_use_internal_chromium and checkout_linux) and checkout_arm',
+    'action': ['python3', 'src/build/linux/sysroot_scripts/install-sysroot.py',
+               '--sysroots-json-path=' + Var('sysroots_json_path'),
+               '--arch=arm'],
+  },
+  {
+    'name': 'sysroot_arm64',
+    'pattern': '.',
+    'condition': '(microsoft_use_internal_chromium and checkout_linux) and checkout_arm64',
+    'action': ['python3', 'src/build/linux/sysroot_scripts/install-sysroot.py',
+               '--sysroots-json-path=' + Var('sysroots_json_path'),
+               '--arch=arm64'],
+  },
+  {
+    'name': 'sysroot_x64',
+    'pattern': '.',
+    'condition': '(microsoft_use_internal_chromium and checkout_linux) and checkout_x64',
+    'action': ['python3', 'src/build/linux/sysroot_scripts/install-sysroot.py',
+               '--sysroots-json-path=' + Var('sysroots_json_path'),
+               '--arch=x64'],
+  },
+  {
+    'name': 'sysroot_x86',
+    'pattern': '.',
+    'condition': '(microsoft_use_internal_chromium and checkout_linux) and (checkout_x86 or checkout_x64)',
+    'action': ['python3', 'src/build/linux/sysroot_scripts/install-sysroot.py',
+               '--sysroots-json-path=' + Var('sysroots_json_path'),
+               '--arch=x86'],
+  },
+]
+
+recursedeps = [
+  'src/electron',
+]
+
+# The "gclient_args.gni" file is required by gn.
+# We can't use `gclient_gn_args_from` like Electron does
+# because when a Chromium snapshot is used Chromium's DEPS
+# are not available (the file is renamed).
+gclient_gn_args_file = 'src/build/config/gclient_args.gni'
+# It's a copy of the Chromium's `gclient_gn_args` from its DEPS
+# except "cros_*" ones, which are ChromeOS-specific.
+# https://chromium.googlesource.com/chromium/src/+/refs/tags/122.0.6261.18/DEPS
+gclient_gn_args = [
+  'build_with_chromium',
+  'checkout_android',
+  'checkout_android_prebuilts_build_tools',
+  'checkout_android_native_support',
+  'checkout_clang_coverage_tools',
+  'checkout_ios_webkit',
+  'checkout_nacl',
+  'checkout_openxr',
+  'checkout_src_internal',
+  'generate_location_tags',
+]

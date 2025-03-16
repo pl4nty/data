@@ -1,0 +1,172 @@
+﻿{
+  "$schema": "https://ev2schema.azure.net/schemas/2020-01-01/serviceModel.json",
+  "serviceMetadata": {
+    "serviceGroup": "Electron-Infra",
+    "environment": "Test"
+  },
+  "serviceResourceGroupDefinitions": [
+    {
+      "name": "ElectronPoolGroup",
+      "serviceResourceDefinitions": [
+        {
+          "name": "ElectronLinuxBuildPool",
+          "composedOf": {
+            "arm": {
+              "templatePath": "Templates\\Pool.Template.json",
+              "parametersPath": "Parameters\\LinuxBuildPool.Parameters.json"
+            }
+          }
+        },
+        {
+          "name": "ElectronWindowsARM64TestPool",
+          "composedOf": {
+            "arm": {
+              "templatePath": "Templates\\Pool.Template.json",
+              "parametersPath": "Parameters\\WindowsARM64TestPool.Parameters.json"
+            }
+          }
+        },
+        {
+          "name": "ElectronWindowsBuildPool",
+          "composedOf": {
+            "arm": {
+              "templatePath": "Templates\\Pool.Template.json",
+              "parametersPath": "Parameters\\WindowsBuildPool.Parameters.json"
+            }
+          }
+        },
+        {
+          "name": "ElectronWindowsTestPool",
+          "composedOf": {
+            "arm": {
+              "templatePath": "Templates\\Pool.Template.json",
+              "parametersPath": "Parameters\\WindowsTestPool.Parameters.json"
+            }
+          }
+        },
+        {
+          "name": "ElectronVisualStudioGalleryPool",
+          "composedOf": {
+            "arm": {
+              "templatePath": "Templates\\Pool.Template.json",
+              "parametersPath": "Parameters\\VisualStudioGalleryPool.Parameters.json"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "serviceResourceGroups": [
+    {
+      "name": "ElectronLinuxNonProd",
+      "azureResourceGroupName": "electron-linux-build-pool-rg",
+      "location": "West US 2",
+      "instanceOf": "ElectronPoolGroup",
+      "azureSubscriptionId": "cb2c7c58-f1da-4eb7-95a8-14925d9a9f49",
+      "serviceResources": [
+        {
+          "name": "ElectronLinuxBuildPoolNonProd",
+          "instanceOf": "ElectronLinuxBuildPool",
+          "scopeTags": [
+            {
+              "name": "NonProd"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "ElectronLinuxProd",
+      "azureResourceGroupName": "electron-linux-build-pool-rg",
+      "location": "West US 2",
+      "instanceOf": "ElectronPoolGroup",
+      "azureSubscriptionId": "2acef844-9b22-4619-bd39-07b850645e89",
+      "serviceResources": [
+        {
+          "name": "ElectronLinuxBuildPoolProd",
+          "instanceOf": "ElectronLinuxBuildPool",
+          "scopeTags": [
+            {
+              "name": "None"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "ElectronWindowsARM64Test",
+      "azureResourceGroupName": "electron-win10-arm64-test-pool-rg",
+      "location": "West US 2",
+      "instanceOf": "ElectronPoolGroup",
+      "azureSubscriptionId": "cb2c7c58-f1da-4eb7-95a8-14925d9a9f49",
+      "serviceResources": [
+        {
+          "name": "ElectronWindowsARM64TestPool",
+          "instanceOf": "ElectronWindowsARM64TestPool"
+        }
+      ]
+    },
+    {
+      "name": "ElectronWindowsNonProd",
+      "azureResourceGroupName": "electron-win-build-pool-rg",
+      "location": "West US 2",
+      "instanceOf": "ElectronPoolGroup",
+      "azureSubscriptionId": "cb2c7c58-f1da-4eb7-95a8-14925d9a9f49",
+      "serviceResources": [
+        {
+          "name": "ElectronWindowsBuildPoolNonProd",
+          "instanceOf": "ElectronWindowsBuildPool",
+          "scopeTags": [
+            {
+              "name": "NonProd"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "ElectronWindowsProd",
+      "azureResourceGroupName": "electron-win-build-pool-rg",
+      "location": "West US 2",
+      "instanceOf": "ElectronPoolGroup",
+      "azureSubscriptionId": "2acef844-9b22-4619-bd39-07b850645e89",
+      "serviceResources": [
+        {
+          "name": "ElectronWindowsBuildPoolProd",
+          "instanceOf": "ElectronWindowsBuildPool",
+          "scopeTags": [
+            {
+              "name": "Prod"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "ElectronWindowsTest",
+      "azureResourceGroupName": "electron-win10-test-pool-rg",
+      "location": "West US 2",
+      "instanceOf": "ElectronPoolGroup",
+      "azureSubscriptionId": "cb2c7c58-f1da-4eb7-95a8-14925d9a9f49",
+      "serviceResources": [
+        {
+          "name": "ElectronWindowsTestPool",
+          "instanceOf": "ElectronWindowsTestPool"
+        }
+      ]
+    },
+    {
+      "name": "ElectronVisualStudioGallery",
+      "azureResourceGroupName": "electron-visualstudio-gallery-pool-rg",
+      "location": "West US 2",
+      "instanceOf": "ElectronPoolGroup",
+      "azureSubscriptionId": "cb2c7c58-f1da-4eb7-95a8-14925d9a9f49",
+      "serviceResources": [
+        {
+          "name": "ElectronVisualStudioGalleryPool",
+          "instanceOf": "ElectronVisualStudioGalleryPool"
+        }
+      ]
+    }
+  ]
+}

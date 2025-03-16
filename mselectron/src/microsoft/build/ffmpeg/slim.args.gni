@@ -1,0 +1,4 @@
+ffmpeg_branding = "Slim"
+ffmpeg_root = "//microsoft/src/third_party/ffmpeg"
+media_use_libvpx = false
+proprietary_codecs = false

@@ -1,0 +1,6 @@
+# Default state must preserve Chromium or Electron behaviour.
+
+declare_args() {
+  microsoft_enable_app_center = false
+  microsoft_restrict_unc_access = false
+}

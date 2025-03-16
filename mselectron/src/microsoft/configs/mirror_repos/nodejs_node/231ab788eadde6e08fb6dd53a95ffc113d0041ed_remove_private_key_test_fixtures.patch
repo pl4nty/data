@@ -1,0 +1,41 @@
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
+From: Charles Kerr <charles@charleskerr.com>
+Date: Wed, 16 Oct 2024 20:31:48 -0500
+Subject: chore: remove test private keys that trigger msft secrets scanner
+
+
+diff --git a/test/fixtures/keys/dh_private.pem b/test/fixtures/keys/dh_private.pem
+deleted file mode 100644
+index 25c4edc5ea5a3b7bdb96e9270b14ea1af336b780..0000000000000000000000000000000000000000
+--- a/test/fixtures/keys/dh_private.pem
++++ /dev/null
+@@ -1,9 +0,0 @@
+------BEGIN PRIVATE KEY-----
+-MIIBPgIBADCCARcGCSqGSIb3DQEDATCCAQgCggEBAP//////////rfhUWKK7Spqv
+-3FYgJz088di5xYPOLTaVqeE2QRRkM/vMk53OJJs++X0v42NjDHXY9oGyAq7EYXrT
+-3x7V1f1lYSQz9R9fBm7QhWNlVT3tGvO1VxNef1fJNZhPDHDg5ot34qaJ2vPv6HId
+-8VihNq3nNTCsyk9IOnl6vAqxgrMk+2HRCKlLssjj+7lq2rdg1/RoHU9Co945TfSu
+-Vu3nY3K7GQsHp8juCm1wngL84c334uzANATNKDQvYZFy/pzphYP/jk8SMu7ygYPD
+-/jsbTG+tczu1/LwuwiAFxY7xg30Wg7LG80omwbLv+ohrQjhhKFyX//////////8C
+-AQIEHgIcKNGyhQRxIhVXoyktdymwbN6MgXv85vPax+8eqQ==
+------END PRIVATE KEY-----
+diff --git a/test/fixtures/keys/dh_public.pem b/test/fixtures/keys/dh_public.pem
+deleted file mode 100644
+index b32815e88acc8c7c5f5a0e743929f2e4dc303f91..0000000000000000000000000000000000000000
+--- a/test/fixtures/keys/dh_public.pem
++++ /dev/null
+@@ -1,14 +0,0 @@
+------BEGIN PUBLIC KEY-----
+-MIICJTCCARcGCSqGSIb3DQEDATCCAQgCggEBAP//////////rfhUWKK7Spqv3FYg
+-Jz088di5xYPOLTaVqeE2QRRkM/vMk53OJJs++X0v42NjDHXY9oGyAq7EYXrT3x7V
+-1f1lYSQz9R9fBm7QhWNlVT3tGvO1VxNef1fJNZhPDHDg5ot34qaJ2vPv6HId8Vih
+-Nq3nNTCsyk9IOnl6vAqxgrMk+2HRCKlLssjj+7lq2rdg1/RoHU9Co945TfSuVu3n
+-Y3K7GQsHp8juCm1wngL84c334uzANATNKDQvYZFy/pzphYP/jk8SMu7ygYPD/jsb
+-TG+tczu1/LwuwiAFxY7xg30Wg7LG80omwbLv+ohrQjhhKFyX//////////8CAQID
+-ggEGAAKCAQEA2whDVdYtNbr/isSFdw7rOSdbmcWrxiX6ppqDZ6yp8XjUj3/CEf/P
+-60X7HndX+nXD7YaPtVZxktkIpArI7C+AH7fZxBduuv2eLnvYwK82jFHKe7zvfdMr
+-26akMCV0kBA3ktgcftHlqYsIj52BaJlG37FRha3SDOL2yJOij3hNQhHCXTWLg7tP
+-GtXmD202OoZ6Ll+LxBzBCFnxVauiKnzBGeawy4gDycUEHmq5oDRR68I2gmxmsLg5
+-MQVAP5ljp+FEu4+TZm6hR4wQ5PRjCQ+teq+VqMro7EbbvZpn+X9kAgKSl2WDu0fT
+-FbUnBn3HPBmUa/Fv/ooXrlckTUDjLkbWZQ==
+------END PUBLIC KEY-----

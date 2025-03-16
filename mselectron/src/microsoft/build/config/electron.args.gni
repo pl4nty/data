@@ -1,0 +1,7 @@
+# Chromium flags
+ffmpeg_branding = "Chrome"
+media_use_libvpx = true
+proprietary_codecs = true
+
+# Microsoft flags
+microsoft_enable_app_center = true

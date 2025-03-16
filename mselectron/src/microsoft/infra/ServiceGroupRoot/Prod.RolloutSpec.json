@@ -1,0 +1,32 @@
+{
+  "$schema": "https://ev2schema.azure.net/schemas/2020-01-01/rolloutSpecification.json",
+  "rolloutMetadata": {
+    "serviceModelPath": "ServiceModel.json",
+    "scopeBindingsPath": "ScopeBindings.json",
+    "name": "Electron Infra",
+    "rolloutType": "Major",
+    "buildSource": {
+      "parameters": {
+        "versionFile": "buildver.txt"
+      }
+    }
+  },
+  "orchestratedsteps": [
+    {
+      "name": "LinuxProd",
+      "targetType": "ServiceResource",
+      "targetName": "ElectronLinuxBuildPoolProd",
+      "actions": [
+        "Deploy"
+      ]
+    },
+    {
+        "name": "WindowsProd",
+        "targetType": "ServiceResource",
+        "targetName": "ElectronWindowsBuildPoolProd",
+        "actions": [
+          "Deploy"
+        ]
+    }
+  ]
+}

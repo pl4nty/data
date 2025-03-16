@@ -1,0 +1,4 @@
+variables:
+  Codeql.Cadence: 168
+  Codeql.DoNotStartTimes: "Mon;Tue;Wed;Thu;Fri"
+  Codeql.SkipTaskAutoInjection: true

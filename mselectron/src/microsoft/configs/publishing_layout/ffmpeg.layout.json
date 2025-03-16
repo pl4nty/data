@@ -1,0 +1,26 @@
+{
+ "layout": [
+    {
+      "ffmpeg-v${version}-${platform}-${arch}.zip": "ffmpeg ${platform}/${arch}/ffmpeg.zip"
+    },
+    "flavour.txt",
+    "version.txt"
+  ],
+  "mapping": {
+    "platform": {
+      "mac": "darwin",
+      "windows": "win32"
+    },
+    "arch": {
+      "arm": "armv7l",
+      "x86": "ia32"
+    }
+  },
+  "checksums": [
+    {
+      "algorithm": "sha256",
+      "as_binary": true,
+      "output": "SHASUMS256.txt"
+    }
+  ]
+}

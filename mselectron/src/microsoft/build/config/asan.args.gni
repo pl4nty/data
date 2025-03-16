@@ -1,0 +1,5 @@
+# AddressSanitizer (ASan)
+# https://chromium.googlesource.com/chromium/src/+/HEAD/docs/asan.md
+
+enable_full_stack_frames_for_profiling = true
+is_asan = true

@@ -1,0 +1,65 @@
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
+From: Andrey Belenko <anbelen@microsoft.com>
+Date: Tue, 9 Jun 2020 23:46:32 +0200
+Subject: fix: restrict Node.js module search path to application resources
+ directory
+
+https://domoreexp.visualstudio.com/MSTeams/_workitems/edit/942870/
+
+diff --git a/lib/node/init.ts b/lib/node/init.ts
+index 341666db09e18cf214e2d176074e67d6f3127103..1796d48ffd8c6ebb9df74625fdc0f1d5c81ab214 100644
+--- a/lib/node/init.ts
++++ b/lib/node/init.ts
+@@ -43,17 +43,43 @@ cp.fork = (modulePath, args?, options?: cp.ForkOptions) => {
+ // Prevent Node from adding paths outside this app to search paths.
+ import path = require('path'); // eslint-disable-line import/first
+ const Module = require('module') as NodeJS.ModuleInternal;
+-const resourcesPathWithTrailingSlash = process.resourcesPath + path.sep;
+ const originalNodeModulePaths = Module._nodeModulePaths;
++const isWindows = process.platform === 'win32';
+ Module._nodeModulePaths = function (from) {
+-  const paths: string[] = originalNodeModulePaths(from);
+-  const fromPath = path.resolve(from) + path.sep;
+-  // If "from" is outside the app then we do nothing.
+-  if (fromPath.startsWith(resourcesPathWithTrailingSlash)) {
+-    return paths.filter(function (candidate) {
+-      return candidate.startsWith(resourcesPathWithTrailingSlash);
+-    });
+-  } else {
++  let paths: string[] = originalNodeModulePaths(from);
++
++  // Returns true if p2 is below p1 in directory tree.
++  const isSubdir = (p1: string, p2: string) => {
++    const rp = path.relative(p1, p2);
++    return !(rp.startsWith('..') || path.isAbsolute(rp));
++  };
++
++  if (isSubdir(process.resourcesPath, from)) {
++    return paths.filter(p => isSubdir(process.resourcesPath, p));
++  }
++
++  if (!isWindows) {
+     return paths;
+   }
++
++  // On Windows, remove drive(s) and users' home directory from search paths,
++  // UNLESS 'from' is explicitly set to one of those.
++  const isDrive = (p: string) => p.length >= 3 && p.endsWith(':\\');
++
++  if (!isDrive(from)) {
++    paths = paths.filter(p => !isDrive(path.dirname(p)));
++  }
++
++  if (process.env.HOMEDRIVE && process.env.HOMEPATH) {
++    const userDir = path.dirname(path.join(process.env.HOMEDRIVE, process.env.HOMEPATH));
++
++    const isUserDir = (p: string) => path.relative(p, userDir).length === 0;
++
++    // Check if 'from' is the same as 'userDir'
++    if (!isUserDir(from)) {
++      paths = paths.filter(p => !isUserDir(path.dirname(p)));
++    }
++  }
++
++  return paths;
+ };

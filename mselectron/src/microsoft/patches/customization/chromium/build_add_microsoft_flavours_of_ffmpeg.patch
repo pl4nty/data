@@ -1,0 +1,165 @@
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
+From: Arnab Ray <arnray@microsoft.com>
+Date: Mon, 28 Aug 2023 16:41:55 -0700
+Subject: build: add Microsoft flavours of FFmpeg
+
+Microsoft patch
+
+diff --git a/media/ffmpeg/scripts/build_ffmpeg.py b/media/ffmpeg/scripts/build_ffmpeg.py
+index 3661b91740ae02996e7a87a6655166ca70abf719..f5f5f336e1190e92846f83698dae1ac97cffb73d 100755
+--- a/media/ffmpeg/scripts/build_ffmpeg.py
++++ b/media/ffmpeg/scripts/build_ffmpeg.py
+@@ -35,10 +35,19 @@ SUCCESS_TOKEN = 'THIS_BUILD_WORKED'
+ sys.path.append(os.path.join(CHROMIUM_ROOT_DIR, 'build'))
+ import gn_helpers
+ 
++MICROSOFT_BRANDINGS = [
++    'MakeCode',
++    'MtrwDgj',
++    'Slim',
++    'StorageExplorer',
++    'VSCode',
++]
++
+ BRANDINGS = [
+     'Chrome',
+     'Chromium',
+ ]
++BRANDINGS += MICROSOFT_BRANDINGS
+ 
+ ARCH_MAP = {
+     'android': ['ia32', 'x64', 'arm-neon', 'arm64'],
+@@ -679,13 +688,6 @@ def ConfigureAndBuild(target_arch, target_os, host_os, host_arch,
+         # this file.
+         '--disable-autodetect',
+ 
+-        # Common codecs.
+-        '--enable-decoder=vorbis,libopus,flac',
+-        '--enable-decoder=pcm_u8,pcm_s16le,pcm_s24le,pcm_s32le,pcm_f32le,mp3',
+-        '--enable-decoder=pcm_s16be,pcm_s24be,pcm_mulaw,pcm_alaw',
+-        '--enable-demuxer=ogg,matroska,wav,flac,mp3,mov',
+-        '--enable-parser=opus,vorbis,flac,mpegaudio,vp9',
+-
+         # Setup include path so Chromium's libopus can be used.
+         '--extra-cflags=-I' +
+         os.path.join(CHROMIUM_ROOT_DIR, 'third_party/opus/src/include'),
+@@ -987,6 +989,13 @@ def ConfigureAndBuild(target_arch, target_os, host_os, host_arch,
+ 
+     # Google Chrome specific configuration.
+     configure_flags['Chrome'].extend([
++        # Original "Common" codecs.
++        '--enable-decoder=vorbis,libopus,flac',
++        '--enable-decoder=pcm_u8,pcm_s16le,pcm_s24le,pcm_s32le,pcm_f32le,mp3',
++        '--enable-decoder=pcm_s16be,pcm_s24be,pcm_mulaw,pcm_alaw',
++        '--enable-demuxer=ogg,matroska,wav,flac,mp3,mov',
++        '--enable-parser=opus,vorbis,flac,mpegaudio,vp9',
++
+         '--enable-decoder=aac,h264',
+         '--enable-demuxer=aac',
+         '--enable-parser=aac,h264',
+@@ -998,6 +1007,36 @@ def ConfigureAndBuild(target_arch, target_os, host_os, host_arch,
+         '--enable-decoder=aac',
+     ])
+ 
++    configure_flags['MakeCode'].extend([
++        '--enable-decoder=aac,h264,libopus,mp3,vp8',
++        '--enable-demuxer=aac,matroska,mp3,mov',
++        '--enable-parser=aac,h264,opus,vp8,vp9',
++    ])
++
++    configure_flags['MtrwDgj'].extend([
++        '--enable-decoder=vorbis,libopus,flac,theora,vp8,vp9,h264',
++        '--enable-decoder=pcm_u8,pcm_s16le,pcm_s24le,pcm_s32le,pcm_f32le,mp3',
++        '--enable-decoder=pcm_s16be,pcm_s24be,pcm_mulaw,pcm_alaw',
++        '--enable-demuxer=flac,mp3,mov,ogg,wav',
++        '--enable-parser=opus,vorbis,flac,mpegaudio,vp9,vp3,vp8,h264',
++    ])
++
++    configure_flags['StorageExplorer'].extend([
++        '--enable-decoder=flac,mp3,vorbis',
++        '--enable-decoder=pcm_u8,pcm_s16le,pcm_s24le,pcm_s32le,pcm_f32le',
++        '--enable-decoder=pcm_s16be,pcm_s24be,pcm_mulaw,pcm_alaw',
++        '--enable-demuxer=flac,mp3,ogg,wav',
++        '--enable-parser=flac,vorbis',
++    ])
++
++    configure_flags['VSCode'].extend([
++        '--enable-decoder=flac,h264,mp3,vorbis,vp8',
++        '--enable-decoder=pcm_u8,pcm_s16le,pcm_s24le,pcm_s32le,pcm_f32le',
++        '--enable-decoder=pcm_s16be,pcm_s24be,pcm_mulaw,pcm_alaw',
++        '--enable-demuxer=flac,mov,mp3,ogg,wav',
++        '--enable-parser=flac,h264,vorbis,vp8',
++    ])
++
+     def do_build_ffmpeg(branding, configure_flags):
+         if options.brandings and branding not in options.brandings:
+             print('%s skipped' % branding)
+@@ -1007,15 +1046,13 @@ def ConfigureAndBuild(target_arch, target_os, host_os, host_arch,
+         BuildFFmpeg(target_os, target_arch, host_os, host_arch, parallel_jobs,
+                     options.config_only, branding, configure_flags, options)
+ 
+-    # Don't build video decoders for 32-bit Android ARM due to binary size
+-    # concerns.
+-    if target_os != 'android' or not target_arch in ("arm", "arm-neon"):
+-        do_build_ffmpeg(
+-            'Chromium', configure_flags['Common'] +
+-            configure_flags['Chromium'] + configure_args)
+-        do_build_ffmpeg(
+-            'Chrome', configure_flags['Common'] + configure_flags['Chrome'] +
+-            configure_args)
++    # Only build Chromium, Chrome for ia32, x86 non-android platforms.
++    if target_os != 'android':
++        for branding in (MICROSOFT_BRANDINGS + ['Chrome']):
++            flags = configure_flags['Common'] \
++                + configure_flags.get(branding, []) \
++                + configure_args
++            do_build_ffmpeg(branding, flags)
+     else:
+         do_build_ffmpeg('Chromium', configure_flags['Common'] + configure_args)
+         do_build_ffmpeg(
+diff --git a/media/ffmpeg/scripts/generate_gn.py b/media/ffmpeg/scripts/generate_gn.py
+index b135da60cb75273af17e5b1aedf1d7a3726ce2e7..8670804a34c480c2e6471f23bead54a8dbf7048d 100755
+--- a/media/ffmpeg/scripts/generate_gn.py
++++ b/media/ffmpeg/scripts/generate_gn.py
+@@ -79,7 +79,7 @@ _Attrs = ('ARCHITECTURE', 'TARGET', 'PLATFORM')
+ Attr = collections.namedtuple('Attr', _Attrs)(*_Attrs)
+ SUPPORT_MATRIX = {
+     Attr.ARCHITECTURE: set(['ia32', 'x64', 'arm', 'arm64', 'arm-neon']),
+-    Attr.TARGET: set(['Chromium', 'Chrome']),
++    Attr.TARGET: set(['Chrome', 'MakeCode', 'MtrwDgj', 'Slim', 'StorageExplorer', 'VSCode']),
+     Attr.PLATFORM: set(['android', 'linux', 'win', 'mac'])
+ }
+ 
+@@ -783,6 +783,9 @@ def GetIncludedSources(file_path, source_dir, include_set, scan_only=False):
+                                                    include_file_path)
+         include_path_in_source_dir = os.path.join(source_dir,
+                                                   include_file_path)
++        include_path_in_parent_dir = os.path.join(current_dir,
++                                                  '..',
++                                                  include_file_path)
+         resolved_include_path = ''
+ 
+         # Check if file is in current directory.
+@@ -791,6 +794,9 @@ def GetIncludedSources(file_path, source_dir, include_set, scan_only=False):
+         # Else, check source_dir (should be FFmpeg root).
+         elif os.path.isfile(include_path_in_source_dir):
+             resolved_include_path = include_path_in_source_dir
++        elif os.path.isfile(include_path_in_parent_dir):
++            resolved_include_path = include_path_in_parent_dir
++
+         # Else, we couldn't find it :(.
+         elif include_file_path in IGNORED_INCLUDE_FILES:
+             continue
+diff --git a/media/ffmpeg/scripts/robo_build.py b/media/ffmpeg/scripts/robo_build.py
+index 4606fee981e8d1a24b0fe8117ff9f0002933b259..ad02d88bb545d3ce08095b42e9363461b7de7906 100755
+--- a/media/ffmpeg/scripts/robo_build.py
++++ b/media/ffmpeg/scripts/robo_build.py
+@@ -84,7 +84,7 @@ def ImportFFmpegConfigsIntoChromium(robo_configuration, write_git_file=False):
+ 
+ def CopyConfigPythonTranslation(robo_configuration):
+     for opsys in ("android", "linux", "linux-noasm", "mac", "win"):
+-        for target in ("Chromium", "Chrome"):
++        for target in ("Chrome", "MakeCode", "MtrwDgj", "Slim", "StorageExplorer", "VSCode"):
+             for arch in ("arm", "arm-neon", "arm64", "ia32", "x64", "mipsel",
+                          "mips64el"):
+                 gen_dir = robo_configuration.target_config_directory(

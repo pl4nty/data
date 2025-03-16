@@ -1,0 +1,122 @@
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
+From: deepak1556 <hop2deep@gmail.com>
+Date: Thu, 28 May 2020 21:22:15 -0700
+Subject: feat: integrate appcenter support in chromium
+
+Modifies the existing crashReporter module to submit crash reports
+to appcenter when the submitURL scheme is 'appcenter:'
+
+diff --git a/third_party/crashpad/crashpad/handler/BUILD.gn b/third_party/crashpad/crashpad/handler/BUILD.gn
+index 104e8502908e292e0055f1535de6c5b1f50c6a5a..e6662b1e5fe488587780ae5d7c037aac54b47487 100644
+--- a/third_party/crashpad/crashpad/handler/BUILD.gn
++++ b/third_party/crashpad/crashpad/handler/BUILD.gn
+@@ -13,6 +13,7 @@
+ # limitations under the License.
+ 
+ import("../build/crashpad_buildconfig.gni")
++import("//microsoft/buildflags/buildflags.gni")
+ 
+ static_library("handler") {
+   sources = [
+@@ -76,11 +77,20 @@ static_library("handler") {
+     "../snapshot",
+     "../third_party/mini_chromium:chromeos_buildflags",
+     "../tools:tool_support",
++    "//microsoft/buildflags",
+   ]
+ 
+   if (crashpad_is_win) {
+     cflags = [ "/wd4201" ]  # nonstandard extension used : nameless struct/union
+   }
++
++  if (microsoft_enable_app_center) {
++    sources += [
++      "//microsoft/src/third_party/crashpad/appcenter_api.cc",
++      "//microsoft/src/third_party/crashpad/appcenter_api.h",
++    ]
++    deps += [ "//electron:electron_version_header" ]
++  }
+ }
+ 
+ if (crashpad_is_android) {
+@@ -116,6 +126,7 @@ static_library("common") {
+     "../snapshot",
+     "../util",
+     "../util:net",
++    "//microsoft/buildflags",
+   ]
+   if (crashpad_is_win) {
+     cflags = [ "/wd4201" ]  # nonstandard extension used : nameless struct/union
+diff --git a/third_party/crashpad/crashpad/handler/crash_report_upload_thread.cc b/third_party/crashpad/crashpad/handler/crash_report_upload_thread.cc
+index 8350d0761ac186eb725c153dc9abe903267e1031..2ad19068dc858f4b3a474909c66911e229896b08 100644
+--- a/third_party/crashpad/crashpad/handler/crash_report_upload_thread.cc
++++ b/third_party/crashpad/crashpad/handler/crash_report_upload_thread.cc
+@@ -29,6 +29,7 @@
+ #include "build/build_config.h"
+ #include "client/settings.h"
+ #include "handler/minidump_to_upload_parameters.h"
++#include "microsoft/buildflags/buildflags.h"
+ #include "snapshot/minidump/process_snapshot_minidump.h"
+ #include "snapshot/module_snapshot.h"
+ #include "util/file/file_reader.h"
+@@ -48,6 +49,10 @@
+ #include "util/ios/scoped_background_task.h"
+ #endif  // BUILDFLAG(IS_IOS)
+ 
++#if BUILDFLAG(MICROSOFT_ENABLE_APP_CENTER)
++#include "microsoft/src/third_party/crashpad/appcenter_api.h"
++#endif
++
+ namespace crashpad {
+ 
+ namespace {
+@@ -104,6 +109,10 @@ CrashReportUploadThread::CrashReportUploadThread(
+       known_pending_report_uuids_(),
+       database_(database) {
+   DCHECK(!url_.empty());
++
++#if BUILDFLAG(MICROSOFT_ENABLE_APP_CENTER)
++  microsoft::AppCenter::GetInstance()->Initialize(url);
++#endif
+ }
+ 
+ CrashReportUploadThread::~CrashReportUploadThread() {
+@@ -302,6 +311,17 @@ CrashReportUploadThread::UploadResult CrashReportUploadThread::UploadReport(
+     return UploadResult::kPermanentFailure;
+   }
+ 
++#if BUILDFLAG(MICROSOFT_ENABLE_APP_CENTER)
++  if (microsoft::AppCenter::GetInstance()->IsInitialized()) {
++    if (microsoft::AppCenter::GetInstance()->CrashPadUploadReport(
++            minidump_process_snapshot, parameters, reader, response_body)) {
++      return UploadResult::kSuccess;
++    }
++
++    return UploadResult::kRetry;
++  }
++#endif
++
+   HTTPMultipartBuilder http_multipart_builder;
+   http_multipart_builder.SetGzipEnabled(options_.upload_gzip);
+ 
+diff --git a/third_party/crashpad/crashpad/handler/handler_main.cc b/third_party/crashpad/crashpad/handler/handler_main.cc
+index 7e908c0a305be81ad29d96b924433ab411552fb9..9e633e52fe685aac7b95602b7912f40b0fbc5ace 100644
+--- a/third_party/crashpad/crashpad/handler/handler_main.cc
++++ b/third_party/crashpad/crashpad/handler/handler_main.cc
+@@ -28,6 +28,7 @@
+ #include <utility>
+ #include <vector>
+ 
++#include "base/at_exit.h"
+ #include "base/auto_reset.h"
+ #include "base/files/file_path.h"
+ #include "base/files/scoped_file.h"
+@@ -568,6 +569,8 @@ void InitCrashpadLogging() {
+ int HandlerMain(int argc,
+                 char* argv[],
+                 const UserStreamDataSources* user_stream_sources) {
++  base::AtExitManager at_exit;
++
+   InitCrashpadLogging();
+ 
+   InstallCrashHandler();

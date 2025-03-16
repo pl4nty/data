@@ -1,0 +1,9 @@
+[
+  "// Does not work in VSCode",
+  "webContents module PictureInPicture video works as expected",
+  "protocol module protocol.registerSchemesAsPrivileged stream successfully plays videos when content is buffered (stream: false)",
+  "protocol module protocol.registerSchemesAsPrivileged stream successfully plays videos when streaming content (stream: true)",
+  
+  "// Disabled due to focus failure when upgrading to v33.0.0-alpaha.4",
+  "navigator.clipboard.read returns an error when permission denied"
+]

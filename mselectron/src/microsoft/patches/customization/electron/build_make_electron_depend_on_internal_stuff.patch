@@ -1,0 +1,81 @@
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
+From: Aleksei Kuzmin <alkuzmin@microsoft.com>
+Date: Tue, 30 Oct 2018 01:25:17 +0100
+Subject: build: make Electron depend on internal stuff
+
+Hooks the Microsoft specific builds scripts to the Electron build.
+
+diff --git a/BUILD.gn b/BUILD.gn
+index fdd722ea68cca3210893ab01e19155adc9ad547f..cb72f1e82ccee27bd3bfab7fea6693d10ed61b5a 100644
+--- a/BUILD.gn
++++ b/BUILD.gn
+@@ -5,6 +5,7 @@ import("//components/os_crypt/sync/features.gni")
+ import("//components/spellcheck/spellcheck_build_features.gni")
+ import("//content/public/app/mac_helpers.gni")
+ import("//extensions/buildflags/buildflags.gni")
++import("//microsoft/buildflags/buildflags.gni")
+ import("//pdf/features.gni")
+ import("//ppapi/buildflags/buildflags.gni")
+ import("//printing/buildflags/buildflags.gni")
+@@ -470,6 +471,7 @@ source_set("electron_lib") {
+     "//media/capture/mojom:video_capture",
+     "//media/mojo/mojom",
+     "//media/mojo/mojom:web_speech_recognition",
++    "//microsoft/buildflags",
+     "//net:extras",
+     "//net:net_resources",
+     "//printing/buildflags",
+@@ -1079,6 +1081,7 @@ if (is_mac) {
+       ":electron_fuses",
+       "//electron/build/config:generate_mas_config",
+       "//electron/buildflags",
++      "//microsoft/buildflags",
+     ]
+     if (is_mas_build) {
+       deps += [ ":electron_login_helper_app" ]
+@@ -1195,6 +1198,7 @@ if (is_mac) {
+       "//components/crash/core/app",
+       "//content:sandbox_helper_win",
+       "//electron/buildflags",
++      "//microsoft/buildflags",
+       "//third_party/electron_node:libnode",
+       "//ui/strings",
+     ]
+diff --git a/electron_unsafe_buffers_paths.txt b/electron_unsafe_buffers_paths.txt
+index 14389345918d6636e24cfbdad05e65ebcf03d7c3..f48d837825b72b057093d839b78cf474b11a6815 100644
+--- a/electron_unsafe_buffers_paths.txt
++++ b/electron_unsafe_buffers_paths.txt
+@@ -24,6 +24,7 @@
+ -device/
+ -extensions/
+ -google_apis/
++-microsoft/src/third_party/
+ -net/
+ -services/
+ -skia/
+diff --git a/script/node/generate_node_headers.py b/script/node/generate_node_headers.py
+index c60a3862beea4fd3634ee4ab559addd7543839bc..18acd27529d7c6784e06515beb58ce406093f3ce 100755
+--- a/script/node/generate_node_headers.py
++++ b/script/node/generate_node_headers.py
+@@ -62,8 +62,8 @@ if __name__ == '__main__':
+                 out['headers'].append(hs)
+ 
+     root_gen_dir = os.path.join(get_out_dir(), 'gen')
+-    config_gypi_path = os.path.join(root_gen_dir, 'config.gypi')
+     node_headers_dir = os.path.join(root_gen_dir, 'node_headers')
++    config_gypi_path = os.path.join(node_headers_dir, 'include', 'node', 'config.gypi')
+ 
+     options = install.parse_options([
+         'install',
+diff --git a/spec/package.json b/spec/package.json
+index 3ea7820d5681b5310a5409ff60d59d74359892ef..85cfafacc3882240607629fe5df5ddc9a349acfa 100644
+--- a/spec/package.json
++++ b/spec/package.json
+@@ -53,7 +53,6 @@
+     "yargs": "^16.0.3"
+   },
+   "resolutions": {
+-    "nan": "file:../../third_party/nan",
+     "dbus-native/optimist/minimist": "1.2.7",
+     "dbus-native/xml2js": "0.5.0",
+     "abstract-socket": "github:deepak1556/node-abstractsocket#928cc591decd12aff7dad96449da8afc29832c19"

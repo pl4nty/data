@@ -1,0 +1,22 @@
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
+From: Milan Burda <miburda@microsoft.com>
+Date: Sun, 31 Jul 2022 01:33:36 +0200
+Subject: chore: add microsoft to //src gitignore
+
+Extend https://github.com/electron/electron/pull/35065
+
+This patch can not be upstreamed unless git provides a way to import rules
+in .gitignore from other files.
+
+diff --git a/.gitignore b/.gitignore
+index a1b949528e0a164c1bad98dbfbef282fb152161a..26e7f6b679a293f8c0081886eb76b141cfcbe7f4 100644
+--- a/.gitignore
++++ b/.gitignore
+@@ -225,6 +225,7 @@ vs-chromium-project.txt
+ /libassistant
+ /libinteraction
+ /llvm
++/microsoft
+ /media/cast/logging/cast_logging_proto_lib.xml
+ /media/media_mojo_bindings.xml
+ /media/test/data/internal

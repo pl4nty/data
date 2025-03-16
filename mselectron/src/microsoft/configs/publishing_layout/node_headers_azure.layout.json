@@ -1,0 +1,33 @@
+{
+  "layout": [
+    {
+      "win-${arch}/node.lib": "electron windows ${arch}/electron.lib",
+      "__filter__": {"platform": "windows"}
+    },
+    {
+      "win-${arch}/iojs.lib": "electron windows ${arch}/electron.lib",
+      "__filter__": {"platform": "windows"}
+    },
+    {"arm64/node.lib": "electron windows arm64/electron.lib"},
+    {"x64/node.lib": "electron windows x64/electron.lib"},
+    {"node.lib": "electron windows x86/electron.lib"},
+    {"iojs-v${version}-headers.tar.gz": "electron windows x64/node_headers.tar.gz"},
+    {"iojs-v${version}.tar.gz": "electron windows x64/node_headers.tar.gz"},
+    {"node-v${version}-headers.tar.gz": "electron windows x64/node_headers.tar.gz"},
+    {"node-v${version}.tar.gz": "electron windows x64/node_headers.tar.gz"}
+  ],
+  "checksums": [
+    {
+      "algorithm": "sha1",
+      "as_binary": true,
+      "format_marker": "space",
+      "output": "SHASUMS.txt"
+    },
+    {
+      "algorithm": "sha256",
+      "as_binary": true,
+      "format_marker": "space",
+      "output": "SHASUMS256.txt"
+    }
+  ]
+}

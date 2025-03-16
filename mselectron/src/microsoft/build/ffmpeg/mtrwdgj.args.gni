@@ -1,0 +1,4 @@
+ffmpeg_branding = "MtrwDgj"
+ffmpeg_root = "//microsoft/src/third_party/ffmpeg"
+media_use_libvpx = true
+proprietary_codecs = true

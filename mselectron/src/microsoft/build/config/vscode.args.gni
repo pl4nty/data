@@ -1,0 +1,19 @@
+# Chromium flags
+chrome_pgo_phase = 2
+content_enable_legacy_ipc = true
+enable_pdf = false
+enable_plugins = false
+enable_print_preview = false
+enable_printing = false
+enable_widevine = false
+ffmpeg_branding = "VSCode"
+ffmpeg_root = "//microsoft/src/third_party/ffmpeg"
+media_use_libvpx = true
+proprietary_codecs = true
+
+# Electron flags
+enable_pdf_viewer = false
+
+# Microsoft flags
+microsoft_enable_app_center = true
+microsoft_restrict_unc_access = true

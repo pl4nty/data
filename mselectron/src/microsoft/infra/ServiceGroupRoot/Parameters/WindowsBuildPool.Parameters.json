@@ -1,0 +1,80 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "image_name": {
+      "value": "electron-win-build-image"
+    },
+    "image_baseImage": {
+      "value": "/subscriptions/c69d8db0-c48c-45ac-bba0-d35dbbf96866/resourceGroups/CloudTestImages/providers/Microsoft.Compute/galleries/CloudTestGallery/images/MMSWindows2019-1ESPT-v2/versions/latest"
+    },
+    "image_buildProfile": {
+      "value": {}
+    },
+    "image_artifacts": {
+      "value": [
+        {
+          "name": "windows-dotnet48"
+        },
+        {
+          "name": "windows-restart"
+        },
+        {
+          "name": "windows-gitinstall"
+        },
+        {
+          "name": "windows-installchocolatey",
+          "parameters": {
+            "version": "2.1.0"
+          }
+        },
+        {
+          "name": "Windows-Install-ChocoPackage",
+          "parameters": {
+            "package": "visualstudio2019buildtools",
+            "installArgs": "--force --yes --params '--add Microsoft.VisualStudio.Component.Windows10SDK.19041 --add Microsoft.VisualStudio.Component.VC.Tools.x86.x64 --add Microsoft.VisualStudio.Component.VC.Tools.ARM64'"
+          }
+        },
+        {
+          "name": "Windows-Install-ChocoPackage",
+          "parameters": {
+              "package": "visualstudio2022buildtools",
+              "installArgs": "--force --yes --params '--add Microsoft.VisualStudio.Component.Windows11SDK.26100 --add Microsoft.VisualStudio.Component.VC.Tools.x86.x64 --add Microsoft.VisualStudio.Component.VC.Tools.ARM64'"
+          }
+        },
+        {
+          "name": "windows-1es-pt-prerequisites-v2",
+          "parameters": {
+            "KVSecret_AppSecret": "https://pipelinesidentity.vault.azure.net/secrets/1es-gpt-read-only-app-secret"
+          }
+        },
+        {
+          "name": "windows-defender-exclusions",
+          "parameters": {
+            "ExclusionPath": "D:\\a"
+          }
+        }
+      ]
+    },
+    "pool_name": {
+      "value": "1ES-Win2019-Electron-Build__SUFFIX__"
+    },
+    "pool_sku": {
+      "value": {
+        "name": "Standard_D48ds_v4",
+        "tier": "Premium"
+      }
+    },
+    "pool_maxPoolSize": {
+      "value": 12
+    },
+    "pool_networkProfile": {
+      "value": {
+        "natGatewayIpAddressCount": 2
+      }
+    },
+    "pool_vmProviderProperties": {
+      "value": {}
+    }
+  }
+}

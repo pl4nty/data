@@ -1,0 +1,19 @@
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
+From: Michaela Laurencin <mlaurencin@microsoft.com>
+Date: Thu, 12 Dec 2024 14:33:51 -0500
+Subject: add buildflags.h to include rules
+
+Added so that include in third_party\blink\renderer\bindings\core\v8\v8_compile_hints_producer.h
+builds without error. May be good to upstream to Chromium.
+
+diff --git a/third_party/blink/renderer/bindings/core/v8/DEPS b/third_party/blink/renderer/bindings/core/v8/DEPS
+index d221839e072006783d4f46354bf1c32584569292..557835861e71460e871f625b224a3a11e1424f70 100644
+--- a/third_party/blink/renderer/bindings/core/v8/DEPS
++++ b/third_party/blink/renderer/bindings/core/v8/DEPS
+@@ -1,5 +1,6 @@
+ include_rules = [
+   "+components/miracle_parameter",
++  "+third_party/blink/renderer/platform/bindings/buildflags.h",
+   "+tools/v8_context_snapshot/buildflags.h",
+ ]
+ specific_include_rules = {

@@ -1,0 +1,74 @@
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
+From: Charles Kerr <charles@charleskerr.com>
+Date: Tue, 6 Aug 2024 18:55:46 +0000
+Subject: build: fix pdf
+
+We don't want pdf, so don't include it.
+
+diff --git a/chrome/browser/content_settings/BUILD.gn b/chrome/browser/content_settings/BUILD.gn
+index c236e757f0bca1edc6b51c0a7441e175ee61b840..defc84bd8d0bde32741cfe03d0296004d4af42fe 100644
+--- a/chrome/browser/content_settings/BUILD.gn
++++ b/chrome/browser/content_settings/BUILD.gn
+@@ -79,7 +79,6 @@ source_set("impl") {
+     "//components/content_settings/core/browser:cookie_settings",
+     "//components/pref_registry",
+     "//components/supervised_user/core/browser",
+-    "//pdf:features",
+     "//services/metrics/public/cpp:ukm_builders",
+     "//ui/webui",
+   ]
+diff --git a/chrome/browser/glic/BUILD.gn b/chrome/browser/glic/BUILD.gn
+index 4e67d1fe5b14462450b7d352056485a9f65fbe17..27e49f7f58dfa9d1505c5cdf21138c01290c2551 100644
+--- a/chrome/browser/glic/BUILD.gn
++++ b/chrome/browser/glic/BUILD.gn
+@@ -112,8 +112,6 @@ source_set("impl") {
+     "//components/feature_engagement/public:feature_constants",
+     "//components/guest_view/browser",
+     "//components/language/core/common",
+-    "//components/pdf/browser:browser",
+-    "//components/pdf/common:constants",
+     "//components/sessions",
+     "//extensions/browser:browser",
+     "//ui/webui",
+diff --git a/chrome/browser/ui/lens/BUILD.gn b/chrome/browser/ui/lens/BUILD.gn
+index 8f1afc951e58eec427c948d584bc6140b764515f..1cde2ef11a61f9eb4c8d88bac0561780cabe1f52 100644
+--- a/chrome/browser/ui/lens/BUILD.gn
++++ b/chrome/browser/ui/lens/BUILD.gn
+@@ -235,7 +235,6 @@ source_set("browser_tests") {
+     "//content/test:test_support",
+     "//mojo/public/cpp/bindings",
+     "//net",
+-    "//pdf:features",
+     "//third_party/lens_server_proto:lens_overlay_proto",
+     "//ui/base",
+     "//ui/base:types",
+@@ -246,9 +245,6 @@ source_set("browser_tests") {
+     "//ui/views/controls/webview",
+     "//url",
+   ]
+-  if (enable_pdf) {
+-    deps += [ "//chrome/browser/pdf" ]
+-  }
+ }
+ 
+ source_set("interactive_ui_tests") {
+@@ -276,7 +272,6 @@ source_set("interactive_ui_tests") {
+     "//components/feature_engagement/public",
+     "//components/lens:enterprise_policy",
+     "//components/lens:features",
+-    "//components/pdf/browser:browser",
+     "//components/prefs",
+     "//components/search_engines",
+     "//components/user_education/views",
+diff --git a/chrome/test/BUILD.gn b/chrome/test/BUILD.gn
+index 65576f0ba3335f8ede68037bf1a490f64ea495d7..e60c52660230c0a0bf94e4d5791910573f545af1 100644
+--- a/chrome/test/BUILD.gn
++++ b/chrome/test/BUILD.gn
+@@ -3650,7 +3650,6 @@ if (!is_android) {
+       deps += [
+         "../browser/pdf",
+         "../browser/pdf:pdf_extension_test_utils",
+-        "../browser/ui/pdf",
+         "//components/pdf/browser",
+         "//components/pdf/common:constants",
+         "//components/pdf/common:util",

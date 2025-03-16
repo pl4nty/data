@@ -1,0 +1,31 @@
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
+From: Cheng Zhao <zcbenz@gmail.com>
+Date: Wed, 31 Jan 2024 13:07:31 +0900
+Subject: Allow change the root of ffmpeg
+
+https://chromium-review.googlesource.com/c/chromium/third_party/ffmpeg/+/5252191
+
+Some embedders build their own brandings of ffmpeg, for example VS Code
+uses a config that disables most codecs, Teams only enables the codecs
+that they are paying royalties for.
+
+By adding a ffmpeg_root arg that specifies where to look for code
+sources, embedders can put their ffmpeg files in a separate dir instead
+of patching the third_party/ffmpeg.
+
+Note: there is a sibling patch with the same name.
+One patches the ffmpeg repo, the other patches the chromium repo.
+
+diff --git a/media/ffmpeg/scripts/generate_gn.py b/media/ffmpeg/scripts/generate_gn.py
+index 12455913ea76f53a399a5dd6b8e473dd8be41d77..b135da60cb75273af17e5b1aedf1d7a3726ce2e7 100755
+--- a/media/ffmpeg/scripts/generate_gn.py
++++ b/media/ffmpeg/scripts/generate_gn.py
+@@ -48,7 +48,7 @@ COPYRIGHT = """# Copyright %d The Chromium Authors. All rights reserved.
+ """ % (datetime.datetime.now().year)
+ 
+ GN_HEADER = """import("//build/config/arm.gni")
+-import("ffmpeg_options.gni")
++import("//third_party/ffmpeg/ffmpeg_options.gni")
+ 
+ # Declare empty versions of each variable for easier +=ing later.
+ ffmpeg_c_sources = []

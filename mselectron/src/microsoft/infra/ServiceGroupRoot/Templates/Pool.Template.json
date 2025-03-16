@@ -1,0 +1,83 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "image_name": {
+      "type": "String"
+    },
+    "image_baseImage": {
+      "type": "String"
+    },
+    "image_buildProfile": {
+      "type": "Object"
+    },
+    "image_artifacts": {
+      "type": "Array"
+    },
+    "pool_name": {
+      "type": "String"
+    },
+    "pool_sku": {
+      "type": "Object"
+    },
+    "pool_maxPoolSize": {
+      "type": "Int"
+    },
+    "pool_networkProfile": {
+      "type": "Object"
+    },
+    "pool_vmProviderProperties": {
+      "type": "Object"
+    }
+  },
+  "resources": [
+    {
+      "name": "[parameters('image_name')]",
+      "type": "Microsoft.CloudTest/images",
+      "apiVersion": "2020-05-07",
+      "location": "westus2",
+      "properties": {
+        "imageType": "Managed",
+        "baseImage": "[parameters('image_baseImage')]",
+        "buildProfile": "[parameters('image_buildProfile')]",
+        "artifacts": "[parameters('image_artifacts')]",
+        "publishingProfile": {
+          "targetRegions": [
+            {
+              "name": "westus2",
+              "replicas": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "[parameters('pool_name')]",
+      "type": "Microsoft.CloudTest/hostedpools",
+      "dependsOn": [
+        "[resourceId('Microsoft.CloudTest/images', parameters('image_name'))]"
+      ],
+      "apiVersion": "2020-05-07",
+      "location": "westus2",
+      "properties": {
+        "organization": "https://dev.azure.com/devdiv",
+        "projects": [
+          "DevDiv"
+        ],
+        "sku": "[parameters('pool_sku')]",
+        "images": [
+          {
+            "imageName": "[parameters('image_name')]",
+            "poolBufferPercentage": "100"
+          }
+        ],
+        "maxPoolSize": "[parameters('pool_maxPoolSize')]",
+        "agentProfile": {
+          "type": "Stateless"
+        },
+        "networkProfile": "[parameters('pool_networkProfile')]",
+        "vmProviderProperties": "[parameters('pool_vmProviderProperties')]"
+      }
+    }
+  ]
+}

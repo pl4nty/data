@@ -1,0 +1,10 @@
+{
+  "devDependencies": {
+    "remark-cli": "^6.0.1",
+    "remark-preset-lint-markdown-style-guide": "^2.1.2"
+  },
+  "scripts": {
+    "remark": "remark --rc-path .remarkrc.yml --ignore-path .remarkignore --frail .azure-devops .",
+    "yamllint": "yamllint --config-file .yamllint.yml --strict ."
+  }
+}

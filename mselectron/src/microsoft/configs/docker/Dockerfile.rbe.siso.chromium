@@ -1,0 +1,3 @@
+RUN apt update && apt -y install unattended-upgrades
+
+RUN unattended-upgrade -d

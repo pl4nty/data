@@ -1,0 +1,5 @@
+[
+  { "patch_dir": "src/microsoft/patches/backports/chromium/src", "repo": "src" },
+  { "patch_dir": "src/microsoft/patches/backports/chromium/ffmpeg", "repo": "src/third_party/ffmpeg" },
+  { "patch_dir": "src/microsoft/patches/backports/chromium/v8", "repo": "src/v8" }
+]

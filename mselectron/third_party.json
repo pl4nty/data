@@ -1,0 +1,1587 @@
+[
+  {
+    "name": "abseil-cpp",
+    "size": 14742835,
+    "file_count": 1662
+  },
+  {
+    "name": "accessibility_test_framework",
+    "size": 2206416,
+    "file_count": 265
+  },
+  {
+    "name": "afl",
+    "size": 1353092,
+    "file_count": 171
+  },
+  {
+    "name": "alsa",
+    "size": 27848,
+    "file_count": 7
+  },
+  {
+    "name": "android_build_tools",
+    "size": 313497,
+    "file_count": 131
+  },
+  {
+    "name": "android_deps",
+    "size": 8760377,
+    "file_count": 986
+  },
+  {
+    "name": "android_media",
+    "size": 31320,
+    "file_count": 19
+  },
+  {
+    "name": "android_opengl",
+    "size": 31741,
+    "file_count": 9
+  },
+  {
+    "name": "android_platform",
+    "size": 90893,
+    "file_count": 19
+  },
+  {
+    "name": "android_prebuilts",
+    "size": 488,
+    "file_count": 2
+  },
+  {
+    "name": "android_provider",
+    "size": 21952,
+    "file_count": 14
+  },
+  {
+    "name": "android_sdk",
+    "size": 170588,
+    "file_count": 158
+  },
+  {
+    "name": "android_swipe_refresh",
+    "size": 75920,
+    "file_count": 17
+  },
+  {
+    "name": "android_system_sdk",
+    "size": 20095,
+    "file_count": 5
+  },
+  {
+    "name": "android_toolchain",
+    "size": 553960,
+    "file_count": 8
+  },
+  {
+    "name": "androidx",
+    "size": 150752,
+    "file_count": 69
+  },
+  {
+    "name": "androidx_javascriptengine",
+    "size": 15425,
+    "file_count": 5
+  },
+  {
+    "name": "angle",
+    "size": 903451667,
+    "file_count": 13665
+  },
+  {
+    "name": "anonymous_tokens",
+    "size": 588889,
+    "file_count": 92
+  },
+  {
+    "name": "aosp_dalvik",
+    "size": 2167,
+    "file_count": 8
+  },
+  {
+    "name": "apache-portable-runtime",
+    "size": 29676,
+    "file_count": 7
+  },
+  {
+    "name": "apache-win32",
+    "size": 17708921,
+    "file_count": 150
+  },
+  {
+    "name": "apple_apsl",
+    "size": 23874,
+    "file_count": 6
+  },
+  {
+    "name": "arcore-android-sdk",
+    "size": 14712,
+    "file_count": 12
+  },
+  {
+    "name": "arcore-android-sdk-client",
+    "size": 23149,
+    "file_count": 11
+  },
+  {
+    "name": "ashmem",
+    "size": 36415,
+    "file_count": 13
+  },
+  {
+    "name": "axe-core",
+    "size": 1015485,
+    "file_count": 8
+  },
+  {
+    "name": "beto-core",
+    "size": 10046042,
+    "file_count": 824
+  },
+  {
+    "name": "bidimapper",
+    "size": 802617,
+    "file_count": 12
+  },
+  {
+    "name": "blink",
+    "size": 160694375,
+    "file_count": 22007
+  },
+  {
+    "name": "boringssl",
+    "size": 81444252,
+    "file_count": 5920
+  },
+  {
+    "name": "breakpad",
+    "size": 29899233,
+    "file_count": 1100
+  },
+  {
+    "name": "brotli",
+    "size": 2073451,
+    "file_count": 110
+  },
+  {
+    "name": "bspatch",
+    "size": 14509,
+    "file_count": 8
+  },
+  {
+    "name": "byte_buddy",
+    "size": 53170,
+    "file_count": 12
+  },
+  {
+    "name": "cardboard",
+    "size": 42752,
+    "file_count": 20
+  },
+  {
+    "name": "cast_core",
+    "size": 118512,
+    "file_count": 56
+  },
+  {
+    "name": "catapult",
+    "size": 301632449,
+    "file_count": 10804
+  },
+  {
+    "name": "ced",
+    "size": 1405981,
+    "file_count": 56
+  },
+  {
+    "name": "checkstyle",
+    "size": 41799,
+    "file_count": 11
+  },
+  {
+    "name": "chevron",
+    "size": 28677,
+    "file_count": 13
+  },
+  {
+    "name": "chromevox",
+    "size": 861422,
+    "file_count": 38
+  },
+  {
+    "name": "chromium-variations",
+    "size": 988454,
+    "file_count": 10
+  },
+  {
+    "name": "clang-format",
+    "size": 89712,
+    "file_count": 16
+  },
+  {
+    "name": "cld_3",
+    "size": 2534141,
+    "file_count": 99
+  },
+  {
+    "name": "cldr",
+    "size": 7164527,
+    "file_count": 31
+  },
+  {
+    "name": "closure_compiler",
+    "size": 13283362,
+    "file_count": 78
+  },
+  {
+    "name": "cloud_authenticator",
+    "size": 353059,
+    "file_count": 38
+  },
+  {
+    "name": "colorama",
+    "size": 201695,
+    "file_count": 60
+  },
+  {
+    "name": "content_analysis_sdk",
+    "size": 193428,
+    "file_count": 82
+  },
+  {
+    "name": "coremltools",
+    "size": 270379,
+    "file_count": 42
+  },
+  {
+    "name": "cpu_features",
+    "size": 532079,
+    "file_count": 124
+  },
+  {
+    "name": "cpuinfo",
+    "size": 20293993,
+    "file_count": 615
+  },
+  {
+    "name": "crabbyavif",
+    "size": 2094791,
+    "file_count": 181
+  },
+  {
+    "name": "crashpad",
+    "size": 7616409,
+    "file_count": 1275
+  },
+  {
+    "name": "crc32c",
+    "size": 103337,
+    "file_count": 50
+  },
+  {
+    "name": "cronet_android_mainline_clang",
+    "size": 15979,
+    "file_count": 6
+  },
+  {
+    "name": "cros-components",
+    "size": 671397,
+    "file_count": 119
+  },
+  {
+    "name": "crossbench",
+    "size": 3225075,
+    "file_count": 657
+  },
+  {
+    "name": "d3",
+    "size": 871367,
+    "file_count": 11
+  },
+  {
+    "name": "dav1d",
+    "size": 11822127,
+    "file_count": 448
+  },
+  {
+    "name": "dawn",
+    "size": 658637758,
+    "file_count": 32518
+  },
+  {
+    "name": "dbus",
+    "size": 2438,
+    "file_count": 7
+  },
+  {
+    "name": "decklink",
+    "size": 212900,
+    "file_count": 34
+  },
+  {
+    "name": "depot_tools",
+    "size": 25214819,
+    "file_count": 3439
+  },
+  {
+    "name": "devscripts",
+    "size": 65264,
+    "file_count": 7
+  },
+  {
+    "name": "devtools-frontend",
+    "size": 531926197,
+    "file_count": 32892
+  },
+  {
+    "name": "distributed_point_functions",
+    "size": 454847,
+    "file_count": 66
+  },
+  {
+    "name": "dom_distiller_js",
+    "size": 9539167,
+    "file_count": 33
+  },
+  {
+    "name": "domato",
+    "size": 1488666,
+    "file_count": 62
+  },
+  {
+    "name": "dpkg-shlibdeps",
+    "size": 57669,
+    "file_count": 10
+  },
+  {
+    "name": "eigen3",
+    "size": 16959598,
+    "file_count": 2033
+  },
+  {
+    "name": "electron_node",
+    "size": 558115929,
+    "file_count": 45784
+  },
+  {
+    "name": "emoji-metadata",
+    "size": 11999,
+    "file_count": 4
+  },
+  {
+    "name": "emoji-segmenter",
+    "size": 38607,
+    "file_count": 14
+  },
+  {
+    "name": "engflow-reclient-configs",
+    "size": 55120,
+    "file_count": 33
+  },
+  {
+    "name": "expat",
+    "size": 1884411,
+    "file_count": 207
+  },
+  {
+    "name": "farmhash",
+    "size": 1816941,
+    "file_count": 80
+  },
+  {
+    "name": "fast_float",
+    "size": 421704,
+    "file_count": 119
+  },
+  {
+    "name": "fdlibm",
+    "size": 127446,
+    "file_count": 12
+  },
+  {
+    "name": "ffmpeg",
+    "size": 88940882,
+    "file_count": 10174
+  },
+  {
+    "name": "fft2d",
+    "size": 128052,
+    "file_count": 9
+  },
+  {
+    "name": "flac",
+    "size": 1769903,
+    "file_count": 108
+  },
+  {
+    "name": "flatbuffers",
+    "size": 14501681,
+    "file_count": 2561
+  },
+  {
+    "name": "flex",
+    "size": 2943,
+    "file_count": 7
+  },
+  {
+    "name": "fontconfig",
+    "size": 275194,
+    "file_count": 23
+  },
+  {
+    "name": "fp16",
+    "size": 486049,
+    "file_count": 59
+  },
+  {
+    "name": "freetype",
+    "size": 11037289,
+    "file_count": 816
+  },
+  {
+    "name": "freetype-testing",
+    "size": 6979580,
+    "file_count": 1111
+  },
+  {
+    "name": "fuchsia-gn-sdk",
+    "size": 114444,
+    "file_count": 29
+  },
+  {
+    "name": "fuchsia-sdk",
+    "size": 599,
+    "file_count": 4
+  },
+  {
+    "name": "fusejs",
+    "size": 57445,
+    "file_count": 9
+  },
+  {
+    "name": "fuzztest",
+    "size": 3588734,
+    "file_count": 520
+  },
+  {
+    "name": "fxdiv",
+    "size": 43463,
+    "file_count": 31
+  },
+  {
+    "name": "gemmlowp",
+    "size": 5462545,
+    "file_count": 171
+  },
+  {
+    "name": "gif_player",
+    "size": 49636,
+    "file_count": 13
+  },
+  {
+    "name": "glfw",
+    "size": 676,
+    "file_count": 4
+  },
+  {
+    "name": "glslang",
+    "size": 39457556,
+    "file_count": 3029
+  },
+  {
+    "name": "google-closure-library",
+    "size": 30655719,
+    "file_count": 3299
+  },
+  {
+    "name": "google-java-format",
+    "size": 446017,
+    "file_count": 27
+  },
+  {
+    "name": "google-truth",
+    "size": 16962,
+    "file_count": 6
+  },
+  {
+    "name": "google_benchmark",
+    "size": 1032046,
+    "file_count": 209
+  },
+  {
+    "name": "google_input_tools",
+    "size": 13003018,
+    "file_count": 774
+  },
+  {
+    "name": "google_toolbox_for_mac",
+    "size": 15195,
+    "file_count": 6
+  },
+  {
+    "name": "googlefonts_testdata",
+    "size": 6213,
+    "file_count": 5
+  },
+  {
+    "name": "googletest",
+    "size": 4068952,
+    "file_count": 293
+  },
+  {
+    "name": "gperf",
+    "size": 2906676,
+    "file_count": 209
+  },
+  {
+    "name": "grpc",
+    "size": 51238626,
+    "file_count": 11610
+  },
+  {
+    "name": "hamcrest",
+    "size": 3350,
+    "file_count": 7
+  },
+  {
+    "name": "harfbuzz-ng",
+    "size": 8647346,
+    "file_count": 686
+  },
+  {
+    "name": "highway",
+    "size": 8407536,
+    "file_count": 277
+  },
+  {
+    "name": "hunspell",
+    "size": 5464289,
+    "file_count": 104
+  },
+  {
+    "name": "hunspell_dictionaries",
+    "size": 274792939,
+    "file_count": 245
+  },
+  {
+    "name": "hyphenation-patterns",
+    "size": 4853982,
+    "file_count": 437
+  },
+  {
+    "name": "iaccessible2",
+    "size": 254955,
+    "file_count": 8
+  },
+  {
+    "name": "iccjpeg",
+    "size": 17640,
+    "file_count": 9
+  },
+  {
+    "name": "icu",
+    "size": 214829168,
+    "file_count": 7192
+  },
+  {
+    "name": "icu4j",
+    "size": 21420,
+    "file_count": 6
+  },
+  {
+    "name": "ijar",
+    "size": 180165,
+    "file_count": 21
+  },
+  {
+    "name": "ink",
+    "size": 6370705,
+    "file_count": 482
+  },
+  {
+    "name": "ink_stroke_modeler",
+    "size": 611279,
+    "file_count": 89
+  },
+  {
+    "name": "inspector_protocol",
+    "size": 479266,
+    "file_count": 74
+  },
+  {
+    "name": "ipcz",
+    "size": 1234759,
+    "file_count": 210
+  },
+  {
+    "name": "isimpledom",
+    "size": 28047,
+    "file_count": 9
+  },
+  {
+    "name": "jacoco",
+    "size": 20413,
+    "file_count": 14
+  },
+  {
+    "name": "javalang",
+    "size": 1769,
+    "file_count": 5
+  },
+  {
+    "name": "jdk",
+    "size": 6748,
+    "file_count": 10
+  },
+  {
+    "name": "jdk11",
+    "size": 622,
+    "file_count": 4
+  },
+  {
+    "name": "jdk17",
+    "size": 294,
+    "file_count": 3
+  },
+  {
+    "name": "jinja2",
+    "size": 490039,
+    "file_count": 35
+  },
+  {
+    "name": "jni_zero",
+    "size": 792406,
+    "file_count": 215
+  },
+  {
+    "name": "js_code_coverage",
+    "size": 8526361,
+    "file_count": 2185
+  },
+  {
+    "name": "jsoncpp",
+    "size": 861906,
+    "file_count": 284
+  },
+  {
+    "name": "jszip",
+    "size": 1710,
+    "file_count": 4
+  },
+  {
+    "name": "junit",
+    "size": 27757,
+    "file_count": 7
+  },
+  {
+    "name": "khronos",
+    "size": 1592955,
+    "file_count": 27
+  },
+  {
+    "name": "kotlin_stdlib",
+    "size": 14132,
+    "file_count": 9
+  },
+  {
+    "name": "kotlinc",
+    "size": 2823,
+    "file_count": 9
+  },
+  {
+    "name": "lcov",
+    "size": 589679,
+    "file_count": 45
+  },
+  {
+    "name": "lens_server_proto",
+    "size": 38840,
+    "file_count": 39
+  },
+  {
+    "name": "leveldatabase",
+    "size": 1127099,
+    "file_count": 183
+  },
+  {
+    "name": "libaddressinput",
+    "size": 5055476,
+    "file_count": 408
+  },
+  {
+    "name": "libaom",
+    "size": 33198143,
+    "file_count": 1513
+  },
+  {
+    "name": "libbrlapi",
+    "size": 166164,
+    "file_count": 12
+  },
+  {
+    "name": "libc++",
+    "size": 60664914,
+    "file_count": 13979
+  },
+  {
+    "name": "libc++abi",
+    "size": 6538232,
+    "file_count": 182
+  },
+  {
+    "name": "libdrm",
+    "size": 3399,
+    "file_count": 5
+  },
+  {
+    "name": "libei",
+    "size": 4848,
+    "file_count": 8
+  },
+  {
+    "name": "libFuzzer",
+    "size": 479522,
+    "file_count": 73
+  },
+  {
+    "name": "libgav1",
+    "size": 7380513,
+    "file_count": 411
+  },
+  {
+    "name": "libipp",
+    "size": 2918,
+    "file_count": 6
+  },
+  {
+    "name": "libjingle_xmpp",
+    "size": 94355,
+    "file_count": 31
+  },
+  {
+    "name": "libjpeg_turbo",
+    "size": 6782520,
+    "file_count": 306
+  },
+  {
+    "name": "liblouis",
+    "size": 11407466,
+    "file_count": 22
+  },
+  {
+    "name": "libphonenumber",
+    "size": 99966231,
+    "file_count": 4276
+  },
+  {
+    "name": "libpng",
+    "size": 1490089,
+    "file_count": 53
+  },
+  {
+    "name": "libprotobuf-mutator",
+    "size": 195557,
+    "file_count": 78
+  },
+  {
+    "name": "libsecret",
+    "size": 107874,
+    "file_count": 20
+  },
+  {
+    "name": "libsrtp",
+    "size": 821024,
+    "file_count": 88
+  },
+  {
+    "name": "libsync",
+    "size": 14956,
+    "file_count": 7
+  },
+  {
+    "name": "libtess2",
+    "size": 182063,
+    "file_count": 31
+  },
+  {
+    "name": "libunwind",
+    "size": 816189,
+    "file_count": 84
+  },
+  {
+    "name": "liburlpattern",
+    "size": 153663,
+    "file_count": 23
+  },
+  {
+    "name": "libusb",
+    "size": 833356,
+    "file_count": 62
+  },
+  {
+    "name": "libva-fake-driver",
+    "size": 181124,
+    "file_count": 43
+  },
+  {
+    "name": "libva_protected_content",
+    "size": 9093,
+    "file_count": 5
+  },
+  {
+    "name": "libvpx",
+    "size": 31745492,
+    "file_count": 1522
+  },
+  {
+    "name": "libwebm",
+    "size": 2779154,
+    "file_count": 928
+  },
+  {
+    "name": "libwebp",
+    "size": 9973496,
+    "file_count": 507
+  },
+  {
+    "name": "libx11",
+    "size": 16279,
+    "file_count": 8
+  },
+  {
+    "name": "libxcb-keysyms",
+    "size": 5306,
+    "file_count": 6
+  },
+  {
+    "name": "libxml",
+    "size": 7574507,
+    "file_count": 1169
+  },
+  {
+    "name": "libxslt",
+    "size": 1811197,
+    "file_count": 120
+  },
+  {
+    "name": "libyuv",
+    "size": 5662380,
+    "file_count": 210
+  },
+  {
+    "name": "libzip",
+    "size": 5832152,
+    "file_count": 782
+  },
+  {
+    "name": "lighttpd",
+    "size": 19936216,
+    "file_count": 127
+  },
+  {
+    "name": "lit",
+    "size": 24873,
+    "file_count": 10
+  },
+  {
+    "name": "llvm-build",
+    "size": 218623751,
+    "file_count": 334
+  },
+  {
+    "name": "llvm-libc",
+    "size": 24197119,
+    "file_count": 5528
+  },
+  {
+    "name": "logdog",
+    "size": 30308,
+    "file_count": 11
+  },
+  {
+    "name": "logilab",
+    "size": 865879,
+    "file_count": 85
+  },
+  {
+    "name": "lottie",
+    "size": 460379,
+    "file_count": 11
+  },
+  {
+    "name": "lzma_sdk",
+    "size": 9988835,
+    "file_count": 111
+  },
+  {
+    "name": "mako",
+    "size": 601071,
+    "file_count": 120
+  },
+  {
+    "name": "markdown",
+    "size": 237746,
+    "file_count": 35
+  },
+  {
+    "name": "markupsafe",
+    "size": 27119,
+    "file_count": 15
+  },
+  {
+    "name": "material_color_utilities",
+    "size": 3878797,
+    "file_count": 410
+  },
+  {
+    "name": "material_design_icons",
+    "size": 18256,
+    "file_count": 6
+  },
+  {
+    "name": "material_web_components",
+    "size": 1965072,
+    "file_count": 867
+  },
+  {
+    "name": "maven",
+    "size": 12334,
+    "file_count": 6
+  },
+  {
+    "name": "mediapipe",
+    "size": 15682965,
+    "file_count": 2328
+  },
+  {
+    "name": "mesa_headers",
+    "size": 1006353,
+    "file_count": 17
+  },
+  {
+    "name": "metrics_proto",
+    "size": 236190,
+    "file_count": 40
+  },
+  {
+    "name": "microsoft_dxheaders",
+    "size": 3746599,
+    "file_count": 86
+  },
+  {
+    "name": "microsoft_webauthn",
+    "size": 51246,
+    "file_count": 9
+  },
+  {
+    "name": "mig",
+    "size": 21441,
+    "file_count": 7
+  },
+  {
+    "name": "minigbm",
+    "size": 4925,
+    "file_count": 6
+  },
+  {
+    "name": "mockito",
+    "size": 12131,
+    "file_count": 26
+  },
+  {
+    "name": "modp_b64",
+    "size": 42818,
+    "file_count": 10
+  },
+  {
+    "name": "nasm",
+    "size": 11330330,
+    "file_count": 1012
+  },
+  {
+    "name": "nearby",
+    "size": 77729636,
+    "file_count": 3161
+  },
+  {
+    "name": "neon_2_sse",
+    "size": 829844,
+    "file_count": 16
+  },
+  {
+    "name": "netty-tcnative",
+    "size": 15009,
+    "file_count": 6
+  },
+  {
+    "name": "netty4",
+    "size": 13119,
+    "file_count": 8
+  },
+  {
+    "name": "ninja",
+    "size": 622912,
+    "file_count": 14
+  },
+  {
+    "name": "node",
+    "size": 356217892,
+    "file_count": 7153
+  },
+  {
+    "name": "nyx-packer",
+    "size": 12816,
+    "file_count": 7
+  },
+  {
+    "name": "ocmock",
+    "size": 245187,
+    "file_count": 92
+  },
+  {
+    "name": "omnibox_proto",
+    "size": 22444,
+    "file_count": 16
+  },
+  {
+    "name": "one_euro_filter",
+    "size": 11928,
+    "file_count": 10
+  },
+  {
+    "name": "openh264",
+    "size": 72634651,
+    "file_count": 907
+  },
+  {
+    "name": "openscreen",
+    "size": 29060203,
+    "file_count": 2227
+  },
+  {
+    "name": "openxr",
+    "size": 87537,
+    "file_count": 19
+  },
+  {
+    "name": "opus",
+    "size": 31023562,
+    "file_count": 428
+  },
+  {
+    "name": "ots",
+    "size": 56216161,
+    "file_count": 545
+  },
+  {
+    "name": "pdfium",
+    "size": 34492864,
+    "file_count": 4657
+  },
+  {
+    "name": "pefile_py3",
+    "size": 253993,
+    "file_count": 10
+  },
+  {
+    "name": "perfetto",
+    "size": 70087728,
+    "file_count": 15854
+  },
+  {
+    "name": "perl",
+    "size": 507869900,
+    "file_count": 13828
+  },
+  {
+    "name": "pffft",
+    "size": 259131,
+    "file_count": 24
+  },
+  {
+    "name": "pipewire",
+    "size": 3701,
+    "file_count": 7
+  },
+  {
+    "name": "pipewire-media-session",
+    "size": 3138,
+    "file_count": 7
+  },
+  {
+    "name": "ply",
+    "size": 196048,
+    "file_count": 11
+  },
+  {
+    "name": "polymer",
+    "size": 1501330,
+    "file_count": 244
+  },
+  {
+    "name": "private-join-and-compute",
+    "size": 191829,
+    "file_count": 44
+  },
+  {
+    "name": "private_membership",
+    "size": 3915268,
+    "file_count": 51
+  },
+  {
+    "name": "protobuf",
+    "size": 34190273,
+    "file_count": 2583
+  },
+  {
+    "name": "protobuf-javascript",
+    "size": 2548474,
+    "file_count": 236
+  },
+  {
+    "name": "pthreadpool",
+    "size": 1243529,
+    "file_count": 65
+  },
+  {
+    "name": "puffin",
+    "size": 415476,
+    "file_count": 72
+  },
+  {
+    "name": "pycoverage",
+    "size": 410818,
+    "file_count": 55
+  },
+  {
+    "name": "pyjson5",
+    "size": 3512736,
+    "file_count": 35
+  },
+  {
+    "name": "pylint",
+    "size": 600108,
+    "file_count": 47
+  },
+  {
+    "name": "pywebsocket3",
+    "size": 497204,
+    "file_count": 94
+  },
+  {
+    "name": "pyyaml",
+    "size": 219125,
+    "file_count": 20
+  },
+  {
+    "name": "quic_trace",
+    "size": 951988,
+    "file_count": 80
+  },
+  {
+    "name": "qunit",
+    "size": 84006,
+    "file_count": 9
+  },
+  {
+    "name": "r8",
+    "size": 48918,
+    "file_count": 29
+  },
+  {
+    "name": "rapidhash",
+    "size": 73016,
+    "file_count": 13
+  },
+  {
+    "name": "re2",
+    "size": 1661739,
+    "file_count": 156
+  },
+  {
+    "name": "requests",
+    "size": 9567,
+    "file_count": 5
+  },
+  {
+    "name": "rjsmin",
+    "size": 35298,
+    "file_count": 5
+  },
+  {
+    "name": "rnnoise",
+    "size": 37918,
+    "file_count": 10
+  },
+  {
+    "name": "robolectric",
+    "size": 28722,
+    "file_count": 24
+  },
+  {
+    "name": "rust",
+    "size": 208613959,
+    "file_count": 9256
+  },
+  {
+    "name": "rust-toolchain",
+    "size": 1076230151,
+    "file_count": 4131
+  },
+  {
+    "name": "ruy",
+    "size": 1718117,
+    "file_count": 155
+  },
+  {
+    "name": "s2cellid",
+    "size": 171384,
+    "file_count": 34
+  },
+  {
+    "name": "screen-ai",
+    "size": 218171809,
+    "file_count": 223
+  },
+  {
+    "name": "search_engines_data",
+    "size": 68045,
+    "file_count": 9
+  },
+  {
+    "name": "securemessage",
+    "size": 248899,
+    "file_count": 61
+  },
+  {
+    "name": "selenium-atoms",
+    "size": 1251486,
+    "file_count": 11
+  },
+  {
+    "name": "sentencepiece",
+    "size": 8620442,
+    "file_count": 134
+  },
+  {
+    "name": "shell-encryption",
+    "size": 754084,
+    "file_count": 99
+  },
+  {
+    "name": "simdutf",
+    "size": 2630555,
+    "file_count": 7
+  },
+  {
+    "name": "simplejson",
+    "size": 155621,
+    "file_count": 12
+  },
+  {
+    "name": "sinonjs",
+    "size": 162362,
+    "file_count": 8
+  },
+  {
+    "name": "siso",
+    "size": 41428747,
+    "file_count": 7
+  },
+  {
+    "name": "six",
+    "size": 133896,
+    "file_count": 20
+  },
+  {
+    "name": "skia",
+    "size": 140740535,
+    "file_count": 9602
+  },
+  {
+    "name": "smhasher",
+    "size": 250125,
+    "file_count": 54
+  },
+  {
+    "name": "snappy",
+    "size": 3343664,
+    "file_count": 71
+  },
+  {
+    "name": "speech-dispatcher",
+    "size": 41802,
+    "file_count": 8
+  },
+  {
+    "name": "speedometer",
+    "size": 291006877,
+    "file_count": 5690
+  },
+  {
+    "name": "spirv-cross",
+    "size": 10961147,
+    "file_count": 4723
+  },
+  {
+    "name": "spirv-headers",
+    "size": 3835839,
+    "file_count": 126
+  },
+  {
+    "name": "spirv-tools",
+    "size": 23720898,
+    "file_count": 1789
+  },
+  {
+    "name": "sqlite",
+    "size": 193736941,
+    "file_count": 2353
+  },
+  {
+    "name": "sqlite4java",
+    "size": 10860,
+    "file_count": 6
+  },
+  {
+    "name": "squirrel.mac",
+    "size": 20009758,
+    "file_count": 830
+  },
+  {
+    "name": "subresource-filter-ruleset",
+    "size": 101121,
+    "file_count": 10
+  },
+  {
+    "name": "swift-toolchain",
+    "size": 13902,
+    "file_count": 7
+  },
+  {
+    "name": "swiftshader",
+    "size": 268973575,
+    "file_count": 8656
+  },
+  {
+    "name": "tensorflow-text",
+    "size": 87506,
+    "file_count": 36
+  },
+  {
+    "name": "tensorflow_models",
+    "size": 121573,
+    "file_count": 38
+  },
+  {
+    "name": "test_fonts",
+    "size": 71853,
+    "file_count": 13
+  },
+  {
+    "name": "text-fragments-polyfill",
+    "size": 485912,
+    "file_count": 74
+  },
+  {
+    "name": "tflite",
+    "size": 332989221,
+    "file_count": 36993
+  },
+  {
+    "name": "tflite_support",
+    "size": 111264811,
+    "file_count": 1525
+  },
+  {
+    "name": "turbine",
+    "size": 15342,
+    "file_count": 9
+  },
+  {
+    "name": "ukey2",
+    "size": 586170,
+    "file_count": 118
+  },
+  {
+    "name": "unrar",
+    "size": 980035,
+    "file_count": 172
+  },
+  {
+    "name": "updater",
+    "size": 117823627,
+    "file_count": 97
+  },
+  {
+    "name": "usb_ids",
+    "size": 551332,
+    "file_count": 5
+  },
+  {
+    "name": "utf",
+    "size": 1797597,
+    "file_count": 71
+  },
+  {
+    "name": "v4l-utils",
+    "size": 116345,
+    "file_count": 9
+  },
+  {
+    "name": "vulkan-deps",
+    "size": 54444,
+    "file_count": 39
+  },
+  {
+    "name": "vulkan-headers",
+    "size": 30660585,
+    "file_count": 97
+  },
+  {
+    "name": "vulkan-loader",
+    "size": 8144948,
+    "file_count": 283
+  },
+  {
+    "name": "vulkan-tools",
+    "size": 4662355,
+    "file_count": 157
+  },
+  {
+    "name": "vulkan-utility-libraries",
+    "size": 6590517,
+    "file_count": 105
+  },
+  {
+    "name": "vulkan-validation-layers",
+    "size": 43473113,
+    "file_count": 851
+  },
+  {
+    "name": "vulkan_memory_allocator",
+    "size": 3775242,
+    "file_count": 312
+  },
+  {
+    "name": "wasm_tts_engine",
+    "size": 155616,
+    "file_count": 7
+  },
+  {
+    "name": "wayland",
+    "size": 24548,
+    "file_count": 15
+  },
+  {
+    "name": "wayland-protocols",
+    "size": 247262,
+    "file_count": 66
+  },
+  {
+    "name": "webdriver",
+    "size": 1033691,
+    "file_count": 341
+  },
+  {
+    "name": "webgl",
+    "size": 88493978,
+    "file_count": 17022
+  },
+  {
+    "name": "webgpu-cts",
+    "size": 58420561,
+    "file_count": 1464
+  },
+  {
+    "name": "webpagereplay",
+    "size": 151073,
+    "file_count": 30
+  },
+  {
+    "name": "webrtc",
+    "size": 100818521,
+    "file_count": 7874
+  },
+  {
+    "name": "webrtc_overrides",
+    "size": 164025,
+    "file_count": 59
+  },
+  {
+    "name": "webxr_test_pages",
+    "size": 13406213,
+    "file_count": 146
+  },
+  {
+    "name": "weston",
+    "size": 423254,
+    "file_count": 17
+  },
+  {
+    "name": "widevine",
+    "size": 12011,
+    "file_count": 11
+  },
+  {
+    "name": "win_build_output",
+    "size": 11220567,
+    "file_count": 432
+  },
+  {
+    "name": "win_virtual_display",
+    "size": 88201,
+    "file_count": 38
+  },
+  {
+    "name": "woff2",
+    "size": 157048,
+    "file_count": 42
+  },
+  {
+    "name": "wpt_tools",
+    "size": 6270117,
+    "file_count": 550
+  },
+  {
+    "name": "wtl",
+    "size": 1421896,
+    "file_count": 29
+  },
+  {
+    "name": "wuffs",
+    "size": 2284407,
+    "file_count": 23
+  },
+  {
+    "name": "x11proto",
+    "size": 62930,
+    "file_count": 5
+  },
+  {
+    "name": "xcbproto",
+    "size": 860183,
+    "file_count": 65
+  },
+  {
+    "name": "xnnpack",
+    "size": 146327505,
+    "file_count": 11305
+  },
+  {
+    "name": "zlib",
+    "size": 2150638,
+    "file_count": 189
+  },
+  {
+    "name": "zstd",
+    "size": 8346177,
+    "file_count": 723
+  },
+  {
+    "name": "zxcvbn-cpp",
+    "size": 312279,
+    "file_count": 40
+  }
+]

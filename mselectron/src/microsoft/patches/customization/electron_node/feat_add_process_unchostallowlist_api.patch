@@ -1,0 +1,1295 @@
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
+From: deepak1556 <hop2deep@gmail.com>
+Date: Tue, 4 Apr 2023 18:09:44 +0900
+Subject: feat: add process.uncHostAllowlist api
+
+Refs https://github.com/microsoft/vscode/issues/182070
+
+diff --git a/lib/child_process.js b/lib/child_process.js
+index 4d4da798ce59ce42e42d1f05fccf07699c033d46..57b89ace4dccd44973f4be56279f8be99a252110 100644
+--- a/lib/child_process.js
++++ b/lib/child_process.js
+@@ -22,6 +22,7 @@
+ 'use strict';
+ 
+ const {
++  ArrayFrom,
+   ArrayIsArray,
+   ArrayPrototypeFilter,
+   ArrayPrototypeIncludes,
+@@ -709,6 +710,24 @@ function normalizeSpawnArguments(file, args, options) {
+     }
+   }
+ 
++  if (process.restrictUNCAccess) {
++    if (process.uncHostAllowlist.size > 0) {
++      // Let child process know about UNC allowlist
++      for (const host of process.uncHostAllowlist) {
++        if (typeof host !== 'string') {
++          process.uncHostAllowlist.delete(host);
++        }
++      }
++      const uncHostAllowlist =
++          ArrayPrototypeJoin(ArrayFrom(process.uncHostAllowlist), '\\');
++      ArrayPrototypePush(envPairs,
++                         `NODE_UNC_HOST_ALLOWLIST=${uncHostAllowlist}`);
++    }
++  } else {
++    ArrayPrototypePush(envPairs,
++                       'NODE_DISABLE_UNC_ACCESS_CHECKS=1');
++  }
++
+   return {
+     // Make a shallow copy so we don't clobber the user's options object.
+     __proto__: null,
+diff --git a/lib/fs.js b/lib/fs.js
+index c1df53f6aa9785ea3f9da995405c060b30d3cd9e..5a6596c58ab9ae340e597a9d5fddab7a41976339 100644
+--- a/lib/fs.js
++++ b/lib/fs.js
+@@ -115,6 +115,7 @@ const {
+   Stats,
+   getStatFsFromBinding,
+   getStatsFromBinding,
++  maybeAddHostToUncAllowList,
+   realpathCacheKey,
+   stringToFlags,
+   stringToSymlinkType,
+@@ -1754,6 +1755,17 @@ function statfsSync(path, options = { bigint: false }) {
+   return getStatFsFromBinding(stats);
+ }
+ 
++function wrapCallbackForUnc(callback) {
++  return (err, result) => {
++    if (err) {
++      callback(err);
++    } else {
++      maybeAddHostToUncAllowList(path, result);
++      callback(null, result);
++    }
++  };
++}
++
+ /**
+  * Reads the contents of a symbolic link
+  * referred to by `path`.
+@@ -1769,7 +1781,7 @@ function readlink(path, options, callback) {
+   callback = makeCallback(typeof options === 'function' ? options : callback);
+   options = getOptions(options);
+   const req = new FSReqCallback();
+-  req.oncomplete = callback;
++  req.oncomplete = wrapCallbackForUnc(callback);
+   binding.readlink(getValidatedPath(path), options.encoding, req);
+ }
+ 
+@@ -1782,7 +1794,9 @@ function readlink(path, options, callback) {
+  */
+ function readlinkSync(path, options) {
+   options = getOptions(options);
+-  return binding.readlink(getValidatedPath(path), options.encoding);
++  const result = binding.readlink(getValidatedPath(path), options.encoding);
++  maybeAddHostToUncAllowList(path, result);
++  return result;
+ }
+ 
+ /**
+@@ -2846,10 +2860,12 @@ function realpathSync(p, options) {
+  */
+ realpathSync.native = (path, options) => {
+   options = getOptions(options);
+-  return binding.realpath(
++  const result = binding.realpath(
+     getValidatedPath(path),
+     options.encoding,
+   );
++  maybeAddHostToUncAllowList(path, result);
++  return result;
+ };
+ 
+ /**
+@@ -3010,7 +3026,7 @@ realpath.native = (path, options, callback) => {
+   options = getOptions(options);
+   path = getValidatedPath(path);
+   const req = new FSReqCallback();
+-  req.oncomplete = callback;
++  req.oncomplete = wrapCallbackForUnc(callback);
+   binding.realpath(path, options.encoding, req);
+ };
+ 
+diff --git a/lib/internal/errors.js b/lib/internal/errors.js
+index 4389d32e47619e494a0d65f9e6e4ef499fb1fda4..eccd787607a31dc105776a8d61cea56ffc4a683e 100644
+--- a/lib/internal/errors.js
++++ b/lib/internal/errors.js
+@@ -1820,6 +1820,9 @@ E('ERR_UNCAUGHT_EXCEPTION_CAPTURE_ALREADY_SET',
+   '`process.setupUncaughtExceptionCapture()` was called while a capture ' +
+     'callback was already active',
+   Error);
++E('ERR_UNC_HOST_NOT_ALLOWED', function(hostname) {
++  return `UNC host '${hostname}' access is not allowed`;
++}, Error);
+ E('ERR_UNESCAPED_CHARACTERS', '%s contains unescaped characters', TypeError);
+ E('ERR_UNHANDLED_ERROR',
+   // Using a default argument here is important so the argument is not counted
+diff --git a/lib/internal/fs/promises.js b/lib/internal/fs/promises.js
+index 4567f7ff36a01d8ad73e61a9078d59857bbd92b2..c420cfa9fbd6e3a0aa205059187d437386ccab15 100644
+--- a/lib/internal/fs/promises.js
++++ b/lib/internal/fs/promises.js
+@@ -61,6 +61,7 @@ const {
+   getStatFsFromBinding,
+   getStatsFromBinding,
+   getValidatedPath,
++  maybeAddHostToUncAllowList,
+   preprocessSymlinkDestination,
+   stringToFlags,
+   stringToSymlinkType,
+@@ -961,6 +962,7 @@ async function readdir(path, options) {
+     undefined,
+     handleErrorFromBinding,
+   );
++  maybeAddHostToUncAllowList(path, result);
+   return options.withFileTypes ?
+     getDirectoryEntriesPromise(path, result) :
+     result;
+@@ -1166,11 +1168,13 @@ async function lutimes(path, atime, mtime) {
+ 
+ async function realpath(path, options) {
+   options = getOptions(options);
+-  return await PromisePrototypeThen(
++  const result = await PromisePrototypeThen(
+     binding.realpath(getValidatedPath(path), options.encoding, kUsePromises),
+     undefined,
+     handleErrorFromBinding,
+   );
++  maybeAddHostToUncAllowList(path, result);
++  return result;
+ }
+ 
+ async function mkdtemp(prefix, options) {
+diff --git a/lib/internal/fs/utils.js b/lib/internal/fs/utils.js
+index 3338e5d0610a1bc4e31adeff24556887cc66352d..8eab587307fef8d85eaf7d9003a1dc4f70f00092 100644
+--- a/lib/internal/fs/utils.js
++++ b/lib/internal/fs/utils.js
+@@ -19,8 +19,11 @@ const {
+   ReflectApply,
+   ReflectOwnKeys,
+   RegExpPrototypeSymbolReplace,
++  StringPrototypeCharCodeAt,
+   StringPrototypeEndsWith,
+   StringPrototypeIncludes,
++  StringPrototypeSlice,
++  StringPrototypeToLowerCase,
+   Symbol,
+   TypedArrayPrototypeAt,
+   TypedArrayPrototypeIncludes,
+@@ -36,6 +39,7 @@ const {
+     ERR_INVALID_ARG_TYPE,
+     ERR_INVALID_ARG_VALUE,
+     ERR_OUT_OF_RANGE,
++    ERR_UNC_HOST_NOT_ALLOWED,
+   },
+   hideStackFrames,
+ } = require('internal/errors');
+@@ -47,6 +51,7 @@ const {
+ } = require('internal/util/types');
+ const {
+   kEmptyObject,
++  isWindowsDeviceRoot,
+   once,
+   deprecate,
+   isWindows,
+@@ -109,6 +114,14 @@ const {
+   },
+ } = internalBinding('constants');
+ 
++const {
++  CHAR_FORWARD_SLASH,
++  CHAR_BACKWARD_SLASH,
++  CHAR_QUESTION_MARK,
++  CHAR_COLON,
++  CHAR_DOT,
++} = require('internal/constants');
++
+ // The access modes can be any of F_OK, R_OK, W_OK or X_OK. Some might not be
+ // available on specific systems. They can be used in combination as well
+ // (F_OK | R_OK | W_OK | X_OK).
+@@ -146,6 +159,10 @@ const kWriteFileMaxChunkSize = 512 * 1024;
+ 
+ const kMaxUserId = 2 ** 32 - 1;
+ 
++function isPathSeparator(code) {
++  return code === CHAR_FORWARD_SLASH || code === CHAR_BACKWARD_SLASH;
++}
++
+ let fs;
+ function lazyLoadFs() {
+   return fs ??= require('fs');
+@@ -358,6 +375,15 @@ function handleErrorFromBinding(ctx) {
+   }
+ }
+ 
++function normalizeTrailingDot(segment) {
++  if (segment.length > 1 &&
++      StringPrototypeCharCodeAt(segment, segment.length - 1) === CHAR_DOT &&
++      StringPrototypeCharCodeAt(segment, segment.length - 2) !== CHAR_DOT) {
++    return StringPrototypeSlice(segment, 0, -1);
++  }
++  return segment;
++}
++
+ function preprocessSymlinkDestination(path, type, linkPath) {
+   if (!isWindows) {
+     // No preprocessing is needed on Unix.
+@@ -717,6 +743,12 @@ const validatePath = hideStackFrames((path, propName = 'path') => {
+   if ((!pathIsString && !pathIsUint8Array) ||
+       (pathIsString && !StringPrototypeIncludes(path, '\u0000')) ||
+       (pathIsUint8Array && !TypedArrayPrototypeIncludes(path, 0))) {
++    if (isWindows && process.restrictUNCAccess) {
++      const hostname = getUNCHostname(path, true);
++      if (hostname && !process.uncHostAllowlist.has(hostname)) {
++        throw new ERR_UNC_HOST_NOT_ALLOWED(hostname);
++      }
++    }
+     return;
+   }
+ 
+@@ -727,6 +759,108 @@ const validatePath = hideStackFrames((path, propName = 'path') => {
+   );
+ });
+ 
++const startsWithWindowsDeviceRoot = hideStackFrames(path => {
++  if (isUint8Array(path)) {
++    path = '' + path;
++  }
++  const pathIsString = typeof path === 'string';
++  if (!pathIsString) {
++    return false;
++  }
++  const len = path.length;
++  return len > 2 &&
++    isWindowsDeviceRoot(StringPrototypeCharCodeAt(path, 0)) &&
++    StringPrototypeCharCodeAt(path, 1) === CHAR_COLON &&
++    isPathSeparator(StringPrototypeCharCodeAt(path, 2));
++});
++
++const getUNCHostname = hideStackFrames((path, throwOnGlobalRoot = false) => {
++  if (isUint8Array(path)) {
++    path = '' + path;
++  }
++
++  const pathIsString = typeof path === 'string';
++
++  if (isWindows &&
++      pathIsString &&
++      isPathSeparator(StringPrototypeCharCodeAt(path, 0))) {
++    let len = path.length;
++    // Possible UNC root
++    if (isPathSeparator(StringPrototypeCharCodeAt(path, 1))) {
++      // Matched double path separator at beginning
++      let j = 2;
++      let last = j;
++      // Match 1 or more non-path separators
++      while (j < len &&
++             !isPathSeparator(StringPrototypeCharCodeAt(path, j))) {
++        j++;
++      }
++      if (j === len || j !== last) {
++        let hostname = StringPrototypeToLowerCase(StringPrototypeSlice(path, last, j));
++        if (hostname.length === 1 &&
++            (StringPrototypeCharCodeAt(hostname, 0) === CHAR_QUESTION_MARK ||
++             StringPrototypeCharCodeAt(hostname, 0) === CHAR_DOT)) {
++          // Possible device root!
++          last = j;
++          // Match 1 or more path separators
++          while (j < len &&
++                 isPathSeparator(StringPrototypeCharCodeAt(path, j))) {
++            j++;
++          }
++          if (j < len && j !== last) {
++            // Possible long UNC path!
++            last = j;
++            // In the next step we are looking for 'unc' as segment
++            // but we have to take any '..' into account so path
++            // normalization is required. We explicitly pass in an
++            // absolute path with a leading path separator (hence 'j -1')
++            // to make sure that normalization does not preserve any leading '..'.
++            path = `${StringPrototypeSlice(path, 0, j - 1)}${pathModule.win32.normalize(StringPrototypeSlice(path, j - 1, path.length))}`;
++            len = path.length;
++            // Match 1 or more non-path separators
++            while (j < len &&
++                   !isPathSeparator(StringPrototypeCharCodeAt(path, j))) {
++              j++;
++            }
++            const device = normalizeTrailingDot(StringPrototypeToLowerCase(StringPrototypeSlice(path, last, j)));
++            if (device === 'unc') {
++              // UNC path!
++              last = j;
++              // Match 1 or more path separators
++              while (j < len &&
++                     isPathSeparator(StringPrototypeCharCodeAt(path, j))) {
++                j++;
++              }
++              if (j < len && j !== last) {
++                last = j;
++                // Match 1 or more non-path separators
++                while (j < len &&
++                       !isPathSeparator(StringPrototypeCharCodeAt(path, j))) {
++                  j++;
++                }
++                if (j === len || j !== last) {
++                  return normalizeTrailingDot(StringPrototypeToLowerCase(StringPrototypeSlice(path, last, j)));
++                }
++              }
++            } else if (throwOnGlobalRoot && (device === 'global' || device === 'globalroot')) {
++              throw new ERR_INVALID_ARG_VALUE.HideStackFramesError(
++                'path',
++                path,
++                'uses an unsupported prefix of "\\\\?\\globalroot" or "\\\\?\\global"'
++              );
++            }
++          }
++        } else {
++          // We matched a UNC root
++          return hostname;
++        }
++      }
++    }
++  }
++
++  return undefined;
++});
++
+ const getValidatedPath = hideStackFrames((fileURLOrPath, propName = 'path') => {
+   const path = toPathIfFileURL(fileURLOrPath);
+   validatePath(path, propName);
+@@ -945,6 +1079,15 @@ const validatePosition = hideStackFrames((position, name, length) => {
+   }
+ });
+ 
++function maybeAddHostToUncAllowList(path, real_path) {
++  if (isWindows && process.restrictUNCAccess && startsWithWindowsDeviceRoot(path)) {
++    const hostname = getUNCHostname(real_path);
++    if (hostname) {
++      process.uncHostAllowlist.add(hostname);
++    }
++  }
++}
++
+ module.exports = {
+   constants: {
+     kIoMaxLength,
+@@ -962,6 +1105,7 @@ module.exports = {
+   getDirent,
+   getDirents,
+   getOptions,
++  getUNCHostname, // for testing
+   getValidatedFd,
+   getValidatedPath,
+   handleErrorFromBinding,
+@@ -969,6 +1113,8 @@ module.exports = {
+   realpathCacheKey: Symbol('realpathCacheKey'),
+   getStatFsFromBinding,
+   getStatsFromBinding,
++  maybeAddHostToUncAllowList,
++  startsWithWindowsDeviceRoot, // for testing
+   stringToFlags,
+   stringToSymlinkType,
+   Stats: deprecate(Stats, 'fs.Stats constructor is deprecated.', 'DEP0180'),
+diff --git a/lib/internal/main/worker_thread.js b/lib/internal/main/worker_thread.js
+index f8c410b5b25cb0fe4704e057c1f1726087966807..ac0b2c1b778a9cce19cc8697317661f784555143 100644
+--- a/lib/internal/main/worker_thread.js
++++ b/lib/internal/main/worker_thread.js
+@@ -102,6 +102,8 @@ port.on('message', (message) => {
+       publicPort,
+       workerData,
+       mainThreadPort,
++      uncHostAllowlist,
++      restrictUNCAccess,
+     } = message;
+ 
+     if (doEval !== 'internal') {
+@@ -114,6 +116,9 @@ port.on('message', (message) => {
+       publicWorker.workerData = workerData;
+     }
+ 
++    // Setup UNC state in worker thread
++    require('internal/process/pre_execution').initializeUNCHostAllowlist(uncHostAllowlist);
++    process.restrictUNCAccess = restrictUNCAccess;
+     require('internal/worker').assignEnvironmentData(environmentData);
+     setupMainThreadPort(mainThreadPort);
+ 
+diff --git a/lib/internal/process/pre_execution.js b/lib/internal/process/pre_execution.js
+index 89660076c41e1c05b26c17609a62a028c1e2ec5a..96a180163de57aeee78d9059ababd3948c3cf5a0 100644
+--- a/lib/internal/process/pre_execution.js
++++ b/lib/internal/process/pre_execution.js
+@@ -13,7 +13,10 @@ const {
+   ObjectDefineProperty,
+   ObjectFreeze,
+   ObjectGetOwnPropertyDescriptor,
++  SafeSet,
+   String,
++  StringPrototypeSplit,
++  StringPrototypeToLowerCase,
+   Symbol,
+   globalThis,
+ } = primordials;
+@@ -102,6 +105,10 @@ function prepareExecution(options) {
+ 
+   // Patch the process object and get the resolved main entry point.
+   const mainEntry = patchProcessObject(expandArgv1);
++  if (isMainThread) {
++    initializeUNCHostAllowlist(new SafeSet());
++    setupAllowedUNCHosts();
++  }
+   setupTraceCategoryState();
+   setupInspectorHooks();
+   setupNetworkInspection();
+@@ -733,6 +740,33 @@ function markBootstrapComplete() {
+   internalBinding('performance').markBootstrapComplete();
+ }
+ 
++function initializeUNCHostAllowlist(uncHostAllowlist) {
++  ObjectDefineProperty(process, 'uncHostAllowlist', {
++    value: uncHostAllowlist,
++    // Only set it to true during snapshot building.
++    configurable: isBuildingSnapshot(),
++  });
++}
++
++function setupAllowedUNCHosts() {
++  if (process.env.NODE_DISABLE_UNC_ACCESS_CHECKS) {
++    process.restrictUNCAccess = false;
++    delete process.env.NODE_DISABLE_UNC_ACCESS_CHECKS;
++  }
++  if (process.env.NODE_UNC_HOST_ALLOWLIST) {
++    const { validateString } = require('internal/validators');
++    const envAllowlist = process.env.NODE_UNC_HOST_ALLOWLIST;
++    validateString(envAllowlist, 'UNCHostAllowlist');
++    const uncHostAllowlist = StringPrototypeSplit(envAllowlist, '\\');
++    // Clear current allowlist.
++    process.uncHostAllowlist.clear();
++    for (let i = 0; i < uncHostAllowlist.length; i++) {
++      process.uncHostAllowlist.add(StringPrototypeToLowerCase(uncHostAllowlist[i]));
++    }
++    delete process.env.NODE_UNC_HOST_ALLOWLIST;
++  }
++}
++
+ // Sequence number for diagnostic filenames
+ let sequenceNumOfheapSnapshot = 0;
+ 
+@@ -760,6 +794,7 @@ function getHeapSnapshotFilename(diagnosticDir) {
+ 
+ module.exports = {
+   setupUserModules,
++  initializeUNCHostAllowlist,
+   prepareMainThreadExecution,
+   prepareWorkerThreadExecution,
+   prepareShadowRealmExecution,
+diff --git a/lib/internal/util.js b/lib/internal/util.js
+index 809e9697a299908776c8b76bc4b27bef3864bd13..a9d9b4e2355d7d76175631a3a7360692e09d5129 100644
+--- a/lib/internal/util.js
++++ b/lib/internal/util.js
+@@ -52,6 +52,12 @@ const {
+   overrideStackTrace,
+   uvErrmapGet,
+ } = require('internal/errors');
++const {
++  CHAR_UPPERCASE_A,
++  CHAR_LOWERCASE_A,
++  CHAR_UPPERCASE_Z,
++  CHAR_LOWERCASE_Z
++} = require('internal/constants');
+ const { signals } = internalBinding('constants').os;
+ const {
+   guessHandleType: _guessHandleType,
+@@ -708,6 +714,11 @@ const lazyDOMException = (message, name) => {
+ 
+ };
+ 
++function isWindowsDeviceRoot(code) {
++  return (code >= CHAR_UPPERCASE_A && code <= CHAR_UPPERCASE_Z) ||
++         (code >= CHAR_LOWERCASE_A && code <= CHAR_LOWERCASE_Z);
++}
++
+ const kEnumerableProperty = { __proto__: null };
+ kEnumerableProperty.enumerable = true;
+ ObjectFreeze(kEnumerableProperty);
+@@ -901,6 +912,7 @@ module.exports = {
+   isUnderNodeModules,
+   isMacOS,
+   isWindows,
++  isWindowsDeviceRoot,
+   join,
+   lazyDOMException,
+   lazyDOMExceptionClass,
+diff --git a/lib/internal/worker.js b/lib/internal/worker.js
+index 84ae104d4b9588f5c4c43710b4ecbe11722a1860..b8956e86cf0248e823bd40be493fa7bdf9428b55 100644
+--- a/lib/internal/worker.js
++++ b/lib/internal/worker.js
+@@ -279,6 +279,8 @@ class Worker extends EventEmitter {
+       hasStdin: !!options.stdin,
+       publicPort: publicPortToWorker,
+       mainThreadPort: mainThreadPortToWorker,
++      uncHostAllowlist: process.uncHostAllowlist,
++      restrictUNCAccess: process.restrictUNCAccess,
+     }, transferList);
+     // Use this to cache the Worker's loopStart value once available.
+     this[kLoopStartTime] = -1;
+diff --git a/lib/path.js b/lib/path.js
+index 5632fa1dea70c1b18c8576b3f90fa409e4955c6f..9a7103a1a857b259b53cfcd0333d7fa086580318 100644
+--- a/lib/path.js
++++ b/lib/path.js
+@@ -37,10 +37,6 @@ const {
+ } = primordials;
+ 
+ const {
+-  CHAR_UPPERCASE_A,
+-  CHAR_LOWERCASE_A,
+-  CHAR_UPPERCASE_Z,
+-  CHAR_LOWERCASE_Z,
+   CHAR_DOT,
+   CHAR_FORWARD_SLASH,
+   CHAR_BACKWARD_SLASH,
+@@ -51,6 +47,9 @@ const {
+   validateObject,
+   validateString,
+ } = require('internal/validators');
++const {
++  isWindowsDeviceRoot,
++} = require('internal/util');
+ 
+ const {
+   getLazy,
+@@ -69,11 +68,6 @@ function isPosixPathSeparator(code) {
+   return code === CHAR_FORWARD_SLASH;
+ }
+ 
+-function isWindowsDeviceRoot(code) {
+-  return (code >= CHAR_UPPERCASE_A && code <= CHAR_UPPERCASE_Z) ||
+-         (code >= CHAR_LOWERCASE_A && code <= CHAR_LOWERCASE_Z);
+-}
+-
+ // Resolves . and .. elements in a path with directory names
+ function normalizeString(path, allowAboveRoot, separator, isPathSeparator) {
+   let res = '';
+diff --git a/src/node_process_object.cc b/src/node_process_object.cc
+index 3f8a4fbd1a65971645e6785e469bc887a1afbad1..44651cd6df1ccdd0a11878c62b0eb8e4f46dd4d5 100644
+--- a/src/node_process_object.cc
++++ b/src/node_process_object.cc
+@@ -171,6 +171,14 @@ MaybeLocal<Object> CreateProcessObject(Realm* realm) {
+ #endif  // _WIN32
+ #endif  // NODE_HAS_RELEASE_URLS
+ 
++#ifdef MICROSOFT_RESTRICT_UNC_ACCESS
++  // process.restrictUNCAccess
++  process->DefineOwnProperty(
++      context, FIXED_ONE_BYTE_STRING(isolate, "restrictUNCAccess"),
++      v8::True(isolate), static_cast<v8::PropertyAttribute>(v8::DontDelete | v8::DontEnum))
++          .Check();
++#endif
++
+   // process._rawDebug: may be overwritten later in JS land, but should be
+   // available from the beginning for debugging purposes
+   SetMethod(context, process, "_rawDebug", RawDebug);
+diff --git a/test/fixtures/child-process-spawn-variants-unc-access.js b/test/fixtures/child-process-spawn-variants-unc-access.js
+new file mode 100644
+index 0000000000000000000000000000000000000000..f98613046a23934af783031d8f923ad740d2dea1
+--- /dev/null
++++ b/test/fixtures/child-process-spawn-variants-unc-access.js
+@@ -0,0 +1,75 @@
++const assert = require('assert');
++const fs = require('fs');
++const util = require('util');
++const { fork, spawn, exec, execFile, execFileSync, spawnSync, execSync } = require('child_process');
++const fixtures = require('../common/fixtures');
++const common = require('../common');
++
++const execPromise = util.promisify(exec);
++const execFilePromise = util.promisify(execFile);
++
++let exitCount = 0, messageCount = 0;
++function mustCallAfterMessage() {
++  return common.mustCall((m) => {
++    assert.ok(m.foo);
++    messageCount += 1;
++  });
++}
++
++function mustCallAfterExit() {
++  return common.mustCall((c) => {
++    assert.strictEqual(c, 0);
++    exitCount += 1;
++    if (exitCount == 8) {
++      process.send({ count : exitCount });
++      setImmediate(() => {
++        process.exit(0);
++      });
++    }
++  });
++}
++
++(async () => {
++  const c1 = spawnSync(process.execPath, [fixtures.path('child-process-unc-access.js'), process.argv[2]]);
++  assert.strictEqual(c1.status, 0);
++  assert.strictEqual(c1.stdout.toString(), 'success\n');
++  messageCount += 1;
++  exitCount += 1;
++
++  const c2 = execSync(`${process.execPath} ${fixtures.path('child-process-unc-access.js')} ${process.argv[2]}`);
++  assert.strictEqual(c2.toString(), 'success\n');
++  messageCount += 1;
++  exitCount += 1;
++
++  const c3 = execFileSync(process.execPath, [fixtures.path('child-process-unc-access.js'), process.argv[2]]);
++  assert.strictEqual(c3.toString(), 'success\n');
++  messageCount += 1;
++  exitCount += 1;
++
++  const c4 = spawnSync(process.execPath, [fixtures.path('child-process-unc-access.js'), process.argv[2]]);
++  assert.strictEqual(c4.status, 0);
++  assert.strictEqual(c4.stdout.toString(), 'success\n');
++  messageCount += 1;
++  exitCount += 1;
++
++  const r = await execPromise(`${process.execPath} ${fixtures.path('child-process-unc-access.js')} ${process.argv[2]}`);
++  assert.strictEqual(r.stdout.toString(), 'success\n');
++  messageCount += 1;
++  exitCount += 1;
++
++  const r1 = await execFilePromise(process.execPath, [fixtures.path('child-process-unc-access.js'), process.argv[2]]);
++  assert.strictEqual(r1.stdout.toString(), 'success\n');
++  messageCount += 1;
++  exitCount += 1;
++
++  const c5 = fork(fixtures.path('child-process-unc-access.js'), [process.argv[2]]);
++  c5.on('message', mustCallAfterMessage());
++  c5.on('exit', mustCallAfterExit());
++
++  const c6 = spawn(process.execPath, [fixtures.path('child-process-unc-access.js'), process.argv[2]]);
++  c6.stdout.on('data', common.mustCall((d) => {
++    assert.strictEqual(d.toString(), 'success\n');
++    messageCount += 1;
++  }));
++  c6.on('exit', mustCallAfterExit());
++})();
+diff --git a/test/fixtures/child-process-unc-access-checks-disabled.js b/test/fixtures/child-process-unc-access-checks-disabled.js
+new file mode 100644
+index 0000000000000000000000000000000000000000..64ec4973a8bcbc10bb024a91d08871e2bc1dc2f9
+--- /dev/null
++++ b/test/fixtures/child-process-unc-access-checks-disabled.js
+@@ -0,0 +1,23 @@
++const assert = require('assert');
++const fs = require('fs');
++const fork = require('child_process').fork;
++const fixtures = require('../common/fixtures');
++
++process.restrictUNCAccess = false;
++
++const mode = fs.R_OK | fs.W_OK;
++try {
++  fs.accessSync('\\\\server\\share\\dir\\file.ext', mode);
++} catch (err) {
++  assert.strictEqual(err.message, "UNKNOWN: unknown error, access '\\\\server\\share\\dir\\file.ext'");
++}
++
++const n = fork(fixtures.path('child-process-unc-access.js'), ['always-allowed']);
++n.on('message', (m) => {
++  assert.ok(m.foo);
++  process.send(m);
++});
++n.on('exit', (c) => {
++  assert.strictEqual(c, 0);
++  process.exit(0);
++});
+diff --git a/test/fixtures/child-process-unc-access.js b/test/fixtures/child-process-unc-access.js
+new file mode 100644
+index 0000000000000000000000000000000000000000..d589db4aee808af02f35d499e77513b0eb51d395
+--- /dev/null
++++ b/test/fixtures/child-process-unc-access.js
+@@ -0,0 +1,31 @@
++const assert = require('assert');
++const fs = require('fs');
++
++const mode = fs.R_OK | fs.W_OK;
++if (process.argv[2] === 'always-allowed') {
++  try {
++    fs.accessSync('\\\\server\\share\\dir\\file.ext', mode);
++  } catch (err) {
++    assert.strictEqual(err.message, "UNKNOWN: unknown error, access '\\\\server\\share\\dir\\file.ext'");
++  }
++  try {
++    fs.accessSync('\\\\sErver2\\share\\dir\\file.ext', mode);
++  } catch (err) {
++    assert.strictEqual(err.message, "UNKNOWN: unknown error, access '\\\\sErver2\\share\\dir\\file.ext'");
++  }
++} else if (process.argv[2] === 'allowed') {
++  try {
++    fs.accessSync('\\\\server\\share\\dir\\file.ext', mode);
++  } catch (err) {
++    assert.strictEqual(err.message, "UNKNOWN: unknown error, access '\\\\server\\share\\dir\\file.ext'");
++  }
++  assert.throws(() => fs.accessSync('\\\\server2\\share\\dir\\file.ext', mode), { code: 'ERR_UNC_HOST_NOT_ALLOWED' });
++} else {
++  assert.throws(() => fs.accessSync('\\\\server\\share\\dir\\file.ext', mode), { code: 'ERR_UNC_HOST_NOT_ALLOWED' });
++}
++
++if (process.send) {
++  process.send({ foo: 'bar' });
++} else {
++  console.log('success');
++}
+diff --git a/test/fixtures/worker-thread-unc-access.js b/test/fixtures/worker-thread-unc-access.js
+new file mode 100644
+index 0000000000000000000000000000000000000000..84e20dc1cfb5fa443537256ceb5886010326396c
+--- /dev/null
++++ b/test/fixtures/worker-thread-unc-access.js
+@@ -0,0 +1,28 @@
++const assert = require('assert');
++const fs = require('fs');
++const { parentPort } = require("worker_threads");
++
++const mode = fs.R_OK | fs.W_OK;
++if (process.argv[2] === 'always-allowed') {
++  try {
++    fs.accessSync('\\\\server\\share\\dir\\file.ext', mode);
++  } catch (err) {
++    assert.strictEqual(err.message, "UNKNOWN: unknown error, access '\\\\server\\share\\dir\\file.ext'");
++  }
++  try {
++    fs.accessSync('\\\\sErver2\\share\\dir\\file.ext', mode);
++  } catch (err) {
++    assert.strictEqual(err.message, "UNKNOWN: unknown error, access '\\\\sErver2\\share\\dir\\file.ext'");
++  }
++} else if (process.argv[2] === 'allowed') {
++  try {
++    fs.accessSync('\\\\server\\share\\dir\\file.ext', mode);
++  } catch (err) {
++    assert.strictEqual(err.message, "UNKNOWN: unknown error, access '\\\\server\\share\\dir\\file.ext'");
++  }
++  assert.throws(() => fs.accessSync('\\\\server2\\share\\dir\\file.ext', mode), { code: 'ERR_UNC_HOST_NOT_ALLOWED' });
++} else {
++  assert.throws(() => fs.accessSync('\\\\server\\share\\dir\\file.ext', mode), { code: 'ERR_UNC_HOST_NOT_ALLOWED' });
++}
++
++parentPort.postMessage({ foo: 'bar' });
+diff --git a/test/parallel/test-child-process-unc-access.js b/test/parallel/test-child-process-unc-access.js
+new file mode 100644
+index 0000000000000000000000000000000000000000..7647db18673bc0af1b632bde41c496c9f6c89de7
+--- /dev/null
++++ b/test/parallel/test-child-process-unc-access.js
+@@ -0,0 +1,28 @@
++'use strict';
++const common = require('../common');
++const fixtures = require('../common/fixtures');
++
++const assert = require('assert');
++const fork = require('child_process').fork;
++
++let disabledExitCount = 0;
++const n = fork(fixtures.path('child-process-spawn-variants-unc-access.js'));
++n.on('message', (m) => {
++  disabledExitCount = m.count;
++});
++n.on('exit', common.mustCall((c) => {
++  assert.strictEqual(c, 0);
++  assert.strictEqual(disabledExitCount, 8);
++}));
++
++process.uncHostAllowlist.add('server');
++
++let allowedExitCount = 0;
++const n1 = fork(fixtures.path('child-process-spawn-variants-unc-access.js'), ['allowed']);
++n1.on('message', (m) => {
++  allowedExitCount = m.count;
++});
++n1.on('exit', common.mustCall((c) => {
++  assert.strictEqual(c, 0);
++  assert.strictEqual(allowedExitCount, 8);
++}));
+diff --git a/test/parallel/test-fs-readfilesync-enoent.js b/test/parallel/test-fs-readfilesync-enoent.js
+index baf87ff990bc73961c00f8046240dabab703b2ca..404069cc80d9932a637b0e004be04d77ad0a2d05 100644
+--- a/test/parallel/test-fs-readfilesync-enoent.js
++++ b/test/parallel/test-fs-readfilesync-enoent.js
+@@ -23,6 +23,8 @@ function test(p) {
+   }));
+ }
+ 
++process.uncHostAllowlist.add(os.hostname());
++
+ test(`//${os.hostname()}/c$/Windows/System32`);
+ test(`//${os.hostname()}/c$/Windows`);
+ test(`//${os.hostname()}/c$/`);
+diff --git a/test/parallel/test-fs-unc-access.js b/test/parallel/test-fs-unc-access.js
+new file mode 100644
+index 0000000000000000000000000000000000000000..3880b35bc7fa36cc5d0cc9be487c40a417a7da8c
+--- /dev/null
++++ b/test/parallel/test-fs-unc-access.js
+@@ -0,0 +1,152 @@
++'use strict';
++const common = require('../common');
++if (!common.isWindows)
++  common.skip('Cannot be run on non-Windows platforms');
++
++const fixtures = require('../common/fixtures');
++
++const assert = require('assert');
++const fs = require('fs');
++const fork = require('child_process').fork;
++
++const mode = fs.R_OK | fs.W_OK;
++
++// Not allowed by default UNC and long UNC paths
++assert.throws(() => fs.accessSync('\\\\server\\share\\dir\\file.ext', mode), { code: 'ERR_UNC_HOST_NOT_ALLOWED' });
++assert.throws(() => fs.accessSync('\\\\server', mode), { code: 'ERR_UNC_HOST_NOT_ALLOWED' });
++assert.throws(() => fs.accessSync('\\\\UNC\\', mode), { code: 'ERR_UNC_HOST_NOT_ALLOWED' });
++assert.throws(() => fs.accessSync('\\\\UNC\\server\\share\\dir\\file.ext', mode), { code: 'ERR_UNC_HOST_NOT_ALLOWED' });
++assert.throws(() => fs.accessSync('\\\\?\\UNC\\server\\share\\dir\\file.ext', mode), { code: 'ERR_UNC_HOST_NOT_ALLOWED' });
++assert.throws(() => fs.accessSync('\\\\.\\UNC\\server\\share\\dir\\file.ext', mode), { code: 'ERR_UNC_HOST_NOT_ALLOWED' });
++
++// Valid long paths
++try {
++  fs.accessSync('\\\\?\\share\\dir\\file.ext', mode);
++} catch (err) {
++  assert.ok(err.message.match(/ENOENT: no such file or directory, access/));
++}
++try {
++  fs.accessSync('\\\\?\\UNC', mode);
++} catch (err) {
++  assert.ok(err.message.match(/EISDIR: illegal operation on a directory, access/));
++}
++try {
++  fs.accessSync('\\\\?\\UNC\\', mode);
++} catch (err) {
++  assert.ok(err.message.match(/ENOENT: no such file or directory, access/));
++}
++try {
++  fs.accessSync('\\\\?\\', mode);
++} catch (err) {
++  assert.ok(err.message.match(/ENOENT: no such file or directory, access/));
++}
++try {
++  fs.accessSync('\\\\?', mode);
++} catch (err) {
++  assert.ok(err.message.match(/ENOENT: no such file or directory, access/));
++}
++try {
++  fs.accessSync('\\\\.\\share\\dir\\file.ext', mode);
++} catch (err) {
++  assert.ok(err.message.match(/ENOENT: no such file or directory, access/));
++}
++try {
++  fs.accessSync('\\\\.\\UNCshare\\dir\\file.ext', mode);
++} catch (err) {
++  assert.ok(err.message.match(/ENOENT: no such file or directory, access/));
++}
++try {
++  fs.accessSync('\\\\.\\UNC', mode);
++} catch (err) {
++  assert.ok(err.message.match(/EISDIR: illegal operation on a directory, access/));
++}
++try {
++  fs.accessSync('\\\\.\\UNC\\', mode);
++} catch (err) {
++  assert.ok(err.message.match(/ENOENT: no such file or directory, access/));
++}
++try {
++  fs.accessSync('\\\\.\\', mode);
++} catch (err) {
++  assert.ok(err.message.match(/ENOENT: no such file or directory, access/));
++}
++try {
++  fs.accessSync('\\\\.', mode);
++} catch (err) {
++  assert.ok(err.message.match(/ENOENT: no such file or directory, access/));
++}
++
++const n = fork(fixtures.path('child-process-unc-access.js'));
++n.on('message', (m) => {
++  assert.ok(m.foo);
++});
++n.on('exit', common.mustCall((c) => {
++  assert.strictEqual(c, 0);
++}));
++
++process.uncHostAllowlist.add('server').add(42).add('server3');
++
++try {
++  fs.accessSync('\\\\server\\share\\dir\\file.ext', mode);
++} catch (err) {
++  assert.strictEqual(err.message, "UNKNOWN: unknown error, access '\\\\server\\share\\dir\\file.ext'");
++}
++try {
++  fs.accessSync('\\\\Server\\share\\dir\\file.ext', mode);
++} catch (err) {
++  assert.strictEqual(err.message, "UNKNOWN: unknown error, access '\\\\Server\\share\\dir\\file.ext'");
++}
++try {
++  fs.accessSync('\\\\SERVER3\\share\\dir\\file.ext', mode);
++} catch (err) {
++  assert.strictEqual(err.message, "UNKNOWN: unknown error, access '\\\\SERVER3\\share\\dir\\file.ext'");
++}
++try {
++  fs.accessSync('\\\\server', mode);
++} catch (err) {
++  assert.ok(err.message.match(/ENOENT: no such file or directory, access/));
++}
++try {
++  fs.accessSync('\\\\?\\UNC\\server\\share\\dir\\file.ext', mode);
++} catch (err) {
++  assert.ok(err.message.match(/UNKNOWN: unknown error, access/));
++}
++try {
++  fs.accessSync('\\\\?\\UNC\\sERVER\\share\\dir\\file.ext', mode);
++} catch (err) {
++  assert.ok(err.message.match(/UNKNOWN: unknown error, access/));
++}
++try {
++  fs.accessSync('\\\\.\\UNC\\server\\share\\dir\\file.ext', mode);
++} catch (err) {
++  assert.ok(err.message.match(/UNKNOWN: unknown error, access/));
++}
++assert.throws(() => fs.accessSync('\\\\server2\\share\\dir\\file.ext', mode), { code: 'ERR_UNC_HOST_NOT_ALLOWED' });
++assert.throws(() => fs.accessSync('\\\\UNC\\server\\share\\dir\\file.ext', mode), { code: 'ERR_UNC_HOST_NOT_ALLOWED' });
++assert.throws(() => fs.accessSync('\\\\UNC\\', mode), { code: 'ERR_UNC_HOST_NOT_ALLOWED' });
++
++const n2 = fork(fixtures.path('child-process-unc-access.js'), ['allowed']);
++n2.on('message', (m) => {
++  assert.ok(m.foo);
++});
++n2.on('exit', common.mustCall((c) => {
++  assert.strictEqual(c, 0);
++}));
++
++const propDesc = Object.getOwnPropertyDescriptor(process, 'uncHostAllowlist');
++assert.strictEqual(propDesc.writable, false, "must not be writable");
++assert.strictEqual(propDesc.enumerable, false, "must not be enumerable");
++assert.strictEqual(propDesc.configurable, false, "must not be configurable");
++
++const accessPropDesc = Object.getOwnPropertyDescriptor(process, 'restrictUNCAccess');
++assert.strictEqual(accessPropDesc.writable, true, "must be writable");
++assert.strictEqual(accessPropDesc.enumerable, false, "must not be enumerable");
++assert.strictEqual(accessPropDesc.configurable, false, "must not be configurable");
++
++const n3 = fork(fixtures.path('child-process-unc-access-checks-disabled.js'));
++n2.on('message', (m) => {
++  assert.ok(m.foo);
++});
++n2.on('exit', common.mustCall((c) => {
++  assert.strictEqual(c, 0);
++}));
+diff --git a/test/parallel/test-fs-utils-get-unc-hostname.js b/test/parallel/test-fs-utils-get-unc-hostname.js
+new file mode 100644
+index 0000000000000000000000000000000000000000..05873cb54863b57160fc8760d99617e980778aeb
+--- /dev/null
++++ b/test/parallel/test-fs-utils-get-unc-hostname.js
+@@ -0,0 +1,131 @@
++// Flags: --expose-internals
++'use strict';
++
++const { getUNCHostname } = require('internal/fs/utils');
++const assert = require('assert');
++
++assert.strictEqual(getUNCHostname('path'), undefined);
++assert.strictEqual(getUNCHostname('C:\\unc\\dir\\file.ext'), undefined);
++assert.strictEqual(getUNCHostname(), undefined);
++assert.strictEqual(getUNCHostname(null), undefined);
++assert.strictEqual(getUNCHostname(Buffer.from('Foo')), undefined);
++assert.strictEqual(getUNCHostname('\\\\.'), undefined);
++assert.strictEqual(getUNCHostname('\\\\?'), undefined);
++assert.strictEqual(getUNCHostname('\\\\?\\share'), undefined);
++assert.strictEqual(getUNCHostname('\\\\.\\share'), undefined);
++
++assert.strictEqual(getUNCHostname('\\\\.foo\\share'), '.foo');
++assert.strictEqual(getUNCHostname('\\\\?foo\\share'), '?foo');
++
++assert.strictEqual(getUNCHostname('\\\\server\\share\\dir\\file.ext'), 'server');
++assert.strictEqual(getUNCHostname('\\\\server'), 'server');
++assert.strictEqual(getUNCHostname('\\\\SERVER\\share\\dir\\file.ext'), 'server');
++assert.strictEqual(getUNCHostname('\\\\SERVER'), 'server');
++assert.strictEqual(getUNCHostname('\\\\UNC\\'), 'unc');
++assert.strictEqual(getUNCHostname('\\\\UNC\\server\\share\\dir\\file.ext'), 'unc');
++assert.strictEqual(getUNCHostname('\\\\?\\UNC\\server\\share\\dir\\file.ext'), 'server');
++assert.strictEqual(getUNCHostname(Buffer.from('\\\\?\\UNC\\server\\share\\dir\\file.ext')), 'server');
++assert.strictEqual(getUNCHostname('\\\\.\\UNC\\server\\share\\dir\\file.ext'), 'server');
++assert.strictEqual(getUNCHostname('\\\\?\\unc\\server\\share\\dir\\file.ext'), 'server');
++assert.strictEqual(getUNCHostname('\\\\.\\unc\\server\\share\\dir\\file.ext'), 'server');
++assert.strictEqual(getUNCHostname('\\\\localhost\\'), 'localhost');
++assert.strictEqual(getUNCHostname('\\\\localhost\\a'), 'localhost');
++assert.strictEqual(getUNCHostname('\\\\.\\UNC\\localhost\\'), 'localhost');
++assert.strictEqual(getUNCHostname(Buffer.from('\\\\.\\UNC\\localhost\\')), 'localhost');
++assert.strictEqual(getUNCHostname('\\\\?\\UNC\\localhost\\'), 'localhost');
++assert.strictEqual(getUNCHostname('\\\\.\\UNC\\localhost\\a'), 'localhost');
++assert.strictEqual(getUNCHostname('\\\\?\\UNC\\localhost\\a'), 'localhost');
++
++assert.strictEqual(getUNCHostname('\\\\?\\foo\\..\\unc\\share\\dir\\file.ext'), 'share');
++assert.strictEqual(getUNCHostname('\\\\?\\..\\unc\\share\\dir\\file.ext'), 'share');
++
++assert.strictEqual(getUNCHostname('\\\\.\\unc'), undefined);
++assert.strictEqual(getUNCHostname('\\\\.\\unc\\'), undefined);
++assert.strictEqual(getUNCHostname('\\\\.\\unc\\share'), 'share');
++assert.strictEqual(getUNCHostname('\\\\.\\unc\\\\\\share'), 'share');
++
++assert.strictEqual(getUNCHostname('\\\\.\\unc\\localhost.\\c$'), 'localhost');
++assert.strictEqual(getUNCHostname('\\\\.\\unc\\localhost..\\c$'), 'localhost..');
++
++assert.strictEqual(getUNCHostname('\\\\?\\unc\\localhost\\..\\share\\c$'), 'share');
++assert.strictEqual(getUNCHostname('\\\\?\\unc\\localhost\\..\\share\\c$'), 'share');
++
++assert.strictEqual(getUNCHostname('\\\\.\\.\\unc\\share\\dir\\file.ext'), 'share');
++assert.strictEqual(getUNCHostname('\\\\.\\..\\unc\\share\\dir\\file.ext'), 'share');
++assert.strictEqual(getUNCHostname('\\\\.\\..\\.\\..\\unc\\share\\dir\\file.ext'), 'share');
++
++assert.strictEqual(getUNCHostname('\\\\.\\unc\\.\\share\\dir\\file.ext'), 'share');
++assert.strictEqual(getUNCHostname('\\\\.\\unc\\..\\share\\dir\\file.ext'), undefined);
++assert.strictEqual(getUNCHostname('\\\\.\\unc\\..\\unc\\share\\dir\\file.ext'), 'share');
++assert.strictEqual(getUNCHostname('\\\\.\\unc\\..\\.\\unc\\share\\dir\\file.ext'), 'share');
++assert.strictEqual(getUNCHostname('\\\\.\\unc\\.\\..\\unc\\share\\dir\\file.ext'), 'share');
++
++assert.strictEqual(getUNCHostname('\\\\.\\foo\\..\\unc\\share\\dir\\file.ext'), 'share');
++assert.strictEqual(getUNCHostname('\\\\.\\foo\\.\\..\\unc\\share\\dir\\file.ext'), 'share');
++assert.strictEqual(getUNCHostname('\\\\.\\foo\\..\\.\\unc\\share\\dir\\file.ext'), 'share');
++assert.strictEqual(getUNCHostname('\\\\.\\foo\\..\\..\\unc\\share\\dir\\file.ext'), 'share');
++assert.strictEqual(getUNCHostname('\\\\.\\foo\\..\\unc\\attacker.example\\zzzz3'), 'attacker.example');
++
++assert.strictEqual(getUNCHostname('\\\\.\\\\\\foo\\\\\\..\\\\\\unc\\\\\\share\\dir\\file.ext'), 'share');
++assert.strictEqual(getUNCHostname('\\\\.\\\\\\foo\\\\\\.\\\\\\..\\\\\\unc\\\\\\share\\dir\\file.ext'), 'share');
++assert.strictEqual(getUNCHostname('\\\\.\\\\\\foo\\\\\\..\\\\\\.\\\\\\unc\\\\\\share\\dir\\file.ext'), 'share');
++assert.strictEqual(getUNCHostname('\\\\.\\\\\\foo\\\\\\..\\\\\\..\\\\\\unc\\\\\\share\\dir\\file.ext'), 'share');
++
++assert.strictEqual(getUNCHostname('\\\\.\\foo/..\\unc/attacker.example\\zzzz3'), 'attacker.example');
++assert.strictEqual(getUNCHostname('//./foo/../unc/attacker.example/zzzz3'), 'attacker.example');
++assert.strictEqual(getUNCHostname('\\\\.\\foo/...\\unc/attacker.example\\zzzz3'), undefined);
++assert.strictEqual(getUNCHostname('//./foo/.../unc/attacker.example/zzzz3'), undefined);
++assert.strictEqual(getUNCHostname('\\\\.\\foo\\.\\..\\.\\unc\\attacker.example\\zzzz3'), 'attacker.example');
++assert.strictEqual(getUNCHostname('\\\\.\\foo/.\\..\\./unc\\attacker.example\\zzzz3'), 'attacker.example');
++
++assert.strictEqual(getUNCHostname('\\\\.\\..\\foo\\..\\unc\\localhost\\c$'), 'localhost');
++assert.strictEqual(getUNCHostname('\\\\.\\..\\..\\..\\foo\\..\\unc\\localhost\\c$'), 'localhost');
++assert.strictEqual(getUNCHostname('\\\\.\\bar\\..\\foo\\..\\unc\\localhost\\c$'), 'localhost');
++assert.strictEqual(getUNCHostname('\\\\.\\.\\foo\\..\\unc\\localhost\\c$'), 'localhost');
++
++assert.strictEqual(getUNCHostname('\\\\.\\unc.\\.\\share\\dir\\file.ext'), 'share');
++assert.strictEqual(getUNCHostname('\\\\.\\foo\\..\\unc.\\attacker.example\\zzzz3'), 'attacker.example');
++
++assert.strictEqual(getUNCHostname("//././unc./localhost\\c$"), "localhost");
++
++assert.strictEqual(getUNCHostname("\\\\.\\global\\Device\\MailslotRedirector\\localhost\\c$"), undefined);
++assert.strictEqual(getUNCHostname("\\\\?\\globalroot\\Device\\MailslotRedirector\\localhost\\c$"), undefined);
++
++assert.throws(() => getUNCHostname("\\\\.\\global\\Device\\MailslotRedirector\\localhost\\c$", true));
++assert.throws(() => getUNCHostname("\\\\?\\global\\Device\\MailslotRedirector\\localhost\\c$", true));
++assert.throws(() => getUNCHostname("\\\\.\\global\\Device\\Csc\\localhost\\c$", true));
++assert.throws(() => getUNCHostname("\\\\?\\global\\Device\\Csc\\localhost\\c$", true));
++assert.throws(() => getUNCHostname("\\\\.\\global\\Device\\P9Rdr\\localhost\\c$", true));
++assert.throws(() => getUNCHostname("\\\\?\\global\\Device\\P9Rdr\\localhost\\c$", true));
++assert.throws(() => getUNCHostname("\\\\.\\global\\Device\\PrlMiniRdr\\localhost\\c$", true));
++assert.throws(() => getUNCHostname("\\\\?\\global\\Device\\PrlMiniRdr\\localhost\\c$", true));
++assert.throws(() => getUNCHostname("\\\\.\\globalroot\\Device\\MailslotRedirector\\localhost\\c$", true));
++assert.throws(() => getUNCHostname("\\\\?\\globalroot\\Device\\MailslotRedirector\\localhost\\c$", true));
++assert.throws(() => getUNCHostname("\\\\.\\globalroot\\Device\\Csc\\localhost\\c$", true));
++assert.throws(() => getUNCHostname("\\\\?\\globalroot\\Device\\Csc\\localhost\\c$", true));
++assert.throws(() => getUNCHostname("\\\\.\\globalroot\\Device\\P9Rdr\\localhost\\c$", true));
++assert.throws(() => getUNCHostname("\\\\?\\globalroot\\Device\\P9Rdr\\localhost\\c$", true));
++assert.throws(() => getUNCHostname("\\\\.\\globalroot\\Device\\PrlMiniRdr\\localhost\\c$", true));
++assert.throws(() => getUNCHostname("\\\\?\\globalroot\\Device\\PrlMiniRdr\\localhost\\c$", true));
++assert.throws(() => getUNCHostname("\\\\?\\global\\unc\\localhost\\c$", true));
++assert.throws(() => getUNCHostname("\\\\.\\global\\unc\\localhost\\c$", true));
++assert.throws(() => getUNCHostname("\\\\?\\globalroot\\??\\unc\\localhost\\c$", true));
++assert.throws(() => getUNCHostname("\\\\.\\globalroot\\??\\unc\\localhost\\c$", true));
++assert.throws(() => getUNCHostname("\\\\?\\globalroot\\Device\\Mup\\localhost\\c$", true));
++assert.throws(() => getUNCHostname("\\\\.\\globalroot\\Device\\Mup\\localhost\\c$", true));
++assert.throws(() => getUNCHostname("\\\\?\\globalroot\\Device\\LanManRedirector\\localhost\\c$", true));
++assert.throws(() => getUNCHostname("\\\\.\\globalroot\\Device\\LanManRedirector\\localhost\\c$", true));
++assert.throws(() => getUNCHostname("\\\\?\\globalroot\\DosDevices\\unc\\localhost\\c$", true));
++assert.throws(() => getUNCHostname("\\\\.\\globalroot\\DosDevices\\unc\\localhost\\c$", true));
++assert.throws(() => getUNCHostname("\\\\?/foo\\..\\global\\unc\\localhost\\c$", true));
++assert.throws(() => getUNCHostname("\\\\?/foo\\..\\global.\\unc.\\localhost\\c$", true));
++assert.throws(() => getUNCHostname("\\\\?/foo\\..\\global.\\unc\\localhost\\c$", true));
++assert.throws(() => getUNCHostname("//?/foo/../global/unc/localhost/c$", true));
++assert.throws(() => getUNCHostname("//?/foo/../global./unc./localhost/c$", true));
++assert.throws(() => getUNCHostname("//?/foo/../global./unc/localhost/c$", true));
++assert.throws(() => getUNCHostname("\\\\.\\foo\\..\\global\\unc\\localhost\\c$", true));
++assert.throws(() => getUNCHostname("\\\\./foo\\..\\global.\\unc.\\localhost\\c$", true));
++assert.throws(() => getUNCHostname("\\\\./foo\\..\\global.\\unc\\localhost\\c$", true));
++assert.throws(() => getUNCHostname("//./foo/../global/unc/localhost/c$", true));
++assert.throws(() => getUNCHostname("//./foo/../global./unc./localhost/c$", true));
++assert.throws(() => getUNCHostname("//./foo/../global./unc/localhost/c$", true));
+diff --git a/test/parallel/test-fs-utils-startswith-deviceroot.js b/test/parallel/test-fs-utils-startswith-deviceroot.js
+new file mode 100644
+index 0000000000000000000000000000000000000000..5e99bfa65b213e5757088959612e01a74acd7bc2
+--- /dev/null
++++ b/test/parallel/test-fs-utils-startswith-deviceroot.js
+@@ -0,0 +1,28 @@
++// Flags: --expose-internals
++'use strict';
++
++const { startsWithWindowsDeviceRoot } = require('internal/fs/utils');
++const assert = require('assert');
++
++assert.strictEqual(startsWithWindowsDeviceRoot(undefined), false);
++assert.strictEqual(startsWithWindowsDeviceRoot(null), false);
++
++assert.strictEqual(startsWithWindowsDeviceRoot('/'), false);
++assert.strictEqual(startsWithWindowsDeviceRoot('\\'), false);
++assert.strictEqual(startsWithWindowsDeviceRoot('\\\\'), false);
++assert.strictEqual(startsWithWindowsDeviceRoot(Buffer.from('\\\\')), false);
++
++assert.strictEqual(startsWithWindowsDeviceRoot('c:\\'), true);
++assert.strictEqual(startsWithWindowsDeviceRoot(Buffer.from('x:\\')), true);
++
++assert.strictEqual(startsWithWindowsDeviceRoot('c:\\foo\\bar'), true);
++assert.strictEqual(startsWithWindowsDeviceRoot(Buffer.from('x:\\foo\\bar')), true);
++
++assert.strictEqual(startsWithWindowsDeviceRoot('c:/'), true);
++assert.strictEqual(startsWithWindowsDeviceRoot(Buffer.from('x:/')), true);
++
++assert.strictEqual(startsWithWindowsDeviceRoot('c:/foo/bar'), true);
++assert.strictEqual(startsWithWindowsDeviceRoot(Buffer.from('x:/foo/bar')), true);
++
++assert.strictEqual(startsWithWindowsDeviceRoot('C:'), false);
++assert.strictEqual(startsWithWindowsDeviceRoot(Buffer.from('X:')), false);
+diff --git a/test/parallel/test-worker-thread-unc-access-checks-disabled.js b/test/parallel/test-worker-thread-unc-access-checks-disabled.js
+new file mode 100644
+index 0000000000000000000000000000000000000000..3fe3d66bad026209409d5ffe8844ccb75569182c
+--- /dev/null
++++ b/test/parallel/test-worker-thread-unc-access-checks-disabled.js
+@@ -0,0 +1,28 @@
++'use strict';
++const common = require('../common');
++if (!common.isWindows)
++  common.skip('Cannot be run on non-Windows platforms');
++
++const assert = require('assert');
++const fs = require('fs');
++const fixtures = require('../common/fixtures');
++const { Worker } = require("worker_threads");
++
++process.restrictUNCAccess = false;
++
++const mode = fs.R_OK | fs.W_OK;
++try {
++  fs.accessSync('\\\\server\\share\\dir\\file.ext', mode);
++} catch (err) {
++  assert.strictEqual(err.message, "UNKNOWN: unknown error, access '\\\\server\\share\\dir\\file.ext'");
++}
++
++const worker = new Worker(fixtures.path('worker-thread-unc-access.js'), {
++    argv: ['always-allowed']
++});
++worker.on('message', (m) => {
++  assert.ok(m.foo);
++});
++worker.on('exit', common.mustCall((c) => {
++  assert.strictEqual(c, 0);
++}));
+diff --git a/test/parallel/test-worker-thread-unc-access.js b/test/parallel/test-worker-thread-unc-access.js
+new file mode 100644
+index 0000000000000000000000000000000000000000..822579d55c9de8f0bf3ae0d54d3ba2490538f056
+--- /dev/null
++++ b/test/parallel/test-worker-thread-unc-access.js
+@@ -0,0 +1,79 @@
++'use strict';
++const common = require('../common');
++if (!common.isWindows)
++  common.skip('Cannot be run on non-Windows platforms');
++
++const fixtures = require('../common/fixtures');
++
++const assert = require('assert');
++const fs = require('fs');
++const { Worker } = require("worker_threads");
++
++const mode = fs.R_OK | fs.W_OK;
++
++// Not allowed by default UNC and long UNC paths
++assert.throws(() => fs.accessSync('\\\\server\\share\\dir\\file.ext', mode), { code: 'ERR_UNC_HOST_NOT_ALLOWED' });
++assert.throws(() => fs.accessSync('\\\\server', mode), { code: 'ERR_UNC_HOST_NOT_ALLOWED' });
++assert.throws(() => fs.accessSync('\\\\UNC\\', mode), { code: 'ERR_UNC_HOST_NOT_ALLOWED' });
++assert.throws(() => fs.accessSync('\\\\UNC\\server\\share\\dir\\file.ext', mode), { code: 'ERR_UNC_HOST_NOT_ALLOWED' });
++assert.throws(() => fs.accessSync('\\\\?\\UNC\\server\\share\\dir\\file.ext', mode), { code: 'ERR_UNC_HOST_NOT_ALLOWED' });
++assert.throws(() => fs.accessSync('\\\\.\\UNC\\server\\share\\dir\\file.ext', mode), { code: 'ERR_UNC_HOST_NOT_ALLOWED' });
++
++const worker = new Worker(fixtures.path('worker-thread-unc-access.js'));
++worker.on('message', (m) => {
++  assert.ok(m.foo);
++});
++worker.on('exit', common.mustCall((c) => {
++  assert.strictEqual(c, 0);
++}));
++
++process.uncHostAllowlist.add('server').add(42).add('server3');
++
++try {
++  fs.accessSync('\\\\server\\share\\dir\\file.ext', mode);
++} catch (err) {
++  assert.strictEqual(err.message, "UNKNOWN: unknown error, access '\\\\server\\share\\dir\\file.ext'");
++}
++try {
++  fs.accessSync('\\\\Server\\share\\dir\\file.ext', mode);
++} catch (err) {
++  assert.strictEqual(err.message, "UNKNOWN: unknown error, access '\\\\Server\\share\\dir\\file.ext'");
++}
++try {
++  fs.accessSync('\\\\SERVER3\\share\\dir\\file.ext', mode);
++} catch (err) {
++  assert.strictEqual(err.message, "UNKNOWN: unknown error, access '\\\\SERVER3\\share\\dir\\file.ext'");
++}
++try {
++  fs.accessSync('\\\\server', mode);
++} catch (err) {
++  assert.ok(err.message.match(/ENOENT: no such file or directory, access/));
++}
++try {
++  fs.accessSync('\\\\?\\UNC\\server\\share\\dir\\file.ext', mode);
++} catch (err) {
++  assert.ok(err.message.match(/UNKNOWN: unknown error, access/));
++}
++try {
++  fs.accessSync('\\\\?\\UNC\\sERVER\\share\\dir\\file.ext', mode);
++} catch (err) {
++  assert.ok(err.message.match(/UNKNOWN: unknown error, access/));
++}
++try {
++  fs.accessSync('\\\\.\\UNC\\server\\share\\dir\\file.ext', mode);
++} catch (err) {
++  assert.strictEqual(err.message, "UNKNOWN: unknown error, access '\\\\.\\UNC\\server\\share\\dir\\file.ext'");
++}
++assert.throws(() => fs.accessSync('\\\\server2\\share\\dir\\file.ext', mode), { code: 'ERR_UNC_HOST_NOT_ALLOWED' });
++assert.throws(() => fs.accessSync('\\\\UNC\\server\\share\\dir\\file.ext', mode), { code: 'ERR_UNC_HOST_NOT_ALLOWED' });
++assert.throws(() => fs.accessSync('\\\\UNC\\', mode), { code: 'ERR_UNC_HOST_NOT_ALLOWED' });
++
++const worker2 = new Worker(fixtures.path('worker-thread-unc-access.js'), {
++    argv: ['allowed']
++});
++worker2.on('message', (m) => {
++  assert.ok(m.foo);
++});
++worker2.on('exit', common.mustCall((c) => {
++  assert.strictEqual(c, 0);
++}));
+diff --git a/unofficial.gni b/unofficial.gni
+index 23367db388ce9e83e123d4c6e8c6325266dd52dc..23eebceb44821768023635fd3ba2567b6acc3669 100644
+--- a/unofficial.gni
++++ b/unofficial.gni
+@@ -6,6 +6,9 @@ import("node.gni")
+ import("$node_v8_path/gni/snapshot_toolchain.gni")
+ import("$node_v8_path/gni/v8.gni")
+ 
++# for microsoft_restrict_unc_access
++import("//microsoft/buildflags/buildflags.gni")
++
+ # The actual configurations are put inside a template in unofficial.gni to
+ # prevent accidental edits from contributors.
+ template("node_gn_build") {
+@@ -128,6 +131,12 @@ template("node_gn_build") {
+         "NODE_OPENSSL_SYSTEM_CERT_PATH=\"$node_openssl_system_ca_path\"",
+       ]
+     }
++
++    if (microsoft_restrict_unc_access) {
++      defines += [
++        "MICROSOFT_RESTRICT_UNC_ACCESS",
++      ]
++    }
+   }
+ 
+   gypi_values = exec_script("./tools/gypi_to_gn.py",

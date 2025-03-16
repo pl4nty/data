@@ -1,0 +1,41 @@
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
+From: John Kleinschmidt <jkleinsc@electronjs.org>
+Date: Thu, 25 Jul 2024 11:52:43 -0400
+Subject: Revert "[Windows] Directly link to RtlGetLastNtStatus function."
+
+This reverts https://chromium-review.googlesource.com/c/chromium/src/+/4739172
+because the changes in that CL trigger an APIScan error.
+
+diff --git a/base/win/nt_status.cc b/base/win/nt_status.cc
+index 4dbeb6208ab1979b82bc32ac1487e4813b10629f..fc7444292ac85b8065a25539a2c4a3f36a5329c4 100644
+--- a/base/win/nt_status.cc
++++ b/base/win/nt_status.cc
+@@ -5,8 +5,14 @@
+ #include "base/win/nt_status.h"
+ 
+ #include <windows.h>
++#include <winternl.h>
+ 
+-extern "C" NTSTATUS WINAPI RtlGetLastNtStatus();
++#include "base/check.h"
++
++using GetLastNtStatusFn = NTSTATUS NTAPI (*)();
++
++constexpr const wchar_t kNtDllName[] = L"ntdll.dll";
++constexpr const char kLastStatusFnName[] = "RtlGetLastNtStatus";
+ 
+ namespace base {
+ namespace win {
+@@ -16,8 +22,10 @@ NTSTATUS GetLastNtStatus() {
+   // LastStatusValue from the returned _TEB structure, except that the public
+   // _TEB struct definition does not actually specify the location of the
+   // LastStatusValue field. We avoid depending on such a definition by
+-  // internally using RtlGetLastNtStatus() from ntdll.dll instead.
+-  return ::RtlGetLastNtStatus();
++  // internally using RtGetLastNtStatus() from ntdll.dll instead.
++  static auto* get_last_nt_status = reinterpret_cast<GetLastNtStatusFn>(
++      ::GetProcAddress(::GetModuleHandle(kNtDllName), kLastStatusFnName));
++  return get_last_nt_status();
+ }
+ 
+ }  // namespace win

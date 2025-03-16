@@ -1,0 +1,25 @@
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
+From: deepak1556 <hop2deep@gmail.com>
+Date: Fri, 1 Dec 2023 14:04:10 +0900
+Subject: feat: disable drop cancel animation on macOS
+
+Refs https://github.com/microsoft/vscode/issues/199635
+
+diff --git a/content/app_shim_remote_cocoa/web_contents_view_cocoa.mm b/content/app_shim_remote_cocoa/web_contents_view_cocoa.mm
+index d0c206a2bd355cb7db688febed3b5daa4d9f3a32..8181e033d8f2c9f714e58d6567984c1196f5b0c8 100644
+--- a/content/app_shim_remote_cocoa/web_contents_view_cocoa.mm
++++ b/content/app_shim_remote_cocoa/web_contents_view_cocoa.mm
+@@ -280,9 +280,10 @@ - (void)startDragWithDropData:(const DropData&)dropData
+   _dragOperation = operationMask;
+ 
+   // Run the drag operation.
+-  [self beginDraggingSessionWithItems:@[ draggingItem ]
+-                                event:dragEvent
+-                               source:self];
++  auto* draggingSession = [self beginDraggingSessionWithItems:@[ draggingItem ]
++                                                        event:dragEvent
++                                                       source:self];
++  draggingSession.animatesToStartingPositionsOnCancelOrFail = NO;
+ }
+ 
+ // NSDraggingSource methods

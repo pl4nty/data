@@ -1,0 +1,38 @@
+{
+  "layout": [
+    {
+      "electron-${platform}-${arch}/electron.zip": "electron ${platform} ${arch}/dist.zip"
+    },
+    {
+      "electron-${platform}-${arch}/electron-dbg.zip": "electron ${platform} ${arch}/electron-dbg.zip",
+      "__filter__": {"platform": "linux"}
+    },
+    {
+      "electron-${platform}-${arch}/electron-dsym.zip": "electron ${platform} ${arch}/dsym.zip",
+      "__filter__": {"platform": "mac"}
+    },
+    {
+      "electron-${platform}-${arch}/electron-pdb.zip": "electron ${platform} ${arch}/pdb.zip",
+      "__filter__": {"platform": "windows"}
+    },
+    {
+      "electron-lib-${arch}/node.lib": "electron ${platform} ${arch}/electron.lib",
+      "__filter__": {"platform": "windows"}
+    },
+    {
+      "node-headers/node_headers.tar.gz": "electron windows x64/node_headers.tar.gz"
+    },
+    {
+      "typings/electron.d.ts": "electron windows x64/electron.d.ts"
+    }
+  ],
+  "mapping": {
+    "platform": {
+      "windows": "win",
+      "linux": "lin"
+    },
+    "arch": {
+      "x86": "ia32"
+    }
+  }
+}

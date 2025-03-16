@@ -1,0 +1,765 @@
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
+From: deepak1556 <hop2deep@gmail.com>
+Date: Thu, 18 Mar 2021 00:02:35 -0700
+Subject: feat: add webFramMain.findInFrame/stopFindInFrame (#28274)
+
+Backports https://github.com/electron/electron/pull/28274
+Refs https://github.com/microsoft/vscode/issues/96307
+
+diff --git a/docs/api/web-frame-main.md b/docs/api/web-frame-main.md
+index 45b01d5b25a25eaea0ca2679145e6fc8ebd4f666..e669cb9082c3f46755355da1b979ed24d479ce1b 100644
+--- a/docs/api/web-frame-main.md
++++ b/docs/api/web-frame-main.md
+@@ -77,6 +77,21 @@ _This class is not exported from the `'electron'` module. It is only available a
+ 
+ Emitted when the document is loaded.
+ 
++#### Event: 'found-in-frame'
++
++Returns:
++
++* `event` Event
++* `result` Object
++  * `requestId` Integer
++  * `activeMatchOrdinal` Integer - Position of the active match.
++  * `matches` Integer - Number of Matches.
++  * `selectionArea` Rectangle - Coordinates of first match region.
++  * `finalUpdate` Boolean
++
++Emitted when a result is available for
++[`webFrameMain.findInFrame`] request.
++
+ ### Instance Methods
+ 
+ #### `frame.executeJavaScript(code[, userGesture])`
+@@ -165,6 +180,47 @@ app.on('web-contents-created', (_, webContents) => {
+ })
+ ```
+ 
++#### `frame.findInFrame(text[, options])`
++
++* `text` String - Content to be searched, must not be empty.
++* `options` Object (optional)
++  * `forward` Boolean (optional) - Whether to search forward or backward, defaults to `true`.
++  * `findNext` Boolean (optional) - Whether the operation is first request or a follow up,
++    defaults to `false`.
++  * `matchCase` Boolean (optional) - Whether search should be case-sensitive,
++    defaults to `false`.
++
++Returns `Integer` - The request id used for the request.
++
++Starts a request to find all matches for the `text` in the frame and all its children.
++The result of the request can be obtained by subscribing to [`found-in-frame`](web-frame-main.md#event-found-in-frame) event.
++
++#### `frame.stopFindInFrame(action)`
++
++* `action` String - Specifies the action to take place when ending
++  [`webFrameMain.findInFrame`] request.
++  * `clearSelection` - Clear the selection.
++  * `keepSelection` - Translate the selection into a normal selection.
++  * `activateSelection` - Focus and click the selection node.
++
++Stops any `findInFrame` request for the `webFrameMain` with the provided `action`.
++
++```js
++const { ipcMain, BrowserWindow } = require('electron')
++
++const win = new BrowserWindow()
++ipcMain.on('search-in-frame', (event, ...args) => {
++  const [searchText, frameName] = args
++  const frame = win.webContents.mainFrame.framesInSubtree.find(frame => {
++    return frame.name === frameName
++  })
++  frame.on('found-in-frame', (event, result) => {
++    if (result.finalUpdate) frame.stopFindInFrame('clearSelection')
++  })
++  frame.findInFrame('sometext')
++})
++```
++
+ ### Instance Properties
+ 
+ #### `frame.ipc` _Readonly_
+diff --git a/shell/browser/api/electron_api_web_contents.cc b/shell/browser/api/electron_api_web_contents.cc
+index 97df93b08840343c75fd8d87d254bd4fbbd06cc6..08bdced0174edff1fe599671ea34299e9e6fd45b 100644
+--- a/shell/browser/api/electron_api_web_contents.cc
++++ b/shell/browser/api/electron_api_web_contents.cc
+@@ -1521,7 +1521,8 @@ void WebContents::FindReply(content::WebContents* web_contents,
+                             int number_of_matches,
+                             const gfx::Rect& selection_rect,
+                             int active_match_ordinal,
+-                            bool final_update) {
++                            bool final_update,
++                            content::RenderFrameHost* target_rfh) {
+   if (!final_update)
+     return;
+ 
+@@ -1533,7 +1534,13 @@ void WebContents::FindReply(content::WebContents* web_contents,
+   result.Set("selectionArea", selection_rect);
+   result.Set("activeMatchOrdinal", active_match_ordinal);
+   result.Set("finalUpdate", final_update);  // Deprecate after 2.0
+-  Emit("found-in-page", result.GetHandle());
++  if (target_rfh) {
++    gin::Handle<WebFrameMain> web_frame_main =
++        WebFrameMain::From(isolate, target_rfh);
++    web_frame_main->Emit("found-in-frame", result.GetHandle());
++  } else {
++    Emit("found-in-page", result.GetHandle());
++  }
+ }
+ 
+ void WebContents::OnRequestPointerLock(content::WebContents* web_contents,
+diff --git a/shell/browser/api/electron_api_web_contents.h b/shell/browser/api/electron_api_web_contents.h
+index b5611f069bbd2f8d0aa65182438580dcb9f19695..0e4faea3614c05b313ad82b0fb7e6b17618018a5 100644
+--- a/shell/browser/api/electron_api_web_contents.h
++++ b/shell/browser/api/electron_api_web_contents.h
+@@ -600,7 +600,8 @@ class WebContents final : public ExclusiveAccessContext,
+                  int number_of_matches,
+                  const gfx::Rect& selection_rect,
+                  int active_match_ordinal,
+-                 bool final_update) override;
++                 bool final_update,
++                 content::RenderFrameHost* target_rfh) override;
+   void OnRequestPointerLock(content::WebContents* web_contents,
+                             bool user_gesture,
+                             bool last_unlocked_by_target,
+diff --git a/shell/browser/api/electron_api_web_frame_main.cc b/shell/browser/api/electron_api_web_frame_main.cc
+index 40e3d811baf8e49e2773c6c790a082d7f52b88d7..e726b553416693d36e90f4288c27e18f26e8e649 100644
+--- a/shell/browser/api/electron_api_web_frame_main.cc
++++ b/shell/browser/api/electron_api_web_frame_main.cc
+@@ -4,6 +4,7 @@
+ 
+ #include "shell/browser/api/electron_api_web_frame_main.h"
+ 
++#include <memory>
+ #include <string>
+ #include <unordered_map>
+ #include <utility>
+@@ -13,8 +14,10 @@
+ #include "base/feature_list.h"
+ #include "base/logging.h"
+ #include "base/no_destructor.h"
++#include "content/browser/find_request_manager.h"                  // nogncheck
+ #include "content/browser/renderer_host/render_frame_host_impl.h"  // nogncheck
+ #include "content/browser/renderer_host/render_process_host_impl.h"  // nogncheck
++#include "content/browser/web_contents/web_contents_impl.h"  // nogncheck
+ #include "content/public/browser/frame_tree_node_id.h"
+ #include "content/public/browser/render_frame_host.h"
+ #include "content/public/common/isolated_world_ids.h"
+@@ -26,6 +29,7 @@
+ #include "shell/browser/javascript_environment.h"
+ #include "shell/common/api/api.mojom.h"
+ #include "shell/common/gin_converters/blink_converter.h"
++#include "shell/common/gin_converters/content_converter.h"
+ #include "shell/common/gin_converters/frame_converter.h"
+ #include "shell/common/gin_converters/gurl_converter.h"
+ #include "shell/common/gin_converters/std_converter.h"
+@@ -36,6 +40,7 @@
+ #include "shell/common/gin_helper/promise.h"
+ #include "shell/common/node_includes.h"
+ #include "shell/common/v8_util.h"
++#include "third_party/blink/public/mojom/frame/find_in_page.mojom.h"
+ 
+ namespace {
+ 
+@@ -269,6 +274,36 @@ bool WebFrameMain::IsDestroyed() const {
+   return render_frame_disposed_;
+ }
+ 
++uint32_t WebFrameMain::FindInFrame(gin::Arguments* args) {
++  std::u16string search_text;
++  if (!args->GetNext(&search_text) || search_text.empty()) {
++    gin_helper::ErrorThrower(args->isolate())
++        .ThrowError("Must provide a non-empty search content");
++    return 0;
++  }
++
++  if (!CheckRenderFrame())
++    return 0;
++
++  uint32_t request_id = ++find_in_frame_request_id_;
++  gin_helper::Dictionary dict;
++  auto options = blink::mojom::FindOptions::New();
++  if (args->GetNext(&dict)) {
++    dict.Get("forward", &options->forward);
++    dict.Get("matchCase", &options->match_case);
++    dict.Get("findNext", &options->new_session);
++  }
++
++  GetOrCreateFindRequestManager()->Find(request_id, search_text,
++                                        std::move(options));
++  return request_id;
++}
++
++void WebFrameMain::StopFindInFrame(content::StopFindAction action) {
++  if (CheckRenderFrame() && find_request_manager_)
++    find_request_manager_->StopFinding(action);
++}
++
+ void WebFrameMain::Send(v8::Isolate* isolate,
+                         bool internal,
+                         const std::string& channel,
+@@ -527,6 +562,42 @@ void WebFrameMain::DOMContentLoaded() {
+   Emit("dom-ready");
+ }
+ 
++content::FindRequestManager* WebFrameMain::GetOrCreateFindRequestManager() {
++  content::RenderFrameHost* const render_frame = render_frame_host();
++
++  if (!find_request_manager_.get()) {
++    // No existing FindRequestManager found, so one must be created.
++    auto* web_contents = static_cast<content::WebContentsImpl*>(
++        content::WebContents::FromRenderFrameHost(render_frame));
++    find_request_manager_ = std::make_unique<content::FindRequestManager>(
++        web_contents, static_cast<content::RenderFrameHostImpl*>(render_frame));
++  }
++  // Concurrent find sessions must not overlap, so destroy any existing
++  // FindRequestManagers in inner WebFrameMain and direct ancestors.
++  auto* rfh = render_frame->GetParent();
++  while (rfh) {
++    auto* web_frame_main = FromRenderFrameHost(rfh);
++    if (web_frame_main && web_frame_main->find_request_manager_) {
++      web_frame_main->find_request_manager_->StopFinding(
++          content::STOP_FIND_ACTION_CLEAR_SELECTION);
++      web_frame_main->find_request_manager_.release();
++    }
++    rfh = rfh->GetParent();
++  }
++  render_frame->ForEachRenderFrameHost(
++      [render_frame](content::RenderFrameHost* rfh) {
++        if (render_frame != rfh) {
++          auto* web_frame_main = FromRenderFrameHost(rfh);
++          if (web_frame_main && web_frame_main->find_request_manager_) {
++            web_frame_main->find_request_manager_->StopFinding(
++                content::STOP_FIND_ACTION_CLEAR_SELECTION);
++            web_frame_main->find_request_manager_.release();
++          }
++        }
++      });
++  return find_request_manager_.get();
++}
++
+ // static
+ gin::Handle<WebFrameMain> WebFrameMain::New(v8::Isolate* isolate) {
+   return {};
+@@ -583,6 +654,8 @@ void WebFrameMain::FillObjectTemplate(v8::Isolate* isolate,
+                  &WebFrameMain::CollectDocumentJSCallStack)
+       .SetMethod("reload", &WebFrameMain::Reload)
+       .SetMethod("isDestroyed", &WebFrameMain::IsDestroyed)
++      .SetMethod("findInFrame", &WebFrameMain::FindInFrame)
++      .SetMethod("stopFindInFrame", &WebFrameMain::StopFindInFrame)
+       .SetMethod("_send", &WebFrameMain::Send)
+       .SetMethod("_postMessage", &WebFrameMain::PostMessage)
+       .SetProperty("detached", &WebFrameMain::Detached)
+diff --git a/shell/browser/api/electron_api_web_frame_main.h b/shell/browser/api/electron_api_web_frame_main.h
+index ca5cc07e7d1fa71611404159b66d683d3104cca2..dc5b6e6e4234fc43369a2415233f670c534d746f 100644
+--- a/shell/browser/api/electron_api_web_frame_main.h
++++ b/shell/browser/api/electron_api_web_frame_main.h
+@@ -5,6 +5,7 @@
+ #ifndef ELECTRON_SHELL_BROWSER_API_ELECTRON_API_WEB_FRAME_MAIN_H_
+ #define ELECTRON_SHELL_BROWSER_API_ELECTRON_API_WEB_FRAME_MAIN_H_
+ 
++#include <memory>
+ #include <optional>
+ #include <string>
+ #include <vector>
+@@ -13,6 +14,7 @@
+ #include "base/process/process.h"
+ #include "content/public/browser/frame_tree_node_id.h"
+ #include "content/public/browser/global_routing_id.h"
++#include "content/public/common/stop_find_action.h"
+ #include "gin/wrappable.h"
+ #include "mojo/public/cpp/bindings/pending_receiver.h"
+ #include "mojo/public/cpp/bindings/remote.h"
+@@ -25,8 +27,9 @@
+ class GURL;
+ 
+ namespace content {
++class FindRequestManager;
+ class RenderFrameHost;
+-}
++}  // namespace content
+ 
+ namespace gin {
+ class Arguments;
+@@ -100,6 +103,9 @@ class WebFrameMain final : public gin::Wrappable<WebFrameMain>,
+   void TeardownMojoConnection();
+   void OnRendererConnectionError();
+ 
++  uint32_t FindInFrame(gin::Arguments* args);
++  void StopFindInFrame(content::StopFindAction action);
++
+   [[nodiscard]] bool HasRenderFrame() const;
+ 
+   // Throws a JS error if HasRenderFrame() is false.
+@@ -145,6 +151,12 @@ class WebFrameMain final : public gin::Wrappable<WebFrameMain>,
+       const std::optional<blink::LocalFrameToken>& remote_frame_token);
+ 
+   void DOMContentLoaded();
++  content::FindRequestManager* GetOrCreateFindRequestManager();
++
++  // Request id used for findInPage request.
++  uint32_t find_in_frame_request_id_ = 0;
++  // Manages/coordinates multi-process findInPage requests. Created lazily.
++  std::unique_ptr<content::FindRequestManager> find_request_manager_;
+ 
+   mojo::Remote<mojom::ElectronRenderer> renderer_api_;
+   mojo::PendingReceiver<mojom::ElectronRenderer> pending_receiver_;
+diff --git a/spec/api-web-contents-spec.ts b/spec/api-web-contents-spec.ts
+index ed6fd5ef73c2cd835e6727ec28649c3b6ed262fc..b4980e5c1c26ffdf0788d39c1a196594c9951fcf 100644
+--- a/spec/api-web-contents-spec.ts
++++ b/spec/api-web-contents-spec.ts
+@@ -16,6 +16,8 @@ import { ifdescribe, defer, waitUntil, listen, ifit } from './lib/spec-helpers';
+ import { cleanupWebContents, closeAllWindows } from './lib/window-helpers';
+ 
+ const fixturesPath = path.resolve(__dirname, 'fixtures');
++const mainFixturesPath = path.resolve(__dirname, 'fixtures');
++const subframesPath = path.resolve(mainFixturesPath, 'sub-frames');
+ const features = process._linkedBinding('electron_common_features');
+ 
+ describe('webContents module', () => {
+@@ -3075,4 +3077,66 @@ describe('webContents module', () => {
+       expect(w.getBounds().height).to.equal(height);
+     });
+   });
++
++  describe('findInPage', () => {
++    let w: BrowserWindow;
++
++    beforeEach(async () => {
++      w = new BrowserWindow({ show: false, webPreferences: { contextIsolation: true } });
++      await w.loadFile(path.join(subframesPath, 'frame-with-frame-container.html'));
++    });
++
++    it('searches over whole page with find next', async () => {
++      const contents = w.webContents;
++      {
++        const foundInPage = once(contents, 'found-in-page');
++        contents.findInPage('This', { findNext: true });
++        const [, result] = await foundInPage;
++        expect(result.matches).equal(3);
++        expect(result.activeMatchOrdinal).equal(1);
++      }
++      for (let i = 0; i < 2; i++) {
++        const foundInPage = once(contents, 'found-in-page');
++        contents.findInPage('This', { findNext: false });
++        const [, result] = await foundInPage;
++        expect(result.matches).equal(3);
++        expect(result.activeMatchOrdinal).equal(i + 2);
++      }
++      {
++        const foundInPage = once(contents, 'found-in-page');
++        contents.findInPage('This', { findNext: false });
++        const [, result] = await foundInPage;
++        expect(result.matches).equal(3);
++        expect(result.activeMatchOrdinal).equal(1);
++      }
++    });
++
++    it('searches over whole page with clears in between', async () => {
++      const contents = w.webContents;
++      {
++        const ev = once(contents, 'found-in-page');
++        contents.findInPage('is', { findNext: true });
++        const [, result] = await ev;
++        expect(result.matches).equal(7);
++        expect(result.activeMatchOrdinal).equal(1);
++        contents.stopFindInPage('keepSelection');
++      }
++      {
++        const ev = once(contents, 'found-in-page');
++        contents.findInPage('is', { findNext: true });
++        const [, result] = await ev;
++        expect(result.matches).equal(7);
++        expect(result.activeMatchOrdinal).equal(2);
++        contents.stopFindInPage('clearSelection');
++      }
++      {
++        const ev = once(contents, 'found-in-page');
++        contents.findInPage('is', { findNext: true });
++        const [, result] = await ev;
++        expect(result.matches).equal(7);
++        expect(result.activeMatchOrdinal).equal(1);
++        contents.stopFindInPage('clearSelection');
++      }
++    });
++  });
+ });
+diff --git a/spec/api-web-frame-main-spec.ts b/spec/api-web-frame-main-spec.ts
+index 236140780a884f0b7825414ec4e27634029f46de..c8fca6c17ca1d6cbe31db8f4afaa4e2382ce361d 100644
+--- a/spec/api-web-frame-main-spec.ts
++++ b/spec/api-web-frame-main-spec.ts
+@@ -35,7 +35,11 @@ describe('webFrameMain module', () => {
+       if (params.has('frameSrc')) {
+         res.end(`<iframe src="${params.get('frameSrc')}"></iframe>`);
+       } else {
+-        res.end('');
++        if (params.has('frameContent')) {
++          res.end(params.get('frameContent'));
++        } else {
++          res.end('');
++        }
+       }
+     });
+     const serverUrl = (await listen(server)).url + '/';
+@@ -104,6 +108,96 @@ describe('webFrameMain module', () => {
+       ]);
+     });
+ 
++    it('searches over subframe with find next', async () => {
++      const frame = w.webContents.mainFrame.framesInSubtree[2];
++      {
++        const foundInFrame = once(frame, 'found-in-frame');
++        frame.findInFrame('i', { findNext: true });
++        const [, result] = await foundInFrame;
++        expect(result.matches).equal(4);
++        expect(result.activeMatchOrdinal).equal(1);
++      }
++      {
++        const foundInFrame = once(frame, 'found-in-frame');
++        frame.findInFrame('i', { findNext: false });
++        const [, result] = await foundInFrame;
++        expect(result.matches).equal(4);
++        expect(result.activeMatchOrdinal).equal(2);
++      }
++      frame.stopFindInFrame('clearSelection');
++    });
++
++    it('searches over subframe with find next from top frame', async () => {
++      const frame = w.webContents.mainFrame.framesInSubtree[0];
++      {
++        const foundInFrame = once(frame, 'found-in-frame');
++        frame.findInFrame('This', { findNext: true });
++        const [, result] = await foundInFrame;
++        expect(result.matches).equal(3);
++        expect(result.activeMatchOrdinal).equal(1);
++      }
++      {
++        const foundInFrame = once(frame, 'found-in-frame');
++        frame.findInFrame('This', { findNext: false });
++        const [, result] = await foundInFrame;
++        expect(result.matches).equal(3);
++        expect(result.activeMatchOrdinal).equal(2);
++      }
++    });
++
++    it('searches over subframes multiple times', async () => {
++      const frame = w.webContents.mainFrame.framesInSubtree[2];
++      for (let i = 0; i < 3; i++) {
++        {
++          const foundInFrame = once(frame, 'found-in-frame');
++          frame.findInFrame('i', { findNext: true });
++          const [, result] = await foundInFrame;
++          expect(result.matches).equal(4);
++          expect(result.activeMatchOrdinal).equal(1);
++          frame.stopFindInFrame('keepSelection');
++        }
++        {
++          const extraFind = once(frame, 'found-in-frame');
++          frame.findInFrame('i', { findNext: true });
++          await extraFind;
++          const foundInFrame = once(frame, 'found-in-frame');
++          frame.findInFrame('i', { findNext: false });
++          const [, result] = await foundInFrame;
++          expect(result.matches).equal(4);
++          expect(result.activeMatchOrdinal).equal(3);
++          frame.stopFindInFrame('clearSelection');
++        }
++      }
++    });
++
++    it('searches over two frames concurrently', async () => {
++      await w.loadFile(path.join(subframesPath, 'frame-with-frames.html'));
++      const firstFrame = w.webContents.mainFrame.framesInSubtree[1];
++      const secondFrame = w.webContents.mainFrame.framesInSubtree[2];
++      {
++        const firstSearch = once(firstFrame, 'found-in-frame');
++        firstFrame.findInFrame('i', { findNext: true });
++        await firstSearch;
++        const secondSearch = once(secondFrame, 'found-in-frame');
++        secondFrame.findInFrame('a', { findNext: true });
++        await secondSearch;
++      }
++      {
++        const firstSearch = once(firstFrame, 'found-in-frame');
++        secondFrame.findInFrame('a', { findNext: false });
++        const secondSearch = once(secondFrame, 'found-in-frame');
++        firstFrame.findInFrame('i', { findNext: false });
++        const [, firstResult] = await firstSearch;
++        const [, secondResult] = await secondSearch;
++        expect(firstResult.matches).equal(4);
++        expect(firstResult.activeMatchOrdinal).equal(2);
++        expect(secondResult.matches).equal(3);
++        expect(secondResult.activeMatchOrdinal).equal(2);
++        firstFrame.stopFindInFrame('clearSelection');
++        secondFrame.stopFindInFrame('clearSelection');
++      }
++    });
++
+     describe('cross-origin', () => {
+       let serverA: Server;
+       let serverB: Server;
+@@ -124,6 +218,20 @@ describe('webFrameMain module', () => {
+         expect(webFrame.url.startsWith(serverA.url)).to.be.true();
+         expect(webFrame.frames[0].url).to.equal(serverB.url);
+       });
++
++      it('searches over frame and its cross site children', async () => {
++        const frameSrc = `${serverB.url}?frameContent=children`;
++        await w.loadURL(`${serverA.url}?frameSrc=${frameSrc}`);
++        const frame = w.webContents.mainFrame;
++        {
++          const foundInFrame = once(frame, 'found-in-frame');
++          frame.findInFrame('children', { findNext: true });
++          const [, result] = await foundInFrame;
++          expect(result.matches).equal(1);
++          expect(result.activeMatchOrdinal).equal(1);
++        }
++        frame.stopFindInFrame('clearSelection');
++      });
+     });
+   });
+ 
+@@ -578,4 +686,149 @@ describe('webFrameMain module', () => {
+       await promise;
+     });
+   });
++
++  describe('webFrameMain.FindInFrame', () => {
++    let w: BrowserWindow;
++    let webFrame: WebFrameMain;
++
++    beforeEach(async () => {
++      w = new BrowserWindow({
++        show: false,
++        width: 400,
++        height: 400
++      });
++    });
++
++    it('searches over frame and its same site children', async () => {
++      await w.loadFile(path.resolve(__dirname, 'fixtures/sub-frames/frame-container.html'));
++      webFrame = w.webContents.mainFrame;
++      {
++        const foundInFrame = once(webFrame, 'found-in-frame');
++        webFrame.findInFrame('This', { findNext: true });
++        const [, result] = await foundInFrame;
++        expect(result.matches).equal(2);
++        expect(result.activeMatchOrdinal).equal(1);
++      }
++      {
++        const foundInFrame = once(webFrame, 'found-in-frame');
++        webFrame.findInFrame('This', { findNext: false });
++        const [, result] = await foundInFrame;
++        expect(result.matches).equal(2);
++        expect(result.activeMatchOrdinal).equal(2);
++      }
++      webFrame.stopFindInFrame('clearSelection');
++    });
++
++    it('searches concurrently from frames at same depth', async () => {
++      const didFrameFinishLoad = emittedNTimes(w.webContents, 'did-frame-finish-load', 3);
++      w.loadFile(path.resolve(__dirname, 'fixtures/sub-frames/multiple-frame-container.html'));
++      await didFrameFinishLoad;
++      const firstFrame = w.webContents.mainFrame.framesInSubtree[1];
++      const secondFrame = w.webContents.mainFrame.framesInSubtree[2];
++      {
++        const foundInFirstFrame = once(firstFrame, 'found-in-frame');
++        const foundInSecondFrame = once(secondFrame, 'found-in-frame');
++        firstFrame.findInFrame('is', { findNext: true });
++        secondFrame.findInFrame('is', { findNext: true });
++        {
++          const [, { matches, activeMatchOrdinal }] = await foundInFirstFrame;
++          expect(matches).equal(5);
++          expect(activeMatchOrdinal).equal(1);
++        }
++        {
++          const [, { matches, activeMatchOrdinal }] = await foundInSecondFrame;
++          expect(matches).equal(2);
++          expect(activeMatchOrdinal).equal(1);
++        }
++      }
++      {
++        const foundInFirstFrame = once(firstFrame, 'found-in-frame');
++        const foundInSecondFrame = once(secondFrame, 'found-in-frame');
++        firstFrame.findInFrame('is', { findNext: false });
++        secondFrame.findInFrame('is', { findNext: false });
++        {
++          const [, { activeMatchOrdinal }] = await foundInFirstFrame;
++          expect(activeMatchOrdinal).equal(2);
++        }
++        {
++          const [, { activeMatchOrdinal }] = await foundInSecondFrame;
++          expect(activeMatchOrdinal).equal(2);
++        }
++      }
++      firstFrame.stopFindInFrame('clearSelection');
++      secondFrame.stopFindInFrame('keepSelection');
++      {
++        const foundInFirstFrame = once(firstFrame, 'found-in-frame');
++        const foundInSecondFrame = once(secondFrame, 'found-in-frame');
++        firstFrame.findInFrame('is', { findNext: true });
++        secondFrame.findInFrame('is', { findNext: true });
++        {
++          const [, { activeMatchOrdinal }] = await foundInFirstFrame;
++          expect(activeMatchOrdinal).equal(1);
++        }
++        {
++          const [, { activeMatchOrdinal }] = await foundInSecondFrame;
++          expect(activeMatchOrdinal).equal(1);
++        }
++      }
++      firstFrame.stopFindInFrame('clearSelection');
++      secondFrame.stopFindInFrame('keepSelection');
++    });
++  });
++
++  describe('webFrameMain.FindInFrame with changing frames', () => {
++    let w: BrowserWindow;
++
++    beforeEach(async () => {
++      w = new BrowserWindow({
++        show: false,
++        width: 400,
++        height: 400,
++        webPreferences: {
++          preload: path.join(subframesPath, 'frame-swap-preload.js')
++        }
++      });
++    });
++
++    async function doFind (f: WebFrameMain) {
++      const foundInFrame = once(f, 'found-in-frame');
++      f.findInFrame('This', { findNext: true });
++      await foundInFrame;
++    }
++
++    it('does not crash after the frame has been refreshed', async () => {
++      const domReady = once(w.webContents, 'dom-ready');
++      await w.webContents.loadFile(path.join(subframesPath, 'frame-with-frame.html'));
++      await domReady;
++      const firstFrame = w.webContents.mainFrame.framesInSubtree.find((frame) => frame.name === 'frameA');
++      expect(firstFrame).to.be.not.undefined();
++      const firstId = firstFrame!.frameTreeNodeId;
++      await doFind(firstFrame!);
++      const toggleDone = once(ipcMain, 'toggle-frame-content-done');
++      w.webContents.send('toggle-frame-content');
++      await toggleDone;
++      const newFrame = w.webContents.mainFrame.framesInSubtree.find((frame) => frame.name === 'frameA');
++      expect(newFrame).to.be.not.undefined();
++      const oldFrame = w.webContents.mainFrame.framesInSubtree.find((frame) => frame.frameTreeNodeId === firstId);
++      expect(oldFrame).to.be.undefined();
++      const secondId = newFrame!.frameTreeNodeId;
++      expect(secondId).to.not.equal(firstId);
++      await doFind(newFrame!);
++    });
++
++    it('errors after the frame has been removed', async () => {
++      const domReady = once(w.webContents, 'dom-ready');
++      await w.webContents.loadFile(path.join(subframesPath, 'frame-with-frame.html'));
++      await domReady;
++      const firstFrame = w.webContents.mainFrame.framesInSubtree.find((frame) => frame.name === 'frameA');
++      expect(firstFrame).to.be.not.undefined();
++      await doFind(firstFrame!);
++      const removeDone = once(ipcMain, 'remove-frame-content-done');
++      w.webContents.send('remove-frame-content');
++      await removeDone;
++      const newFrame = w.webContents.mainFrame.framesInSubtree.find((frame) => frame.name === 'frameA');
++      expect(newFrame).to.be.undefined();
++      expect(doFind(firstFrame!)).to.be.rejected();
++    });
++  });
+ });
+diff --git a/spec/fixtures/sub-frames/frame-swap-preload.js b/spec/fixtures/sub-frames/frame-swap-preload.js
+new file mode 100644
+index 0000000000000000000000000000000000000000..0c529a9cf6d24065cf78fb5c61d18f91e364a57d
+--- /dev/null
++++ b/spec/fixtures/sub-frames/frame-swap-preload.js
+@@ -0,0 +1,31 @@
++const { ipcRenderer } = require('electron');
++
++window.addEventListener('DOMContentLoaded', () => {
++  ipcRenderer.on('toggle-frame-content', () => {
++    const container = document.getElementById('iframe-wrapper');
++    const frame = container.getElementsByTagName('iframe')[0];
++    container.removeChild(frame);
++    const newFrame = document.createElement('iframe');
++    newFrame.src = 'frame.html';
++    newFrame.name = 'frameA';
++    container.appendChild(newFrame);
++
++    // setTimeout is required to cause the crash
++    // could be 0, but sometimes the following block still runs too quickly
++    setTimeout(() => {
++      ipcRenderer.send('toggle-frame-content-done');
++    }, 100);
++  });
++
++  ipcRenderer.on('remove-frame-content', () => {
++    const container = document.getElementById('iframe-wrapper');
++    const frame = container.getElementsByTagName('iframe')[0];
++    container.removeChild(frame);
++
++    // setTimeout is required to cause the crash
++    // could be 0, but sometimes the following block still runs too quickly
++    setTimeout(() => {
++      ipcRenderer.send('remove-frame-content-done');
++    }, 100);
++  });
++});
+diff --git a/spec/fixtures/sub-frames/frame-with-frame.html b/spec/fixtures/sub-frames/frame-with-frame.html
+index 3f46a8adab9d3564264486d324827f35fc08dc33..2079f09550bbfdcde132f0ea854bc3dcb22519f4 100644
+--- a/spec/fixtures/sub-frames/frame-with-frame.html
++++ b/spec/fixtures/sub-frames/frame-with-frame.html
+@@ -8,6 +8,8 @@
+ </head>
+ <body>
+   This is a frame, is has one child
+-  <iframe src="./frame.html" name="frameA"></iframe>
++  <div id="iframe-wrapper">
++    <iframe src="./frame.html" name="frameA"></iframe>
++  </div>
+ </body>
+ </html>
+\ No newline at end of file
+diff --git a/spec/fixtures/sub-frames/frame-with-frames.html b/spec/fixtures/sub-frames/frame-with-frames.html
+new file mode 100644
+index 0000000000000000000000000000000000000000..8b5afbb35c104bfd8e09fed5149a51115ffecd62
+--- /dev/null
++++ b/spec/fixtures/sub-frames/frame-with-frames.html
+@@ -0,0 +1,14 @@
++<!DOCTYPE html>
++<html lang="en">
++<head>
++  <meta charset="UTF-8">
++  <meta name="viewport" content="width=device-width, initial-scale=1.0">
++  <meta http-equiv="X-UA-Compatible" content="ie=edge">
++  <title>Document</title>
++</head>
++<body>
++  This is a frame, it has two children
++  <iframe src="./frame.html"></iframe>
++  <iframe src="./frame.html"></iframe>
++</body>
++</html>
+diff --git a/spec/fixtures/sub-frames/multiple-frame-container.html b/spec/fixtures/sub-frames/multiple-frame-container.html
+new file mode 100644
+index 0000000000000000000000000000000000000000..2068f5203213ad3d75ad4885095ab93b9d33443a
+--- /dev/null
++++ b/spec/fixtures/sub-frames/multiple-frame-container.html
+@@ -0,0 +1,14 @@
++<!DOCTYPE html>
++<html lang="en">
++<head>
++  <meta charset="UTF-8">
++  <meta name="viewport" content="width=device-width, initial-scale=1.0">
++  <meta http-equiv="X-UA-Compatible" content="ie=edge">
++  <title>Document</title>
++</head>
++<body>
++  This is the root page
++  <iframe src="./frame-with-frame.html"></iframe>
++  <iframe src="./frame.html"></iframe>
++</body>
++</html>
+\ No newline at end of file

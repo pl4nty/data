@@ -1,0 +1,57 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "image_name": {
+      "value": "electron-win10-test-image"
+    },
+    "image_baseImage": {
+      "value": "/MicrosoftWindowsDesktop/Windows-10/win10-22h2-pro/latest"
+    },
+    "image_buildProfile": {
+      "value": {}
+    },
+    "image_artifacts": {
+      "value": [
+        {
+          "name": "windows-gitinstall"
+        },
+        {
+          "name": "windows-defender-exclusions",
+          "parameters": {
+            "ExclusionPath": "D:\\a",
+            "ExclusionProcess": "electron.exe"
+          }
+        },
+        {
+          "name": "windows-1es-pt-prerequisites-v2",
+          "parameters": {
+            "KVSecret_AppSecret": "https://pipelinesidentity.vault.azure.net/secrets/1es-gpt-read-only-app-secret"
+          }
+        }
+      ]
+    },
+    "pool_name": {
+      "value": "1ES-Win10-Electron-Test"
+    },
+    "pool_sku": {
+      "value": {
+        "name": "Standard_D8s_v3",
+        "tier": "Standard"
+      }
+    },
+    "pool_maxPoolSize": {
+      "value": 12
+    },
+    "pool_networkProfile": {
+      "value": {
+        "natGatewayIpAddressCount": 0
+      }
+    },
+    "pool_vmProviderProperties": {
+      "value": {
+        "InteractiveModeSupported": "true"
+      }
+    }
+  }
+}

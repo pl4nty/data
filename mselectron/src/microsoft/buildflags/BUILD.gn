@@ -1,0 +1,11 @@
+import("//build/buildflag_header.gni")
+import("//microsoft/buildflags/buildflags.gni")
+
+buildflag_header("buildflags") {
+  header = "buildflags.h"
+
+  flags = [
+    "MICROSOFT_ENABLE_APP_CENTER=$microsoft_enable_app_center",
+    "MICROSOFT_RESTRICT_UNC_ACCESS=$microsoft_restrict_unc_access",
+  ]
+}

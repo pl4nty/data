@@ -1,0 +1,5 @@
+[
+  { "patch_dir": "src/microsoft/patches/customization/chromium", "repo": "src" },
+  { "patch_dir": "src/microsoft/patches/customization/electron_node", "repo": "src/third_party/electron_node" },
+  { "patch_dir": "src/microsoft/patches/customization/electron", "repo": "src/electron" }
+]

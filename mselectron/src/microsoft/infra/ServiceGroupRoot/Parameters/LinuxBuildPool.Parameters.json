@@ -1,0 +1,48 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "image_name": {
+      "value": "electron-linux-build-image"
+    },
+    "image_baseImage": {
+      "value": "/canonical/0001-com-ubuntu-server-focal/20_04-lts/latest"
+    },
+    "image_buildProfile": {
+      "value": {}
+    },
+    "image_artifacts": {
+      "value": [
+        {
+          "name": "linux-install-docker"
+        },
+        {
+          "name": "linux-1es-gpt-prerequisites",
+          "parameters": {
+            "KVSecret_AppSecret": "https://pipelinesidentity.vault.azure.net/secrets/1es-gpt-read-only-app-secret"
+          }
+        }
+      ]
+    },
+    "pool_name": {
+      "value": "1ES-Ubuntu-Electron-Build__SUFFIX__"
+    },
+    "pool_sku": {
+      "value": {
+        "name": "Standard_D48ds_v4",
+        "tier": "Premium"
+      }
+    },
+    "pool_maxPoolSize": {
+      "value": 12
+    },
+    "pool_networkProfile": {
+      "value": {
+        "natGatewayIpAddressCount": 2
+      }
+    },
+    "pool_vmProviderProperties": {
+      "value": {}
+    }
+  }
+}

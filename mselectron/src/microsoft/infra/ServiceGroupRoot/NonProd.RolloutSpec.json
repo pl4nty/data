@@ -1,0 +1,56 @@
+{
+  "$schema": "https://ev2schema.azure.net/schemas/2020-01-01/rolloutSpecification.json",
+  "rolloutMetadata": {
+    "serviceModelPath": "ServiceModel.json",
+    "scopeBindingsPath": "ScopeBindings.json",
+    "name": "Electron Infra",
+    "rolloutType": "Major",
+    "buildSource": {
+      "parameters": {
+        "versionFile": "buildver.txt"
+      }
+    }
+  },
+  "orchestratedsteps": [
+    {
+      "name": "LinuxNonProd",
+      "targetType": "ServiceResource",
+      "targetName": "ElectronLinuxBuildPoolNonProd",
+      "actions": [
+        "Deploy"
+      ]
+    },
+    {
+      "name": "WindowsARM64Test",
+      "targetType": "ServiceResource",
+      "targetName": "ElectronWindowsARM64TestPool",
+      "actions": [
+        "Deploy"
+      ]
+    },
+    {
+        "name": "WindowsNonProd",
+        "targetType": "ServiceResource",
+        "targetName": "ElectronWindowsBuildPoolNonProd",
+        "actions": [
+          "Deploy"
+        ]
+      },
+    {
+      "name": "WindowsTest",
+      "targetType": "ServiceResource",
+      "targetName": "ElectronWindowsTestPool",
+      "actions": [
+        "Deploy"
+      ]
+    },
+    {
+      "name": "VisualStudioGallery",
+      "targetType": "ServiceResource",
+      "targetName": "ElectronVisualStudioGalleryPool",
+      "actions": [
+        "Deploy"
+      ]
+    }
+  ]
+}

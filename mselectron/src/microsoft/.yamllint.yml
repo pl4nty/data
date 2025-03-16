@@ -1,0 +1,28 @@
+# https://github.com/adrienverge/yamllint
+
+extends: default
+
+rules:  # In alphabetical order.
+  comments:
+    require-starting-space: true
+    level: error
+
+  comments-indentation:
+    level: error
+
+  document-start:
+    present: false
+
+  indentation:
+    spaces: 2
+    indent-sequences: false
+
+  line-length:
+    max: 120
+    level: error
+
+ignore: |
+  .azure-devops/templates/steps/coral/*.yml
+  .azure-devops/templates/steps/coral/*/*.yml
+  .config/1espt
+  node_modules

@@ -1,0 +1,7 @@
+{
+  "from": "https://chromium.googlesource.com/chromium/tools/depot_tools",
+  "to": "https://devdiv.visualstudio.com/DevDiv/_git/electron-depot-tools",
+  "branches": {
+    "include": [ "main" ]
+  }
+}

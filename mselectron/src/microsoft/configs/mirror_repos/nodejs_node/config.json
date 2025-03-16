@@ -1,0 +1,12 @@
+{
+  "from": "https://github.com/nodejs/node.git",
+  "to": "https://devdiv.visualstudio.com/DevDiv/_git/electron-node",
+  "branches": {
+    "include": [ "v20.x", "v22.x" ],
+    "force_push": true
+  },
+  "patches": [ "231ab788eadde6e08fb6dd53a95ffc113d0041ed" ],
+  "tags": {
+    "include": [ "v20.*", "v22.*" ]
+  }
+}

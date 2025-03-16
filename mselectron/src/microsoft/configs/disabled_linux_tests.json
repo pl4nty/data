@@ -1,0 +1,22 @@
+[
+  "// Some version-bumper tests need to be disabled due to the CI environment",
+  "version-bumper nextVersion bump versions bumps to beta from beta",
+  "version-bumper nextVersion bump versions bumps to beta from beta if the previous beta is at least beta.10",
+
+  "// These regressed in 31.0.0 and need to be investigated",
+  "navigator.clipboard.write returns an error when permission denied",
+  "navigator.clipboard.write returns clipboard contents when a PermissionRequestHandler is not defined",
+  "navigator.clipboard.write returns clipboard contents when permission is granted",
+  "session module DownloadItem webContents.downloadURL can set options for the save dialog",
+  "session module DownloadItem webContents.downloadURL when a save path is specified and the URL is unavailable does not display a save dialog and reports the done state as interrupted",
+
+  "// Regressed in 33.0.0-alpha.7 and needs to be investigated",
+  "session module DownloadItem webContents.downloadURL can cancel download",
+  "session module DownloadItem webContents.downloadURL can download from custom protocols",
+  "session module DownloadItem webContents.downloadURL can generate a default filename",
+  "session module DownloadItem webContents.downloadURL can perform a download",
+
+  "// These may fail due to our current testing environment. Also produce 'No suitable EGL configs found.' messages",
+  "app module getGPUInfo() API succeeds with basic GPUInfo",
+  "app module getGPUInfo() API succeeds with complete GPUInfo"
+]
