@@ -6,8 +6,18 @@ import shutil
 import concurrent.futures
 
 MODULES = [
-    'MicrosoftTeams',
     'DellBIOSProvider',
+    'ExchangeOnlineManagement',
+    'MicrosoftTeams',
+    'SqlServer',
+    # inactive
+    'AzureRM.profile',
+    'CredentialManager',
+    'CPC.DeployInfra',
+    'GetBIOS',
+    'Get-WindowsAutoPilotInfo',
+    'PackageManagement',
+    'PowerShellGet',
 ]
 
 
@@ -55,7 +65,8 @@ def extract_module(content, module_name):
         # Filter out unwanted paths
         paths_to_extract = [
             f for f in zip_ref.namelist()
-            if not (f.startswith('_rels/') or
+            if not (f.endswith('.dll') or
+                    f.startswith('_rels/') or
                     f.startswith('package/') or
                     f.endswith('.nuspec') or
                     f.endswith('[Content_Types].xml'))
