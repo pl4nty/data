@@ -182,10 +182,10 @@ def wait_for_unzip(out_sas_url, timeout=1800, check_interval=30):
     raise TimeoutError("Unzip operation timed out")
 
 
-def find_zip_in_output(out_sas_url):
+def find_zip(sas_url):
     """Find the .zip file in the output directory"""
-    container_client = ContainerClient.from_container_url(out_sas_url)
-    parsed = urlparse(out_sas_url)
+    container_client = ContainerClient.from_container_url(sas_url)
+    parsed = urlparse(sas_url)
 
     for blob in container_client.list_blobs():
         if blob.name.endswith('.zip'):
@@ -465,8 +465,8 @@ def main():
     print("HSM download and extraction completed")
 
     # unzip service using blobs and function trigger
-    dest_sas_url = os.getenv('AZURE_STORAGE_IN')
-    if not dest_sas_url:
+    in_sas_url = os.getenv('AZURE_STORAGE_IN')
+    if not in_sas_url:
         raise ValueError(
             "AZURE_STORAGE_IN environment variable not set")
     out_sas_url = os.getenv('AZURE_STORAGE_OUT')
@@ -484,7 +484,7 @@ def main():
     latest_edge = get_latest_edge_release(data)
     print(f"Latest Edge version: {latest_edge['release']}")
     source_url = latest_edge['url']
-    success = copy_to_azure_storage(source_url, dest_sas_url)
+    success = copy_to_azure_storage(source_url, in_sas_url)
     print(f"Copy operation {'succeeded' if success else 'failed'}")
 
     try:
@@ -503,10 +503,6 @@ def main():
             print("\nDownloading files...")
             download_zip_contents(zip, exclude_paths=['src/third_party'], output_dir='mselectron')
 
-        # Delete output ZIPs after successful processing
-        if delete_blob(zip_url):
-            print("Deleted output ZIPs after processing")
-
     except Exception as e:
         print(f"Error during ZIP processing: {e}")
 
@@ -516,11 +512,12 @@ def main():
     if wait_for_unzip(out_sas_url):
         print("Unzip completed")
         # Delete parent ZIP after unzip
-        if delete_blob(dest_sas_url):
+        zip_url = find_zip(in_sas_url)
+        if delete_blob(in_sas_url):
             print("Deleted parent ZIP after unzip")
 
     # Find the ZIP file in output directory
-    zip_url = find_zip_in_output(out_sas_url)
+    zip_url = find_zip(out_sas_url)
     if not zip_url:
         raise ValueError("Could not find zip in output directory")
 
