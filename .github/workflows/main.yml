@@ -16,9 +16,10 @@ jobs:
     strategy:
       matrix:
         cmd:
-          - python android_bulletins_parser.py
-          - python get_json.py
+          - python -u android_bulletins_parser.py
+          - python -u get_json.py
           # TODO decode https://login.microsoftonline.com/common/kerberos
+          - python -u powershell_gallery.py
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5.4.0
