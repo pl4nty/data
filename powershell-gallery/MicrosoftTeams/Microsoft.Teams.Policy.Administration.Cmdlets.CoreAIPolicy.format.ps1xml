@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+                <Configuration>
+                <ViewDefinitions>
+                    <View>
+                  <Name>TeamsAIPolicyView</Name>
+               <ViewSelectedBy>
+                  <TypeName>Microsoft.Teams.Policy.Administration.Cmdlets.CoreAIPolicy.TeamsAIPolicy</TypeName>
+               </ViewSelectedBy>
+               <ListControl>
+                <ListEntries>
+                    <ListEntry>
+                      <ListItems>
+                        
+                    <ListItem>
+                        <Label>Identity</Label>
+                        <PropertyName>Identity</PropertyName>
+                    </ListItem>
+                    <ListItem>
+                        <Label>Description</Label>
+                        <PropertyName>Description</PropertyName>
+                    </ListItem>
+                    <ListItem>
+                        <Label>EnrollFace</Label>
+                        <PropertyName>EnrollFace</PropertyName>
+                    </ListItem>
+                    <ListItem>
+                        <Label>EnrollVoice</Label>
+                        <PropertyName>EnrollVoice</PropertyName>
+                    </ListItem>
+                      </ListItems>
+                    </ListEntry>
+                </ListEntries>
+               </ListControl>
+              </View>
+
+                </ViewDefinitions>
+                </Configuration>
+
+<!-- SIG # Begin signature block
+ -->

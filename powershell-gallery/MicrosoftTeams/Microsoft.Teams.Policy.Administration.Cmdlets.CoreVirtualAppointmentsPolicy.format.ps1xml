@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+                <Configuration>
+                <ViewDefinitions>
+                    <View>
+                  <Name>TeamsVirtualAppointmentsPolicyView</Name>
+               <ViewSelectedBy>
+                  <TypeName>Microsoft.Teams.Policy.Administration.Cmdlets.CoreVirtualAppointmentsPolicy.TeamsVirtualAppointmentsPolicy</TypeName>
+               </ViewSelectedBy>
+               <ListControl>
+                <ListEntries>
+                    <ListEntry>
+                      <ListItems>
+                        
+                    <ListItem>
+                        <Label>Identity</Label>
+                        <PropertyName>Identity</PropertyName>
+                    </ListItem>
+                    <ListItem>
+                        <Label>EnableSmsNotifications</Label>
+                        <PropertyName>EnableSmsNotifications</PropertyName>
+                    </ListItem>
+                      </ListItems>
+                    </ListEntry>
+                </ListEntries>
+               </ListControl>
+              </View>
+
+                </ViewDefinitions>
+                </Configuration>
+
+<!-- SIG # Begin signature block
+ -->

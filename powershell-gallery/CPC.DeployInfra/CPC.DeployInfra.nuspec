@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>CPC.DeployInfra</id>
+    <version>1.1.65</version>
+    <authors>Microsoft Corporation</authors>
+    <owners>Microsoft Corporation</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Utils built for Windows365 infra deployment.</description>
+    <releaseNotes></releaseNotes>
+    <copyright>Microsoft Corporation. All rights reserved.</copyright>
+    <tags>PSModule PSIncludes_Function PSFunction_Enter-ExceptionHandler PSFunction_Get-EV2Cmdlets PSFunction_New-Ev2Deploy PSFunction_Install-AzModules PSFunction_Send-Log-Email PSFunction_Write-Email-Log PSFunction_Login-Azure PSFunction_Login-Azure-Cli PSFunction_Create-KeyVault-And-Grant-AccessPolicy PSFunction_Create-KeyVault-Key PSFunction_Create-KeyVault-Certificate PSFunction_Check-KeyVault-Certificate PSFunction_Purge-KeyVault-Certificate PSFunction_New-AzResourceSecret PSFunction_New-CosomosDbSecrets PSFunction_New-StorageSecrets PSFunction_New-EventHubSecrets PSFunction_New-EventGridSecrets PSFunction_New-ServiceBusSecrets PSFunction_New-RedisSecrets PSFunction_TrafficManagerLocator PSFunction_Get-ASEIP PSFunction_Get-Ev2ShellIdentityObjectId PSFunction_Get-DefaultCertValidityInMonths PSFunction_Get-DefaultCertRenewalPercentage PSFunction_Restore-DeployInfraPackage PSFunction_Build-Ev2Artifacts PSFunction_Build-CustomEv2Artifacts PSFunction_Import-AppConfiguration PSCommand_Enter-ExceptionHandler PSCommand_Get-EV2Cmdlets PSCommand_New-Ev2Deploy PSCommand_Install-AzModules PSCommand_Send-Log-Email PSCommand_Write-Email-Log PSCommand_Login-Azure PSCommand_Login-Azure-Cli PSCommand_Create-KeyVault-And-Grant-AccessPolicy PSCommand_Create-KeyVault-Key PSCommand_Create-KeyVault-Certificate PSCommand_Check-KeyVault-Certificate PSCommand_Purge-KeyVault-Certificate PSCommand_New-AzResourceSecret PSCommand_New-CosomosDbSecrets PSCommand_New-StorageSecrets PSCommand_New-EventHubSecrets PSCommand_New-EventGridSecrets PSCommand_New-ServiceBusSecrets PSCommand_New-RedisSecrets PSCommand_TrafficManagerLocator PSCommand_Get-ASEIP PSCommand_Get-Ev2ShellIdentityObjectId PSCommand_Get-DefaultCertValidityInMonths PSCommand_Get-DefaultCertRenewalPercentage PSCommand_Restore-DeployInfraPackage PSCommand_Build-Ev2Artifacts PSCommand_Build-CustomEv2Artifacts PSCommand_Import-AppConfiguration</tags>
+  </metadata>
+</package>

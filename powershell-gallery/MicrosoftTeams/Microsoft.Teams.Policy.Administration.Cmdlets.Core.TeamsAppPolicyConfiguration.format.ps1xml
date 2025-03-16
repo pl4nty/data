@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+                <Configuration>
+                <ViewDefinitions>
+                    <View>
+                  <Name>TeamsAppPolicyConfigurationView</Name>
+               <ViewSelectedBy>
+                  <TypeName>Microsoft.Teams.Policy.Administration.Cmdlets.Core.TeamsAppPolicyConfiguration.TeamsAppPolicyConfiguration</TypeName>
+               </ViewSelectedBy>
+               <ListControl>
+                <ListEntries>
+                    <ListEntry>
+                      <ListItems>
+                        
+                    <ListItem>
+                        <Label>Identity</Label>
+                        <PropertyName>Identity</PropertyName>
+                    </ListItem>
+                    <ListItem>
+                        <Label>AppCatalogUri</Label>
+                        <PropertyName>AppCatalogUri</PropertyName>
+                    </ListItem>
+                    <ListItem>
+                        <Label>ResourceUri</Label>
+                        <PropertyName>ResourceUri</PropertyName>
+                    </ListItem>
+                      </ListItems>
+                    </ListEntry>
+                </ListEntries>
+               </ListControl>
+              </View>
+
+                </ViewDefinitions>
+                </Configuration>
+
+<!-- SIG # Begin signature block
+ -->
