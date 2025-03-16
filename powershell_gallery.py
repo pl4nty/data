@@ -7,7 +7,9 @@ import concurrent.futures
 
 MODULES = [
     'MicrosoftTeams',
-    'CPC.DeployInfra'
+    'CPC.DeployInfra',
+    'DellBIOSProvider',
+    'PSWindowsUpdate'
 ]
 
 
