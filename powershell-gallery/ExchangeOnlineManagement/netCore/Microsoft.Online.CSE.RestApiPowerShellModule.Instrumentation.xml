@@ -1,0 +1,1746 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation</name>
+    </assembly>
+    <members>
+        <member name="T:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.ActivityType">
+            <summary>
+            ActivityType enum
+            </summary>
+        </member>
+        <member name="T:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.AdminApiEndPoint">
+            <summary>
+            Admin Api end point enum
+            </summary>
+        </member>
+        <member name="T:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.ActivityConstants">
+            <summary>
+            Class to encapsulate the string constants for different segments for running a cmdlet
+            </summary>
+        </member>
+        <member name="F:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.ActivityConstants.InternalBeginProcessingStageName">
+            <summary>
+             Cmdlet Activity Constant - InternalBeginProcessingStageName
+            </summary>
+        </member>
+        <member name="F:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.ActivityConstants.InternalProcessRecordStageName">
+            <summary>
+             Cmdlet Activity Constant - InternalProcessRecordStageName 
+            </summary>
+        </member>
+        <member name="F:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.ActivityConstants.ProcessRecordStageName">
+            <summary>
+             Cmdlet Activity Constant - ProcessRecordStageName
+            </summary>
+        </member>
+        <member name="F:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.ActivityConstants.EndProcessingStageName">
+            <summary>
+             Cmdlet Activity Constant - EndProcessingStageName
+            </summary>
+        </member>
+        <member name="F:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.ActivityConstants.WriteStarted">
+            <summary>
+            Service Activity Constant -WriteStarted
+            </summary>
+        </member>
+        <member name="F:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.ActivityConstants.WriteEnded">
+            <summary>
+            Service Activity Constant -WriteEnded
+            </summary>
+        </member>
+        <member name="F:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.ActivityConstants.AuthActivityPropertyName">
+            <summary>
+            Auth Activity Constant-AuthActivityPropertyName
+            </summary>
+        </member>
+        <member name="F:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.ActivityConstants.AuthStrategyName">
+            <summary>
+            Auth Activity Constant- AuthStrategyName
+            </summary>
+        </member>
+        <member name="F:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.ActivityConstants.AuthTypeName">
+            <summary>
+            Auth Activity Constant- AuthTypeName
+            </summary>
+        </member>
+        <member name="F:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.ActivityConstants.AcquireTokenStageName">
+            <summary>
+            Auth Activity Constant- AcquireTokenStageName
+            </summary>
+        </member>
+        <member name="F:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.ActivityConstants.AuthClaimsPropertyName">
+            <summary>
+            Auth Claims Constant-AuthClaimsPropertyName
+            </summary>
+        </member>
+        <member name="F:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.ActivityConstants.AuthActivityMinThresholdInMs">
+            <summary>
+            Auth Activity Constant- AuthActivityMinThresholdInMs
+            </summary>
+        </member>
+        <member name="F:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.ActivityConstants.ServerInformationPropertyKey">
+            <summary>
+            Environment level Constant -ServerInformationPropertyKey
+            </summary>
+        </member>
+        <member name="F:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.ActivityConstants.PerformanceInfoPropertyKey">
+            <summary>
+            Environment level Constant -PerformanceInfoPropertyKey
+            </summary>
+        </member>
+        <member name="F:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.ActivityConstants.PowerEventPropertyKey">
+            <summary>
+            Power event constant - PowerEventPropertyKey
+            </summary>
+        </member>
+        <member name="F:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.ActivityConstants.ThrottlingInformationPropertyKey">
+            <summary>
+            Throttling constant - ThrottlingInformationPropertyKey
+            </summary>
+        </member>
+        <member name="T:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.Activity">
+            <summary>
+            Generic Activity class to capture the logs
+            </summary>
+        </member>
+        <member name="F:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.Activity.DataFormat">
+            <summary>
+            Format to use to get the activity data
+            </summary>
+        </member>
+        <member name="F:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.Activity.ArrayStart">
+            <summary>
+            List type start
+            </summary>
+        </member>
+        <member name="F:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.Activity.ArrayEnd">
+            <summary>
+            List type end
+            </summary>
+        </member>
+        <member name="F:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.Activity.InternalDelimeter">
+            <summary>
+            ';' Delimeters for entries
+            </summary>
+        </member>
+        <member name="F:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.Activity.EqualsChar">
+            <summary>
+            EqualsChar symbol
+            </summary>
+        </member>
+        <member name="F:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.Activity.stopWatch">
+            <summary>
+            Stopwatch to measure the activity latency
+            </summary>
+        </member>
+        <member name="F:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.Activity.started">
+            <summary>
+            Is the current activity running
+            </summary>
+        </member>
+        <member name="F:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.Activity.ended">
+            <summary>
+            Is the current activity ended
+            </summary>
+        </member>
+        <member name="F:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.Activity.activityPassed">
+            <summary>
+            Bool to signify whether the activity was sucessful or failed
+            </summary>
+        </member>
+        <member name="F:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.Activity.genericLatency">
+            <summary>
+            Generic Latency
+            </summary>
+        </member>
+        <member name="F:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.Activity.genericInfo">
+            <summary>
+            Generic info
+            </summary>
+        </member>
+        <member name="F:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.Activity.genericError">
+            <summary>
+            Generic Errors
+            </summary>
+        </member>
+        <member name="M:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.Activity.#ctor(Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.ActivityType,System.String,System.Boolean)">
+            <summary>
+            Create a new Child activity with the reference to the parent Activity
+            </summary>
+            <param name="activityType">Type of the activity</param>
+            <param name="parentRequestId">Request id</param>
+            <param name="startActivity">Start the activity while creating it self</param>
+        </member>
+        <member name="P:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.Activity.StartTime">
+            <summary>
+            Start time
+            </summary>
+        </member>
+        <member name="P:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.Activity.Type">
+            <summary>
+            Type of the activity
+            </summary>
+        </member>
+        <member name="P:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.Activity.AssemblyVersion">
+            <summary>
+            Client library version
+            </summary>
+        </member>
+        <member name="P:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.Activity.TenantId">
+            <summary>
+            Tenant Id
+            </summary>
+        </member>
+        <member name="P:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.Activity.Cmdlet">
+            <summary>
+            Cmdlet name
+            </summary>
+        </member>
+        <member name="P:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.Activity.Parameters">
+            <summary>
+            Parameters value
+            </summary>
+        </member>
+        <member name="P:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.Activity.AuthenticationStrategy">
+            <summary>
+            Authentication Strategy used
+            </summary>
+        </member>
+        <member name="P:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.Activity.PipelineIndex">
+            <summary>
+            Index of the cmdlet in the execution pipeline
+            </summary>
+        </member>
+        <member name="P:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.Activity.OutputObjectCount">
+            <summary>
+            Number of objects returned in the out put
+            </summary>
+        </member>
+        <member name="P:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.Activity.ClientRequestId">
+            <summary>
+            ClientRequestId for the request 
+            </summary>
+        </member>
+        <member name="P:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.Activity.RequestId">
+            <summary>
+            RequestId for the request
+            </summary>
+        </member>
+        <member name="P:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.Activity.HttpMethod">
+            <summary>
+            Http Method
+            </summary>
+        </member>
+        <member name="P:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.Activity.UrlHost">
+            <summary>
+            Url host
+            </summary>
+        </member>
+        <member name="P:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.Activity.UrlPath">
+            <summary>
+            Url Path
+            </summary>
+        </member>
+        <member name="P:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.Activity.AdminApiEndpoint">
+            <summary>
+            Admin Api endpoint beta vs v0.5
+            </summary>
+        </member>
+        <member name="P:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.Activity.RequestSentCheckpoint">
+            <summary>
+            Request Sent Checkpoint
+            </summary>
+        </member>
+        <member name="P:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.Activity.RequestReceiveCheckpoint">
+            <summary>
+            Response Receive Checkpoint
+            </summary>
+        </member>
+        <member name="P:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.Activity.ResponseStatusCode">
+            <summary>
+            Response Status code
+            </summary>
+        </member>
+        <member name="P:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.Activity.ResponseSize">
+            <summary>
+            Response Size
+            </summary>
+        </member>
+        <member name="P:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.Activity.ResponseContentType">
+            <summary>
+            Response Size
+            </summary>
+        </member>
+        <member name="P:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.Activity.ResponseHeaders">
+            <summary>
+            Response Size
+            </summary>
+        </member>
+        <member name="P:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.Activity.TotalTime">
+            <summary>
+            Total Time
+            </summary>
+        </member>
+        <member name="P:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.Activity.GenericLatency">
+            <summary>
+            Generic Latency
+            </summary>
+        </member>
+        <member name="P:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.Activity.GenericInfo">
+            <summary>
+            Generic Info
+            </summary>
+        </member>
+        <member name="P:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.Activity.GenericError">
+            <summary>
+            Generic Error
+            </summary>
+        </member>
+        <member name="P:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.Activity.ActivityPassed">
+            <summary>
+            Whether the activity passed or not 
+            </summary>
+            <returns>Return bool whether the activity passed or not</returns>
+        </member>
+        <member name="P:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.Activity.ExecutionResult">
+            <summary>
+            Execution result for this activity
+            </summary>
+            <returns>Returns Execution result for this activity</returns>
+        </member>
+        <member name="M:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.Activity.GetHeaderRow">
+            <summary>
+            Returns the headers row for the logs
+            </summary>
+            <returns>Return header row</returns>
+        </member>
+        <member name="M:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.Activity.AddToGenericLatency(System.String,System.Object)">
+            <summary>
+            Add the given entry to Generic latency
+            </summary>
+            <param name="key">Key Param</param>
+            <param name="value">Value Param</param>
+        </member>
+        <member name="M:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.Activity.AddToGenericError(System.String)">
+            <summary>
+            Add the given entry to GenericError
+            </summary>
+            <param name="errorMessage">Error message</param>
+        </member>
+        <member name="M:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.Activity.AddToGenericInfo(System.String,System.Object)">
+            <summary>
+            Add the given entry to GenericInfo
+            </summary>
+            <param name="key">Key for adding to generic info</param>
+            <param name="value">Value for the above key</param>
+        </member>
+        <member name="M:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.Activity.StartActivity">
+            <summary>
+            Start the activity if not started
+            </summary>
+        </member>
+        <member name="M:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.Activity.EndActivity(System.Boolean)">
+            <summary>
+            Stop the activity if started
+            </summary>
+            <param name="activityPassed">Whether or not Activity passed</param>
+        </member>
+        <member name="M:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.Activity.IsActivityRunning">
+            <summary>
+            Verify that the activity was started and is still running
+            </summary>
+            <returns>Return bool Whether activity is running or not</returns>
+        </member>
+        <member name="M:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.Activity.HasActivityEnded">
+            <summary>
+            Verify that the activity has ended or not
+            </summary>
+            <returns>Returns bool whether or not activity has ended</returns>
+        </member>
+        <member name="M:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.Activity.GetElapsedTime">
+            <summary>
+            Get the time since the activity is running 
+            </summary>
+            <returns>Retunrs time elapsed in milliseconds</returns>
+        </member>
+        <member name="M:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.Activity.ToString">
+            <summary>
+            Returns the stringified version for the class object
+            </summary>
+            <returns>Returns the stringified version</returns>
+        </member>
+        <member name="M:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.Activity.LogLatencyIfExceedingThreshold(System.String,System.Action,System.UInt64)">
+            <summary>
+            Measures the latency around a block of code.
+            </summary>
+            <param name="stageName">Stage name</param>
+            <param name="action">Action func</param>
+            <param name="threshold">Time in ms equal and above which only measure</param>
+        </member>
+        <member name="M:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.Activity.LogLatencyIfExceedingThreshold``1(System.String,System.Func{``0},System.UInt64)">
+            <summary>
+            Measures the latency around a block of code.
+            </summary>
+            <param name="stageName">Stage name</param>
+            <param name="func">Func lambda</param>
+            <param name="threshold">Time in ms equal and above which only measure</param>
+            <typeparam name="T">The  generic type of func.</typeparam>
+            <returns>Returns the templatized object</returns>
+        </member>
+        <member name="T:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.ActivityPropertyBag">
+            <summary>
+            The activity class that represents the metadata about the happening activity,
+            captured via an underlying property bag. This class provides checkpoint-ing
+            capabilities to track the latencies of the various happenings in an activity's
+            timeline. In addition, this class adds support for tracking sub-activities with
+            respect to it's parent activity's timeline. In short, this supports the following,
+            1. Property bag to hold activity metadata.
+            2. Checkpoint capabilities for tracking activity timeline.
+            3. Activity chaining to link sub-activities to it parent's timeline.
+            </summary>
+            <remarks>
+            Any sub-task that has a success/failure state and consumes time is an 'Activity'.
+            </remarks>    
+        </member>
+        <member name="F:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.ActivityPropertyBag.ActivityTypeKey">
+            <summary>
+            Holds the property key for the property 'ActivityType'.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.ActivityPropertyBag.ActivityModelVersionKey">
+            <summary>
+            Holds the property key for the property 'ActivityModelVersion'.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.ActivityPropertyBag.IdPropertyKey">
+            <summary>
+            Holds the property key for the property 'ActivityId'.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.ActivityPropertyBag.StartPropertyKey">
+            <summary>
+            Holds the property key for the property 'ActivityStart'.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.ActivityPropertyBag.EndPropertyKey">
+            <summary>
+            Holds the property key for the property 'ActivityEnd'.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.ActivityPropertyBag.IsSuccessPropertyKey">
+            <summary>
+            Holds the property key for the property 'ActivityIsSuccess'.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.ActivityPropertyBag.ActivityIdCounter">
+            <summary>
+            Holds the activity id.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.ActivityPropertyBag.ModelVersion1">
+            <summary>
+            Holds the model version 'V1' string.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.ActivityPropertyBag.activityCheckpointTracker">
+            <summary>
+            Holds the activity checkpoint tracker.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.ActivityPropertyBag.propertyBag">
+            <summary>
+            Holds the property key, value pair collection.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.ActivityPropertyBag.KeyValurPairStringRepresentation">
+            <summary>
+            Holds the key value pair string representation.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.ActivityPropertyBag.StringRepresentationFormatter">
+            <summary>
+            Holds the string representation formatter.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.ActivityPropertyBag.#ctor">
+            <summary>
+            Initializes the defaults required for activity tracking.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.ActivityPropertyBag.Id">
+            <summary>
+            Gets the activity id.
+            </summary>
+            <remarks>
+            Captures an unique id for 'this' activity. The uniqueness comes from the
+            lineraly increasing value in a single process session. E.g. 200, 201, 202.
+            </remarks>
+        </member>
+        <member name="P:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.ActivityPropertyBag.ActivityType">
+            <summary>
+            Gets the type of the activity.
+            </summary>
+            <remarks>
+            Captures the 'CLR Type' of the activity.
+            </remarks>
+        </member>
+        <member name="P:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.ActivityPropertyBag.ActivityModelVersion">
+            <summary>
+            Gets the activity model version.
+            </summary>
+            <remarks>
+            Captures the model version of the activity. Versioning the model helps in adding logic
+            depending up on whether certain properties are available or not in a record. E.g. V1, V2 etc.
+            </remarks>
+        </member>
+        <member name="P:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.ActivityPropertyBag.StartCheckpoint">
+            <summary>
+            Gets the activity start checkpoint.
+            </summary>
+            <remarks>
+            Captures the start time of the activity in milliseconds. If 'this' is the root activity
+            then timeline is of it's own. If 'this' was created as a child of another activity, then
+            the timeline will be of it's parent. Note that this is an absolute value and only makes
+            sense in the timeline and has no relation to the conventaional 'DateTime' value. E.g 45,
+            1256 etc denotes that the holding activity was started on 45 milliseconds, 1256 milliseconds
+            in respect to the timeline(as described as above).
+            </remarks>
+        </member>
+        <member name="P:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.ActivityPropertyBag.EndCheckpoint">
+            <summary>
+            Gets the activity end checkpoint.
+            </summary>
+            Captures the end time of the activity in milliseconds. If 'this' is the root activity
+            then timeline is of it's own. If 'this' was created as a child of another activity, then
+            the timeline will be of it's parent. Note that this is an absolute value and only makes
+            sense inside the timeline and has no relation to the conventaional 'DateTime' value. E.g 45,
+            1256 etc denotes that the holding activity ended on 45 milliseconds, 1256 milliseconds
+            in respect to the timeline(as described as above).
+        </member>
+        <member name="P:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.ActivityPropertyBag.IsSuccess">
+            <summary>
+            Gets a flag indicating whether the activity succeded or not.
+            </summary>
+            <remarks>
+            Captures a flag denoting the success/failure of 'this' activity.
+            </remarks>
+        </member>
+        <member name="M:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.ActivityPropertyBag.CreateAsChild``1(System.Func{``0},Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.ActivityPropertyBag)">
+            <summary>
+            Creates the activity as the child activity of the given parent activity.
+            </summary>
+            <param name="activityCreator">
+            The activity creator delegate.
+            </param>
+            <param name="parentActivity">
+            The parent activity to link to.
+            </param>
+            <returns>
+            Returns TActivity
+            </returns>
+            <typeparam name="TActivity">
+            The type of the activity to be created.
+            </typeparam>
+        </member>
+        <member name="P:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.ActivityPropertyBag.Item(System.String)">
+            <summary>
+            Gets or set the value associated with the specified key.
+            </summary>
+            <param name="activityPropertyKey">The property key.</param>
+            <returns>The property value.</returns>
+        </member>
+        <member name="M:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.ActivityPropertyBag.GetActivityProperties">
+            <summary>
+            Gets the collection of activity properties as key value pairs.
+            </summary>
+            <returns>
+            The acitivity properties.
+            </returns>
+        </member>
+        <member name="M:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.ActivityPropertyBag.GetCheckpoint">
+            <summary>
+            Gets the checkpoint that denotes the
+            current point in the activity life time.
+            </summary>
+            <returns>
+            A valid checkpoint if the activity is
+            started and in progress, Else null.
+            </returns>
+        </member>
+        <member name="M:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.ActivityPropertyBag.StartActivity">
+            <summary>
+            Starts the activity.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.ActivityPropertyBag.EndActivity(System.Boolean)">
+            <summary>
+            Ends the activity.
+            </summary>
+            <param name="activityResult">Activity Result</param>
+        </member>
+        <member name="M:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.ActivityPropertyBag.HasActivityStarted">
+            <summary>
+            Gets a flag indicating whether the activity can be started or not.
+            </summary>
+            <returns>
+            True if the activity has started, False otherwise.
+            </returns>
+        </member>
+        <member name="M:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.ActivityPropertyBag.HasActivityEnded">
+            <summary>
+            Gets a flag indicating whether the activity can be ended or not.
+            </summary>
+            <returns>
+            True if the activity has started, False otherwise.
+            </returns>
+        </member>
+        <member name="M:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.ActivityPropertyBag.ToString">
+            <summary>
+            Returns the string representation of the activity.
+            </summary>
+            <returns>
+            THe string representation of the activity.
+            </returns>
+        </member>
+        <member name="M:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.ActivityPropertyBag.GetValueOrDefault``1(System.Object)">
+            <summary>
+            Gets the value converted to the desired type or default
+            if the passed in value is null.
+            </summary>
+            <typeparam name="T">
+            The desired type to convert to.
+            </typeparam>
+            <param name="value">
+            The value to be converted to.
+            </param>
+            <returns>
+            The value in converted to the passed in type 'T'
+            if the value is not null, default of 'T' if the
+            passed in value is null.
+            </returns>
+        </member>
+        <member name="M:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.ActivityPropertyBag.GetValidKeyValueStringRepresentation(System.String,System.Object)">
+            <summary>
+            Gets the valid string representation for the given value.
+            </summary>
+            <param name="key">
+            The key string.
+            </param>
+            <param name="value">
+            The value to be converted.
+            </param>
+            <returns>
+            The string representation of the value.
+            </returns>
+        </member>
+        <member name="T:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.Checkpoint">
+            <summary>
+            Represents a checkpoint (In ms).
+            </summary>
+        </member>
+        <member name="M:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.Checkpoint.#ctor(System.UInt64)">
+            <summary>
+            Constructs a new checkpoint using the given value.
+            </summary>
+            <param name="value">
+            The checkpoint value.
+            </param>
+            <remarks>
+            Internal to prevent initialization from outside.
+            Only <see cref="T:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.CheckpointTracker"/> can create checkpoints.
+            Consumer libraries can only consume the value of a created checkpoint.
+            </remarks>
+        </member>
+        <member name="P:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.Checkpoint.Value">
+            <summary>
+            Gets the checkpoint value (In ms).
+            </summary>
+        </member>
+        <member name="M:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.Checkpoint.ToString">
+            <summary>
+            Gets the string representation of 'this' checkpoint.
+            </summary>
+            <returns>
+            The string representation.
+            </returns>
+        </member>
+        <member name="T:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.CheckpointTracker">
+            <summary>
+            The checkpoint tracker class.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.CheckpointTracker.stopwatch">
+            <summary>
+            Holds the stop watch instance.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.CheckpointTracker.#ctor">
+            <summary>
+            Initializes a new checkpoint tracker class.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.CheckpointTracker.Now">
+            <summary>
+            Gets the checkpoint that represents the current point in time.
+            </summary>
+        </member>
+        <member name="T:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.CmdletActivity">
+            <summary>
+            Cmdlet activity class
+            </summary>
+        </member>
+        <member name="F:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.CmdletActivity.Headers">
+            <summary>
+            Headers for the logFile corresponding to this CmdletActivity
+            </summary>
+        </member>
+        <member name="F:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.CmdletActivity.cmdletID">
+            <summary>
+            Unique ID for the cmdlet
+            </summary>
+        </member>
+        <member name="F:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.CmdletActivity.genericInfo">
+            <summary>
+            generic info for this activity
+            </summary>
+        </member>
+        <member name="F:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.CmdletActivity.genericError">
+            <summary>
+            generic error for this activity
+            </summary>
+        </member>
+        <member name="F:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.CmdletActivity.LogFormat">
+            <summary>
+            Format for the string representation of the Cmdlet Activity
+            </summary>
+        </member>
+        <member name="M:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.CmdletActivity.#ctor(System.String)">
+            <summary>
+            constructor for CmdletActivity
+            </summary>
+            <param name="cmdletID">unique cmdletID</param>
+        </member>
+        <member name="P:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.CmdletActivity.StartTime">
+            <summary>
+            start time
+            </summary>
+        </member>
+        <member name="P:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.CmdletActivity.EndTime">
+            <summary>
+            start time
+            </summary>
+        </member>
+        <member name="P:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.CmdletActivity.CmdletName">
+            <summary>
+            cmdlet name
+            </summary>
+        </member>
+        <member name="P:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.CmdletActivity.CmdletParameters">
+            <summary>
+            parameters + values passed
+            </summary>
+        </member>
+        <member name="M:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.CmdletActivity.ToString">
+            <summary>
+            Override the ToString implementation to generate a comma separated representation of the activity
+            </summary>
+            <returns>string representation of the CmdletActivity</returns>
+        </member>
+        <member name="M:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.CmdletActivity.AddToGenericInfo(System.String)">
+            <summary>
+            Adds to the generic info
+            </summary>
+            <param name="info">string to add</param>
+        </member>
+        <member name="M:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.CmdletActivity.AddToGenericError(System.String)">
+            <summary>
+            adds to generic error
+            </summary>
+            <param name="error">error to add</param>
+        </member>
+        <member name="M:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.CmdletActivity.SanitizeString(System.String)">
+            <summary>
+            Removes unwanted characters from the string before logging
+            </summary>
+            <param name="input">the input string to sanitize</param>
+            <returns>The sanitized string</returns>
+        </member>
+        <member name="T:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.CmdletLogger">
+            <summary>
+            CmdletLogger class
+            </summary>
+        </member>
+        <member name="F:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.CmdletLogger.currentLogFilePath">
+            <summary>
+            Path of the file
+            </summary>
+        </member>
+        <member name="F:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.CmdletLogger.logDirectoryPath">
+            <summary>
+            Directory path for the log file
+            </summary>
+        </member>
+        <member name="F:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.CmdletLogger.LogFileNamePattern">
+            <summary>
+            Pattern for naming the file
+            </summary>
+        </member>
+        <member name="F:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.CmdletLogger.MaxFileSize">
+            <summary>
+            Limit of size of one file. If exceeded a new file is created
+            </summary>
+        </member>
+        <member name="F:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.CmdletLogger.MaxDirectorySize">
+            <summary>
+            Limit on directory size
+            </summary>
+        </member>
+        <member name="F:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.CmdletLogger.errorReportingEnabled">
+            <summary>
+            Whether error reporting is enabled
+            It is always disabled for RPS
+            </summary>
+        </member>
+        <member name="F:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.CmdletLogger.logActionLockObject">
+            <summary>
+            The lock object for the log operations.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.CmdletLogger.fileSystem">
+            <summary>
+            Holds the reference to the file system object.
+            </summary>
+            <remarks>
+            Initialized to the default file system.
+            This will be injected with a mock file system for unit tests.
+            </remarks>
+        </member>
+        <member name="F:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.CmdletLogger.moduleVersion">
+            <summary>
+            The ExchangeOnlineManagement module version
+            </summary>
+        </member>
+        <member name="F:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.CmdletLogger.connectionID">
+            <summary>
+            The unique ID for this connection
+            </summary>
+        </member>
+        <member name="M:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.CmdletLogger.#ctor(System.String,System.Boolean,System.String,System.String)">
+            <summary>
+            constructor for logger
+            </summary>
+            <param name="logDirectory">directory in which file needs to be created</param>
+            <param name="errorReportingEnabled">whether error reporting is enabled. If it is not all operations will be a no-op</param>
+            <param name="moduleVersion">The Exo module version</param>
+            <param name="connectionID">Connection ID for this connection</param>
+        </member>
+        <member name="M:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.CmdletLogger.#ctor(System.String,System.Boolean,System.String,System.String,Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.IFileSystem)">
+            <summary>
+            constructor for logger, allows injecting a filesystem for unit testing.
+            </summary>
+            <param name="logDirectory">directory in which file needs to be created</param>
+            <param name="errorReportingEnabled">whether error reporting is enabled. If it is not all operations will be a no-op</param>
+            <param name="moduleVersion">The Exo module version</param>
+            <param name="connectionID">Connection ID for this connection</param>
+            <param name="fileSystem">The filesystem object</param>
+        </member>
+        <member name="P:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.CmdletLogger.LogStore">
+            <summary>
+            stores the cmdlet logs for currently executing cmdlets
+            </summary>
+        </member>
+        <member name="M:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.CmdletLogger.GetCurrentLogFilePath">
+            <summary>
+            Gets the current file which the logger is writing logs to.
+            </summary>
+            <returns>the full path of the log file</returns>
+        </member>
+        <member name="M:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.CmdletLogger.InitLog(System.String)">
+            <summary>
+            Initialize a CmdletActivity
+            </summary>
+            <param name="cmdletId">unique cmdletId</param>
+        </member>
+        <member name="M:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.CmdletLogger.CommitLog(System.String)">
+            <summary>
+            writes the log to the file and deletes the cmdlet activity
+            </summary>
+            <param name="cmdletId">cmdletid whose activity needs to be committed</param>
+        </member>
+        <member name="M:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.CmdletLogger.LogGenericInfo(System.String,System.String)">
+            <summary>
+            adds a string to generic info
+            </summary>
+            <param name="cmdletId">cmdlet for which it needs to be added</param>
+            <param name="info">string to add to generic info</param>
+        </member>
+        <member name="M:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.CmdletLogger.LogGenericError(System.String,System.String)">
+            <summary>
+            Add a string to generic errors
+            </summary>
+            <param name="cmdletId">cmdletID to add to</param>
+            <param name="error">error to log</param>
+        </member>
+        <member name="M:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.CmdletLogger.LogGenericError(System.String,System.Management.Automation.ErrorRecord)">
+            <summary>
+            Add an error record to generic errors
+            </summary>
+            <param name="cmdletId">cmdletID to add to</param>
+            <param name="error">error to log</param>
+        </member>
+        <member name="M:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.CmdletLogger.LogEndTime(System.String,System.DateTime)">
+            <summary>
+            Sets the end time of the cmdlet
+            </summary>
+            <param name="cmdletId">cmdletID to add to</param>
+            <param name="time">total time</param>
+        </member>
+        <member name="M:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.CmdletLogger.LogStartTime(System.String,System.DateTime)">
+            <summary>
+            sets the start time of the cmdlet
+            </summary>
+            <param name="cmdletId">cmdletID to add to</param>
+            <param name="time">start time</param>
+        </member>
+        <member name="M:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.CmdletLogger.LogCmdletName(System.String,System.String)">
+            <summary>
+            logs the cmdlet name
+            </summary>
+            <param name="cmdletId">cmdletID to add to</param>
+            <param name="name">cmdlet name</param>
+        </member>
+        <member name="M:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.CmdletLogger.LogCmdletParameters(System.String,System.String)">
+            <summary>
+            logs the cmdlet parameters + values
+            </summary>
+            <param name="cmdletId">cmdletID to add to</param>
+            <param name="parameters">cmdlet parameters</param>
+        </member>
+        <member name="M:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.CmdletLogger.LogCmdletParameters(System.String,System.Collections.Generic.Dictionary{System.String,System.Object})">
+            <summary>
+            logs the cmdlet parameters + values
+            </summary>
+            <param name="cmdletId">cmdletID to add to</param>
+            <param name="parameters">dict of cmdlet parameters</param>
+        </member>
+        <member name="M:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.CmdletLogger.WriteLogRecordToFile(System.String)">
+            <summary>
+            Writes a single log line to the file
+            </summary>
+            <param name="log">string to write to the file</param>
+        </member>
+        <member name="M:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.CmdletLogger.WriteCmdletLogRecordToFile(Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.ICmdletActivity)">
+            <summary>
+            writes a cmdlet log to the file
+            </summary>
+            <param name="logRecord">cmdlet activity to log</param>
+        </member>
+        <member name="M:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.CmdletLogger.GetHeaderRow">
+            <summary>
+            the header row for the file
+            </summary>
+            <returns>comma separated string of headers</returns>
+        </member>
+        <member name="M:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.CmdletLogger.GetInfoRow">
+            <summary>
+            the information row for the file consisting of ExoModule version and ConnectionID
+            </summary>
+            <returns>comma separated string of headers</returns>
+        </member>
+        <member name="M:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.CmdletLogger.GetLogDirectorySize">
+            <summary>
+            Returns the log directory size including only the log files
+            </summary>
+            <returns>Returns the log directory size by including only the log files</returns>
+        </member>
+        <member name="M:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.CmdletLogger.GetLogFileListSortedForCreateTime">
+            <summary>
+            Gets list of file info sorted on CreationTimeUtc
+            </summary>
+            <returns>Sorted list of files</returns>
+        </member>
+        <member name="M:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.CmdletLogger.GetNewLogFileName">
+            <summary>
+            Returns a new name for the log file 
+            </summary>
+            <returns>Returns a new name for log file</returns>
+        </member>
+        <member name="T:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.FileLogger">
+            <summary>
+            The activity logger that logs the data
+            to the underlying local file storage
+            </summary>
+            <remarks>
+            This class is thread safe.
+            </remarks>
+        </member>
+        <member name="F:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.FileLogger.LogFileName">
+            <summary>
+            Holds the log file name.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.FileLogger.LogFilePattern">
+            <summary>
+            File pattern to search for
+            </summary>
+        </member>
+        <member name="F:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.FileLogger.fileSystem">
+            <summary>
+            Holds the reference to the file system object.
+            </summary>
+            <remarks>
+            Initialized to the default file system.
+            This will be injected with a mock file system for unit tests.
+            </remarks>
+        </member>
+        <member name="F:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.FileLogger.logActionLockObject">
+            <summary>
+            The lock object for the log operations.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.FileLogger.activityLogger">
+            <summary>
+            Holding variable for the singleton.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.FileLogger.currentLogFilePath">
+            <summary>
+            Holds the configured local log file path.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.FileLogger.directoryPath">
+            <summary>
+            Directory path 
+            </summary>
+        </member>
+        <member name="F:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.FileLogger.maxLogSize">
+            <summary>
+            Gets/Sets max size of log file in bytes
+            </summary>
+        </member>
+        <member name="F:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.FileLogger.maxDirectorySize">
+            <summary>
+            Gets/Sets max size of directory in bytes
+            </summary>
+        </member>
+        <member name="F:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.FileLogger.logLevel">
+            <summary>
+            Current LogLevel for the session
+            </summary>
+        </member>
+        <member name="M:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.FileLogger.#ctor(Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.FileLoggerConfiguration)">
+            <summary>
+            Instantiates the local file logger with the
+            given file logger configuration.
+            </summary>
+            <param name="fileLoggerConfiguration">
+            The file logger configuration.
+            </param>
+        </member>
+        <member name="P:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.FileLogger.Instance">
+            <summary>
+            Gets the local file activity logger singleton instance.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.FileLogger.InjectMockFileSystemAndResetSingleton(Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.IFileSystem)">
+            <summary>
+            Helper method to inject a mock file system.
+            This will also reset the singleton.
+            </summary>
+            <param name="mockFileSystem">
+            The mock file system to inject.
+            </param>
+            <remarks>
+            Used by unit tests.
+            </remarks>
+        </member>
+        <member name="M:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.FileLogger.Initialize(Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.FileLoggerConfiguration)">
+            <summary>
+            Initializes the local file activity logger.
+            </summary>
+            <param name="fileLoggerConfiguration">
+            The file logger configuration.
+            </param>
+        </member>
+        <member name="M:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.FileLogger.Log(Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.Activity)">
+            <summary>
+            Logs the activity to underlying channel
+            </summary>
+            <param name="activity">Activity param</param>
+        </member>
+        <member name="M:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.FileLogger.LogAsync(Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.Activity)">
+            <summary>
+            Logs the activity properties in the property bag to the underlying channel asynchronously.
+            </summary>
+            <param name="activity">Async log the activity instance</param>
+            <returns>Returns a Task</returns>
+        </member>
+        <member name="M:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.FileLogger.WriteRecord(System.String)">
+            <summary>
+            Writes the given log record to the log file.
+            </summary>
+            <param name="logRecord">
+            The log record.
+            </param>
+        </member>
+        <member name="M:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.FileLogger.GetLogDirectorySize">
+            <summary>
+            Returns the log directory size including only the log files
+            </summary>
+            <returns>Returns the log directory size by including only the log files</returns>
+        </member>
+        <member name="M:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.FileLogger.GetLogFileListSortedForCreateTime">
+            <summary>
+            Gets list of file info sorted on CreationTimeUtc
+            </summary>
+            <returns>Sorted list of files</returns>
+        </member>
+        <member name="M:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.FileLogger.GetNewLogFileName">
+            <summary>
+            Returns a new name for the log file 
+            </summary>
+            <returns>Returns a new name for log file</returns>
+        </member>
+        <member name="T:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.LogLevel">
+            <summary>
+            Current log level to get logged by the FileLogger
+            </summary>
+        </member>
+        <member name="F:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.LogLevel.Default">
+            <summary>
+            Default log level currently is set to Error only
+            </summary>
+        </member>
+        <member name="F:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.LogLevel.All">
+            <summary>
+            Log level to signify logging all the logs
+            </summary>
+        </member>
+        <member name="T:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.FileLoggerConfiguration">
+            <summary>
+            Represents the file logger configuration.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.FileLoggerConfiguration.DirectoryPath">
+            <summary>
+            Gets or set the local directory path for the log files.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.FileLoggerConfiguration.MaxLogSize">
+            <summary>
+            Gets/Sets max size of log file in bytes
+            </summary>
+        </member>
+        <member name="P:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.FileLoggerConfiguration.MaxDirectorySize">
+            <summary>
+            Gets/Sets max size of directory in bytes
+            </summary>
+        </member>
+        <member name="P:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.FileLoggerConfiguration.LogLevel">
+            <summary>
+            LogLevel for the current logging session
+            </summary>
+        </member>
+        <member name="T:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.FileBase">
+            <summary>
+            File Base
+            </summary>
+        </member>
+        <member name="M:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.FileBase.#ctor(System.String,System.DateTime,System.Int64)">
+            <summary>
+            constructor for FileBase
+            </summary>
+            <param name="name">inherit - System.IO.FileInfo.Name</param>
+            <param name="creationTimeUtc">inherit - System.IO.FileInfo.CreationTimeUtc</param>
+            <param name="length">inherit - System.IO.FileInfo.Length</param>
+        </member>
+        <member name="M:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.FileBase.#ctor">
+            <summary>
+            constructor for FileBase - mocking 
+            </summary>
+        </member>
+        <member name="P:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.FileBase.Length">
+            <summary>
+            File size
+            </summary>
+        </member>
+        <member name="P:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.FileBase.Name">
+            <summary>
+            File Name
+            </summary>
+        </member>
+        <member name="P:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.FileBase.CreationTimeUtc">
+            <summary>
+            File creation date time
+            </summary>
+        </member>
+        <member name="M:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.FileBase.Exists(System.String)">
+            <summary>
+            File exists
+            </summary>
+            <param name="path">file path</param>
+            <returns>true, if file exists</returns>
+        </member>
+        <member name="M:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.FileBase.AppendAllText(System.String,System.String)">
+            <summary>
+            Append text to file
+            </summary>
+            <param name="path">file path</param>
+            <param name="text">text to Append</param>
+        </member>
+        <member name="M:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.FileBase.Delete">
+            <summary>
+            Delete instance
+            </summary>
+        </member>
+        <member name="T:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.DirectoryBase">
+            <summary>
+            Directory Base
+            </summary>
+        </member>
+        <member name="M:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.DirectoryBase.Exists(System.String)">
+            <summary>
+            Directory Exists
+            </summary>
+            <param name="path">directory path</param>
+            <returns>true, if directory exists in path</returns>
+        </member>
+        <member name="M:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.DirectoryBase.CreateDirectory(System.String)">
+            <summary>
+            Create directory
+            </summary>
+            <param name="path">Directory path</param>
+        </member>
+        <member name="T:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.FileSystem">
+            <summary>
+            File System
+            </summary>
+        </member>
+        <member name="M:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.FileSystem.#ctor">
+            <summary>
+            Constructor for FileSystem
+            </summary>
+        </member>
+        <member name="P:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.FileSystem.Directory">
+            <summary>
+            Abstraction for methods in "System.IO.Directory" />.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.FileSystem.File">
+            <summary>
+            Abstraction for methods in "System.IO.File" />.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.FileSystem.GetFileLength(System.String)">
+            <summary>
+            Get Length of the file
+            </summary>      
+            <param name="path">file path</param>
+            <returns>file size</returns>
+        </member>
+        <member name="M:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.FileSystem.GetFilePath(System.String,System.String)">
+            <summary>
+            Get Combined File path
+            </summary>  
+            <param name="path1">path 1</param>
+            <param name="path2">path 2</param>
+            <returns>Concatendated full path</returns>
+        </member>
+        <member name="M:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.FileSystem.GetFilesFromDirectory(System.String,System.String,System.IO.SearchOption)">
+            <summary>
+            Get Files From Directory
+            </summary>
+            <param name="directoryPath">Directory path</param>
+            <param name="searchPattern">Search Pattern</param>
+            <param name="searchOption">Search Option</param>
+            <returns>list of Files present in Directory</returns>
+        </member>
+        <member name="T:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.IActivityLogger">
+            <summary>
+            The activity logger interface.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.IActivityLogger.Log(Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.Activity)">
+            <summary>
+            Logs the activity properties in the propertybag to the underlying channel.
+            </summary>
+            <param name="activity">Activity instance to log</param>
+        </member>
+        <member name="M:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.IActivityLogger.LogAsync(Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.Activity)">
+            <summary>
+            Logs the activity properties in the property bag to the underlying channel asynchronously.
+            </summary>
+            <param name="activity">Activity instance to async log</param>
+            <returns> The task </returns>
+        </member>
+        <member name="T:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.IActivityReadOnlyPropertyBag">
+            <summary>
+            Interface that exposes property bag for an 'Activity'.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.IActivityReadOnlyPropertyBag.Item(System.String)">
+            <summary>
+            Gets the value associated with the specified key.
+            </summary>
+            <param name="activityPropertyKey">
+            The activity property key.
+            </param>
+            <returns>
+            The value if a valid one exists,
+            default(value) if the key is not found.
+            </returns>
+        </member>
+        <member name="M:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.IActivityReadOnlyPropertyBag.GetActivityProperties">
+            <summary>
+            Gets the dictionary of activity properties.
+            </summary>
+            <returns>
+            The activity properties.
+            </returns>
+        </member>
+        <member name="T:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.ICmdletActivity">
+            <summary>
+            Interface for Cmdlet Activity.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.ICmdletActivity.StartTime">
+            <summary>
+            start time
+            </summary>
+        </member>
+        <member name="P:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.ICmdletActivity.EndTime">
+            <summary>
+            end time
+            </summary>
+        </member>
+        <member name="P:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.ICmdletActivity.CmdletName">
+            <summary>
+            cmdlet name
+            </summary>
+        </member>
+        <member name="P:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.ICmdletActivity.CmdletParameters">
+            <summary>
+            parameters + values passed
+            </summary>
+        </member>
+        <member name="M:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.ICmdletActivity.AddToGenericInfo(System.String)">
+            <summary>
+            Adds to the generic info
+            </summary>
+            <param name="info">string to add</param>
+        </member>
+        <member name="M:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.ICmdletActivity.AddToGenericError(System.String)">
+            <summary>
+            adds to generic error
+            </summary>
+            <param name="error">error to add</param>
+        </member>
+        <member name="T:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.ICmdletLogger">
+            <summary>
+            The interface for CmdletLogger class
+            </summary>
+        </member>
+        <member name="M:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.ICmdletLogger.InitLog(System.String)">
+            <summary>
+            Initialize a CmdletActivity
+            </summary>
+            <param name="cmdletId">unique cmdletId</param>
+        </member>
+        <member name="M:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.ICmdletLogger.CommitLog(System.String)">
+            <summary>
+            writes the log to the file and deletes the cmdlet activity
+            </summary>
+            <param name="cmdletId">cmdletid whose activity needs to be committed</param>
+        </member>
+        <member name="M:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.ICmdletLogger.LogGenericInfo(System.String,System.String)">
+            <summary>
+            adds a string to generic info
+            </summary>
+            <param name="cmdletId">cmdlet for which it needs to be added</param>
+            <param name="info">string to add to generic info</param>
+        </member>
+        <member name="M:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.ICmdletLogger.LogGenericError(System.String,System.String)">
+            <summary>
+            Add a string to generic errors
+            </summary>
+            <param name="cmdletId">cmdletID to add to</param>
+            <param name="error">error to log</param>
+        </member>
+        <member name="M:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.ICmdletLogger.LogGenericError(System.String,System.Management.Automation.ErrorRecord)">
+            <summary>
+            Add an error record to generic errors
+            </summary>
+            <param name="cmdletId">cmdletID to add to</param>
+            <param name="error">error to log</param>
+        </member>
+        <member name="M:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.ICmdletLogger.LogEndTime(System.String,System.DateTime)">
+            <summary>
+            Sets the end time of the cmdelt
+            </summary>
+            <param name="cmdletId">cmdletID to add to</param>
+            <param name="time">total time</param>
+        </member>
+        <member name="M:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.ICmdletLogger.LogStartTime(System.String,System.DateTime)">
+            <summary>
+            sets the start time of the cmdlet
+            </summary>
+            <param name="cmdletId">cmdletID to add to</param>
+            <param name="time">start time</param>
+        </member>
+        <member name="M:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.ICmdletLogger.LogCmdletName(System.String,System.String)">
+            <summary>
+            logs the cmdlet name
+            </summary>
+            <param name="cmdletId">cmdletID to add to</param>
+            <param name="name">cmdlet name</param>
+        </member>
+        <member name="M:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.ICmdletLogger.LogCmdletParameters(System.String,System.String)">
+            <summary>
+            logs the cmdlet parameters + values
+            </summary>
+            <param name="cmdletId">cmdletID to add to</param>
+            <param name="parameters">cmdlet parameters</param>
+        </member>
+        <member name="M:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.ICmdletLogger.LogCmdletParameters(System.String,System.Collections.Generic.Dictionary{System.String,System.Object})">
+            <summary>
+            logs the cmdlet parameters + values
+            </summary>
+            <param name="cmdletId">cmdletID to add to</param>
+            <param name="parameters">dict of cmdlet parameters</param>
+        </member>
+        <member name="M:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.ICmdletLogger.GetCurrentLogFilePath">
+            <summary>
+            Gets the current file which the logger is writing logs to.
+            </summary>
+            <returns>the full path of the log file</returns>
+        </member>
+        <member name="T:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.IFileSystem">
+            <summary>
+            Interface for FileSystem
+            </summary>
+        </member>
+        <member name="P:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.IFileSystem.Directory">
+            <summary>
+            Abstraction for static methods in <see cref="T:System.IO.Directory" />.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.IFileSystem.File">
+            <summary>
+            Abstraction for static methods in <see cref="T:System.IO.File" />.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.IFileSystem.GetFilePath(System.String,System.String)">
+            <inheritdoc cref="M:System.IO.Path.Combine(System.String,System.String)" />
+        </member>
+        <member name="M:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.IFileSystem.GetFileLength(System.String)">
+            <summary>
+            Get File size 
+            </summary>
+            <param name="path">file path</param>
+            <returns>file size</returns>
+        </member>
+        <member name="M:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.IFileSystem.GetFilesFromDirectory(System.String,System.String,System.IO.SearchOption)">
+            <summary>
+            Get Files From Directory
+            </summary>
+            <param name="directoryPath">Directory path</param>
+            <param name="searchPattern">Search Pattern</param>
+            <param name="searchOption">Search Option</param>
+            <returns>list of Files present in Directory</returns>
+        </member>
+        <member name="T:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.IFile">
+            <summary>
+            Interface for File
+            </summary>
+        </member>
+        <member name="P:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.IFile.Length">
+            <inheritdoc cref="P:System.IO.FileInfo.Length" />
+        </member>
+        <member name="P:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.IFile.Name">
+            <inheritdoc cref="P:System.IO.FileInfo.Name" />
+        </member>
+        <member name="P:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.IFile.CreationTimeUtc">
+            <inheritdoc cref="!:FileInfo.CreationTimeUtc" />
+        </member>
+        <member name="M:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.IFile.Exists(System.String)">
+            <inheritdoc cref="M:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.IFile.Exists(System.String)"/>
+        </member>
+        <member name="M:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.IFile.AppendAllText(System.String,System.String)">
+            <inheritdoc cref="M:System.IO.File.AppendAllText(System.String,System.String)" />
+        </member>
+        <member name="M:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.IFile.Delete">
+            <summary>
+            Delete instance
+            </summary>
+        </member>
+        <member name="T:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.IDirectory">
+            <summary>
+            Interface for Directory
+            </summary>
+        </member>
+        <member name="M:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.IDirectory.Exists(System.String)">
+            <inheritdoc cref="M:System.IO.Directory.Exists(System.String)"/>
+        </member>
+        <member name="M:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.IDirectory.CreateDirectory(System.String)">
+            <inheritdoc cref="M:System.IO.Directory.CreateDirectory(System.String)"/>
+        </member>
+        <member name="T:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.LoggerManager">
+            <summary>
+            The logger manager class that provides a single entry point
+            for instrumentation and routes the log request to the appropriate
+            logger implementation based on the current configuration.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.LoggerManager.singletonCreationLockObject">
+            <summary>
+            The lock objet for singleton creation.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.LoggerManager.operationLockObject">
+            <summary>
+            Holds the operation lock object.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.LoggerManager.loggerManagerInstance">
+            <summary>
+            Holding variable for the singleton instance.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.LoggerManager.activityLogger">
+            <summary>
+            Holding variable for the current logger.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.LoggerManager.Instance">
+            <summary>
+            Gets the singleton logger manager instance.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.LoggerManager.ResetSingleton">
+            <summary>
+            Remove the logger to stop the logging in the current instance.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.LoggerManager.ConfigureLocalFileLogger(Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.FileLoggerConfiguration)">
+            <summary>
+            Configures the logger manager to proxy to a file logger.
+            </summary>
+            <param name="fileLoggerConfiguration">
+            The file logger configuration to configure with.
+            </param>
+        </member>
+        <member name="M:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.LoggerManager.Log(Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.Activity)">
+            <summary>
+            Logs the given property bag to the configured logger.
+            </summary>
+            <param name="activity">
+            Activity to log
+            </param>
+            <remarks>
+            If no logger is configured, then this will be a pass through.
+            </remarks>
+        </member>
+        <member name="T:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.LogPropertyMetadata">
+            <summary>
+            Represents a property's log related metadata.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.LogPropertyMetadata.PropertyDisplayName">
+            <summary>
+            Gets or sets the property display name.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.LogPropertyMetadata.PropertyKey">
+            <summary>
+            Gets or sets the property key.
+            </summary>
+        </member>
+        <member name="T:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.PerformanceInfo">
+            <summary>
+            Represents performance info object
+            </summary>
+        </member>
+        <member name="M:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.PerformanceInfo.#ctor(System.Single,System.Single,System.Single,System.Single)">
+            <summary>
+            Constructs a new PerformanceInfo object using the given values.
+            </summary>
+            <param name="systemCPU">
+            The overall system CPU usage in percentage
+            </param>
+            <param name="processCPU">
+            Process CPU usage in percentage
+            </param>
+            <param name="systemAvailableMemory">
+            Memory Available with the system in MB
+            </param>
+            <param name="processMemory">
+            Memory consumed by the process (private working set) in MB
+            </param>
+            <remarks>
+            Internal to prevent initialization from outside.
+            Only <see cref="T:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.PerformanceTracker"/> can create PerformanceInfo.
+            Consumer libraries can only consume the value of a created PerformanceInfo.
+            </remarks>
+        </member>
+        <member name="P:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.PerformanceInfo.SystemCPU">
+            <summary>
+            The overall system CPU usage in percentage
+            </summary>
+        </member>
+        <member name="P:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.PerformanceInfo.ProcessCPU">
+            <summary>
+            Process CPU usage in percentage
+            </summary>
+        </member>
+        <member name="P:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.PerformanceInfo.SystemAvailableMemory">
+            <summary>
+            Memory Available with the system in MB
+            </summary>
+        </member>
+        <member name="P:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.PerformanceInfo.ProcessMemory">
+            <summary>
+            Memory consumed by the process (private working set) in MB
+            </summary>
+        </member>
+        <member name="M:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.PerformanceInfo.ToString">
+            <summary>
+            Returns the stringify version of the object
+            </summary>
+            <returns> Returns the stringify version of PerformanceInfo class </returns>
+        </member>
+        <member name="T:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.PerformanceTracker">
+            <summary>
+            Used to track the performance
+            </summary>
+        </member>
+        <member name="F:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.PerformanceTracker.sInstance">
+            <summary>
+            singleton instance
+            </summary>
+        </member>
+        <member name="F:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.PerformanceTracker.systemCpuCounter">
+            <summary>
+            Counter to track CPU
+            </summary>
+        </member>
+        <member name="F:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.PerformanceTracker.systemAvailableMemCounter">
+            <summary>
+            Counter to track Memory Usage
+            </summary>
+        </member>
+        <member name="F:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.PerformanceTracker.processCpuCounter">
+            <summary>
+            Counter to track CPU
+            </summary>
+        </member>
+        <member name="F:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.PerformanceTracker.processMemCounter">
+            <summary>
+            Counter to track Memory Usage
+            </summary>
+        </member>
+        <member name="F:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.PerformanceTracker.isInitialized">
+            <summary>
+            Track if object is initialized
+            </summary>
+        </member>
+        <member name="F:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.PerformanceTracker.isSupported">
+            <summary>
+            Track if Performance Counters are supported
+            </summary>
+        </member>
+        <member name="F:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.PerformanceTracker.performanceInfoEmpty">
+            <summary>
+            Empty performance Info object
+            </summary>
+        </member>
+        <member name="M:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.PerformanceTracker.#ctor">
+            <summary>
+            Private constructor for singleton
+            </summary>
+        </member>
+        <member name="P:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.PerformanceTracker.Instance">
+            <summary>
+            Get singleton instance of performance tracker
+            </summary>
+        </member>
+        <member name="P:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.PerformanceTracker.InitializationException">
+            <summary>
+            Exception that occured during initialization
+            </summary>
+        </member>
+        <member name="M:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.PerformanceTracker.TryInitialize">
+            <summary>
+            Initialize the Performance tracker
+            </summary>
+            <returns>
+            returns true in case initialization succeeded
+            </returns>
+        </member>
+        <member name="M:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.PerformanceTracker.GetCurrent">
+            <summary>
+            Get the current performance info
+            </summary>
+            <returns>
+            returns PerformanceInfo with current values, returns dummy performance ifo if tracker is not initialized
+            </returns>
+        </member>
+        <member name="M:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.PerformanceTracker.IsInitialized">
+            <summary>
+            Check if the tracker is initialized
+            </summary>
+            <returns>boolean indicating if tracker is initialized.</returns>
+        </member>
+        <member name="T:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.SystemInfo">
+            <summary>
+            Represents system info object
+            </summary>
+        </member>
+        <member name="F:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.SystemInfo.sInstance">
+            <summary>
+            singleton instance
+            </summary>
+        </member>
+        <member name="M:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.SystemInfo.#ctor">
+            <summary>
+            Private constructor for singleton SystemInfo
+            </summary>
+        </member>
+        <member name="P:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.SystemInfo.Instance">
+            <summary>
+            Singleton instance for SystemInfo
+            </summary>
+        </member>
+        <member name="P:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.SystemInfo.OperatingSystem">
+            <summary>
+            Operating System description
+            </summary>
+        </member>
+        <member name="P:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.SystemInfo.Architecture">
+            <summary>
+            Processor Architecture
+            </summary>
+        </member>
+        <member name="P:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.SystemInfo.Model">
+            <summary>
+            Processor Model
+            </summary>
+        </member>
+        <member name="P:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.SystemInfo.Level">
+            <summary>
+            Processor Level
+            </summary>
+        </member>
+        <member name="P:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.SystemInfo.ProcessorCount">
+            <summary>
+            Processor count
+            </summary>
+        </member>
+        <member name="M:Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.SystemInfo.ToString">
+            <summary>
+            Convert SystemInfo to string
+            </summary>
+            <returns>Returns the stringified version</returns>
+        </member>
+    </members>
+</doc>

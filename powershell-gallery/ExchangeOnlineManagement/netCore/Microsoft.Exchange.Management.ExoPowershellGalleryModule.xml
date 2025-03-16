@@ -1,0 +1,2535 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Microsoft.Exchange.Management.ExoPowershellGalleryModule</name>
+    </assembly>
+    <members>
+        <member name="T:Microsoft.Exchange.Management.ExoPowershellSnapin.AuthHeader">
+            <summary>
+            Auth Header Holder class
+            [DO NOT CHANGE THE CLASS AND MEMBER DEFINITIONS]
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.ExoPowershellSnapin.AuthHeader.AuthorizationHeader">
+            <summary>
+            Auth Header
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.ExoPowershellSnapin.AuthHeader.TenantId">
+            <summary>
+            Tenant Id
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.ExoPowershellSnapin.AuthHeader.BaseUri">
+            <summary>
+            Base Uri
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.ExoPowershellSnapin.AuthHeader.UserPrincipalName">
+            <summary>
+            User Principal Name 
+            </summary>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellSnapin.AuthHeader.Create(Microsoft.Exchange.Management.AdminApiProvider.Authentication.TokenInformation,System.String)">
+            <summary>
+            Create an instance using the TokenInformation
+            </summary>
+            <param name="tokenInfo">TokenInformation instance</param>
+            <param name="connectionUri">Connection URI</param>
+            <returns>The AuthHeader instance for the AutoREST module</returns>
+        </member>
+        <member name="T:Microsoft.Exchange.Management.ExoPowershellSnapin.AuthHeaderUtils">
+            <summary>
+            AuthHeaderUtils class to provider the utility method for getting the access token using the TokenProviderObjectId,
+            to be used by the Auto GEN module.
+            [DO NOT CHANGE THE CLASS NAME]
+            </summary>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellSnapin.AuthHeaderUtils.GetAuthHeader(System.String)">
+            <summary>
+            GetAuthHeader main method of the utility class, this method is used by the AutoGen EXO Module code from the server side
+            [DO NOT CHANGE THE METHOD SIGNATURE]
+            </summary>
+            <param name="tokenProviderObjectId">Object Id of the TokenProvider</param>
+            <returns>AuthHeader to use for the current token provider</returns>
+        </member>
+        <member name="T:Microsoft.Exchange.Management.ExoPowershellSnapin.ClearActiveToken">
+            <summary>
+            Test-ActiveToken : Tests whether there is any active token present in the token cache
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.ExoPowershellSnapin.ClearActiveToken.TokenProvider">
+            <summary>
+            The TokenProvider parameter
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.ExoPowershellSnapin.ClearActiveToken.IsSessionUsedByInbuiltCmdlets">
+            <summary>
+            Parameter which indicates if the connection/session is being used by the inbuilt cmdlets
+            </summary>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellSnapin.ClearActiveToken.ProcessRecord">
+            <summary>
+            ProcessRecord for this cmdlet
+            </summary>
+        </member>
+        <member name="T:Microsoft.Exchange.Management.ExoPowershellSnapin.ConnectionContext">
+            <summary>
+            ConnectionContext class to carry the connection specific information
+            [DO NOT CHANGE THE CLASS SIGNATURE AND MEMBER DEFINITIONS]
+            </summary>
+        </member>
+        <member name="F:Microsoft.Exchange.Management.ExoPowershellSnapin.ConnectionContext.MetadataSuffixName">
+            <summary>
+            MetaData Suffix for getting admin api metadata
+            </summary>
+        </member>
+        <member name="F:Microsoft.Exchange.Management.ExoPowershellSnapin.ConnectionContext.clientAppId">
+            <summary>
+            ClientAppId of EXOV2 module
+            </summary>
+        </member>
+        <member name="F:Microsoft.Exchange.Management.ExoPowershellSnapin.ConnectionContext.sessionPrefixName">
+            <summary>
+            Session prefix name to be used while creating PSSession
+            </summary>
+        </member>
+        <member name="F:Microsoft.Exchange.Management.ExoPowershellSnapin.ConnectionContext.exchangeOnlineConnectionPrefixName">
+            <summary>
+            Session prefix name to be used for Rest based connection.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Exchange.Management.ExoPowershellSnapin.ConnectionContext.exchangeOnlineProtectionConnectionPrefixName">
+            <summary>
+            Session prefix name to be used for Rest based connection in EOP.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Exchange.Management.ExoPowershellSnapin.ConnectionContext.defaultPageSize">
+            <summary>
+            Default page size for each HTTP response
+            </summary>
+        </member>
+        <member name="F:Microsoft.Exchange.Management.ExoPowershellSnapin.ConnectionContext.exchangeOnlineConnectionCount">
+            <summary>
+            ExchangeOnline successfull connection count
+            </summary>
+        </member>
+        <member name="F:Microsoft.Exchange.Management.ExoPowershellSnapin.ConnectionContext.objectId">
+            <summary>
+            Object Id of this ConnectionContext
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.ExoPowershellSnapin.ConnectionContext.ClientAppId">
+            <summary>
+            Client App Id of the EXOV2 module
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.ExoPowershellSnapin.ConnectionContext.SessionPrefixName">
+            <summary>
+            Session prefix identifier to be used while creating PSSessions
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.ExoPowershellSnapin.ConnectionContext.ConnectionUri">
+            <summary>
+            Connection Uri
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.ExoPowershellSnapin.ConnectionContext.PowerShellConnectionUri">
+            <summary>
+            PowerShell Connection Uri
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.ExoPowershellSnapin.ConnectionContext.AzureAdAuthorizationEndpointUri">
+            <summary>
+            Azure AD Auth Endpoint Uri
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.ExoPowershellSnapin.ConnectionContext.NewEXOModuleBaseUri">
+            <summary>
+            Base Uri for the NewEXOModule
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.ExoPowershellSnapin.ConnectionContext.AdminApiBetaBaseUri">
+            <summary>
+            Base Uri for Admin Api beta endpoint
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.ExoPowershellSnapin.ConnectionContext.PsSessionOptions">
+            <summary>
+            PSSessionOptions if any
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.ExoPowershellSnapin.ConnectionContext.PsVersion">
+            <summary>
+            PSVersion of the client
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.ExoPowershellSnapin.ConnectionContext.ConnectionId">
+            <summary>
+            Client Connection ID
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.ExoPowershellSnapin.ConnectionContext.ClientProcessId">
+            <summary>
+            Client Process Id
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.ExoPowershellSnapin.ConnectionContext.AppId">
+            <summary>
+            Client Application Id to use instead of the default App Id 
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.ExoPowershellSnapin.ConnectionContext.Organization">
+            <summary>
+            Organization passed in case of certificate flow
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.ExoPowershellSnapin.ConnectionContext.DelegatedOrganization">
+            <summary>
+            The delegated organization
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.ExoPowershellSnapin.ConnectionContext.ExoModuleVersion">
+            <summary>
+            EXOV2 module version making the call
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.ExoPowershellSnapin.ConnectionContext.ExchangeEnvironmentName">
+            <summary>
+            Exchange Environment Name
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.ExoPowershellSnapin.ConnectionContext.IsCertBasedFlow">
+            <summary>
+            Whether the connection is made using a certificate
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.ExoPowershellSnapin.ConnectionContext.IsCloudShellEnvironment">
+            <summary>
+            Whether the env is in CloudShell
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.ExoPowershellSnapin.ConnectionContext.RoutingHint">
+            <summary>
+            RoutingHint to use in the HTTP requests
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.ExoPowershellSnapin.ConnectionContext.RoutingHintPrefix">
+            <summary>
+            Routing Hint Prefix
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.ExoPowershellSnapin.ConnectionContext.RoutingHintHeader">
+            <summary>
+            RoutingHint Header name
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.ExoPowershellSnapin.ConnectionContext.OsVersion">
+            <summary>
+            OSVersion of the client machine
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.ExoPowershellSnapin.ConnectionContext.TokenProvider">
+            <summary>
+            Related Token Provider instance
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.ExoPowershellSnapin.ConnectionContext.PowerShellCredentials">
+            <summary>
+            PowerShell Credentials to be used when running New-PSSession
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.ExoPowershellSnapin.ConnectionContext.PowerShellTokenInfo">
+            <summary>
+            PowerShell token info to be used when running New-PSSession
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.ExoPowershellSnapin.ConnectionContext.TokenExpiryTime">
+            <summary>
+            Token Expiry time of the token created for running New-PSSession
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.ExoPowershellSnapin.ConnectionContext.CommandName">
+            <summary>
+            CommandName provided
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.ExoPowershellSnapin.ConnectionContext.FormatTypeName">
+            <summary>
+            Format Type Names provided
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.ExoPowershellSnapin.ConnectionContext.Prefix">
+            <summary>
+            Prefix to use while importing the module/pssession
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.ExoPowershellSnapin.ConnectionContext.IsRpsSession">
+            <summary>
+            Whether this connectioncontext is for an RPS connection
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.ExoPowershellSnapin.ConnectionContext.IsEopSession">
+            <summary>
+            Whether this connectioncontext is for an Eop connection
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.ExoPowershellSnapin.ConnectionContext.ConnectionName">
+            <summary>
+            Exchange online connection Name.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.ExoPowershellSnapin.ConnectionContext.Id">
+            <summary>
+            Exchange online connection Id.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.ExoPowershellSnapin.ConnectionContext.ModulePath">
+            <summary>
+            Module Name.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.ExoPowershellSnapin.ConnectionContext.ErrorReportingEnabled">
+            <summary>
+            Whether Error Reporting is enabled for this connection
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.ExoPowershellSnapin.ConnectionContext.ManagedIdentity">
+            <summary>
+            Whether Managed Identity flow should be used for this connection
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.ExoPowershellSnapin.ConnectionContext.ManagedIdentityAccountId">
+            <summary>
+            AccountId passed in case of User Assigned Managed Identity flow
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.ExoPowershellSnapin.ConnectionContext.ObjectId">
+            <summary>
+            The unique ObjectId of the object.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.ExoPowershellSnapin.ConnectionContext.PageSize">
+            <summary>
+            Preferred page size for each HTTP response
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.ExoPowershellSnapin.ConnectionContext.Logger">
+            <summary>
+            Logger Instance to log to the file when Error Reporting is enabled
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.ExoPowershellSnapin.ConnectionContext.UserPrincipalName">
+            <summary>
+            UserPrincipalName from the auth token
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.ExoPowershellSnapin.ConnectionContext.TenantId">
+            <summary>
+            Tenant ID from the auth token
+            </summary>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellSnapin.ConnectionContext.GetAuthHeader(System.String,System.String)">
+            <summary>
+            GetAuthHeader method is used by the AutoGen EXO Module code from the server side to get Auth info.
+            [DO NOT CHANGE THE METHOD SIGNATURE]
+            </summary>
+            <param name="claims">claims param sent by CAE module indicating to AAD that some user's setting have been changed which requires re-auth</param>
+            <param name="cmdletId">The cmdletID of the cmdlet for which we are getting the Auth header. It will be used to append to the log for the cmdlet</param>
+            <returns>AuthHeader to use for the current token provider</returns>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellSnapin.ConnectionContext.GetStringRepresentation">
+            <summary>
+            Get the string representation of all the properties
+            </summary>
+            <returns>string representation of connection context</returns>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellSnapin.ConnectionContext.UpdateSettingsForEXOCmdlets">
+            <summary>
+            Update settings to the AppSettings constants for EXO cmdlets use.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellSnapin.ConnectionContext.UpdateConnectionContextPostSuccessFullConnection">
+            <summary>
+            Update setting, once connection is successfull and module is downloaded.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellSnapin.ConnectionContext.UpdateModulePathInConnectionContext(System.String)">
+            <summary>
+            Update the path of the temp module in the ConnectionContext
+            </summary>
+            <param name="modulePath">Path to the temp module</param>
+        </member>
+        <member name="T:Microsoft.Exchange.Management.ExoPowershellSnapin.ConnectionContextUtil">
+            <summary>
+            The helper class for ConnectionContext
+            </summary>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellSnapin.ConnectionContextUtil.GetEopConnectionUriRequestEndpointUri(System.String,Microsoft.Exchange.Management.ExoPowershellSnapin.ConnectionContext)">
+            <summary>
+            Get the endpoint Uri for getting eop connection uri
+            </summary>
+            <param name="tenantId">Current tenant ID from Connection Context</param>
+            <param name="connectionContext">Current Connection Context</param>
+            <returns>Request endpoint Uri</returns>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellSnapin.ConnectionContextUtil.UpdateConnectionUriForEop(Microsoft.Exchange.Management.ExoPowershellSnapin.ConnectionContext,Microsoft.Exchange.Management.AdminApiProvider.Authentication.TokenInformation)">
+            <summary>
+            Get the endpoint Uri for eop
+            In eop, the first request will be sent to the global endpoint, it will return a 302 with redirection uri in the header or just a 200.
+            If the tenant is in the global endpoint forest, it will return 200, in this case, the eop connection uri is the global endpoint uri, so we will not update eop conection uri.
+            If the tenant is not in the global endpoint forest, it will return a 302 with redirection uri in the header, then we will retrieve the local forest prefix from the redirection uri, and update connection uri for eop.
+            </summary>
+            <param name="connectionContext">Current Connection Context</param>
+            <param name="tokenInfo">Current token info</param>
+            <returns>The ConnectionUriEop</returns>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellSnapin.ConnectionContextUtil.UpdateConnectionUriForEop(System.Net.Http.HttpClient,Microsoft.Exchange.Management.ExoPowershellSnapin.ConnectionContext,Microsoft.Exchange.Management.AdminApiProvider.Authentication.TokenInformation)">
+            <summary>
+            Get the endpoint Uri for eop
+            </summary>
+            <param name="httpClient">Current http client</param>
+            <param name="connectionContext">Current Connection Context</param>
+            <param name="tokenInfo">Current token info</param>
+            <returns>The ConnectionUriEop</returns>
+        </member>
+        <member name="T:Microsoft.Exchange.Management.ExoPowershellSnapin.ConnectionContextFactory">
+            <summary>
+            ConnectionContextFactory class to create and delete ConnectionContext objects within a powershell process.
+            It contains the method GetCurrentConnectionContext for getting the ConnectionContext using the ConnectionContextObjectId, to be used by the Auto GEN module.
+            [DO NOT CHANGE THE CLASS NAME AND MEMBER DEFINITIONS]
+            </summary>
+        </member>
+        <member name="F:Microsoft.Exchange.Management.ExoPowershellSnapin.ConnectionContextFactory.DisconnectConfirmationMessageWithoutInbuilt">
+            <summary>
+            Confirmation message for Disconnect-ExchangeOnline when inbuilt cmdlet connection is not broken
+            </summary>
+        </member>
+        <member name="F:Microsoft.Exchange.Management.ExoPowershellSnapin.ConnectionContextFactory.DisconnectConfirmationMessageWithInbuilt">
+            <summary>
+            Default confirmation message for Disconnect-ExchangeOnline
+            </summary>
+        </member>
+        <member name="F:Microsoft.Exchange.Management.ExoPowershellSnapin.ConnectionContextFactory.connectionContextMap">
+            <summary>
+            Guid vs ConnectionContext map
+            </summary>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellSnapin.ConnectionContextFactory.CreateConnectionContext">
+            <summary>
+            Create a connection context instance and add it to the map of connectionContexts.
+            </summary>
+            <returns>created connection context</returns>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellSnapin.ConnectionContextFactory.GetCurrentConnectionContext(System.String)">
+            <summary>
+            Returns the connectionContext for a particular objectId
+            </summary>
+            <param name="connectionContextObjectId">the object id</param>
+            <returns>connectioncontext from the map</returns>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellSnapin.ConnectionContextFactory.GetConnectionContextIdByModulePath(System.String)">
+            <summary>
+            Returns the connectionContextObjectId for a given module path
+            </summary>
+            <param name="modulePath">Path of the tmp module</param>
+            <returns>ConnectionContextObjectId from the map</returns>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellSnapin.ConnectionContextFactory.GetTokenProviderIdByModulePath(System.String)">
+            <summary>
+            Returns the TokenProviderObjectId for a given module path
+            </summary>
+            <param name="modulePath">Path of the tmp module</param>
+            <returns>TokenProviderObjectId from the map</returns>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellSnapin.ConnectionContextFactory.GetModulesToRemoveByConnectionId(System.String[])">
+            <summary>
+            Returns the list of name of the modules from connectionContext for given list of connection Ids
+            </summary>
+            <param name="connectionIds">List of connection IDs</param>
+            <returns>List of names of modules to be removed</returns>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellSnapin.ConnectionContextFactory.GetModulesToRemoveByModulePrefix(System.String[])">
+            <summary>
+            Returns the list of name of the modules from connectionContext for given list of module prefixes
+            </summary>
+            <param name="modulePrefix">List of module prefixes</param>
+            <returns>List of names of modules to be removed</returns>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellSnapin.ConnectionContextFactory.GetDisconnectConfirmationMessageByConnectionId(System.String[])">
+            <summary>
+            Gets the confirmation message for Disconnect-ExchangeOnline for given list of connection Ids
+            </summary>
+            <param name="connectionIds">List of connection IDs</param>
+            <returns>
+            1. DisconnectConfirmationMessageWithInbuilt: If the Disconnect-ExchangeOnline call will clear connection for the inbuilt cmdlets.
+            2. DisconnectConfirmationMessageWithoutInbuilt: If the inbuilt cmdlets would still work after Disconnect-ExchangeOnline.
+            </returns>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellSnapin.ConnectionContextFactory.GetDisconnectConfirmationMessageByModulePrefix(System.String[])">
+            <summary>
+            Gets the confirmation message for Disconnect-ExchangeOnline for given list of module prefixes
+            </summary>
+            <param name="modulePrefix">List of Module Prefix</param>
+            <returns>
+            1. DisconnectConfirmationMessageWithInbuilt: If the Disconnect-ExchangeOnline call will clear connection for the inbuilt cmdlets.
+            2. DisconnectConfirmationMessageWithoutInbuilt: If the inbuilt cmdlets would still work after Disconnect-ExchangeOnline.
+            </returns>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellSnapin.ConnectionContextFactory.GetDisconnectConfirmationMessageWithInbuilt">
+            <summary>
+            Gets the default confirmation message for Disconnect-ExchangeOnline
+            </summary>
+            <returns>Confirmation message for Disconnect-ExchangeOnline</returns>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellSnapin.ConnectionContextFactory.RemoveConnectionContext(System.String)">
+            <summary>
+            Remove the ConnectionContext corresponding to the provided Id.
+            </summary>
+            <param name="connectionContextObjectId">ConnectionContext Id</param>
+            <returns>true if the connection context is removed</returns>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellSnapin.ConnectionContextFactory.RemoveConnectionContextUsingConnectionId(System.String)">
+            <summary>
+            Remove the ConnectionContext corresponding to the provided ConnectionId.
+            </summary>
+            <param name="connectionContextConnectionId">ConnectionContext Connection Id</param>
+            <returns>true if the connection context is removed</returns>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellSnapin.ConnectionContextFactory.RemoveAllTokensFromConnectionContext">
+            <summary>
+            Iterate over each connection context and clear all tokens for each TokenProvider
+            </summary>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellSnapin.ConnectionContextFactory.GetAllConnectionContexts">
+            <summary>
+            Gets the list of all ConnectionContexts in the current powershell instance.
+            </summary>
+            <returns>list of ConnectionContexts</returns>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellSnapin.ConnectionContextFactory.RemoveAllConnectionContexts">
+            <summary>
+            Removes all the ConnectionContexts from the map
+            </summary>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellSnapin.ConnectionContextFactory.GetModulesToRemove(System.Func{System.Collections.Generic.KeyValuePair{System.Guid,Microsoft.Exchange.Management.ExoPowershellSnapin.ConnectionContext},System.Boolean})">
+            <summary>
+            Returns the list of name of the modules from connectionContext that satisfy the given predicate
+            </summary>
+            <param name="predicate">The predicate to apply to each KeyValuePair in connectionContextMap</param>
+            <returns>List of names of modules to be removed</returns>
+        </member>
+        <member name="T:Microsoft.Exchange.Management.ExoPowershellSnapin.ConnectionInformation">
+            <summary>
+            ConnectionInformation data type
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.ExoPowershellSnapin.ConnectionInformation.ConnectionId">
+            <summary>
+            The Connection Id.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.ExoPowershellSnapin.ConnectionInformation.State">
+            <summary>
+            The Connection state
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.ExoPowershellSnapin.ConnectionInformation.Id">
+            <summary>
+            Connection Id.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.ExoPowershellSnapin.ConnectionInformation.Name">
+            <summary>
+            Connection Name.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.ExoPowershellSnapin.ConnectionInformation.UserPrincipalName">
+            <summary>
+            UserPrincipalName information.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.ExoPowershellSnapin.ConnectionInformation.ConnectionUri">
+            <summary>
+            Connection Uri.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.ExoPowershellSnapin.ConnectionInformation.AzureAdAuthorizationEndpointUri">
+            <summary>
+            AzureAdAuthorizationEndpointUri Information.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.ExoPowershellSnapin.ConnectionInformation.TokenExpiryTimeUTC">
+            <summary>
+            TokenExpiryTime information.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.ExoPowershellSnapin.ConnectionInformation.CertificateAuthentication">
+            <summary>
+            CertificateAuthentication Information.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.ExoPowershellSnapin.ConnectionInformation.ModuleName">
+            <summary>
+            Module Name including path Information.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.ExoPowershellSnapin.ConnectionInformation.ModulePrefix">
+            <summary>
+            Module Prefix Information.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.ExoPowershellSnapin.ConnectionInformation.Organization">
+            <summary>
+            Organization Information.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.ExoPowershellSnapin.ConnectionInformation.DelegatedOrganization">
+            <summary>
+            DelegatedOrganization information.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.ExoPowershellSnapin.ConnectionInformation.AppId">
+            <summary>
+            AppId Info.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.ExoPowershellSnapin.ConnectionInformation.PageSize">
+            <summary>
+            PageSize information.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.ExoPowershellSnapin.ConnectionInformation.TenantID">
+            <summary>
+            Tenant ID
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.ExoPowershellSnapin.ConnectionInformation.TokenStatus">
+            <summary>
+            Status of the token
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.ExoPowershellSnapin.ConnectionInformation.ConnectionUsedForInbuiltCmdlets">
+            <summary>
+            Is this connection used for running the inbuilt cmdlets
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.ExoPowershellSnapin.ConnectionInformation.IsEopSession">
+            <summary>
+            Whether this connectioncontext is for an Eop connection
+            </summary>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellSnapin.ConnectionInformation.#ctor(Microsoft.Exchange.Management.ExoPowershellSnapin.ConnectionContext,System.Boolean)">
+            <summary>
+            Public Constructor
+            </summary>
+            <param name="connectionContext">Connection context</param>
+            <param name="isActiveConnection">Is Active Connection</param>
+        </member>
+        <member name="T:Microsoft.Exchange.Management.ExoPowershellSnapin.EXOModuleHandler">
+            <summary>
+            Class for keeping track of the paths of different modules used in the current powershell process.
+            Handles deleting any left over modules in the tmp path before the powershell process ends.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Exchange.Management.ExoPowershellSnapin.EXOModuleHandler.ModuleFolderPathList">
+            <summary>
+            Connectioncontext ObjectId vs Module folder path map
+            </summary>
+        </member>
+        <member name="F:Microsoft.Exchange.Management.ExoPowershellSnapin.EXOModuleHandler.handler">
+            <summary>
+            The handler routine to call when abruptly exiting powershell
+            </summary>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellSnapin.EXOModuleHandler.#cctor">
+            <summary>
+            Method to register the handler for powershell window close and shutdown events.
+            Registration is done in the static constructor so it is done once per process.
+            </summary>
+        </member>
+        <member name="T:Microsoft.Exchange.Management.ExoPowershellSnapin.EXOModuleHandler.ConsoleCtrlDelegate">
+            <summary>
+            delegate to listen to control close
+            </summary>
+            <param name="ctrlType">the event to listen to</param>
+            <returns>the delegate to handle the event</returns>
+        </member>
+        <member name="T:Microsoft.Exchange.Management.ExoPowershellSnapin.EXOModuleHandler.CtrlType">
+            <summary>
+            enum for different events
+            </summary>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellSnapin.EXOModuleHandler.AddModuleFolderPathToList(System.String)">
+            <summary>
+            Adds a newly imported autogen module's path to a dictionary mapping it with ConnectionContext ObjectID.
+            </summary>
+            <param name="path">the module folder path</param>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellSnapin.EXOModuleHandler.DeleteModulePaths">
+            <summary>
+            Delete any existing modules which are present from the current powershell process.
+            This method will be triggered on powershell window close when the 'x' button is clicked or the system is shutdown.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellSnapin.EXOModuleHandler.SetConsoleCtrlHandler(Microsoft.Exchange.Management.ExoPowershellSnapin.EXOModuleHandler.ConsoleCtrlDelegate,System.Boolean)">
+            <summary>
+            method to register the handler for console events.
+            </summary>
+            <param name="handlerRoutine">the hander to call</param>
+            <param name="add">whether to add the handler</param>
+            <returns>whther the handler was registered successfully</returns>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellSnapin.EXOModuleHandler.OnControlCode(Microsoft.Exchange.Management.ExoPowershellSnapin.EXOModuleHandler.CtrlType)">
+            <summary>
+            Handler for various events. The window close, shutdown events are handled.
+            </summary>
+            <param name="ctrlType">the type of event</param>
+            <returns>false to continue with regular handling of the event</returns>
+        </member>
+        <member name="T:Microsoft.Exchange.Management.ExoPowershellSnapin.GetConnectionContext">
+            <summary>
+            Get-ConnectionContext: Class to validate the input parameter provided by the customer, and create a ConnectionContext object
+            which would be used for any connection to Exchange/EOP endpoint.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Exchange.Management.ExoPowershellSnapin.GetConnectionContext.anchoringBypassHosts">
+            <summary>
+            following environments are on cafev1 and do not support email routing hint for non mailbox users
+            </summary>
+        </member>
+        <member name="F:Microsoft.Exchange.Management.ExoPowershellSnapin.GetConnectionContext.ClientAppId">
+            <summary>
+            ClientAppId param
+            </summary>
+        </member>
+        <member name="F:Microsoft.Exchange.Management.ExoPowershellSnapin.GetConnectionContext.SystemMailboxRoutingHint">
+            <summary>
+            Routing Hint User to be used for routing
+            </summary>
+        </member>
+        <member name="F:Microsoft.Exchange.Management.ExoPowershellSnapin.GetConnectionContext.RedirectUrlExtension">
+            <summary>
+            The extension to be appended at the end of Azure Authorization Endpoint Uri, to form the RedirectUri.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Exchange.Management.ExoPowershellSnapin.GetConnectionContext.DeviceParameterSet">
+            <summary>
+            DeviceParameterSet param
+            </summary>
+        </member>
+        <member name="F:Microsoft.Exchange.Management.ExoPowershellSnapin.GetConnectionContext.RountinghintPrefix">
+            <summary>
+            Routing hint prefix for AppOnly flow, ManagedIdentity, Delegation and external AccessToken flows
+            </summary>
+        </member>
+        <member name="F:Microsoft.Exchange.Management.ExoPowershellSnapin.GetConnectionContext.emailValidatorRegex">
+            <summary>
+            Email address regex validator.
+            As project is not referencing anything from Substrate and 
+            we want to have it "lightweight", re-using pattern that
+            already exist in .net - https://referencesource.microsoft.com/#System.ComponentModel.DataAnnotations/DataAnnotations/EmailAddressAttribute.cs,54
+            </summary>
+        </member>
+        <member name="F:Microsoft.Exchange.Management.ExoPowershellSnapin.GetConnectionContext.consoleLogger">
+            <summary>
+            Console Logger instance
+            </summary>
+        </member>
+        <member name="F:Microsoft.Exchange.Management.ExoPowershellSnapin.GetConnectionContext.exchangeEnvironment">
+            <summary>
+            Exchange Environment name
+            </summary>
+        </member>
+        <member name="F:Microsoft.Exchange.Management.ExoPowershellSnapin.GetConnectionContext.connectionUri">
+            <summary>
+            Connection Uri for the Remote PowerShell endpoint
+            </summary>
+        </member>
+        <member name="F:Microsoft.Exchange.Management.ExoPowershellSnapin.GetConnectionContext.azureADAuthorizationEndpointUri">
+            <summary>
+            Azure AD Authorization endpoint Uri that can issue the OAuth2 access tokens
+            </summary>
+        </member>
+        <member name="F:Microsoft.Exchange.Management.ExoPowershellSnapin.GetConnectionContext.psSessionOption">
+            <summary>
+            Additional PowerShell session options to be used when opening the Remote PowerShell session
+            </summary>
+        </member>
+        <member name="F:Microsoft.Exchange.Management.ExoPowershellSnapin.GetConnectionContext.userPrincipalName">
+            <summary>
+            UserPrincipalName to be used when opening the Remote PowerShell session
+            </summary>
+        </member>
+        <member name="F:Microsoft.Exchange.Management.ExoPowershellSnapin.GetConnectionContext.credential">
+            <summary>
+            Credential to be used when opening the Remote PowerShell session
+            </summary>
+        </member>
+        <member name="F:Microsoft.Exchange.Management.ExoPowershellSnapin.GetConnectionContext.bypassMailboxAnchoring">
+            <summary>
+            Switch to bypass use of mailbox anchoring hint
+            </summary>
+        </member>
+        <member name="F:Microsoft.Exchange.Management.ExoPowershellSnapin.GetConnectionContext.delegatedOrganization">
+            <summary>
+            Domain Name of DelegatedOrganization
+            </summary>
+        </member>
+        <member name="F:Microsoft.Exchange.Management.ExoPowershellSnapin.GetConnectionContext.cmdletId">
+            <summary>
+            Unique guid for this cmdlet execution
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.ExoPowershellSnapin.GetConnectionContext.IsRpsSession">
+            <summary>
+            Whether this is an RPS session
+            Parameter is mandatory since assuming an incorrect default value can cause issues.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.ExoPowershellSnapin.GetConnectionContext.PreviousSession">
+            <summary>
+            The PreviousSession parameter
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.ExoPowershellSnapin.GetConnectionContext.ConnectionUri">
+            <summary>
+            The ConnectionUri parameter
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.ExoPowershellSnapin.GetConnectionContext.AzureADAuthorizationEndpointUri">
+            <summary>
+            The AzureADAuthorizationEndpointUri parameter
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.ExoPowershellSnapin.GetConnectionContext.BypassMailboxAnchoring">
+            <summary>
+            The BypassMailboxAnchoring parameter
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.ExoPowershellSnapin.GetConnectionContext.ExchangeEnvironmentName">
+            <summary>
+            The ExchangeEnvironment parameter
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.ExoPowershellSnapin.GetConnectionContext.Credential">
+            <summary>
+            The Credential parameter
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.ExoPowershellSnapin.GetConnectionContext.DelegatedOrganization">
+            <summary>
+            Domain Name of Delegated Organization
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.ExoPowershellSnapin.GetConnectionContext.Device">
+            <summary>
+            Switch to using Device auth for token retrieval
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.ExoPowershellSnapin.GetConnectionContext.InlineCredential">
+            <summary>
+            Switch to use only cmdline for PS7
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.ExoPowershellSnapin.GetConnectionContext.PSSessionOption">
+            <summary>
+            The PSSessionOption parameter
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.ExoPowershellSnapin.GetConnectionContext.UserPrincipalName">
+            <summary>
+            The UserPrincipalName parameter
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.ExoPowershellSnapin.GetConnectionContext.Certificate">
+            <summary>
+            Certificate object to use
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.ExoPowershellSnapin.GetConnectionContext.CertificateFilePath">
+            <summary>
+            Certificate file path for the certificate to use to connnect
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.ExoPowershellSnapin.GetConnectionContext.CertificatePassword">
+            <summary>
+            Certificate password if any
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.ExoPowershellSnapin.GetConnectionContext.CertificateThumbprint">
+            <summary>
+            Certificate thumbprint of the installed certificate
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.ExoPowershellSnapin.GetConnectionContext.AppId">
+            <summary>
+            Client Application Id to use instead of the default App Id 
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.ExoPowershellSnapin.GetConnectionContext.TenantId">
+            <summary>
+            Tenant ID to use for AppOnly flow, ManagedIdentity, Delegation and external AccessToken flows
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.ExoPowershellSnapin.GetConnectionContext.AccessToken">
+            <summary>
+            External Access token
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.ExoPowershellSnapin.GetConnectionContext.Organization">
+            <summary>
+            Organization to be used for the certificate and managed Identity flow only
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.ExoPowershellSnapin.GetConnectionContext.Prefix">
+            <summary>
+            Prefix provided
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.ExoPowershellSnapin.GetConnectionContext.CommandName">
+            <summary>
+            Command Name provided
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.ExoPowershellSnapin.GetConnectionContext.FormatTypeName">
+            <summary>
+            Format Type names provided
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.ExoPowershellSnapin.GetConnectionContext.ExoModuleVersion">
+            <summary>
+            Version of the EXO Module
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.ExoPowershellSnapin.GetConnectionContext.PageSize">
+            <summary>
+            Preferred page size for each HTTP response
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.ExoPowershellSnapin.GetConnectionContext.ConnectionId">
+            <summary>
+            ConnectionId of this Connection
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.ExoPowershellSnapin.GetConnectionContext.Logger">
+            <summary>
+            The logger to be used for this connection
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.ExoPowershellSnapin.GetConnectionContext.EnableErrorReporting">
+            <summary>
+            Whether Error reporting should be enabled for this connection
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.ExoPowershellSnapin.GetConnectionContext.ManagedIdentity">
+            <summary>
+            Whether Managed Identity should be used for this connection
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.ExoPowershellSnapin.GetConnectionContext.ManagedIdentityAccountId">
+            <summary>
+            AccountId to be used for the User Assigned Managed Identity flow only
+            </summary>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellSnapin.GetConnectionContext.GetSystemMailboxRoutingHint(System.String)">
+            <summary>
+            Returns routing hint based on SystemMailbox UPN.
+            </summary>
+            <param name="tenantIdOrOrganization">The organization domain to use in the UPN or the tenantId for AppOnly flow, ManagedIdentity, Delegation and external AccessToken flows </param>
+            <returns>Roouting hint created basd on SystemMailbox</returns>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellSnapin.GetConnectionContext.SetRoutingHintInConnectionContext(Microsoft.Exchange.Management.ExoPowershellSnapin.ConnectionContext,System.String,System.Boolean)">
+            <summary>
+            Sets the routing hint in the connection context.
+            </summary>
+            <param name="connectionContext">The connectionContext in which routing hint needs to be set</param>
+            <param name="upnInTokenInfo">The UPN in TokenInfo</param>
+            <param name="isAppOnlyFlow">Whether this is a CBA flow or Managed Identity flow</param>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellSnapin.GetConnectionContext.SetPageSizeInConnectionContext(Microsoft.Exchange.Management.ExoPowershellSnapin.ConnectionContext)">
+            <summary>
+            Sets the page size in the connection context
+            </summary>
+            <param name="connectionContext">The connectionContext in which page size needs to be set</param>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellSnapin.GetConnectionContext.GetRoutingHintForAccessToken">
+            <summary>
+            Returns the routing hint to be used when an external access token is provided.
+            Routing hint is decided based on the order below -
+            1. UserPrincipalName is provided, it is used as the routing hint.
+            2. Organization is provided, SystemMailbox based routing hint belonging to the org is used.
+            3. Delegated organization is provided, SystemMailbox based routing hint belonging to the delegated org is used.
+            </summary>
+            <returns>Routing hint to be used when Access Token is provided</returns>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellSnapin.GetConnectionContext.BeginProcessing">
+            <summary>
+            BeginProcessing for this cmdlet
+            </summary>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellSnapin.GetConnectionContext.ProcessRecord">
+            <summary>
+            ProcessRecord for this cmdlet
+            </summary>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellSnapin.GetConnectionContext.EndProcessing">
+            <summary>
+            EndProcessing for this cmdlet
+            </summary>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellSnapin.GetConnectionContext.GetRedirectUriFromAzureADAuthenticationEndpointUri(System.String)">
+            <summary>
+            Retruns Redirect/Reply Url, after calculating it from AzureADAuthEndpointUri.
+            </summary>
+            <param name="effectiveAzureADAuthEndpointUri">Azure Authentication Endpoint for the request</param>
+            <returns>The Redirect/Reply Url</returns>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellSnapin.GetConnectionContext.ServerValidateCallBack(System.Object,System.Security.Cryptography.X509Certificates.X509Certificate,System.Security.Cryptography.X509Certificates.X509Chain,System.Net.Security.SslPolicyErrors)">
+            <summary>
+            Server validate callback
+            </summary>
+            <param name="sender">sender instance</param>
+            <param name="certificate">certificate instance</param>
+            <param name="chain">chain instance</param>
+            <param name="errors">errors instance</param>
+            <returns>True or false</returns>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellSnapin.GetConnectionContext.IsWellFormedJWTToken(System.String)">
+            <summary>
+            Validates whether the provided token is a well formed JWT token
+            </summary>
+            <param name="token">Access token</param>
+            <returns>true if it is a well formed JWT token</returns>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellSnapin.GetConnectionContext.AddQueryParams(System.UriBuilder,System.String,System.String)">
+            <summary>
+            Adds query parameter for a given Uri
+            </summary>
+            <param name="uriBuilder">uriBuilder under construction</param>
+            <param name="queryKey">Query String to append to the Uri</param>
+            <param name="queryValue">Value for the key to be appended to the Uri for the given parameter</param>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellSnapin.GetConnectionContext.GetMemberValueFromPreviousSession(System.String)">
+            <summary>
+            Retrieves the member set in the session PSObject for a given member key.
+            </summary>
+            <param name="memberKey">Key of the member to be retrieved</param>
+            <returns>Member object set in the PSSession PSObject</returns>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellSnapin.GetConnectionContext.ValidateParameters">
+            <summary>
+            Validates the given parameters passed to this cmdlet call.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellSnapin.GetConnectionContext.ValidateParametersForAccessToken(System.Boolean)">
+            <summary>
+            Validates whether the provided parameters required and compatible when an external AccessToken is given
+            This should ideally be validated through the use of parameter sets and mandatory parameters in Connect-ExchangeOnline.
+            This method should be removed once the validation is added through parameter sets.
+            </summary>
+            <param name="isCertBasedFlow">whether this is cert-based flow</param>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellSnapin.GetConnectionContext.ValidateCertificatePath(System.String)">
+            <summary>
+            Validate the CertificateFilePath
+            </summary>
+            <param name="certificateFilePath">Certificate file path</param>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellSnapin.GetConnectionContext.GetEffectiveUserPrincipalName">
+            <summary>
+            Returns the effective UserPrincipalName for this flow
+            1. If the User passed Credential param then UPN is returned from the UPN of credential passed.
+            2. If the User passed UserPrincipalName param then that is returned
+            In all the other scenarios a null string is returned.
+            </summary>
+            <returns>Returns effective user principal name</returns>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellSnapin.GetConnectionContext.GetEffectivePowerShellConnectionUri">
+            <summary>
+            Returns the effective powershell connection uri
+            </summary>
+            <returns> Returns effective powershell connection uri</returns>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellSnapin.GetConnectionContext.GetEffectiveConnectionUri">
+            <summary>
+            Returns the ConnectionUri
+            </summary>
+            <returns>Returns the effective ConnectionUri</returns>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellSnapin.GetConnectionContext.GetEffectiveAzureADAuthenticationEndpointUri">
+            <summary>
+            Returns the AzureADAuthenticationEndpointUri
+            </summary>
+            <returns>Returns effective AzureADAuthenticationEndpointUri</returns>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellSnapin.GetConnectionContext.BypassAnchoringForHost(System.String)">
+            <summary>
+            Check if we need to bypass anchoring for given host
+            </summary>
+            <param name="host">the host part of the uri</param>
+            <returns>Whether the given host is part of bypass list</returns>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellSnapin.GetConnectionContext.IsValidUri(System.String)">
+            <summary>
+            Validate whether input string is a valid Uri
+            </summary>
+            <param name="uriString">Uri string</param>
+            <returns>Whether input string is a valid Uri</returns>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellSnapin.GetConnectionContext.ConfigureSmtpRoutingHint(System.UriBuilder,System.String)">
+            <summary>
+            Configure smtp routing hint if necessary. 
+            </summary>
+            <param name="uriBuilder">Uri builder.</param>
+            <param name="routingHint">Routing hint to append.</param>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellSnapin.GetConnectionContext.SetClientEnvData(Microsoft.Exchange.Management.ExoPowershellSnapin.ConnectionContext)">
+            <summary>
+            Set client's environment data in ConnectionContext
+            </summary>
+            <param name="connectionContext">ConnectionContext object</param>
+        </member>
+        <member name="T:Microsoft.Exchange.Management.ExoPowershellSnapin.GetConnectionInformation">
+            <summary>
+            Cmdlet class for getting rest connection information
+            </summary>
+        </member>
+        <member name="F:Microsoft.Exchange.Management.ExoPowershellSnapin.GetConnectionInformation.DefaultParameterSet">
+            <summary>
+            Default Parameter Set string
+            </summary>
+        </member>
+        <member name="F:Microsoft.Exchange.Management.ExoPowershellSnapin.GetConnectionInformation.ConnectionIdParameterSet">
+            <summary>
+            ConnectionId Parameter Set string
+            </summary>
+        </member>
+        <member name="F:Microsoft.Exchange.Management.ExoPowershellSnapin.GetConnectionInformation.ModulePrefixParameterSet">
+            <summary>
+            ModulePrefix Parameter Set string
+            </summary>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellSnapin.GetConnectionInformation.WriteObject(System.Object)">
+            <summary>
+            WriteObject Method.
+            This API overide base (PsCmdlet) class method and make it virtual, so Unit Test can mock this method.
+            </summary>
+            <param name="sendToPipeline">Object Record </param>
+        </member>
+        <member name="F:Microsoft.Exchange.Management.ExoPowershellSnapin.GetConnectionInformation.cmdletId">
+            <summary>
+            Unique guid for this cmdlet execution
+            </summary>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellSnapin.GetConnectionInformation.GetRequestEndpointUri(Microsoft.Exchange.Management.ExoPowershellSnapin.ConnectionContext,System.String)">
+            <summary>
+            Get the endpoint Uri 
+            </summary>
+            <param name="connectionContext">connectionContext param</param>
+            <param name="tenantId">Current tenant ID from Connection Context</param>
+            <returns>Request endpoint Uri</returns>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.ExoPowershellSnapin.GetConnectionInformation.ConnectionId">
+            <summary>
+            Array of ConnectionIds of the connections
+            The ConnectionID is a GUID that uniquely identifies a connection in the current connections
+            The ConnectionID is unique, even when you have multiple connections running on a single computer.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.ExoPowershellSnapin.GetConnectionInformation.ModulePrefix">
+            <summary>
+            Array of ModulePrefixes of the connections
+            </summary>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellSnapin.GetConnectionInformation.GetPingStatus(Microsoft.Exchange.Management.ExoPowershellSnapin.ConnectionContext)">
+            <summary>
+            Returns whether an active connection exists to the server.
+            </summary>
+            <param name="connectionContext">Connection context param</param>
+            <returns>True of active connection exists, false otherwise.</returns>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellSnapin.GetConnectionInformation.ShouldReturnConnectionInformation(Microsoft.Exchange.Management.ExoPowershellSnapin.ConnectionContext,System.String)">
+            <summary>
+            Validate the given connection context with the passed parameters 
+            and check if we need to return ConnectionInformation object for this given connection context.
+            If any of the parameter is passed, then the connection context is validated against it.
+            </summary>
+            <param name="connection">Connection context object</param>
+            <param name="parameterSetName">Parameter Set Name</param>
+            <returns>True if 1) No parameter is passed 2) ConnectionContext matches one of the given parameter</returns>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellSnapin.GetConnectionInformation.ProcessRecord">
+            <summary>
+            ProcessRecord for this cmdlet.
+            </summary>
+        </member>
+        <member name="T:Microsoft.Exchange.Management.ExoPowershellSnapin.GetEXOBanner">
+            <summary>
+            Cmdlet class for getting banner text
+            </summary>
+        </member>
+        <member name="F:Microsoft.Exchange.Management.ExoPowershellSnapin.GetEXOBanner.EXOBannerEndpointName">
+            <summary>
+            Constant for the endpoint name
+            </summary>
+        </member>
+        <member name="F:Microsoft.Exchange.Management.ExoPowershellSnapin.GetEXOBanner.RPSSession">
+            <summary>
+            RPS session key
+            </summary>
+        </member>
+        <member name="F:Microsoft.Exchange.Management.ExoPowershellSnapin.GetEXOBanner.AutogenSession">
+            <summary>
+            Autogen session key
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.ExoPowershellSnapin.GetEXOBanner.IsRPSSession">
+            <summary>
+            If the session is RPS or autogen
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.ExoPowershellSnapin.GetEXOBanner.ConnectionContext">
+            <summary>
+            Connection context for deriving uri and other details
+            </summary>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellSnapin.GetEXOBanner.GetRequestEndpointUri(System.String,System.String)">
+            <summary>
+            Get the endpoint Uri 
+            </summary>
+            <param name="tenantId">Current tenant ID from Connection Context</param>
+            <param name="currentSessionType">Current session type key: RPS or autogen</param>
+            <returns>Request endpoint Uri</returns>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellSnapin.GetEXOBanner.ProcessRecord">
+            <summary>
+            ProcessRecord for this cmdlet. It makes a server call to get the banner content
+            </summary>
+        </member>
+        <member name="T:Microsoft.Exchange.Management.ExoPowershellSnapin.GetHelpFiles">
+            <summary>
+            Get-HelpFile class
+            </summary>
+        </member>
+        <member name="F:Microsoft.Exchange.Management.ExoPowershellSnapin.GetHelpFiles.ExoHelpFileEndPointName">
+            <summary>
+            EndPoint Name for getting help files
+            </summary>
+        </member>
+        <member name="F:Microsoft.Exchange.Management.ExoPowershellSnapin.GetHelpFiles.ExoHelpFileNameNodeString">
+            <summary>
+            File Name tag name in the response header of the EXOHelpFile call.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Exchange.Management.ExoPowershellSnapin.GetHelpFiles.ExoHelpFileContentNodeString">
+            <summary>
+            File Content tag name in the response header of the EXOHelpFile call.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Exchange.Management.ExoPowershellSnapin.GetHelpFiles.ExoHelpFileNamesRequestHeader">
+            <summary>
+            Help file names request header
+            </summary>
+        </member>
+        <member name="F:Microsoft.Exchange.Management.ExoPowershellSnapin.GetHelpFiles.ExoHelpFilesFolderName">
+            <summary>
+            ExoHelpFiles FolderName
+            </summary>
+        </member>
+        <member name="F:Microsoft.Exchange.Management.ExoPowershellSnapin.GetHelpFiles.cmdletId">
+            <summary>
+            Unique guid for this cmdlet execution
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.ExoPowershellSnapin.GetHelpFiles.HelpFileNames">
+            <summary>
+            List of help Files 
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.ExoPowershellSnapin.GetHelpFiles.ImportedModule">
+            <summary>
+            The path where the files would be written to
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.ExoPowershellSnapin.GetHelpFiles.EnableErrorReporting">
+            <summary>
+            Whether wrapper module would be created or not.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.ExoPowershellSnapin.GetHelpFiles.ConnectionContext">
+            <summary>
+            Connection context for deriving uri and other details
+            </summary>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellSnapin.GetHelpFiles.BeginProcessing">
+            <summary>
+            BeginProcessing for this cmdlet
+            </summary>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellSnapin.GetHelpFiles.ProcessRecord">
+            <summary>
+            ProcessRecord for this cmdlet, It get all the help files and write it on the output path.
+            This internally makes a server side call to fetch all the mentioned help files.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellSnapin.GetHelpFiles.CreateJunctionDirLink(System.String,System.String)">
+            <summary>
+            Creates a new junction link for the directory
+            </summary>
+            <param name="pathForHelpFiles">PowerShell Data module full path</param>
+            <param name="pathWhereJunctionLinkNeedsToBeCreated">Name of the data file</param>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellSnapin.GetHelpFiles.GetRequestEndpointUri(System.String)">
+            <summary>
+            Get the endpoint Uri 
+            </summary>
+            <param name="tenantId">Current tenant ID from Connection Context</param>
+            <returns>Request endpoint Uri</returns>
+        </member>
+        <member name="T:Microsoft.Exchange.Management.ExoPowershellSnapin.NewEXOModule">
+            <summary>
+            New Cmdlet for downloading, importing and managing class for the new EXO Auto Generated module.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Exchange.Management.ExoPowershellSnapin.NewEXOModule.NewEXOModuleEndpointName">
+            <summary>
+            Constant for the endpoint name
+            </summary>
+        </member>
+        <member name="F:Microsoft.Exchange.Management.ExoPowershellSnapin.NewEXOModule.NewEXOModulePrefixName">
+            <summary>
+            Constant prefix for the new module name.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Exchange.Management.ExoPowershellSnapin.NewEXOModule.NewEXOModuleExtensionName">
+            <summary>
+            Constant extension for the new module.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Exchange.Management.ExoPowershellSnapin.NewEXOModule.NewEXOModuleDataExtensionName">
+            <summary>
+            Constant Module Data extension for the new module.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Exchange.Management.ExoPowershellSnapin.NewEXOModule.FormatFileExtensionName">
+            <summary>
+            Constant format file extension for the new module.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Exchange.Management.ExoPowershellSnapin.NewEXOModule.NewEXOModuleFileNameNodeString">
+            <summary>
+            File Name tag name in the response header of the NewEXOModule call.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Exchange.Management.ExoPowershellSnapin.NewEXOModule.NewEXOModuleFileContentNodeString">
+            <summary>
+            File Content tag name in the response header of the NewEXOModule call.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Exchange.Management.ExoPowershellSnapin.NewEXOModule.NewEXOModuleExportedCmdletsNodeString">
+            <summary>
+            File Content tag name in the response header of the NewEXOModule call.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Exchange.Management.ExoPowershellSnapin.NewEXOModule.NewEXOModuleCommandName">
+            <summary>
+            CommandName header
+            </summary>
+        </member>
+        <member name="F:Microsoft.Exchange.Management.ExoPowershellSnapin.NewEXOModule.SkipLoadingFormatDataKey">
+            <summary>
+            SkipLoadingFormatData header
+            </summary>
+        </member>
+        <member name="F:Microsoft.Exchange.Management.ExoPowershellSnapin.NewEXOModule.LoadLocalModuleKey">
+            <summary>
+            X-LoadLocalModule request header
+            </summary>
+        </member>
+        <member name="F:Microsoft.Exchange.Management.ExoPowershellSnapin.NewEXOModule.InitializeConnectionContextObjectIdDynamicKey">
+            <summary>
+            X-InitializeConnectionContextObjectIdDynamic request header
+            </summary>
+        </member>
+        <member name="F:Microsoft.Exchange.Management.ExoPowershellSnapin.NewEXOModule.ClientConfigurationsKey">
+            <summary>
+            X-ClientConfigurations response header
+            </summary>
+        </member>
+        <member name="F:Microsoft.Exchange.Management.ExoPowershellSnapin.NewEXOModule.ShouldLoadLocalModuleConfigurationKey">
+            <summary>
+            ShouldLoadLocalModule Configuration key in X-ClientConfigurations response header
+            </summary>
+        </member>
+        <member name="F:Microsoft.Exchange.Management.ExoPowershellSnapin.NewEXOModule.InitializeConnectionContextObjectIdDynamicConfigurationKey">
+            <summary>
+            InitializeConnectionContextObjectIdDynamic Configuration key in X-ClientConfigurations response header
+            </summary>
+        </member>
+        <member name="F:Microsoft.Exchange.Management.ExoPowershellSnapin.NewEXOModule.UnAuthorizedExceptionMessage">
+            <summary>
+            UnAuthorized Exception Message
+            </summary>
+        </member>
+        <member name="F:Microsoft.Exchange.Management.ExoPowershellSnapin.NewEXOModule.MaxRetries">
+            <summary>
+            Maximum number of retries that happen while getting exo module if needed.
+            Currently we do retry only in case of CAE errors.
+            This is in addition to original request.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Exchange.Management.ExoPowershellSnapin.NewEXOModule.cmdletId">
+            <summary>
+            Unique guid for this cmdlet execution
+            </summary>
+        </member>
+        <member name="T:Microsoft.Exchange.Management.ExoPowershellSnapin.NewEXOModule.CtrlType">
+            <summary>
+            enum for different events
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.ExoPowershellSnapin.NewEXOModule.ConnectionContext">
+            <summary>
+            Connection Context object against which the EXOModule needs to be downloaded
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.ExoPowershellSnapin.NewEXOModule.SkipLoadingFormatData">
+            <summary>
+            SkipLoadingFormatData patameter to avoid loading format data in current shell
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.ExoPowershellSnapin.NewEXOModule.LocalModulePath">
+            <summary>
+            Gets or sets the local module path
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.ExoPowershellSnapin.NewEXOModule.SigningCertificate">
+            <summary>
+            Client certificate to be used for signing the temp module
+            </summary>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellSnapin.NewEXOModule.GetRequestEndpointUri(System.String,System.String,System.String)">
+            <summary>
+            Get the endpoint Uri 
+            </summary>
+            <param name="tenantId">Current tenant ID from Connection Context</param>
+            <param name="exoModuleVersion">The new exo module version</param>
+            <param name="newEXOModuleBaseUri">The new exo module base uri</param>
+            <returns>Request endpoint Uri</returns>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellSnapin.NewEXOModule.GetNewModuleFileName(System.String)">
+            <summary>
+            Returns the module file name with extension.
+            input : abc
+            output : abc.psm1
+            </summary>
+            <param name="moduleName">Module name to consider</param>
+            <returns>Module name with extension</returns>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellSnapin.NewEXOModule.GetNewModuleDataFileName(System.String)">
+            <summary>
+            Returns the module file name with extension.
+            input : abc
+            output : abc.psd1
+            </summary>
+            <param name="moduleName">Module name to consider</param>
+            <returns>Module data name with extension</returns>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellSnapin.NewEXOModule.GetNewModuleName">
+            <summary>
+            Returns a new module name for the downloaded module.
+            eg. tmpEXO_d35dasab.q3y
+            </summary>
+            <returns>New name for the module</returns>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellSnapin.NewEXOModule.GetNewModuleFolderPath(System.String)">
+            <summary>
+            Gets the folder path to store the downloaded module.
+            </summary>
+            <param name="moduleName">Module name</param>
+            <returns>The full folder path to module</returns>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellSnapin.NewEXOModule.GetHttpRequest(Microsoft.Exchange.Management.ExoPowershellSnapin.AuthHeader)">
+            <summary>
+            Get the Http request
+            </summary>
+            <param name="authHeader">AuthHeader object</param>
+            <returns>HttpRequestMessage for the current endpoint</returns>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellSnapin.NewEXOModule.BeginProcessing">
+            <summary>
+            BeginProcessing for this cmdlet
+            </summary>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellSnapin.NewEXOModule.EndProcessing">
+            <summary>
+            EndProcessing for this cmdlet
+            </summary>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellSnapin.NewEXOModule.ProcessRecord">
+            <summary>
+            Core functionality of the cmdlet to download/import/manage the new EXOModule
+            </summary>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellSnapin.NewEXOModule.CheckResponseHeadersAndGetNewTokenIfNeeded(Microsoft.Exchange.Management.AdminApiProvider.Authentication.ITokenProvider,System.Net.Http.Headers.HttpResponseHeaders,System.String,System.String,Microsoft.Exchange.Management.ExoPowershellSnapin.AuthHeader@,System.Boolean@,System.String)">
+            <summary>
+            Checks the response headers and see if claims value is returned in one of the WWW-Authenticate header.
+            If found then uses it to get new token and also enables retry.
+            </summary>
+            <param name="tokenProvider">Token provider</param>
+            <param name="responseHeaders">Response headers received</param>
+            <param name="errorMessage">Error message to be used in case of throwing UnAuthorized exception</param>
+            <param name="cmdletId">The cmdlet Id to be used when logging from TokenProvider</param>
+            <param name="authHeader">Authentication header</param>
+            <param name="isRetryHappening">True if retry needs to happen</param>
+            <param name="connectionUri">Connection URI string</param>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellSnapin.NewEXOModule.GetShouldLoadLocalModuleValue(System.String,System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            Gets the value of shouldLoadLocalModule which decides whether we want to use the server response or the local content to create the tmp module.
+            </summary>
+            <param name="localModulePath">Path to the local module</param>
+            <param name="clientConfigurations">List of client configurations from response headers</param>
+            <returns>
+            True if all the below conditions are met:
+            1. LocalModulePath is not null or empty
+            2. ClientConfigurations contains the ShouldLoadLocalModule key
+            </returns>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellSnapin.NewEXOModule.GetConfigurationValueFromClientConfigurations(System.String,System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            Gets the value of configuration from the ClientConfigurations
+            </summary>
+            <param name="configurationKey">Configuration key to search</param>
+            <param name="clientConfigurations">ClientsConfiguration dictionary</param>
+            <returns>True if
+            1. Key in the ClientsConfiguration dictionary
+            2. Value of the key in the ClientsConfiguration dictionary is true
+            </returns>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellSnapin.NewEXOModule.GetClientConfigurationsHeaderValue(System.Net.Http.Headers.HttpResponseHeaders)">
+            <summary>
+            Get the list of client configurations which are sent from the server in response headers.
+            </summary>
+            <param name="responseHeaders">Response headers received</param>
+            <returns>List of client configuration received in response headers</returns>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellSnapin.NewEXOModule.ConvertClientConfigurationValueToDictionary(System.String)">
+            <summary>
+            Converts a comma separated string into a dictionary. The string should be of the form "a=b,c=d,e=f"
+            </summary>
+            <param name="configurationValue">Client Configuration string</param>
+            <returns>List of client configuration</returns>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellSnapin.NewEXOModule.SignModuleFiles(System.String,System.Security.Cryptography.X509Certificates.X509Certificate2)">
+            <summary>
+            Sign the module files with the given certificate.
+            This is similar to what Import-PSSession does to sign the module with given certificate if the execution policy is set to Restricted or AllSigned.
+            Import-PSSession calls SignatureHelper.SignFile but we cannot call this method since that is an internal method in Management.Automation library
+            We are instead calling Set-AuthenticodeSignature which also internally calls SignatureHelper.SignFile. However, to be at parity with RPS, we are not passing IncludeChain and HashAlgorithm parameter
+            so that the default signing option and hash algorithm is chosen. Only difference is that Set-AuthenticodeSignature uses SHA256 in PS7 by default and Import-PSSession uses SHA1. 
+            References:
+            https://github.com/PowerShell/PowerShell/blob/69e9b439fd38177ff7f3af1ef62f5617454bcf23/src/Microsoft.PowerShell.Commands.Utility/commands/utility/ImplicitRemotingCommands.cs#L3085
+            https://github.com/PowerShell/PowerShell/blob/93e9c63331f34af6c535654e585ace99ab36d28f/src/Microsoft.PowerShell.Security/security/SignatureCommands.cs#L308
+            https://github.com/PowerShell/PowerShell/blob/d8f8f0a8bcbadb357f9eaafbb797278ebe07d7cc/src/System.Management.Automation/security/Authenticode.cs#L93
+            </summary>
+            <param name="newModuleFolderPath">Path where the tmp module is created</param>
+            <param name="certificate">Certificate object</param>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellSnapin.NewEXOModule.ImportModule(System.String)">
+            <summary>
+            Run the import-module on the newly created module
+            </summary>
+            <param name="newModuleFolderPath">Folder path for the newly module</param>
+            <returns>The Imported module object</returns>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellSnapin.NewEXOModule.CreateModuleDataFile(System.String,System.String,System.String,System.String[])">
+            <summary>
+            Creates a new PowerShell Data file at moduleDateFileFullPath
+            </summary>
+            <param name="dataFileFullPath">PowerShell Data module full path</param>
+            <param name="newModuleFileFullPath">Name of the data file</param>
+            <param name="exportedCmdletList">The list of cmdlets to export from this module</param>
+            <param name="formatDataFullPath">format data file path</param>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellSnapin.NewEXOModule.UpdateModuleContentWithLocalModuleData(System.String,System.String,System.String)">
+            <summary>
+            Update the new module content with the local module data
+            </summary>
+            <param name="newModuleFolderPath">Folder path for the newly created module</param>
+            <param name="localModulePath">Folder path to local module</param>
+            <param name="newModuleDataFileFullPath">New Module Data file full path</param>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellSnapin.NewEXOModule.ValidateLocalModulePath(System.String)">
+            <summary>
+            Validate if
+            1. Folder provided in the path exists and we have read access to the folder.
+            2. The folder contains only one psd1, one psm1 and one format.ps1xml file and nothing else.
+            For now, having a ps1xml is a requirement as if the signed local psd1 has reference to a formats file and it does not exist, the import will fail.
+            </summary>
+            <param name="localModulePath">Path to the local module</param>
+        </member>
+        <member name="T:Microsoft.Exchange.Management.ExoPowershellSnapin.NewExoPSSession">
+            <summary>
+            New-ExoPSSession: New Exchange Online Powershell Session
+            </summary>
+        </member>
+        <member name="F:Microsoft.Exchange.Management.ExoPowershellSnapin.NewExoPSSession.SessionPrefixName">
+            <summary>
+            Session PrefixName
+            </summary>
+        </member>
+        <member name="F:Microsoft.Exchange.Management.ExoPowershellSnapin.NewExoPSSession.TokenProviderKeyName">
+            <summary>
+            Token Provider key string to use to set the member variable in the PSSession 
+            </summary>
+        </member>
+        <member name="F:Microsoft.Exchange.Management.ExoPowershellSnapin.NewExoPSSession.ConnectionUriKeyName">
+            <summary>
+            ConnectionUri key string to use to set the member variable in the PSSession 
+            </summary>
+        </member>
+        <member name="F:Microsoft.Exchange.Management.ExoPowershellSnapin.NewExoPSSession.PSSessionOptionKeyName">
+            <summary>
+            PSSessionOption key string to use to set the member variable in the PSSession 
+            </summary>
+        </member>
+        <member name="F:Microsoft.Exchange.Management.ExoPowershellSnapin.NewExoPSSession.TokenExpiryTimeKeyName">
+            <summary>
+            RPSTokenExpiryTime key string to use to set the member variable in the PSSession 
+            </summary>
+        </member>
+        <member name="F:Microsoft.Exchange.Management.ExoPowershellSnapin.NewExoPSSession.ConnectionContextKeyName">
+            <summary>
+            ConnectionContext key string to use to set the member variable in the PSSession 
+            </summary>
+        </member>
+        <member name="F:Microsoft.Exchange.Management.ExoPowershellSnapin.NewExoPSSession.sessionCounter">
+            <summary>
+            session Counter
+            </summary>
+        </member>
+        <member name="F:Microsoft.Exchange.Management.ExoPowershellSnapin.NewExoPSSession.consoleLogger">
+            <summary>
+            Console Logger instance
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.ExoPowershellSnapin.NewExoPSSession.PreviousSession">
+            <summary>
+            The TokenProvider parameter
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.ExoPowershellSnapin.NewExoPSSession.ConnectionContext">
+            <summary>
+            The TokenProvider parameter
+            </summary>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellSnapin.NewExoPSSession.BeginProcessing">
+            <summary>
+            BeginProcessing for this cmdlet
+            </summary>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellSnapin.NewExoPSSession.ProcessRecord">
+            <summary>
+            ProcessRecord for this cmdlet
+            </summary>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellSnapin.NewExoPSSession.EndProcessing">
+            <summary>
+            EndProcessing for this cmdlet
+            </summary>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellSnapin.NewExoPSSession.GetTokenValidationHttpRequest(Microsoft.Exchange.Management.AdminApiProvider.Authentication.TokenInformation,Microsoft.Exchange.Management.ExoPowershellSnapin.ConnectionContext)">
+            <summary>
+            Get the Http request to calls into Admin Api beta metadata endpoint.
+            This request will be used to validate if token is valid or we need to get a new one from AAD.
+            </summary>
+            <param name="tokenInfo">Token information object</param>
+            <param name="connectionContext">Connection Context</param>
+            <returns>HttpRequestMessage for the current endpoint</returns>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellSnapin.NewExoPSSession.GetMemberValueFromPreviousSession(System.String)">
+            <summary>
+            Retrieves the member set in the session PSObject for a given member key.
+            </summary>
+            <param name="memberKey">Key of the member to be retrieved</param>
+            <returns>Member object set in the PSSession PSObject</returns>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellSnapin.NewExoPSSession.ProcessReconnection">
+            <summary>
+            Handle the reconnection flow here
+            </summary>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellSnapin.NewExoPSSession.GetPowershellCredentials(Microsoft.Exchange.Management.AdminApiProvider.Authentication.TokenInformation)">
+            <summary>
+            Create and return Powershell credentials that can be used for creating powershell connection
+            </summary>
+            <param name="tokenInfo">TokenInformation object</param>
+            <returns>Powershell credentials</returns> 
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellSnapin.NewExoPSSession.ValidateAndGetNewTokenIfNeeded(Microsoft.Exchange.Management.AdminApiProvider.Authentication.ITokenProvider,Microsoft.Exchange.Management.AdminApiProvider.Authentication.TokenInformation,Microsoft.Exchange.Management.ExoPowershellSnapin.ConnectionContext)">
+            <summary>
+            Validates the token by using it to call into Admin Api. Also creates a new token if needed.
+            </summary>
+            <param name="tokenProvider">Token provider</param>
+            <param name="tokenInfo">Token information object</param>
+            <param name="connectionContext">Connection context</param>
+            <returns>Valid Token information object</returns> 
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellSnapin.NewExoPSSession.ValidateTokenAndExtractClaimsIfInvalid(Microsoft.Exchange.Management.AdminApiProvider.Authentication.TokenInformation,Microsoft.Exchange.Management.ExoPowershellSnapin.ConnectionContext)">
+            <summary>
+            Validate Token by calling into Admin api and extract claims value if it returns in response header.
+            Claims value if returned will be used later to get new token. Returns empty string if token is valid.
+            </summary>
+            <param name="tokenInfo">Token information object</param>
+            <param name="connectionContext">ConnectionContext instance</param>
+            <returns>claims vaue if returned by the admin api</returns> 
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellSnapin.NewExoPSSession.CustomizeAndWritePsSessionObject(System.Collections.ObjectModel.Collection{System.Management.Automation.PSObject},Microsoft.Exchange.Management.AdminApiProvider.Authentication.ITokenProvider,System.String,System.Management.Automation.Remoting.PSSessionOption,System.Nullable{System.DateTimeOffset},Microsoft.Exchange.Management.ExoPowershellSnapin.ConnectionContext)">
+            <summary>
+            Customize and write the PSSession object at 0 index from the given collection to the console.
+            This method will throw an exception if the psSession collection is empty/null.
+            </summary>
+            <param name="psSessions">Collection containing the pssession</param>
+            <param name="tokenProvider">Token provider instance</param>
+            <param name="connectUri">ConnectUri associated</param>
+            <param name="psSessionOption">Any PSSessionOption if any</param>
+            <param name="tokenExpiryTime">Expiry for OAuth token</param>
+            <param name="connectionContext">ConnectionContext instance</param>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellSnapin.NewExoPSSession.ProcessNewConnection">
+            <summary>
+            ProcessRecord for this cmdlet
+            </summary>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellSnapin.NewExoPSSession.SetSessionVariables(System.Management.Automation.PSMemberInfoCollection{System.Management.Automation.PSMemberInfo},Microsoft.Exchange.Management.AdminApiProvider.Authentication.ITokenProvider,System.String,System.Management.Automation.Remoting.PSSessionOption,System.Nullable{System.DateTimeOffset},Microsoft.Exchange.Management.ExoPowershellSnapin.ConnectionContext)">
+            <summary>
+            Set the session variables on the current session object.
+            These variables would be used during the next reconnection for the current session.
+            </summary>
+            <param name="members">PSMemberInfoCollection for the session object</param>
+            <param name="tokenProvider">Token provider associated</param>
+            <param name="connectUri">Connection Uri used in the New-PSSession call</param>
+            <param name="psSessionOption">PsSessionOption if passed in the New-PSSession call</param>
+            <param name="tokenExpiryTime">Expiry for OAuth token</param>
+            <param name="connectionContext">ConnectionContext instance</param>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellSnapin.NewExoPSSession.HandleError(System.Management.Automation.PSDataCollection{System.Management.Automation.ErrorRecord})">
+            <summary>
+            Write any custom message in the cmdlet streams to help along with the error record.
+            </summary>
+            <param name="errors">Errors collection</param>
+        </member>
+        <member name="T:Microsoft.Exchange.Management.ExoPowershellSnapin.NewExoPSSessionUtils">
+            <summary>
+            NewExoPSSessionUtils class
+            </summary>
+        </member>
+        <member name="F:Microsoft.Exchange.Management.ExoPowershellSnapin.NewExoPSSessionUtils.instance">
+            <summary>
+            NewExoPSSessionUtils Instance.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.ExoPowershellSnapin.NewExoPSSessionUtils.Instance">
+            <summary>
+            NewExoPSSessionUtils Instance.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellSnapin.NewExoPSSessionUtils.ComposeWebRequestForEop(System.String,Microsoft.Exchange.Management.AdminApiProvider.Authentication.TokenInformation)">
+            <summary>
+            Compose the web request to get redirect url for eop linux users
+            </summary>
+            <param name="psConnectionUri">Connection Uri used in the New-PSSession call</param>
+            <param name="tokenInformation">The tokenInformation</param>
+            <returns>The http web request</returns> 
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellSnapin.NewExoPSSessionUtils.TryGetRedirectUriForEop(System.String,Microsoft.Exchange.Management.AdminApiProvider.Authentication.TokenInformation,System.String@)">
+            <summary>
+            Get Redirection url for EopConnectionUri
+            This function is only used for linux users as redirection works as excepted for windows users
+            </summary>
+            <param name="psConnectionUri">Connection Uri used in the New-PSSession call</param>
+            <param name="tokenInformation">The tokenInformation</param>
+            <param name="redirectionUrl">The redirectionUrl</param>
+            <returns>claims vaue if returned by the admin api</returns> 
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellSnapin.NewExoPSSessionUtils.GetPowerShellConnectionUri(Microsoft.Exchange.Management.ExoPowershellSnapin.ConnectionContext)">
+            <summary>
+            Get Redirection url for EopConnectionUri
+            This function is only used for linux users as redirection works as excepted for windows users
+            </summary>
+            <param name="connectionContext">The connection context</param>
+            <returns>powershell connection uri</returns> 
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellSnapin.NewExoPSSessionUtils.IsWindows">
+            <summary>
+            True if it is windows, set it to virtual so we can override it for unittest.
+            </summary>
+            <returns>true or false</returns> 
+        </member>
+        <member name="T:Microsoft.Exchange.Management.ExoPowershellSnapin.PowerShellUtils">
+            <summary>
+            The Utility class to host any powershell specific utility methods.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellSnapin.PowerShellUtils.ExecutePsCommand(System.Management.Automation.PSCommand,System.Action{System.Management.Automation.PSDataCollection{System.Management.Automation.ErrorRecord}})">
+            <summary>
+            Executes a given command into the current runspace
+            </summary>
+            <param name="command">PSCommand instance to execute</param>
+            <param name="onError">Action lambda to call in case of error</param>
+            <returns>Collection of PSObject which are output of the PSCommand</returns>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellSnapin.PowerShellUtils.ToSecureString(System.String)">
+            <summary>
+            Returns a Secure string from the source string
+            </summary>
+            <param name="source">String to convert into SecureString type</param>
+            <returns>SecureString for given input string</returns>
+        </member>
+        <member name="T:Microsoft.Exchange.Management.ExoPowershellSnapin.TestActiveToken">
+            <summary>
+            Test-ActiveToken : Tests whether the token's expiry time is well within the offset limits
+            </summary>
+        </member>
+        <member name="T:Microsoft.Exchange.Management.ExoPowershellSnapin.TestActiveToken.TokenOverrideState">
+            <summary>
+            Token override states to trigger various token expiry scenarios.
+            These TokenOverrideState is added as a test hook to mimic various reconnection scenarios.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Exchange.Management.ExoPowershellSnapin.TestActiveToken.TokenOverrideState.Valid">
+            <summary>
+            Override state Valid, to map the cmdlet call Test-ActiveToken call to return true.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Exchange.Management.ExoPowershellSnapin.TestActiveToken.TokenOverrideState.Invalid">
+            <summary>
+            Override state Invalid, to map the cmdlet call Test-ActiveToken call to return false.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.ExoPowershellSnapin.TestActiveToken.OverrideStates">
+            <summary>
+            Test Hook to trigger the token expiry scenario.
+            This list controls the next cmdlet invoke(s) to Test-ActiveToken
+            based on what values are set in this list the next
+            cmdlet call(s) would return true/false.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.ExoPowershellSnapin.TestActiveToken.TokenExpiryTime">
+            <summary>
+            The TokenExpiryTime parameter
+            </summary>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellSnapin.TestActiveToken.CheckIfTokenActive">
+            <summary>
+            This function is used to check if the token is still valid.
+            </summary>
+            <returns>Returns true if token is valid within offset, else returns false</returns>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellSnapin.TestActiveToken.ProcessRecord">
+            <summary>
+            ProcessRecord for this cmdlet
+            </summary>
+        </member>
+        <member name="T:Microsoft.Exchange.Management.ExoPowershellSnapin.HttpUtilities">
+            <summary>
+            The Utility class to work with http instances and zipping
+            </summary>
+        </member>
+        <member name="F:Microsoft.Exchange.Management.ExoPowershellSnapin.HttpUtilities.IpUrlSubString">
+            <summary>
+            IpUrlSubString param
+            </summary>
+        </member>
+        <member name="F:Microsoft.Exchange.Management.ExoPowershellSnapin.HttpUtilities.HttpClient">
+            <summary>
+            Gets the http client for getting the new exo module.
+            The MaxConnectionsPerServer is set to increase the concurrent Http connection limit
+            for the HttpClient. Each usage of this HttpClient instance interferes with the Http connection
+            limit set in ServicePointManager which is used by the Get-EXO* cmdlets for multithreading, and
+            resets the value to the default value of 2. Hence increasing the http connection limit of this
+            instance to ensure the limit is not reduced due to any interference/overriding.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellSnapin.HttpUtilities.GetHttpClient">
+            <summary>
+            Returns the static instance of httpClient
+            </summary>
+            <returns>Returns http client instance</returns>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellSnapin.HttpUtilities.IsEOPConnectionUri(System.String)">
+            <summary>
+            Validates if the connectionUri is for EOP endpoint
+            </summary>
+            <param name="connectionUri">Connection Uri for the current connection</param>
+            <returns>true if the connectionUri is for EOP endpoint</returns>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellSnapin.HttpUtilities.UnzipAndDecompressHttpResponse(System.Net.Http.HttpResponseMessage)">
+            <summary>
+            base64decode and unzip
+            </summary>
+            <param name="response">http response </param>
+            <returns>base64 decoded unzipped string</returns>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellSnapin.HttpUtilities.TryGetRedirectUriForEop(System.Net.Http.HttpResponseMessage,System.String,System.String@)">
+            <summary>
+            Get Redirection url for EopConnectionUri
+            </summary>
+            <param name="httpResponseMessage">The httpResponseMessage</param>
+            <param name="connectionUri">The connection uri</param>
+            <param name="redirectUri">The redirect uri</param>
+            <returns>Redirect uri if returned if it does exist</returns> 
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellSnapin.HttpUtilities.AppendServiceTagInConnectionUri(System.String,System.String)">
+            <summary>
+            Append service tag in connection uri for eop
+            </summary>
+            <param name="prefix">The service tag prefix</param>
+            <param name="connectionUri">The connection uri</param>
+            <returns>Returns updated connection uri</returns>
+        </member>
+        <member name="T:Microsoft.Exchange.Management.ExoPowershellSnapin.HttpUtilities.HTTPConstants">
+            <summary>
+            HttpConstants class
+            </summary>
+        </member>
+        <member name="F:Microsoft.Exchange.Management.ExoPowershellSnapin.HttpUtilities.HTTPConstants.AcceptEncoding">
+            <summary>
+            AcceptEncoding constant
+            </summary>
+        </member>
+        <member name="F:Microsoft.Exchange.Management.ExoPowershellSnapin.HttpUtilities.HTTPConstants.ContentEncoding">
+            <summary>
+            ContentEncoding Constant
+            </summary>
+        </member>
+        <member name="F:Microsoft.Exchange.Management.ExoPowershellSnapin.HttpUtilities.HTTPConstants.ClientProcessIdHeader">
+            <summary>
+            ClientProcessId Header
+            </summary>
+        </member>
+        <member name="F:Microsoft.Exchange.Management.ExoPowershellSnapin.HttpUtilities.HTTPConstants.ConnectionIdHeader">
+            <summary>
+            ConnectionId Header
+            </summary>
+        </member>
+        <member name="F:Microsoft.Exchange.Management.ExoPowershellSnapin.HttpUtilities.HTTPConstants.ClientRequestIdHeader">
+            <summary>
+            ClientRequestId header
+            </summary>
+        </member>
+        <member name="F:Microsoft.Exchange.Management.ExoPowershellSnapin.HttpUtilities.HTTPConstants.EXOModuleVersionHeader">
+            <summary>
+            EXOModuleVersion Header
+            </summary>
+        </member>
+        <member name="F:Microsoft.Exchange.Management.ExoPowershellSnapin.HttpUtilities.HTTPConstants.IsCloudShellEnvironmentHeader">
+            <summary>
+            IsCloudShellEnvironment Header
+            </summary>
+        </member>
+        <member name="F:Microsoft.Exchange.Management.ExoPowershellSnapin.HttpUtilities.HTTPConstants.GZipEncoding">
+            <summary>
+            GZipEncoding constants
+            </summary>
+        </member>
+        <member name="F:Microsoft.Exchange.Management.ExoPowershellSnapin.HttpUtilities.HTTPConstants.OsVersionHeader">
+            <summary>
+            OsVersion Header
+            </summary>
+        </member>
+        <member name="F:Microsoft.Exchange.Management.ExoPowershellSnapin.HttpUtilities.HTTPConstants.PSVersionHeader">
+            <summary>
+            PSVersion Header 
+            </summary>
+        </member>
+        <member name="F:Microsoft.Exchange.Management.ExoPowershellSnapin.HttpUtilities.HTTPConstants.DiagnosticsHeader">
+            <summary>
+            Header to add any diagnostic information to be logged by the service
+            </summary>
+        </member>
+        <member name="F:Microsoft.Exchange.Management.ExoPowershellSnapin.HttpUtilities.HTTPConstants.AcceptLanguage">
+            <summary>
+            AcceptLanguage Header
+            </summary>
+        </member>
+        <member name="T:Microsoft.Exchange.Management.ExoPowershellModule.Telemetry.AddEXOClientTelemetryWrapper">
+            <summary>
+            <para type="synopsis">Generate telemetry wrappers for Exchange cmdlets. </para>
+            <para type="description">Telemetry includes command execution latency, bytes transfered, errors. </para>
+            </summary>
+        </member>
+        <member name="F:Microsoft.Exchange.Management.ExoPowershellModule.Telemetry.AddEXOClientTelemetryWrapper.EXOCmdletsWrapperFolderName">
+            <summary>
+            Exo Cmdlet Wrapper Folder name
+            </summary>
+        </member>
+        <member name="F:Microsoft.Exchange.Management.ExoPowershellModule.Telemetry.AddEXOClientTelemetryWrapper.defaultLogDirectoryPath">
+            <summary>
+            Default Log directory for the EXO cmdlets
+            </summary>
+        </member>
+        <member name="F:Microsoft.Exchange.Management.ExoPowershellModule.Telemetry.AddEXOClientTelemetryWrapper.constructedTelemetryFilePath">
+            <summary>
+            Final telemetry file path.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Exchange.Management.ExoPowershellModule.Telemetry.AddEXOClientTelemetryWrapper.cmdletsInPSSessionModule">
+            <summary>
+            List of cmdlets available in given PSSessionModule.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Exchange.Management.ExoPowershellModule.Telemetry.AddEXOClientTelemetryWrapper.pSEventSubscriber">
+            <summary>
+            Subscription info received after subscribing to powershell session state events. 
+            </summary>
+        </member>
+        <member name="F:Microsoft.Exchange.Management.ExoPowershellModule.Telemetry.AddEXOClientTelemetryWrapper.exoCmdletsHelpFile">
+            <summary>
+            This would contain the relevant help files names for the individual cmdlets
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.ExoPowershellModule.Telemetry.AddEXOClientTelemetryWrapper.Organization">
+            <summary>
+            Organization name.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.ExoPowershellModule.Telemetry.AddEXOClientTelemetryWrapper.PSSessionModuleName">
+            <summary>
+            Module name of underlying PSSession. This module is generated when importing session. Module name looks like tmp_XXXX.XXX 
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.ExoPowershellModule.Telemetry.AddEXOClientTelemetryWrapper.Cmdlet">
+            <summary>
+            By default this command generates telemetry wrappers for all EXO cmdlets. To override the list use this parameter. 
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.ExoPowershellModule.Telemetry.AddEXOClientTelemetryWrapper.LogDirectoryPath">
+            <summary>
+            Telemetry records will be written into this directory
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.ExoPowershellModule.Telemetry.AddEXOClientTelemetryWrapper.LogModuleDirectoryPath">
+            <summary>
+            Path if mentioned is where the wrapper module would be created 
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.ExoPowershellModule.Telemetry.AddEXOClientTelemetryWrapper.WrapperModuleFilePath">
+            <summary>
+            File location of telemetry wrapper module/script.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellModule.Telemetry.AddEXOClientTelemetryWrapper.BeginProcessing">
+            <inheritdoc/>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellModule.Telemetry.AddEXOClientTelemetryWrapper.ProcessRecord">
+            <summary>
+            Core process record method. 
+            </summary>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellModule.Telemetry.AddEXOClientTelemetryWrapper.AddCleanupHook">
+            <summary>
+            When module is removed from powershell session, delete generated script. 
+            </summary>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellModule.Telemetry.AddEXOClientTelemetryWrapper.RunspaceStateChanged(System.Object,System.Management.Automation.PSEventArgs)">
+            <summary>
+            Delegate is called when powershell runspace state is changed.
+            
+            This method deletes script which was generated by this command when parent powershell session is closing. 
+            </summary>
+            <param name="sender">Event sender.</param>
+            <param name="args">Event args.</param>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellModule.Telemetry.AddEXOClientTelemetryWrapper.ConstructScriptName">
+            <summary>
+            Get current script name(Only name not absolute path)
+            </summary>
+            <returns>Returns current script name.</returns>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellModule.Telemetry.AddEXOClientTelemetryWrapper.ConstructAndCreateTelemetryFile">
+            <summary>
+            Create telemetry file with empty contents. 
+            </summary>
+            <returns>Returns telemetry file path. </returns>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellModule.Telemetry.AddEXOClientTelemetryWrapper.ConstructGeneratedModuleFileName">
+            <summary>
+            Constructs file path for generating new module. 
+            </summary>
+            <returns>Absolute path for newly generated module.</returns>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellModule.Telemetry.AddEXOClientTelemetryWrapper.GetListOfCmdletToGenerateWrappers">
+            <summary>
+            Get list of cmdlets for which we generate wrappers. 
+            </summary>
+            <returns>List of cmdlet names.</returns>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellModule.Telemetry.AddEXOClientTelemetryWrapper.ValidatePSSessionModuleName">
+            <summary>
+            Validate that given module is actually a module for Exchange RPS session. 
+            If not, throws RuntimeException.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellModule.Telemetry.AddEXOClientTelemetryWrapper.ValidateModuleNameFormat">
+            <summary>
+            Validates that PSSession module is actually module imported by Import-PSSession. 
+            Module name should start with tmp_ and should end with .yyy (y = alpha numeric character).
+            </summary>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellModule.Telemetry.AddEXOClientTelemetryWrapper.GetAllEXOCmdletsInModule">
+            <summary>
+            Get exo cmdlets in given module name. 
+            </summary>
+            <returns>List of EXO cmdlets / functions in given module. </returns>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellModule.Telemetry.AddEXOClientTelemetryWrapper.ExtractAndPopulateHelpFileNamesMap(System.String)">
+            <summary>
+            Check whether the module is generated for the new Rest based cmdlet.
+            # .ExternalHelp Microsoft.Exchange.TransportMailflow-Help.xml\r\nfunction script:Add-ComplianceCaseMember\r\n
+            This extracts first the external help string and then the command name based on pattern.
+            </summary>
+            <param name="moduleDefinition">Module Definition sender.</param>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellModule.Telemetry.AddEXOClientTelemetryWrapper.IsModuleGeneratedForNewEXOCmdlets">
+            <summary>
+            Check whether the module is generated for the new Rest based cmdlet.
+            </summary>
+            <returns>Returns current script name.</returns>
+        </member>
+        <member name="T:Microsoft.Exchange.Management.ExoPowershellModule.Telemetry.CodeGenerator">
+            <summary>
+            Class which generates wrapper code. 
+            </summary>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellModule.Telemetry.CodeGenerator.GenerateScriptVariables(System.IO.TextWriter,System.String,System.String,System.String,System.String)">
+            <summary>
+            Generate script level variables. 
+            </summary>
+            <param name="writer">Generated code will be written to this.</param>
+            <param name="orgName">Organization name.</param>
+            <param name="scriptRoot">Script root.</param>
+            <param name="scriptName">Script name.</param>
+            <param name="telemetryFilePath">Telemetry file location.</param>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellModule.Telemetry.CodeGenerator.GenerateTelemetryWrapperForCommand(System.IO.TextWriter,System.String,System.String,System.Management.Automation.CommandTypes,System.String)">
+            <summary>
+            Generate telemetry wrapper for given command in given module. 
+            </summary>
+            <param name="writer">Generated wrapper code will be written to this writer.</param>
+            <param name="commandName">Command name to be wrapped. </param>
+            <param name="commandParams">Command Params to be wrapped. </param>
+            <param name="commandType">Command type to be wrapped. </param>
+            <param name="underlyingModuleName">Module name of the command to be wrapped. </param>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellModule.Telemetry.CodeGenerator.GenerateExportFunctionForHelp(System.IO.StreamWriter,System.String)">
+            <summary>
+            Generate help function export. This would contain ExternalHelp
+            and would be written in case of new Rest module.
+            </summary>
+            <param name="writer">Generated code will be written to this.</param>
+            <param name="externalHelpContents">externalHelpContents to be written in file</param>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellModule.Telemetry.CodeGenerator.GenerateExportFunction(System.IO.StreamWriter)">
+            <summary>
+            Generate export function
+            </summary>
+            <param name="writer">Generated code will be written to this.</param>
+        </member>
+        <member name="T:Microsoft.Exchange.Management.ExoPowershellModule.Telemetry.NewCmdletLogger">
+            <summary>
+            New-CmdletLogger: Class to create a CmdletLogger specific to this connection.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Exchange.Management.ExoPowershellModule.Telemetry.NewCmdletLogger.DefaultLogFolderName">
+            <summary>
+            The folder name where log files will be created by default
+            </summary>
+        </member>
+        <member name="F:Microsoft.Exchange.Management.ExoPowershellModule.Telemetry.NewCmdletLogger.fileSystem">
+            <summary>
+            Holds the reference to the file system object.
+            </summary>
+            <remarks>
+            Initialized to the default file system.
+            This will be injected with a mock file system for unit tests.
+            </remarks>
+        </member>
+        <member name="F:Microsoft.Exchange.Management.ExoPowershellModule.Telemetry.NewCmdletLogger.consoleLogger">
+            <summary>
+            Console Logger instance
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.ExoPowershellModule.Telemetry.NewCmdletLogger.ExoModuleVersion">
+            <summary>
+            Version of the EXO Module
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.ExoPowershellModule.Telemetry.NewCmdletLogger.EnableErrorReporting">
+            <summary>
+            Whether Error reporting is enabled
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.ExoPowershellModule.Telemetry.NewCmdletLogger.IsRpsSession">
+            <summary>
+            Whether the cmdlet has been called when forming an RPS connection.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.ExoPowershellModule.Telemetry.NewCmdletLogger.LogDirectoryPath">
+            <summary>
+            Path where the log files need to be created
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.ExoPowershellModule.Telemetry.NewCmdletLogger.ConnectionId">
+            <summary>
+            ConnectionID to be used for this connection
+            </summary>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellModule.Telemetry.NewCmdletLogger.InjectMockFileSystem(Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.IFileSystem)">
+            <summary>
+            Helper method to inject a mock file system for unit testing.
+            Access level protected so that it can be called only in unit tests.
+            </summary>
+            <param name="mockFileSystem">mock filesystem oject</param>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellModule.Telemetry.NewCmdletLogger.ProcessRecord">
+            <summary>
+            ProcessRecord for this cmdlet
+            </summary>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellModule.Telemetry.NewCmdletLogger.IsLoggingEnabled">
+            <summary>
+            Returns whether logging should be enabled for the logger.
+            It is enabled when user has passed EnableErrorReporting and it is not an RPS connection.
+            </summary>
+            <returns>whether logging should be enabled</returns>
+        </member>
+        <member name="T:Microsoft.Exchange.Management.ExoPowershellModule.Telemetry.NewEXOClientTelemetryFilePath">
+            <summary>
+            Create a temporary file for client telemetry. 
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.ExoPowershellModule.Telemetry.NewEXOClientTelemetryFilePath.LogDirectoryPath">
+            <summary>
+            Telemetry records will be written into this directory
+            </summary>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellModule.Telemetry.NewEXOClientTelemetryFilePath.ProcessRecord">
+            <summary>
+            Process record. Create new temporary file for telemetry.
+            </summary>
+        </member>
+        <member name="T:Microsoft.Exchange.Management.ExoPowershellModule.Telemetry.PerformanceInfo">
+            <summary>
+            Represents performance info object
+            </summary>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellModule.Telemetry.PerformanceInfo.#ctor(System.Int32,System.Single,System.Single,System.Single,System.Single)">
+            <summary>
+            Constructs a new PerformanceInfo object using the given values.
+            </summary>
+            <param name="logicalProcessorCount">
+            The logical processor count.
+            </param>
+            <param name="systemCPU">
+            The overall system CPU usage in percentage
+            </param>
+            <param name="processCPU">
+            Process CPU usage in percentage
+            </param>
+            <param name="systemAvailableMemory">
+            Memory Available with the system in MB
+            </param>
+            <param name="processMemory">
+            Memory consumed by the process (private working set) in MB
+            </param>
+            <remarks>
+            Internal to prevent initialization from outside.
+            Only <see cref="T:Microsoft.Exchange.Management.ExoPowershellModule.Telemetry.PerformanceTracker"/> can create PerformanceInfo.
+            Consumer libraries can only consume the value of a created PerformanceInfo.
+            </remarks>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.ExoPowershellModule.Telemetry.PerformanceInfo.LogicalProcessorCount">
+            <summary>
+            Gets the logical processor count.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.ExoPowershellModule.Telemetry.PerformanceInfo.SystemCPU">
+            <summary>
+            The overall system CPU usage in percentage
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.ExoPowershellModule.Telemetry.PerformanceInfo.ProcessCPU">
+            <summary>
+            Process CPU usage in percentage
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.ExoPowershellModule.Telemetry.PerformanceInfo.SystemAvailableMemory">
+            <summary>
+            Memory Available with the system in MB
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.ExoPowershellModule.Telemetry.PerformanceInfo.ProcessMemory">
+            <summary>
+            Memory consumed by the process (private working set) in MB
+            </summary>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellModule.Telemetry.PerformanceInfo.ToString">
+            <summary>
+            Returns the stringify version of the object
+            </summary>
+            <returns> Returns the stringify version of PerformanceInfo class </returns>
+        </member>
+        <member name="T:Microsoft.Exchange.Management.ExoPowershellModule.Telemetry.PerformanceTracker">
+            <summary>
+            Used to track the performance
+            </summary>
+        </member>
+        <member name="F:Microsoft.Exchange.Management.ExoPowershellModule.Telemetry.PerformanceTracker.sInstance">
+            <summary>
+            singleton instance
+            </summary>
+        </member>
+        <member name="F:Microsoft.Exchange.Management.ExoPowershellModule.Telemetry.PerformanceTracker.logicalProcessorCount">
+            <summary>
+            Gets the logical processor count.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Exchange.Management.ExoPowershellModule.Telemetry.PerformanceTracker.systemCpuCounter">
+            <summary>
+            Counter to track CPU
+            </summary>
+        </member>
+        <member name="F:Microsoft.Exchange.Management.ExoPowershellModule.Telemetry.PerformanceTracker.systemAvailableMemCounter">
+            <summary>
+            Counter to track Memory Usage
+            </summary>
+        </member>
+        <member name="F:Microsoft.Exchange.Management.ExoPowershellModule.Telemetry.PerformanceTracker.processCpuCounter">
+            <summary>
+            Counter to track CPU
+            </summary>
+        </member>
+        <member name="F:Microsoft.Exchange.Management.ExoPowershellModule.Telemetry.PerformanceTracker.processMemCounter">
+            <summary>
+            Counter to track Memory Usage
+            </summary>
+        </member>
+        <member name="F:Microsoft.Exchange.Management.ExoPowershellModule.Telemetry.PerformanceTracker.isInitialized">
+            <summary>
+            Track if object is initialized
+            </summary>
+        </member>
+        <member name="F:Microsoft.Exchange.Management.ExoPowershellModule.Telemetry.PerformanceTracker.performanceInfoEmpty">
+            <summary>
+            Empty performance Info object
+            </summary>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellModule.Telemetry.PerformanceTracker.#ctor">
+            <summary>
+            Private constructor for singleton and avoid default instantiation.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.ExoPowershellModule.Telemetry.PerformanceTracker.Instance">
+            <summary>
+            Get singleton instance of performance tracker
+            </summary>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellModule.Telemetry.PerformanceTracker.GetCurrent">
+            <summary>
+            Get the current performance info
+            </summary>
+            <returns>
+            returns PerformanceInfo with current values, returns dummy performance ifo if tracker is not initialized
+            </returns>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellModule.Telemetry.PerformanceTracker.Initialize">
+            <summary>
+            Initialize the Performance tracker
+            </summary>
+            <returns>
+            returns true in case initialization succeeded
+            </returns>
+        </member>
+        <member name="T:Microsoft.Exchange.Management.ExoPowershellModule.Telemetry.PushEXOTelemetryRecord">
+            <summary>
+            <para type="synopsis">Push a new telemetry record into telemetry file with given information. </para>
+            <para type="description">Push a new telemetry record into telemetry file with given information. </para>
+            </summary>
+        </member>
+        <member name="F:Microsoft.Exchange.Management.ExoPowershellModule.Telemetry.PushEXOTelemetryRecord.telemetryFilePathFromSession">
+            <summary>
+            Telemetry file path extracted from powershell session. 
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.ExoPowershellModule.Telemetry.PushEXOTelemetryRecord.TelemetryFilePath">
+            <summary>
+            <para type="description">Absolute location of telemetry file. </para>
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.ExoPowershellModule.Telemetry.PushEXOTelemetryRecord.OrganizationName">
+            <summary>
+            <para type="description">Name of organization. Default value is UnknownOeg</para>
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.ExoPowershellModule.Telemetry.PushEXOTelemetryRecord.ScriptName">
+            <summary>
+            <para type="description">Name of the script running these commands. </para>
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.ExoPowershellModule.Telemetry.PushEXOTelemetryRecord.ScriptExecutionGuid">
+            <summary>
+            <para type="description">Unique id for this script execution. </para>
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.ExoPowershellModule.Telemetry.PushEXOTelemetryRecord.CommandName">
+            <summary>
+            <para type="description">Command name for which telemetry record is collected. </para>
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.ExoPowershellModule.Telemetry.PushEXOTelemetryRecord.CommandParams">
+            <summary>
+            <para type="description">Command Parameters for the command for which telemetry record is collected. </para>
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.ExoPowershellModule.Telemetry.PushEXOTelemetryRecord.RecordCount">
+            <summary>
+            <para type="description">How many records given command processed.  </para>
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.ExoPowershellModule.Telemetry.PushEXOTelemetryRecord.SentBytesCount">
+            <summary>
+            <para type="description">Number of bytes sent to server.</para>
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.ExoPowershellModule.Telemetry.PushEXOTelemetryRecord.TotalLatency">
+            <summary>
+            <para type="description">Total time spent in command execution. This includes time for all records if processed from pipeline. </para>
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.ExoPowershellModule.Telemetry.PushEXOTelemetryRecord.ErrorObject">
+            <summary>
+            <para type="description">List of error objects $Error. </para>
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.ExoPowershellModule.Telemetry.PushEXOTelemetryRecord.ErrorRecordsToConsider">
+            <summary>
+            <para type="description">How many errors we need to consider in given error records array. From 0..n-1</para>
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.ExoPowershellModule.Telemetry.PushEXOTelemetryRecord.CaughtErrorRecord">
+            <summary>
+            <para type="description">If caller caught any error explicitly, pass it here.  </para>
+            </summary>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellModule.Telemetry.PushEXOTelemetryRecord.GetErrorObjectsToConsider">
+            <summary>
+            Returns list of error records to consider. 
+            It gets the error records from ErrorObject parameter. 
+            </summary>
+            <returns>List of error objects. </returns>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellModule.Telemetry.PushEXOTelemetryRecord.PrependCaughtErrorRecord(System.Collections.Generic.IList{System.Object})">
+            <summary>
+            If caught error is specified at command line, it is inserted at beginning of the given list. 
+            </summary>
+            <param name="errors">Error list.</param>
+            <returns>Error list with pre-appended error </returns>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellModule.Telemetry.PushEXOTelemetryRecord.ProcessRecord">
+            <summary>
+            Process record. 
+            </summary>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellModule.Telemetry.PushEXOTelemetryRecord.GetParameterString">
+            <summary>
+            Get the list of the parameter names passed 
+            </summary>
+            <returns>Semicolon seperated string of all the parameters passed</returns>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellModule.Telemetry.PushEXOTelemetryRecord.DeriveTelemetryFilePath">
+            <summary>
+            Derive Telemetry file path.
+            </summary>
+            <returns>Script nameexecution guid.</returns>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellModule.Telemetry.PushEXOTelemetryRecord.GetVariableValueFromSession(System.String,System.String)">
+            <summary>
+            Fetch variable value from powershell session. 
+            </summary>
+            <param name="variableName">Variable name</param>
+            <param name="defaultValue">default value</param>
+            <returns>Variable value</returns>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellModule.Telemetry.PushEXOTelemetryRecord.DeriveScriptExecutionGuid">
+            <summary>
+            Derive script execution Guid.
+            </summary>
+            <returns>Script nameexecution guid.</returns>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellModule.Telemetry.PushEXOTelemetryRecord.DeriveScriptName">
+            <summary>
+            Derive script name. 
+            </summary>
+            <returns>Script name.</returns>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellModule.Telemetry.PushEXOTelemetryRecord.DeriveOrganizationName">
+            <summary>
+            Derive orgname from commandline param or variable. 
+            </summary>
+            <returns>Derived org name.</returns>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellModule.Telemetry.PushEXOTelemetryRecord.ConstructErrorMessage">
+            <summary>
+            Generate a string from given error records. 
+            </summary>
+            <returns>Error message as a string</returns>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellModule.Telemetry.PushEXOTelemetryRecord.ConvertErrorObjectToString(System.Object)">
+            <summary>
+            Convert given error object to string.
+            </summary>
+            <param name="errorObject">Error object.</param>
+            <returns>String representation of error object.</returns>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellModule.Telemetry.PushEXOTelemetryRecord.ConvertErrorRecordToString(System.Management.Automation.ErrorRecord)">
+            <summary>
+            Convert given error record to string. 
+            </summary>
+            <param name="errorRecord">Error record.</param>
+            <returns>Returns String representation of Exception in the ErrorRecord</returns>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellModule.Telemetry.PushEXOTelemetryRecord.GetExceptionSpecificInfo(System.Exception)">
+            <summary>
+            Extract exception specific info from given exception.
+            </summary>
+            <param name="exception">Exception param</param>
+            <returns>String from exception.</returns>
+        </member>
+        <member name="T:Microsoft.Exchange.Management.ExoPowershellModule.Telemetry.TelemetryUtils">
+            <summary>
+            Utilities for telemetry cmdlets. 
+            </summary>
+        </member>
+        <member name="F:Microsoft.Exchange.Management.ExoPowershellModule.Telemetry.TelemetryUtils.telemetryFileHeaders">
+            <summary>
+            Telemetry file headers. 
+            </summary>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellModule.Telemetry.TelemetryUtils.CreateTelemetryFile(System.String)">
+            <summary>
+            Create temporary file for storing telemetry data. 
+            </summary>
+            <param name="logDirectoryPath">Log directory path if any else %Temp% would be used</param>
+            <returns>File absolute path.</returns>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.ExoPowershellModule.Telemetry.TelemetryUtils.WriteTelemetryHeaders(System.String)">
+            <summary>
+            Write telemetry file header to given file. 
+            </summary>
+            <param name="telemetryFile">Absolute path of telemetry file.</param>
+        </member>
+    </members>
+</doc>

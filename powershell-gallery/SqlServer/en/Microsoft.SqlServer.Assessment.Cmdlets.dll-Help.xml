@@ -1,0 +1,1128 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<helpItems schema="maml" xmlns="http://msh">
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>Get-SqlAssessmentItem</command:name>
+      <command:verb>Get</command:verb>
+      <command:noun>SqlAssessmentItem</command:noun>
+      <maml:description>
+        <maml:para>Gets SQL Assessment best practice checks available for a chosen SQL Server object.</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>The Get-SqlAssessmentItem cmdlet finds all available best practice checks for each input object. For more information, see the SQL Assessment API overview (/sql/tools/sql-assessment-api/sql-assessment-api-overview).</maml:para>
+      <maml:para>This cmdlet accepts the following input types:</maml:para>
+      <maml:para>- Microsoft.SqlServer.Management.Smo.Server</maml:para>
+      <maml:para>- Microsoft.SqlServer.Management.Smo.Database</maml:para>
+      <maml:para>- Microsoft.SqlServer.Management.Smo.AvailabilityGroup</maml:para>
+      <maml:para>- Microsoft.SqlServer.Management.Smo.FileGroup</maml:para>
+      <maml:para>- Microsoft.SqlServer.Management.Smo.RegisteredServers.RegisteredServer</maml:para>
+      <maml:para>- String containing path to any object of the above types</maml:para>
+      <maml:para>- Collection of objects</maml:para>
+      <maml:para></maml:para>
+      <maml:para>You can get input objects with SqlServer cmdlets like Get-SqlInstance and Get-SqlDatabase or basic PowerShell
+cmdlets like Get-Item and Get-ChildItem. Also, the cmdlet supports the SQL Server PowerShell provider,  so it can obtain an object from its path. The path can be passed explicitly, otherwise the current path will be used.</maml:para>
+      <maml:para>Availability of a check for a chosen object varies on the SQL Server version, platform, and object type. Also,  there are checks that target specific databases like `tempdb` or `master`. You can additionally filter checks  by tags, names, and severity with the parameters -MinSeverity and -Check.</maml:para>
+      <maml:para>With Get-SqlAssessmentItem cmdlet, you can get a list of checks applicable to the given SQL Server object.  Also, you can use this cmdlet's output as -Check argument for Invoke-SqlAssessment cmdlet.</maml:para>
+      <maml:para>Custom configurations can be applied with the -Configuration parameter.  Customization examples are available on Github (https://go.microsoft.com/fwlink/?linkid=2099023).</maml:para>
+      <maml:para>SQL Server on Azure VM support</maml:para>
+      <maml:para>With SQL Assessment cmdlets, you can assess an instance of SQL Server on Azure VM not only as on-prem SQL Server, but also with rules that are specific to SQL Server on Azure VM (ones that use information about the virtual machine configuration).  For example, the AzSqlVmSize rule checks that the VM that hosts an instance of SQL Server on Azure VM is of recommended size.</maml:para>
+      <maml:para>To use such rules, connect to Azure with Azure PowerShell Module (/powershell/azure/get-started-azureps) and make sure that the [Az.ResourceGraph](https://www.powershellgallery.com/packages/Az.ResourceGraph)module is installed. Sign in with Azure PowerShell (/powershell/azure/authenticate-azureps)before invoking SQL Assessment against a SQL Server on Azure VM instance. Example 13 shows  the interactive sign in process and subscription selection.</maml:para>
+      <maml:para>NOTE. It is possible to use Azure account connection persisted between PowerShell sessions, i.e. invoke  Connect-AzAccount in one session and omit this command later. However, the current version of SQL Assessment cmdlets  needs the Az.ResourceGraph module to be imported explicitly in this case: Import-Module Az.ResourceGraph</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>Get-SqlAssessmentItem</maml:name>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByValue)" position="10" aliases="Target">
+          <maml:name>InputObject</maml:name>
+          <maml:description>
+            <maml:para>Specifies a SQL Server object or a path to such an object.  The cmdlet returns appropriate checks for this object.  When this parameter is omitted, current location is used as input object.  If current location is not a supported SQL Server object, the cmdlet signals an error.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">PSObject</command:parameterValue>
+          <dev:type>
+            <maml:name>PSObject</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>Check</maml:name>
+          <maml:description>
+            <maml:para>One or more checks, check IDs, or tags.</maml:para>
+            <maml:para>For every check object, Get-SqlAssessmentItem returns that check if it supports the input object.</maml:para>
+            <maml:para>For every check ID, Get-SqlAssessmentItem returns the corresponding check if it supports the input object.</maml:para>
+            <maml:para>For tags, Get-SqlAssessmentItem returns checks with any of those tags.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">String[]</command:parameterValue>
+          <dev:type>
+            <maml:name>String[]</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>Configuration</maml:name>
+          <maml:description>
+            <maml:para>Specifies paths to files containing custom configuration.  Customization files will be applied to default configuration in specified order.  The scope is limited to this cmdlet invocation only.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">PSObject</command:parameterValue>
+          <dev:type>
+            <maml:name>PSObject</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>FlattenOutput</maml:name>
+          <maml:description>
+            <maml:para>Indicates that this cmdlet produces simple objects of type Microsoft.SqlServer.Management.Assessment.Cmdlets.AssessmentNoteFlat instead of Microsoft.SqlServer.Management.Assessment.Cmdlets.AssessmentNote .</maml:para>
+          </maml:description>
+          <dev:type>
+            <maml:name>SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="Severity">
+          <maml:name>MinSeverity</maml:name>
+          <maml:description>
+            <maml:para>Specifies minimum severity level for checks to be found.  For example, checks of Medium, Low, or Information levels will not be returned when -MinSeverity High.</maml:para>
+          </maml:description>
+          <command:parameterValueGroup>
+            <command:parameterValue required="false" command:variableLength="false">Information</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">Low</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">Medium</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">High</command:parameterValue>
+          </command:parameterValueGroup>
+          <command:parameterValue required="true" variableLength="false">SeverityLevel</command:parameterValue>
+          <dev:type>
+            <maml:name>SeverityLevel</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>Information</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="proga">
+          <maml:name>ProgressAction</maml:name>
+          <maml:description>
+            <maml:para>Determines how PowerShell responds to progress updates generated by a script, cmdlet, or provider, such as the progress bars generated by the Write-Progress cmdlet. The Write-Progress cmdlet creates progress bars that show a command's status.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">ActionPreference</command:parameterValue>
+          <dev:type>
+            <maml:name>ActionPreference</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>Check</maml:name>
+        <maml:description>
+          <maml:para>One or more checks, check IDs, or tags.</maml:para>
+          <maml:para>For every check object, Get-SqlAssessmentItem returns that check if it supports the input object.</maml:para>
+          <maml:para>For every check ID, Get-SqlAssessmentItem returns the corresponding check if it supports the input object.</maml:para>
+          <maml:para>For tags, Get-SqlAssessmentItem returns checks with any of those tags.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">String[]</command:parameterValue>
+        <dev:type>
+          <maml:name>String[]</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>Configuration</maml:name>
+        <maml:description>
+          <maml:para>Specifies paths to files containing custom configuration.  Customization files will be applied to default configuration in specified order.  The scope is limited to this cmdlet invocation only.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">PSObject</command:parameterValue>
+        <dev:type>
+          <maml:name>PSObject</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>FlattenOutput</maml:name>
+        <maml:description>
+          <maml:para>Indicates that this cmdlet produces simple objects of type Microsoft.SqlServer.Management.Assessment.Cmdlets.AssessmentNoteFlat instead of Microsoft.SqlServer.Management.Assessment.Cmdlets.AssessmentNote .</maml:para>
+        </maml:description>
+        <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
+        <dev:type>
+          <maml:name>SwitchParameter</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>False</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByValue)" position="10" aliases="Target">
+        <maml:name>InputObject</maml:name>
+        <maml:description>
+          <maml:para>Specifies a SQL Server object or a path to such an object.  The cmdlet returns appropriate checks for this object.  When this parameter is omitted, current location is used as input object.  If current location is not a supported SQL Server object, the cmdlet signals an error.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">PSObject</command:parameterValue>
+        <dev:type>
+          <maml:name>PSObject</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="Severity">
+        <maml:name>MinSeverity</maml:name>
+        <maml:description>
+          <maml:para>Specifies minimum severity level for checks to be found.  For example, checks of Medium, Low, or Information levels will not be returned when -MinSeverity High.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">SeverityLevel</command:parameterValue>
+        <dev:type>
+          <maml:name>SeverityLevel</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>Information</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="proga">
+        <maml:name>ProgressAction</maml:name>
+        <maml:description>
+          <maml:para>Determines how PowerShell responds to progress updates generated by a script, cmdlet, or provider, such as the progress bars generated by the Write-Progress cmdlet. The Write-Progress cmdlet creates progress bars that show a command's status.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">ActionPreference</command:parameterValue>
+        <dev:type>
+          <maml:name>ActionPreference</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:inputTypes>
+      <command:inputType>
+        <dev:type>
+          <maml:name>System.String[]</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para></maml:para>
+        </maml:description>
+      </command:inputType>
+      <command:inputType>
+        <dev:type>
+          <maml:name>Microsoft.SqlServer.Management.Smo.SqlSmoObject[]</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para></maml:para>
+        </maml:description>
+      </command:inputType>
+    </command:inputTypes>
+    <command:returnValues>
+      <command:returnValue>
+        <dev:type>
+          <maml:name>Microsoft.SqlServer.Management.Assessment.ICheck</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para></maml:para>
+        </maml:description>
+      </command:returnValue>
+    </command:returnValues>
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para></maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples>
+      <command:example>
+        <maml:title>------- Example 1: Get checks for local default instance -------</maml:title>
+        <dev:code>PS:&gt; Get-SqlInstance -ServerInstance 'localhost' | Get-SqlAssessmentItem
+
+   Target: [LOCAL]
+
+ID                             ON      Name                                     Origin                                  
+--                             --      ----                                     ------                                  
+TF1204                         True    TF 1204 returns deadlock information     Microsoft Ruleset 0.1.202               
+BlackboxTrace                  True    Blackbox trace is configured and running Microsoft Ruleset 0.1.202               
+HintsStatistics                True    Hints are being used                     Microsoft Ruleset 0.1.202               
+PlansUseRatio                  True    Amount of single use plans in cache i... Microsoft Ruleset 0.1.202            
+TempDBFilesAutoGrowth          True    Some TempDB data files have different... Microsoft Ruleset 0.1.202             
+CpuUtil90                      True    CPU usage over 90%                       Microsoft Ruleset 0.1.202  
+...</dev:code>
+        <dev:remarks>
+          <maml:para>This example gets all checks available for the default instance of SQL Server running on the current machine.</maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>---------- Example 2: Get checks with Get-Item cmdlet ----------</maml:title>
+        <dev:code>PS:&gt; Get-Item SQLSERVER:\SQL\localhost\default | Get-SqlAssessmentItem
+
+   Target: [LOCAL]
+
+ID                             ON      Name                                     Origin                                  
+--                             --      ----                                     ------                                  
+TF1204                         True    TF 1204 returns deadlock information     Microsoft Ruleset 0.1.202               
+BlackboxTrace                  True    Blackbox trace is configured and running Microsoft Ruleset 0.1.202               
+HintsStatistics                True    Hints are being used                     Microsoft Ruleset 0.1.202               
+PlansUseRatio                  True    Amount of single use plans in cache i... Microsoft Ruleset 0.1.202               
+TempDBFilesAutoGrowth          True    Some TempDB data files have different... Microsoft Ruleset 0.1.202               
+CpuUtil90                      True    CPU usage over 90%                       Microsoft Ruleset 0.1.202  
+...</dev:code>
+        <dev:remarks>
+          <maml:para>This example gets all checks available for the default instance of SQL Server running on the current machine.</maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>------- Example 3: Get checks with path to target object -------</maml:title>
+        <dev:code>PS:&gt; Get-SqlAssessmentItem SQLSERVER:\SQL\localhost\default
+
+   Target: [LOCAL]
+
+ID                             ON      Name                                     Origin                                  
+--                             --      ----                                     ------                                  
+TF1204                         True    TF 1204 returns deadlock information     Microsoft Ruleset 0.1.202                   
+BlackboxTrace                  True    Blackbox trace is configured and running Microsoft Ruleset 0.1.202                   
+HintsStatistics                True    Hints are being used                     Microsoft Ruleset 0.1.202                   
+PlansUseRatio                  True    Amount of single use plans in cache i... Microsoft Ruleset 0.1.202                   
+TempDBFilesAutoGrowth          True    Some TempDB data files have different... Microsoft Ruleset 0.1.202                   
+CpuUtil90                      True    CPU usage over 90%                       Microsoft Ruleset 0.1.202  
+...</dev:code>
+        <dev:remarks>
+          <maml:para>This example gets all checks available for the default instance of SQL Server running on the current machine.</maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>--- Example 4: Get checks with applied custom configuration ---</maml:title>
+        <dev:code>PS:&gt; Get-SqlDatabase master -ServerInstance . |
+     Get-SqlAssessmentItem -Configuration C:\rulesetA.json, D:\rulesetB.json
+
+   Target: [LOCAL]
+
+ID                             ON      Name                                     Origin                                  
+--                             --      ----                                     ------                                  
+TF1204                         False   TF 1204 returns deadlock information     Microsoft Ruleset 0.1.202                   
+BlackboxTrace                  True    Blackbox trace is configured and running Microsoft Ruleset 0.1.202                   
+HintsStatistics                True    Hints are being used                     Microsoft Ruleset 0.1.202                   
+PlansUseRatio                  True    Amount of single use plans in cache i... Microsoft Ruleset 0.1.202                   
+TempDBFilesAutoGrowth          False   Some TempDB data files have different... Microsoft Ruleset 0.1.202                   
+CpuUtil90                      True    CPU usage over 90%                       Microsoft Ruleset 0.1.202                   
+SomeCustomCheck                True    Some custom check                        Ruleset A 1.0                           
+AnotherCustomCheck             True    Another custom check                     Ruleset B 1.0
+...</dev:code>
+        <dev:remarks>
+          <maml:para>This example gets all available checks with applied custom configuration obtained from specified JSON files.  Visit SQL Assessment samples folder (https://go.microsoft.com/fwlink/?linkid=2099023)on Github to find out how to make customization.</maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>----- Example 5: Get checks for all instances on localhost -----</maml:title>
+        <dev:code>PS:&gt; Get-SqlInstance -ServerInstance localhost | Get-SqlAssessmentItem
+
+   Target: [LOCAL]
+
+ID                             ON      Name                                     Origin                                  
+--                             --      ----                                     ------                                  
+TF1204                         True    TF 1204 returns deadlock information     Microsoft Ruleset 0.1.202               
+BlackboxTrace                  True    Blackbox trace is configured and running Microsoft Ruleset 0.1.202               
+CpuUtil90                      True    CPU usage over 90%                       Microsoft Ruleset 0.1.202
+
+   Target: [LOCAL\INSTANCE1]
+
+ID                             ON      Name                                     Origin                                  
+--                             --      ----                                     ------                                  
+HintsStatistics                True    Hints are being used                     Microsoft Ruleset 0.1.202             
+PlansUseRatio                  True    Amount of single use plans in cache i... Microsoft Ruleset 0.1.202               
+TempDBFilesAutoGrowth          True    Some TempDB data files have different... Microsoft Ruleset 0.1.202               
+CpuUtil90                      True    CPU usage over 90%                       Microsoft Ruleset 0.1.202
+...</dev:code>
+        <dev:remarks>
+          <maml:para>This example shows Get-SqlAssessmentItem cmdlet accepting a set of SQL Server instances via pipeline.</maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>Example 6: Get checks for all instances with names ending with numbers</maml:title>
+        <dev:code>PS:&gt; Get-SqlInstance -ServerInstance localhost | Where { $_.Name -Match '.*\d+' } | Get-SqlAssessmentItem
+
+   Target: [LOCAL\INSTANCE1]
+
+ID                             ON      Name                                     Origin                                  
+--                             --      ----                                     ------                                  
+HintsStatistics                True    Hints are being used                     Microsoft Ruleset 0.1.202               
+PlansUseRatio                  True    Amount of single use plans in cache i... Microsoft Ruleset 0.1.202             
+TempDBFilesAutoGrowth          True    Some TempDB data files have different... Microsoft Ruleset 0.1.202               
+CpuUtil90                      True    CPU usage over 90%                       Microsoft Ruleset 0.1.202
+...</dev:code>
+        <dev:remarks>
+          <maml:para>This example shows Get-SqlAssessmentItem cmdlet accepting a set of SQL Server instances via pipeline. Only instances having the name ending with digits are processed.</maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>--------- Example 7: Get checks for a database by path ---------</maml:title>
+        <dev:code>PS:&gt; Get-SqlAssessmentItem SQLSERVER:\SQL\localhost\default\Databases\master
+
+
+   TargetObject: [master]
+
+ID                             ON      Name                                     Origin                    
+--                             --      ----                                     ------                    
+AutoCreateStats                True    Auto-Create Statistics should be on      Microsoft Ruleset 0.1.202 
+HintsUsageInModules            False   Hints usage in modules                   Microsoft Ruleset 0.1.202 
+FullBackup                     True    Full backup is missed or outdated        Microsoft Ruleset 0.1.202 
+DuplicateIndexes               True    Duplicate Indexes                        Microsoft Ruleset 0.1.202 
+RedundantIndexes               True    Redundant Indexes                        Microsoft Ruleset 0.1.202 
+...</dev:code>
+        <dev:remarks>
+          <maml:para>This example shows Get-SqlAssessmentItem cmdlet accepting a path to a SQL Server database.</maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>------ Example 8: Get high severity checks for a database ------</maml:title>
+        <dev:code>PS:&gt; cd SQLSERVER:\SQL\localhost\default\Databases\master
+PS:&gt; Get-SqlAssessmentItem -MinSeverity High</dev:code>
+        <dev:remarks>
+          <maml:para>This example shows Get-SqlAssessmentItem returning available checks with high severity for the master database.  It accepts the current PowerShell provider location as the target.</maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>------ Example 9: Get high severity checks for a database ------</maml:title>
+        <dev:code>PS:&gt; $db = Get-SqlDatabase master -ServerInstance localhost
+PS:&gt; Get-SqlAssessmentItem $db -MinSeverity High</dev:code>
+        <dev:remarks>
+          <maml:para>This example shows Get-SqlAssessmentItem returning available checks with high severity for the master database.</maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>---------------- Example 10: Get checks by tag ----------------</maml:title>
+        <dev:code>PS:&gt; Get-SqlDatabase -ServerInstance . | Get-SqlAssessmentItem -Check Backup
+
+
+   TargetObject: [master]
+
+ID                             ON      Name                                     Origin                    
+--                             --      ----                                     ------                    
+FullBackup                     True    Full backup is missed or outdated        Microsoft Ruleset 0.1.202 
+
+
+   TargetObject: [msdb]
+
+ID                             ON      Name                                     Origin                    
+--                             --      ----                                     ------                    
+FullBackup                     True    Full backup is missed or outdated        Microsoft Ruleset 0.1.202</dev:code>
+        <dev:remarks>
+          <maml:para>This example shows Get-SqlAssessmentItem cmdlet returning all backup-related checks for all databases on default local SQL Server instance.</maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>-------- Example 11: Run interactively selected checks --------</maml:title>
+        <dev:code>PS:&gt; $serverInstance = Get-SqlInstance -ServerInstance '(local)'
+PS:&gt; $checks = Get-SqlAssessmentItem $serverInstance | Select Id, Description | Out-GridView -PassThru
+PS:&gt; Invoke-SqlAssessment $serverInstance -Check $checks
+
+    TargetPath : Server[@Name='LOCAL']
+
+Sev. Message                                                            Check ID               Origin                   
+---- -------                                                            --------               ------                   
+Info Enable trace flag 834 to use large-page allocations to improve     TF834                  Microsoft Ruleset 0.1.202
+     analytical and data warehousing workloads.                                                                         
+Low  Detected deprecated or discontinued feature uses: String literals  DeprecatedFeatures     Microsoft Ruleset 0.1.202
+     as column aliases, syscolumns, sysusers, SET FMTONLY ON, XP_API,                                                   
+     Table hint without WITH, More than two-part column name. We                                                        
+     recommend to replace them with features actual for SQL Server                                                      
+     version 14.0.1000.</dev:code>
+        <dev:remarks>
+          <maml:para>The second line of this example shows obtaining checks for a $serverInstance, and selecting some of them interactively.  Selected items are stored in an array variable, which then can be used as input for Invoke-SqlAssessment cmdlet.  In this case, only picked checks will run during the assessment process.</maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>---------- Example 12: Specify credentials explicitly ----------</maml:title>
+        <dev:code>PS&gt; $cred = Get-Credential
+
+PowerShell credential request
+Enter your credentials.
+User: Administrator
+Password for user Administrator: ********
+
+PS&gt; $db = Get-SqlDatabase master -ServerInstance 10.0.3.118 -Credential $cred
+PS&gt; Get-SqlAssessmentItem $db
+
+   TargetObject: [master]
+
+ID                             ON      Name                                     Origin                    
+--                             --      ----                                     ------                    
+AutoCreateStats                True    Auto-Create Statistics should be on      Microsoft Ruleset 0.1.202 
+FullBackup                     True    Full backup is missed or outdated        Microsoft Ruleset 0.1.202 
+DuplicateIndexes               True    Duplicate Indexes                        Microsoft Ruleset 0.1.202 
+RedundantIndexes               True    Redundant Indexes                        Microsoft Ruleset 0.1.202 
+...</dev:code>
+        <dev:remarks>
+          <maml:para>This example shows how to get the SQL Assessment check list with explicitly specified credentials.</maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>Example 13: Get the SQL Assessment rule list for the SQL Server on Azure VM instance</maml:title>
+        <dev:code>PS&gt; Connect-AzAccount
+PS&gt; Set-Subscription My-Pay-As-You-Go
+PS&gt; $cred = Get-Credential
+
+PowerShell credential request
+Enter your credentials.
+User: Administrator
+Password for user Administrator: ********
+
+PS&gt; $inst = Get-SqlInstance -ServerInstance 10.0.3.118 -Credential $cred
+PS&gt; Get-SqlAssessmentItem $inst
+
+   TargetObject: [ContosoAzureSql]
+
+ID                             ON      Name                                     Origin                    
+--                             --      ----                                     ------                    
+HintsStatistics                True    Hints are being used                     Microsoft Ruleset 0.1.202               
+PlansUseRatio                  True    Amount of single use plans in cache i... Microsoft Ruleset 0.1.202             
+TempDBFilesAutoGrowth          True    Some TempDB data files have different... Microsoft Ruleset 0.1.202 
+AzSqlVmSize                    True    VM size is not memory-optimized          Microsoft Ruleset 0.1.202 
+...</dev:code>
+        <dev:remarks>
+          <maml:para>This example shows how to get a list of rules that are applicable to a particular SQL Server on Azure VM instance.</maml:para>
+          <maml:para>An active Azure subscription connection enables Azure-related checks (AzSqlVmSize in this example). The first line connects to an Azure account to get data from Azure Resource Graph. The second line is optional.</maml:para>
+          <maml:para>To run these checks, SQL Assessment requires the Az.ResourceGraph module.</maml:para>
+        </dev:remarks>
+      </command:example>
+    </command:examples>
+    <command:relatedLinks>
+      <maml:navigationLink>
+        <maml:linkText>Online Version:</maml:linkText>
+        <maml:uri>https://learn.microsoft.com/powershell/module/sqlserver/get-sqlassessmentitem</maml:uri>
+      </maml:navigationLink>
+      <maml:navigationLink>
+        <maml:linkText>SQL Assessment API Online Documentation page</maml:linkText>
+        <maml:uri></maml:uri>
+      </maml:navigationLink>
+      <maml:navigationLink>
+        <maml:linkText>SQL Assessment Samples</maml:linkText>
+        <maml:uri>https://go.microsoft.com/fwlink/?linkid=2099023</maml:uri>
+      </maml:navigationLink>
+    </command:relatedLinks>
+  </command:command>
+  <command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10" xmlns:MSHelp="http://msdn.microsoft.com/mshelp">
+    <command:details>
+      <command:name>Invoke-SqlAssessment</command:name>
+      <command:verb>Invoke</command:verb>
+      <command:noun>SqlAssessment</command:noun>
+      <maml:description>
+        <maml:para>Runs SQL Assessment best practice checks for a chosen SQL Server object and returns their results.</maml:para>
+      </maml:description>
+    </command:details>
+    <maml:description>
+      <maml:para>The Invoke-SqlAssessment cmdlet runs an assessment for each input object and returns a list of best practice recommendations that should be applied to the specified objects. It's up to you to follow the given recommendations or not. For more information, see the SQL Assessment API overview (/sql/tools/sql-assessment-api/sql-assessment-api-overview).</maml:para>
+      <maml:para>This cmdlet accepts the following input types:</maml:para>
+      <maml:para>- Microsoft.SqlServer.Management.Smo.Server</maml:para>
+      <maml:para>- Microsoft.SqlServer.Management.Smo.Database</maml:para>
+      <maml:para>- Microsoft.SqlServer.Management.Smo.AvailabilityGroup</maml:para>
+      <maml:para>- Microsoft.SqlServer.Management.Smo.FileGroup</maml:para>
+      <maml:para>- Microsoft.SqlServer.Management.Smo.RegisteredServers.RegisteredServer</maml:para>
+      <maml:para>- String containing path to any object of the above types</maml:para>
+      <maml:para>- Collection of objects</maml:para>
+      <maml:para></maml:para>
+      <maml:para>You can get input objects with SqlServer cmdlets like Get-SqlInstance and Get-SqlDatabase or basic PowerShell  cmdlets like Get-Item and Get-ChildItem. Also, the cmdlet supports the SQL Server PowerShell provider, so it can  obtain an object from its path. The path can be passed explicitly, otherwise the current path will be used.</maml:para>
+      <maml:para>Availability of a check for a chosen object varies on the SQL Server version, platform, and object type. Also,  there are checks that target specific databases like `tempdb` or `master`. You can additionally filter checks  by tags, names, and severity with the parameters -MinSeverity and -Check.</maml:para>
+      <maml:para>You can get a list of checks applicable to the given SQL Server object with Get-SqlAssessmentItem cmdlet. </maml:para>
+      <maml:para>The cmdlet runs only checks that are applicable to an input object. For example, database checks will not be run  for a SQL Server instance or an availability group, even when specified in -Check list.</maml:para>
+      <maml:para>Custom configurations can be applied with the -Configuration parameter.  Customization examples are available on Github (https://go.microsoft.com/fwlink/?linkid=2099023).</maml:para>
+      <maml:para>NOTE. In the first public preview Invoke-SqlAssessment returned AssessmentNote objects with properties CheckId  and CheckName containing Check's ID and DisplayName respectively. In the second public preview the two properties  were replaced with a single Check property providing much more data. Assuming $note was an object returned by Invoke-SqlAssessment , you can access check's ID as $note.Check.Id instead of $note.CheckId, or check's  description as $note.Check.Description. You can use -FlattenOutput parameter to get results in the previous  format with CheckId and CheckName. This parameter will also help to retain compatibility to some cmdlets like Write-SqlTableData . See examples 12-14 for more details. Invoke-SqlAssessment cmdlet's output is a list of violated best practices for every given SQL Server object.  Use Description property to learn about the best practice and Message property to find out how it can be solved.  Also, every check result contains a link to online documentation, which will help you figure out the issue better.</maml:para>
+      <maml:para>SQL Server on Azure VM support</maml:para>
+      <maml:para>With SQL Assessment cmdlets, you can assess an instance of SQL Server on Azure VM not only as on-prem SQL Server, but also with  rules that are specific to SQL Server on Azure VM (ones that use information about the virtual machine configuration).  For example, the AzSqlVmSize rule checks that the VM that hosts an instance of SQL Server on Azure VM is of recommended size.</maml:para>
+      <maml:para>To use such rules, connect to Azure with Azure PowerShell Module (/powershell/azure/get-started-azureps) and make sure that the [Az.ResourceGraph](https://www.powershellgallery.com/packages/Az.ResourceGraph)module is installed. Sign in with Azure PowerShell (/powershell/azure/authenticate-azureps)before invoking SQL Assessment against a SQL Server on Azure VM instance. Example 16 shows  the interactive sign in process and subscription selection.</maml:para>
+      <maml:para>NOTE. It is possible to use Azure account connection persisted between PowerShell sessions, i.e. invoke  Connect-AzAccount in one session and omit this command later. However, the current version of SQL Assessment cmdlets  needs the Az.ResourceGraph module to be imported explicitly in this case: Import-Module Az.ResourceGraph</maml:para>
+    </maml:description>
+    <command:syntax>
+      <command:syntaxItem>
+        <maml:name>Invoke-SqlAssessment</maml:name>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByValue)" position="10" aliases="Target">
+          <maml:name>InputObject</maml:name>
+          <maml:description>
+            <maml:para>Specifies a SQL Server object or the path to such an object.  The cmdlet runs assessment for this object.  When this parameter is omitted, current location is used as input object.  If current location is not a supported SQL Server object, the cmdlet signals an error.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">PSObject</command:parameterValue>
+          <dev:type>
+            <maml:name>PSObject</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>Check</maml:name>
+          <maml:description>
+            <maml:para>One or more checks, check IDs, or tags.</maml:para>
+            <maml:para>For every check object, Invoke-SqlAssessment runs that check if it supports the input object.</maml:para>
+            <maml:para>For every check ID, Invoke-SqlAssessment runs the corresponding check if it supports the input object.</maml:para>
+            <maml:para>For tags, Invoke-SqlAssessment runs checks with any of those tags.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">Object[]</command:parameterValue>
+          <dev:type>
+            <maml:name>Object[]</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>Configuration</maml:name>
+          <maml:description>
+            <maml:para>Specifies paths to files containing custom configuration.  Customization files will be applied to default configuration in specified order.  The scope is limited to this cmdlet invocation only.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">PSObject</command:parameterValue>
+          <dev:type>
+            <maml:name>PSObject</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+          <maml:name>FlattenOutput</maml:name>
+          <maml:description>
+            <maml:para>Indicates that this cmdlet produces simple objects of type Microsoft.SqlServer.Management.Assessment.Cmdlets.AssessmentNoteFlat instead of Microsoft.SqlServer.Management.Assessment.Cmdlets.AssessmentNote .</maml:para>
+            <maml:para>Regular AssessmentNote returned from Invoke-SqlAssessment contains references to other useful complex  objects like Check (see example 12). With the Check property, you can get the check's description or  reuse the check (see example 13). But some cmdlets do not support complex properties. For example,  Write-SqlTableData will raise an error while trying to write AssessmentNote to a database.  To avoid this you can use -FlattenOutput parameter to replace the Check property with two simple  strings: CheckId and CheckName (see example 14).</maml:para>
+          </maml:description>
+          <dev:type>
+            <maml:name>SwitchParameter</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>False</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="Severity">
+          <maml:name>MinSeverity</maml:name>
+          <maml:description>
+            <maml:para>Specifies minimum severity level for checks to be found.  For example, checks of Low, Medium or Information levels will not be returned when -MinSeverity High.</maml:para>
+          </maml:description>
+          <command:parameterValueGroup>
+            <command:parameterValue required="false" command:variableLength="false">Information</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">Low</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">Medium</command:parameterValue>
+            <command:parameterValue required="false" command:variableLength="false">High</command:parameterValue>
+          </command:parameterValueGroup>
+          <command:parameterValue required="true" variableLength="false">SeverityLevel</command:parameterValue>
+          <dev:type>
+            <maml:name>SeverityLevel</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+        <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="proga">
+          <maml:name>ProgressAction</maml:name>
+          <maml:description>
+            <maml:para>Determines how PowerShell responds to progress updates generated by a script, cmdlet, or provider, such as the progress bars generated by the Write-Progress cmdlet. The Write-Progress cmdlet creates progress bars that show a command's status.</maml:para>
+          </maml:description>
+          <command:parameterValue required="true" variableLength="false">ActionPreference</command:parameterValue>
+          <dev:type>
+            <maml:name>ActionPreference</maml:name>
+            <maml:uri />
+          </dev:type>
+          <dev:defaultValue>None</dev:defaultValue>
+        </command:parameter>
+      </command:syntaxItem>
+    </command:syntax>
+    <command:parameters>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>Check</maml:name>
+        <maml:description>
+          <maml:para>One or more checks, check IDs, or tags.</maml:para>
+          <maml:para>For every check object, Invoke-SqlAssessment runs that check if it supports the input object.</maml:para>
+          <maml:para>For every check ID, Invoke-SqlAssessment runs the corresponding check if it supports the input object.</maml:para>
+          <maml:para>For tags, Invoke-SqlAssessment runs checks with any of those tags.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">Object[]</command:parameterValue>
+        <dev:type>
+          <maml:name>Object[]</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>Configuration</maml:name>
+        <maml:description>
+          <maml:para>Specifies paths to files containing custom configuration.  Customization files will be applied to default configuration in specified order.  The scope is limited to this cmdlet invocation only.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">PSObject</command:parameterValue>
+        <dev:type>
+          <maml:name>PSObject</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="none">
+        <maml:name>FlattenOutput</maml:name>
+        <maml:description>
+          <maml:para>Indicates that this cmdlet produces simple objects of type Microsoft.SqlServer.Management.Assessment.Cmdlets.AssessmentNoteFlat instead of Microsoft.SqlServer.Management.Assessment.Cmdlets.AssessmentNote .</maml:para>
+          <maml:para>Regular AssessmentNote returned from Invoke-SqlAssessment contains references to other useful complex  objects like Check (see example 12). With the Check property, you can get the check's description or  reuse the check (see example 13). But some cmdlets do not support complex properties. For example,  Write-SqlTableData will raise an error while trying to write AssessmentNote to a database.  To avoid this you can use -FlattenOutput parameter to replace the Check property with two simple  strings: CheckId and CheckName (see example 14).</maml:para>
+        </maml:description>
+        <command:parameterValue required="false" variableLength="false">SwitchParameter</command:parameterValue>
+        <dev:type>
+          <maml:name>SwitchParameter</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>False</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="True (ByValue)" position="10" aliases="Target">
+        <maml:name>InputObject</maml:name>
+        <maml:description>
+          <maml:para>Specifies a SQL Server object or the path to such an object.  The cmdlet runs assessment for this object.  When this parameter is omitted, current location is used as input object.  If current location is not a supported SQL Server object, the cmdlet signals an error.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">PSObject</command:parameterValue>
+        <dev:type>
+          <maml:name>PSObject</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="Severity">
+        <maml:name>MinSeverity</maml:name>
+        <maml:description>
+          <maml:para>Specifies minimum severity level for checks to be found.  For example, checks of Low, Medium or Information levels will not be returned when -MinSeverity High.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">SeverityLevel</command:parameterValue>
+        <dev:type>
+          <maml:name>SeverityLevel</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+      <command:parameter required="false" variableLength="true" globbing="false" pipelineInput="False" position="named" aliases="proga">
+        <maml:name>ProgressAction</maml:name>
+        <maml:description>
+          <maml:para>Determines how PowerShell responds to progress updates generated by a script, cmdlet, or provider, such as the progress bars generated by the Write-Progress cmdlet. The Write-Progress cmdlet creates progress bars that show a command's status.</maml:para>
+        </maml:description>
+        <command:parameterValue required="true" variableLength="false">ActionPreference</command:parameterValue>
+        <dev:type>
+          <maml:name>ActionPreference</maml:name>
+          <maml:uri />
+        </dev:type>
+        <dev:defaultValue>None</dev:defaultValue>
+      </command:parameter>
+    </command:parameters>
+    <command:inputTypes>
+      <command:inputType>
+        <dev:type>
+          <maml:name>System.String[]</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para></maml:para>
+        </maml:description>
+      </command:inputType>
+      <command:inputType>
+        <dev:type>
+          <maml:name>Microsoft.SqlServer.Management.Smo.SqlSmoObject[]</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para></maml:para>
+        </maml:description>
+      </command:inputType>
+    </command:inputTypes>
+    <command:returnValues>
+      <command:returnValue>
+        <dev:type>
+          <maml:name>Microsoft.SqlServer.Assessment.Cmdlets.AssessmentNote</maml:name>
+        </dev:type>
+        <maml:description>
+          <maml:para></maml:para>
+        </maml:description>
+      </command:returnValue>
+    </command:returnValues>
+    <maml:alertSet>
+      <maml:alert>
+        <maml:para></maml:para>
+      </maml:alert>
+    </maml:alertSet>
+    <command:examples>
+      <command:example>
+        <maml:title>--- Example 1: Invoke assessment for local default instance ---</maml:title>
+        <dev:code>PS:&gt; Get-SqlInstance -ServerInstance localhost | Invoke-SqlAssessment
+
+   TargetPath : Server[@Name='LOCAL']
+
+Sev. Message                                                            Check ID              Origin               
+---- -------                                                            --------              ------               
+Info Enable trace flag 834 to use large-page allocations to improve     TF834                 Microsoft Ruleset 0.1.202
+     analytical and data warehousing workloads.                                                                         
+Low  Detected deprecated or discontinued feature uses: String literals  DeprecatedFeatures    Microsoft Ruleset 0.1.202
+     as column aliases, syscolumns, sysusers, SET FMTONLY ON, XP_API,                                                   
+     Table hint without WITH, More than two-part column name. We                                                        
+     recommend to replace them with features actual for SQL Server                                                      
+     version 14.0.1000.                                                                                      
+Medi Amount of single use plans in cache is high (100%). Consider       PlansUseRatio         Microsoft Ruleset 0.1.202
+     enabling the Optimize for ad hoc workloads setting on heavy OLTP                                                   
+     ad-hoc workloads to conserve resources.
+...</dev:code>
+        <dev:remarks>
+          <maml:para>This example shows how to get all best practice recommendations for the default instance of SQL Server running on the current machine.</maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>----- Example 2: Invoke assessment with PSProvider cmdlet -----</maml:title>
+        <dev:code>PS:&gt; Get-Item SQLSERVER:\SQL\localhost\default | Invoke-SqlAssessment
+
+   TargetPath : Server[@Name='LOCAL']
+
+Sev. Message                                                            Check ID              Origin               
+---- -------                                                            --------              ------               
+Info Enable trace flag 834 to use large-page allocations to improve     TF834                 Microsoft Ruleset 0.1.202
+     analytical and data warehousing workloads.                                                                         
+Low  Detected deprecated or discontinued feature uses: String literals  DeprecatedFeatures    Microsoft Ruleset 0.1.202
+     as column aliases, syscolumns, sysusers, SET FMTONLY ON, XP_API,                                                   
+     Table hint without WITH, More than two-part column name. We                                                        
+     recommend to replace them with features actual for SQL Server                                                      
+     version 14.0.1000.                                                                                      
+Medi Amount of single use plans in cache is high (100%). Consider       PlansUseRatio         Microsoft Ruleset 0.1.202
+     enabling the Optimize for ad hoc workloads setting on heavy OLTP                                                   
+     ad-hoc workloads to conserve resources.
+...</dev:code>
+        <dev:remarks>
+          <maml:para>This example shows how to get all best practice recommendations for the default instance of SQL Server.</maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>------ Example 3: Invoke assessment with PS Provider path ------</maml:title>
+        <dev:code>PS:&gt; Invoke-SqlAssessment SQLSERVER:\SQL\localhost\default
+
+TargetPath : Server[@Name='LOCAL']
+
+Sev. Message                                                            Check ID              Origin               
+---- -------                                                            --------              ------               
+Info Enable trace flag 834 to use large-page allocations to improve     TF834                 Microsoft Ruleset 0.1.202
+     analytical and data warehousing workloads.                                                                         
+Low  Detected deprecated or discontinued feature uses: String literals  DeprecatedFeatures    Microsoft Ruleset 0.1.202
+     as column aliases, syscolumns, sysusers, SET FMTONLY ON, XP_API,                                                   
+     Table hint without WITH, More than two-part column name. We                                                        
+     recommend to replace them with features actual for SQL Server                                                      
+     version 14.0.1000.                                                                                      
+Medi Amount of single use plans in cache is high (100%). Consider       PlansUseRatio         Microsoft Ruleset 0.1.202
+     enabling the Optimize for ad hoc workloads setting on heavy OLTP                                                   
+     ad-hoc workloads to conserve resources.
+...</dev:code>
+        <dev:remarks>
+          <maml:para>This example shows how to get all best practice recommendations for the default instance of SQL Server.</maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>---- Example 4: Invoke assessment with custom configuration ----</maml:title>
+        <dev:code>PS:&gt; Get-SqlInstance -ServerInstance '(local)' | Invoke-SqlAssessment -Configuration C:\profileA.json, C:\profileB.json
+
+TargetPath : Server[@Name='LOCAL']
+
+Sev. Message                                                            Check ID              Origin               
+---- -------                                                            --------              ------               
+Low  Detected deprecated or discontinued feature uses: String literals  DeprecatedFeatures    Microsoft Ruleset 0.1.202
+     as column aliases, syscolumns, sysusers, SET FMTONLY ON, XP_API,                                                   
+     Table hint without WITH, More than two-part column name. We                                                        
+     recommend to replace them with features actual for SQL Server                                                      
+     version 14.0.1000.
+Medi A custom rule violation detected.                                  CustomRuleA           Profile A 1.0
+...</dev:code>
+        <dev:remarks>
+          <maml:para>This example shows how to apply custom configuration to get a modified set of best practice recommendations.  Custom configurations are described in JSON files. Custom rulesets profileA.json and profileB.json disabled some  checks and introduced some new ones. One of the new checks from profileA.json detected a problem with the current  configuration of the SQL Server instance.  Visit SQL Assessment samples folder (https://go.microsoft.com/fwlink/?linkid=2099023)on Github to find out how to make customization.</maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>-------- Example 5: Invoke assessment for all instances --------</maml:title>
+        <dev:code>PS:&gt; dir SQLSERVER:\SQL\localhost | Invoke-SqlAssessment
+
+    TargetPath : Server[@Name='LOCAL']
+
+Sev. Message                                                            Check ID              Origin               
+---- -------                                                            --------              ------               
+Info Enable trace flag 834 to use large-page allocations to improve     TF834                 Microsoft Ruleset 0.1.202
+     analytical and data warehousing workloads.                                                                         
+Low  Detected deprecated or discontinued feature uses: String literals  DeprecatedFeatures    Microsoft Ruleset 0.1.202
+     as column aliases, syscolumns, sysusers, SET FMTONLY ON, XP_API,                                                   
+     Table hint without WITH, More than two-part column name. We                                                        
+     recommend to replace them with features actual for SQL Server                                                      
+     version 14.0.1000.                                                                                      
+Medi Amount of single use plans in cache is high (100%). Consider       PlansUseRatio         Microsoft Ruleset 0.1.202
+     enabling the Optimize for ad hoc workloads setting on heavy OLTP                                                   
+     ad-hoc workloads to conserve resources.
+
+    TargetPath : Server[@Name='LOCAL\INSTANCE1']
+
+Sev. Message                                                            Check ID              Origin               
+---- -------                                                            --------              ------               
+Medi Product version 14.0.1000 is not the latest available. Keep your   LatestCU              Microsoft Ruleset 0.1.202
+     your SQL Server up to date and install Service Packs and
+     Cumulative Updates as they are released.
+...</dev:code>
+        <dev:remarks>
+          <maml:para>This example shows Invoke-SqlAssessment cmdlet accepting a set of SQL Server instances via pipeline.</maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>--- Example 6: Run assessment for a filtered set ot tragets ---</maml:title>
+        <dev:code>PS:&gt; Get-SqlInstance -ServerInstance . | Where { $_.Name -Match '.*\d+' } | Invoke-SqlAssessment
+
+    TargetPath : Server[@Name='LOCAL\INSTANCE1']
+
+Sev. Message                                                            Check ID              Origin               
+---- -------                                                            --------              ------               
+Medi Product version 14.0.1000 is not the latest available. Keep your   LatestCU              Microsoft Ruleset 0.1.202
+     your SQL Server up to date and install Service Packs and
+     Cumulative Updates as they are released.
+...</dev:code>
+        <dev:remarks>
+          <maml:para>This example shows Invoke-SqlAssessment cmdlet accepting a set of SQL Server instances via pipeline. The set is filtered with the standard PowerShell Where-Object cmdlet.</maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>----- Example 7: Invoke assessment for a database by name -----</maml:title>
+        <dev:code>PS:&gt; Get-SqlDatabase master -ServerInstance localhost | Invoke-SqlAssessment -Verbose
+VERBOSE: Base ruleset version: 0.2.
+VERBOSE: No recommendations for [master].</dev:code>
+        <dev:remarks>
+          <maml:para>This example shows Invoke-SqlAssessment cmdlet accepting name of a database. In this case no issue was found.</maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>----- Example 8: Invoke assessment for a database by path -----</maml:title>
+        <dev:code>PS:&gt; Invoke-SqlAssessment SQLSERVER:\SQL\localhost\default\Databases\master -Verbose
+VERBOSE: Base ruleset version: 0.2.
+VERBOSE: No recommendations for [master].</dev:code>
+        <dev:remarks>
+          <maml:para>This example shows Invoke-SqlAssessment cmdlet accepting the path to a SQL Server database.</maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>--------- Example 9: Detect high issues for a database ---------</maml:title>
+        <dev:code>PS:&gt; cd SQLSERVER:\SQL\localhost\default\Databases\master
+PS:&gt; Invoke-SqlAssessment -MinSeverity High
+VERBOSE: Base ruleset version: 0.2.
+VERBOSE: No recommendations for [master].</dev:code>
+        <dev:remarks>
+          <maml:para>This example shows Invoke-SqlAssessment cmdlet assessing the current location. Only high issues are reported.</maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>------------ Example 10: Run checks selected by tag ------------</maml:title>
+        <dev:code>PS:&gt; Get-SqlInstance -ServerInstance . | Invoke-SqlAssessment -Check Backup -Verbose
+VERBOSE: Base ruleset version: 0.2.
+VERBOSE: No recommendations for [LOCAL].</dev:code>
+        <dev:remarks>
+          <maml:para>This example shows Invoke-SqlAssessment cmdlet running all backup-related checks for every SQL Server  instance on the local server.</maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>-------- Example 11: Run interactively selected checks --------</maml:title>
+        <dev:code>PS:&gt; $serverInstance = Get-SqlInstance -ServerInstance '(local)'
+PS:&gt; $checks = Get-SqlAssessmentItem $serverInstance | Select Name, Description | Out-GridView -PassThru
+PS:&gt; Invoke-SqlAssessment $serverInstance -Check $checks
+
+    TargetPath : Server[@Name='LOCAL']
+
+Sev. Message                                                            Check ID               Origin               
+---- -------                                                            --------               ------               
+Info Enable trace flag 834 to use large-page allocations to improve     TF834                  Microsoft Ruleset 0.1.202
+     analytical and data warehousing workloads.                                                                     
+Low  Detected deprecated or discontinued feature uses: String literals  DeprecatedFeatures     Microsoft Ruleset 0.1.202
+     as column aliases, syscolumns, sysusers, SET FMTONLY ON, XP_API,                                                   
+     Table hint without WITH, More than two-part column name. We                                                        
+     recommend to replace them with features actual for SQL Server                                                      
+     version 14.0.1000.</dev:code>
+        <dev:remarks>
+          <maml:para>The second line of this example shows obtaining checks for a $serverInstance, and selecting some of them interactively. Selected items are stored in an array variable, which then is used as input for Invoke-SqlAssessment cmdlet.  Only picked checks run during the assessment process.</maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>-------- Example 12: Effect of -FlattenOutput parameter --------</maml:title>
+        <dev:code>PS&gt; $inst = Get-SqlInstance -ServerInstance . 
+PS&gt; Invoke-SqlAssessment $inst -FlattenOutput | Select -First 1 | Get-Member
+
+
+   TypeName: Microsoft.SqlServer.Management.Assessment.Cmdlets.AssessmentNoteFlat
+
+Name           MemberType Definition                    
+----           ---------- ----------                    
+Equals         Method     bool Equals(System.Object obj)
+GetHashCode    Method     int GetHashCode()             
+GetType        Method     type GetType()                
+ToString       Method     string ToString()             
+CheckId        Property   string CheckId {get;}         
+CheckName      Property   string CheckName {get;}       
+HelpLink       Property   string HelpLink {get;}        
+Message        Property   string Message {get;}         
+RulesetName    Property   string RulesetName {get;}     
+RulesetVersion Property   string RulesetVersion {get;}  
+Severity       Property   string Severity {get;}        
+TargetPath     Property   string TargetPath {get;}      
+TargetType     Property   string TargetType {get;}      
+
+
+PS&gt; Invoke-SqlAssessment $inst | Select -First 1 | Get-Member
+
+
+   TypeName: Microsoft.SqlServer.Management.Assessment.Cmdlets.AssessmentNote
+
+Name        MemberType Definition                                                             
+----        ---------- ----------                                                             
+Equals      Method     bool Equals(System.Object obj)                                         
+GetHashCode Method     int GetHashCode()                                                      
+GetType     Method     type GetType()                                                         
+ToString    Method     string ToString()                                                      
+Check       Property   Microsoft.SqlServer.Management.Assessment.Checks.ICheck Check {get;}   
+HelpLink    Property   string HelpLink {get;}                                                 
+Message     Property   string Message {get;}                                                  
+Severity    Property   Microsoft.SqlServer.Management.Assessment.SeverityLevel Severity {get;}
+TargetPath  Property   string TargetPath {get;}                                               
+TargetType  Property   string TargetType {get;}
+
+PS&gt; (Invoke-SqlAssessment $inst | Select -First 1).Check | Get-Member
+
+
+   TypeName: Microsoft.SqlServer.Management.Assessment.Checks.Check
+
+Name          MemberType Definition                                                                                                                                     
+----          ---------- ----------                                                                                                                                     
+Equals        Method     bool Equals(System.Object obj)                                                                                                                 
+GetHashCode   Method     int GetHashCode()                                                                                                                              
+GetType       Method     type GetType()                                                                                                                                 
+ToString      Method     string ToString()                                                                                                                              
+Condition     Property   Microsoft.SqlServer.Management.Assessment....
+Description   Property   string Description {get;set;}                                                                                                                  
+DisplayName   Property   string DisplayName {get;set;}                                                                                                                  
+Enabled       Property   bool Enabled {get;set;}                                                                                                                        
+HelpLink      Property   string HelpLink {get;set;}                                                                                                                     
+Id            Property   string Id {get;set;}                                                                                                                           
+Level         Property   Microsoft.SqlServer.Management.Assessment....
+Message       Property   string Message {get;set;}                                                                                                                      
+OriginName    Property   string OriginName {get;set;}                                                                                                                   
+OriginVersion Property   version OriginVersion {get;set;}                                                                                                               
+Parameters    Property   System.Collections.Generic.IDictionary[str...
+Probes        Property   System.Collections.Generic.List[Microsoft....
+Tags          Property   System.Collections.Generic.HashSet[string]...
+Target        Property   Microsoft.SqlServer.Management.Assessment....</dev:code>
+        <dev:remarks>
+          <maml:para>This example shows the difference between objects returned with or without -FlattenOutput parameter.  The parameter replaces huge complex Check object with two string properties CheckId and CheckName.  This is useful for serialization purposes (see the next example).</maml:para>
+          <maml:para>The first command shows simple object with all properties of type string.</maml:para>
+          <maml:para>The second command shows another object with two non-string properties: Check and Severity.</maml:para>
+          <maml:para>The third command shows the rich set of data accessible with the Check property.</maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>------------- Example 13: Run failed checks again -------------</maml:title>
+        <dev:code>PS&gt; $inst = Get-SqlInstance -ServerInstance .
+PS&gt; $results = Invoke-SqlAssessment $inst
+PS&gt; $results
+
+   TargetPath : Server[@Name='LOCAL']
+
+Sev. Message                                                            Check ID              Origin               
+---- -------                                                            --------              ------               
+Info Enable trace flag 834 to use large-page allocations to improve     TF834                 Microsoft Ruleset 0.1.202
+     analytical and data warehousing workloads.                                                                         
+Low  Detected deprecated or discontinued feature uses: String literals  DeprecatedFeatures    Microsoft Ruleset 0.1.202
+     as column aliases, syscolumns, sysusers, SET FMTONLY ON, XP_API,                                                   
+     Table hint without WITH, More than two-part column name. We                                                        
+     recommend to replace them with features actual for SQL Server                                                      
+     version 14.0.1000.                                                                                      
+Medi Amount of single use plans in cache is high (100%). Consider       PlansUseRatio         Microsoft Ruleset 0.1.202
+     enabling the Optimize for ad hoc workloads setting on heavy OLTP                                                   
+     ad-hoc workloads to conserve resources. 
+
+PS&gt; $results[1].Check.Description
+This check detects deprecated or discontinued features used on target SQL Server instance. Deprecated features may be 
+removed in a future release of SQL Server. Discontinued features have been removed from specific versions of SQL Server.
+
+PS&gt; Invoke-SqlAssessment $inst -Check $results[1].Check
+   
+   TargetPath : Server[@Name='LOCAL']
+
+Sev. Message                                                            Check ID              Origin               
+---- -------                                                            --------              ------                                                                                      
+Low  Detected deprecated or discontinued feature uses: String literals  DeprecatedFeatures    Microsoft Ruleset 0.1.202
+     as column aliases, syscolumns, sysusers, SET FMTONLY ON, XP_API,                                                   
+     Table hint without WITH, More than two-part column name. We                                                        
+     recommend to replace them with features actual for SQL Server                                                      
+     version 14.0.1000. 
+
+PS&gt; Invoke-SqlAssessment $inst -Check ($results).Check
+
+   TargetPath : Server[@Name='LOCAL']
+
+Sev. Message                                                            Check ID              Origin               
+---- -------                                                            --------              ------               
+Info Enable trace flag 834 to use large-page allocations to improve     TF834                 Microsoft Ruleset 0.1.202
+     analytical and data warehousing workloads.                                                                         
+Low  Detected deprecated or discontinued feature uses: String literals  DeprecatedFeatures    Microsoft Ruleset 0.1.202
+     as column aliases, syscolumns, sysusers, SET FMTONLY ON, XP_API,                                                   
+     Table hint without WITH, More than two-part column name. We                                                        
+     recommend to replace them with features actual for SQL Server                                                      
+     version 14.0.1000.                                                                                      
+Medi Amount of single use plans in cache is high (100%). Consider       PlansUseRatio         Microsoft Ruleset 0.1.202
+     enabling the Optimize for ad hoc workloads setting on heavy OLTP                                                   
+     ad-hoc workloads to conserve resources.</dev:code>
+        <dev:remarks>
+          <maml:para>This example shows how a Check returned with assessment results can be reused.  You can rerun the checks which produced AssessmentNotes before.</maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>------- Example 14: Store assessment results to a table -------</maml:title>
+        <dev:code>PS:&gt; $serverInstance = Get-SqlInstance -ServerInstance '(local)'
+PS:&gt; Invoke-SqlAssessment $serverInstance -FlattenOutput | 
+     Write-SqlTableData -ServerInstance localhost -DatabaseName SqlAssessment -SchemaName Assessment -TableName Results -Force</dev:code>
+        <dev:remarks>
+          <maml:para>The second line of this example shows using -FlattenOutput parameter with Write-SqlTableData cmdlet  to store assessment results to a SQL database.</maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>---------- Example 15: Specify credentials explicitly ----------</maml:title>
+        <dev:code>PS&gt; $cred = Get-Credential
+
+PowerShell credential request
+Enter your credentials.
+User: Administrator
+Password for user Administrator: ********
+
+PS&gt; $inst = Get-SqlInstance -ServerInstance 10.0.3.118 -Credential $cred
+PS&gt; Invoke-SqlAssessment $inst
+
+   TargetPath : Server[@Name='ContosSQL']
+
+Sev. Message                                                            Check ID              Origin               
+---- -------                                                            --------              ------               
+Medi Amount of single use plans in cache is high (100%). Consider       PlansUseRatio         Microsoft Ruleset 0.1.202
+     enabling the Optimize for ad hoc workloads setting on heavy OLTP                                                   
+     ad-hoc workloads to conserve resources</dev:code>
+        <dev:remarks>
+          <maml:para>This example shows how to invoke SQL Assessment with explicitly specified credentials.</maml:para>
+        </dev:remarks>
+      </command:example>
+      <command:example>
+        <maml:title>Example 16: Invoke assessment for a SQL Server on Azure VM instance</maml:title>
+        <dev:code>PS&gt; Connect-AzAccount
+PS&gt; Set-Subscription My-Pay-As-You-Go
+PS&gt; $cred = Get-Credential
+
+PowerShell credential request
+Enter your credentials.
+User: Administrator
+Password for user Administrator: ********
+
+PS&gt; $inst = Get-SqlInstance -ServerInstance 10.0.3.118 -Credential $cred
+PS&gt; Invoke-SqlAssessment $inst
+
+   TargetPath : Server[@Name='ContosoAzureSQL']
+
+Sev. Message                                                            Check ID              Origin               
+---- -------                                                            --------              ------               
+Medi Amount of single use plans in cache is high (100%). Consider       PlansUseRatio         Microsoft Ruleset 0.1.202
+     enabling the Optimize for ad hoc workloads setting on heavy OLTP                                                   
+     ad-hoc workloads to conserve resources 
+Info Use memory optimized virtual machine sizes for the best            AzSqlVmSize           Microsoft Ruleset 0.1.202 
+     performance of SQL Server workloads</dev:code>
+        <dev:remarks>
+          <maml:para>This example shows how to invoke assessment for an SQL Server on Azure VM instance.</maml:para>
+          <maml:para>An active Azure subscription connection enables SQL Server on Azure VM related checks (AzSqlVmSize in this example). The first line connects to an Azure account to get data from Azure Resource Graph. The second line is optional.</maml:para>
+          <maml:para>To run these checks SQL Assessment requires Az.ResourceGraph module.</maml:para>
+        </dev:remarks>
+      </command:example>
+    </command:examples>
+    <command:relatedLinks>
+      <maml:navigationLink>
+        <maml:linkText>Online Version:</maml:linkText>
+        <maml:uri>https://learn.microsoft.com/powershell/module/sqlserver/invoke-sqlassessment</maml:uri>
+      </maml:navigationLink>
+      <maml:navigationLink>
+        <maml:linkText>SQL Assessment API Online Documentation page</maml:linkText>
+        <maml:uri></maml:uri>
+      </maml:navigationLink>
+      <maml:navigationLink>
+        <maml:linkText>SQL Assessment Samples</maml:linkText>
+        <maml:uri>https://go.microsoft.com/fwlink/?linkid=2099023</maml:uri>
+      </maml:navigationLink>
+    </command:relatedLinks>
+  </command:command>
+</helpItems>

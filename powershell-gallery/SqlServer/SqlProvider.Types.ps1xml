@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- *******************************************************************
+Copyright (c) Microsoft Corporation.  All rights reserved.
+******************************************************************** -->
+
+<Types>
+
+  <Type>
+    <Name>Microsoft.SqlServer.Management.Smo.NamedSmoObject</Name>
+    <Members>
+      <MemberSet>
+        <Name>PSStandardMembers</Name>
+        <Members>
+          <PropertySet>
+            <Name>DefaultDisplayPropertySet</Name>
+            <ReferencedProperties>
+              <Name>Name</Name>
+            </ReferencedProperties>
+          </PropertySet>
+          <NoteProperty>
+            <Name>DefaultDisplayProperty</Name>
+            <Value>Name</Value>
+          </NoteProperty>
+          <PropertySet>
+            <Name>DefaultKeyPropertySet</Name>
+            <ReferencedProperties>
+              <Name>Name</Name>
+            </ReferencedProperties>
+          </PropertySet>
+        </Members>
+      </MemberSet>
+    </Members>
+  </Type>
+
+  <Type>
+    <Name>Microsoft.SqlServer.Management.Smo.Agent.JobStep</Name>
+    <Members>
+        <ScriptProperty>
+            <Name>LastRunDurationAsTimeSpan</Name>
+            <GetScriptBlock>
+              $duration = $this.LastRunDuration
+              $seconds = $duration % 100
+              $duration = [math]::floor($duration / 100)
+              $minutes = $duration % 100
+              $duration = [math]::floor($duration / 100)
+              $hours = $duration
+              New-TimeSpan -Hours $hours -Minutes $minutes -Seconds $seconds
+            </GetScriptBlock>
+        </ScriptProperty>
+    </Members>
+  </Type>
+
+   <Type>
+    <Name>Microsoft.SqlServer.Management.Smo.Agent.Job</Name>
+    <Members>
+        <ScriptProperty>
+            <Name>LastRunDuration</Name>
+            <GetScriptBlock>
+                $totalTime = New-TimeSpan -Seconds 0
+                Get-SqlAgentJobStep -InputObject $this | ForEach { $totalTime += $_.LastRunDurationAsTimeSpan }
+                $totalTime
+            </GetScriptBlock>
+        </ScriptProperty>
+    </Members>
+  </Type>
+
+    <Type>
+     <Name>Microsoft.SqlServer.Management.Smo.Server</Name>
+     <Members>
+        <ScriptProperty>
+        <Name>DisplayNameOrName</Name>
+        <GetScriptBlock>
+            if($this.DisplayName)
+            {
+                $display = $this.DisplayName
+            }
+            else
+            {
+                $display = $this.Name
+            }
+            $display
+        </GetScriptBlock>
+      </ScriptProperty>
+      <AliasProperty>
+        <Name>UpdateLevel</Name>
+        <ReferencedMemberName>ProductUpdateLevel</ReferencedMemberName>
+      </AliasProperty>
+    </Members>
+  </Type>
+
+</Types>
+
+
+<!-- SIG # Begin signature block
+ -->
