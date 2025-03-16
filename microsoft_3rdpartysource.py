@@ -442,9 +442,26 @@ def download_and_extract_sphere_linux(url, output_dir='azure-sphere/linux'):
 
 
 def main():
+    # unzip service using blobs and function trigger. legacy polling-based trigger with up to 15 mins latency
+    in_sas_url = os.getenv('AZURE_STORAGE_IN')
+    if not in_sas_url:
+        raise ValueError(
+            "AZURE_STORAGE_IN environment variable not set")
+    out_sas_url = os.getenv('AZURE_STORAGE_OUT')
+    if not out_sas_url:
+        raise ValueError("AZURE_STORAGE_OUT environment variable not set")
+    
     # latest_electron = {'url': 'https://3rdpartycodeprod.blob.core.windows.net/download/Microsoft%20Electron/35.0.1%40e2f3b486/Windows/microsoft-electron-v35.0.1-e2f3b48605f133115358cb59af57f202687665ed-windows.zip?sv=2021-12-02&st=2025-03-15T12%3A40%3A43Z&se=2025-03-15T14%3A20%3A43Z&sr=b&sp=r&sig=oSLunjT3k2shNeBIJjEYsLCe6lz7Se%2BGQ4uUqG4B4lE%3D'}
     data = get_3rdparty_data()
     save_json(data, 'microsoft_3rdpartysource.json')
+
+    # Microsoft Edge for Windows
+    # start long-running extraction before other workloads
+    latest_edge = get_latest_edge_release(data)
+    print(f"Latest Edge version: {latest_edge['release']}")
+    source_url = latest_edge['url']
+    success = copy_to_azure_storage(source_url, in_sas_url)
+    print(f"Copy operation {'succeeded' if success else 'failed'}")
 
     # Azure Sphere kernel
     latest_linux = get_latest_sphere_linux_release(data)
@@ -463,29 +480,12 @@ def main():
     print(f"Latest HSM version: {latest_hsm['release']}")
     download_and_extract_hsm(latest_hsm['url'])
     print("HSM download and extraction completed")
-
-    # unzip service using blobs and function trigger
-    in_sas_url = os.getenv('AZURE_STORAGE_IN')
-    if not in_sas_url:
-        raise ValueError(
-            "AZURE_STORAGE_IN environment variable not set")
-    out_sas_url = os.getenv('AZURE_STORAGE_OUT')
-    if not out_sas_url:
-        raise ValueError("AZURE_STORAGE_OUT environment variable not set")
     
     # Microsoft Electron for Windows
     # zip isn't nested so we carve directly. pretty slow from Aus but fast on GHA
     latest_electron = get_latest_electron_release(data)
     print(f"Latest Electron version: {latest_electron['release']}")
     zip_url = latest_electron['url']
-
-    # Microsoft Edge for Windows
-    # start extraction while Electron is processing
-    latest_edge = get_latest_edge_release(data)
-    print(f"Latest Edge version: {latest_edge['release']}")
-    source_url = latest_edge['url']
-    success = copy_to_azure_storage(source_url, in_sas_url)
-    print(f"Copy operation {'succeeded' if success else 'failed'}")
 
     try:
         # Process ZIP contents
@@ -508,12 +508,13 @@ def main():
 
     # exit()
 
+    # Wait for Edge extraction to complete
     print("Waiting for unzip operation to complete...")
     if wait_for_unzip(out_sas_url):
         print("Unzip completed")
         # Delete parent ZIP after unzip
         zip_url = find_zip(in_sas_url)
-        if delete_blob(in_sas_url):
+        if delete_blob(zip_url):
             print("Deleted parent ZIP after unzip")
 
     # Find the ZIP file in output directory
