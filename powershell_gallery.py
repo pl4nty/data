@@ -9,8 +9,29 @@ MODULES = [
     'DellBIOSProvider',
     'ExchangeOnlineManagement',
     'MicrosoftTeams',
+    'Microsoft.Online.SharePoint.PowerShell',
     'SqlServer',
     'WindowsAutoPilotIntune',
+
+    # HP
+    'HPCMSL',
+    'HP.Private',
+    'HP.Utility',
+    'HP.ClientManagement',
+    'HP.Firmware',
+    'HP.Repo',
+    'HP.Sinks',
+    'HP.Softpaq',
+    'HP.Consent',
+    'HP.Retail',
+    'HP.Notifications',
+    'HP.SmartExperiences',
+    'HP.Displays',
+    'HP.Security',
+
+    # VMware
+    # TODO so many...
+
     # inactive
     'AzureRM.profile',
     'CredentialManager',
@@ -23,8 +44,10 @@ MODULES = [
     'msp360',
     'PackageManagement',
     'PowerShellGet',
+    'PSLogging',
     'SNMP',
     'SpeculationControl',
+    'SplitDbxContent',
 ]
 
 
@@ -65,7 +88,15 @@ def strip_signature(file_path):
 
 
 def extract_module(content, module_name):
-    output_dir = os.path.join('powershell-gallery', module_name)
+    # Handle vendor-specific paths
+    if module_name.startswith('HP.'):
+        output_dir = os.path.join('powershell-gallery', 'HP', module_name[3:])
+    elif module_name.startswith('VMware.'):
+        output_dir = os.path.join(
+            'powershell-gallery', 'VMware', module_name[7:])
+    else:
+        output_dir = os.path.join('powershell-gallery', module_name)
+
     os.makedirs(output_dir, exist_ok=True)
 
     with zipfile.ZipFile(io.BytesIO(content)) as zip_ref:
