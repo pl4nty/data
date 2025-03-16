@@ -10,14 +10,21 @@ MODULES = [
     'ExchangeOnlineManagement',
     'MicrosoftTeams',
     'SqlServer',
+    'WindowsAutoPilotIntune',
     # inactive
     'AzureRM.profile',
     'CredentialManager',
     'CPC.DeployInfra',
     'GetBIOS',
+    'Get-AutopilotDiagnostics',
     'Get-WindowsAutoPilotInfo',
+    'IISAdministration',
+    'MSOnline',
+    'msp360',
     'PackageManagement',
     'PowerShellGet',
+    'SNMP',
+    'SpeculationControl',
 ]
 
 
