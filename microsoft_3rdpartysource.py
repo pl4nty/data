@@ -501,7 +501,7 @@ def main():
             print(f"Saved metadata for {len(metadata)} third_party components")
 
             print("\nDownloading files...")
-            download_zip_contents(zip, exclude_paths=['src/third_party'], output_dir='mselectron')
+            download_zip_contents(zip, exclude_paths=['src/third_party', 'src/microsoft/src/third_party/ffmpeg'], output_dir='mselectron')
 
     except Exception as e:
         print(f"Error during ZIP processing: {e}")
