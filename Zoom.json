@@ -1,0 +1,71 @@
+{
+    "errorCode": 0,
+    "errorMessage": null,
+    "result": {
+        "downloadVO": {
+            "disableArmClientDownload": null,
+            "disableZoomRoomsX32Download": true,
+            "enableZoomRcITPackage": true,
+            "is64Bit": false,
+            "launcherUrlForLaunchClientFromWeb": null,
+            "lyncPlugin": {
+                "packageName": "ZoomLyncPluginSetup.msi",
+                "version": "5.13.10.812"
+            },
+            "notesPlugin": {
+                "packageName": "ZoomNotesPluginSetup.msi",
+                "packageNameForIT": "ZoomNotesPluginAdminTool.msi",
+                "version": "6.2.5.1071"
+            },
+            "outlookPlugin": {
+                "packageName": "ZoomOutlookPluginSetup.msi",
+                "version": "6.3.6.1079"
+            },
+            "showManifestConfigure": false,
+            "zoom": {
+                "displayVersion": "6.3.11 (60501)",
+                "packageName": "ZoomInstallerFull.exe",
+                "packageNameForIT": "ZoomInstallerFull.msi",
+                "version": "6.3.11.60501"
+            },
+            "zoomArm64": {
+                "archType": "winarm64",
+                "displayVersion": "6.3.11 (60501)",
+                "packageName": "ZoomInstallerFull.exe",
+                "packageNameForIT": "ZoomInstallerFull.msi",
+                "version": "6.3.11.60501"
+            },
+            "zoomRC": {
+                "displayVersion": "6.3.10 (392)",
+                "packageName": "ZoomRemoteControl.msi",
+                "packageNameForIT": "ZoomRemoteControl_IT.msi",
+                "version": "latest"
+            },
+            "zoomRooms": {
+                "displayVersion": "6.0.7 (4157)",
+                "packageName": "ZoomRooms.exe",
+                "packageNameForIT": "ZoomRoomsInstaller.msi",
+                "version": "latest"
+            },
+            "zoomRoomsX64": {
+                "archType": "x64",
+                "displayVersion": "6.3.10 (5334)",
+                "packageName": "ZoomRooms.exe",
+                "packageNameForIT": "ZoomRoomsInstaller.msi",
+                "version": "latest"
+            },
+            "zoomX64": {
+                "archType": "x64",
+                "displayVersion": "6.3.11 (60501)",
+                "packageName": "ZoomInstallerFull.exe",
+                "packageNameForIT": "ZoomInstallerFull.msi",
+                "version": "6.3.11.60501"
+            }
+        },
+        "fromGov": false,
+        "isCN": false,
+        "isPageJoinOnly": false,
+        "os": "win"
+    },
+    "status": true
+}
