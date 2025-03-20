@@ -17,7 +17,7 @@ jobs:
       matrix:
         cmd:
           - python -u android_bulletins_parser.py
-          - python -u get_json.py
+          - python -u get.py
           # TODO decode https://login.microsoftonline.com/common/kerberos
           - python -u powershell_gallery.py
     steps:

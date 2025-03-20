@@ -1,6 +1,7 @@
 import sys
 import requests
 import json
+import xml.dom.minidom
 
 
 def fetch_and_prettify_json(url, output_file, key=None):
@@ -27,6 +28,31 @@ def fetch_and_prettify_json(url, output_file, key=None):
         print(f"Error fetching data from URL: {e}")
     except json.JSONDecodeError as e:
         print(f"Error decoding JSON: {e}")
+    except Exception as e:
+        print(f"An unexpected error occurred: {e}")
+
+
+def fetch_and_prettify_xml(url, output_file):
+    try:
+        # Fetching XML data from the URL
+        response = requests.get(url)
+        response.raise_for_status()
+        xml_data = response.text
+
+        # Parsing and prettifying XML data
+        dom = xml.dom.minidom.parseString(xml_data)
+        pretty_xml = dom.toprettyxml(indent="    ")
+
+        # Writing prettified XML to the specified file
+        with open(output_file, 'w') as file:
+            file.write(pretty_xml)
+
+        print(f"Prettified XML has been written to {output_file}")
+
+    except requests.exceptions.RequestException as e:
+        print(f"Error fetching data from URL: {e}")
+    except xml.parsers.expat.ExpatError as e:
+        print(f"Error parsing XML: {e}")
     except Exception as e:
         print(f"An unexpected error occurred: {e}")
 
@@ -90,7 +116,7 @@ if __name__ == "__main__":
             "https://www.microsoft.com/releasecommunications/api/v1/m365", "microsoft_365_roadmap.json")
         fetch_and_prettify_json(
             "https://zoom.us/rest/download?os=win", "Zoom.json")
-        fetch_and_prettify_json(
+        fetch_and_prettify_xml(
             "https://officeclient.microsoft.com/serverconfig16", "microsoft_office_serverconfig16.json")
     else:
         url = sys.argv[1]
