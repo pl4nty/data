@@ -48,7 +48,8 @@ def fetch_and_prettify_xml(url, output_file):
             services_element.removeAttribute('o:GenerationTime')
 
         # Writing prettified XML to the specified file
-        pretty_xml = dom.toprettyxml()
+        # pretty_xml = dom.toprettyxml()
+        pretty_xml = dom.toxml()
         with open(output_file, 'w') as file:
             file.write(pretty_xml)
 
