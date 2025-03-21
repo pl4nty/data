@@ -802,6 +802,16 @@
             The AzureADAuthorizationEndpointUri parameter
             </summary>
         </member>
+        <member name="P:Microsoft.Exchange.Management.ExoPowershellSnapin.GetConnectionContext.DisableWAM">
+            <summary>
+            The DisableWAM parameter
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.ExoPowershellSnapin.GetConnectionContext.LogDirectoryPath">
+            <summary>
+            Log Directory path
+            </summary>
+        </member>
         <member name="P:Microsoft.Exchange.Management.ExoPowershellSnapin.GetConnectionContext.BypassMailboxAnchoring">
             <summary>
             The BypassMailboxAnchoring parameter

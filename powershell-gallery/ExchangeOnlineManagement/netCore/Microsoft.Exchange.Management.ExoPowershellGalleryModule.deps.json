@@ -17,13 +17,13 @@
           "Microsoft.Internal.Analyzers": "2.9.7",
           "Microsoft.NETFramework.ReferenceAssemblies": "1.0.3",
           "Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation": "0.0.0",
-          "MsBuildRetail.Exchange": "1.0.30",
-          "MsBuild.Exchange": "17.5.33",
+          "MsBuildRetail.Exchange": "1.1.0",
+          "MsBuild.Exchange": "17.6.0",
           "NSubstitute.Analyzers.CSharp": "1.0.17",
           "Newtonsoft.Json": "13.0.3",
           "OSS.RoslynAnalysis": "1.4.10",
           "ReferenceTrimmer": "3.3.10",
-          "RoslynCQ": "1.33.0",
+          "RoslynCQ": "1.34.2",
           "Microsoft.Exchange.Management.AdminApiProvider.Reference": "15.0.0.0",
           "Microsoft.Exchange.Management.RestApiClient.Reference": "15.0.0.0",
           "Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.Reference": "15.0.0.0"
@@ -168,21 +168,21 @@
           }
         }
       },
-      "Microsoft.Identity.Client/4.61.3": {
+      "Microsoft.Identity.Client/4.66.1": {
         "dependencies": {
           "Microsoft.IdentityModel.Abstractions": "8.0.1",
           "System.Diagnostics.DiagnosticSource": "6.0.1"
         },
         "runtime": {
           "lib/net6.0/Microsoft.Identity.Client.dll": {
-            "assemblyVersion": "4.61.3.0",
-            "fileVersion": "4.61.3.0"
+            "assemblyVersion": "4.66.1.0",
+            "fileVersion": "4.66.1.0"
           }
         }
       },
       "Microsoft.Identity.Client.Broker/4.61.3": {
         "dependencies": {
-          "Microsoft.Identity.Client": "4.61.3",
+          "Microsoft.Identity.Client": "4.66.1",
           "Microsoft.Identity.Client.NativeInterop": "0.16.1"
         },
         "runtime": {
@@ -830,8 +830,8 @@
           }
         }
       },
-      "MsBuild.Exchange/17.5.33": {},
-      "MsBuildRetail.Exchange/1.0.30": {},
+      "MsBuild.Exchange/17.6.0": {},
+      "MsBuildRetail.Exchange/1.1.0": {},
       "NETStandard.Library/1.6.1": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "2.1.2",
@@ -891,7 +891,7 @@
       "NSubstitute.Analyzers.CSharp/1.0.17": {},
       "OSS.RoslynAnalysis/1.4.10": {},
       "ReferenceTrimmer/3.3.10": {},
-      "RoslynCQ/1.33.0": {},
+      "RoslynCQ/1.34.2": {},
       "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {},
       "runtime.fedora.23-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {},
       "runtime.fedora.24-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {},
@@ -1879,7 +1879,7 @@
       },
       "Microsoft.Exchange.Management.AdminApiProvider/0.0.0": {
         "dependencies": {
-          "Microsoft.Identity.Client": "4.61.3",
+          "Microsoft.Identity.Client": "4.66.1",
           "Microsoft.Identity.Client.Broker": "4.61.3",
           "Microsoft.Identity.Client.NativeInterop": "0.16.1",
           "Microsoft.OData.Client": "7.21.3",
@@ -1934,7 +1934,7 @@
         "runtime": {
           "Microsoft.Exchange.Management.AdminApiProvider.dll": {
             "assemblyVersion": "15.0.0.0",
-            "fileVersion": "15.20.8398.0"
+            "fileVersion": "15.20.8511.0"
           }
         }
       },
@@ -1942,7 +1942,7 @@
         "runtime": {
           "Microsoft.Exchange.Management.RestApiClient.dll": {
             "assemblyVersion": "15.0.0.0",
-            "fileVersion": "15.20.8398.0"
+            "fileVersion": "15.20.8511.0"
           }
         }
       },
@@ -1950,7 +1950,7 @@
         "runtime": {
           "Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.dll": {
             "assemblyVersion": "15.0.0.0",
-            "fileVersion": "15.20.8398.0"
+            "fileVersion": "15.20.8511.0"
           }
         }
       }
@@ -2067,12 +2067,12 @@
       "path": "microsoft.extensions.objectpool/6.0.3",
       "hashPath": "microsoft.extensions.objectpool.6.0.3.nupkg.sha512"
     },
-    "Microsoft.Identity.Client/4.61.3": {
+    "Microsoft.Identity.Client/4.66.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-naJo/Qm35Caaoxp5utcw+R8eU8ZtLz2ALh8S+gkekOYQ1oazfCQMWVT4NJ/FnHzdIJlm8dMz0oMpMGCabx5odA==",
-      "path": "microsoft.identity.client/4.61.3",
-      "hashPath": "microsoft.identity.client.4.61.3.nupkg.sha512"
+      "sha512": "sha512-mE+m3pZ7zSKocSubKXxwZcUrCzLflC86IdLxrVjS8tialy0b1L+aECBqRBC/ykcPlB4y7skg49TaTiA+O2UfDw==",
+      "path": "microsoft.identity.client/4.66.1",
+      "hashPath": "microsoft.identity.client.4.66.1.nupkg.sha512"
     },
     "Microsoft.Identity.Client.Broker/4.61.3": {
       "type": "package",
@@ -2249,19 +2249,19 @@
       "path": "microsoft.win32.systemevents/7.0.0",
       "hashPath": "microsoft.win32.systemevents.7.0.0.nupkg.sha512"
     },
-    "MsBuild.Exchange/17.5.33": {
+    "MsBuild.Exchange/17.6.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-ZvOnPO6Nk3CbIlMvDzYfQMq2BTUsiJMzAuFPtV3KCQeiHZ1L+TzPCFb8qzX6FPEwr1g2PzADx0cXgjUksY36xw==",
-      "path": "msbuild.exchange/17.5.33",
-      "hashPath": "msbuild.exchange.17.5.33.nupkg.sha512"
+      "sha512": "sha512-+06xpXnXK08j6v7ma5dInbItTtcQ5ezdeg2xaXh8PNcgenjBciVEVOtGQza9KDbBCz+U/SuIfRbfpcBpyNS99w==",
+      "path": "msbuild.exchange/17.6.0",
+      "hashPath": "msbuild.exchange.17.6.0.nupkg.sha512"
     },
-    "MsBuildRetail.Exchange/1.0.30": {
+    "MsBuildRetail.Exchange/1.1.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-NTJ/9lcq5jU4IFJVfWMHB23xo9VmwxN1AVHBOQq1QHIhE5n+nl31CzK/HZe8CC2MCSsGH99lDYN1ECnonuY2tA==",
-      "path": "msbuildretail.exchange/1.0.30",
-      "hashPath": "msbuildretail.exchange.1.0.30.nupkg.sha512"
+      "sha512": "sha512-uyt+Q2QCa7Ql7eZUAA86eOx3Y7e71Xi3ChjddQorMNKpYLrh/8aqpInnO0QGK/VJcmuS6i/kJ0PezdAGcOm1EQ==",
+      "path": "msbuildretail.exchange/1.1.0",
+      "hashPath": "msbuildretail.exchange.1.1.0.nupkg.sha512"
     },
     "NETStandard.Library/1.6.1": {
       "type": "package",
@@ -2298,12 +2298,12 @@
       "path": "referencetrimmer/3.3.10",
       "hashPath": "referencetrimmer.3.3.10.nupkg.sha512"
     },
-    "RoslynCQ/1.33.0": {
+    "RoslynCQ/1.34.2": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-Iia7Y2RwvMcwSdRZqwwvoeVG7r6AjVQqfeF/MSY4yultv1IvmpkbFvSG8nzTtkSDfYqQycHJQG88iQHJMDw/uA==",
-      "path": "roslyncq/1.33.0",
-      "hashPath": "roslyncq.1.33.0.nupkg.sha512"
+      "sha512": "sha512-hSYQOvSOZEDYWyYkZ6SG36KbAFFxVXBTjmmve1Rbw832Ac9WhkFjrav5b6j9uZMCMrHO+H1Nzd8soEjYH0x1/w==",
+      "path": "roslyncq/1.34.2",
+      "hashPath": "roslyncq.1.34.2.nupkg.sha512"
     },
     "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
       "type": "package",

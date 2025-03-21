@@ -10,13 +10,14 @@
             This information is used for token cache lookup and enforcing the user session on the STS authorize endpoint.
             </summary>
         </member>
-        <member name="M:Microsoft.Identity.Client.Account.#ctor(System.String,System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.String},System.Collections.Generic.IEnumerable{Microsoft.Identity.Client.TenantProfile})">
+        <member name="M:Microsoft.Identity.Client.Account.#ctor(System.String,System.String,System.String,System.String,System.Collections.Generic.IDictionary{System.String,System.String},System.Collections.Generic.IEnumerable{Microsoft.Identity.Client.TenantProfile})">
             <summary>
             Constructor for the account instance.
             </summary>
             <param name="homeAccountId">Home account ID in "uid.utid" format; can be null, for example when migrating the ADAL v3 cache.</param>
             <param name="username"><see href="https://learn.microsoft.com/windows/win32/secauthn/user-name-formats#user-principal-name">UPN-style</see>, can be null</param>
             <param name="environment">Identity provider for the account, e.g., <c>login.microsoftonline.com</c>.</param>
+            <param name="accountsource">The initial flow that established the account. e.g., device code flow.</param>
             <param name="wamAccountIds">Map of (<c>client_id</c>, <c>wam_account_id</c>)</param>
             <param name="tenantProfiles">Map of (<c>tenant_id</c>, <c>tenant_profile</c>)</param>
         </member>
@@ -28,6 +29,11 @@
         <member name="P:Microsoft.Identity.Client.Account.Environment">
             <summary>
             Gets the environment associated with the account. For example, <c>login.microsoftonline.com</c>.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Identity.Client.Account.AccountSource">
+            <summary>
+            Gets the source of the account. For example, device code flow, broker etc.
             </summary>
         </member>
         <member name="P:Microsoft.Identity.Client.Account.HomeAccountId">
@@ -135,15 +141,6 @@
             to create scopes for legacy applications which used to expose OAuth2 permissions.
             </summary>
             <param name="scopes">Scopes requested to access a protected API</param>
-            <returns>The builder to chain the .With methods.</returns>
-        </member>
-        <member name="M:Microsoft.Identity.Client.AbstractAcquireTokenParameterBuilder`1.WithExtraQueryParameters(System.Collections.Generic.Dictionary{System.String,System.String})">
-            <summary>
-            Sets Extra Query Parameters for the query string in the HTTP authentication request.
-            </summary>
-            <param name="extraQueryParameters">This parameter will be appended as is to the query string in the HTTP authentication request to the authority
-            as a string of segments of the form <c>key=value</c> separated by an ampersand character.
-            The parameter can be null.</param>
             <returns>The builder to chain the .With methods.</returns>
         </member>
         <member name="M:Microsoft.Identity.Client.AbstractAcquireTokenParameterBuilder`1.WithClaims(System.String)">
@@ -512,6 +509,21 @@
             The default is <c>false</c></param>
             <returns>The builder to chain the .With methods</returns>
         </member>
+        <member name="T:Microsoft.Identity.Client.AcquireTokenByUsernameAndPasswordConfidentialParameterBuilder">
+            <summary>
+            Parameter builder for the <see cref="M:Microsoft.Identity.Client.IByUsernameAndPassword.AcquireTokenByUsernamePassword(System.Collections.Generic.IEnumerable{System.String},System.String,System.String)"/>
+            operation. See https://aka.ms/msal-net-up
+            </summary>
+        </member>
+        <member name="M:Microsoft.Identity.Client.AcquireTokenByUsernameAndPasswordConfidentialParameterBuilder.ExecuteInternalAsync(System.Threading.CancellationToken)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Microsoft.Identity.Client.AcquireTokenByUsernameAndPasswordConfidentialParameterBuilder.CalculateApiEventId">
+            <inheritdoc/>
+        </member>
+        <member name="M:Microsoft.Identity.Client.AcquireTokenByUsernameAndPasswordConfidentialParameterBuilder.Validate">
+            <inheritdoc/>
+        </member>
         <member name="T:Microsoft.Identity.Client.AcquireTokenByUsernamePasswordParameterBuilder">
             <summary>
             Parameter builder for the <see cref="M:Microsoft.Identity.Client.IPublicClientApplication.AcquireTokenByUsernamePassword(System.Collections.Generic.IEnumerable{System.String},System.String,System.String)"/>
@@ -564,12 +576,16 @@
         </member>
         <member name="M:Microsoft.Identity.Client.AcquireTokenForClientParameterBuilder.WithForceRefresh(System.Boolean)">
             <summary>
-            Specifies if the token request will ignore the access token in the application token cache
-            and will attempt to acquire a new access token using client credentials.
+            Specifies if the client application should ignore access tokens when reading the token cache. 
+            New tokens will still be written to the application token cache.
             By default the token is taken from the application token cache (forceRefresh=false)
             </summary>
-            <param name="forceRefresh">If <c>true</c>, the request will ignore the token cache. The default is <c>false</c>
+            <param name="forceRefresh">
+            If <c>true</c>, the request will ignore cached access tokens on read, but will still write them to the cache once obtained from the identity provider. The default is <c>false</c>
             </param>
+            <remarks>
+            Do not use this flag except in well understood cases. Identity providers will throttle clients that make too many similar token requests.
+            </remarks>
             <returns>The builder to chain the .With methods</returns>
         </member>
         <member name="M:Microsoft.Identity.Client.AcquireTokenForClientParameterBuilder.WithSendX5C(System.Boolean)">
@@ -616,13 +632,27 @@
         </member>
         <member name="M:Microsoft.Identity.Client.AcquireTokenForManagedIdentityParameterBuilder.WithForceRefresh(System.Boolean)">
             <summary>
-            Specifies if the token request will ignore the access token in the application token cache
-            and will attempt to acquire a new access token for managed identity.
+            Specifies if the client application should ignore access tokens when reading the token cache. 
+            New tokens will still be written to the application token cache.
             By default the token is taken from the application token cache (forceRefresh=false)
             </summary>
-            <param name="forceRefresh">If <c>true</c>, the request will ignore the token cache. The default is <c>false</c>
+            <param name="forceRefresh">If <c>true</c>, the request will ignore cached access tokens on read, but will still write them to the cache once obtained from the Identity Provider. The default is <c>false</c>
             </param>
+            <remarks>
+            Do not use this flag except in well understood cases. Identity Providers will throttle clients that issue too many similar token requests.
+            </remarks>
             <returns>The builder to chain the .With methods</returns>
+        </member>
+        <member name="M:Microsoft.Identity.Client.AcquireTokenForManagedIdentityParameterBuilder.WithClaims(System.String)">
+            <summary>
+            Adds a claims challenge to the token request. The SDK will bypass the token cache when a claims challenge is specified. Retry the 
+            token acquisition, and use this value in the <see cref="M:Microsoft.Identity.Client.AcquireTokenForManagedIdentityParameterBuilder.WithClaims(System.String)"/> method. A claims challenge typically arises when 
+            calling the protected downstream API, for example when the tenant administrator revokes credentials. Apps are required 
+            to look for a 401 Unauthorized response from the protected api and to parse the WWW-Authenticate response header in order to 
+            extract the claims. See https://aka.ms/msal-net-claim-challenge for details.
+            </summary>
+            <param name="claims">A string with one or multiple claims.</param>
+            <returns>The builder to chain .With methods.</returns>
         </member>
         <member name="M:Microsoft.Identity.Client.AcquireTokenForManagedIdentityParameterBuilder.ExecuteInternalAsync(System.Threading.CancellationToken)">
             <inheritdoc/>
@@ -782,18 +812,17 @@
         </member>
         <member name="M:Microsoft.Identity.Client.AcquireTokenOnBehalfOfParameterBuilder.WithForceRefresh(System.Boolean)">
             <summary>
-            Specifies if the client application should force refreshing the
-            token from the user token cache. By default the token is taken from the
-            the user token cache (forceRefresh=false)
+            Specifies if the client application should ignore access tokens when reading the token cache. 
+            New tokens will still be written to the token cache.
+            By default the token is taken from the the user token cache (forceRefresh=false)
             </summary>
             <param name="forceRefresh">If <c>true</c>, ignore any access token in the user token cache
             and attempt to acquire new access token using the refresh token for the account
-            if one is available. This can be useful in the case when the application developer wants to make
-            sure that conditional access policies are applied immediately, rather than after the expiration of the access token.
-            The default is <c>false</c></param>
+            if one is available. The default is <c>false</c></param>
             <returns>The builder to chain the .With methods</returns>
-            <remarks>Avoid unnecessarily setting <paramref name="forceRefresh"/> to <c>true</c> true in order to
-            avoid negatively affecting the performance of your application</remarks>
+            <remarks>
+            Do not use this flag except in well understood cases. Identity Providers will throttle clients that issue too many similar token requests.
+            </remarks>        
         </member>
         <member name="M:Microsoft.Identity.Client.AcquireTokenOnBehalfOfParameterBuilder.WithCcsRoutingHint(System.String,System.String)">
             <summary>
@@ -839,9 +868,9 @@
         </member>
         <member name="M:Microsoft.Identity.Client.AcquireTokenSilentParameterBuilder.WithForceRefresh(System.Boolean)">
             <summary>
-            Specifies if the client application should force refreshing the
-            token from the user token cache. By default the token is taken from the
-            the user token cache (forceRefresh=false)
+            Specifies if the client application should ignore access tokens when reading the token cache.
+            Refresh tokens will still be used. Any new tokens from the Identity Provider will still be written to the token cache.
+            By default the token is taken from the the user token cache (forceRefresh=false)
             </summary>
             <param name="forceRefresh">If <c>true</c>, ignore any access token in the user token cache
             and attempt to acquire new access token using the refresh token for the account
@@ -989,6 +1018,15 @@
             <param name="correlationId">Correlation id of the authentication request.</param>
             <returns>The builder to chain the .With methods.</returns>
         </member>
+        <member name="M:Microsoft.Identity.Client.BaseAbstractAcquireTokenParameterBuilder`1.WithExtraQueryParameters(System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            Sets Extra Query Parameters for the query string in the HTTP authentication request.
+            </summary>
+            <param name="extraQueryParameters">This parameter will be appended as is to the query string in the HTTP authentication request to the authority
+            as a string of segments of the form <c>key=value</c> separated by an ampersand character.
+            The parameter can be null.</param>
+            <returns>The builder to chain the .With methods.</returns>
+        </member>
         <member name="M:Microsoft.Identity.Client.BaseAbstractAcquireTokenParameterBuilder`1.Validate">
             <summary>
             Validates the parameters of the AcquireToken operation.
@@ -1083,7 +1121,7 @@
             This overrides application config settings.
             </summary>
         </member>
-        <member name="P:Microsoft.Identity.Client.ApiConfig.Parameters.AbstractAcquireTokenConfidentialClientParameters.SpaCode">
+        <member name="P:Microsoft.Identity.Client.ApiConfig.Parameters.AcquireTokenByAuthorizationCodeParameters.SpaCode">
             <summary>
             if <c>true</c> then Spa code param will be sent via AcquireTokenByAuthorizeCode
             </summary>
@@ -1452,16 +1490,6 @@
             To improve performance add <c>.WithLegacyCacheCompatibility(false)</c> unless you care about migration scenarios.
             </remarks>
         </member>
-        <member name="M:Microsoft.Identity.Client.AbstractApplicationBuilder`1.WithTelemetry(Microsoft.Identity.Client.TelemetryCallback)">
-            <summary>
-            Sets the telemetry callback. For details see https://aka.ms/msal-net-telemetry
-            </summary>
-            <param name="telemetryCallback">Delegate to the callback sending the telemetry
-            elaborated by the library to the telemetry endpoint of choice</param>
-            <returns>The builder to chain the .With methods</returns>
-            <exception cref="T:System.InvalidOperationException"/> is thrown if the method was already
-            called on the application builder.
-        </member>
         <member name="M:Microsoft.Identity.Client.AbstractApplicationBuilder`1.WithClientId(System.String)">
             <summary>
             Sets the Client ID of the application
@@ -1492,20 +1520,6 @@
             <param name="tenantId">tenant ID of the Azure AD tenant
             or a domain associated with this Azure AD tenant, in order to sign-in a user of a specific organization only</param>
             <returns>The builder to chain the .With methods</returns>
-        </member>
-        <member name="M:Microsoft.Identity.Client.AbstractApplicationBuilder`1.WithClientName(System.String)">
-            <summary>
-            Sets the name of the calling application for telemetry purposes.
-            </summary>
-            <param name="clientName">The name of the application for telemetry purposes.</param>
-            <returns></returns>
-        </member>
-        <member name="M:Microsoft.Identity.Client.AbstractApplicationBuilder`1.WithClientVersion(System.String)">
-            <summary>
-            Sets the version of the calling application for telemetry purposes.
-            </summary>
-            <param name="clientVersion">The version of the calling application for telemetry purposes.</param>
-            <returns></returns>
         </member>
         <member name="M:Microsoft.Identity.Client.AbstractApplicationBuilder`1.WithOptions(Microsoft.Identity.Client.ApplicationOptions)">
             <summary>
@@ -1864,6 +1878,11 @@
             The intended token endpoint
             </summary>
         </member>
+        <member name="P:Microsoft.Identity.Client.AssertionRequestOptions.Claims">
+            <summary>
+            Claims to be included in the client assertion
+            </summary>
+        </member>
         <member name="T:Microsoft.Identity.Client.AuthorityInfo">
             <remarks>
             This class must be kept immutable
@@ -2065,6 +2084,20 @@
             Changes in the public API of experimental features will not result in an increment of the major version of this library.
             For these reason we advise against using these features in production.
             </remarks>
+        </member>
+        <member name="M:Microsoft.Identity.Client.BaseAbstractApplicationBuilder`1.WithClientName(System.String)">
+            <summary>
+            Sets the name of the calling SDK API for telemetry purposes.
+            </summary>
+            <param name="clientName">The name of the SDK API for telemetry purposes.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.Identity.Client.BaseAbstractApplicationBuilder`1.WithClientVersion(System.String)">
+            <summary>
+            Sets the version of the calling SDK for telemetry purposes.
+            </summary>
+            <param name="clientVersion">The version of the calling SDK for telemetry purposes.</param>
+            <returns></returns>
         </member>
         <member name="T:Microsoft.Identity.Client.BaseApplicationOptions">
             <summary>
@@ -2308,10 +2341,8 @@
         </member>
         <member name="M:Microsoft.Identity.Client.ConfidentialClientApplicationBuilder.WithTelemetryClient(Microsoft.IdentityModel.Abstractions.ITelemetryClient[])">
             <summary>
-            Sets telemetry client for the application.
+            This method is obsolete. See https://aka.ms/msal-net-telemetry
             </summary>
-            <param name="telemetryClients">List of telemetry clients to add telemetry logs.</param>
-            <returns>The builder to chain the .With methods</returns>
         </member>
         <member name="M:Microsoft.Identity.Client.ConfidentialClientApplicationBuilder.Validate">
             <inheritdoc/>
@@ -2498,6 +2529,28 @@
             </summary>
             <returns>An HTTP client.</returns>
         </member>
+        <member name="T:Microsoft.Identity.Client.IMsalMtlsHttpClientFactory">
+            <summary>
+            Internal factory responsible for creating HttpClient instances configured for mutual TLS (MTLS).
+            This factory is specifically intended for use within the MSAL library for secure communication with Azure AD using MTLS.
+            For more details on HttpClient instancing, see https://learn.microsoft.com/dotnet/api/system.net.http.httpclient?view=net-7.0#instancing.
+            </summary>
+            <remarks>
+            Implementations of this interface must be thread-safe.
+            It is important to reuse HttpClient instances to avoid socket exhaustion.
+            Do not create a new HttpClient for each call to <see cref="M:Microsoft.Identity.Client.IMsalMtlsHttpClientFactory.GetHttpClient(System.Security.Cryptography.X509Certificates.X509Certificate2)"/>.
+            If your application requires Integrated Windows Authentication, set <see cref="P:System.Net.Http.HttpClientHandler.UseDefaultCredentials"/> to true.
+            This interface is intended for internal use by MSAL only and is designed to support MTLS scenarios.
+            </remarks>
+        </member>
+        <member name="M:Microsoft.Identity.Client.IMsalMtlsHttpClientFactory.GetHttpClient(System.Security.Cryptography.X509Certificates.X509Certificate2)">
+            <summary>
+            Returns an HttpClient configured with a certificate for mutual TLS authentication.
+            This method enables advanced MTLS scenarios within Azure AD communications in MSAL.
+            </summary>
+            <param name="x509Certificate2">The certificate to be used for MTLS authentication.</param>
+            <returns>An HttpClient instance configured with the specified certificate.</returns>
+        </member>
         <member name="T:Microsoft.Identity.Client.TelemetryAudienceType">
             <summary>
             Describes the types of audiences for telemetry. <see cref="P:Microsoft.Identity.Client.ITelemetryConfig.AudienceType"/>
@@ -2606,10 +2659,19 @@
         </member>
         <member name="M:Microsoft.Identity.Client.ManagedIdentityApplicationBuilder.WithTelemetryClient(Microsoft.IdentityModel.Abstractions.ITelemetryClient[])">
             <summary>
-            Sets telemetry client for the application.
+            This method is obsolete. See https://aka.ms/msal-net-telemetry
             </summary>
-            <param name="telemetryClients">List of telemetry clients to add telemetry logs.</param>
-            <returns>The builder to chain the .With methods</returns>
+        </member>
+        <member name="M:Microsoft.Identity.Client.ManagedIdentityApplicationBuilder.WithClientCapabilities(System.Collections.Generic.IEnumerable{System.String})">
+            <summary>
+            Microsoft Identity specific OIDC extension that allows resource challenges to be resolved without interaction. 
+            Allows configuration of one or more client capabilities, e.g. "llt"
+            </summary>
+            <remarks>
+            MSAL will transform these into special claims request. See https://openid.net/specs/openid-connect-core-1_0-final.html#ClaimsParameter for
+            details on claim requests. 
+            For more details see https://aka.ms/msal-net-claims-request
+            </remarks>
         </member>
         <member name="M:Microsoft.Identity.Client.ManagedIdentityApplicationBuilder.Build">
             <summary>
@@ -3323,6 +3385,11 @@
             Contains the outcome of the region discovery if region was used.
             </summary>
         </member>
+        <member name="P:Microsoft.Identity.Client.AuthenticationResultMetadata.DurationCreatingExtendedTokenInUs">
+            <summary>
+            Time, in microseconds, spent in the token creation of the extended token.
+            </summary>
+        </member>
         <member name="P:Microsoft.Identity.Client.AuthenticationResultMetadata.Telemetry">
             <summary>
             May contain telemetry data. 
@@ -3341,40 +3408,56 @@
             <param name="tokenType"></param>
             <returns></returns>
         </member>
-        <member name="T:Microsoft.Identity.Client.AuthScheme.IAuthenticationScheme">
+        <member name="T:Microsoft.Identity.Client.AuthScheme.IAuthenticationOperation">
             <summary>
             Used to modify the experience depending on the type of token asked. 
             </summary>
         </member>
-        <member name="P:Microsoft.Identity.Client.AuthScheme.IAuthenticationScheme.TelemetryTokenType">
-            <summary>
-            Value to log to telemetry to indicate pop usage.
-            </summary>
+        <member name="P:Microsoft.Identity.Client.AuthScheme.IAuthenticationOperation.TelemetryTokenType">
+             <summary>
+             Value to log to telemetry
+             Values available:
+             
+             Bearer token type.
+             Bearer = 1
+             
+             Pop token type.
+             Pop = 2,
+            
+             Ssh-cert token type.
+             SshCert = 3,
+            
+             External token type.
+             External = 4,
+            
+             Extension token type.
+             Extension = 5
+             </summary>
         </member>
-        <member name="P:Microsoft.Identity.Client.AuthScheme.IAuthenticationScheme.AuthorizationHeaderPrefix">
+        <member name="P:Microsoft.Identity.Client.AuthScheme.IAuthenticationOperation.AuthorizationHeaderPrefix">
             <summary>
             Prefix for the HTTP header that has the token. E.g. "Bearer" or "POP"
             </summary>
         </member>
-        <member name="M:Microsoft.Identity.Client.AuthScheme.IAuthenticationScheme.GetTokenRequestParams">
+        <member name="M:Microsoft.Identity.Client.AuthScheme.IAuthenticationOperation.GetTokenRequestParams">
             <summary>
             Extra parameters that are added to the request to the /token endpoint. 
             </summary>
             <returns>Name and values of params</returns>
         </member>
-        <member name="P:Microsoft.Identity.Client.AuthScheme.IAuthenticationScheme.KeyId">
+        <member name="P:Microsoft.Identity.Client.AuthScheme.IAuthenticationOperation.KeyId">
             <summary>
             Key ID of the public / private key pair used by the encryption algorithm, if any. 
             Tokens obtained by authentication schemes that use this are bound to the KeyId, i.e. 
             if a different kid is presented, the access token cannot be used.
             </summary>
         </member>
-        <member name="M:Microsoft.Identity.Client.AuthScheme.IAuthenticationScheme.FormatAccessToken(Microsoft.Identity.Client.Cache.Items.MsalAccessTokenCacheItem)">
+        <member name="M:Microsoft.Identity.Client.AuthScheme.IAuthenticationOperation.FormatResult(Microsoft.Identity.Client.AuthenticationResult)">
             <summary>
             Creates the access token that goes into an Authorization HTTP header. 
             </summary>
         </member>
-        <member name="P:Microsoft.Identity.Client.AuthScheme.IAuthenticationScheme.AccessTokenType">
+        <member name="P:Microsoft.Identity.Client.AuthScheme.IAuthenticationOperation.AccessTokenType">
             <summary>
             Expected to match the token_type parameter returned by ESTS. Used to disambiguate
             between ATs of different types (e.g. Bearer and PoP) when loading from cache etc.
@@ -3389,6 +3472,11 @@
             <summary>
             Creates the canonical representation of the JWK.  See https://tools.ietf.org/html/rfc7638#section-3.
             The number of parameters as well as the lexicographic order is important, as this string will be hashed to get a thumbprint.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Identity.Client.AuthScheme.PoP.InMemoryCryptoProvider.GetPublicKeyParameters">
+            <summary>
+            For internal testing only
             </summary>
         </member>
         <member name="T:Microsoft.Identity.Client.AuthScheme.PoP.IPoPCryptoProvider">
@@ -3434,7 +3522,7 @@
             http://tools.ietf.org/html/rfc7518#section-6.1
             </summary>
         </member>
-        <member name="M:Microsoft.Identity.Client.AuthScheme.PoP.PopAuthenticationScheme.#ctor(Microsoft.Identity.Client.AppConfig.PoPAuthenticationConfiguration,Microsoft.Identity.Client.Internal.IServiceBundle)">
+        <member name="M:Microsoft.Identity.Client.AuthScheme.PoP.PopAuthenticationOperation.#ctor(Microsoft.Identity.Client.AppConfig.PoPAuthenticationConfiguration,Microsoft.Identity.Client.Internal.IServiceBundle)">
             <summary>
             Creates POP tokens, i.e. tokens that are bound to an HTTP request and are digitally signed.
             </summary>
@@ -3443,19 +3531,19 @@
             by integrating Wilson's SigningCredentials
             </remarks>
         </member>
-        <member name="P:Microsoft.Identity.Client.AuthScheme.PoP.PopAuthenticationScheme.KeyId">
+        <member name="P:Microsoft.Identity.Client.AuthScheme.PoP.PopAuthenticationOperation.KeyId">
             <summary>
             For PoP, we chose to use the base64(jwk_thumbprint)
             </summary>
         </member>
-        <member name="M:Microsoft.Identity.Client.AuthScheme.PoP.PopAuthenticationScheme.ComputeThumbprint(System.String)">
+        <member name="M:Microsoft.Identity.Client.AuthScheme.PoP.PopAuthenticationOperation.ComputeThumbprint(System.String)">
             <summary>
             A key ID that uniquely describes a public / private key pair. While KeyID is not normally
             strict, AAD support for PoP requires that we use the base64 encoded JWK thumbprint, as described by 
             https://tools.ietf.org/html/rfc7638
             </summary>
         </member>
-        <member name="M:Microsoft.Identity.Client.AuthScheme.PoP.PopAuthenticationScheme.CreateJWS(System.String,System.String)">
+        <member name="M:Microsoft.Identity.Client.AuthScheme.PoP.PopAuthenticationOperation.CreateJWS(System.String,System.String)">
             <summary>
             Creates a JWS (json web signature) as per: https://tools.ietf.org/html/rfc7515
             Format: header.payload.signed_payload
@@ -3515,7 +3603,7 @@
             Non-standard claim representing a nonce that protects against replay attacks.
             </summary>
         </member>
-        <member name="T:Microsoft.Identity.Client.AuthScheme.PoP.PoPProviderFactory">
+        <member name="T:Microsoft.Identity.Client.AuthScheme.PoP.PoPCryptoProviderFactory">
             <summary>
             This factory ensures key rotation every 8h
             </summary>
@@ -3543,6 +3631,12 @@
         <member name="F:Microsoft.Identity.Client.AuthScheme.TokenType.External">
             <summary>
             External token type.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Identity.Client.AuthScheme.TokenType.Extension">
+            <summary>
+            Extension token type.
+            Extension = 5
             </summary>
         </member>
         <member name="T:Microsoft.Identity.Client.Cache.AdalResult">
@@ -3794,6 +3888,12 @@
             <summary>
             Used when the token is bound to a public / private key pair which is identified by a key id (kid). 
             Currently used by PoP tokens
+            </summary>
+        </member>
+        <member name="P:Microsoft.Identity.Client.Cache.Items.MsalAccessTokenCacheItem.PersistedCacheParameters">
+            <summary>
+            Additional parameters that were requested in the token request and are stored in the cache.
+            These are acquired from the response and are stored in the cache for later use.
             </summary>
         </member>
         <member name="T:Microsoft.Identity.Client.Cache.Items.MsalAccountCacheItem">
@@ -4160,6 +4260,9 @@
         <member name="M:Microsoft.Identity.Client.ConfidentialClientApplication.GetAuthorizationRequestUrl(System.Collections.Generic.IEnumerable{System.String})">
             <inheritdoc/>
         </member>
+        <member name="M:Microsoft.Identity.Client.ConfidentialClientApplication.Microsoft#Identity#Client#IByUsernameAndPassword#AcquireTokenByUsernamePassword(System.Collections.Generic.IEnumerable{System.String},System.String,System.String)">
+            <inheritdoc/>
+        </member>
         <member name="P:Microsoft.Identity.Client.ConfidentialClientApplication.AppTokenCache">
             <inheritdoc/>
         </member>
@@ -4473,6 +4576,24 @@
             <param name="expectedTokenTypeFromAad">AAD issues several types of bound tokens. MSAL checks the token type, which needs to match the value set by ESTS. Normal POP tokens have this as "pop"</param>
             <returns>the builder</returns>
         </member>
+        <member name="M:Microsoft.Identity.Client.Extensibility.AbstractConfidentialClientAcquireTokenParameterBuilderExtension.WithAuthenticationExtension``1(Microsoft.Identity.Client.AbstractAcquireTokenParameterBuilder{``0},Microsoft.Identity.Client.Extensibility.MsalAuthenticationExtension)">
+            <summary>
+            Enables client applications to provide a custom authentication operation to be used in the token acquisition request.
+            </summary>
+            <param name="builder">The builder to chain options to</param>
+            <param name="authenticationExtension">The implementation of the authentication operation.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Microsoft.Identity.Client.Extensibility.AbstractConfidentialClientAcquireTokenParameterBuilderExtension.WithAdditionalCacheParameters``1(Microsoft.Identity.Client.AbstractAcquireTokenParameterBuilder{``0},System.Collections.Generic.IEnumerable{System.String})">
+            <summary>
+            Specifies additional parameters acquired from authentication responses to be cached with the access token that are normally not included in the cache object.
+            these values can be read from the <see cref="P:Microsoft.Identity.Client.AuthenticationResult.AdditionalResponseParameters"/> parameter.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="builder">The builder to chain options to</param>
+            <param name="cacheParameters">Additional parameters to cache</param>
+            <returns></returns>
+        </member>
         <member name="T:Microsoft.Identity.Client.Extensibility.AcquireTokenForClientBuilderExtensions">
             <summary>
             
@@ -4619,28 +4740,47 @@
             </summary>
         </member>
         <member name="M:Microsoft.Identity.Client.Extensibility.ICustomWebUi.AcquireAuthorizationCodeAsync(System.Uri,System.Uri,System.Threading.CancellationToken)">
-             <summary>
-             Method called by MSAL.NET to delegate the authentication code web with the Secure Token Service (STS)
-             </summary>
-             <param name="authorizationUri"> URI computed by MSAL.NET that will let the UI extension
-             navigate to the STS authorization endpoint in order to sign-in the user and have them consent
-             </param>
-             <param name="redirectUri">The redirect URI that was configured. The auth code will be appended to this redirect URI and the browser
-             will redirect to it.
-             </param>
-             <param name="cancellationToken">The cancellation token to which you should respond to.
-             See <see href="https://learn.microsoft.com/dotnet/standard/parallel-programming/task-cancellation">Task cancellation</see> for details.
-             </param>
-             <returns> The URI returned back from the STS authorization endpoint. This URI contains a code=CODE
-             parameters that MSAL.NET will extract and redeem.
-             </returns>
-             <remarks>
-             The <paramref name="authorizationUri">authorizationUri</paramref>"/> is crafted to
-             leverage PKCE in order to protect the token from a man in the middle attack.
-             Only MSAL.NET can redeem the code.
-            
-             In the event of cancellation, the implementer should return OperationCanceledException.
-             </remarks>
+            <summary>
+            Method called by MSAL.NET to delegate the authentication code web with the Secure Token Service (STS)
+            </summary>
+            <param name="authorizationUri"> URI computed by MSAL.NET that will let the UI extension
+            navigate to the STS authorization endpoint in order to sign-in the user and have them consent
+            </param>
+            <param name="redirectUri">The redirect URI that was configured. The auth code will be appended to this redirect URI and the browser
+            will redirect to it.
+            </param>
+            <param name="cancellationToken">The cancellation token to which you should respond to.
+            See <see href="https://learn.microsoft.com/dotnet/standard/parallel-programming/task-cancellation">Task cancellation</see> for details.
+            </param>
+            <returns> The URI returned back from the STS authorization endpoint. This URI contains a code=CODE
+            parameters that MSAL.NET will extract and redeem.
+            </returns>
+            <remarks>
+            The <paramref name="authorizationUri">authorizationUri</paramref> is crafted to
+            leverage PKCE in order to protect the token from a man in the middle attack.
+            Only MSAL.NET can redeem the code.
+            </remarks>
+        </member>
+        <member name="T:Microsoft.Identity.Client.Extensibility.MsalAuthenticationExtension">
+            <summary>
+            Enables the extension of the MSAL authentication process by providing a custom authentication operation. 
+            These operations are provided through the implementation of the <see cref="T:Microsoft.Identity.Client.AuthScheme.IAuthenticationOperation"/> interface.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Identity.Client.Extensibility.MsalAuthenticationExtension.OnBeforeTokenRequestHandler">
+            <summary>
+            A delegate which gets invoked just before MSAL makes a token request.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Identity.Client.Extensibility.MsalAuthenticationExtension.AuthenticationOperation">
+            <summary>
+            Enables the developer to provide a custom authentication extension.
+            </summary>
+        </member>
+        <member name="P:Microsoft.Identity.Client.Extensibility.MsalAuthenticationExtension.AdditionalCacheParameters">
+            <summary>
+            Specifies additional parameters acquired from authentication responses to be cached.
+            </summary>
         </member>
         <member name="T:Microsoft.Identity.Client.Extensibility.OnBeforeTokenRequestData">
             <summary>
@@ -4738,31 +4878,11 @@
              also not access DefaultRequestHeaders because the getters are not thread safe (use HttpRequestMessage.Headers instead).
              </remarks>
         </member>
-        <member name="M:Microsoft.Identity.Client.Http.HttpManager.SendGetForceResponseAsync(System.Uri,System.Collections.Generic.IDictionary{System.String,System.String},Microsoft.Identity.Client.Core.ILoggerAdapter,System.Boolean,System.Threading.CancellationToken)">
+        <member name="M:Microsoft.Identity.Client.Http.HttpManager.#ctor(Microsoft.Identity.Client.IMsalHttpClientFactory,Microsoft.Identity.Client.Http.IRetryPolicy)">
             <summary>
-            Performs the GET request just like <see cref="M:Microsoft.Identity.Client.Http.HttpManager.SendGetAsync(System.Uri,System.Collections.Generic.IDictionary{System.String,System.String},Microsoft.Identity.Client.Core.ILoggerAdapter,System.Boolean,System.Threading.CancellationToken)"/>
-            but does not throw a ServiceUnavailable service exception. Instead, it returns the <see cref="T:Microsoft.Identity.Client.Http.HttpResponse"/> associated
-            with the request.
-            </summary>
-        </member>
-        <member name="M:Microsoft.Identity.Client.Http.HttpManager.SendPostForceResponseAsync(System.Uri,System.Collections.Generic.IDictionary{System.String,System.String},System.Collections.Generic.IDictionary{System.String,System.String},Microsoft.Identity.Client.Core.ILoggerAdapter,System.Threading.CancellationToken)">
-            <summary>
-            Performs the POST request just like <see cref="M:Microsoft.Identity.Client.Http.HttpManager.SendPostAsync(System.Uri,System.Collections.Generic.IDictionary{System.String,System.String},System.Collections.Generic.IDictionary{System.String,System.String},Microsoft.Identity.Client.Core.ILoggerAdapter,System.Threading.CancellationToken)"/>
-            but does not throw a ServiceUnavailable service exception. Instead, it returns the <see cref="T:Microsoft.Identity.Client.Http.HttpResponse"/> associated
-            with the request.
-            </summary>
-        </member>
-        <member name="M:Microsoft.Identity.Client.Http.HttpManager.SendPostForceResponseAsync(System.Uri,System.Collections.Generic.IDictionary{System.String,System.String},System.Net.Http.StringContent,Microsoft.Identity.Client.Core.ILoggerAdapter,System.Threading.CancellationToken)">
-            <summary>
-            Performs the POST request just like <see cref="M:Microsoft.Identity.Client.Http.HttpManager.SendPostAsync(System.Uri,System.Collections.Generic.IDictionary{System.String,System.String},System.Net.Http.HttpContent,Microsoft.Identity.Client.Core.ILoggerAdapter,System.Threading.CancellationToken)"/>
-            but does not throw a ServiceUnavailable service exception. Instead, it returns the <see cref="T:Microsoft.Identity.Client.Http.HttpResponse"/> associated
-            with the request.
-            </summary>
-        </member>
-        <member name="M:Microsoft.Identity.Client.Http.HttpManager.IsRetryableStatusCode(System.Int32)">
-            <summary>
-            In HttpManager, the retry policy is based on this simple condition.
-            Avoid changing this, as it's breaking change.
+            A new instance of the HTTP manager with a retry *condition*. The retry policy hardcodes: 
+            - the number of retries (1)
+            - the delay between retries (1 second)
             </summary>
         </member>
         <member name="T:Microsoft.Identity.Client.Http.HttpManagerFactory">
@@ -4770,41 +4890,36 @@
             Factory to return the instance of HttpManager based on retry configuration and type of MSAL application.
             </summary>
         </member>
-        <member name="T:Microsoft.Identity.Client.Http.HttpManagerManagedIdentity">
-            <remarks>
-            HTTP Manager specific to managed identity to implement the retry for specific HTTP status codes.
-            </remarks>
-        </member>
-        <member name="M:Microsoft.Identity.Client.Http.HttpManagerManagedIdentity.IsRetryableStatusCode(System.Int32)">
+        <member name="M:Microsoft.Identity.Client.Http.HttpRetryConditions.ManagedIdentity(Microsoft.Identity.Client.Http.HttpResponse,System.Exception)">
             <summary>
             Retry policy specific to managed identity flow.
             Avoid changing this, as it's breaking change.
             </summary>
         </member>
-        <member name="T:Microsoft.Identity.Client.Http.HttpManagerWithRetry">
-             <remarks>
-             We invoke this class from different threads and they all use the same HttpClient.
-             To prevent race conditions, make sure you do not get / set anything on HttpClient itself,
-             instead rely on HttpRequest objects which are thread specific.
-            
-             In particular, do not change any properties on HttpClient such as BaseAddress, buffer sizes and Timeout. You should
-             also not access DefaultRequestHeaders because the getters are not thread safe (use HttpRequestMessage.Headers instead).
-             </remarks>
+        <member name="M:Microsoft.Identity.Client.Http.HttpRetryConditions.Sts(Microsoft.Identity.Client.Http.HttpResponse,System.Exception)">
+            <summary>
+            Retry condition for /token and /authorize endpoints
+            </summary>
+            <param name="response"></param>
+            <param name="exception"></param>
+            <returns></returns>
         </member>
-        <member name="M:Microsoft.Identity.Client.Http.HttpManagerWithRetry.SendPostAsync(System.Uri,System.Collections.Generic.IDictionary{System.String,System.String},System.Net.Http.HttpContent,Microsoft.Identity.Client.Core.ILoggerAdapter,System.Threading.CancellationToken)">
-            <inheritdoc/>
-        </member>
-        <member name="M:Microsoft.Identity.Client.Http.HttpManagerWithRetry.SendGetAsync(System.Uri,System.Collections.Generic.IDictionary{System.String,System.String},Microsoft.Identity.Client.Core.ILoggerAdapter,System.Boolean,System.Threading.CancellationToken)">
-            <inheritdoc/>
-        </member>
-        <member name="M:Microsoft.Identity.Client.Http.HttpManagerWithRetry.SendGetForceResponseAsync(System.Uri,System.Collections.Generic.IDictionary{System.String,System.String},Microsoft.Identity.Client.Core.ILoggerAdapter,System.Boolean,System.Threading.CancellationToken)">
-            <inheritdoc/>
-        </member>
-        <member name="M:Microsoft.Identity.Client.Http.HttpManagerWithRetry.SendPostForceResponseAsync(System.Uri,System.Collections.Generic.IDictionary{System.String,System.String},System.Collections.Generic.IDictionary{System.String,System.String},Microsoft.Identity.Client.Core.ILoggerAdapter,System.Threading.CancellationToken)">
-            <inheritdoc/>
-        </member>
-        <member name="M:Microsoft.Identity.Client.Http.HttpManagerWithRetry.SendPostForceResponseAsync(System.Uri,System.Collections.Generic.IDictionary{System.String,System.String},System.Net.Http.StringContent,Microsoft.Identity.Client.Core.ILoggerAdapter,System.Threading.CancellationToken)">
-            <inheritdoc/>
+        <member name="M:Microsoft.Identity.Client.Http.IHttpManager.SendRequestAsync(System.Uri,System.Collections.Generic.IDictionary{System.String,System.String},System.Net.Http.HttpContent,System.Net.Http.HttpMethod,Microsoft.Identity.Client.Core.ILoggerAdapter,System.Boolean,System.Security.Cryptography.X509Certificates.X509Certificate2,System.Net.Http.HttpClient,System.Threading.CancellationToken,System.Int32)">
+            <summary>
+            Method to send a request to the server using the HttpClient configured in the implementation.
+            </summary>
+            <param name="endpoint">The endpoint to send the request to.</param>
+            <param name="headers">Headers to send in the http request.</param>
+            <param name="body">Body of the request.</param>
+            <param name="method">Http method.</param>
+            <param name="logger">Logger from the request context.</param>
+            <param name="doNotThrow">Flag to decide if MsalServiceException is thrown or the response is returned in case of 5xx errors.</param>
+            <param name="mtlsCertificate">Certificate used for MTLS authentication.</param>
+            <param name="customHttpClient">Custom http client which bypasses the HttpClientFactory. 
+            This is needed for service fabric managed identity where a cert validation callback is added to the handler.</param>
+            <param name="cancellationToken"></param>
+            <param name="retryCount">Number of retries to be attempted in case of retriable status codes.</param>
+            <returns></returns>
         </member>
         <member name="M:Microsoft.Identity.Client.Http.RedirectUriHelper.Validate(System.Uri,System.Boolean)">
             <summary>
@@ -4875,6 +4990,26 @@
             <param name="scopes">Scope to request from the token endpoint.
             Setting this to null or empty will request an access token, refresh token and ID token with default scopes</param>
             <param name="refreshToken">The refresh token from ADAL 2.x</param>
+        </member>
+        <member name="T:Microsoft.Identity.Client.IByUsernameAndPassword">
+            <summary>
+            Provides an explicit interface for using Resource Owner Password Grant on Confidential Client.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Identity.Client.IByUsernameAndPassword.AcquireTokenByUsernamePassword(System.Collections.Generic.IEnumerable{System.String},System.String,System.String)">
+            <summary>
+            Acquires a token without user interaction using username and password authentication.
+            This method does not look in the token cache, but stores the result in it. Before calling this method, use other methods 
+            such as <see cref="M:Microsoft.Identity.Client.IClientApplicationBase.AcquireTokenSilent(System.Collections.Generic.IEnumerable{System.String},Microsoft.Identity.Client.IAccount)"/> to check the token cache.
+            </summary>
+            <param name="scopes">Scopes requested to access a protected API.</param>
+            <param name="username">Identifier of the user, application requests token on behalf of.
+            Generally in UserPrincipalName (UPN) format, e.g. <c>john.doe@contoso.com</c></param>
+            <param name="password">User password as a string.</param>
+            <returns>A builder enabling you to add optional parameters before executing the token request.</returns>
+            <remarks>
+            Available only for .NET Framework and .NET Core applications. See <see href="https://aka.ms/msal-net-up">our documentation</see> for details.
+            </remarks>
         </member>
         <member name="T:Microsoft.Identity.Client.IClientApplicationBase">
             <inheritdoc/>
@@ -5611,7 +5746,7 @@
             Responsible for getting an auth code
             </summary>
         </member>
-        <member name="M:Microsoft.Identity.Client.Internal.SilentRequestHelper.ProcessFetchInBackground(Microsoft.Identity.Client.Cache.Items.MsalAccessTokenCacheItem,System.Func{System.Threading.Tasks.Task{Microsoft.Identity.Client.AuthenticationResult}},Microsoft.Identity.Client.Core.ILoggerAdapter,Microsoft.Identity.Client.Internal.IServiceBundle,Microsoft.Identity.Client.TelemetryCore.Internal.Events.ApiEvent.ApiIds)">
+        <member name="M:Microsoft.Identity.Client.Internal.SilentRequestHelper.ProcessFetchInBackground(Microsoft.Identity.Client.Cache.Items.MsalAccessTokenCacheItem,System.Func{System.Threading.Tasks.Task{Microsoft.Identity.Client.AuthenticationResult}},Microsoft.Identity.Client.Core.ILoggerAdapter,Microsoft.Identity.Client.Internal.IServiceBundle,Microsoft.Identity.Client.TelemetryCore.Internal.Events.ApiEvent.ApiIds,System.String,System.String)">
             <summary>
             Fire and forget the fetch action on a background thread.
             Do not change to Task and do not await it.
@@ -6633,35 +6768,9 @@
             </summary>
             <returns>Managed identity source detected on the environment if any.</returns>
         </member>
-        <member name="T:Microsoft.Identity.Client.ManagedIdentity.AbstractManagedIdentity">
-            <summary>
-            Original source of code: https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/identity/Azure.Identity/src/ManagedIdentitySource.cs
-            </summary>
-        </member>
-        <member name="T:Microsoft.Identity.Client.ManagedIdentity.AppServiceManagedIdentitySource">
-            <summary>
-            Original source of code: https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/identity/Azure.Identity/src/AppServiceManagedIdentitySource.cs
-            </summary>
-        </member>
-        <member name="T:Microsoft.Identity.Client.ManagedIdentity.AzureArcManagedIdentitySource">
-            <summary>
-            Original source of code: https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/identity/Azure.Identity/src/AzureArcManagedIdentitySource.cs
-            </summary>
-        </member>
-        <member name="T:Microsoft.Identity.Client.ManagedIdentity.CloudShellManagedIdentitySource">
-            <summary>
-            Original source of code: https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/identity/Azure.Identity/src/CloudShellManagedIdentitySource.cs
-            </summary>
-        </member>
-        <member name="T:Microsoft.Identity.Client.ManagedIdentity.ImdsManagedIdentitySource">
-            <summary>
-            Original source of code: https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/identity/Azure.Identity/src/ImdsManagedIdentitySource.cs
-            </summary>
-        </member>
         <member name="T:Microsoft.Identity.Client.ManagedIdentity.ManagedIdentityClient">
             <summary>
             Class to initialize a managed identity and identify the service.
-            Original source of code: https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/identity/Azure.Identity/src/ManagedIdentityClient.cs
             </summary>
         </member>
         <member name="P:Microsoft.Identity.Client.ManagedIdentity.ManagedIdentityResponse.AccessToken">
@@ -6738,11 +6847,6 @@
             <summary>
             Indicates that the source is defaulted to IMDS since no environment variables are set.
             This is used to detect the managed identity source.
-            </summary>
-        </member>
-        <member name="T:Microsoft.Identity.Client.ManagedIdentity.ServiceFabricManagedIdentitySource">
-            <summary>
-            Original source of code: https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/identity/Azure.Identity/src/ServiceFabricManagedIdentitySource.cs
             </summary>
         </member>
         <member name="T:Microsoft.Identity.Client.Metrics">
@@ -9431,12 +9535,6 @@
             Responsible for talking to the /token endpoint
             </summary>
         </member>
-        <member name="F:Microsoft.Identity.Client.OAuth2.TokenClient._requestInProgress">
-            <summary>
-            Used to avoid sending duplicate "last request" telemetry
-            from a multi-threaded environment
-            </summary>
-        </member>
         <member name="M:Microsoft.Identity.Client.OAuth2.TokenClient.AddThrottlingHeader">
             <summary>
             A client side library needs to communicate to the server side that 
@@ -10001,12 +10099,6 @@
             Error details when region auto detect fails
             </summary>
         </member>
-        <member name="T:Microsoft.Identity.Client.TelemetryCallback">
-            <summary>
-            This callback is for the raw telemetry events (app, HTTP, cache) that we want to aggregate using MATS.
-            </summary>
-            <param name="events"></param>
-        </member>
         <member name="T:Microsoft.Identity.Client.TelemetryCore.Http.HttpTelemetryManager">
             <summary>
             Responsible for recording API events and formatting CSV 
@@ -10018,17 +10110,10 @@
             the caller to protect against this.
             </remarks>
         </member>
-        <member name="M:Microsoft.Identity.Client.TelemetryCore.Http.HttpTelemetryManager.GetLastRequestHeader">
-            <summary>
-            CSV expected format:
-                 3|silent_successful_count|failed_requests|errors|platform_fields
-                 failed_request is: api_id_1,correlation_id_1,api_id_2,correlation_id_2|error_1,error_2
-            </summary>
-        </member>
         <member name="M:Microsoft.Identity.Client.TelemetryCore.Http.HttpTelemetryManager.GetCurrentRequestHeader(Microsoft.Identity.Client.TelemetryCore.Internal.Events.ApiEvent)">
             <summary>
             Expected format: 5|api_id,cache_info,region_used,region_autodetection,region_outcome|platform_config
-            platform_config: is_token_cache_serialized,is_legacy_cache_enabled, token_type
+            platform_config: is_token_cache_serialized,is_legacy_cache_enabled, token_type, caller_sdk_id, caller_sdk_version
             </summary>
         </member>
         <member name="T:Microsoft.Identity.Client.TelemetryCore.IHttpTelemetryManager">
@@ -10041,50 +10126,10 @@
             - Implementer must be thread safe, since one app can fire multiple requests
             </remarks>
         </member>
-        <member name="M:Microsoft.Identity.Client.TelemetryCore.IHttpTelemetryManager.RecordStoppedEvent(Microsoft.Identity.Client.TelemetryCore.Internal.Events.ApiEvent)">
-            <summary>
-            Record a stopped event
-            </summary>
-        </member>
         <member name="M:Microsoft.Identity.Client.TelemetryCore.IHttpTelemetryManager.GetCurrentRequestHeader(Microsoft.Identity.Client.TelemetryCore.Internal.Events.ApiEvent)">
             <summary>
             Csv string with details about the current header (api used, force refresh flag)
             </summary>
-        </member>
-        <member name="M:Microsoft.Identity.Client.TelemetryCore.IHttpTelemetryManager.GetLastRequestHeader">
-            <summary>
-            Csv string with details about the previous failed requests made: api, correlation id, error
-            </summary>
-            <remarks>
-            If AAD returns OK or a normal error (e.g. interaction required), then telemetry is recorded.
-            If AAD returns a 5xx or 429 HTTP error (i.e. AAD is down), then telemetry has not been recorded and MSAL 
-            will continue to hold on to this data until a successful request is made
-            </remarks>
-        </member>
-        <member name="M:Microsoft.Identity.Client.TelemetryCore.IHttpTelemetryManager.ResetPreviousUnsentData">
-            <summary>
-            Resets the state of failed requests. See <see cref="M:Microsoft.Identity.Client.TelemetryCore.IHttpTelemetryManager.GetLastRequestHeader"/> for more details
-            </summary>
-        </member>
-        <member name="T:Microsoft.Identity.Client.TelemetryCore.TelemetryClient.TelemetryClientExtensions">
-            <summary>
-            Extension methods used for telemetry client.
-            </summary>
-        </member>
-        <member name="M:Microsoft.Identity.Client.TelemetryCore.TelemetryClient.TelemetryClientExtensions.HasEnabledClients(Microsoft.IdentityModel.Abstractions.ITelemetryClient[],System.String)">
-            <summary>
-            Checks if any of the clients in the set of <see cref="T:Microsoft.IdentityModel.Abstractions.ITelemetryClient"/>s are enabled for a given <paramref name="eventName"/>.
-            </summary>
-            <param name="clients">Set of clients to check.</param>
-            <param name="eventName">Event name to evaluate.</param>
-            <returns>True if any of the clients are enabled for the eventName, otherwise false.</returns>
-        </member>
-        <member name="M:Microsoft.Identity.Client.TelemetryCore.TelemetryClient.TelemetryClientExtensions.TrackEvent(Microsoft.IdentityModel.Abstractions.ITelemetryClient[],Microsoft.IdentityModel.Abstractions.TelemetryEventDetails)">
-            <summary>
-            Sends the same input events to each telemetry client.
-            </summary>
-            <param name="clients">Clients to emit telemetry to.</param>
-            <param name="eventDetails">Telemetry details to emit.</param>
         </member>
         <member name="T:Microsoft.Identity.Client.TelemetryCore.TelemetryClient.TelemetryData">
             <summary>
@@ -10962,6 +11007,11 @@
         <member name="F:Microsoft.Identity.Client.Platforms.Features.OpenTelemetry.OtelInstrumentation.s_durationInHttp">
             <summary>
             Histogram to record duration in milliseconds in http when the token is fetched from identity provider.
+            </summary>
+        </member>
+        <member name="F:Microsoft.Identity.Client.Platforms.Features.OpenTelemetry.OtelInstrumentation.s_durationInExtensionInMs">
+            <summary>
+            Histogram to record total duration of extension modifications in microseconds(us).
             </summary>
         </member>
         <member name="T:Microsoft.Identity.Client.Platforms.Features.WinFormsLegacyWebUi.WebBrowserNavigateErrorEventHandler">

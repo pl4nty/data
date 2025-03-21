@@ -1840,6 +1840,16 @@
             Object Id of this TokenProvider
             </summary>
         </member>
+        <member name="F:Microsoft.Exchange.Management.AdminApiProvider.Authentication.MSALTokenProvider.authLogsPath">
+            <summary>
+            Auth logs path
+            </summary>
+        </member>
+        <member name="F:Microsoft.Exchange.Management.AdminApiProvider.Authentication.MSALTokenProvider.authLogsFilePrefix">
+            <summary>
+            Auth log  file prefix
+            </summary>
+        </member>
         <member name="M:Microsoft.Exchange.Management.AdminApiProvider.Authentication.MSALTokenProvider.#ctor(Microsoft.Exchange.Management.AdminApiProvider.Authentication.TokenProviderContext)">
             <summary>
             MSALTokenProvider constructor
@@ -1948,6 +1958,20 @@
             if already present. Also it enters the instance in the map if newly created.
             </summary>
             <returns>An instance of PCA from the map or intializes and returns it</returns>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.AdminApiProvider.Authentication.MSALTokenProvider.ConstructAuthLogsFilePath">
+            <summary>
+            constructs Auth log file path
+            </summary>
+            <returns>Auth log file path</returns>
+        </member>
+        <member name="M:Microsoft.Exchange.Management.AdminApiProvider.Authentication.MSALTokenProvider.LogCallback(Microsoft.Identity.Client.LogLevel,System.String,System.Boolean)">
+            <summary>
+            logs MSAL messages
+            </summary>
+            <param name="level">log level</param>
+            <param name="message">log message</param>
+            <param name="containsPii">contains Pii</param>
         </member>
         <member name="M:Microsoft.Exchange.Management.AdminApiProvider.Authentication.MSALTokenProvider.InvokeCancellation">
             <summary>
@@ -2102,7 +2126,7 @@
             Token Provider Context
             </summary>
         </member>
-        <member name="M:Microsoft.Exchange.Management.AdminApiProvider.Authentication.TokenProviderContext.#ctor(Microsoft.Exchange.Management.AdminApiProvider.Authentication.AuthType,System.String,System.String,System.String,System.String,System.Security.SecureString,System.Security.Cryptography.X509Certificates.X509Certificate2,System.String,System.Security.SecureString,System.String,System.String,System.String,System.String,System.Uri,System.Boolean,System.String,System.Action{System.String})">
+        <member name="M:Microsoft.Exchange.Management.AdminApiProvider.Authentication.TokenProviderContext.#ctor(Microsoft.Exchange.Management.AdminApiProvider.Authentication.AuthType,System.String,System.String,System.String,System.String,System.Security.SecureString,System.Security.Cryptography.X509Certificates.X509Certificate2,System.String,System.Security.SecureString,System.String,System.String,System.String,System.String,System.Uri,System.Boolean,System.String,System.Management.Automation.SwitchParameter,System.Management.Automation.SwitchParameter,System.String,System.Action{System.String})">
             <summary>
             Initializes a new instance of the <see cref="T:Microsoft.Exchange.Management.AdminApiProvider.Authentication.TokenProviderContext" /> class.
             </summary>
@@ -2122,6 +2146,9 @@
             <param name="clientAppRedirectUri">Client App redirect URI</param>
             <param name="identity">Whether to use Managed Identity Flow</param>
             <param name="accountId">AccountId to be used for User Assigned Managed Identity flow</param>
+            <param name="disableWAM">Whether to disable WAM</param>
+            <param name="enableErrorReporting">Whether to enable Error reporting</param>
+            <param name="logDirectoryPath">log directory path</param>
             <param name="writeToConsole">Action functions - to write to console</param>
         </member>
         <member name="P:Microsoft.Exchange.Management.AdminApiProvider.Authentication.TokenProviderContext.AuthType">
@@ -2132,6 +2159,21 @@
         <member name="P:Microsoft.Exchange.Management.AdminApiProvider.Authentication.TokenProviderContext.AcquireTokenEndpoint">
             <summary>
             Acquire Token End Point
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.AdminApiProvider.Authentication.TokenProviderContext.DisableWAM">
+            <summary>
+            Whether to disable WAM
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.AdminApiProvider.Authentication.TokenProviderContext.EnableErrorReporting">
+            <summary>
+            Whether to enable error reporting
+            </summary>
+        </member>
+        <member name="P:Microsoft.Exchange.Management.AdminApiProvider.Authentication.TokenProviderContext.LogDirectoryPath">
+            <summary>
+            log directory path
             </summary>
         </member>
         <member name="P:Microsoft.Exchange.Management.AdminApiProvider.Authentication.TokenProviderContext.UserPassword">
