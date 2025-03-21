@@ -39,11 +39,16 @@ def fetch_and_prettify_xml(url, output_file):
         response.raise_for_status()
         xml_data = response.text
 
-        # Parsing and prettifying XML data
+        # Parsing XML data
         dom = xml.dom.minidom.parseString(xml_data)
-        pretty_xml = dom.toprettyxml(indent="    ")
+
+        # microsoft_office_serverconfig16.json: remove the 'o:GenerationTime' attribute if it exists
+        services_element = dom.getElementsByTagName('o:services')[0]
+        if services_element.hasAttribute('o:GenerationTime'):
+            services_element.removeAttribute('o:GenerationTime')
 
         # Writing prettified XML to the specified file
+        pretty_xml = dom.toprettyxml()
         with open(output_file, 'w') as file:
             file.write(pretty_xml)
 
