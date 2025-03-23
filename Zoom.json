@@ -23,17 +23,17 @@
             },
             "showManifestConfigure": false,
             "zoom": {
-                "displayVersion": "6.4.1 (62504)",
+                "displayVersion": "6.4.2 (62735)",
                 "packageName": "ZoomInstallerFull.exe",
                 "packageNameForIT": "ZoomInstallerFull.msi",
-                "version": "6.4.1.62504"
+                "version": "6.4.2.62735"
             },
             "zoomArm64": {
                 "archType": "winarm64",
-                "displayVersion": "6.4.1 (62504)",
+                "displayVersion": "6.4.2 (62735)",
                 "packageName": "ZoomInstallerFull.exe",
                 "packageNameForIT": "ZoomInstallerFull.msi",
-                "version": "6.4.1.62504"
+                "version": "6.4.2.62735"
             },
             "zoomRC": {
                 "displayVersion": "6.3.10 (392)",
@@ -56,10 +56,10 @@
             },
             "zoomX64": {
                 "archType": "x64",
-                "displayVersion": "6.4.1 (62504)",
+                "displayVersion": "6.4.2 (62735)",
                 "packageName": "ZoomInstallerFull.exe",
                 "packageNameForIT": "ZoomInstallerFull.msi",
-                "version": "6.4.1.62504"
+                "version": "6.4.2.62735"
             }
         },
         "fromGov": false,
