@@ -47,17 +47,6 @@
         "Bulletin": "https://source.android.com/docs/security/bulletin/2025-03-01",
         "Published": "March 3, 2025",
         "Patch level": "2025-03-01",
-        "CVE": "CVE-2025-0087",
-        "References": "A-333681693",
-        "Type": "EoP",
-        "Severity": "High",
-        "Updated AOSP versions": "12, 12L, 13, 14, 15",
-        "Component": "Framework"
-    },
-    {
-        "Bulletin": "https://source.android.com/docs/security/bulletin/2025-03-01",
-        "Published": "March 3, 2025",
-        "Patch level": "2025-03-01",
         "CVE": "CVE-2024-43090",
         "References": "A-331180422",
         "Type": "ID",
@@ -261,17 +250,6 @@
         "Type": "EoP",
         "Severity": "High",
         "Updated AOSP versions": "15",
-        "Component": "System"
-    },
-    {
-        "Bulletin": "https://source.android.com/docs/security/bulletin/2025-03-01",
-        "Published": "March 3, 2025",
-        "Patch level": "2025-03-01",
-        "CVE": "CVE-2024-49728",
-        "References": "A-296915500",
-        "Type": "ID",
-        "Severity": "High",
-        "Updated AOSP versions": "12, 12L, 13, 14, 15",
         "Component": "System"
     },
     {
