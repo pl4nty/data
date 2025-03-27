@@ -166,7 +166,7 @@ def copy_to_azure_storage(source_url, destination_sas_url):
         raise
 
 
-def wait_for_unzip(out_sas_url, timeout=1800, check_interval=30):
+def wait_for_unzip(out_sas_url, timeout=3600, check_interval=30):
     """Wait for background unzip to complete by polling directory"""
     start_time = time.time()
     container_client = ContainerClient.from_container_url(out_sas_url)
