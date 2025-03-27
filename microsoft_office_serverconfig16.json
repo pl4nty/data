@@ -1316,6 +1316,9 @@
     <o:service o:name="LoopHubbleCDN">
       <o:url>https://cdn.hubblecontent.osi.office.net/</o:url>
     </o:service>
+    <o:service o:name="LoopWebServiceBaseURL">
+      <o:url>https://prod.api.loop.cloud.microsoft/</o:url>
+    </o:service>
     <o:service o:name="MeControlLiveIDUrl">
       <o:url>https://account.microsoft.com/?ref=ocpp</o:url>
     </o:service>
