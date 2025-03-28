@@ -14,6 +14,7 @@ MODULES = [
     'Microsoft.Online.SharePoint.PowerShell',
     'SqlServer',
     'WindowsAutoPilotIntune',
+    'Lenovo.Client.Scripting',
 
     # HP
     'HPCMSL',
