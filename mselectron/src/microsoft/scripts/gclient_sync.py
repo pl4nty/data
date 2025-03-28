@@ -14,7 +14,7 @@ MICROSOFT_SYSROOT_URL = \
 
 def check_sysroots_json():
     # Check if the sysroots.json file has been changed.
-    el_sysroots_path = os.path.join(ELECTRON_DIR, 'scripts', 'sysroots.json')
+    el_sysroots_path = os.path.join(ELECTRON_DIR, 'script', 'sysroots.json')
     ms_sysroots_path = os.path.join(REPO_ROOT_DIR, 'build', 'sysroots.json')
     if not os.path.exists(el_sysroots_path):
         return

@@ -239,6 +239,15 @@ CC_BASE_EXPORT BASE_DECLARE_FEATURE(kRenderThrottleFrameRate);
 CC_BASE_EXPORT extern const base::FeatureParam<int>
     kRenderThrottledFrameIntervalHz;
 
+// Adds a fast path to avoid waking up the thread pool when there are no raster
+// tasks.
+CC_BASE_EXPORT BASE_DECLARE_FEATURE(kFastPathNoRaster);
+
+// When enabled, moves the layer tree client's metric export call
+// for from beginning of the subsequent frame to the end of the subsequent
+// frame.
+CC_BASE_EXPORT BASE_DECLARE_FEATURE(kExportFrameTimingAfterFrameDone);
+
 }  // namespace features
 
 #endif  // CC_BASE_FEATURES_H_

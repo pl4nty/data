@@ -1,8 +1,8 @@
 [
   {
     "name": "abseil-cpp",
-    "size": 1740499,
-    "file_count": 161
+    "size": 1660283,
+    "file_count": 160
   },
   {
     "name": "alsa",
@@ -16,8 +16,8 @@
   },
   {
     "name": "android_deps",
-    "size": 10170547,
-    "file_count": 258
+    "size": 14751857,
+    "file_count": 308
   },
   {
     "name": "android_prebuilts",
@@ -26,7 +26,7 @@
   },
   {
     "name": "android_system_sdk",
-    "size": 20095,
+    "size": 20068,
     "file_count": 5
   },
   {
@@ -36,7 +36,7 @@
   },
   {
     "name": "angle",
-    "size": 14597849,
+    "size": 14599950,
     "file_count": 830
   },
   {
@@ -66,17 +66,17 @@
   },
   {
     "name": "blink",
-    "size": 33917849,
-    "file_count": 3951
+    "size": 33976392,
+    "file_count": 3955
   },
   {
     "name": "boringssl",
-    "size": 70303,
+    "size": 70485,
     "file_count": 16
   },
   {
     "name": "breakpad",
-    "size": 17963099,
+    "size": 17957133,
     "file_count": 1009
   },
   {
@@ -116,7 +116,7 @@
   },
   {
     "name": "depot_tools",
-    "size": 16235619,
+    "size": 16139939,
     "file_count": 245
   },
   {
@@ -146,7 +146,7 @@
   },
   {
     "name": "eigen3",
-    "size": 16888347,
+    "size": 16886986,
     "file_count": 2018
   },
   {
@@ -196,7 +196,7 @@
   },
   {
     "name": "glslang",
-    "size": 39628033,
+    "size": 39618817,
     "file_count": 3025
   },
   {
@@ -241,7 +241,7 @@
   },
   {
     "name": "icu",
-    "size": 151439161,
+    "size": 151439475,
     "file_count": 7134
   },
   {
@@ -301,7 +301,7 @@
   },
   {
     "name": "libc++",
-    "size": 5990781,
+    "size": 5992240,
     "file_count": 910
   },
   {
@@ -361,7 +361,7 @@
   },
   {
     "name": "libxslt",
-    "size": 407045,
+    "size": 409888,
     "file_count": 18
   },
   {
@@ -371,8 +371,8 @@
   },
   {
     "name": "llvm-build",
-    "size": 216700867,
-    "file_count": 334
+    "size": 217518759,
+    "file_count": 336
   },
   {
     "name": "logilab",
@@ -396,7 +396,7 @@
   },
   {
     "name": "microsoft_pdf",
-    "size": 17851883,
+    "size": 18553323,
     "file_count": 19
   },
   {
@@ -466,7 +466,7 @@
   },
   {
     "name": "perfetto",
-    "size": 1470245,
+    "size": 1475548,
     "file_count": 80
   },
   {
@@ -511,8 +511,8 @@
   },
   {
     "name": "skia",
-    "size": 3401356,
-    "file_count": 1160
+    "size": 3425766,
+    "file_count": 1166
   },
   {
     "name": "speech-dispatcher",
@@ -526,13 +526,13 @@
   },
   {
     "name": "spirv-headers",
-    "size": 520555,
+    "size": 522397,
     "file_count": 15
   },
   {
     "name": "spirv-tools",
-    "size": 64390,
-    "file_count": 6
+    "size": 115790,
+    "file_count": 7
   },
   {
     "name": "sqlite",
@@ -556,7 +556,7 @@
   },
   {
     "name": "tflite",
-    "size": 728102,
+    "size": 728656,
     "file_count": 49
   },
   {
@@ -571,7 +571,7 @@
   },
   {
     "name": "vulkan-headers",
-    "size": 1267438,
+    "size": 1267735,
     "file_count": 21
   },
   {
@@ -581,13 +581,13 @@
   },
   {
     "name": "vulkan-utility-libraries",
-    "size": 2154222,
+    "size": 2154822,
     "file_count": 11
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 5483740,
-    "file_count": 152
+    "size": 5831999,
+    "file_count": 158
   },
   {
     "name": "vulkan_memory_allocator",
@@ -606,8 +606,8 @@
   },
   {
     "name": "webrtc",
-    "size": 199135,
-    "file_count": 53
+    "size": 221235,
+    "file_count": 64
   },
   {
     "name": "webrtc_overrides",
@@ -616,13 +616,13 @@
   },
   {
     "name": "win_build_output",
-    "size": 28488294,
+    "size": 28526666,
     "file_count": 625
   },
   {
     "name": "wpt_tools",
-    "size": 203894,
-    "file_count": 52
+    "size": 252347,
+    "file_count": 58
   },
   {
     "name": "zlib",

@@ -95,6 +95,8 @@ BASE_DECLARE_FEATURE(kPrivateNetworkAccessPermissionPrompt);
 
 COMPONENT_EXPORT(NETWORK_CPP_FLAGS_AND_SWITCHES)
 BASE_DECLARE_FEATURE(kLocalNetworkAccessChecks);
+COMPONENT_EXPORT(NETWORK_CPP_FLAGS_AND_SWITCHES)
+BASE_DECLARE_FEATURE_PARAM(bool, kLocalNetworkAccessChecksWarn);
 
 // If enabled, then the network service will parse the Cookie-Indices header.
 // This does not currently control changing cache behavior according to the
@@ -132,6 +134,9 @@ COMPONENT_EXPORT(NETWORK_CPP_FLAGS_AND_SWITCHES)
 BASE_DECLARE_FEATURE(kReduceTransferSizeUpdatedIPC);
 
 COMPONENT_EXPORT(NETWORK_CPP_FLAGS_AND_SWITCHES)
+BASE_DECLARE_FEATURE(kRendererSideContentDecoding);
+
+COMPONENT_EXPORT(NETWORK_CPP_FLAGS_AND_SWITCHES)
 BASE_DECLARE_FEATURE(kSkipTpcdMitigationsForAds);
 COMPONENT_EXPORT(NETWORK_CPP_FLAGS_AND_SWITCHES)
 BASE_DECLARE_FEATURE_PARAM(bool, kSkipTpcdMitigationsForAdsHeuristics);
@@ -166,10 +171,6 @@ BASE_DECLARE_FEATURE(kCloneDevToolsConnectionOnlyIfRequested);
 COMPONENT_EXPORT(NETWORK_CPP_FLAGS_AND_SWITCHES)
 BASE_DECLARE_FEATURE(kStorageAccessHeaders);
 
-// Enables the Storage Access Headers Origin Trial.
-COMPONENT_EXPORT(NETWORK_CPP_FLAGS_AND_SWITCHES)
-BASE_DECLARE_FEATURE(kStorageAccessHeadersTrial);
-
 // Should SRI-compliant HTTP Message Signatures be enforced?
 // https://wicg.github.io/signature-based-sri/
 COMPONENT_EXPORT(NETWORK_CPP_FLAGS_AND_SWITCHES)
@@ -178,9 +179,9 @@ BASE_DECLARE_FEATURE(kSRIMessageSignatureEnforcement);
 COMPONENT_EXPORT(NETWORK_CPP_FLAGS_AND_SWITCHES)
 BASE_DECLARE_FEATURE(kCreateURLLoaderPipeAsync);
 
-// Should Ad-Auction-Registration-Eligible be sent on requests made with
-// attributionsrc, and should Ad-Auction-Register-Event responses on those
-// requests be processed?
+// Should Sec-Ad-Auction-Event-Recording-Eligible be sent on requests made
+// with attributionsrc, and should Ad-Auction-Register-Event responses on
+// those requests be processed?
 COMPONENT_EXPORT(NETWORK_CPP_FLAGS_AND_SWITCHES)
 BASE_DECLARE_FEATURE(kAdAuctionEventRegistration);
 
@@ -289,6 +290,20 @@ COMPONENT_EXPORT(NETWORK_CPP_FLAGS_AND_SWITCHES)
 BASE_DECLARE_FEATURE_PARAM(int, kInterestGroupStorageMaxNegativeGroupsPerOwner);
 COMPONENT_EXPORT(NETWORK_CPP_FLAGS_AND_SWITCHES)
 BASE_DECLARE_FEATURE_PARAM(int, kInterestGroupStorageMaxOpsBeforeMaintenance);
+
+// When enabled, returns the output of GetCookiesString when calling
+// SetCookiesString, so that it can be cached in the renderer to avoid an IPC
+// on subsequent Get requests.
+COMPONENT_EXPORT(NETWORK_CPP_FLAGS_AND_SWITCHES)
+BASE_DECLARE_FEATURE(kGetCookiesOnSet);
+
+// If enabled, permissions policies relevant to a request are populated on
+// `network:ResourceRequest`.
+//
+// Note: Policies are not guaranteed to be added on every path. If
+// `PermissionsPolicy` on the request is nullopt, you need to set it somewhere.
+COMPONENT_EXPORT(NETWORK_CPP_FLAGS_AND_SWITCHES)
+BASE_DECLARE_FEATURE(kPopulatePermissionsPolicyOnRequest);
 
 }  // namespace network::features
 

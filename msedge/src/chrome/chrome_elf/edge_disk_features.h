@@ -18,6 +18,7 @@ namespace edge_disk_features {
 bool IsModuleTrackerFeatureEnabled();
 bool IsModuleTrackerV2FeatureEnabled();
 bool IsModuleTrackerV3FeatureEnabled();
+bool IsModuleTrackerV4FeatureEnabled();
 #endif  // defined(ARCH_CPU_X86_64)
 
 // Feature flag to disable upstream third party dll hook code, which leverages

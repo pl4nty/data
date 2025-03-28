@@ -1,14 +1,14 @@
 {
     "bullseye_amd64": {
-        "Key": "20230329T085712Z-1",
-        "Sha256Sum": "6a468814ee3200152b9ccda8876ac86cd9d28b442fe30a59356a22296277d3a1",
+        "Key": "20230611T210420Z-2",
+        "Sha256Sum": "0be326b106f0df7b8547ec8d3b58ccb95435c8414a45cda675c4805821d4d860",
         "SysrootDir": "debian_bullseye_amd64-sysroot",
         "Tarball": "debian_bullseye_amd64_sysroot.tar.xz",
         "URL": "https://msftelectronbuild.z5.web.core.windows.net/sysroots/toolchain"
     },
     "bullseye_arm64": {
-        "Key": "20230329T085712Z-1",
-        "Sha256Sum": "af4575c58e4d4222a3634db24bc6c1d158dd456f9c0ad551c2e019324e7091ff",
+        "Key": "20230611T210420Z-2",
+        "Sha256Sum": "1225cd518c1609e54033bb6a1c687875d4f4c21b2dbd5d5d81c4b5927d0fc0f1",
         "SysrootDir": "debian_bullseye_arm64-sysroot",
         "Tarball": "debian_bullseye_arm64_sysroot.tar.xz",
         "URL": "https://msftelectronbuild.z5.web.core.windows.net/sysroots/toolchain"
@@ -21,29 +21,29 @@
         "URL": "https://msftelectronbuild.z5.web.core.windows.net/sysroots/toolchain"
     },
     "bullseye_armhf": {
-        "Key": "20230329T085712Z-1",
-        "Sha256Sum": "f04411e56cc721ac5de94eb2cbc7f3845ff60f286f18b97b30ae03a583465cc3",
+        "Key": "20230611T210420Z-2",
+        "Sha256Sum": "ed5a71ce5fc6d1691817c3b203139328ee88395c9e54ff726f67c84ee1561e65",
         "SysrootDir": "debian_bullseye_armhf-sysroot",
         "Tarball": "debian_bullseye_armhf_sysroot.tar.xz",
         "URL": "https://msftelectronbuild.z5.web.core.windows.net/sysroots/toolchain"
     },
     "bullseye_i386": {
-        "Key": "20230329T085712Z-1",
-        "Sha256Sum": "6cc59a7b46a08af691cd692bd9fa48ddc0dbee4ec94dea09b0ea043aee024b96",
+        "Key": "20230611T210420Z-2",
+        "Sha256Sum": "57f800042b0c4bd00a8755da165823cc70decc0481b78d751924db7470af6b5e",
         "SysrootDir": "debian_bullseye_i386-sysroot",
         "Tarball": "debian_bullseye_i386_sysroot.tar.xz",
         "URL": "https://msftelectronbuild.z5.web.core.windows.net/sysroots/toolchain"
     },
     "bullseye_mips64el": {
-        "Key": "20230329T085712Z-1",
-        "Sha256Sum": "c4ac483a88e74b8dc58ff39687478502f18fb1b356d6b8fc86d684ec1a82e670",
+        "Key": "20230611T210420Z-2",
+        "Sha256Sum": "187b8644a949d0124cb00fa099a8a5842e9a88bb48d8d1c682604ebf546796b7",
         "SysrootDir": "debian_bullseye_mips64el-sysroot",
         "Tarball": "debian_bullseye_mips64el_sysroot.tar.xz",
         "URL": "https://msftelectronbuild.z5.web.core.windows.net/sysroots/toolchain"
     },
     "bullseye_mipsel": {
-        "Key": "20230329T085712Z-1",
-        "Sha256Sum": "561adb4d26d2cca7589fe0ae6fa75ae9b811baf77a8a641b19ae11aa4948ed58",
+        "Key": "20230611T210420Z-2",
+        "Sha256Sum": "f08771dc7a813e7f0fd540b49a1b611416979630b0009e9ecc51f999a7543081",
         "SysrootDir": "debian_bullseye_mipsel-sysroot",
         "Tarball": "debian_bullseye_mipsel_sysroot.tar.xz",
         "URL": "https://msftelectronbuild.z5.web.core.windows.net/sysroots/toolchain"

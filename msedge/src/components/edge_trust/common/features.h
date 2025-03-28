@@ -127,6 +127,9 @@ BASE_DECLARE_FEATURE_TRIGGER(kEdgeVpnUnsecureSiteChromePBTrigger);
 COMPONENT_EXPORT(EDGE_TRUST_COMMON)
 BASE_DECLARE_FEATURE_TRIGGER(kEdgeVpnUnsecureSiteAllTrigger);
 
+COMPONENT_EXPORT(EDGE_TRUST_COMMON)
+BASE_DECLARE_FEATURE(kEdgeEnableVpnForWebRTC);
+
 // AI tracker classification feature flags. |kAIClassificationEnabled| will be
 // used to see if we should classify trackers at all using AI.
 // |kAIClassificationEnforcementEnabled| will be used to determine if we should
@@ -166,6 +169,10 @@ extern tracking_prevention::EngagementSet GetOffEnagementSet();
 
 // TPCD downstream features
 COMPONENT_EXPORT(EDGE_TRUST_COMMON) BASE_DECLARE_FEATURE(kEdgeTpcdMetadata);
+
+// This will be triggered when the VPN UI is available.
+COMPONENT_EXPORT(EDGE_TRUST_COMMON)
+BASE_DECLARE_FEATURE_TRIGGER(kEdgeVpnUIAvailableTrigger);
 
 }  // namespace edge
 }  // namespace features

@@ -13,9 +13,7 @@ namespace features {
 // Enables the on-hover and context menu entry points for Bing insights on
 // images.
 COMPONENT_EXPORT(EDGE_PRISM_EXPLORER_FEATURES)
-BASE_DECLARE_FEATURE(kEdgePrismExplorer);
-COMPONENT_EXPORT(EDGE_PRISM_EXPLORER_FEATURES)
-extern bool IsEdgePrismExplorerEnabled();
+BASE_DECLARE_FEATURE_TRIGGER(kEdgePrismExplorer);
 
 // TODO(task.ms/56284167): Move this feature flag to separate file.
 // Enables the video overlay feature.

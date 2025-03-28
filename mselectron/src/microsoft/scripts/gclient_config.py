@@ -60,13 +60,16 @@ def parse_args():
     return args
 
 
-def get_chromium_snapshot_revision():
+def get_chromium_snapshot_revision(target_os):
     version = get_chromium_version_from_microsoft_deps()
     if not ChromiumVersion.is_version_string_valid(version):
         # It is probably a commit hash. Give up.
         return None
 
-    current_platform = CanonicalPlatform.from_system()
+    if target_os is not None and target_os != 'host':
+        current_platform = target_os
+    else:        
+        current_platform = CanonicalPlatform.from_system()
     return str(ChromiumVersionWithSuffix(version_string=version,
                                          suffix=current_platform))
 
@@ -75,13 +78,13 @@ def running_inside_proper_checkout():
     return REPO_ROOT_DIR == MICROSOFT_DIR
 
 
-def get_custom_vars(more_custom_vars):
+def get_custom_vars(more_custom_vars, target_os):
     custom_vars = {}
 
     # We store platform-specific Chromium snapshots separately
     # so an exact revision depends on the current platform.
     custom_vars['microsoft_chromium_version'] = \
-        get_chromium_snapshot_revision()
+        get_chromium_snapshot_revision(target_os)
 
     # Let's always checkout all dependencies on Linux.
     if CanonicalPlatform.is_host_linux():
@@ -104,7 +107,7 @@ def main():
         print(error_message, file=sys.stderr)
         return 1
 
-    custom_vars = get_custom_vars(more_custom_vars=script_args.custom_var)
+    custom_vars = get_custom_vars(more_custom_vars=script_args.custom_var, target_os=script_args.target_os)
 
     os.chdir(PROJECT_ROOT_DIR)
     gclient_config(script_args.url,

@@ -420,7 +420,8 @@ NET_EXPORT extern const base::FeatureParam<std::string>
 NET_EXPORT extern const base::FeatureParam<bool> kIpPrivacyDirectOnly;
 
 // If true, pass OAuth token to Phosphor in GetProxyConfig API for IP
-// Protection.
+// Protection. This is used by E2E tests to ensure a stable geo for tokens
+// and proxy config.
 NET_EXPORT extern const base::FeatureParam<bool>
     kIpPrivacyIncludeOAuthTokenInGetProxyConfig;
 
@@ -712,6 +713,12 @@ NET_EXPORT BASE_DECLARE_FEATURE(kUseCertTransparencyAwareApiForOsCertVerify);
 // Enables a special interstitial for self signed cert errors in local network
 // URLs.
 NET_EXPORT BASE_DECLARE_FEATURE(kSelfSignedLocalNetworkInterstitial);
+
+#if BUILDFLAG(CHROME_ROOT_STORE_SUPPORTED)
+// If enabled, server certificates that successfully verify and that identify
+// as QWACs will be verified against the 1-QWAC specification as well.
+NET_EXPORT BASE_DECLARE_FEATURE(kVerifyQWACs);
+#endif
 
 }  // namespace net::features
 

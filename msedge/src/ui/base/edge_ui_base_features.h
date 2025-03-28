@@ -339,14 +339,6 @@ COMPONENT_EXPORT(UI_BASE_FEATURES)
 BASE_DECLARE_FEATURE(kPhoenixNonColorTokenCentralized);
 COMPONENT_EXPORT(UI_BASE_FEATURES)
 extern bool IsCentralizedPhoenixNonColorTokenPipelineEnabled();
-COMPONENT_EXPORT(UI_BASE_FEATURES)
-extern const base::FeatureParam<bool> kFluentTextfieldEnabled;
-COMPONENT_EXPORT(UI_BASE_FEATURES)
-extern bool IsFluentTextfieldEnabled();
-COMPONENT_EXPORT(UI_BASE_FEATURES)
-extern const base::FeatureParam<bool> kFluentComboboxEnabled;
-COMPONENT_EXPORT(UI_BASE_FEATURES)
-extern bool IsFluentComboboxEnabled();
 
 COMPONENT_EXPORT(UI_BASE_FEATURES)
 extern bool IsVisualRejuvMenuFontSizeEnabled();
@@ -406,6 +398,16 @@ COMPONENT_EXPORT(UI_BASE_FEATURES)
 BASE_DECLARE_FEATURE_TRIGGER(kVisualRefreshRingZeroNormalModeTrigger);
 COMPONENT_EXPORT(UI_BASE_FEATURES)
 BASE_DECLARE_FEATURE_TRIGGER(kVisualRefreshRingZeroTouchModeTrigger);
+
+// Toolbar Button Count Triggers
+COMPONENT_EXPORT(UI_BASE_FEATURES)
+BASE_DECLARE_FEATURE_TRIGGER(kToolbarButtonCountLE6);
+COMPONENT_EXPORT(UI_BASE_FEATURES)
+BASE_DECLARE_FEATURE_TRIGGER(kToolbarButtonCountGT6LE9);
+COMPONENT_EXPORT(UI_BASE_FEATURES)
+BASE_DECLARE_FEATURE_TRIGGER(kToolbarButtonCountGT9LE13);
+COMPONENT_EXPORT(UI_BASE_FEATURES)
+BASE_DECLARE_FEATURE_TRIGGER(kToolbarButtonCountGT13);
 
 // If enabled, the transition from Normal Mode to Touch Mode (or vice-versa)
 // will provide a bug-free experience.
@@ -542,9 +544,6 @@ COMPONENT_EXPORT(UI_BASE_FEATURES)
 BASE_DECLARE_FEATURE(kVisualRejuvConnectedTabs);
 
 COMPONENT_EXPORT(UI_BASE_FEATURES)
-BASE_DECLARE_FEATURE(kVisualRejuvHoverForConnectedTabs);
-
-COMPONENT_EXPORT(UI_BASE_FEATURES)
 BASE_DECLARE_FEATURE(kVisualRejuvMicaForConnectedTabs);
 
 COMPONENT_EXPORT(UI_BASE_FEATURES)
@@ -562,6 +561,11 @@ COMPONENT_EXPORT(UI_BASE_FEATURES)
 extern bool EdgeIsVisualRejuvAcrylicEnabledForWebUi2();
 COMPONENT_EXPORT(UI_BASE_FEATURES)
 BASE_DECLARE_FEATURE_TRIGGER(kEdgeVisualRejuvAcrylicForWebUi2Trigger);
+
+COMPONENT_EXPORT(UI_BASE_FEATURES)
+BASE_DECLARE_FEATURE(kVisualRefreshKumo);
+COMPONENT_EXPORT(UI_BASE_FEATURES)
+extern bool IsEdgeVisualRefreshKumoEnabled(bool trigger_usage = false);
 
 COMPONENT_EXPORT(UI_BASE_FEATURES)
 BASE_DECLARE_FEATURE(kEdgeWebUIWebVitals);
@@ -591,6 +595,11 @@ extern const base::FeatureParam<bool>
     kUseSnappingPointsForPhoenixPaletteGeneration;
 COMPONENT_EXPORT(UI_BASE_FEATURES)
 extern bool shouldUseSnappingPointsForPhoenixPaletteGeneration();
+
+COMPONENT_EXPORT(UI_BASE_FEATURES)
+BASE_DECLARE_FEATURE(kEdgeR1ColorThemes);
+COMPONENT_EXPORT(UI_BASE_FEATURES)
+extern bool IsEdgeR1ColorThemesEnabled();
 #endif // BUILDFLAG(IS_WIN) || BUILDFLAG(IS_MAC) || BUILDFLAG(IS_LINUX)
 
 // If enabled, Edge DLP features will have access to the private clipboard.

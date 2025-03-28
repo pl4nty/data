@@ -1,0 +1,66 @@
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
+From: Charles Kerr <charles@charleskerr.com>
+Date: Tue, 25 Mar 2025 22:50:33 -0500
+Subject: fix: ftbfs when printing is disabled
+
+This is fixed upstream in 35.1.1 and can be removed in our next roll
+
+diff --git a/shell/browser/api/electron_api_web_contents.cc b/shell/browser/api/electron_api_web_contents.cc
+index 8ef5526bf1914c32d17dc8111ec55c84f4d2c98d..29cc5ad342bcc9f17cac27650920e0785b488a8f 100644
+--- a/shell/browser/api/electron_api_web_contents.cc
++++ b/shell/browser/api/electron_api_web_contents.cc
+@@ -2079,6 +2079,7 @@ void WebContents::DraggableRegionsChanged(
+   draggable_region_ = DraggableRegionsToSkRegion(regions);
+ }
+ 
++#if BUILDFLAG(ENABLE_PRINTING)
+ void WebContents::PrintCrossProcessSubframe(
+     content::WebContents* web_contents,
+     const gfx::Rect& rect,
+@@ -2089,6 +2090,7 @@ void WebContents::PrintCrossProcessSubframe(
+     client->PrintCrossProcessSubframe(rect, document_cookie, subframe_host);
+   }
+ }
++#endif
+ 
+ SkRegion* WebContents::draggable_region() {
+   return g_disable_draggable_regions ? nullptr : draggable_region_.get();
+diff --git a/shell/browser/api/electron_api_web_contents.h b/shell/browser/api/electron_api_web_contents.h
+index a17cbb29f84ca5c0bfca902ce7f8e42744e90d22..1a1b339beaa72d6f4a9e5207d5792b89d71087a6 100644
+--- a/shell/browser/api/electron_api_web_contents.h
++++ b/shell/browser/api/electron_api_web_contents.h
+@@ -630,11 +630,13 @@ class WebContents final : public ExclusiveAccessContext,
+   void DraggableRegionsChanged(
+       const std::vector<blink::mojom::DraggableRegionPtr>& regions,
+       content::WebContents* contents) override;
++#if BUILDFLAG(ENABLE_PRINTING)
+   void PrintCrossProcessSubframe(
+       content::WebContents* web_contents,
+       const gfx::Rect& rect,
+       int document_cookie,
+       content::RenderFrameHost* subframe_host) const override;
++#endif
+ 
+   // content::WebContentsObserver:
+   void BeforeUnloadFired(bool proceed) override;
+diff --git a/shell/browser/feature_list.cc b/shell/browser/feature_list.cc
+index a4be79d37e984095aa0a18313b0ea6813199d626..e6249b383fda2df15f797d6ef2f812f37324ee00 100644
+--- a/shell/browser/feature_list.cc
++++ b/shell/browser/feature_list.cc
+@@ -16,6 +16,7 @@
+ #include "electron/buildflags/buildflags.h"
+ #include "media/base/media_switches.h"
+ #include "net/base/features.h"
++#include "printing/buildflags/buildflags.h"
+ #include "services/network/public/cpp/features.h"
+ #include "third_party/blink/public/common/features.h"
+ 
+@@ -60,7 +61,7 @@ void InitializeFeatureList() {
+       std::string(",") + features::kMacWebContentsOcclusion.name;
+ #endif
+ 
+-#if BUILDFLAG(IS_LINUX)
++#if BUILDFLAG(IS_LINUX) && BUILDFLAG(ENABLE_PRINTING)
+   disable_features +=
+       // EnableOopPrintDrivers is still a bit half-baked on Linux and
+       // causes crashes when trying to show dialogs.
