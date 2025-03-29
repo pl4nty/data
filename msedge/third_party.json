@@ -66,7 +66,7 @@
   },
   {
     "name": "blink",
-    "size": 33976392,
+    "size": 33997859,
     "file_count": 3955
   },
   {
@@ -371,7 +371,7 @@
   },
   {
     "name": "llvm-build",
-    "size": 217518759,
+    "size": 217527975,
     "file_count": 336
   },
   {
@@ -411,7 +411,7 @@
   },
   {
     "name": "mutter",
-    "size": 28378232,
+    "size": 28385354,
     "file_count": 1980
   },
   {
@@ -466,7 +466,7 @@
   },
   {
     "name": "perfetto",
-    "size": 1475548,
+    "size": 1487196,
     "file_count": 80
   },
   {
@@ -571,7 +571,7 @@
   },
   {
     "name": "vulkan-headers",
-    "size": 1267735,
+    "size": 1270216,
     "file_count": 21
   },
   {
@@ -581,13 +581,13 @@
   },
   {
     "name": "vulkan-utility-libraries",
-    "size": 2154822,
+    "size": 2157666,
     "file_count": 11
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 5831999,
-    "file_count": 158
+    "size": 5719031,
+    "file_count": 162
   },
   {
     "name": "vulkan_memory_allocator",
