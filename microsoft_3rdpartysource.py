@@ -179,7 +179,7 @@ def wait_for_unzip(out_sas_url, timeout=3600, check_interval=30):
         print("Waiting for unzip completion...")
         time.sleep(check_interval)
 
-    raise TimeoutError("Unzip operation timed out")
+    return False
 
 
 def find_zip(sas_url):
@@ -510,12 +510,15 @@ def main():
 
     # Wait for Edge extraction to complete
     print("Waiting for unzip operation to complete...")
-    if wait_for_unzip(out_sas_url):
+    wait = wait_for_unzip(out_sas_url)
+    # Delete parent ZIP after unzip
+    zip_url = find_zip(in_sas_url)
+    if delete_blob(zip_url):
+        print("Deleted parent ZIP after unzip")
+    if wait:
         print("Unzip completed")
-        # Delete parent ZIP after unzip
-        zip_url = find_zip(in_sas_url)
-        if delete_blob(zip_url):
-            print("Deleted parent ZIP after unzip")
+    else:
+        raise TimeoutError("Unzip operation timed out")
 
     # Find the ZIP file in output directory
     zip_url = find_zip(out_sas_url)
