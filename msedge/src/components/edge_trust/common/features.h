@@ -174,6 +174,13 @@ COMPONENT_EXPORT(EDGE_TRUST_COMMON) BASE_DECLARE_FEATURE(kEdgeTpcdMetadata);
 COMPONENT_EXPORT(EDGE_TRUST_COMMON)
 BASE_DECLARE_FEATURE_TRIGGER(kEdgeVpnUIAvailableTrigger);
 
+// When flag is enabled, allows an ad selection/privacy notice to be shown in
+// the Edge What's New Page.
+COMPONENT_EXPORT(EDGE_TRUST_COMMON)
+BASE_DECLARE_FEATURE(kEdgeUpdatePrivacyNoticeExperiment);
+COMPONENT_EXPORT(EDGE_TRUST_COMMON)
+extern bool IsEdgeUpdatePrivacyNoticeExperimentEnabled();
+
 }  // namespace edge
 }  // namespace features
 #endif  // COMPONENTS_EDGE_TRUST_COMMON_FEATURES_H_
