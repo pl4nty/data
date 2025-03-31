@@ -39,7 +39,7 @@
         "SVC_Remediations": "P-R-1252206-8-39",
         "SVC_SideCar": "P-R-1292706-8-10",
         "Segmentation": "P-D-1453539-1-3,P-D-1076137-1-7",
-        "Sidecar_Mac": "P-E-1128681-C1-15",
+        "Sidecar_Mac": "P-E-1128681-C1-15,P-R-1557484-1-3",
         "ios_mam_tunnel_sdk": "P-D-1533638-1-3,P-D-1471266-1-4,P-D-1443873-1-7,P-D-1443758-1-11,P-D-1294350-1-5,P-D-1294349-1-4,P-D-1289355-1-2"
     },
     "Fundamentals": {
@@ -219,7 +219,8 @@
     },
     "Sidecar_Mac": {
         "customer_script_timeout": 3600,
-        "internal_script_timeout": 3600
+        "internal_script_timeout": 3600,
+        "use_custom_data_store": false
     },
     "ios_mam_tunnel_sdk": {
         "loginServiceUrlBypassEnabled": true,
