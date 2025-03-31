@@ -1,0 +1,13 @@
+{
+    "ConfigIDs": {
+        "OneShell": "P-R-1551471-C3-10,P-R-1535312-6-8,P-D-1117449-1-4",
+        "Segmentation": "P-R-1127469-1-8"
+    },
+    "OneShell": {
+        "M365CopilotRebrandingEnabled": true,
+        "default": true
+    },
+    "Segmentation": {
+        "TeamsRing": "general"
+    }
+}

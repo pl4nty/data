@@ -1,0 +1,40 @@
+{
+    "ConfigIDs": {
+        "RemoteAssist": "P-R-78899-2-8,P-R-26972-7-75,P-D-25094-4-13",
+        "RemoteAssistMobile": "P-R-98884-4-6,P-R-65367-2-25,P-R-95047-2-3,P-D-37601-1-29"
+    },
+    "RemoteAssist": {
+        "AdminMessageBody": "",
+        "AdminMessageTitle": "",
+        "Feature.ChunkedMessageProtocol": "true",
+        "Feature.CriticalInteractionComponents": "false",
+        "Feature.DirectionalArrows": "true",
+        "Feature.FreezeFrameEnabled": "false",
+        "Feature.GhostArrows": "false",
+        "Feature.IsZeroGravity": "false",
+        "Feature.Meetings": "false",
+        "Feature.NPSDialog": "true",
+        "Feature.NPSForceShow": "false",
+        "Feature.PDFViewer": "true",
+        "Feature.SlimCoreLogging": "false",
+        "Feature.Snapshot": "true",
+        "Feature.TextChat": "true",
+        "Feature.UploadToOneDrive": "true",
+        "MajorVersion": "1",
+        "MinorVersion": "0",
+        "NPSEndpointUri": "",
+        "SubscriptionTrialLength": "90"
+    },
+    "RemoteAssistMobile": {
+        "Feature.AssetCapture": true,
+        "Feature.DepthAPI": "true",
+        "Feature.FreezeFrame": "false",
+        "Feature.NPSDialog": true,
+        "Feature.NPSForceShow": false,
+        "Feature.TeamsNotifications": "true",
+        "FreeTrialWindowDays": 90,
+        "MinVersion": "9999.99.99",
+        "NPSEndpointUri": "https://world.ces.microsoftcloud.com/",
+        "TalkbackIdBlacklist": []
+    }
+}

@@ -1,0 +1,348 @@
+{
+    "CHILL_Floodgate": {
+        "key": "val",
+        "test": "test"
+    },
+    "ChillAdminCopilot": {
+        "Floodgate_Campaign_AdminPortal.719835bd-9541-4b85-91f7-4f8a72a35dee": {
+            "CampaignId": "719835bd-9541-4b85-91f7-4f8a72a35dee",
+            "EndTimeUtc": "2026-06-29T18:30:00Z",
+            "GovernedChannelType": 0,
+            "NominationScheme": {
+                "CooldownPeriod": {
+                    "IntervalSeconds": 7776000,
+                    "Type": 0
+                },
+                "FallbackSurveyDurationSeconds": 0,
+                "NominationPeriod": {
+                    "IntervalSeconds": 2592000,
+                    "Type": 0
+                },
+                "PercentageDenominator": 100,
+                "PercentageNumerator": 10,
+                "Type": 0
+            },
+            "PrimaryPriority": 3,
+            "StartTimeUtc": "2025-01-30T18:30:00Z",
+            "SurveyTemplate": {
+                "ActivationEvent": {
+                    "Sequence": [
+                        {
+                            "Activity": "UsedCopilot_TriggerCopilotNPS",
+                            "Count": 1,
+                            "IsAggregate": true,
+                            "Type": 0
+                        }
+                    ],
+                    "Type": 1
+                },
+                "PreferredLaunchType": 0,
+                "Type": 4,
+                "UxSchema": {
+                    "branchingRules": [],
+                    "pages": [
+                        {
+                            "displayName": "Survey Prompt",
+                            "id": "0e19ac6f-d831-499c-9e83-a709e27784b6",
+                            "isFinalPage": false,
+                            "questions": [
+                                {
+                                    "id": "promptSubText1",
+                                    "questionLabel": "We have just two questions.",
+                                    "required": false,
+                                    "type": "Label",
+                                    "visible": true
+                                }
+                            ],
+                            "title": "We'd love your feedback on Microsoft 365 Copilot"
+                        },
+                        {
+                            "displayName": "Vertical Rating with Verbatim Question",
+                            "id": "050beaf0-2c8a-4234-b496-4df00c79a563",
+                            "isFinalPage": false,
+                            "questions": [
+                                {
+                                    "availableOptions": [
+                                        "5 - Very likely",
+                                        "4",
+                                        "3",
+                                        "2",
+                                        "1 - Very unlikely"
+                                    ],
+                                    "id": "singleselect1",
+                                    "questionLabel": "How likely are you to recommend Microsoft 365 Copilot to others, if asked.",
+                                    "required": true,
+                                    "type": "SingleSelect",
+                                    "visible": true
+                                },
+                                {
+                                    "id": "comment1",
+                                    "questionLabel": "Please tell us how we can improve your experience.",
+                                    "required": false,
+                                    "type": "Comment",
+                                    "visible": true
+                                }
+                            ],
+                            "title": "Microsoft would love your perspective"
+                        },
+                        {
+                            "displayName": "Thank You",
+                            "id": "ddcaefe9-744a-46cc-8e6c-5eebc6abefab",
+                            "isFinalPage": true,
+                            "questions": [
+                                {
+                                    "id": "thankYouText2",
+                                    "questionLabel": "Thank you for taking the time to give your feedback to Microsoft!",
+                                    "required": false,
+                                    "type": "Label",
+                                    "visible": true
+                                }
+                            ],
+                            "title": null
+                        }
+                    ],
+                    "uiStringsUrl": "https://res.cdn.office.net/fg2uxschema/719835bd-9541-4b85-91f7-4f8a72a35dee/65ce34d9-383a-4f0c-9ee8-b1104233eaf3/Web-SharePointAdminCenter/",
+                    "variables": {}
+                }
+            }
+        }
+    },
+    "ChillSharePoint": {
+        "Floodgate_Campaign_SharePoint.dd025788-0c5d-4dde-812e-2b30af0d3bf9": {
+            "CampaignId": "dd025788-0c5d-4dde-812e-2b30af0d3bf9",
+            "EndTimeUtc": "2028-05-01T07:00:00Z",
+            "GovernedChannelType": 0,
+            "NominationScheme": {
+                "CooldownPeriod": {
+                    "IntervalSeconds": 7776000,
+                    "Type": 0
+                },
+                "FallbackSurveyDurationSeconds": 0,
+                "NominationPeriod": {
+                    "IntervalSeconds": 1296000,
+                    "Type": 0
+                },
+                "PercentageDenominator": 100,
+                "PercentageNumerator": 100,
+                "Type": 0
+            },
+            "PrimaryPriority": 3,
+            "StartTimeUtc": "2024-08-15T07:00:00Z",
+            "SurveyTemplate": {
+                "ActivationEvent": {
+                    "Sequence": [
+                        {
+                            "Activity": "PublishFeatureUsage",
+                            "Count": 1,
+                            "IsAggregate": false,
+                            "Type": 0
+                        }
+                    ],
+                    "Type": 1
+                },
+                "PreferredLaunchType": 0,
+                "Type": 2,
+                "UxSchema": {
+                    "branchingRules": [],
+                    "pages": [
+                        {
+                            "displayName": "Survey Prompt",
+                            "id": "0e19ac6f-d831-499c-9e83-a709e27784b6",
+                            "isFinalPage": false,
+                            "questions": [
+                                {
+                                    "id": "promptSubText1",
+                                    "questionLabel": "We have just two questions.",
+                                    "required": false,
+                                    "type": "Label",
+                                    "visible": true
+                                }
+                            ],
+                            "title": "You just published a page! Tell us how it went."
+                        },
+                        {
+                            "displayName": "Horizontal Rating",
+                            "id": "51e6db44-1070-45e6-be30-8c14a5b9e55a",
+                            "isFinalPage": false,
+                            "questions": [
+                                {
+                                    "id": "rating1",
+                                    "leftLegendValue": "Not at all likely",
+                                    "questionLabel": "How likely are you to recommend creating and publishing pages in SharePoint to others, if asked?",
+                                    "ratingValues": [
+                                        "1",
+                                        "2",
+                                        "3",
+                                        "4",
+                                        "5"
+                                    ],
+                                    "required": true,
+                                    "rightLegendValue": "Extremely likely",
+                                    "type": "Rating",
+                                    "visible": true
+                                }
+                            ],
+                            "title": "Microsoft would love your perspective"
+                        },
+                        {
+                            "displayName": "Verbatim",
+                            "id": "b8d2ac03-6669-40c7-8829-27114df162cf",
+                            "isFinalPage": false,
+                            "questions": [
+                                {
+                                    "id": "verbatim1",
+                                    "questionLabel": "Please tell us more. Why did you choose that answer?",
+                                    "required": false,
+                                    "type": "Comment",
+                                    "visible": true
+                                }
+                            ],
+                            "title": "Microsoft would love your perspective"
+                        },
+                        {
+                            "displayName": "Thank You",
+                            "id": "ddcaefe9-744a-46cc-8e6c-5eebc6abefab",
+                            "isFinalPage": true,
+                            "questions": [
+                                {
+                                    "id": "thankYouText2",
+                                    "questionLabel": "Thank you for taking the time to give your feedback to Microsoft!",
+                                    "required": false,
+                                    "type": "Label",
+                                    "visible": true
+                                }
+                            ],
+                            "title": null
+                        }
+                    ],
+                    "uiStringsUrl": "https://res.cdn.office.net/fg2uxschema/dd025788-0c5d-4dde-812e-2b30af0d3bf9/55bbbfc9-6899-4512-9a73-b3890d754e20/Web-SharePoint/",
+                    "variables": {}
+                }
+            }
+        }
+    },
+    "ChillVivaGlint": {
+        "Floodgate_Campaign_VivaGlint.64136d79-3325-42a4-83c4-c88d2a3588e2": {
+            "CampaignId": "64136d79-3325-42a4-83c4-c88d2a3588e2",
+            "EndTimeUtc": "2025-07-23T04:00:00Z",
+            "GovernedChannelType": 0,
+            "NominationScheme": {
+                "CooldownPeriod": {
+                    "IntervalSeconds": 7776000,
+                    "Type": 0
+                },
+                "FallbackSurveyDurationSeconds": 0,
+                "NominationPeriod": {
+                    "IntervalSeconds": 2592000,
+                    "Type": 0
+                },
+                "PercentageDenominator": 100,
+                "PercentageNumerator": 25,
+                "Type": 0
+            },
+            "PrimaryPriority": 1,
+            "StartTimeUtc": "2023-10-27T04:00:00Z",
+            "SurveyTemplate": {
+                "ActivationEvent": {
+                    "Sequence": [
+                        {
+                            "Activity": "NPSStart",
+                            "Count": 1,
+                            "IsAggregate": true,
+                            "Type": 0
+                        }
+                    ],
+                    "Type": 1
+                },
+                "Content": {
+                    "Prompt": {
+                        "NoLabel": "Not now",
+                        "Question": "We have just two questions for you.",
+                        "Title": "We'd love your feedback!",
+                        "YesLabel": "Sure"
+                    },
+                    "Question": {
+                        "Question": "Please tell us more. Why did you choose that answer?"
+                    },
+                    "Rating": {
+                        "IsZeroBased": false,
+                        "Question": "How likely are you to recommend Glint to others, if asked?",
+                        "RatingValuesAscending": [
+                            "1 - Very unlikely",
+                            "2",
+                            "3",
+                            "4",
+                            "5 - Very likely"
+                        ]
+                    }
+                },
+                "PreferredLaunchType": 0,
+                "Type": 4
+            }
+        },
+        "Floodgate_Campaign_VivaGlint.fb84830a-f4c4-4312-a8ee-781e174a0ad7": {
+            "CampaignId": "fb84830a-f4c4-4312-a8ee-781e174a0ad7",
+            "EndTimeUtc": "2025-07-23T04:00:00Z",
+            "GovernedChannelType": 0,
+            "NominationScheme": {
+                "CooldownPeriod": {
+                    "IntervalSeconds": 7776000,
+                    "Type": 0
+                },
+                "FallbackSurveyDurationSeconds": 0,
+                "NominationPeriod": {
+                    "IntervalSeconds": 2592000,
+                    "Type": 0
+                },
+                "PercentageDenominator": 100,
+                "PercentageNumerator": 25,
+                "Type": 0
+            },
+            "PrimaryPriority": 3,
+            "StartTimeUtc": "2023-10-27T04:00:00Z",
+            "SurveyTemplate": {
+                "ActivationEvent": {
+                    "Sequence": [
+                        {
+                            "Activity": "NSATStart",
+                            "Count": 1,
+                            "IsAggregate": true,
+                            "Type": 0
+                        }
+                    ],
+                    "Type": 1
+                },
+                "Content": {
+                    "Prompt": {
+                        "NoLabel": "Not now",
+                        "Question": "Share your feedback in just two quick questions.",
+                        "Title": "Enjoying Glint?",
+                        "YesLabel": "Sure"
+                    },
+                    "Question": {
+                        "Question": "Please tell us how we can improve your experience."
+                    },
+                    "Rating": {
+                        "IsZeroBased": false,
+                        "Question": "How satisfied are you with Glint?",
+                        "RatingValuesAscending": [
+                            "1 - Very unsatisfied",
+                            "2",
+                            "3",
+                            "4",
+                            "5 - Very satisfied"
+                        ]
+                    }
+                },
+                "PreferredLaunchType": 0,
+                "Type": 2
+            }
+        }
+    },
+    "ConfigIDs": {
+        "CHILL_Floodgate": "P-D-1557905-1-2,P-D-1554177-1-2",
+        "ChillAdminCopilot": "P-R-1562851-1-7",
+        "ChillSharePoint": "P-R-1421849-1-5",
+        "ChillVivaGlint": "P-R-1542390-1-4,P-R-1542389-1-6"
+    }
+}

@@ -1,1 +1,233 @@
-
+{
+    "AndroidRemoteHelp": {
+        "remoteHelp.feature.unattendedOverlayWindow": true
+    },
+    "CLI_FireDrill_25": {
+        "evanve_convertToDefault_1": true,
+        "evanve_defaultTobeOverriden_enabled": false
+    },
+    "CLI_SideCar": {
+        "APv2UseStandardUserProviderNative": {
+            "FlightExpiry": "2025-08-28T00:00:00.0402432Z",
+            "FlightValue": true
+        },
+        "RemediationSendResultFirst": {
+            "FlightExpiry": "2025-04-28T00:00:00.0402432Z",
+            "FlightValue": true
+        },
+        "SetIMELogACL": {
+            "FlightExpiry": "2026-03-04T00:00:01.000Z",
+            "FlightValue": true
+        }
+    },
+    "ConfigIDs": {
+        "AndroidRemoteHelp": "P-R-1572422-1-3",
+        "CLI_FireDrill_25": "P-R-1571412-2-2,P-D-1571243-1-3",
+        "CLI_SideCar": "P-R-1565344-8-6,P-R-1547133-8-5,P-R-1479872-8-14,P-D-1550352-1-2",
+        "Fundamentals": "P-R-1073747-1-7",
+        "Infra_Fundamentals": "P-D-1535906-1-4,P-D-1527854-1-6",
+        "SVC_AndroidSync": "P-R-1446347-8-11,P-R-1282250-8-12",
+        "SVC_CorpDeviceEnrollment": "P-R-1270986-8-26",
+        "SVC_DataInfra": "P-R-1426160-8-32",
+        "SVC_Dep": "P-R-1527547-10-6,P-R-1525965-10-7,P-R-1442347-8-14,P-R-1258636-8-12",
+        "SVC_DeviceCheckin": "P-R-1554129-1-8",
+        "SVC_DeviceFE": "P-R-1412292-8-12,P-R-1259833-8-10,P-R-1252953-8-14",
+        "SVC_IWService": "P-R-1453527-8-20,P-R-1225589-8-21,P-R-1225586-8-20",
+        "SVC_Monolith_MAM": "P-R-1522615-13-4,P-R-1291417-8-22,P-R-1248318-8-11",
+        "SVC_Pivot": "P-R-1432213-8-28",
+        "SVC_RAODJPlus": "P-R-1528781-10-6,P-R-1528782-10-5",
+        "SVC_Remediations": "P-R-1252206-8-39",
+        "SVC_SideCar": "P-R-1292706-8-10",
+        "Segmentation": "P-D-1453539-1-3,P-D-1076137-1-7",
+        "Sidecar_Mac": "P-E-1128681-C1-15",
+        "ios_mam_tunnel_sdk": "P-D-1533638-1-3,P-D-1471266-1-4,P-D-1443873-1-7,P-D-1443758-1-11,P-D-1294350-1-5,P-D-1294349-1-4,P-D-1289355-1-2"
+    },
+    "Fundamentals": {
+        "FlightingV2": {
+            "Fundamentals_Test": false
+        }
+    },
+    "Infra_Fundamentals": {
+        "FlightingV2Infra": {
+            "AllowedProjectTeams": [
+                "CLI_IntuneEpmAgent",
+                "Fundamentals",
+                "Infra_Fundamentals",
+                "Infra_LogManager",
+                "INFRA_MessageBus",
+                "PAA_IntuneDataPlatform",
+                "Segmentation",
+                "SVC_AdminApproval",
+                "SVC_AMPAASSupport",
+                "SVC_AndroidSpecialized",
+                "SVC_AndroidSync",
+                "SVC_AppleMDM",
+                "SVC_AppleVPP",
+                "SVC_AppLifecycle",
+                "SVC_CertAuthority",
+                "SVC_CertificateAuthority",
+                "SVC_ChromebookSync",
+                "SVC_CloudPki",
+                "SVC_Compliance",
+                "SVC_ContentService",
+                "SVC_CorpDeviceEnrollment",
+                "SVC_DataInfra",
+                "SVC_DefenderServices",
+                "SVC_Dep",
+                "SVC_DeviceCheckin",
+                "SVC_DeviceConfiguration",
+                "SVC_DeviceConfigV2",
+                "SVC_DeviceDataUpload",
+                "SVC_DeviceDirectory",
+                "SVC_DeviceEnrollmentFE",
+                "SVC_DeviceFE",
+                "SVC_DeviceLifecycle",
+                "SVC_DeviceManagementIntent",
+                "SVC_DeviceQuery",
+                "SVC_DFCI",
+                "SVC_DiagnosticService",
+                "SVC_EmbeddedSIM",
+                "SVC_GnT",
+                "SVC_GPAnalytics",
+                "SVC_GroupPolicy",
+                "SVC_Health",
+                "SVC_ICS",
+                "SVC_IDS",
+                "SVC_ITConnection",
+                "SVC_IWService",
+                "SVC_LinuxMDM",
+                "SVC_LMS",
+                "SVC_MAMAdmin",
+                "SVC_MessageBus",
+                "SVC_MMPCSync",
+                "SVC_MobileAccess",
+                "SVC_Monolith_Compliance",
+                "SVC_Monolith_Enrollment",
+                "SVC_Monolith_MAM",
+                "SVC_OAuth",
+                "SVC_OSProvisioning",
+                "SVC_PartnerAPI",
+                "SVC_PartnerIntegrations",
+                "SVC_Pivot",
+                "SVC_PolicyComputation",
+                "SVC_PolicyReportStorage",
+                "SVC_RACerts",
+                "SVC_RAODJPlus",
+                "SVC_Remediations",
+                "SVC_RemoteAssist",
+                "SVC_RemoteAssistService",
+                "SVC_ReportingService",
+                "SVC_ResourceAccess",
+                "SVC_RTNService",
+                "SVC_SideCar",
+                "SVC_Sidecar",
+                "SVC_TrafficGateway",
+                "SVC_Updates",
+                "SVC_WIPReportServices",
+                "UX_AndroidEnterprise",
+                "UX_Compliance",
+                "UX_DeviceConfig",
+                "UX_EPM",
+                "UX_TenantSetup"
+            ],
+            "StrongConsistencyFlights": {
+                "Fundamentals": [
+                    "SharedFlight1",
+                    "SharedFlight2",
+                    "SharedFlight3",
+                    "SharedFlight4",
+                    "SharedFlight5",
+                    "Fundamentals_Test"
+                ]
+            }
+        }
+    },
+    "SVC_AndroidSync": {
+        "FlightingV2": {
+            "EnableBteOnboarding": true,
+            "EnableCredentialProviderForAuthenticator": true
+        }
+    },
+    "SVC_CorpDeviceEnrollment": {
+        "FlightingV2": {
+            "EnableAPSyncRequestMessage": true
+        }
+    },
+    "SVC_DataInfra": {
+        "FlightingV2": {
+            "QBSFSICoreMigrationSwitchOverBatch1": true
+        }
+    },
+    "SVC_Dep": {
+        "FlightingV2": {
+            "APv2EnableForcedRebootBehavior": true,
+            "APv2EnableMinimumGetMdmProvisioningStatusesCalls": true,
+            "APv2EnablePublishResultsResiliencyBehavior": true,
+            "DJPPGroupsV2Enabled": true
+        }
+    },
+    "SVC_DeviceCheckin": {
+        "FlightingV2": {
+            "MMPCDeviceRecoveryHotfixRollout": true
+        }
+    },
+    "SVC_DeviceFE": {
+        "FlightingV2": {
+            "EnablePowerliftLogSearchByUserId": true,
+            "EnableTokenAuthForCMDeviceActions": true,
+            "ParseManagedDeviceParallely": true
+        }
+    },
+    "SVC_IWService": {
+        "FlightingV2": {
+            "DisableLegacyAppTargeting": true,
+            "EnableEnhancedWPJSecurityForIOS": true,
+            "EnableEnhancedWPJSecurityForMac": true
+        }
+    },
+    "SVC_Monolith_MAM": {
+        "FlightingV2": {
+            "DisableMonotonicClock": true,
+            "MAMReportingV2_FastStream": true,
+            "RequireDeviceAADJ": true
+        }
+    },
+    "SVC_Pivot": {
+        "FlightingV2": {
+            "EnableMultiDevicePivotGACalls": true
+        }
+    },
+    "SVC_RAODJPlus": {
+        "FlightingV2": {
+            "EnableLeastPrivilegedConnector": true,
+            "EnableODJConnectorTelemetry": true
+        }
+    },
+    "SVC_Remediations": {
+        "FlightingV2": {
+            "EnableKustoForRemediations": true
+        }
+    },
+    "SVC_SideCar": {
+        "FlightingV2": {
+            "isSqlAggAadAuthEnabled": true
+        }
+    },
+    "Segmentation": {
+        "RolloutGroup": "G4",
+        "RolloutGroupV2": "G4"
+    },
+    "Sidecar_Mac": {
+        "customer_script_timeout": 3600,
+        "internal_script_timeout": 3600
+    },
+    "ios_mam_tunnel_sdk": {
+        "loginServiceUrlBypassEnabled": true,
+        "mamServiceUrlBypassEnabled": true,
+        "reloadRedirects": true,
+        "test123": false,
+        "urlCacheEnabled": true,
+        "urlSchemeHandlerEnabled": true,
+        "webSocketsEnabled": false
+    }
+}

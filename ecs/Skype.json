@@ -1,0 +1,3541 @@
+{
+    "AcsCallingSDKWeb": {
+        "calling": {
+            "allowAccessRawMediaStream": true,
+            "mediaMetricsDeviceEventsEnabled": true
+        },
+        "reaction": {
+            "StateServiceProxySettings": {
+                "autoRoutingEnabled": true,
+                "batchedRequestsEnabled": false,
+                "maxOfflineMessageCacheLength": 64,
+                "maxOfflineMessageCacheTimeInMs": 20000,
+                "maxSessionRetries": 2,
+                "offlineMessageCacheEnabled": true,
+                "pingTimeoutInMs": 20000,
+                "pongTimeoutInMs": 5000,
+                "websocketAliveTimeAfterLoseFocusInMS": 30000
+            },
+            "enableStateServiceConsoleLogs": true,
+            "enabled": true,
+            "telemetryEventAggregationIntervalInSecond": 3
+        }
+    },
+    "AsyncMediaClient": {
+        "auth_trusted_domains": "go.skype.com;login.skype.com;*.api.skype.com;*.asm.skype.com;*.asm.skype.net;latest-webclient.skype.com;web.skype.com",
+        "cache": {
+            "emoticon_cache_size": 500000000,
+            "media_cache_size": 300000000
+        },
+        "cache_emoticon_assets": true,
+        "distribution_presentation_pool_size": 0,
+        "distribution_transform_rules": [
+            {
+                "sources": [
+                    {
+                        "name": "original",
+                        "type": "content"
+                    }
+                ],
+                "target": "original",
+                "transform_params": {
+                    "actions": null,
+                    "media_type": "generic_file"
+                }
+            },
+            {
+                "sources": [
+                    {
+                        "name": "video",
+                        "type": "content"
+                    }
+                ],
+                "target": "video",
+                "transform_params": {
+                    "actions": null,
+                    "format": "mp4",
+                    "media_type": "video"
+                }
+            },
+            {
+                "sources": [
+                    {
+                        "name": "audio",
+                        "type": "content"
+                    }
+                ],
+                "target": "audio",
+                "transform_params": {
+                    "actions": null,
+                    "format": "mp4",
+                    "media_type": "audio"
+                }
+            },
+            {
+                "sources": [
+                    {
+                        "name": "thumbnail",
+                        "type": "content"
+                    }
+                ],
+                "target": "thumbnail",
+                "transform_params": {
+                    "actions": null,
+                    "format": "jpeg",
+                    "media_type": "image"
+                }
+            },
+            {
+                "sources": [
+                    {
+                        "name": "imgpsh",
+                        "type": "content"
+                    }
+                ],
+                "target": "imgpsh_fullsize",
+                "transform_params": {
+                    "action": null,
+                    "media_type": "image"
+                }
+            },
+            {
+                "sources": [
+                    {
+                        "name": "avatar",
+                        "type": "content"
+                    }
+                ],
+                "target": "avatar_fullsize",
+                "transform_params": {
+                    "actions": [
+                        {
+                            "action": {
+                                "height": 800,
+                                "scale_type": "fit",
+                                "width": 800
+                            }
+                        }
+                    ],
+                    "format": "jpeg",
+                    "media_type": "image"
+                }
+            },
+            {
+                "sources": [
+                    {
+                        "name": "imgpsh",
+                        "type": "content"
+                    }
+                ],
+                "target": "imgpsh_mobile_save",
+                "transform_params": {
+                    "actions": [
+                        {
+                            "action": {
+                                "height": 2048,
+                                "scale_type": "fit",
+                                "width": 2048
+                            }
+                        }
+                    ],
+                    "format": "jpeg",
+                    "media_type": "image"
+                }
+            },
+            {
+                "sources": [
+                    {
+                        "name": "imgpsh",
+                        "type": "content"
+                    },
+                    {
+                        "name": "imgo",
+                        "type": "profile"
+                    }
+                ],
+                "target": "imgpsh_thumbnail_wp",
+                "transform_params": {
+                    "actions": [
+                        {
+                            "action": {
+                                "height": 216,
+                                "scale_type": "fill",
+                                "width": 216
+                            }
+                        }
+                    ],
+                    "format": "jpeg",
+                    "media_type": "image"
+                }
+            },
+            {
+                "sources": [
+                    {
+                        "name": "imgpsh",
+                        "type": "content"
+                    },
+                    {
+                        "name": "imgo",
+                        "type": "profile"
+                    }
+                ],
+                "target": "imgt1",
+                "transform_params": {
+                    "actions": [
+                        {
+                            "action": {
+                                "height": 340,
+                                "scale_type": "fill",
+                                "width": 348
+                            }
+                        }
+                    ],
+                    "format": "jpeg",
+                    "media_type": "image"
+                }
+            },
+            {
+                "sources": [
+                    {
+                        "name": "imgpsh",
+                        "type": "content"
+                    },
+                    {
+                        "name": "imgo",
+                        "type": "profile"
+                    }
+                ],
+                "target": "imgt2",
+                "transform_params": {
+                    "actions": [
+                        {
+                            "action": {
+                                "height": 150,
+                                "scale_type": "fill",
+                                "width": 150
+                            },
+                            "predicate": {
+                                "aspect": "square",
+                                "epsilon": "0.1"
+                            }
+                        },
+                        {
+                            "action": {
+                                "height": 150,
+                                "scale_type": "fill",
+                                "width": 210
+                            },
+                            "predicate": {
+                                "aspect": "horizontal",
+                                "epsilon": "0.1"
+                            }
+                        },
+                        {
+                            "action": {
+                                "height": 210,
+                                "scale_type": "fill",
+                                "width": 150
+                            },
+                            "predicate": {
+                                "aspect": "vertical",
+                                "epsilon": "0.1"
+                            }
+                        }
+                    ],
+                    "format": "jpeg",
+                    "media_type": "image"
+                }
+            },
+            {
+                "sources": [
+                    {
+                        "name": "imgpsh",
+                        "type": "content"
+                    },
+                    {
+                        "name": "imgpsh_fullsize",
+                        "type": "profile"
+                    },
+                    {
+                        "name": "imgo",
+                        "type": "profile"
+                    }
+                ],
+                "target": "imgpsh_thumbnail_win",
+                "transform_params": {
+                    "actions": [
+                        {
+                            "action": {
+                                "height": 164,
+                                "scale_type": "fill",
+                                "width": 164
+                            },
+                            "predicate": {
+                                "aspect": "square",
+                                "epsilon": "0.1"
+                            }
+                        },
+                        {
+                            "action": {
+                                "height": 164,
+                                "scale_type": "fill",
+                                "width": 230
+                            },
+                            "predicate": {
+                                "aspect": "horizontal",
+                                "epsilon": "0.1"
+                            }
+                        },
+                        {
+                            "action": {
+                                "height": 230,
+                                "scale_type": "fill",
+                                "width": 164
+                            },
+                            "predicate": {
+                                "aspect": "vertical",
+                                "epsilon": "0.1"
+                            }
+                        }
+                    ],
+                    "format": "jpeg",
+                    "media_type": "image"
+                }
+            },
+            {
+                "sources": [
+                    {
+                        "name": "imgpsh",
+                        "type": "content"
+                    }
+                ],
+                "target": "imgo",
+                "transform_params": {
+                    "actions": [
+                        {
+                            "action": {
+                                "height": 800,
+                                "scale_type": "fit",
+                                "width": 800
+                            }
+                        }
+                    ],
+                    "format": "jpeg",
+                    "media_type": "image"
+                }
+            }
+        ],
+        "download_categories": {
+            "default": {
+                "inverted": false,
+                "max_slots": 2,
+                "min_slots": 0,
+                "priority": 10
+            },
+            "explicit_user_action": {
+                "inverted": false,
+                "max_slots": 3,
+                "min_slots": 1,
+                "priority": 30
+            },
+            "number_of_parallel_downloads": 5,
+            "preload": {
+                "inverted": false,
+                "max_slots": 2,
+                "min_slots": 0,
+                "priority": 10
+            },
+            "ui_rendering": {
+                "inverted": false,
+                "max_slots": 3,
+                "min_slots": 1,
+                "priority": 20
+            }
+        },
+        "legacy_link_template": "<a href=\"https://api.asm.skype.com/s/i?%1\">https://api.asm.skype.com/s/i?%1</a>",
+        "max_sharings_at_once": 1,
+        "media_messaging_enabled": true,
+        "media_params": {
+            "Audio.1": {
+                "description": "Audio Message",
+                "layoutType": "icon",
+                "template": "https://login.skype.com/login/sso?go=mediamessage&amp;%1",
+                "title": "Some title"
+            },
+            "Audio.1=Message.1": {
+                "create_local_message": true,
+                "description": "Audio Message",
+                "malware_scan_needed": false,
+                "required_content_ids": [
+                    "audio"
+                ],
+                "template": "https://login.skype.com/login/sso?go=xmmfallback&am=%1",
+                "title": "Audio Message"
+            },
+            "File.1": {
+                "create_local_message": true,
+                "expiration_period": 30,
+                "malware_scan_needed": true,
+                "required_content_ids": [
+                    "original"
+                ],
+                "template": "https://login.skype.com/login/sso?go=xmmfallback&docid=%1"
+            },
+            "Picture.1": {
+                "create_local_message": true,
+                "required_content_ids": [
+                    "imgpsh"
+                ],
+                "template": "https://login.skype.com/login/sso?go=xmmfallback?pic=%1"
+            },
+            "SWIFT.1": {
+                "category": {
+                    "thumbnail": 3
+                }
+            },
+            "Video.1=Flik.1": {
+                "description": "Moji",
+                "template": "https://login.skype.com/login/sso?go=xmmfallback&%1",
+                "title": ""
+            },
+            "Video.1=Message.1": {
+                "create_local_message": true,
+                "description": "Video Message",
+                "expiration_period": 3650,
+                "malware_scan_needed": false,
+                "required_content_ids": [
+                    "video",
+                    "thumbnail"
+                ],
+                "template": "https://login.skype.com/login/sso?go=xmmfallback&vim=%1",
+                "title": "Video Message"
+            }
+        },
+        "pes_config": "https://static-asm.secure.skypeassets.com/pes/v01/configs/b1e3e5b12e5b43d7bf81069cf5b011a0",
+        "provisioned": true,
+        "storage_limits": {
+            "audio": {
+                "media_type": "audio",
+                "size": 20971520
+            },
+            "imgpsh": {
+                "format": [
+                    "jpeg",
+                    "png",
+                    "jpg"
+                ],
+                "height": 10000,
+                "media_type": "generic_file",
+                "size": 20971520,
+                "width": 10000
+            },
+            "original": {
+                "media_type": "generic_file",
+                "size": 314573500
+            },
+            "thumbnail": {
+                "media_type": "generic_file",
+                "size": 5242880
+            },
+            "video": {
+                "media_type": "generic_file",
+                "size": 104857600
+            }
+        },
+        "storage_transform_rules": [],
+        "telemetry_enabled": false,
+        "trusted_domains": "go.skype.com;login.skype.com;*.api.skype.com;*.asm.skype.com;*.asm.skype.net;*.secure.skypeassets.com;*.secure.skypeassets.net;secure.skypeassets.com;secure.skypeassets.net;latest-webclient.skype.com;web.skype.com;apps.skypeassets.com;img-s-msn-com.akamaized.net",
+        "url_preview_enabled": true,
+        "url_preview_queue_shared": true,
+        "url_preview_service_url": "https://urlp.asm.skype.com/v1/url/info?url=",
+        "use_download_multi_queue": true,
+        "use_emoticon_batch_add": true
+    },
+    "CQF": {
+        "CqfExperience": 12,
+        "Tenant": "Media Agent Prod",
+        "TenantToken": "eab9f6f272f94c0380e89c46324ede7a-34dc0748-fb55-4485-b82c-ea7753fb9887-7371"
+    },
+    "ClientLogin": {
+        "ifExistsVersion": "2.0",
+        "msaFlight": "hsu,ReservedFlight33,ReservedFlight67",
+        "msaPsi": "skype",
+        "msaRegistrationFlow": "phone2",
+        "url": "https://clientlogin.cdn.skype.com/cdn/6.0.1/release/index.html"
+    },
+    "ConfigIDs": {
+        "AcsCallingSDKWeb": "P-R-1128939-1-9,P-R-1016834-1-3,P-R-1015751-1-5",
+        "AsyncMediaClient": "P-R-18572-1-6,P-R-17927-25582-2,P-R-17992-25804-5,108902,P-D-4028-19804-21",
+        "CQF": "P-D-1003116-1-1,P-D-75995-1-4",
+        "ClientLogin": "P-D-15373-22035-32",
+        "ConsumerEntitlement": "P-R-22129-1-10,P-D-22920-4-21,P-D-22449-1-5,P-D-20701-1-22,P-D-20674-1-3,P-D-20673-1-59",
+        "DebugabilitySquad": "P-D-22621-1-8,P-D-22622-1-6",
+        "ECS": "P-R-1097532-1-5,P-R-76663-1-2,P-D-81604-1-2",
+        "ECSCONFIG": "P-D-1147099-1-3,P-D-1147088-1-3,P-D-17910-25541-3,112127",
+        "ECSTest2": "P-D-1548497-1-2",
+        "ECS_Scorecards_Test": "P-E-1551938-C1-3",
+        "JennyTest2": "P-D-1133790-1-3",
+        "Join": "P-D-28714-1-6",
+        "JoinLauncher": "113355,113356",
+        "MDNRAP": "115410",
+        "MDN_MIDDLELANE_TEAMS": "P-E-1571638-4-6,P-R-1565724-2-3,P-R-1547960-3-5,P-R-1436736-2-55,P-R-1529639-10-3,P-R-1407162-11-12,P-R-1078310-1-13,P-D-1009217-19-172",
+        "MDN_TRAP": "P-D-5047-25517-172",
+        "MediaAgent": "P-D-68276-1-2",
+        "MicrosoftTeamApprovals": "P-R-1541617-3-10,P-R-1462860-11-6,P-R-1438108-3-9,P-R-1418789-1-3,P-R-1267045-7-10,P-R-1258610-3-8,P-R-1253002-4-14,P-R-1249277-4-13,P-R-1198408-3-16,P-R-1225063-4-10,P-R-1150804-10-17,P-R-1117618-3-30,P-R-1118465-12-18,P-R-1099667-12-14,P-R-1080076-11-17,P-R-1075973-11-28,P-R-1069645-3-31,P-R-1064500-2-15,P-R-1050671-13-22,P-R-1063220-14-19,P-R-1060529-11-29,P-R-1054879-10-9,P-R-1052028-3-35,P-R-1049790-6-18,P-R-1049881-11-17,P-R-1042091-13-65,P-R-1044556-14-16,P-R-1035881-3-11,P-R-1034257-3-17,P-R-1029926-17-13,P-R-1034004-11-17,P-R-1026282-3-15,P-R-1001453-2-18,P-R-1017758-9-16,P-R-1008652-3-10,P-R-1001680-3-27,P-R-1000981-2-25,P-R-115999-12-36,P-R-113719-12-20,P-R-111670-13-19,P-R-110628-10-11,P-R-110483-3-18,P-R-109155-26-21,P-R-106606-14-18,P-R-100554-14-24,P-R-99901-3-13,P-R-98971-10-13,P-R-96172-3-19,P-R-95674-15-45,P-R-94749-9-10,P-R-94224-10-14,P-R-93053-11-11,P-R-88545-3-6,P-R-82904-12-20,P-R-81622-16-18,P-R-81580-13-25,P-R-77226-13-25,P-R-74994-10-11,P-R-74993-10-21,P-R-74801-10-10,P-R-73793-10-48,P-R-73190-10-9,P-R-69653-11-15,P-R-69035-14-33,P-R-69030-13-17,P-R-68608-3-7,P-R-68937-10-79,P-R-68473-3-4,P-R-65568-10-8,P-R-67490-10-12,P-R-66421-10-66,P-R-63643-1-7,P-R-63120-1-9,P-R-62477-2-4,P-R-62209-14-36,P-D-61939-1-49",
+        "MicrosoftTeamLearning": "P-R-1562355-1-2,P-R-1548937-1-3,P-R-1547811-3-3,P-R-1542930-1-10,P-R-1543720-1-3,P-R-1368983-1-11,P-R-1407837-1-5,P-R-1291647-1-6,P-R-1280717-1-5,P-R-1291149-2-3,P-R-1230627-1-5,P-R-1271573-1-11,P-R-1256996-1-10,P-R-1240651-1-55,P-R-1227236-1-5,P-R-1252883-1-7,P-R-1248913-1-3,P-R-1248521-2-3,P-R-1234713-1-8,P-R-1227823-1-5,P-R-1228241-1-3,P-R-1225954-1-8,P-R-1169563-3-6,P-R-1069280-3-2,P-R-1110585-1-6,P-R-1133590-1-8,P-R-1105683-1-18,P-R-1114788-3-6,P-R-1114214-3-7,P-R-1097157-1-13,P-R-1096621-2-3,P-R-1082460-1-15,P-R-1086203-2-5,P-R-1080869-1-11,P-R-1056329-2-4,P-R-1071278-1-5,P-R-1072077-1-4,P-R-1070742-13-5,P-R-1069887-1-3,P-R-1062442-1-5,P-R-1060365-1-7,P-R-1064795-2-2,P-R-1062907-1-4,P-R-1060397-2-7,P-R-1061347-1-7,P-R-1059863-1-2,P-R-1057378-1-13,P-R-1056545-4-5,P-R-1059107-1-4,P-R-1057062-10-7,P-R-1057785-1-3,P-R-1057784-1-3,P-R-1057114-3-3,P-R-1055507-1-3,P-R-1055343-2-3,P-R-1053376-1-3,P-R-1054264-2-9,P-R-1054142-2-3,P-R-1049825-1-10,P-R-1048740-1-11,P-R-1048193-1-3,P-R-1048201-1-4,P-R-1048200-1-3,P-R-1043586-1-14,P-R-1045540-1-3,P-R-1044167-1-2,P-R-1044093-1-4,P-R-1043626-1-11,P-R-1043622-2-9,P-R-1042967-1-6,P-R-1042036-1-3,P-R-1042074-1-2,P-R-1042043-2-10,P-R-1040983-1-2,P-R-1040935-1-15,P-R-1039863-2-7,P-R-1039670-1-4,P-R-1038872-1-5,P-R-1036832-3-8,P-R-1030210-2-5,P-R-1035289-2-18,P-R-1034096-2-3,P-R-1003485-2-3,P-R-1030173-2-5,P-R-1033464-3-19,P-R-114288-1-5,P-R-1028593-12-9,P-R-1030159-2-13,P-R-1016583-1-4,P-R-1027490-3-7,P-R-1026454-1-3,P-R-1026027-1-4,P-R-1022014-1-13,P-R-1023891-3-13,P-R-1023641-1-14,P-R-1023587-3-6,P-R-1023397-1-7,P-R-1020899-1-4,P-R-1019481-1-4,P-R-1020898-2-5,P-R-1020443-10-12,P-R-1020224-1-2,P-R-1019875-1-14,P-R-1010835-12-48,P-R-1015921-2-9,P-R-1008952-5-11,P-R-1015932-3-3,P-R-1015621-1-7,P-R-1015438-3-12,P-R-1010216-3-14,P-R-1010686-1-6,P-R-1005769-3-8,P-R-1007246-2-10,P-R-1007490-3-11,P-R-1002209-1-8,P-R-1006862-3-15,P-R-1006411-1-4,P-R-1005539-3-11,P-R-1006298-1-4,P-R-111981-1-8,P-R-111166-3-18,P-R-1006245-1-3,P-R-1005047-1-17,P-R-1005352-1-2,P-R-1001263-1-9,P-R-1000240-1-12,P-R-1001146-1-5,P-R-1001260-1-3,P-R-1000961-8-6,P-R-1000545-3-6,P-R-115830-1-10,P-R-113445-1-11,P-R-112731-1-4,P-R-118312-1-5,P-R-118233-1-4,P-R-117730-3-8,P-R-118141-1-5,P-R-117960-8-8,P-R-98775-1-4,P-R-116072-3-14,P-R-116429-3-30,P-R-115818-3-8,P-R-115204-13-19,P-R-115050-3-10,P-R-113164-1-9,P-R-112733-2-6,P-R-112734-1-3,P-R-112013-1-6,P-R-110871-11-16,P-R-110691-1-2,P-R-109956-1-2,P-R-100159-3-4,P-R-109131-1-5,P-R-104379-3-38,P-R-99589-1-2,P-R-99433-3-9,P-R-98164-1-2,P-R-97523-1-7,P-R-93466-2-6,P-R-96673-1-18,P-R-96864-1-18,P-R-96674-1-6,P-R-95139-3-6,P-R-95023-3-15,P-R-94036-3-16,P-R-92567-3-9,P-R-92145-2-6,P-R-91992-2-3,P-R-89656-4-6,P-R-91197-1-15,P-R-91020-2-4,P-R-90887-2-6,P-R-87096-3-10,P-R-86710-2-3,P-R-82731-3-10,P-R-81198-1-23,P-R-80844-3-20,P-R-79526-3-20,P-R-79519-3-11,P-R-78446-1-16,P-R-76908-3-5,P-R-74535-3-6,P-R-74090-3-2,P-R-70130-3-22,P-D-1030425-3-1,P-D-1030423-3-1,P-D-115348-3-1",
+        "MicrosoftTeamVivaPulse": "P-R-1557552-1-6,P-R-1115969-1-6,P-R-1049495-23-461,P-D-1049498-1-71",
+        "MicrosoftTeamsClientAndroid": "P-R-1572099-1-6,P-R-1561204-1-8,P-R-1565243-1-4,P-R-1565245-1-3,P-R-1559359-1-11,P-R-1557425-1-4,P-R-1553639-1-3,P-R-1550173-1-14,P-R-1546917-1-2,P-R-1542910-1-13,P-R-1538119-1-14,P-R-1528073-1-22,P-R-1525382-1-3,P-R-1525817-1-17,P-R-1481017-1-22,P-R-1480035-1-3,P-R-1471625-1-8,P-R-1467675-1-17,P-R-1460918-1-15,P-R-1460822-1-7,P-R-1445872-1-19,P-R-1445825-1-4,P-R-1445806-1-9,P-R-1428407-1-19,P-R-1415912-1-22,P-R-1412782-1-15,P-R-1410174-1-23,P-R-1282003-1-3,P-R-1271075-1-11,P-R-1270808-1-13,P-R-1267596-1-8,P-R-1261394-1-12,P-R-1261702-1-3,P-R-1261559-1-16,P-R-1261443-1-17,P-R-1254018-1-3,P-R-1253137-1-12,P-R-1251941-1-26,P-R-1233013-1-27,P-R-1243960-1-24,P-R-1178003-1-6,P-R-1229375-1-16,P-R-1228278-1-20,P-R-1227336-1-6,P-R-1196058-1-13,P-R-1219855-1-17,P-R-1175867-1-13,P-R-1173301-1-11,P-R-1152892-1-14,P-R-1168558-1-3,P-R-1156550-1-25,P-R-1149911-1-13,P-R-1149069-1-6,P-R-1142637-1-24,P-R-1137398-1-18,P-R-1131359-1-26,P-R-1131358-1-12,P-R-1113150-1-17,P-R-1103652-1-3,P-R-1103623-1-8,P-R-1105869-1-27,P-R-1101516-1-4,P-R-1094908-1-3,P-R-1092578-1-20,P-R-1092211-1-18,P-R-1088814-1-15,P-R-1086710-1-2,P-R-1086304-1-18,P-R-1082505-1-22,P-R-1082421-1-15,P-R-1078290-1-11,P-R-1077954-1-22,P-R-1076160-1-12,P-R-1074333-1-14,P-R-1075118-1-8,P-R-1065043-1-11,P-R-1072072-1-5,P-R-1067688-1-26,P-R-1064035-1-10,P-R-1063773-1-13,P-R-1062204-1-9,P-R-1049483-1-12,P-R-1060115-1-23,P-R-1058725-1-24,P-R-1053522-1-16,P-R-1051859-1-10,P-R-1037998-1-21,P-R-1052328-1-13,P-R-1051971-5-27,P-R-1051668-1-15,P-R-1050726-1-8,P-R-1041988-1-23,P-R-1041987-1-22,P-R-1041816-1-22,P-R-1040687-1-15,P-R-1040113-1-19,P-R-1039114-1-12,P-R-1037965-1-3,P-R-1036781-1-18,P-R-1035221-1-16,P-R-1034236-1-20,P-R-1025338-1-14,P-R-1024900-1-23,P-R-1018467-1-24,P-R-1017695-1-16,P-R-1017450-1-14,P-R-1016835-1-23,P-R-1016793-1-11,P-R-1015904-1-16,P-R-1012699-1-12,P-R-1008314-1-12,P-R-1007451-1-26,P-R-1006228-1-24,P-R-1005456-1-14,P-R-117688-1-23,P-R-115104-1-27,P-R-114473-1-20,P-R-105589-1-13,P-R-105586-1-12,P-R-96832-1-25,P-R-95301-1-18,P-R-93729-1-26,P-R-92159-1-11,P-R-89236-1-2,P-R-86159-1-11,P-R-86313-1-12,P-R-86131-1-72,P-R-84682-1-10,P-R-81641-1-4,P-R-82991-1-3,P-R-80482-1-13,P-R-79772-1-4,P-R-71912-1-3,P-R-71890-1-10,P-R-71609-1-2,P-R-62704-1-13,P-R-70176-1-46,P-R-69236-1-3,P-R-68573-1-9,P-R-68324-1-28,P-R-65435-1-5,P-R-64358-1-12,P-R-63557-1-15,P-R-60337-1-3,P-R-56636-1-22,P-R-51853-2-3,P-R-38228-101-70,P-R-30265-11-24,P-R-23158-1-3,P-R-25223-1-5,P-R-24803-1-17,P-R-24392-1-3,P-D-1055476-1-1,P-D-1055383-1-2,P-D-55299-3-3,P-D-20134-1-6",
+        "MicrosoftTeamsEcsPrototype": "P-R-26550-11-9,P-D-25658-1-5",
+        "MicrosoftTeamsRetailClients": "P-R-112617-2-3,P-R-112615-2-3,P-R-112539-2-3,P-R-112538-2-3,P-R-112537-2-6,P-R-112637-2-3,P-R-112632-2-3,P-R-112613-2-9,P-R-110718-2-12,P-R-96942-1-6,P-R-96082-1-8,P-R-90951-1-7,P-R-90632-6-6,P-R-86977-9-8,P-R-82747-5-3,P-R-80501-5-25,P-R-79683-6-4,P-R-74936-1-6,P-D-47240-6-99",
+        "MicrosoftTeamsRetailIOSClients": "P-R-1028543-2-9,P-R-1026713-1-27,P-R-89254-1-8,P-R-79956-1-3,P-D-69244-1-54",
+        "MicrosoftTeamsVVM": "P-R-1550429-2-16,P-R-1132735-11-36,P-R-1116112-11-6,P-R-1104223-10-13,P-R-1089841-10-7,P-R-1069365-14-11,P-R-1030089-8-19,P-R-1045375-1-15,P-D-98306-2-12",
+        "Notifications": "P-D-8138-12357-7",
+        "ODSP_MEE_Mobile": "P-R-1476389-3-4,P-R-1475604-3-4,P-R-1470868-4-3,P-R-1468767-4-3,P-R-1457857-3-5,P-R-1419345-3-12,P-R-1371814-3-5,P-R-1292098-4-3,P-R-1272182-3-8,P-R-1258239-3-9,P-R-1256018-3-3,P-R-1252894-3-15,P-R-1222928-3-5,P-R-1241620-4-3,P-R-1232964-4-2,P-R-1225876-3-5,P-R-1224204-3-3,P-R-1190235-3-6,P-R-1176051-3-5,P-R-1176485-3-4,P-R-1169584-3-11,P-R-1157645-3-8,P-R-1148695-3-10,P-R-1146579-3-6,P-R-1146227-3-5,P-R-1141336-3-6,P-R-1136255-3-8,P-R-1133616-3-4,P-R-1125983-3-8,P-R-1116946-3-9,P-R-1110287-3-6,P-R-1110284-3-8,P-R-1105682-3-4,P-R-1100862-3-6,P-R-1098098-3-11,P-R-1090616-3-5,P-R-1094709-3-5,P-R-1094716-3-5,P-R-1090834-3-10,P-R-1090831-3-7,P-R-1089288-3-5,P-R-1086496-3-7,P-R-1085498-3-3,P-R-1084652-3-11,P-R-1082454-3-7,P-R-1080237-3-5,P-R-1077927-3-20,P-R-1077545-3-9,P-R-1073493-3-10,P-R-1076659-3-11,P-R-1072530-3-10,P-R-1071294-3-2,P-R-1071018-3-5,P-R-1068933-3-5,P-R-1061135-3-14,P-R-1058086-3-7,P-R-1060003-3-7,P-R-1060002-3-20,P-R-1057152-3-19,P-R-1056618-3-8,P-R-1056557-3-7,P-R-1055998-3-6,P-R-1055486-3-6,P-R-1055485-3-19,P-R-1051044-3-5,P-R-1051005-3-30,P-R-1051676-3-10,P-R-1049548-3-12,P-R-1047420-3-20,P-R-1045767-3-13,P-R-1021828-3-8,P-R-1039418-3-2,P-R-1039668-3-3,P-R-1039179-3-7,P-R-1039176-3-4,P-R-1038913-3-11,P-R-1029888-3-7,P-R-1021552-3-8,P-R-1013163-3-4,P-R-1009985-3-22,P-R-1003382-3-4,P-R-1003010-3-7,P-R-117271-3-6,P-R-116006-1-3,P-R-114728-3-6,P-R-113440-1-12,P-R-113424-3-10,P-R-113101-3-7,P-R-112979-3-14,P-R-112547-3-5,P-R-111993-3-8,P-R-110759-3-10,P-R-109335-3-8,P-R-106638-3-5,P-R-100944-3-8,P-R-99235-3-5,P-R-97835-3-4,P-R-82015-3-11,P-R-97656-3-3,P-R-97371-3-2,P-R-97182-3-5,P-R-96489-3-10,P-R-95976-3-5,P-R-94656-3-9,P-R-94463-3-5,P-R-93857-1-7,P-R-93728-3-10,P-R-93824-3-3,P-R-93668-3-5,P-R-92587-3-4,P-R-92458-3-5,P-R-91334-3-8,P-R-89444-3-15,P-R-85736-3-7,P-R-85021-3-11,P-R-83560-11-35,P-R-81453-3-16,P-R-81197-3-6,P-R-79119-3-11,P-R-75186-3-39,P-D-73826-1-59",
+        "OpConfig": "100762",
+        "OsamaTest": "P-D-38649-1-2",
+        "PeopleImport": "P-D-38632-1-4",
+        "PeopleRecommendation": "P-R-37188-2-16,P-D-18870-1-13",
+        "PeopleSearch": "P-D-17755-25095-10",
+        "PortalWebClient": "P-R-55904-2-11,P-D-5041-9166-412",
+        "PstnHub": "P-R-105587-1-7,P-R-88233-1-45,P-R-66954-1-11,P-R-62994-1-23,P-R-55797-8-9,P-R-55796-8-11,P-R-38575-11-48,P-R-38574-11-17,P-R-29715-10-164,P-R-29716-10-198,P-R-25727-70-157,P-R-25728-30-137",
+        "RichNotifications": "P-R-77992-1-17",
+        "RtcPalVideoConfiguration": "P-R-1080608-1-3",
+        "S4L": "P-R-31525-2-6",
+        "S4L_CMC": "P-R-93671-8-16,P-D-28642-2-1",
+        "S4L_Caap": "P-R-26062-2-24,P-R-25374-2-12,P-R-23115-2-12",
+        "S4L_Commerce": "P-D-39525-1-3,P-D-36721-1-3",
+        "S4L_Config": "P-R-26957-2-3",
+        "S4L_Contacts": "P-D-20304-1-61",
+        "S4L_Engagement": "P-D-35592-1-7,P-D-21990-1-41",
+        "S4L_Feedback": "P-D-28683-1-2",
+        "S4L_Messaging": "P-R-1015759-7-12,P-R-27536-2-9,P-R-22697-2-7",
+        "S4L_SISU": "P-D-35727-1-2",
+        "S4L_Search": "P-D-22650-1-19",
+        "S4L_UI": "P-R-24630-1-3",
+        "SCT": "P-D-68121-1-2",
+        "SMSClient": "P-R-16504-26097-32,P-D-16503-23360-7",
+        "SWG": "P-E-18277-2-12,119046",
+        "Segmentation": "P-R-1286778-1-5,P-R-1286723-10-5,P-R-1086013-1-5,P-R-1085750-2-3,P-R-1057929-1-2,P-R-1057621-1-6,P-R-1050900-1-8,P-R-1040659-1-2,P-R-79661-1-28,P-R-43941-7-19,P-R-25076-1-9,P-R-21476-3747236-1",
+        "SkypeAudioLibrary": "P-E-1559656-2-5,P-R-1294203-6-12,P-R-1034141-2-19,P-R-1016281-9-33,P-R-15396-22088-2,P-D-1064615-1-6,P-D-49739-1-8,P-D-22453-1-5,P-D-22193-1-5,P-D-19915-1-10,P-D-19507-1-9",
+        "SkypeBilling": "117294",
+        "SkypeCalling": "P-R-1221136-3-19,P-R-1099522-2-3,P-R-1085726-2-3,P-R-1056437-2-5,P-R-1056435-2-6,P-R-75937-8-8,P-R-70853-1-3,P-R-67550-8-10,P-D-22705-1-3,P-D-21727-1-5,P-D-19340-1-3",
+        "SkypeEngagement": "P-E-1570437-4-4,P-E-1560509-4-5,P-E-1560169-4-5,P-E-1547863-4-8,P-E-1469862-4-8,P-E-1449303-4-4,P-E-1433137-4-4,P-E-1307483-4-4,P-E-1265651-4-4,P-E-1256045-4-8,P-E-1232637-4-4,P-E-1198707-4-4,P-E-1148238-4-4,P-E-1148150-7-8,P-E-1132772-4-4,P-E-1115813-2-3,P-E-1025583-4-6,P-E-1003063-4-8,P-E-25239-2-9,P-E-48381-7-28,P-E-37870-3-6,P-E-37760-4-10,P-E-37860-4-12,P-E-28812-2-6,P-E-37351-6-15,P-E-37292-6-20,P-E-37085-4-7,P-E-37016-4-9,P-E-31909-2-12,P-E-31552-2-8,P-E-27352-2-7,P-E-27377-2-13,P-E-23771-4-32,P-E-23585-4-15,P-D-22627-1-8",
+        "SkypeFeedbackAndSupport": "P-D-24646-1-2",
+        "SkypeM2": "P-R-25599-2-6,P-R-22835-2-4,P-R-22448-1-8",
+        "SkypeMediaIntelligence": "123763",
+        "SkypeMediaStack": "P-R-1416126-2-6,P-R-1049939-2-21,P-R-109412-1-6,P-R-70730-1-3,P-R-48447-2-13,P-D-51815-1-3",
+        "SkypePersonalization": "109919",
+        "SkypeResourceManager": "P-R-1570178-1-4,P-R-1238808-1-2,P-R-1167237-1-2,P-R-1120180-1-2,P-R-1120177-1-2,P-R-1105156-1-3,P-R-1097424-1-2,P-R-99795-1-3,P-R-69481-1-3,P-R-26444-1-14,P-D-1291420-1-4,115685,P-D-15348-21989-16,P-D-12245-18745-2",
+        "SkypeRootTools": "P-R-1096188-2-7,P-R-1054277-3-14,P-R-36813-1-10",
+        "SkypeTRAP": "P-D-1052357-1-16",
+        "SkypeTXChannel": "P-E-18947-C1-7",
+        "SkypeTXNdi": "P-R-74055-1-13",
+        "SkypeTeamsClientIOS": "P-R-1539911-1-15,P-R-1290501-1-9,P-R-1439306-1-16,P-R-1437029-1-24,P-R-1435588-1-22,P-R-1414609-1-24,P-R-1294511-1-27,P-R-1292823-1-18,P-R-1282336-1-23,P-R-1282201-1-12,P-R-1266904-1-7,P-R-1266358-1-12,P-R-1265473-1-18,P-R-1261907-1-12,P-R-1260323-1-2,P-R-1260242-1-16,P-R-1259473-1-13,P-R-1252005-1-8,P-R-1250826-1-20,P-R-1246239-1-30,P-R-1248380-1-14,P-R-1248379-1-13,P-R-1243880-1-32,P-R-1240557-1-4,P-R-1238934-1-17,P-R-1239081-1-11,P-R-1235285-1-3,P-R-1234213-1-15,P-R-1175708-1-16,P-R-1159472-1-15,P-R-1149913-1-15,P-R-1138917-1-13,P-R-1146585-1-3,P-R-1131363-1-24,P-R-1129262-1-12,P-R-1119033-1-12,P-R-1113926-1-14,P-R-1111951-1-4,P-R-1109893-1-27,P-R-1105159-1-14,P-R-1097591-1-15,P-R-1087213-1-6,P-R-1081864-1-18,P-R-1081865-1-26,P-R-1080888-1-12,P-R-1064481-1-13,P-R-1068950-1-14,P-R-1061311-1-13,P-R-1050130-1-37,P-R-1056588-1-14,P-R-1044105-1-13,P-R-1037296-1-14,P-R-1036765-1-23,P-R-1040744-1-4,P-R-1039115-8-19,P-R-1035224-1-27,P-R-1035217-1-13,P-R-1034234-1-22,P-R-1029609-1-3,P-R-1028272-1-9,P-R-1027703-1-12,P-R-1026107-1-14,P-R-1026052-1-22,P-R-1006374-1-7,P-R-1023869-1-22,P-R-1022049-1-26,P-R-1020119-1-21,P-R-1015910-1-15,P-R-1017451-1-16,P-R-1011769-1-17,P-R-1011105-1-13,P-R-1009772-1-13,P-R-1008964-1-13,P-R-1006868-1-29,P-R-1000425-1-25,P-R-117281-1-18,P-R-116561-1-4,P-R-111720-1-11,P-R-99237-1-13,P-R-96585-1-14,P-R-94970-1-6,P-R-93295-1-10,P-R-89994-1-2,P-R-83172-1-20,P-R-79918-1-5,P-R-83332-1-38,P-R-79939-1-2,P-R-69933-1-44,P-R-69315-1-3,P-R-67026-1-10,P-R-61972-1-11,P-R-66428-1-4,P-R-63515-1-5,P-R-60479-1-12,P-R-58992-1-2,P-D-1064029-1-20,P-D-55630-1-3",
+        "SkypeTelemetry": "P-D-19145-1-20",
+        "SkypeVideoLibrary": "P-E-1243851-C1-4,P-E-1235534-2-3,P-R-1547090-1-5,P-R-1540883-1-5,P-R-1289301-1-7,P-R-1242684-1-3,P-R-1042997-1-2",
+        "SkypeWebMedia": "P-R-1148333-1-3,P-R-78238-1-8",
+        "SkypeXT": "P-E-20791-2-5,P-R-1002253-8-7,P-R-20769-1-13",
+        "SkypeiOS": "P-R-18991-1-7,P-R-18646-3-7",
+        "TargetingVersioningTest": "P-D-1008260-1-6",
+        "TeamsClientCommon": "P-D-26811-20-37",
+        "TeamsFLWAndroidProd": "P-R-51435-2-7",
+        "TeamsFLWIOSProd": "P-R-46708-2-3",
+        "TestJsonFormatter": "P-D-60734-1-8"
+    },
+    "ConsumerEntitlement": {
+        "SCE": {
+            "Dialpad": {
+                "ContactsSearch": {
+                    "ExecutionDelay": 280
+                },
+                "CountryCodeToCountryDefault": {
+                    "1": "us",
+                    "262": "re",
+                    "358": "fi",
+                    "44": "gb",
+                    "47": "no",
+                    "500": "fk",
+                    "590": "gp",
+                    "61": "au",
+                    "64": "nz",
+                    "7": "ru"
+                },
+                "EmergencyCall": {
+                    "allowedCountries": [
+                        "gb",
+                        "fi",
+                        "au",
+                        "dk"
+                    ]
+                }
+            },
+            "UserServices": {
+                "Client": {
+                    "Experiments": {
+                        "SkypeToPhoneCard": "newCta",
+                        "SkypeToPhoneInProfile": true
+                    },
+                    "Features": {
+                        "AdvancedPullingEnabled": true,
+                        "BackendEnabled": true,
+                        "DarkerDialerBarEnabled": true,
+                        "DialpadConfig": {
+                            "Old": true,
+                            "V10": false,
+                            "V20": false
+                        },
+                        "NewUcuxCallActionEnabled": false,
+                        "RateIntegrationEnabled": true,
+                        "ReactivationEnabled": false,
+                        "UIEnabled": true
+                    },
+                    "Service": {
+                        "Host": "consumer.entitlement.skype.com",
+                        "RetryInterval": [
+                            {
+                                "Codes": [
+                                    "40401",
+                                    "40402",
+                                    "40162",
+                                    "40163"
+                                ],
+                                "Pattern": [
+                                    5000,
+                                    10000,
+                                    20000,
+                                    30000,
+                                    60000
+                                ]
+                            },
+                            {
+                                "Codes": [
+                                    "50310",
+                                    "IOException"
+                                ],
+                                "Pattern": [
+                                    1000,
+                                    2000,
+                                    4000,
+                                    8000,
+                                    16000
+                                ]
+                            }
+                        ],
+                        "RetryLimit": 5
+                    }
+                },
+                "ServiceGroups": {
+                    "Calling": [
+                        "plan",
+                        "package",
+                        "minute_plan"
+                    ],
+                    "Credit": [
+                        "pstn"
+                    ],
+                    "OnlineNumbers": [
+                        "skypein",
+                        "skypein2"
+                    ],
+                    "PersonalExpressions": [
+                        "moiji"
+                    ]
+                }
+            }
+        }
+    },
+    "DebugabilitySquad": {
+        "blacklist": [
+            "TestID"
+        ],
+        "userBlacklist": [
+            "blacklisted_bad_user",
+            "live:.cid.3b6eb539c0d93598"
+        ]
+    },
+    "ECS": {
+        "ConfigLogTarget": "default"
+    },
+    "ECSCONFIG": {
+        "TelemetryEnabled": {
+            "fetch_config": false,
+            "suspend_resume_fetch": false
+        },
+        "c": 0,
+        "cache_save_delay": 10000,
+        "disable_fetch_in_background": true,
+        "disable_fetch_in_call": true,
+        "g": 0,
+        "login_config_fetch_delay": 200
+    },
+    "ECSTest2": {
+        "ResourceIdmatch": false
+    },
+    "ECS_Scorecards_Test": {},
+    "EventToConfigIdsMapping": {
+        "SkypeAudioLibrary": {
+            "mdsc_call_quality_feedback": "P-E-1559656-2-5,P-R-1294203-6-12",
+            "mdsc_qoe": "P-E-1559656-2-5,P-R-1294203-6-12"
+        },
+        "SkypeResourceManager": {
+            "mdsc_call_quality_feedback": "P-R-1570178-1-4",
+            "mdsc_qoe": "P-R-1570178-1-4",
+            "mdsc_rmconnectionevent": "P-R-1570178-1-4"
+        },
+        "SkypeVideoLibrary": {
+            "mdsc_mediadiagnostic": "P-R-1547090-1-5,P-R-1540883-1-5",
+            "mdsc_qoe": "P-R-1547090-1-5,P-R-1540883-1-5",
+            "mdsc_rmconnectionevent": "P-R-1547090-1-5,P-R-1540883-1-5",
+            "skypecosi_concore_native_callsignalingagent_callmodality": "P-R-1547090-1-5,P-R-1540883-1-5",
+            "skypecosi_concore_native_callsignalingagent_conversation": "P-R-1547090-1-5,P-R-1540883-1-5"
+        }
+    },
+    "JennyTest2": {
+        "OneDSSinkEnvironment": "PUBLIC"
+    },
+    "Join": {
+        "guestFlow": {
+            "enabled": true,
+            "useLatestApiForGuestCreation": false
+        },
+        "meetings": {
+            "apiHost": "https://api.join.skype.com",
+            "useMeetingsApiForJoinUrlGeneration": true
+        },
+        "useFingerprintForJoinLink": false
+    },
+    "JoinLauncher": {
+        "cdn": "//az801095.vo.msecnd.net/dev/JoinLauncher",
+        "version": "v1"
+    },
+    "MDNRAP": {
+        "Session": {
+            "ChannelCheckTimeoutMsec": 4000,
+            "ChannelCheckTriggerGapMsec": 60000,
+            "EnableLockOnDedicatedRelay": 1,
+            "EuthanizeRelaysOnEarlyHS2": 1,
+            "SendHS2UponConnectingToDR": 1,
+            "XAsymmetricStreamDetection_MDN835": 1
+        }
+    },
+    "MDN_MIDDLELANE_TEAMS": {
+        "liveStream": {
+            "ampSettings": {
+                "liveStreamPlayerConfiguration": {
+                    "css": [
+                        "https://statics.teams.cdn.office.net/evergreen-assets/broadcast/player-skin.min.css?v=2",
+                        "https://statics.teams.cdn.office.net/evergreen-assets/broadcast/video-player.css?v=3"
+                    ],
+                    "src": [
+                        "https://statics.teams.cdn.office.net/evergreen-assets/virtual-events/scripts/amp/2.3.11/azuremediaplayer.min.js",
+                        "https://statics.teams.cdn.office.net/evergreen-assets/broadcast/player-skin.min.js"
+                    ]
+                }
+            },
+            "hlsSettings": {
+                "hlsConfig": {
+                    "fragLoadPolicy": {
+                        "default": {
+                            "errorRetry": {
+                                "maxNumRetry": 6,
+                                "maxRetryDelayMs": 8000,
+                                "retryDelayMs": 1000
+                            },
+                            "maxLoadTimeMs": 60000,
+                            "maxTimeToFirstByteMs": 10000,
+                            "timeoutRetry": {
+                                "maxNumRetry": 4,
+                                "maxRetryDelayMs": 0,
+                                "retryDelayMs": 0
+                            }
+                        }
+                    },
+                    "liveMaxLatencyDurationCount": 6,
+                    "liveSyncDurationCount": 3
+                },
+                "liveStreamPlayerConfiguration": {
+                    "hydraPlayerWebSdkUrls": [
+                        "https://res-4.public.onecdn.static.microsoft/s01-ml-player/4.2580.2/hydra_player_hls_bundle.js",
+                        "https://res.cdn.office.net/s01-ml-player/4.2580.2/hydra_player_hls_bundle.js"
+                    ],
+                    "useHydraPlayerWebSdk": true
+                },
+                "logHlsJsEvents": true,
+                "switchingPolicy": {
+                    "minimumRetryDelay": 100,
+                    "probingPolicy": {
+                        "maxPlaylistUpdateDelay": 9000
+                    },
+                    "verifyNewJoin": true
+                },
+                "thaScript": "https://sdk.tha.teams.microsoft.com/tha.js"
+            },
+            "hydraPlayerHlsSettings": {
+                "ecsSettings": {
+                    "allowPlayButton": true,
+                    "enableOverlayStats": true,
+                    "logSupportedCodecs": true,
+                    "noMediaStreamSwitchTimeoutMs": 10000,
+                    "noMediaTimeoutMs": 30000,
+                    "preferScriptLoaderForPeer5": true,
+                    "sendSnapshotTelemetry": true,
+                    "sendSnapshotTelemetryEveryMs": 300000,
+                    "skipCookie": true,
+                    "stopCrash": true,
+                    "switchingPolicy": {
+                        "ecsOrder": [
+                            "true:false",
+                            "false:false",
+                            "true:true",
+                            "false:true"
+                        ],
+                        "minimumRetryDelay": 100,
+                        "probingPolicy": {
+                            "maxPlaylistUpdateDelay": 9000
+                        },
+                        "verifyNewJoin": true
+                    },
+                    "traceTolerance": 10000,
+                    "useEcdnPlugin": true
+                }
+            },
+            "hydraPlayerUmsSettings": {
+                "ecsSettings": {
+                    "allowPlayButton": true,
+                    "allowSdnPlugins": true,
+                    "enableOverlayStats": true,
+                    "monitorVideoFrameRate": true,
+                    "sdnOptions": {
+                        "name": "peer5",
+                        "plugin": "https://sdk.msit.ecdn.teams.microsoft.com/peer5.middlelane-ums.v1.plugin.js",
+                        "url": "https://sdk.msit.ecdn.teams.microsoft.com/peer5.js"
+                    }
+                }
+            },
+            "umsSettings": {
+                "liveStreamPlayerConfiguration": {
+                    "hydraPlayerWebSdkUrls": [
+                        "https://res-4.public.onecdn.static.microsoft/s01-ml-player/4.2570.3/hydra_player_ums_bundle.js",
+                        "https://res.cdn.office.net/s01-ml-player/4.2570.3/hydra_player_ums_bundle.js"
+                    ]
+                },
+                "thaScript": "https://sdk.tha.teams.microsoft.com/tha.js"
+            }
+        }
+    },
+    "MDN_TRAP": {
+        "Http": {
+            "connectionTimeout": 30,
+            "requestTimeout": 60
+        },
+        "Relay": {
+            "Lync": {
+                "addresses": [
+                    "127.0.0.1"
+                ],
+                "tcpPort": 443,
+                "udpPort": 3478
+            },
+            "Skype": {
+                "addresses": [
+                    "127.0.0.1"
+                ],
+                "tcpPort": 443,
+                "udpPort": 3478
+            },
+            "addresses": [
+                "127.0.0.1"
+            ],
+            "tcpPort": 443,
+            "udpPort": 3478
+        },
+        "Service": {
+            "disabled": false,
+            "tokenUrl": "https://localhost/platform-not-supported",
+            "url": "https://localhost/platform-not-supported"
+        },
+        "Token": {
+            "earlyRefreshMinutes": 9720,
+            "earlyRefreshPercentage": 4
+        }
+    },
+    "MediaAgent": {
+        "MultiStream": {
+            "VideoIndexMax": -1,
+            "VideoIndexMin": -1
+        }
+    },
+    "MicrosoftTeamApprovals": {
+        "AdaptiveCardV2": true,
+        "AddViewerOnCreateEnabled": false,
+        "AdditionalFilters": true,
+        "AdditionalSourceFilter": false,
+        "AdminGroupEnabled": true,
+        "AdobeRefreshTokenFlowEnabled": true,
+        "AdobeStageViewEnabled": true,
+        "ChannelPeopleResultsPageSize": 1000,
+        "ClientFetchListProfilePics": true,
+        "CosmosDBHealthCheckEnabled": true,
+        "CreateDiffEnvEnabled": true,
+        "CreateDiffEnvEnabledAndroid": true,
+        "CreateDiffEnvEnablediOS": true,
+        "CreateWordCategoryEnabled": true,
+        "CustomResponsesEnabled": true,
+        "CustomResponsesEnabledAndroid": true,
+        "CustomResponsesEnabledIOS": true,
+        "DataExportCoachMarkEnabled": true,
+        "DataExportEnabled": true,
+        "DataExportStatusPollInterval": 15000,
+        "DisableFullTrustJoinedTeamsAPI": true,
+        "DocusignEnhancedWebhook": true,
+        "DocusignRefreshTokenFlowEnabled": true,
+        "DocusignStageViewEnabled": true,
+        "DocusignWebhookEnabled": true,
+        "ESignCreateAndroid": true,
+        "ESignCreateIOS": true,
+        "ESignDetailsAndroid": true,
+        "ESignDetailsIOS": true,
+        "ESignListAndroid": true,
+        "ESignListIOS": true,
+        "ESignNotificationsEnabled": "Dev,Int,Ppe,Prod",
+        "EUDBAriaCompliance": true,
+        "EditableTextApprovals": true,
+        "EnableExpandRequestHistory": "Dev,Int,Ppe,Prod",
+        "EnableFormsResponseAutoMigration": true,
+        "EnableFormsResponseDuplicate": true,
+        "EnableTemplateFileAttachment": true,
+        "EnvironmentPicker": true,
+        "EnvironmentPickerAndroid": true,
+        "EnvironmentPickerIOS": true,
+        "EsignGatewayEUDBEnabled": true,
+        "EsignGatewayEnabled": true,
+        "EsignGatewayNewDomainEnabled": true,
+        "EsignTeamsEndpointMigrationEnabled": true,
+        "EsignTemplateReoderEnabled": true,
+        "ExcludeMultiLineTextFields": true,
+        "FetchResourceTokenFromServiceForHosts": "android,ios,web,desktop",
+        "FileUploadAcceptedTypes": "",
+        "FileUploadEnabled": true,
+        "FileUploadEnabledAndroid": true,
+        "FileUploadEnabledIOS": true,
+        "FlowAttachmentEnabled": true,
+        "GroupApprovalEnabled": true,
+        "GroupApprovalNotificationEnabled": "Dev,Int,Ppe,Prod",
+        "GroupApprovalNudgeEnabled": false,
+        "GroupApprovalPeoplePickerEnabled": true,
+        "GroupApprovalReassignEnabled": false,
+        "IsFormV2ApiEnabled": true,
+        "ListEnvironmentsFlowAPICall": "Dev,Int,Ppe,Prod,Gcc,Gcch,Dod,Gallatin",
+        "ListTeamTemplateInstancesBatchEnabled": true,
+        "ListTeamTemplateInstancesBatchRetry": 3,
+        "ListTeamTemplateInstanecsBatchSize": 10,
+        "MarkdownEnabled": true,
+        "MaxCustomReponseOptions": 2,
+        "MaxNumberOfApprovers": 50,
+        "MaxNumberOfUsersInGroupForNotification": 20,
+        "MobileEntryMenuEnabledAndroid": true,
+        "MobileEntryMenuEnabledIOS": true,
+        "MultipleAttachments": true,
+        "MultipleAttachmentsAndroid": true,
+        "MultipleAttachmentsIOS": true,
+        "NewAdobeClientCertValidationEnabled": true,
+        "NewTemplateManagementButtonEnabled": true,
+        "NewToEsignCoachMarkEnabled": true,
+        "NotificationAPIv2": "Dev,Int,Ppe,Prod,Gcc",
+        "NudgeApproversEnabled": true,
+        "OnlineWorkflowSchemaVersion": "v2.0",
+        "OpenUploadedFilesAndroid": true,
+        "OpenUploadedFilesIOS": true,
+        "PeoplePickerMezzoAPI": true,
+        "PeoplePickerRetrySearchThreshold": 5,
+        "PeoplePickerV2": true,
+        "PriorityColumnEnabled": true,
+        "ProvisioningAPIEnabledEnvs": "Dev,Int,Ppe,Prod,Gcc",
+        "RBAC_5ApproversOnly": "Dev,Int,Ppe,Prod,Gcc,Gcch",
+        "RBAC_NoOfApprovers": "60",
+        "ReassignEnabled": true,
+        "RedisHealthCheckEnabled": true,
+        "RequestPageVersionAndroid": 2,
+        "RequestPageVersionByDefault": 1,
+        "RequestPageVersionIOS": 2,
+        "RequiredCustomResponseOptions": 1,
+        "RoleBasedAdaptiveCards": "Dev,Int,Ppe,Prod,Gcc,Gcch",
+        "SequentialApprovalsDesktopEnabled": true,
+        "SequentialApprovalsMobileEnabled": true,
+        "ServiceWorkerEnabled": true,
+        "ShareLinkEnabled": true,
+        "SharePointPickerEnabled": true,
+        "SharePointPickerEnabledForVanityDomain": true,
+        "ShowNewRequestPageToggleButton": true,
+        "ShowUserFREButton": true,
+        "ShowUserFREButtonAndroid": true,
+        "ShowUserFREButtonIOS": true,
+        "SourceColumnEnabled": true,
+        "StatefulNotificationsEnabled": "Dev,Int,Ppe,Prod,Gcc,Gcch,Dod,Gallatin",
+        "SyntexESignEnabled": "Dev,Int,Ppe,Prod",
+        "TTLOfViewerRoleCache": "2",
+        "TeamTagEnabled": true,
+        "TemplateEnabled": true,
+        "TemplateManagementButtonCoachMarkValue": "TemplateListScopeCoachMark_20211031",
+        "TemplateManagementButtonEveryoneShow": true,
+        "TemplatePreviewEnabled": true,
+        "TemplateSequentialApprovalsEnabled": true,
+        "UITemplateRingEnv": "prod,ppe,int,dev",
+        "UI_ShowAppHeader": true,
+        "UseCacheForViewerPermissions": true,
+        "UseHpaToAccessGroupShards": true,
+        "UseHpaToAccessUserShards": true,
+        "UseSniForSubstrate": true,
+        "ViewerPermissionEnabled": false,
+        "VivaAmplifyEnabled": "Dev,Int,Ppe,Prod",
+        "VivaAmplifySendAdaptiveCardEnabled": "Dev,Int,Ppe,Prod",
+        "VivaAmplifyTeamNotificationEnabled": "Dev,Int,Ppe,Prod",
+        "isEUDB": false,
+        "printPDF": true
+    },
+    "MicrosoftTeamLearning": {
+        "AddCourseActivityEdmEntities": true,
+        "AdditionalSearchFields": [
+            "Contributor",
+            "DisplaySourceType",
+            "ContentSource"
+        ],
+        "AzureIndexMaxDurationBeforeIngestionInMinutes": 225,
+        "AzureIndexMaxErrorDurationInMinutes": 300,
+        "BatchSizeForNotifications": 200,
+        "BlobStorageAccountName_DFGL": "lastgprodwus2",
+        "CachingGetLearningObjectBySourceTypeEnabled": true,
+        "CachingGetLearningObjectsByInterestsEnabled": true,
+        "CleanupBatchSizes": {
+            "batchProcessSize": "20",
+            "itemsToBeFetched": "20",
+            "itemsToBeReturned": "300"
+        },
+        "CosmosDBBlockedContainers": [],
+        "CurrentCosmosInstanceIdForNewTenants": "0",
+        "DegreeOfParallelismForBulkExport": 1,
+        "DeletionQueueName": "LMSDeletionQueue",
+        "EnableDetailsViewExpFromTenantDB": false,
+        "EnableMetaDataFromTenantDB": true,
+        "EnableScormContent": false,
+        "EnableValidationOnCatalogAPIs": true,
+        "EnabledLMSFeatures": [
+            {
+                "IsCatalogEnabled": true,
+                "IsCatalogPermissionsEnabled": true,
+                "IsConfigEnabledFromAdminTab": false,
+                "IsLRSEnabled": true,
+                "SourceType": 9
+            },
+            {
+                "IsCatalogEnabled": true,
+                "IsLRSEnabled": true,
+                "SourceType": 10
+            },
+            {
+                "IsCatalogEnabled": true,
+                "IsLRSEnabled": true,
+                "SourceType": 11
+            },
+            {
+                "IsCatalogEnabled": true,
+                "IsLRSEnabled": true,
+                "SourceType": 21
+            },
+            {
+                "IsCatalogPermissionsEnabled": true,
+                "SourceType": 1
+            }
+        ],
+        "EndDateForNotificationFixJob": "12/31/2027",
+        "ExecutiveUsers": [],
+        "FeaturedSetDefaultLearningObjectIds": [
+            "b2a0007e-9437-40e7-9f1d-3ae66b9b0987",
+            "c257cff7-84e8-4d2e-a2ad-55a7405e157c",
+            "36723ea6-8ef7-427e-8961-4119692035f4",
+            "d06d88e6-28f4-43a4-932c-de86218dbef4",
+            "ec2508e7-feda-434b-b930-1799332b8bd1"
+        ],
+        "FetchDataFromMSITAzureIndex": false,
+        "FilterGlobalCosmosLOsBasedOnEnabledSources": true,
+        "GetSharePointM365PermissionSupportDate": "2018-04-25T00:00:00+00:00",
+        "GoLocalConcurrencyValueForNotifications": 2,
+        "IsAccessControlPermissionEnabledForSharePoint": true,
+        "IsAdminConfigKeyRotationJobEnabled": true,
+        "IsAdvancedSearchEnabled": true,
+        "IsAdvancedSearchEnabledOnComposeExtension": "*",
+        "IsAdvancedSearchEnabledOnRelatedCourses": "*",
+        "IsAssignmentAPIEnabledForTenant": false,
+        "IsBringYourOwnContentEnabled": true,
+        "IsBulkExportParallelProcessingEnabled": false,
+        "IsCalendarCollectionEnabled": "*",
+        "IsCatalogPermissionsEnabled": true,
+        "IsCleanUpDuplicateLearningSourcesJobEnabled": false,
+        "IsCleanupFailedToDeleteLCARecordsEnabledTenantId": "",
+        "IsComposeExensionDefaultContentEnabled": true,
+        "IsCopilotLicenseCheckEnabledForTenants": "*",
+        "IsDefaultSortOrderEnabledForTenant": "*",
+        "IsDeleteOldSearchIndexesScheduledJobEnabled": true,
+        "IsEnrichLearningObjectForAppTokenFlowEnabled": false,
+        "IsFetchCopilotLicenseFromGraphEnabledForTenant": "b1474f08-2a43-4e7a-84f7-0f336ed5fccb,9495d6bb-41c2-4c58-848f-92e52cf3d640,fd799da1-bfc1-4234-a91c-72b3a1cb9e26",
+        "IsFilterOnAssignmentsByDateDisabled": false,
+        "IsFilteringSFFilesDisabledInFetchStage": true,
+        "IsFixAddScaleScopeIdInTenantMetatdataScheduledJobEnabled": false,
+        "IsGenerativeThumbnailV2Enabled": true,
+        "IsGenericSearchBoostingDisabledForTenant": "",
+        "IsGraphApiForSharepointFileContentEnabled": "*",
+        "IsGraphApiForSharepointPermissionsEnabled": "*",
+        "IsGraphProviderDeleteEnabled": "*",
+        "IsIncludeAdditionalSearchFieldsEnabledForTenant": "*",
+        "IsLRSCourseRecordCleanupSchedulerEnabled": false,
+        "IsLRSDeletePartitionEnabled": false,
+        "IsLRSNewRecordCleanupSchedulerEnabled": true,
+        "IsLRSOldRecordCleanupSchedulerEnabled": false,
+        "IsLRSRecommendationNotificationEnabled": true,
+        "IsLRSUserRecommendationDeleteEnabled": false,
+        "IsLearningPathEnabled": true,
+        "IsLearningPathInstantPublishEnabled": true,
+        "IsLinkUnfurlEnabled": true,
+        "IsM365V2APIEnabled": true,
+        "IsMSLearnLocaleMismatchCatalogFilteringEnabled": true,
+        "IsMultiShardSchemaMigrationJobEnabled": false,
+        "IsNewCosmosInstanceForNewTenantsEnabled": false,
+        "IsNewTelemetryClassificationEnabled": true,
+        "IsNumberOfViewsInSearchIngestionEnabledForTenant": "*",
+        "IsOceEnabled": false,
+        "IsPGPKeyPairValidationEnabledForSF": true,
+        "IsPopulateDefaultTenantFeaturedSetData": false,
+        "IsPopulatePermissionsFlagScheduledJobEnabled": true,
+        "IsPopulateTenantMetadataEnabled": false,
+        "IsProviderCatalogDeletionEnabled": true,
+        "IsQueryChangeForBookMarkCountEnabled": true,
+        "IsRebuildSearchIndexEnabledForTenant": "*",
+        "IsRecommendationDetailsV2Enabled": true,
+        "IsRecommendationMigrationComplete": true,
+        "IsRefreshUserGroupsOnDemandEnabled": false,
+        "IsRegenerativeThumbnailEnabled": true,
+        "IsRegenerativeThumbnailV2Enabled": false,
+        "IsSFCompletionStatusV2Enabled": true,
+        "IsSFLRSDataFixEnabled": false,
+        "IsSFLRSDataFixScheduledJobEnabled": false,
+        "IsSFUserMappingSyncNewCodePathEnabled": true,
+        "IsSPLinkItemSupportEnabled": true,
+        "IsSPMetadataSupportEnabled": true,
+        "IsSSOEnabledForComposeExtension": false,
+        "IsScopeValidationOnCatalogGraphApisEnabled": true,
+        "IsSearchHADREnabled": true,
+        "IsServiceRegionalizationEnabled": true,
+        "IsSharepointImageValdiationEnabled": false,
+        "IsSingleContainerFeatureCAEnabledForTenant": "0ddc2504-7edd-45e1-97c4-199ebb541bd2",
+        "IsSoftLinkEnabled": false,
+        "IsSvg2PngConversionSkipEnabled": true,
+        "IsTaskFabricDataMigrationSchedulerEnabled": true,
+        "IsTaskFabricMigrationJobEnabled": true,
+        "IsTenantEnabledForAzureConnectionManagerJob": true,
+        "IsTenantEnabledForTFMigration": true,
+        "IsTenantFlightedForGoLocalDogfood": false,
+        "IsTenantFlightedForScoringProfiles": false,
+        "IsTenantGeoCacheEnabled": true,
+        "IsTenantLicenseCheckEnabled": true,
+        "IsUsageOfLOIDInGraphApiEnabled": true,
+        "IsUserFlightedForScoringProfiles": true,
+        "IsUserGroupMembershipsCachingEnabled": true,
+        "IsUserProfileForLRSLicenseCheckEnabled": true,
+        "LRSDataExpiryDays": 90,
+        "LearnerRecordsBulkExportMaxJobExecutionDurationInHours": 24,
+        "LinkedInAPIPackagingVersion": 1,
+        "LowFrictionTrialDurationInDays": 60,
+        "MaxAzureIngestionOnDemandMessageCount": 1000,
+        "MaxIngestionInProgressDurationInMinutes": 2160,
+        "MaxNumberOfSharepointFolderLevelsToCrawl": 10,
+        "MaxNumberOfSharepointItemsToIngest": 1000,
+        "MaxTenantsProcessingAllowedPerRunForAzureConnectionManagerJob": 5000,
+        "MaximumUtilizedSpacePercentageCutOffForSearchIndexRebuild": 80,
+        "MultiShardMSITSubstrateShardNames": [
+            "SUBSTRATEMULTISHARDMSIT_LEARNINGAPPCONNECTORV9S1",
+            "SUBSTRATEMULTISHARDMSIT_LEARNINGAPPCONNECTORV9S2",
+            "SUBSTRATEMULTISHARDMSIT_LEARNINGAPPCONNECTORV9S3",
+            "SUBSTRATEMULTISHARDMSIT_LEARNINGAPPCONNECTORV9S4",
+            "SUBSTRATEMULTISHARDMSIT_LEARNINGAPPCONNECTORV9S5",
+            "SUBSTRATEMULTISHARDMSIT_LEARNINGAPPCONNECTORV9S6",
+            "SUBSTRATEMULTISHARDMSIT_LEARNINGAPPCONNECTORV9S7",
+            "SUBSTRATEMULTISHARDMSIT_LEARNINGAPPCONNECTORV9S8",
+            "SUBSTRATEMULTISHARDMSIT_LEARNINGAPPCONNECTORV9S9"
+        ],
+        "NumberOfViewsRealTimeSearchIngestionFrequency": 5,
+        "PerformAppValidationOnCatalogAPIs": true,
+        "RebuildSearchIndexBatchSize": 200,
+        "RegionalConcurrencyValueForNotifications": 10,
+        "RemoveLicenseFromBootCriticalPath": true,
+        "SFUserMappingRules": {
+            "IgnoreLeadingZeroes": false,
+            "LeadingPrefixesToIgnore": null,
+            "UserExtensionAttributeName": ""
+        },
+        "ScheduledJobToSendNotifications": false,
+        "ScheduledJobToTriggerNotifications": false,
+        "SearchIndexVersion": 3,
+        "SearchServiceUrlListForMoveOut": [
+            "https://viva-learning-search-prod-nam-ca-1.search.windows.net"
+        ],
+        "SharedCatalogIngestionIndexName": "sharedcatalog-index-4",
+        "SharedCatalogSearchIndexName": "sharedcatalog-index-4",
+        "ShouldLogDetailsForIngestion": true,
+        "ShouldRouteRequestToDogfoodCluster": true,
+        "SourceExpiryDays": 365,
+        "StartCleanupProviderIdScheduler": false,
+        "StartCourseCleanupProviderIdScheduler": false,
+        "TaskFabricApiPath": "/todob2/api/v1",
+        "TrustedPartnerAppsForApiOnboarding": [
+            "b21d935e-2486-479e-a9f9-0472e42ad654",
+            "0a5ec315-817e-4f80-a07d-b8d992322b8d",
+            "bca1a7df-eaa5-4d78-b0fb-0a43ec711937",
+            "9219f5d1-a777-4035-bd0c-a5e236d3ad4e",
+            "a4d9bb09-84b9-4cef-a54d-b8a0ac5edc83",
+            "d93c3f28-d48f-4ba3-83af-5c36d8037a7f",
+            "00000003-0000-0000-c000-000000000000",
+            "395a47ef-fe34-4879-b50c-2ad830a1bab1",
+            "fc41ed7e-c3bd-4b03-ae89-f663cdc452b1",
+            "8d23a791-af0d-4da4-808b-22223591bf23",
+            "ec2b6b75-aacf-4662-bbbf-6a91394ce2e5",
+            "7d2bccb4-d279-4800-84dd-15caed283b5d",
+            "2caa9aa4-deaf-4c25-8a45-2542cbd78d98",
+            "2c1a896c-ac3f-48ef-b627-1b1c7953c9b8",
+            "4191bd61-f637-4e6b-ad23-2ef5740bf083",
+            "9605de81-d9c7-4a2c-a938-e268b17c48e4",
+            "adb53b4f-b05f-4dcb-a2e1-9111380568c3",
+            "83a34322-2783-465c-9e92-861fad0eb150",
+            "501297ff-affd-41da-9def-144ca05d9438",
+            "c3902fe2-1cd3-4421-a55c-a469fa4042be",
+            "cede7d51-9596-43af-a960-5aafbdc1134e",
+            "c40da342-5325-4be4-89cb-51a16fbbf9fc",
+            "6f9dbc98-9bc6-4861-8fca-972a33afabb7",
+            "632edb7b-675b-4d6c-b8d5-ef4f1f8b6dc3",
+            "f207d88d-7cc5-4d0a-a9c4-27cac6ca22d6",
+            "5ef9b282-3233-40ac-bea3-0efff231b870",
+            "629c93c9-a1e1-4580-86d3-1ffa025140c0",
+            "b3265c71-fd21-40a7-a7ee-0f86b5d1a19b",
+            "de8bc8b5-d9f9-48b1-a8ad-b748da725064",
+            "104690b0-814b-4068-a5bf-6b1211e12cf5",
+            "81938eb5-8e18-4cda-80f8-1ab58647034e",
+            "5e3ec81a-a261-48e4-b638-c7e8860a7671",
+            "ec422d9c-d674-4925-8e4a-909c4baa8aa5",
+            "2e10ba0b-b642-4923-8630-08c8f9dff4fd",
+            "1dbcd717-7087-4ccb-9e1e-348c604531ba",
+            "6c682960-2df3-475e-ab6f-e46e181314ab"
+        ],
+        "UnprocessedTenantListToMigrate": [
+            "a1ec00fa-dd64-4612-8fb4-9ad0da96ff62"
+        ],
+        "UseAzureIndexOverSubstrate": true,
+        "UserGroupsMembershipsExpiryTimeSpanInMinutes": "720",
+        "UserProfileLicenseAboutToExpireTimeInMinutesConfig": "10080",
+        "UserProfileLicenseExpirationTimeInMinutesConfig": "10080",
+        "UserProfileSeededLicenseExpirationTimeInMinutesConfig": "10080",
+        "enableHeartbeatSyncInLMSPipeline": true,
+        "enableLearningItemSFRecomputationTriggerScheduledJob": true,
+        "enabledLagroSources": [
+            "Skillsoft"
+        ],
+        "isAcademiesEnabled": false,
+        "isAdminSettingSearchOptimizationEnabled": true,
+        "isAssignmentEnabled": true,
+        "isAssignmentV2Enabled": true,
+        "isB2TaskFabricApiPathEnabled": true,
+        "isBYOCAddSharePointContentEnabled": true,
+        "isBackNavigationEnabled": true,
+        "isBackfillingEnabled": true,
+        "isBaseCatalogPermissionsEnabled": true,
+        "isCatalogPermissionsEnabled": true,
+        "isCommonFeedbackEnabled": true,
+        "isCommonNavigationEnabled": true,
+        "isCommonSearchModalEnabled": true,
+        "isCommonSearchModalEnabledOnLearningTab": true,
+        "isCommonSearchModalEnabledOnManageAcademies": true,
+        "isCommonSearchModalEnabledOnManagePermissions": true,
+        "isCommonSurveyEnabled": true,
+        "isCopySFLRSDataToLearnerEnabled": true,
+        "isCourseCompletionEnabled": true,
+        "isDFEndPointEnabled": false,
+        "isDeleteEnabledForGraphProvider": true,
+        "isDetailsViewQueryDecouplingEnabled": true,
+        "isDisableSourcesOnLosingLicenseEnabled": true,
+        "isELDLearningPlayerEnabled": true,
+        "isEditInLPEnabled": true,
+        "isExecutivePicksEnabled": false,
+        "isFatHeaderRemoveEnabled": true,
+        "isFeatureContentEnabled": true,
+        "isFeaturedContentCacheEnabled": true,
+        "isFeaturedContentEnabled": true,
+        "isFetchProviderOnDemandJobEnabled": true,
+        "isGenerativeThumbnailEnabled": true,
+        "isGetFeaturedLOQueryCallAfterOneDay": false,
+        "isGo1PlayerEnabledForAllContentFormat": false,
+        "isGraphCAEEnabled": false,
+        "isHeadlessMode": true,
+        "isInlineShareEnabled": true,
+        "isLCDetailViewMigrated": true,
+        "isLPAdminPageMigrated": true,
+        "isLPDetailViewMigrated": true,
+        "isLearnerRecordBulkExportEnabled": true,
+        "isLearningObjectRatingEnabled": true,
+        "isLearningPathWithSectionsEnabled": true,
+        "isLearningTabNewArchEnabled": true,
+        "isLiLHubFirstPartySSOEnabled": true,
+        "isLinkUnfurlingEnabled": true,
+        "isLmsRecommendationEnabled": true,
+        "isMsLearnPlayerEnabled": false,
+        "isMyLearningCachingEnabled": true,
+        "isNewExperienceEnabled": true,
+        "isNewSupportEnabled": true,
+        "isNotificationBatchingEnabled": true,
+        "isNotificationJobMigrationEnabled": true,
+        "isPreviewUnsavedChangesInAcademyEnabled": true,
+        "isProcessLMSDataOnDemandJobEnabled": true,
+        "isRTLFallbackToEnglishEnabled": true,
+        "isRandomizeLOsDisabled": true,
+        "isRatingEnabled": true,
+        "isRecentViewEnabled": true,
+        "isRecommendationLRSMigrationEnabled": true,
+        "isRichDescriptionEnabled": true,
+        "isSERPWithSharedHookEnabled": true,
+        "isScheduledJobEnabledForAllTenants": true,
+        "isScormPlayerEnabled": false,
+        "isScormProgressTrackingEnabled": false,
+        "isServiceLevel": true,
+        "isSettingsEnabled": true,
+        "isSharepointPermissionsSettingEnabled": true,
+        "isSortByEnabled": true,
+        "isSourceDeletionOnDemandJobEnabled": true,
+        "isSpecialCharacterAllowedInSearch": true,
+        "isStandAloneMVPEnabled": false,
+        "isSubscriptionIconLogicEnabledFor3P": false,
+        "isSubscriptionIconLogicEnabledForLMS": false,
+        "isSubscriptionLockUXEnabled": true,
+        "isSwitchToProviderIdForAssignmentEnabled": true,
+        "isSwitchToProviderIdForCourseEnabled": true,
+        "isSystemInitiatedSurveyEnabled": true,
+        "isTeamsPaddingRemoved": true,
+        "isTenantAssignedPlansEnabled": true,
+        "isThumbnailImageServiceWorkerEnabled": true,
+        "isTriggerSourceDeletionOnDemandJobEnabled": true,
+        "isUsageOfProviderLogosForGraphApiSourcesEnabled": true,
+        "isUserAssignedPlansEnabled": true,
+        "isUserDashboardPerfImprovementEnabled": true,
+        "isViewsTrendEnabled": true,
+        "premiumLicenseSkus": [
+            "VIVA_LEARNING",
+            "VIVA_LEARNING_FACULTY",
+            "VIVA",
+            "VIVA_FACULTY",
+            "VIVA_GLINT",
+            "VIVA_GLINT_FACULTY"
+        ],
+        "providerThrottlingEnabledForGraphAPI": true,
+        "scheduledJobAllowedTenants": [],
+        "scheduledJobFixNotificationCreateDate": false,
+        "scheduledJobToTriggerAzureConnectionManager": false,
+        "scheduledJobToTriggerAzureIngestion": false,
+        "scheduledJobToTriggerCleanupConnectionManagerJob": false,
+        "scheduledJobToTriggerCreateConnectionManagerJob": false,
+        "scheduledJobToTriggerGlobalSourcesFetchJob": false,
+        "scheduledJobToTriggerLearningSourceIngestion": false,
+        "scheduledJobToTriggerSCMSITIngestion": false,
+        "scheduledJobToTriggerSourceDeletionJob": false,
+        "seededLicenseSkus": [
+            "SPE_E3",
+            "SPE_E3_RPA1",
+            "M365_F1",
+            "SPE_F1",
+            "STANDARDPACK",
+            "STANDARDPACKWITHEXCHANGEARCHIVE_ADDON",
+            "STANDARDWOFFPACK",
+            "ENTERPRISEPACK",
+            "ENTERPRISEPACKWITHOUTPROPLUS",
+            "DESKLESSWOFFPACK",
+            "DESKLESSPACK",
+            "DESKLESSPACK_ADDON",
+            "DESKLESSPACK_YAMMER",
+            "SPB_TEST1",
+            "SPE_E3_TEST",
+            "STANDARDPACK_TEST",
+            "ENTERPRISEPACK_TEST",
+            "ENTERPRISEPACKWITHOUTPROPLUS_TEST",
+            "DESKLESSPACK_YAMMER_TEST",
+            "SPE_E5",
+            "DEVELOPERPACK_E5",
+            "SPE_E5_CALLINGMINUTES",
+            "SPE_E5_NOPSTNCONF",
+            "ENTERPRISEPREMIUM",
+            "ENTERPRISEPREMIUM_ESC",
+            "ENTERPRISEPREMIUM_CALLINGMINUTES",
+            "ENTERPRISEPREMIUM_NOPSTNCONF",
+            "ENTERPRISEPREMIUM_NOPBIPBX",
+            "SPE_E5_NOPSTNCONF_TEST",
+            "ENTERPRISEPREMIUM_BACKFILLTEST",
+            "ENTERPRISEPREMIUM_NOPSTNCONF_TEST",
+            "O365_BUSINESS_ESSENTIALS",
+            "SMB_BUSINESS_ESSENTIALS",
+            "SPB",
+            "O365_BUSINESS_PREMIUM",
+            "SMB_BUSINESS_PREMIUM",
+            "M365EDU_A3_FACULTY_RPA1",
+            "M365EDU_A3_FACULTY",
+            "M365EDU_A5_FACULTY",
+            "M365EDU_A5_NOPSTNCONF_FACULTY",
+            "STANDARDWOFFPACK_FACULTY",
+            "STANDARDWOFFPACK_FACULTY_DEVICE",
+            "STANDARDWOFFPACK_IW_FACULTY",
+            "ENTERPRISEPACKPLUS_FACULTY",
+            "ENTERPRISEPREMIUM_FACULTY",
+            "ENTERPRISEPREMIUM_NOPSTNCONF_FACULTY",
+            "STANDARDPACK_FACULTY",
+            "ENTERPRISEPACK_FACULTY",
+            "STANDARDWOFFPACK_HOMESCHOOL_FAC",
+            "M365EDU_A3_FACULTY_TEST",
+            "M365EDU_A5_FACULTY_TEST",
+            "ENTERPRISEPACKPLUS_FACULTY_TEST",
+            "ENTERPRISEPREMIUM_FACULTY_CALLINGMINUTES",
+            "M365EDU_A5_FACULTY_CALLINGMINUTES"
+        ],
+        "shouldForceLicenseCacheAndNetwork": true,
+        "timeDelayToRequeueProcessingMessage": 180
+    },
+    "MicrosoftTeamVivaPulse": {
+        "BatchFormsDeletion": false,
+        "ConcurrentBackgroundJob": false,
+        "checkUserVivaPulseLicense": true,
+        "disableDeletingFeedbackResponses": true,
+        "eDiscoveryEvents": false,
+        "eDiscoveryJob": false,
+        "enableRedesignedReportHeader": true,
+        "enableReportPreviewPulse": true,
+        "enableSharingOpenTextResponses": true,
+        "glintIntegrationV1": false,
+        "glintIntegrationV2": false,
+        "partnerPulseBuilderV1": true,
+        "pulseDeletionV1": true,
+        "vfamIntegration": true,
+        "vivaPulse1on1Conversations": true,
+        "vivaPulseAggregateMetricsBackend": true,
+        "vivaPulseAppContextEnabled": true,
+        "vivaPulseAuthorAnswerOwnPulse": true,
+        "vivaPulseAuthorNote": false,
+        "vivaPulseAutoRetryUserDSR": true,
+        "vivaPulseBackgroundLoadSettings": true,
+        "vivaPulseCAE": true,
+        "vivaPulseChangeQuestionType": true,
+        "vivaPulseClosePulseEarly": true,
+        "vivaPulseConditionalAccessControl": false,
+        "vivaPulseConfidentialConversations": false,
+        "vivaPulseConfidentialConversationsPostMVP": false,
+        "vivaPulseContentAdmin": true,
+        "vivaPulseContentAdminCreateTemplate": true,
+        "vivaPulseContentAdminDisableTemplateQuestion": true,
+        "vivaPulseContentAdminQuestionManagement": true,
+        "vivaPulseCopilotAdoptionReadiness": true,
+        "vivaPulseCopilotImpactV1": true,
+        "vivaPulseCopilotReportSummary": false,
+        "vivaPulseCopilotReportSummaryNotification": false,
+        "vivaPulseCustomization": false,
+        "vivaPulseDSRCleanupEnabled": false,
+        "vivaPulseDSRDeleteIfNoLongerRequired": false,
+        "vivaPulseDataExportJob": true,
+        "vivaPulseDecoupleCustomization": true,
+        "vivaPulseDelegation": false,
+        "vivaPulseDisableCustomPrivacyPolicyLink": false,
+        "vivaPulseDynamicDialogs": false,
+        "vivaPulseELSFollowup": false,
+        "vivaPulseEditOnResend": true,
+        "vivaPulseEmailNotification": true,
+        "vivaPulseEnableLppAddTargets": false,
+        "vivaPulseEnableLppAdminPage": false,
+        "vivaPulseEnableLppFinalizeRequest": false,
+        "vivaPulseEnableLppSharePulse": false,
+        "vivaPulseEnhancedEmail": true,
+        "vivaPulseExpandedPageInlinePulses": true,
+        "vivaPulseExportAllDataByAdmin": true,
+        "vivaPulseExportByAdmin": false,
+        "vivaPulseExportByAuthor": false,
+        "vivaPulseExportReportByAuthor": true,
+        "vivaPulseExportReportsByAdmin": true,
+        "vivaPulseFeedbackAutoTrigger": false,
+        "vivaPulseFormsDataMigrationJob": false,
+        "vivaPulseGuaranteedReportGeneration": true,
+        "vivaPulseGuidedActionShareReport": false,
+        "vivaPulseGuidedSeries": false,
+        "vivaPulseGuidedSeriesBackend": true,
+        "vivaPulseHomepagePagination": false,
+        "vivaPulseInlineEmail": true,
+        "vivaPulseInlineExtendFeedbackEmail": true,
+        "vivaPulseLeaderScenario": true,
+        "vivaPulseLeaderScenarioV1": true,
+        "vivaPulseLearningRecommendation": false,
+        "vivaPulseLicense": true,
+        "vivaPulseLocales": [
+            "en-US"
+        ],
+        "vivaPulseMCQTrending": true,
+        "vivaPulseMatrixQuestion": true,
+        "vivaPulseMoveAdminUiToVivaPulse": false,
+        "vivaPulseMultiGeoEnabled": true,
+        "vivaPulseNewDSRFlow": true,
+        "vivaPulseNewDomain": true,
+        "vivaPulseNewInlineFooter": true,
+        "vivaPulseNewServicePlanEnabled": true,
+        "vivaPulseNotificationsManagement": true,
+        "vivaPulseOtherResponseChanges": false,
+        "vivaPulseOutage": false,
+        "vivaPulsePartnerIntegration": false,
+        "vivaPulsePeoplePickerLogTelemetry": true,
+        "vivaPulsePeoplePickerRenderFluentUi": true,
+        "vivaPulseProvideFeedbackDialog": false,
+        "vivaPulseProvideFeedbackFollowUpQuestions": false,
+        "vivaPulsePurviewAudit": true,
+        "vivaPulsePurviewAuditJob": true,
+        "vivaPulseQuestionCardActions": true,
+        "vivaPulseQuestionLibrary": true,
+        "vivaPulseQuestionLibraryDedupe": true,
+        "vivaPulseRankingQuestion": true,
+        "vivaPulseRatingScaleOptions": true,
+        "vivaPulseRedisCache": true,
+        "vivaPulseRequestEditorPreview": true,
+        "vivaPulseResponseRate": false,
+        "vivaPulseRestrictedCustomization": true,
+        "vivaPulseRetryGnsSignalsEnabled": true,
+        "vivaPulseReturnDefaultTenantSettings": true,
+        "vivaPulseScheduledEnhancedNotification": false,
+        "vivaPulseScheduledPulses": true,
+        "vivaPulseScheduledPulsesBackend": true,
+        "vivaPulseScheduledSeries": false,
+        "vivaPulseSchedulingGraphTimeZoneSupport": false,
+        "vivaPulseSearchDeleteCustomQuestion": true,
+        "vivaPulseShouldCheckPremiumLicense": true,
+        "vivaPulseSinglePagePulseSeries": false,
+        "vivaPulseStageAccess": false,
+        "vivaPulseStartFromScratch": false,
+        "vivaPulseTeamsChatInlineResponse": true,
+        "vivaPulseTeamsChatNotification": true,
+        "vivaPulseTeamsNotificationDisabled": false,
+        "vivaPulseTenantAdminDashboard": true,
+        "vivaPulseTenantBackgroundLicenseCheck": true,
+        "vivaPulseTenantDeletion": false,
+        "vivaPulseTenantInfraMappingUpload": true,
+        "vivaPulseTenantSettingsCleanupEnabled": true,
+        "vivaPulseThrottleNotifications": true,
+        "vivaPulseTokenCache": true,
+        "vivaPulseTokenExchange": true,
+        "vivaPulseUsePftPopTokenForNotify": false,
+        "vivaPulseVivaAppBar": true,
+        "vivaPulseWebOnlyExp": false,
+        "vivaPulseeDiscoveryRetainForms": true
+    },
+    "MicrosoftTeamsClientAndroid": {
+        "DeferAutoSignOutEnabled": true,
+        "DirectoriesToOptimise": {
+            "directoriesToDelete": [
+                {
+                    "deletionStrategy": "Oldest",
+                    "directoryPath": "cache/Lens",
+                    "thresholdHours": 24,
+                    "thresholdSizeInMB": 10
+                }
+            ]
+        },
+        "EnableAudioTranscoding": true,
+        "EnableTFWBadgeAccountService": "true",
+        "IgnoreAADTokenErrorForBCS": "true",
+        "IpPhoneModelsConferenceDevice": [
+            "CP960",
+            "TrioC60",
+            "UC-2",
+            "CP965"
+        ],
+        "LandingActivityMultiCallDelayInMillis": 1000,
+        "MeetingExtensibilityAppControlBarEntryEnabled": true,
+        "TOU Link": "",
+        "TOU Version": 0,
+        "WalkieTalkie": {
+            "MultiChannelAutoSelectExp1Enabled": false,
+            "MultiChannelAutoSelectExp2Enabled": true
+        },
+        "activityFeedNavListDetail": true,
+        "activityFeedTitleChangeEnabled": true,
+        "allowDetailedDiskStorageUsageTelemetry": true,
+        "androidItalianAccessibilityStatement": true,
+        "autoPruneInterval": 24,
+        "backgroundPruneJobInterval": 24,
+        "blobOperationsToAggregate": 4,
+        "blobStorageTelemAggWindowSec": 300,
+        "bottomBarLargeFormFactorLeftRailEnabled": true,
+        "calendar": {
+            "enableMeetingDescriptionWebview": false
+        },
+        "canShowExpandedReactions": true,
+        "cancelApiOnFrescoDetach": false,
+        "cefMessageActionsEnabled": true,
+        "channelsAtMentionBadging": true,
+        "channelsRemovingImportantIndicator": true,
+        "channelsTelemetryV2": true,
+        "chat": {
+            "smsRequiredConsentPrefixes": [
+                "+49",
+                "+48"
+            ],
+            "twoWaySmsEnabledPrefixes": [
+                "+1",
+                "+52",
+                "+91",
+                "+44",
+                "+55",
+                "+57",
+                "+81",
+                "+33",
+                "+49",
+                "+31",
+                "+48"
+            ],
+            "twoWaySmsExcludedPrefixes": [
+                "+1242",
+                "+1246",
+                "+1264",
+                "+1284",
+                "+1345",
+                "+1441",
+                "+1599",
+                "+1664",
+                "+1670",
+                "+1671",
+                "+1684",
+                "+1758",
+                "+1767",
+                "+1784",
+                "+1787",
+                "+1939",
+                "+1809",
+                "+1829",
+                "+1849",
+                "+1868",
+                "+1869",
+                "+1876",
+                "+1658",
+                "+6189162",
+                "+6189164"
+            ]
+        },
+        "chatBubbleDisplayTime": 3500,
+        "chatConversationCacheEnabled": "true",
+        "chatConversationCacheSize": 100,
+        "chatSlideinAnimationEnabled": true,
+        "checkEDOnlyPolicyOnTenant": true,
+        "communitiesBadgeCountIncludeReplies": false,
+        "consumerRegionGmtsEnv": "prod",
+        "conversationCacheEnabled": "true",
+        "conversationCacheSize": 100,
+        "dbOpenTraceEnabled": true,
+        "dciLowEndThreshold": 0.2,
+        "disableAutoFolderCreationInUpload": true,
+        "disableGapDetectionBasedNotificationSyncForChannels": true,
+        "dropResourceTokenRequests": false,
+        "ecsEnabledEduApps": [
+            "bd9fb5cb-4d02-4cc6-a7f4-52a8a62d30b7",
+            "9d17e873-c4c4-424d-869c-67f62a3d3174",
+            "77be3f72-7c14-415f-992c-3511dd54a4ae",
+            "66aeee93-507d-479a-a3ef-8f494af43945",
+            "62554c36-4756-4d4e-b8fb-f4b24875ae0c",
+            "2c95977d-f2fb-4df3-ad70-1aece87afe03",
+            "5a22b425-b693-4f86-b668-31baeb3dad6c",
+            "b85718a3-6d15-4f59-8fad-b6809c6fc6a9",
+            "3a6c38d2-9d25-4c1f-8e06-9da286c1bfc4",
+            "b56991b4-3924-49b2-b4bf-1710940ec7d9"
+        ],
+        "enableAdaptiveCards": true,
+        "enableApplyFormattingProcessorV2": true,
+        "enableAudioBluetoothFilterHeadsetOnly": true,
+        "enableBaiduMigration": false,
+        "enableBlobStorageTelemetry": true,
+        "enableBotPrefixInChatPreview": true,
+        "enableCefMessageEditorSite": true,
+        "enableChatFailedIndicator": true,
+        "enableChatFps": false,
+        "enableChatViewTelemetry": true,
+        "enableDBForcePruneForOptimization": true,
+        "enableDropResourceTokenRequests": false,
+        "enableEmailVerifiedLabel": true,
+        "enableEmailVerifiedProfileCard": true,
+        "enableEngageTokenRefresh": true,
+        "enableEnqueueExceptionHandler": true,
+        "enableFRELoadingTimeout": false,
+        "enableFilePreview": true,
+        "enableFrameWatcherOnScroll": true,
+        "enableGuardiansReEntryInviteUpdate": true,
+        "enableHitTopTelemetry": true,
+        "enableInactiveGuardianBanner": true,
+        "enableIntentTrackVersionedAPI": true,
+        "enableJoinInviteActivityFeed": true,
+        "enableMeetingChatBubbles": true,
+        "enableNewClassNavigation": true,
+        "enableOkhttpEventListeners": true,
+        "enablePaginationScenarios": true,
+        "enablePreChatNavigationFromBar": true,
+        "enablePreChatProfileContextMenu": true,
+        "enableSetOrientationOnConfigChange": true,
+        "enableSilentRenamingOnFilenameConflict": true,
+        "enableUnauthorizedHandlingV2": true,
+        "enableUsersCanAdmitFromLobby": true,
+        "enableVoiceMsgCleanup": true,
+        "enable_optimised_chat_list_refresh": true,
+        "enable_spannable_string_comp_fix": true,
+        "fileSizePreview": true,
+        "files": {
+            "OfficeAppMetaData": {
+                "EXCEL": {
+                    "storeId": "com.microsoft.office.officehubrow"
+                },
+                "POWERPOINT": {
+                    "storeId": "com.microsoft.office.officehubrow"
+                },
+                "WORD": {
+                    "storeId": "com.microsoft.office.officehubrow"
+                }
+            },
+            "enableFileDelete": true,
+            "enableMSPDFViewerForPDF": true,
+            "enableVideoCDNSupport": true,
+            "enableVroomRecentsListing": true,
+            "isRedirectionToUnionAppEnabled": true,
+            "skipMetadataCallForPdfFilePreview": true,
+            "useSpoApiForSharingUploadedFile": true,
+            "webpackOneUpEnabled": true
+        },
+        "filesAndTabs": true,
+        "forwardImageEnabled": true,
+        "fussScoreSyncFrequencyInMins": 1000000,
+        "googleAuthCustomScopePhase1Enabled": true,
+        "imagerenderPrefetchV2": {
+            "enabledPinnedChannels": true
+        },
+        "isCSAAfdEndpointFromAuthzEnabled": true,
+        "isChatSwitchOptimizationEnabled": true,
+        "isClearCalendarEnabled": true,
+        "isGuardianHomePageAppEnabled": true,
+        "isGuardianTeacherChatEnabled": true,
+        "isParentsAppEnabled": true,
+        "isParentsContactCardEnabled": true,
+        "isParentsEmailClickEnabled": true,
+        "isParentsPhoneClickEnabled": true,
+        "l2ShowCachedMessagesEnabled": true,
+        "limit_messages_sync_recent_chats": true,
+        "logsTeamsMemoryData": true,
+        "low_memory_fix_enabled": true,
+        "m365chat": {
+            "enableAdaptiveCardsInChat": true,
+            "pluginAuthErrorMessageEnabled": true,
+            "pluginManagementEnabled": true
+        },
+        "maxBaiduMigrationSkippableDays": 30,
+        "maxOldBaiduUninstallReminderCount": 4,
+        "media": {
+            "closedCaptionsEnabled": true,
+            "enableFullComposeCameraInTfw": true,
+            "mediaSourceTelemetryEnhancementEnabled": true,
+            "messageConfigurationEnabled": true,
+            "share_via_screenshot_loop_fix": true,
+            "shouldRetainMediaOrderInMessageArea": true,
+            "videoMessageMaxDurationLimit": 60
+        },
+        "meeting": {
+            "isDialInOnlyMeetingJoinFix": true
+        },
+        "meetingTenantGetHelpUrl": {
+            "73588a2a-d95b-4846-8dc4-5c6bbdfc3a72": "https://go.microsoft.com/fwlink/?linkid=2149542&clcid=0x409",
+            "d638243e-4b96-4b21-bd42-ee430faadbfe": "https://go.microsoft.com/fwlink/?linkid=2149542&clcid=0x409"
+        },
+        "meetings": {
+            "enableCopilotExtensibility": true
+        },
+        "messageStaleThresholdInHours": 24,
+        "minDBSizeToTriggerForcePruneInMBs": 50,
+        "minDaysBeforeNextForcePrune": 1,
+        "mobileLandscapeEnabledForEdu": true,
+        "multitasking": {
+            "files": true
+        },
+        "nordenModelsSupportedConsole": [
+            "PolyStudioX30",
+            "PolyStudioX50",
+            "PolyStudioX52",
+            "PolyStudioX70",
+            "MeetingBar A20",
+            "MeetingBar A30",
+            "MeetingBar A10",
+            "MeetingBoard 65",
+            "MeetingBoard 86",
+            "NF19B1",
+            "NF20C1",
+            "NF21D1",
+            "AM3X00",
+            "UC-ENGINE-A",
+            "VR0019",
+            "VR0020",
+            "VR0030",
+            "VR0034",
+            "expandvision3t",
+            "ExpandVision5T",
+            "PolyG7500",
+            "RXV80",
+            "RXV81",
+            "RXV200",
+            "Panacast1000",
+            "panacast50vbs",
+            "DBR14",
+            "Board Pro 55",
+            "Board Pro 75",
+            "Room Bar",
+            "Room Kit Pro",
+            "Desk Pro"
+        ],
+        "officeLensMaxVideoDuration": 60000,
+        "officeLensVideoEditEnabled": true,
+        "officeLensWhitelistedTelemetryEvents": [
+            "VideoLaunch",
+            "LaunchLens"
+        ],
+        "onePlayerOkHttpEnabled": true,
+        "platform": {
+            "adaptiveCardVimeoDailyMotionMediaEnabled": true,
+            "adaptiveCardYoutubeMediaEnabled": true,
+            "appTraySortingTelemetrySyncDuration": 86400000,
+            "authenticationBlockHonourTimeInMinutesForAdaptiveCardsV2": 360,
+            "botCitationAdaptiveCardEnabled": true,
+            "clearWebStorage": true,
+            "collabCloudEndpointUrl": "https://teams.microsoft.com/api/platform/",
+            "enableAiBotStreaming": true,
+            "enableAppInstallationForMessageExtensionAdaptiveCardsV2": true,
+            "enableAuthenticationBlockUsageForAdaptiveCardsV2": true,
+            "enableCardActionInvokeComplianceData": true,
+            "enableCollabCloudApis": true,
+            "enableCopilotHandoff": true,
+            "enableMeetingShareDeeplink": true,
+            "enableOauthForAdaptiveCardsV2": true,
+            "enableRefreshForAdaptiveCardsOnClosingTaskModule": true,
+            "enableSSOForAdaptiveCardsV2": true,
+            "enableStaticMessageExtensionDiscoveryFeature": true,
+            "enableWebMessageListener": true,
+            "entitlementsSyncOnLanguageChangeEnabled": true,
+            "extensibilityMultiResourcesMysiteDomainEnabled": true,
+            "extensibilityMultiResourcesTeamsiteDomainEnabled": true,
+            "fileDownload": true,
+            "isAppLessLinkUnfurlingV2Enabled": true,
+            "isBotMentionTagEnabled": true,
+            "isBotUriInteractiveAuthEnabled": true,
+            "isNAAPrefetchEnabled": true,
+            "linkUnfurlingDomainPriority": {
+                "isEnabled": true,
+                "priorityApps": {
+                    "cd2d8695-bdc9-4d8e-9620-cc963ed81f41": "c92c289e-ceb4-4755-819d-0d1dffdab6fa"
+                }
+            },
+            "maxMemberCountForAdaptiveCardsAutomaticRefresh": 60,
+            "messagingExtensionMultiParamsEnabled": true,
+            "naa": {
+                "res": [
+                    {
+                        "id": "36b1586d-b1da-45d2-9b32-899c3757b6f8",
+                        "sc": [
+                            "openid",
+                            "profile",
+                            "offline_access",
+                            "api://taskmeow.com/botid-36b1586d-b1da-45d2-9b32-899c3757b6f8/access_as_user"
+                        ],
+                        "uri": "brk-multihub://taskmeow.com"
+                    }
+                ]
+            },
+            "placeholdersV2Enabled": true,
+            "reactNativeMonobridgeEnabled": true,
+            "responsiveLayoutForCardsEnabled": true
+        },
+        "pptBootstrapperUrl": "https://c5-powerpoint-15.cdn.office.net/pods/s/PptScripts/powerpoint.boot.js",
+        "recordingBotMri": "28:bdd75849-e0a6-4cce-8fc1-d7c0d4da43e5",
+        "removeMyActivity": true,
+        "resetBgSyncServiceWorker": true,
+        "resourcesSupportingSilentAuth": [
+            "https://whiteboard.microsoft.com",
+            "aa580612-c342-4ace-9055-8edee43ccb89",
+            "https://retailservices.teams.microsoft.com",
+            "https://walkietalkie.teams.microsoft.com",
+            "9ea1ad79-fdb6-4f9a-8bc3-2b70f96e34c7"
+        ],
+        "richTextBlockRecycling": true,
+        "roomControllerReactURL": "https://teams.microsoft.com/extensibility-apps/roomremote/list?host=teams",
+        "search": {
+            "enableEnqueueExceptionInterceptorForMsai": true
+        },
+        "semo": {
+            "loadInChannelEnabled": true
+        },
+        "sensitivityLabelsCopyProtectionEnabled": true,
+        "setTeamsDeviceIdDuringSkyLibSetup": true,
+        "shareContactAtMention": true,
+        "shouldDoFullPrune": false,
+        "shouldRemoveDBSizeGateToForcePrune": false,
+        "smartsummary": {
+            "enableSmartSummaryCitation": true
+        },
+        "smb": {
+            "useIntentV3API": true
+        },
+        "threadCacheEnabled": "true",
+        "threadCacheSize": 200,
+        "threadPropStreamingEnabled": true,
+        "threadPropertyAttributeCacheEnabled": "true",
+        "threadPropertyAttributeCacheSize": 200,
+        "threadUserCacheEnabled": "true",
+        "threadUserCacheSize": 200,
+        "trackWindowSwitches": true,
+        "unboldMutedChats": true,
+        "useBottomSheetUtility": true
+    },
+    "MicrosoftTeamsEcsPrototype": {
+        "addPreinstalledBotViaS2S": true,
+        "broadcastSchedulingEnabled": true,
+        "deprecateUserControllerGetUserRegion": true,
+        "enableAadInternalUserApi": true,
+        "enableAcctClaimInToken": true,
+        "enableAcmsTeamsBatchClient": false,
+        "enableAddBotsToRosterDuringGroupMigration": true,
+        "enableAppImageClaim": true,
+        "enableAppInstallationEvent": true,
+        "enableAutoAssignLicense": true,
+        "enableAutoDV1Fallback": true,
+        "enableBulkAddMembershipV2": true,
+        "enableBulkDeleteMembership": true,
+        "enableCachingForTenantSettings": true,
+        "enableCachingIsTenantAdmin": true,
+        "enableChatAppImageClaim": true,
+        "enableCloneTeam": false,
+        "enableDeeplinkEscapeDataEncoding": true,
+        "enableDefaultChannels": true,
+        "enableETag": true,
+        "enableEducationExtensionStamping": true,
+        "enableEwsFindUnifiedGroups": false,
+        "enableFreemium": true,
+        "enableFreemiumBootstrapTeamCreation": true,
+        "enableFreemiumConsumerIdTag": true,
+        "enableGetBatchWithEtagFromSettingsStore": true,
+        "enableGetCallGroupSettingsRequests": true,
+        "enableGetDeepLinkWithTenantIdOnly": true,
+        "enableGetRingtoneSettingsRequests": true,
+        "enableGetTokenByResourceUrl": true,
+        "enableGraphGroupSmtpAddress": true,
+        "enableGroupRenewal": true,
+        "enableGroupRenewalNotification": true,
+        "enableHidingGroupsInOutlook": true,
+        "enableIWTrialLicense": true,
+        "enableImageClaimsTobeNonCritical": true,
+        "enableInternalApiUserCache": true,
+        "enableInternalTools": true,
+        "enableLargeTeams": "true",
+        "enableLogBroadcastSchedulingRequest": true,
+        "enableMsGraphSiteProvisioning": true,
+        "enableMsaGuest": true,
+        "enableNiji": true,
+        "enableOMEXIntegration": false,
+        "enableOnDemandTranslationEndpoint": true,
+        "enableOneNoteForwardSyncPendingProvision": true,
+        "enableOnlineMeetingConfLink": true,
+        "enablePolicySettingsCleanUp": true,
+        "enableProfilePictureCropAndResize": true,
+        "enableRandomClassAvatars": true,
+        "enableReadingMeetingPolicyFromAcmsAndSS": true,
+        "enableRecentFilesGraphService": true,
+        "enableRecoverThreadV2": true,
+        "enableRedisCacheGetItemsPerformanceTest": true,
+        "enableResourceUrl": true,
+        "enableRestoreChannel": true,
+        "enableSetUserEmailDuringTenantBootstrap": true,
+        "enableSharePointRedirectSupport": true,
+        "enableSharepointRenameRecovery": true,
+        "enableSubstrateApiForSuggestedGroups": true,
+        "enableSyncTeamsRosterBulkAddMembersV2": true,
+        "enableTeamAggregatedAppEntitlementsAutoUpgrade": true,
+        "enableTeamAppEntitlementsUserConsentCheck": true,
+        "enableTeamArchiving": true,
+        "enableTeamNaming": true,
+        "enableTeamSiteStatusRetry": true,
+        "enableTeamsVtc": true,
+        "enableTenantAdminCheckInResourcesSettings": true,
+        "enableTenantOwnedApps": true,
+        "enableTenantSettingsControlForLobApps": true,
+        "enableTenantWideTeams": true,
+        "enableUnclaimedAppImageSubstitution": true,
+        "enableUseAadProfilePicturesForExternalUsers": true,
+        "enableUserCacheInRosterSync": true,
+        "enableUsersPeopleV1Endpoint": true,
+        "enableWopiActionEdit": true,
+        "graphApiFlight": true,
+        "msGraphAddMemberParallelCallLimit": 1,
+        "msGraphBatchAddMemberLimit": 25,
+        "splitThreadsInGetThreadsCall": true,
+        "teamMembersLimit": 2500,
+        "testFeature": true,
+        "testsettings": true,
+        "useRpoAndRboForGroupCreation": true
+    },
+    "MicrosoftTeamsRetailClients": {
+        "WalkieTalkie": {
+            "EnableAecAudioEffect": false,
+            "EnableAecSettingsVisibility": true,
+            "EnableAgcAudioEffect": false,
+            "EnableAgcSettingsVisibility": true,
+            "EnableChannelPickerTooltip": true,
+            "EnableGenericAndroidPttIntent": false,
+            "EnableLastConnectedChannels": true,
+            "EnableNetworkQualityTest": true,
+            "EnableNormalization": true,
+            "EnableNsAudioEffect": false,
+            "EnableNsSettingsVisibility": true,
+            "EnablePressAndHoldTooltip": true,
+            "EnablePrivateChannels": true,
+            "EnableUnpinnedSuggestedChannels": false,
+            "FF": {
+                "BLE_MAX_RETRIES": 5,
+                "DisplayBTDotIndicator": false,
+                "IsBleErrorSoundEnabled": false,
+                "NON_STICKY_FS_ENABLED": true,
+                "PttSCOTimerEnabled": false,
+                "SCOAutoAcquisitionEnabled": true,
+                "SCOAutoDisconnectEnabled": true,
+                "SCOAutoDisconnectMillis": 120000,
+                "UseNewBTStack": true
+            },
+            "HeadsetNormalizationThreshold": -60,
+            "LazyInitializationEnabled": true,
+            "MaxOutgoingCallDuration": 115000,
+            "NormalizationThreshold": -60,
+            "PrefetchTokenOnLoad": true,
+            "ShowParticipantFetchFailBanner": true,
+            "ShowPoorNetworkBanner": true,
+            "SuggestedChannelsRefreshInterval": 3600000
+        },
+        "WalkieTalkie.loggingWTExpIdsEnabled": true
+    },
+    "MicrosoftTeamsRetailIOSClients": {
+        "walkieTalkie": {
+            "audioPercentageMaxVolume": 0.96,
+            "bleDispatchQueue": "com.walkietalkie.corebluetooth",
+            "bleEnabled": true,
+            "bleEventHandlerDispatchQueue": "com.walkietalkie.bleeventhandler",
+            "bleMaxReconnectionRetries": 5,
+            "bleReconnectEnabled": true,
+            "bleScanStartDelay": 2000,
+            "bleScanStopDelay": 4000,
+            "bleUseCategoryChangeForDisconnect": false,
+            "enableAudioNormalization": true,
+            "enableBGExecution": true,
+            "enableQuietHoursSupport": true,
+            "enableWarningLowVolume": true,
+            "lowMediaVolumePercentageThreshold": 0.3,
+            "maxOutgoingCallDuration": 120000,
+            "normalizationThreshold": -60,
+            "receiverMaxInactivityTime": 3000,
+            "shortCallDuration": 1000,
+            "shortCallsWindowDuration": 2000,
+            "transmitterMaxInactivityTime": 2000,
+            "useWebSocketStateMachineBehavior": false,
+            "userbiTeamsAriaEnabled": true
+        }
+    },
+    "MicrosoftTeamsVVM": {
+        "AriaIngestionKey": "c97dbd2847dd4581aad671304912e1b3-58eac150-f68e-4262-84dd-7b4a507c620e-7329",
+        "EnableAnalyticsFromOtherAppsUI": true,
+        "EnableEMRExportAPIV2": true,
+        "EnableNoShowAggregation": true,
+        "EnablePremiumVaExport": true,
+        "EnableQueueInPremiumVAReport": true,
+        "EnableSmsReportLicenseBanner": false,
+        "EnableVirtualAppointmentsInsights": true,
+        "PremiumVaExportTimeoutInMills": 30000,
+        "TakebackBannerYellowBackground": false
+    },
+    "Notifications": {
+        "PNMRegistrarRest": {
+            "AuthRetryListSeconds": [
+                1,
+                3,
+                5,
+                60,
+                300
+            ],
+            "CbcOn": 1,
+            "CrawlRetry": 120,
+            "HttpStackConfig": {
+                "connectionTimeout": 30,
+                "requestTimeout": 60
+            },
+            "ProdEnvURL": "https://edge.skype.com:443/registrar/prod/V2/registrations",
+            "PushNotificationRegistrarImpl": "REST",
+            "RetryPolicy": {
+                "Base": 3,
+                "MaxExponent": 5,
+                "Start": 6
+            },
+            "TestEnvURL": "https://edge.skype.net:443/registrar/testenv/V2/registrations"
+        }
+    },
+    "ODSP_MEE_Mobile": {
+        "ExternalModal": true,
+        "L1CardsUpdateDelay": 20,
+        "ResizeFRE": true,
+        "ariaLogLevel": 4,
+        "cardNotificationModalTitleWithAppNameEnabled": true,
+        "configAPICacheRefreshTime": 86400000,
+        "cookieRefreshInterval": 5,
+        "disableL2UserAgent": true,
+        "disableRemoveClippedSubviews": true,
+        "enableAnnouncementCaching": true,
+        "enableCompanyGridViewForResourcesTab": false,
+        "enableJSIStorage": true,
+        "enableSearchHeaderMobile": true,
+        "enableSearchHeaderinLargeScreen": true,
+        "enableV3CompanyResourceGridViewForResourcesTab": true,
+        "initializeFeedInLinkManager": true,
+        "is400BadRequestFixEnabled": true,
+        "isAnnouncementsEnabled": true,
+        "isAppNameInModalTitleEnabled": true,
+        "isAuthEnabledForBackgroundImage": true,
+        "isBackedSiteEnabled": true,
+        "isBackgroundEnabledForIOSSpinner": true,
+        "isBootToTabEventEnabled": true,
+        "isBridgeMsgQueueEnabled": true,
+        "isBridgeURLBGFetchEnabled": true,
+        "isCardNotificationEnabled": true,
+        "isCardNotificationPayloadLogEnabled": true,
+        "isConfigApiEnabled": true,
+        "isConfirmationDialogEnabled": true,
+        "isConsoleErrorServiceEnabled": true,
+        "isCookieAttachedToApiBugFixEnabled": true,
+        "isCookieManagerEnabled": true,
+        "isCookieRetryAfter401EnabledForBridge": true,
+        "isCopilotCardViewEnabled": true,
+        "isCrashHandlerServiceEnabled": true,
+        "isCreateAbsoluteUrlEnabled": true,
+        "isDarkModeEnabledForExternalModal": true,
+        "isDarkThemeEnabled": true,
+        "isDashDevSettingsEnabled": false,
+        "isDashErrorHandlingEnabled": true,
+        "isDashErrorScreenDebugMsgEnabled": true,
+        "isDashboardCustomizeScreenFiltered": true,
+        "isDashboardDiagnosticDataEnabled": false,
+        "isDashboardFLEEnabled": true,
+        "isDashboardGridLayoutEnabledForIpad": true,
+        "isDashboardGridLayoutEnabledForLargerScreen": true,
+        "isDashboardGridLayoutEnabledForMobile": true,
+        "isDashboardLKGStateEnabled": false,
+        "isDashboardLoadRetryonBridgeRedirect": true,
+        "isDashboardPersonalizationEnabled": true,
+        "isDashboardPersonalizationEnabledForLargeScreen": true,
+        "isDashcardCacheExpiryExpEnabled": true,
+        "isDeepLinkEnabled": true,
+        "isDevKitchenEnabled": false,
+        "isDevSettingsV2Enabled": true,
+        "isDeviceLogsEnabled": true,
+        "isEUDBLoggingEnabled": true,
+        "isEndActionQoSOnUrlNavEnabled": true,
+        "isFLMAnnouncementEnabled": true,
+        "isFREEnabled": true,
+        "isFREEnabledForIPad": true,
+        "isFREEnabledForLargeScreen": true,
+        "isFileCheckEnabled": true,
+        "isFileOpenInModalCheckEnabled": false,
+        "isForceLocaleQSPEnabledForGlobalNav": true,
+        "isForceLocaleQSPEnabledForSP": true,
+        "isForceLocaleQspEnabled": true,
+        "isFullCardSelectionEnabled": true,
+        "isGreetingsEnabled": false,
+        "isHandleL2SPFX1PTokenEnabled": true,
+        "isHashEncodingEnabled": true,
+        "isHeroImageEnabled": true,
+        "isInstanceSpecificPWWEnabledForSPL2": true,
+        "isInstantArticleEnabledForDeepLink": true,
+        "isInstantArticleEnabledForL2": true,
+        "isInterceptViaLinkManagerEnabled": true,
+        "isL1CardsBatchUpdateEnabled": true,
+        "isL1CardsDisappearingEnabled": true,
+        "isL2BackButtonListenerEnabled": true,
+        "isL2ErrorDescriptionEnabled": true,
+        "isL2ServiceWorkerEnabled": true,
+        "isL2SpinnerPositionFixEnabled": true,
+        "isLKGHydrationForIsolatedCardsEnabled": true,
+        "isLandscapeModeEnabledforiOSModals": true,
+        "isLinkManagerShouldComponentUpdateFixEnabled": true,
+        "isLocationActionEnabled": true,
+        "isMeeSpHistoryScriptV2Enabled": true,
+        "isMobileLandscapeEnableforResources": true,
+        "isModernClassicCheckEnabled": true,
+        "isMoreSettingsEnabled": true,
+        "isMultiInstanceContextEnabled": true,
+        "isMultiInstanceEventEmitterEnabled": true,
+        "isNestedAppAuthBridgeEnabled": true,
+        "isNestedAppAuthBridgeForDashboardL2Enabled": true,
+        "isNewPersonalizationKeyEnabled": true,
+        "isNewsLinkNewExpEnabled": true,
+        "isOdLoggerDebugLogsEnabled": true,
+        "isOnloadProgressUpdate": true,
+        "isOpenDocumentInterceptionEnabled": true,
+        "isPageContextFetchingEnabled": true,
+        "isPageInfoContentTypeHeaderEnabled": true,
+        "isPageInfoResponseTextLoggingEnabled": false,
+        "isPerfMetricEnabledInDevSettings": true,
+        "isPreInitializeCardsData": true,
+        "isPrivacyGuardDevModeEnabled": true,
+        "isQVDarkModeEnabled": true,
+        "isQVGetSizeFixEnabled": true,
+        "isQVModalOverModalEnabled": true,
+        "isQuickHomeSiteAccessEnabled": true,
+        "isQuickLookEnabled": true,
+        "isQuickViewStylingforLargeScreenEnabled": true,
+        "isQuickViewStylingforiPadEnabled": true,
+        "isReauthIdDisabled": true,
+        "isRedeemSharingHeaderEnabled": true,
+        "isRedirectedToLoginPageDisabled": true,
+        "isRegionalCommsAnnouncementsEnabled": true,
+        "isResourcesTabEnabled": true,
+        "isSPALinkInterceptionEnabled": true,
+        "isSPBackHandlingEnabled": true,
+        "isSPCookieBGFetchEnabled": true,
+        "isSPFx1PTokenFetchEnabled": true,
+        "isSPFxCookieEnabledForIsolatedBridge": true,
+        "isSPFxDataVisualizationComponentEnabled": true,
+        "isSPFxImageUserAgentEnabled": true,
+        "isSPFxIsolatedCookieFetchForAndroidEnabled": true,
+        "isSPFxTokenFetchForAppPrincipalsEnabled": true,
+        "isSPFxTokenFetchWithAuthClaimAPI": false,
+        "isSPFxTokenFetchwithAPIFormatDisabled": true,
+        "isSPPeopleCardEnabled": true,
+        "isSPSiteNavAudienceTargetingEnabled": true,
+        "isSPSiteNavEnabled": true,
+        "isSPSocialBarEnabled": true,
+        "isSVGAndFluentSupportEnabledForQV": true,
+        "isSearchCardComponentsEnabled": true,
+        "isSelectMediaActionEnabled": true,
+        "isSelectMediaActionV2Enabled": true,
+        "isSharePointThemeEnabled": true,
+        "isSkipFoldersFromInterception": true,
+        "isSsoSupportedViaTokenFetch": true,
+        "isSsoViaDeepLinkEnabled": true,
+        "isSsoViaTokenFetchEnabled": true,
+        "isStreamNewExpEnabled": true,
+        "isSwaySSOTempFixEnabled": true,
+        "isTabletErrorHandlingEnabled": false,
+        "isTeamsLinkOpenInAppFromQVEnabled": true,
+        "isThirdPartyCookiesEnabledForBridge": true,
+        "isURLLoggingEnabled": true,
+        "isURLLoggingEnabledForPageInformation": true,
+        "isUrlDecodingEnabledInLinkManager": true,
+        "isVCMCookieInvalidateEnabledOn401": true,
+        "isVCMEnabledForLargeScreen": true,
+        "isVCMEnabledForiPad": true,
+        "isVCMLandscapeSupportEnabled": true,
+        "isVerboseLoggingForDebuggingEnabled": false,
+        "isVideoNewsExperienceEnabled": true,
+        "isYammerL2WebViewEnabled": true,
+        "loadingProgress": 0.65,
+        "onlyNewSchemaLog": false,
+        "shouldByPassFLWLicenseCheck": false,
+        "shouldLogAsyncStorageTime": true,
+        "shouldReloadBridgeOnPullRefresh": true,
+        "shouldShowResourcesBanner": true,
+        "shouldUseBaseUrlForNestedAppAuth": true,
+        "shouldUseProdChatSvcAggUri": true,
+        "showBookmarkIcon": false,
+        "showSettingsPageIcon": true,
+        "showSnackbarInBridgeLoadIssuesForV2Components": true,
+        "showVivaIcon": true,
+        "svgHeroImageSizeLimit": 200000,
+        "throttlingValueForTaps": 200,
+        "triggerSPFxTokenFetchOnAppInit": false,
+        "useCookieForAsJsonAPI": true
+    },
+    "OpConfig": {
+        "FELayer": {
+            "CT2": false
+        }
+    },
+    "OsamaTest": {
+        "Config": {
+            "BlackListConfig": {
+                "TenantIds": [
+                    "tenant2"
+                ]
+            }
+        }
+    },
+    "PeopleImport": {
+        "endpoint": "https://peopleimport.skype.com/v1.0",
+        "serviceSettings": {
+            "enabled": "true",
+            "experiment": "default"
+        }
+    },
+    "PeopleRecommendation": {
+        "cacheTimeoutInHours": 240,
+        "endpoint": "https://peoplerecommendations.skype.com/v1.1/recommend",
+        "serviceSettings": {
+            "experiment": "hide-annotations-3",
+            "minMutualFriendsToHideAnnotations": 3,
+            "recommend": "true",
+            "showRecommendationsFromGraph": "false",
+            "showRecommendationsFromScd": "true",
+            "showRecommendationsFromScdGraph": "false"
+        }
+    },
+    "PeopleSearch": {
+        "serviceSettings": {
+            "demotionScoreEnabled": "true",
+            "experiment": "Default",
+            "geoProximity": "disabled"
+        },
+        "v2Endpoint": "https://skypegraph.skype.com/v2.0/search"
+    },
+    "PortalWebClient": {
+        "CSP": "default-src 'self' blob: https://*.skype.com https://*.skypeassets.com; script-src https://*.skype.com https://*.skypeassets.com https://www.bing.com https://*.virtualearth.net https://*.arkoselabs.com 'unsafe-eval' 'report-sample'; style-src 'self' https://*.skype.com https://*.skypeassets.com https://www.bing.com 'unsafe-inline'; worker-src 'self' blob:; frame-ancestors 'self' https://*.skype.com https://login.microsoftonline.com; connect-src 'self' blob: data: https://*.api.cognitive.microsoft.com/text/analytics/v2.1/entities https://*.cognitiveservices.azure.com/text/analytics/v2.1/entities https://*.msn.com https://browser.events.data.microsoft.com https://*.skype.com https://*.skypeassets.com https://*.bing.com https://*.live.com https://*.aria.microsoft.com https://*.trouter.io wss://*.skype.com wss://*.skype.com:443 https://*.bingapis.com wss://wsapi.skype.net wss://wsapi-dev.skype.net wss://wsapi-qa.skype.net https://*.virtualearth.net https://search.knowledge.store https://outlook.office.com https://dynmsg.modpim.com https://teams.microsoft.com https://*.teams.microsoft.com https://login.microsoftonline.com https://login.windows.net https://substrate.office.com/ https://rink.hockeyapp.net/ https://*.translatorv2.skype.net https://graph.microsoft.com http://www.msftconnecttest.com/ https://api.cortana.ai/ https://gateway.zscaler.net https://gateway.zscalerone.net https://gateway.zscalertwo.net https://gateway.zscalerthree.net https://gateway.zscloud.net https://login.zscalerone.net https://api.tenor.com https://*.msedge.net https://outlook.office365.com https://*.measure.office.com https://api.msn.com https://in.appcenter.ms/logs https://gateway.bingviz.microsoftapp.net https://gateway-skype.bingviz.microsoftapp.net https://eagle.sapphire.microsoftapp.net https://taonow.blob.core.windows.net/ https://flighting.aps.skype.com/ https://*.arkoselabs.com https://*.bing.net/ https://livecms.secure.skypeassets.com; img-src data: blob: https://*.skype.com https://*.skypeassets.com https://*.skypeassets.net https://*.storage.msn.com https://*.storage.live.com https://skypeapps.azureedge.net https://bot-framework.azureedge.net https://botavatar.azureedge.net https://mscorpmedia.azureedge.net https://livecms.secure.skypeassets.com https://botresources.blob.core.windows.net https://*.bing.com https://*.bingapis.com https://*.virtualearth.net https://igx.4sqi.net https://fastly.4sqi.net https://outlook.office.com https://login.microsoftonline.com https://login.windows.net https://*.1drv.com https://spoprod-a.akamaihd.net https://*.measure.office.com https://*.msedge.net https://outlook.office365.com https://*.measure.office.com https://substrate.office.com https://outlook.live.com https://img-s-msn-com.akamaized.net https://assets.msn.com https://assets.msn.cn https://mschannelscdnprod.azureedge.net https://taonow.blob.core.windows.net/ https://cdn.query.prod.cms.msn.com https://*.bing.com https://*.bing.net https://*.lexisnexis.com https://*.giphy.com; media-src skypevideo: blob: https://*; font-src data: https://*.skype.com https://*.skype.net https://*.skypeassets.com; form-action 'self' data: https://login.skype.com https://login.live.com; child-src blob: https://*.skype.com https://*.skype.net https://login.skype.com https://login.live.com https://*.bing.com https://login.microsoftonline.com/ https://skypeapps.azureedge.net/ https://www.msn.com/ https://taonow.azureedge.net/ https://*.arkoselabs.com; report-uri https://edge.skype.com/r/c; block-all-mixed-content ",
+        "CallEcsPerRequest": true,
+        "IsMurphyProtected": false,
+        "PrefetchLinksJoin": "[{\"Url\":\"https://join.secure.skypeassets.com\",\"Rel\":\"preconnect\",\"IsCors\":false},{\"Url\":\"https://a.lw.skype.com\",\"Rel\":\"preconnect\",\"IsCors\":false},{\"Url\":\"https://login.live.com\",\"Rel\":\"preconnect\",\"IsCors\":false},{\"Url\":\"https://api.join.skype.com\",\"Rel\":\"preconnect\",\"IsCors\":true},{\"Url\":\"https://web.skype.com\",\"Rel\":\"preconnect\",\"IsCors\":false},{\"Url\":\"https://secure.skypeassets.com\",\"Rel\":\"preconnect\",\"IsCors\":false},{\"Url\":\"https://secure.skypeassets.com\",\"Rel\":\"preconnect\",\"IsCors\":true},{\"Url\":\"https://browser.pipe.aria.microsoft.com\",\"Rel\":\"preconnect\",\"IsCors\":true},{\"Url\":\"https://browser.pipe.aria.microsoft.com\",\"Rel\":\"preconnect\",\"IsCors\":false},{\"Url\":\"https://secure.skypeassets.com/wcss/__ASSETSVERSION__/js/vendor2.js\",\"Rel\":\"prefetch\",\"IsCors\":true},{\"Url\":\"https://secure.skypeassets.com/wcss/__ASSETSVERSION__/js/calling.js\",\"Rel\":\"prefetch\",\"IsCors\":true},{\"Url\":\"https://secure.skypeassets.com/wcss/__ASSETSVERSION__/js/core.js\",\"Rel\":\"prefetch\",\"IsCors\":true},{\"Url\":\"https://secure.skypeassets.com/wcss/__ASSETSVERSION__/js/messaging.js\",\"Rel\":\"prefetch\",\"IsCors\":true},{\"Url\":\"https://secure.skypeassets.com/wcss/__ASSETSVERSION__/js/vendor.js\",\"Rel\":\"prefetch\",\"IsCors\":true},{\"Url\":\"https://secure.skypeassets.com/wcss/__ASSETSVERSION__/js/app.js\",\"Rel\":\"prefetch\",\"IsCors\":true}]",
+        "S4LAssetsVersion": "8.138.0.213",
+        "S4LAssetsVersion-Default-Preview": "8.138.76.213",
+        "TFL": {
+            "GDPRExportPage": {
+                "Enabled": true
+            }
+        },
+        "isEligible": true,
+        "isGuesthostFacebookSharingEnabled": true
+    },
+    "PstnHub": {
+        "AcsEntitlement": {
+            "Enabled": true,
+            "FreeCall": false,
+            "SipInterfaceEnabled": true
+        },
+        "AcsTrunkConfigOverridesInbound": {
+            "ExtensionParameters": {}
+        },
+        "AcsTrunkConfigOverridesOutbound": {
+            "ExtensionParameters": {
+                "EnableUpdate": "true"
+            }
+        },
+        "BVTrunkConfigOverridesInbound": {
+            "ExtensionParameters": {}
+        },
+        "BVTrunkConfigOverridesOutbound": {
+            "ExtensionParameters": {}
+        },
+        "ConsumerCaptchaIvrBot": {
+            "Enabled": "true",
+            "Enforced": "false"
+        },
+        "ConsumerTrunkConfigOverridesInbound": {
+            "ExtensionParameters": {
+                "DisableForkingNotification": "true",
+                "DisableSessionTimer": "true"
+            }
+        },
+        "ConsumerTrunkConfigOverridesOutbound": {
+            "ExcludedCodecs": "SILK_16, G722_2, G722, SIREN, SILK_8, G729, CN_16, RED_8,CN_8",
+            "ExtensionParameters": {
+                "DisableSessionTimer": "true"
+            }
+        },
+        "MfaTrunkConfigOverridesOutbound": {
+            "ExcludedCodecs": "SILK_16, G722_2, G722, SIREN, SILK_8, G729, CN_16, RED_8,CN_8",
+            "ExtensionParameters": {
+                "DisableSessionTimer": "true",
+                "EnableUpdate": "true"
+            },
+            "PreferredCodecOrder": "PCMU, PCMA"
+        },
+        "TrunkConfigOverridesInbound": {
+            "CallConnectionIndication": "Fake180",
+            "ExtensionParameters": {}
+        },
+        "TrunkConfigOverridesOutbound": {
+            "ExtensionParameters": {}
+        },
+        "WholesaleTrunkConfigOverridesOutbound": {
+            "ExcludedCodecs": "SILK_16, G722_2, G722, SIREN, SILK_8, G729, CN_16, RED_8,CN_8",
+            "ExtensionParameters": {
+                "DisableSessionTimer": "true"
+            },
+            "PreferredCodecOrder": "PCMU, PCMA"
+        }
+    },
+    "RichNotifications": {
+        "BlockedTelemetryColumns": [
+            "FeatureName",
+            "Password"
+        ]
+    },
+    "RtcPalVideoConfiguration": {
+        "EnablePanoWithAnyAspectRatio": "0"
+    },
+    "S4L": {
+        "unsafeTraceAreas": [
+            136,
+            252
+        ]
+    },
+    "S4L_CMC": {
+        "bingBackgrounds": {
+            "enableDataChannel": false,
+            "enableImageDownload": false,
+            "enableRoster": true,
+            "enabled": true,
+            "host": "https://www.bing.com",
+            "iconCountInHeader": 2,
+            "path": "/hp/api/v1/imagegallery?format=json&setmkt=[LOCALE]&today=1",
+            "pickImageBasedOnUserIdHash": false,
+            "retryDataChannelDelayMs": 100,
+            "retryDataChannelMaxNumber": 3,
+            "retryDataChannelSendOnError": true,
+            "sendBackgroundInfoUpdates": false,
+            "showBackgroundCaptions": true,
+            "showInCallFooter": true,
+            "showInSettings": false,
+            "throttleIntervalMs": 500,
+            "tryOpenInAppBrowser": true,
+            "useBingLogoInsteadOfSearchIcon": true
+        },
+        "mediaRetryPolicy": {
+            "countLocalNetworkFailures": true,
+            "maxPostElapsedTime": 300000,
+            "maxRetries": {
+                "downloadService_download": 10,
+                "postingService_amsUpFullContent": 5,
+                "postingService_postChatMessage": 1000000000,
+                "postingService_postChatMessageForeground": 1000000000,
+                "postingService_updateChatMessageProperties": 3,
+                "postingService_urlPreviewFetching": 3
+            },
+            "maxRetriesDefault": 5
+        }
+    },
+    "S4L_Caap": {
+        "adaptiveCardAttributionAssets": [
+            {
+                "asset": "\ue015",
+                "name": "Bing API"
+            },
+            {
+                "asset": "\ue015",
+                "name": "Bing"
+            }
+        ],
+        "adaptiveCards": {
+            "attributionAssets": [
+                {
+                    "asset": "\ue015",
+                    "name": "Bing API"
+                },
+                {
+                    "asset": "\ue015",
+                    "name": "Bing"
+                }
+            ],
+            "enableSharing": false,
+            "imagePrefetchEnabled": true,
+            "placeholderLoadingTimeout": 1000
+        },
+        "suggestions": {
+            "suggestionIdTelemetryEnabled": true
+        }
+    },
+    "S4L_Commerce": {
+        "callFailure": {
+            "callFailurePrompt": {
+                "copiesOption": "positive",
+                "enabled": false,
+                "layoutOption": "creditOnly"
+            },
+            "smsFailurePrompt": {
+                "enabled": false
+            },
+            "tasterPostCall": {
+                "enabled": false
+            }
+        },
+        "callerIdCTA": {
+            "ignoreCallTerminatedReasons": [
+                14,
+                15,
+                16,
+                17,
+                18,
+                19,
+                20,
+                21,
+                22,
+                23,
+                33,
+                36,
+                37
+            ]
+        }
+    },
+    "S4L_Config": {
+        "endpointPresence": {
+            "inactiveEndpointTimeout": 0
+        }
+    },
+    "S4L_Contacts": {
+        "allowCallsFromContactsOnly": false,
+        "consumeLegacyInvites": false,
+        "enableAddContactsFlow": true,
+        "enableAddPstnContact": false,
+        "enableAddressBook": false,
+        "enableAvatarLoadErrorTracking": false,
+        "enableDeviceIdForShortcircuit": false,
+        "enableEditPSTNContact": false,
+        "enableEditSkypeContact": false,
+        "enableGroupInviteFree": true,
+        "enableGroupShareButtonInChat": false,
+        "enableIOSAutoBuddy": false,
+        "enableInviteFree": true,
+        "enableInviteFreeQuarantineContactResync": false,
+        "enableLoadingIndicatorInSearchInput": true,
+        "enableMacSyncAddressBook": false,
+        "enableMeControl": false,
+        "enableNewConnectionMessage": false,
+        "enableNewContactsIcon": true,
+        "enableNewContactsPanel": false,
+        "enableNewInviteShareUI": true,
+        "enableNewSettings": false,
+        "enableSearchFeedback": false,
+        "enableShowSignedInAs": false,
+        "overrideWithAddressBookName": false,
+        "sendLegacyInvite": false,
+        "shortCircuitHashBatchSize": 200,
+        "shortCircuitSyncMatchLimit": 0,
+        "userTrackingTelemetryEnabled": true
+    },
+    "S4L_Engagement": {
+        "clientTriggeredEngagement": {
+            "campaignIdFiltering": {
+                "campaignIds": "test-scenario_engagementapi",
+                "enabled": true
+            },
+            "enabled": true
+        },
+        "coachMarks": {
+            "defaultTimeoutSeconds": 2419200,
+            "enabled": false,
+            "forceDisplayEnabled": false,
+            "maxBulkSize": 10
+        },
+        "conciergeBlockedMessageTypes": [
+            "RichText",
+            "RichText/Media_FlikMsg",
+            "RichText/Media_Card"
+        ],
+        "enableExternalBrowserLinkOpen": true,
+        "enableInAppBrowserLinkOpen": true,
+        "enableNoticeMessageSubscription": false,
+        "enabledNoticeMessageContentTypes": [],
+        "engagementOfflineTargetedPullSetting": {
+            "enabled": true
+        },
+        "engagementSenderIdentity": [
+            "28:concierge",
+            "28:concierge_df"
+        ],
+        "maxNoticeBulkSize": 20,
+        "maxPopCardBulkSize": 10,
+        "noticeDefaultTimeoutSeconds": 2419200,
+        "notices": {
+            "defaultTimeoutSeconds": 2419200,
+            "enabled": false,
+            "enabledMessageContentTypes": [],
+            "maxBulkSize": 20,
+            "schemaVersion": [
+                1
+            ]
+        },
+        "popCardDefaultTimeoutSeconds": 2419200,
+        "popCards": {
+            "backButtonEnabled": true,
+            "defaultTimeoutSeconds": 2419200,
+            "enabled": false,
+            "escKeyEnabled": true,
+            "imagePreloadEnabled": true,
+            "maxBulkSize": 10,
+            "toggleCloseOnLeft": false,
+            "uiVersion": 1
+        }
+    },
+    "S4L_Feedback": {
+        "inClientFeedback": {
+            "enabled": false
+        },
+        "serviceAlerts": {
+            "enabled": false
+        }
+    },
+    "S4L_Messaging": {
+        "bingPlacesAppId": "D41D8CD98F00B204E9800998ECF8427E1FBE79C2",
+        "limitForFilePicker": 10,
+        "pesPickerCategoryOrder": [
+            "emoticon",
+            "gif",
+            "sticker"
+        ]
+    },
+    "S4L_SISU": {
+        "aadLoginEnabled": false
+    },
+    "S4L_Search": {
+        "enableDesktopSearchDebounce": true,
+        "enableFallbackLinkDirectorySearch": true,
+        "enableNewDesktopSearch": true,
+        "enableSearchConfigImprovements": true,
+        "enableSearchPerfBoost": true,
+        "enableSplitPolicySettings": true,
+        "enableTabFilters": true,
+        "enableUnifyHubSearch": true,
+        "hideInactivePublicDirectoryResults": false,
+        "preMountSearch": true,
+        "seeMorePublicDirectoryResults": true
+    },
+    "S4L_UI": {
+        "showIncomingAlertsForAccessibility": true
+    },
+    "SCT": {
+        "Priority": {
+            "baca4c4fb3c842318f5c83f97f9553df": {
+                "Default": 0
+            }
+        }
+    },
+    "SMSClient": {
+        "SMSManager": {
+            "DlrViaMsnp": {
+                "Enabled": 1
+            },
+            "Msnp": {
+                "Enabled": 2
+            },
+            "PriceInfoAzure": {
+                "Enabled": 1,
+                "Hostname": "skypesmssfe.trafficmanager.net",
+                "HttpConnectionTimeout": 30,
+                "HttpFirstDelay": 3,
+                "HttpMaxParallelRequests": 2,
+                "HttpNextDelayFactor": 200,
+                "HttpRequestTimeout": 60,
+                "HttpRetries": 3,
+                "MaxBatchSize": 10
+            },
+            "Telemetry": {
+                "AriaToken": "8a2fbd2e7ad744efb18510a1cdb7bb00-24ad87f8-b0e2-43e7-a575-aaea0e4678e2-7461",
+                "Enabled": 1
+            }
+        }
+    },
+    "SWG": {
+        "UrlGeneratorService": {
+            "Endpoints": {
+                "Threads": "/threads"
+            },
+            "Host": "api.scheduler.skype.com",
+            "IsEnabled": true,
+            "Port": 443
+        },
+        "WebLauncher": {
+            "BaseUrl": "https://join.skype.com/launch/"
+        },
+        "allowAll": true,
+        "iosFileContent": "ew0KICAiYXBwbGlua3MiOiB7DQogICAgImFwcHMiOiBbXSwNCiAgICAiZGV0YWlscyI6IFsNCiAgICAgIHsNCiAgICAgICAgImFwcElEIjogIjI1RUsyTVdOQTUuY29tLnNreXBlLnNreXBlIiwNCiAgICAgICAgInBhdGhzIjogWyAiTk9UIC9ib3QvKiIsICIqIiBdDQogICAgICB9LA0KICAgICAgew0KICAgICAgICAiYXBwSUQiOiAiMjVFSzJNV05BNS5jb20uc2t5cGUuU2t5cGVGb3JpUGFkIiwNCiAgICAgICAgInBhdGhzIjogWyAiTk9UIC9ib3QvKiIsICIqIiBdDQogICAgICB9LA0KICAgICAgew0KICAgICAgICAiYXBwSUQiOiAiQUw3OThLOThGWC5jb20uc2t5cGUudG9tc2t5cGUiLA0KICAgICAgICAicGF0aHMiOiBbICJOT1QgL2JvdC8qIiwgIioiIF0NCiAgICAgIH0sDQogICAgICB7DQogICAgICAgICJhcHBJRCI6ICJVM0NTNzc5OVdZLmNvbS5za3lwZS5tb2Rlcm4uY29yZWxpYiIsDQogICAgICAgICJwYXRocyI6IFsgIk5PVCAvYm90LyoiLCAiKiIgXQ0KICAgICAgfSwNCiAgICAgIHsNCiAgICAgICAgImFwcElEIjogIlUzQ1M3Nzk5V1kuY29tLnNreXBlLm1vZGVybi5pbnRlcm5hbCIsDQogICAgICAgICJwYXRocyI6IFsgIk5PVCAvYm90LyoiLCAiKiIgXQ0KICAgICAgfSwNCiAgICAgIHsNCiAgICAgICAgImFwcElEIjogIkxFMkpLM00yVDQuY29tLnNreXBlLm1vZGVybi5kZWJ1ZyIsDQogICAgICAgICJwYXRocyI6WyAiTk9UIC9ib3QvKiIsICIqIiBdDQogICAgICB9LA0KICAgICAgew0KICAgICAgICAiYXBwSUQiOiAiVTNDUzc3OTlXWS5jb20uc2t5cGUubW9kZXJuLmRvZ2Zvb2QiLA0KICAgICAgICAicGF0aHMiOlsgIk5PVCAvYm90LyoiLCAiKiIgXQ0KICAgICAgfSwNCiAgICAgIHsNCiAgICAgICAgImFwcElEIjogIjVCTlJIVjhIWTguY29tLnNreXBlLnNhcmwuZGVidWciLA0KICAgICAgICAicGF0aHMiOlsgIk5PVCAvYm90LyoiLCAiKiIgXQ0KICAgICAgfSwNCiAgICAgIHsNCiAgICAgICAgImFwcElEIjogIlUzQ1M3Nzk5V1kuY29tLnNreXBlLmNvbW11bmljYXRpb25zLmRlYnVnIiwNCiAgICAgICAgInBhdGhzIjpbICJOT1QgL2JvdC8qIiwgIioiIF0NCiAgICAgIH0NCiAgICBdDQogIH0NCn0NCg==",
+        "iosIpOverride": [
+            "127.0.0.1"
+        ],
+        "isEligible": false
+    },
+    "Segmentation": {
+        "AudienceGroup": "general",
+        "Cloud": "Public",
+        "M365InnerRing": "false",
+        "Mocha": "false",
+        "PNSDFList": "false",
+        "TeamsRing": "general",
+        "TelemetryRegion": "ROW",
+        "VivaPulseInternal": "false",
+        "m365chatallow": "false",
+        "vivaskillsuxpreview": "false",
+        "vivaskillsuxpreview2": "false"
+    },
+    "SkypeAudioLibrary": {
+        "ECS_ADSP_AH_Disable_PerFrame_CN_Flag": "1",
+        "ECS_ADSP_AH_NWQClassifier_JitterMsThreshold": "500",
+        "ECS_ADSP_AH_NWQClassifier_LossPercentThreshold": "20",
+        "ECS_ADSP_EnableG729": "1",
+        "ECS_ADSP_JB_Delay_Margin_Ms": "60",
+        "ECS_ADSP_JB_ForceTransportMode": "1",
+        "ECS_ADSP_JB_MinDelay_Ms": "20",
+        "ECS_ADSP_JB_Symmetric_Delay_Margin_Action": "0",
+        "ECS_ADSP_VQE_unityInitialDAGCWithNoAAGC": "0",
+        "ECS_AudioDL_Kingstone": "0",
+        "EngineTimerIn100ns": "100000",
+        "NetworkIndicator_BandwidthPoorLimitBps": 12500000,
+        "NetworkIndicator_BandwidthPoorLimitHadVideoBps": 681250,
+        "UseClockRateForCNSupport": "true"
+    },
+    "SkypeBilling": {
+        "consumer-entitlement": {
+            "groups": {
+                "calling": [
+                    "plan",
+                    "package"
+                ],
+                "online-numbers": [
+                    "skypein",
+                    "skypein2"
+                ],
+                "personal-expressions": [
+                    "moiji"
+                ]
+            }
+        }
+    },
+    "SkypeCalling": {
+        "csaTimeoutConfiguration": {
+            "udpCanaryTimeoutMs": 2000
+        },
+        "csaTimeoutConfiguration.OutgoingGroupKeySetupOperationBufferTimeout": 5,
+        "csaTimeoutConfiguration.groupKeyUpdateOperationBatchingMaxTimeout": 10,
+        "csaTimeoutConfiguration.incomingGroupKeySetupOperationBufferTimeout": 5,
+        "csaTimeoutConfiguration.localGroupKeyUpdateOperationBufferTimeout": 10,
+        "disableForwardingTimerOnClient": true,
+        "disableRemoteVideosCountChanged": true,
+        "disableResetParticipantCallStateEvents": true,
+        "enableCallElevation": true,
+        "enableOperationIdempotency": true,
+        "enableShareVideoWithoutAudio": true,
+        "gtcHandshakeSendDelay": "{\"minParticipantThreshold\":100,\"increaseEveryN\":100,\"delayPerN\":6000,\"maxDelay\":60000}",
+        "mcr": {
+            "enabled": true,
+            "getMissedCallsUrl": "/clients/v1/users/skype/%destinationId%/missed-calls?anchor=",
+            "markReadStatusUrl": "/clients/v1/users/skype/%destinationId%/missed-calls/%anchor%/read-status?value=read",
+            "serviceFqdn": "https://api.mcr.skype.com"
+        },
+        "nativeAdmitRejectionAsTransactionEnd": true,
+        "p2pForkDelayInMs": -1,
+        "webAdmitRejectionAsTransactionEnd": true
+    },
+    "SkypeEngagement": {
+        "experiments": {
+            "bing-bot-toolbox-engagement-campaign": "bing-bot-toolbox-engagement-campaign-varianta",
+            "campaign-intercept-meetnow": "campaign-intercept-meetnow-varianta",
+            "campaignnotifymyfriendspush": "notifymyfriends-public-originname",
+            "cmrc-orderdeliverycredit": "cmrc-orderdeliverycredit-notice-callspanel",
+            "cmrc-use-your-credit": "use-your-credit-remaining",
+            "first-cmrc-use-your-credit": "use-your-credit-didyouknow",
+            "firststrike": "firststrike-varianta",
+            "fraud_notification-partial_block": "fraud-partial-block-generic",
+            "gdpr-export-failure": "gdpr-export-failure-a",
+            "gdpr-export-success": "gdpr-export-success-a",
+            "highlightsdeprecation": "highlightsdeprecation-informational",
+            "india-spam-prevention-campaign": "india-spam-prevention-campaign-varianta",
+            "messagingthunder-second-botcampaign": "messagingthunder-second-botcampaign-varianta",
+            "messagingthunderbotcampaign": "messagingthunderbotcampaign-messagerepliesui",
+            "missedcallreminderemailpublic": "missedcallreminderemailpublic-newfooteraugust2019",
+            "missedchatreminderemailpublic": "missedchatreminderemailpublic-newfooteraugust2019",
+            "nps-mobile": "nps-mobile-c",
+            "nps-uwp-rn": "nps-uwprn-a",
+            "nps-web": "skypenpsweb-varianta",
+            "oldfriendback-test": "oldfriendbacke2etest-varianta",
+            "pstn-deprecation-mailing-skype-consumer": "pstn-deprecation-mailing-skype-consumer-varianta",
+            "publicmissedchatreminder": "publicmissedchatreminder-speechbubble",
+            "secondstrike": "secondstrike-varianta",
+            "silent-push-notif": "silent-push-notif-varianta",
+            "skype-bot-engagement-channels": "skype-bot-engagement-channels-varianta",
+            "skype-ind-gov-warning-message": "skype-ind-gov-warning-message-varianta",
+            "skypeannouncement-generic-mailing": "skypeannouncement-generic-mailing-varianta",
+            "skypeannouncement-pstn-mailing": "skypeannouncement-pstn-mailing-varianta",
+            "skypecallingsurvey2024": "skypecallingsurvey2024-notice",
+            "social-signal-pushnotif": "social-signal-pushnotif-varianta",
+            "survey20240528": "user_survey1-survey_camp1",
+            "test-chatbot-image-sending": "test-chatbotimagesending-varianta",
+            "ukraine-donation-free-calls-sunset-campaign": "ukraine-donation-free-calls-sunset-campaign-varianta",
+            "welcomeemail": "welcomeemail-variantd"
+        }
+    },
+    "SkypeFeedbackAndSupport": {
+        "showChatWithAgentButton": false
+    },
+    "SkypeM2": {
+        "SamplingRates": {
+            "log_chat_service_network_failures": 1,
+            "log_chat_service_send_message": 5
+        },
+        "Telemetry": {
+            "log_chat_service_network_failures": 1,
+            "log_chat_service_send_message": 1,
+            "log_message_end_to_end_delay": 1
+        },
+        "autoStart": {
+            "isEnabled": true
+        }
+    },
+    "SkypeMediaIntelligence": {
+        "Enabled": false,
+        "enabled": false
+    },
+    "SkypeMediaStack": {
+        "EnableRemoteUserEvents": true,
+        "ParseXMediaBWConf": 0,
+        "RealtimeDataSourceSettings": {
+            "devices": {
+                "13": {
+                    "ladder": [
+                        5000,
+                        10000,
+                        26000,
+                        26000,
+                        26000,
+                        26000,
+                        26000
+                    ],
+                    "ladderStatic": [
+                        3000,
+                        5000,
+                        26000,
+                        26000,
+                        26000,
+                        26000,
+                        26000
+                    ]
+                }
+            }
+        },
+        "RefreshSsrcWebrtcReenabled": "false",
+        "UseConfE2eeSdpAttribute": "true",
+        "mediaConfiguration_UseVideoPortRangeWhenBundled": 0
+    },
+    "SkypePersonalization": {
+        "pes_config": "https://static-asm.secure.skypeassets.com/pes/v1/configs/56ba0c2ad23a48d7ba150cbece4e960e/views/default"
+    },
+    "SkypeResourceManager": {
+        "AggressiveUKF": true,
+        "ArrivalStream": {
+            "MinRecvRateSmoothingFactor": 0.012
+        },
+        "BurstDelivery": {
+            "InSpikeDetectionTh": 0.15
+        },
+        "EventPriority": {
+            "RMHistogram": 0
+        },
+        "HistoryPercentile": 0.4,
+        "LoggingConfig": {
+            "EnableRMPacketTraces": false
+        },
+        "LyncRm": "on",
+        "MLBweModel": {
+            "DisabledForVBSS": true,
+            "EnableBWEModelDebugLog": false,
+            "OODThreshold": 10000,
+            "UseAltFallbackSeed": false
+        },
+        "PoliciedLossBackoff": {
+            "InitConfidenceFactor": 0.45,
+            "InitialRampupSafetyMargin": 0.14,
+            "LTLossFactor": 0.9,
+            "LossRateLtCapRampup": 2.2,
+            "LowSendRateDropFactor": 1.4,
+            "PacketLossThreshold": 0.17,
+            "RampupRate": 0.2,
+            "RampupSafteyMarginDecOnPlbRetain": 0.95,
+            "RampupSafteyMarginIncOnPlbApply": 1.05,
+            "RecvRateQuickTune": 0.9,
+            "TimeToTriggerPolicy": 9000,
+            "TriggerOnHighSendRateLossTh": 1.05
+        },
+        "QCLowBwMinExpThreshold": "25000",
+        "QcEnableRtcpProbeGVC": 1,
+        "QcEnableRtcpProbeP2P": 1,
+        "RMExchangeCachedBw": 1,
+        "RampFromHistory": {
+            "Enabled": true
+        },
+        "ReorderBufferEnableLastPacketSeen": true,
+        "StatConfig": {
+            "StartOfCallStatTime": 10
+        }
+    },
+    "SkypeRootTools": {
+        "AiCloudClient": {
+            "MaxDownloadedBytes": 500000000,
+            "MaxDownloadedModels": 50,
+            "MinDownloadRetentionTime_h": 1440
+        },
+        "RootTools": {
+            "E911_TelemetryEnabled": true
+        },
+        "ULBaseline": {
+            "killswitch": {
+                "blacklist": [
+                    {
+                        "experiment": "CreateProbeDeviceFailures",
+                        "namespace": "SkypeAudioLibrary"
+                    },
+                    {
+                        "experiment": "Capability DDL iphone #1840981",
+                        "namespace": "SkypeVideoLibrary"
+                    },
+                    {
+                        "experiment": "Capability DDL mac #1840981",
+                        "namespace": "SkypeVideoLibrary"
+                    },
+                    {
+                        "experiment": "CreateProbeDeviceFailures_2",
+                        "namespace": "SkypeAudioLibrary"
+                    },
+                    {
+                        "experiment": "Per-packet Trace collection for S4L 1-1",
+                        "namespace": "SkypeAudioLibrary"
+                    }
+                ]
+            }
+        }
+    },
+    "SkypeTRAP": {
+        "SkypeToAadMigration": {
+            "PerTenantOverride": {
+                "89915aa4-27e7-49fc-a852-03744c5664b2": "Cae",
+                "c9a58ee0-ecfb-4cd3-965d-b43553fabb42": "Aad",
+                "eca248b8-6917-4072-a5a0-345926fc7a81": "Skype"
+            },
+            "PreferredToken": "Cae"
+        }
+    },
+    "SkypeTXChannel": {
+        "TenantToken": "4b8ac33881b24d1ca8bd468c0d45335f-8efebf49-da48-481b-acee-151c4b7a7cc7-7416"
+    },
+    "SkypeTXNdi": {
+        "hardwareOutAja": false,
+        "hardwareOutBlackMagic": false
+    },
+    "SkypeTeamsClientIOS": {
+        "Notification": {
+            "enableJoinNotifications": true
+        },
+        "UseStartupManagerForTFWWhatsNew": true,
+        "auth": {
+            "authWatchdogConfiguration": {
+                "watchdogAlertThreshold": 0,
+                "watchdogTimeoutInSeconds": 5
+            },
+            "consumerRegionGmtsEnv": "prod",
+            "enableAuthWatchdogLogging": true,
+            "passKeyEnabled": true
+        },
+        "calling": {
+            "callQualityFeedbackOnDismissEnabled": true
+        },
+        "channels": {
+            "channelsCsatEnabled": true
+        },
+        "chat": {
+            "enableRemoteTogetherEmojiAnimationsV2": true,
+            "msgSendFailureIndicatorEnabled": true,
+            "smsRequiredConsentPrefixes": [
+                "+49",
+                "+48"
+            ],
+            "twoWaySmsEnabledPrefixes": [
+                "+1",
+                "+52",
+                "+91",
+                "+44",
+                "+55",
+                "+57",
+                "+81",
+                "+33",
+                "+49",
+                "+31",
+                "+48"
+            ],
+            "twoWaySmsExcludedPrefixes": [
+                "+1242",
+                "+1246",
+                "+1264",
+                "+1284",
+                "+1345",
+                "+1441",
+                "+1599",
+                "+1664",
+                "+1670",
+                "+1671",
+                "+1684",
+                "+1758",
+                "+1767",
+                "+1784",
+                "+1787",
+                "+1939",
+                "+1809",
+                "+1829",
+                "+1849",
+                "+1868",
+                "+1869",
+                "+1876",
+                "+1658",
+                "+6189162",
+                "+6189164"
+            ]
+        },
+        "dogfood": {
+            "dogfoodToastResetDayCount": 1,
+            "enableDogfoodToast": true
+        },
+        "enableGuardiansReEntryInviteUpdate": true,
+        "enableNewClassNavigation": true,
+        "enableVersionedIntentTrackingAPI": true,
+        "encryptApiKeyIR": true,
+        "endpoints": {
+            "teamsPushService": "https://teams.microsoft.com/api/tps-df"
+        },
+        "fetchAnonymousAppDefinitionEnabled": true,
+        "files": {
+            "previewLinksInTeams": false
+        },
+        "freemiumUpgrade": {
+            "EOLDate": "28/02/2024",
+            "adminFrequencyTable": {
+                "within30days": 1,
+                "within60days": 3,
+                "within90days": 7
+            },
+            "isFreemiumEnabled": true,
+            "isPromoTextEnabled": true,
+            "marketingUpgradeURL": "https://go.microsoft.com/fwlink/?linkid=873049",
+            "userFrequencyTable": {
+                "within30days": 1,
+                "within60days": 3
+            }
+        },
+        "gridLayout": {
+            "ecsEnabledEduApps": [
+                "bd9fb5cb-4d02-4cc6-a7f4-52a8a62d30b7",
+                "9d17e873-c4c4-424d-869c-67f62a3d3174",
+                "77be3f72-7c14-415f-992c-3511dd54a4ae",
+                "66aeee93-507d-479a-a3ef-8f494af43945",
+                "62554c36-4756-4d4e-b8fb-f4b24875ae0c",
+                "2c95977d-f2fb-4df3-ad70-1aece87afe03",
+                "5a22b425-b693-4f86-b668-31baeb3dad6c",
+                "b85718a3-6d15-4f59-8fad-b6809c6fc6a9",
+                "3a6c38d2-9d25-4c1f-8e06-9da286c1bfc4",
+                "b56991b4-3924-49b2-b4bf-1710940ec7d9"
+            ]
+        },
+        "gridLayoutFREEnabled": true,
+        "guardian": {
+            "enableGuardianAnnouncements": true,
+            "isParentsAppFreV2Enabled": true,
+            "suppressLastMessageEnabled": true
+        },
+        "guardianHomePageAppEnabled": true,
+        "intentTrackingAPIVersion": "v3",
+        "isDragAndDropEnabled": true,
+        "isExternalPresenterJoinEnabled": true,
+        "isParentsContactCardEnabled": true,
+        "lens": {
+            "imageCompressionSetting": 2
+        },
+        "m365chat": {
+            "authErrorMessageEnabled": true,
+            "enableCopilotHandoff": true,
+            "enableCopilotPluginInChat": true
+        },
+        "media": {
+            "fontDisabledInAXPAttachement": true,
+            "fontDisabledInVideoTextAttachment": true,
+            "imageCacheCount": 150,
+            "threadScopedThumbnailPrefetch": true,
+            "thumbnailGlobalInMemoryCacheEnabled": true,
+            "videoCaptureDuration": 60,
+            "videoUploadsEncodingBitrate": 1200
+        },
+        "meetings": {
+            "enableCopilotExtensibility": true,
+            "isTogetherModePinEnabled": true,
+            "meetingDescriptionFontSizeParsingEnabled": true
+        },
+        "notification": {
+            "notificationExtensionTemplateBaseWithSenderId": "SkypeSpaces_1.36"
+        },
+        "people": {
+            "enableDeviceContactsTagging": true,
+            "enableGroupChatInviteFree": true,
+            "enableUserDefaultProfilePicture": true,
+            "federatedGroupChatInviteFreeUseDelete": false,
+            "groupChatInviteFreeDelete": true
+        },
+        "platform": {
+            "InlineMediaPlaybackEnabled": true,
+            "adaptiveCardVimeoDailyMotionMediaEnabled": true,
+            "adaptiveCardYoutubeVideoEnabled": true,
+            "allowChatAppEntitlementsSyncFromActivity": true,
+            "appCRUDAccessRefactoringEnabled": true,
+            "appsStatusPeriodicSyncIntervalInHours": 24,
+            "appsWithMeetingApisPermissions": [
+                "9ae3d116-3feb-48c6-b3c4-b61dceb760af"
+            ],
+            "authPrefetchingEnabled": true,
+            "authenticationBlockHonourTimeInMinutesForAdaptiveCardsV2": 360,
+            "blockedApps": [
+                "6b9cc557-e24a-4744-a370-407e717f2195",
+                "16332d3e-5eef-4d71-80e6-4d5a86b7b822",
+                "7b0641d9-8e1f-4415-99da-c80f8c175c69",
+                "089d82a1-632c-4bb2-b307-23b8166b0113",
+                "2ccabd94-c7ca-4c99-94bb-356d98398409",
+                "acbf66b6-22ab-4e51-98d4-00bb91897116",
+                "a99cb12c-d46a-4f7a-87c5-06b2da1cb746",
+                "6615e379-7eb9-4e65-afee-2c8a9322aa4b",
+                "c1de80e3-f0e4-4962-bcae-fa23e70366a5",
+                "b756a1a0-1b2f-42ff-90b5-b2a98281fc83",
+                "7a0c1d53-f647-4d76-ab2c-fbc0d73c8bb0",
+                "84c2de91-84e8-4bbf-b15d-9ef33245ad29",
+                "c447be50-d9a3-4c34-b6e4-15ad0ef542bd",
+                "44263ed4-f1ac-4e96-93aa-d24dd50459ea",
+                "b7b8b186-b39d-4028-ac91-84528eebc3e0",
+                "7fabc104-4759-437e-ac5c-9aba7f3a09af",
+                "46fae4d0-faf5-11e9-80f3-53ad33b77bce",
+                "a59fe11a-7ae8-4569-94d1-081c83ab59b6",
+                "effd9d69-e11a-497e-a405-ff79c024e973",
+                "5b876856-c90d-47f8-a6fc-8de780f76cc7",
+                "d7d081d4-d24e-4652-aea6-280db1fd2219",
+                "b8e32e5f-bad2-490b-9470-55d8917cf73a",
+                "9f859fc4-0b17-4bf7-abff-f50a73cbe5ab",
+                "7656ec6e-c63b-4571-8ab8-95d1c451d1e6",
+                "14072831-8a2a-4f76-9294-057bf0b42a68",
+                "a2be9b85-098e-4e62-b51f-756ae2f551a8",
+                "27a3e6d5-98b7-45f7-a04a-7dd7e19edebe",
+                "com.microsoft.teamspace.tab.files.sharepoint",
+                "2399aa4e-bba7-4993-a552-16781e510f76",
+                "eb6dada2-bc16-40fe-b9e9-0d0ab3916704",
+                "cd2d8695-bdc9-4d8e-9620-cc963ed81f41",
+                "83c83baa-0b22-4bc5-9a37-1d8e6ab6fd7b",
+                "3ae27f31-ceea-4d13-a212-cdc9d786eae1",
+                "36ae0e3d-3446-48d0-86cb-b8bde5265cd4",
+                "b712da79-73c8-4d56-8531-1e180c95e9d1",
+                "1a24a3a3-1fda-4f70-abee-40bba8c638e8",
+                "com.microsoft.teamspace.tab.file.staticviewer.excel",
+                "3ed5b337-c2c9-4d5d-b7b4-84ff09a8fc1c",
+                "17e00609-c03b-44e4-b516-fb2d2232e95d",
+                "86ce8ab3-7472-47ef-9cf5-7225ff0c77d5",
+                "9f1a4ae0-6ae2-475d-973d-c89687d03753",
+                "cc649732-0f1c-41be-bb52-fbeaab71c7cf",
+                "e1946271-e466-41f9-adba-c5bbe53e56a4",
+                "474c7f73-c3dd-4b94-96f0-23f7fa771cee",
+                "8bd0dbd9-defe-4a4a-aa75-0c3b5396cad2",
+                "0ec566bc-a37a-46ca-a252-54af50dfa86e",
+                "5fdd80e2-4d58-4c5c-ac85-356c1b2a0bba",
+                "5a0e35f9-d3c8-45b6-9dd9-983ab47f1b83",
+                "90a27c51-5c74-453b-944a-134ba86da790",
+                "7fceea0d-ed46-4394-876a-9b95b55be8e4",
+                "d4460828-ddde-4619-b40b-39412667f7a3",
+                "bd9fb5cb-4d02-4cc6-a7f4-52a8a62d30b7",
+                "442cc7cc-4faa-469c-b8f8-581b2d5bd8aa",
+                "95e54205-5e03-45e7-abef-1e8a41374407",
+                "6eacb5f0-68b0-46f0-9507-9e906c6861fc",
+                "3e036580-07e4-11eb-abda-0962f34e6510",
+                "23a02895-ba8c-40e0-a274-ffa11fc9684f",
+                "2b58c90b-d22b-4b5a-8a1f-6f6e6f3a7e92",
+                "2d96b540-aa26-431b-bc31-222321c762e3",
+                "75d1c59c-8b16-462f-ae74-d98210a39258",
+                "75d3e61c-e5b7-45cc-9b2a-0f8c98a6b91b",
+                "7cd7b1f7-095d-4aaa-9d01-753a015f17b7",
+                "aa3abc6b-b10d-4f6d-b5e0-14af44fab745",
+                "4c0c1f9b-7500-4eac-8d48-3fffe69b3b91",
+                "3564714a-1e68-40c6-ba09-2e9eac549942",
+                "6d1f20e6-538e-4748-896a-1d7d5998d418",
+                "7439ed9e-8ef5-4525-ac80-21d84eb1f90e",
+                "28a06151-a6ba-4817-9ab4-454fb6e59cc6",
+                "f1a2add5-d007-4062-a10a-60f4ea29fdbc",
+                "205214d0-e04b-11e9-9332-5b5c97b60069",
+                "1eb81651-f5d3-4e95-bceb-5ae2ffffd00e",
+                "bf9c1c49-a529-451e-a81d-ac94cfdbec3e",
+                "com.microsoft.teamspace.tab.notes",
+                "b85718a3-6d15-4f59-8fad-b6809c6fc6a9",
+                "ca4b5141-5c46-47bc-a05e-2733d9bd69aa",
+                "5f56e504-48aa-46a0-bd6d-2231355b2830",
+                "00001016-de05-492e-9106-4828fc8a8687",
+                "25b07509-bc6a-4a53-b683-9beb24e55570",
+                "30e8c77f-acd9-453f-958a-82baf329c73d",
+                "com.microsoft.teamspace.tab.powerbi",
+                "com.microsoft.teamspace.tab.file.staticviewer.powerpoint",
+                "57799d60-92cd-40fd-8051-3570a1290828",
+                "65abccad-bf65-497c-8ea2-eec2036b6f13",
+                "a4b9907d-cff2-4771-91d5-30cb794f00c5",
+                "659243fc-ebc2-42fa-aa43-dfcad0f8bcd1",
+                "1d20e5e6-7310-4029-aa63-3efc9e84e926",
+                "c6462b50-a869-45e1-88b6-734c7087df25",
+                "4608dd75-e769-46f0-8f28-ac18c714cad1",
+                "14510476-fa9d-4dad-add9-aa5975a60a8b",
+                "0fdcda7d-5ce6-41a0-b5a3-4fa867815487",
+                "38ff7ef9-c2ff-4a65-9774-a5d338ae708d",
+                "8c9f8e8e-fe2d-4542-84ab-1d30c4a735fc",
+                "7824020d-ce5a-420f-ab91-2dc72f27834a",
+                "3bf2e254-d6c9-4e0c-b269-1c80c1220dc4",
+                "7792759a-43e8-4dc8-9f55-e7b0382c4a67",
+                "1dc264f0-30a4-4585-9ed9-febabfa6fd7e",
+                "73e63b28-e6b1-48fe-9ca5-b6801b5bd4d5",
+                "bcb050bd-ad7e-4e0e-94a7-e38d7fa098c9",
+                "e946766a-060d-4b50-bc90-f8de7b48b184",
+                "effe13ef-00e2-4d55-a207-f2d9d1dd7263",
+                "def85aef-c838-4f6b-b76e-53292aaa43d9",
+                "37664cf9-dd77-4681-b286-430107bea7bf",
+                "32772d29-4df0-4c7d-bade-8f35fe9101a3",
+                "1d192ad2-6590-4179-a088-daff383a52b5",
+                "62a00d05-797b-4e83-bf9c-8ea6b3163878",
+                "com.microsoft.teamspace.tab.file.staticviewer.visio",
+                "bae0fc3b-3f87-41d5-a144-02d536f827c3",
+                "51abb001-38d9-4d2a-a877-069e07099ad6",
+                "6f9f20ca-95d0-4534-8f23-b36ad7e3955a",
+                "com.microsoft.teamspace.tab.file.staticviewer.word",
+                "a671596c-9fb7-40ba-9915-c3420781b0db",
+                "bc4e7b4a-0ae5-49be-a56f-743e16aca230",
+                "8a1da635-7529-4456-b43a-56cbd865c3cf",
+                "39e837f8-e135-4130-94a2-ed89ac575cd1",
+                "88ffccc0-71cf-4451-8783-898b7b944814",
+                "3a54620f-98a1-4804-bcdc-fa7324d8fbd0",
+                "0d820ecd-def2-4297-adad-78056cde7c78",
+                "d7958adf-f419-46fa-941b-1b946497ef84",
+                "1c256a65-83a6-4b5c-9ccf-78f8afb6f1e8",
+                "3e0a4fec-499b-4138-8e7c-71a9d88a62ed",
+                "1820aede-4323-4996-825e-08f059160995",
+                "ab5bada7-9e08-4bfb-8e93-ff13caf9fde7",
+                "d7958adf-f419-46fa-941b-1b946497ef95",
+                "ef56c0de-36fc-4ef8-b417-3d82ba9d073c",
+                "260b1611-c836-438b-9ad6-7899dd338fbd",
+                "fd97e350-a8a5-46fc-8b7b-ef3880807647",
+                "73d49226-b5c0-42f0-b918-acd20e8a22d8",
+                "48e6b6e2-80ce-4dc7-86a9-ef738e1c6f53",
+                "3051bc8e-e666-491a-afe9-03b0855ef83e",
+                "b1a9388f-48df-4752-849e-7d7b12483e30",
+                "3ddb70b6-c3c0-48af-8c47-f2b00a246ef0",
+                "6e106207-4565-4312-b3ea-bbe9b3ed0a02",
+                "330061de-47a3-4d83-a252-87cc45250010",
+                "96a116ab-6847-4d22-90f3-f4dd6af74938",
+                "dbf372d7-f178-41b8-8f60-0cd497e6bae9",
+                "861228c3-eefd-462f-9b13-24dae6530ac3",
+                "a5a12021-afd1-4384-8baa-1363193a0509",
+                "35af9cb3-8392-4473-9dd0-9295bab6a199",
+                "100e3882-b881-4b6e-8dba-2cc8884af5d3",
+                "b5abf2ae-c16b-4310-8f8a-d3bcdb52f162",
+                "5966c135-e05f-4ce0-81e0-e138fe8e9583",
+                "74fef386-4a06-42ef-a68e-7c6f72bfcffd",
+                "4a6520d6-94a8-4730-9184-24997b9b3401"
+            ],
+            "collabCloudEndpointUrl": "https://teams.microsoft.com/api/platform",
+            "cutOffDateForConsideringOlderTabsInLWGChannels": "2025-06-30T00:00:00Z",
+            "cutOffDateForConsideringOlderTabsInPrivateLWGChannels": "2025-06-30T00:00:00Z",
+            "deepLinkExceptionApps": [
+                "0d820ecd-def2-4297-adad-78056cde7c78"
+            ],
+            "deprecateChatDefinitionTable": true,
+            "disableGetResourceTokenQueue": true,
+            "disablePullToRefreshOnZoom": true,
+            "disableWebAppLoadCancellation": true,
+            "enableACCustomTextBlockRenderer": true,
+            "enableACLoopBasedActions": true,
+            "enableACv2OAuthFlow": true,
+            "enableACv2SSOFlow": true,
+            "enableAppAcquisitionServiceUseInACv2JitInstall": true,
+            "enableAreaGridLayoutContainer": true,
+            "enableAuthInMeetingCopilot": true,
+            "enableAuthenticationBlockUsageForAdaptiveCardsV2": true,
+            "enableCardActionInvokeComplianceData": true,
+            "enableCollabCloudApis": true,
+            "enableFlowLayoutContainer": true,
+            "enableMeetingShareDeeplink": true,
+            "enableShareToStage": true,
+            "enableSharepointPageUrlOverride": true,
+            "extensibilityBotAttachmentsEnabledFromPersonalAppsOniPad": false,
+            "federatedChatMessageExtensionEnabled": true,
+            "fluentIconCDNPath": "/assets/fluentui-react-icons/2.0.226/",
+            "fluentIconCDNRoot": "https://res.cdn.office.net",
+            "genericAppShareEnabled": true,
+            "isAppAcquisitionMyAppsEnabled": true,
+            "isBotDeliveryStatusMessageEnabled": true,
+            "isContextlessRedesignEnabledForChatsAndChannels": true,
+            "isContextlessRedesignEnabledForME": true,
+            "isContextlessRedesignEnabledForMeetings": true,
+            "isContextlessRedesignEnabledForPersonalTray": true,
+            "isDeeplinkNavigationToTabsEnabled": true,
+            "isFederatedAuthEnabled": true,
+            "isMCSBotSSOBypassSourceAppIdCheck": true,
+            "isNestedAppAuthEnabled": true,
+            "isShareWebContentApiEnabled": true,
+            "jsRefactoredStackEnabled": true,
+            "jsSdkApiHandlerEnabledApis": [
+                "initialize",
+                "appInitialization.appLoaded",
+                "appInitialization.success",
+                "appInitialization.failure",
+                "appInitialization.expectedFailure",
+                "authentication.getAuthToken",
+                "authentication.getUser",
+                "executeDeepLink"
+            ],
+            "multipleAuthResourcesEnabledWithMySiteDomain": true,
+            "multipleAuthResourcesEnabledWithTeamSiteDomain": true,
+            "newTabHandlingForPrivateLWGChannelsEnabled": true,
+            "newTabHandlingForSharedChannelsEnabled": true,
+            "parseStreamingMetaData": true,
+            "refactoredStageViewEnabled": true,
+            "responsiveLayoutForCardsEnabled": true,
+            "restrictedFullTrustOverrides": {
+                "0ae35b36-0fd7-422e-805b-d53af1579093": [
+                    {
+                        "requireOriginMatch": false,
+                        "resource": "https://{sharePointDomains}"
+                    },
+                    {
+                        "requireOriginMatch": false,
+                        "resource": "api://{sharePointDomains}"
+                    },
+                    {
+                        "requireOriginMatch": false,
+                        "resource": "https://{tid}/{sharePointDomains}"
+                    },
+                    {
+                        "requireOriginMatch": true,
+                        "resource": "https://securebroker.sharepointonline.com"
+                    }
+                ],
+                "2fc3630f-27e1-4a68-9d7a-11ac26a37272": [
+                    {
+                        "requireOriginMatch": false,
+                        "resource": "https://{sharePointDomains}"
+                    },
+                    {
+                        "requireOriginMatch": false,
+                        "resource": "api://{sharePointDomains}"
+                    },
+                    {
+                        "requireOriginMatch": false,
+                        "resource": "https://{tid}/{sharePointDomains}"
+                    },
+                    {
+                        "requireOriginMatch": true,
+                        "resource": "https://securebroker.sharepointonline.com"
+                    }
+                ],
+                "d2c6f111-ffad-42a0-b65e-ee00425598aa": [
+                    {
+                        "requireOriginMatch": false,
+                        "resource": "https://{sharePointDomains}"
+                    },
+                    {
+                        "requireOriginMatch": false,
+                        "resource": "api://{sharePointDomains}"
+                    },
+                    {
+                        "requireOriginMatch": false,
+                        "resource": "https://{tid}/{sharePointDomains}"
+                    },
+                    {
+                        "requireOriginMatch": true,
+                        "resource": "https://securebroker.sharepointonline.com"
+                    }
+                ]
+            },
+            "rscAuthorization": {
+                "enableGetMeetingsAPI": true,
+                "enableRSCForShareAppContentToStage": true
+            },
+            "sdx": {
+                "ring": "R0"
+            },
+            "sharedChannelSyncEnabled": true,
+            "skipFetchAppDefinition": true,
+            "webviewInspectionEnabled": true
+        },
+        "quietTime": {
+            "globalQuietTimeEnabled": true
+        },
+        "smb": {
+            "isDeviceContactPhase1SuggestionsEnabled": true,
+            "useIntentV3API": true
+        },
+        "sync": {
+            "pollingToPush": true
+        },
+        "telemetry": {
+            "minimumLandscapeSeconds": 3,
+            "minimumSendInterval": 0
+        }
+    },
+    "SkypeTelemetry": {
+        "SendTextMessageUI": {
+            "enabled": true,
+            "percentage": 10
+        },
+        "client_heartbeat": {
+            "enabled": false
+        },
+        "contacts_sync_end_time": {
+            "enabled": true
+        },
+        "contacts_sync_start_time": {
+            "enabled": true
+        },
+        "file_received": {
+            "enabled": true
+        },
+        "file_sent": {
+            "enabled": true
+        },
+        "kpi_badge_count_state": {
+            "enabled": true
+        },
+        "kpi_call_ended": {
+            "enabled": true
+        },
+        "kpi_chat_service_connection": {
+            "enabled": true
+        },
+        "kpi_chatsync_complete": {
+            "enabled": true,
+            "percentage": 0.01
+        },
+        "kpi_chatsync_failed": {
+            "enabled": true
+        },
+        "kpi_client_init": {
+            "enabled": false
+        },
+        "kpi_client_ready_state_time": {
+            "enabled": false
+        },
+        "kpi_contacts_sync_complete": {
+            "enabled": true
+        },
+        "kpi_inapp_activity_ended": {
+            "enabled": true
+        },
+        "kpi_inapp_activity_start": {
+            "enabled": true
+        },
+        "kpi_longpoll_complete": {
+            "percentage": 0.01
+        },
+        "kpi_longpoll_failed": {
+            "percentage": 0.01
+        },
+        "kpi_message_delivered": {
+            "enabled": true,
+            "percentage": 10
+        },
+        "kpi_message_sent": {
+            "enabled": true,
+            "percentage": 10
+        },
+        "kpi_message_sent_retry": {
+            "enabled": true
+        },
+        "kpi_message_viewed": {
+            "enabled": true
+        },
+        "kpi_postsearch_action": {
+            "enabled": true
+        },
+        "kpi_push_to_sync_complete": {
+            "enabled": true
+        },
+        "kpi_pushnotif_delivered": {
+            "enabled": true
+        },
+        "kpi_pushnotif_displayed": {
+            "enabled": true
+        },
+        "kpi_search_request": {
+            "enabled": true
+        },
+        "kpi_user_activity_started": {
+            "enabled": false
+        },
+        "log_crash_sent": {
+            "enabled": true
+        }
+    },
+    "SkypeVideoLibrary": {
+        "AV1SceneChangeBlockMatchPct": 25,
+        "AV1SceneChangeMeanThresh": 24,
+        "AV1SceneChangeVarianceThresh": 3200,
+        "FixQoEResourceTypeMask": "1",
+        "ForceXLMeetingIdrThrottle": "0",
+        "H265RefactoredCodeConvPayloads": "1",
+        "NrpRefactor265_naluCount": "1"
+    },
+    "SkypeWebMedia": {
+        "mediaAgent": {
+            "webrtcPranswerWaitForMediaPollingInterval": null,
+            "webrtcStatStoredRecordsNumber": 180
+        }
+    },
+    "SkypeXT": {
+        "configVariablesAlpha": [
+            {
+                "key": "GMAIL_HOST_ID",
+                "value": "gmail-btn-blue"
+            },
+            {
+                "key": "GMAIL_BTN_COLOR",
+                "value": "#00AFF0"
+            }
+        ],
+        "disabledCalendarHosts": [],
+        "meetNowWidgetInfo": {
+            "blobPath": "https://secure.skypeassets.com/apollo/0.0.0/meetnowwidget/",
+            "version": "1.0.152"
+        }
+    },
+    "SkypeiOS": {
+        "improvedBotDiscoverabilityEnabled": true,
+        "pushVerificationDelayMs": 0,
+        "pushVerificationEnabled": true,
+        "pushVerificationServiceURL": "https://skype-ncls-prod.trafficmanager.net/v1/closedloop"
+    },
+    "TargetingVersioningTest": {
+        "CompassFMVersion": "20220322.3"
+    },
+    "TeamsClientCommon": {
+        "calling": {
+            "helpUrlForBroadcastBlockAnon": "https://go.microsoft.com/fwlink/?linkid=2149542&clcid=0x409"
+        },
+        "cloudEnvironment": "Public",
+        "endpoints": {
+            "SCTAriaCollectorUri": "https://ic3.events.data.microsoft.com/Collector/3.0/",
+            "SchedulingServiceBaseUrl": "https://api.scheduler.teams.microsoft.com/"
+        },
+        "meetingTenantIdToName": "{\"123\": \"TenantTest1\", \"234\": \"TenantTest2\",\"73588a2a-d95b-4846-8dc4-5c6bbdfc3a72\": \"CES\",\"9ed72ea6-487f-4eb2-a8c6-dc36e8136aeb\": \"SFF SWITCH 2020\",\"4c00d031-a9ba-448e-9f5c-df8e4f2ef4ea\": \"SFF SWITCH 2020\"}"
+    },
+    "TeamsFLWAndroidProd": {
+        "instantShiftGroupChatEnabled": true
+    },
+    "TeamsFLWIOSProd": {
+        "shifts": {
+            "isSHBackOffThrottlerEnabled": true
+        }
+    },
+    "TestJsonFormatter": {
+        "RegionGtms": {
+            "BvdS2S": "",
+            "MessagingFrontEndS2S": ""
+        }
+    }
+}

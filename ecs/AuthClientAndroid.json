@@ -1,0 +1,10 @@
+{
+    "ConfigIDs": {
+        "com.microsoft.identity.broker": "P-R-1147959-3-19,P-R-1107423-1-4,P-R-1099469-1-5"
+    },
+    "com.microsoft.identity.broker": {
+        "EnableBrokerProtocolVersionCheck": true,
+        "EnableDcfInBroker": true,
+        "TelemetrySamplingRate": 0.25
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "ConfigIDs": {
+        "ECS": "P-R-54894-1-3,P-R-53736-1-8"
+    },
+    "ECS": {
+        "CacheExpiryInMin": 720,
+        "DisableConfigLog": true
+    }
+}

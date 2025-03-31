@@ -1,0 +1,19 @@
+{
+    "ConfigIDs": {
+        "ECS": "P-R-73981-1-2",
+        "SkypeElectronWrapper": "P-R-27677-1-3,P-D-18338-1-24"
+    },
+    "ECS": {
+        "DisableConfigLog": true
+    },
+    "SkypeElectronWrapper": {
+        "app": "swx",
+        "appDisabled": false,
+        "auth": {
+            "skypetokenScopes": "identity_update,commerce,communication,contacts_update"
+        },
+        "config": "release",
+        "enableNonAdminDetection": true,
+        "name": "electron wrapper"
+    }
+}
