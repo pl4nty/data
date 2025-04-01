@@ -3,110 +3,6 @@
         "key": "val",
         "test": "test"
     },
-    "ChillAdminCopilot": {
-        "Floodgate_Campaign_AdminPortal.719835bd-9541-4b85-91f7-4f8a72a35dee": {
-            "CampaignId": "719835bd-9541-4b85-91f7-4f8a72a35dee",
-            "EndTimeUtc": "2026-06-29T18:30:00Z",
-            "GovernedChannelType": 0,
-            "NominationScheme": {
-                "CooldownPeriod": {
-                    "IntervalSeconds": 7776000,
-                    "Type": 0
-                },
-                "FallbackSurveyDurationSeconds": 0,
-                "NominationPeriod": {
-                    "IntervalSeconds": 2592000,
-                    "Type": 0
-                },
-                "PercentageDenominator": 100,
-                "PercentageNumerator": 10,
-                "Type": 0
-            },
-            "PrimaryPriority": 3,
-            "StartTimeUtc": "2025-01-30T18:30:00Z",
-            "SurveyTemplate": {
-                "ActivationEvent": {
-                    "Sequence": [
-                        {
-                            "Activity": "UsedCopilot_TriggerCopilotNPS",
-                            "Count": 1,
-                            "IsAggregate": true,
-                            "Type": 0
-                        }
-                    ],
-                    "Type": 1
-                },
-                "PreferredLaunchType": 0,
-                "Type": 4,
-                "UxSchema": {
-                    "branchingRules": [],
-                    "pages": [
-                        {
-                            "displayName": "Survey Prompt",
-                            "id": "0e19ac6f-d831-499c-9e83-a709e27784b6",
-                            "isFinalPage": false,
-                            "questions": [
-                                {
-                                    "id": "promptSubText1",
-                                    "questionLabel": "We have just two questions.",
-                                    "required": false,
-                                    "type": "Label",
-                                    "visible": true
-                                }
-                            ],
-                            "title": "We'd love your feedback on Microsoft 365 Copilot"
-                        },
-                        {
-                            "displayName": "Vertical Rating with Verbatim Question",
-                            "id": "050beaf0-2c8a-4234-b496-4df00c79a563",
-                            "isFinalPage": false,
-                            "questions": [
-                                {
-                                    "availableOptions": [
-                                        "5 - Very likely",
-                                        "4",
-                                        "3",
-                                        "2",
-                                        "1 - Very unlikely"
-                                    ],
-                                    "id": "singleselect1",
-                                    "questionLabel": "How likely are you to recommend Microsoft 365 Copilot to others, if asked.",
-                                    "required": true,
-                                    "type": "SingleSelect",
-                                    "visible": true
-                                },
-                                {
-                                    "id": "comment1",
-                                    "questionLabel": "Please tell us how we can improve your experience.",
-                                    "required": false,
-                                    "type": "Comment",
-                                    "visible": true
-                                }
-                            ],
-                            "title": "Microsoft would love your perspective"
-                        },
-                        {
-                            "displayName": "Thank You",
-                            "id": "ddcaefe9-744a-46cc-8e6c-5eebc6abefab",
-                            "isFinalPage": true,
-                            "questions": [
-                                {
-                                    "id": "thankYouText2",
-                                    "questionLabel": "Thank you for taking the time to give your feedback to Microsoft!",
-                                    "required": false,
-                                    "type": "Label",
-                                    "visible": true
-                                }
-                            ],
-                            "title": null
-                        }
-                    ],
-                    "uiStringsUrl": "https://res.cdn.office.net/fg2uxschema/719835bd-9541-4b85-91f7-4f8a72a35dee/65ce34d9-383a-4f0c-9ee8-b1104233eaf3/Web-SharePointAdminCenter/",
-                    "variables": {}
-                }
-            }
-        }
-    },
     "ChillSharePoint": {
         "Floodgate_Campaign_SharePoint.dd025788-0c5d-4dde-812e-2b30af0d3bf9": {
             "CampaignId": "dd025788-0c5d-4dde-812e-2b30af0d3bf9",
@@ -341,7 +237,6 @@
     },
     "ConfigIDs": {
         "CHILL_Floodgate": "P-D-1557905-1-2,P-D-1554177-1-2",
-        "ChillAdminCopilot": "P-R-1562851-1-7",
         "ChillSharePoint": "P-R-1421849-1-5",
         "ChillVivaGlint": "P-R-1542390-1-4,P-R-1542389-1-6"
     }
