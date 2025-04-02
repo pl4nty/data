@@ -16,8 +16,8 @@
   },
   {
     "name": "android_deps",
-    "size": 14751845,
-    "file_count": 308
+    "size": 10574276,
+    "file_count": 211
   },
   {
     "name": "android_prebuilts",
@@ -36,7 +36,7 @@
   },
   {
     "name": "angle",
-    "size": 14599750,
+    "size": 14599656,
     "file_count": 830
   },
   {
@@ -66,8 +66,8 @@
   },
   {
     "name": "blink",
-    "size": 34002663,
-    "file_count": 3955
+    "size": 34016429,
+    "file_count": 3956
   },
   {
     "name": "boringssl",
@@ -76,7 +76,7 @@
   },
   {
     "name": "breakpad",
-    "size": 17957133,
+    "size": 17962902,
     "file_count": 1009
   },
   {
@@ -126,7 +126,7 @@
   },
   {
     "name": "devtools-frontend",
-    "size": 7227125,
+    "size": 7314239,
     "file_count": 29
   },
   {
@@ -211,7 +211,7 @@
   },
   {
     "name": "grpc",
-    "size": 31327891,
+    "size": 31327988,
     "file_count": 3477
   },
   {
@@ -466,7 +466,7 @@
   },
   {
     "name": "perfetto",
-    "size": 1487127,
+    "size": 1488313,
     "file_count": 80
   },
   {
@@ -586,8 +586,8 @@
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 5718847,
-    "file_count": 162
+    "size": 5722251,
+    "file_count": 161
   },
   {
     "name": "vulkan_memory_allocator",
