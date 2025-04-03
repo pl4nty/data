@@ -124,6 +124,8 @@ if __name__ == "__main__":
             "https://zoom.us/rest/download?os=win", "Zoom.json")
         fetch_and_prettify_xml(
             "https://officeclient.microsoft.com/serverconfig16", "microsoft_office_serverconfig16.json")
+        fetch_and_prettify_xml(
+            "https://endpoints.office.com/endpoints/worldwide?clientrequestid=bfefa92b-5f67-46b7-b01a-f3f80672645c", "microsoft_endpoints.json")
     else:
         url = sys.argv[1]
         output_file = sys.argv[2]
