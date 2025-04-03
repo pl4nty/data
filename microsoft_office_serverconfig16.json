@@ -2165,7 +2165,7 @@
   </o:services>
   <o:tokens>
     <o:token o:name="ODC.BaseHost">Worldwide.Host</o:token>
-    <o:token o:name="TestEntryForTelemetryUrl">WorldWide.Host</o:token>
+    <o:token o:name="TestEntryForTelemetryUrl">Default.Host</o:token>
     <o:token o:name="EXO.BaseHost">outlook.office365.com</o:token>
     <o:token o:name="Live.DocumentAPIHost">docs.live.net</o:token>
     <o:token o:name="Live.FederatedAuthHost">urn:federation:MicrosoftOnline</o:token>
