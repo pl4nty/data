@@ -473,13 +473,12 @@
         "ECS": "P-R-1097532-1-5,P-R-76663-1-2,P-D-81604-1-2",
         "ECSCONFIG": "P-D-1147099-1-3,P-D-1147088-1-3,P-D-17910-25541-3,112127",
         "ECSTest2": "P-D-1548497-1-2",
-        "ECS_Scorecards_Test": "P-E-1551933-C1-3",
-        "ECS_Scorecards_Test2": "P-E-31925-2-3",
+        "ECS_Scorecards_Test": "P-E-1551851-C1-3,P-E-1441735-2-3",
         "JennyTest2": "P-D-1133790-1-3",
         "Join": "P-D-28714-1-6",
         "JoinLauncher": "113355,113356",
         "MDNRAP": "115410",
-        "MDN_MIDDLELANE_TEAMS": "P-E-1571638-C1-6,P-R-1565724-2-4,P-R-1547960-3-5,P-R-1436736-2-56,P-R-1529639-10-3,P-R-1407162-11-12,P-R-1078310-1-13,P-D-1009217-19-172",
+        "MDN_MIDDLELANE_TEAMS": "P-E-1571638-5-6,P-R-1565724-2-4,P-R-1547960-3-5,P-R-1436736-2-56,P-R-1529639-10-3,P-R-1407162-11-12,P-R-1078310-1-13,P-D-1009217-19-172",
         "MDN_TRAP": "P-D-5047-25517-172",
         "MediaAgent": "P-D-68276-1-2",
         "MicrosoftTeamApprovals": "P-R-1541617-3-13,P-R-1462860-11-6,P-R-1438108-3-9,P-R-1418789-1-3,P-R-1267045-7-10,P-R-1258610-3-8,P-R-1253002-4-14,P-R-1249277-4-13,P-R-1198408-3-16,P-R-1225063-4-10,P-R-1150804-10-17,P-R-1117618-3-30,P-R-1118465-12-18,P-R-1099667-12-14,P-R-1080076-11-17,P-R-1075973-11-28,P-R-1069645-3-31,P-R-1064500-2-15,P-R-1050671-13-22,P-R-1063220-14-19,P-R-1060529-11-29,P-R-1054879-10-9,P-R-1052028-3-35,P-R-1049790-6-18,P-R-1049881-11-17,P-R-1042091-13-65,P-R-1044556-14-16,P-R-1035881-3-11,P-R-1034257-3-17,P-R-1029926-17-13,P-R-1034004-11-17,P-R-1026282-3-15,P-R-1001453-2-18,P-R-1017758-9-16,P-R-1008652-3-10,P-R-1001680-3-27,P-R-1000981-2-25,P-R-115999-12-36,P-R-113719-12-20,P-R-111670-13-19,P-R-110628-10-11,P-R-110483-3-18,P-R-109155-26-21,P-R-106606-14-18,P-R-100554-14-24,P-R-99901-3-13,P-R-98971-10-13,P-R-96172-3-19,P-R-95674-15-45,P-R-94749-9-10,P-R-94224-10-14,P-R-93053-11-11,P-R-88545-3-6,P-R-82904-12-20,P-R-81622-16-18,P-R-81580-13-25,P-R-77226-13-25,P-R-74994-10-11,P-R-74993-10-21,P-R-74801-10-10,P-R-73793-10-48,P-R-73190-10-9,P-R-69653-11-15,P-R-69035-14-33,P-R-69030-13-17,P-R-68608-3-7,P-R-68937-10-79,P-R-68473-3-4,P-R-65568-10-8,P-R-67490-10-12,P-R-66421-10-66,P-R-63643-1-7,P-R-63120-1-9,P-R-62477-2-4,P-R-62209-14-36,P-D-61939-1-49",
@@ -497,7 +496,7 @@
         "PeopleImport": "P-D-38632-1-4",
         "PeopleRecommendation": "P-R-37188-2-16,P-D-18870-1-13",
         "PeopleSearch": "P-D-17755-25095-10",
-        "PortalWebClient": "P-R-55904-2-11,P-D-5041-9166-412",
+        "PortalWebClient": "P-R-55904-2-11,P-D-1579919-1-2,P-D-5041-9166-412",
         "PstnHub": "P-R-105587-1-7,P-R-88233-1-45,P-R-66954-1-11,P-R-62994-1-23,P-R-55797-8-9,P-R-55796-8-11,P-R-38575-11-48,P-R-38574-11-17,P-R-29715-10-164,P-R-29716-10-198,P-R-25727-70-157,P-R-25728-30-137",
         "RichNotifications": "P-R-77992-1-17",
         "RtcPalVideoConfiguration": "P-R-1080608-1-3",
@@ -517,7 +516,7 @@
         "SMSClient": "P-R-16504-26097-32,P-D-16503-23360-7",
         "SWG": "P-E-18277-2-12,119046",
         "Segmentation": "P-R-1286778-1-5,P-R-1286723-10-5,P-R-1086013-1-5,P-R-1085750-2-3,P-R-1057929-1-2,P-R-1057621-1-6,P-R-1050900-1-8,P-R-1040659-1-2,P-R-79661-1-28,P-R-43941-7-19,P-R-25076-1-9,P-R-21476-3747236-1",
-        "SkypeAudioLibrary": "P-E-1559656-C1-5,P-R-1294203-6-12,P-R-1034141-2-19,P-R-1016281-9-33,P-R-15396-22088-2,P-D-1064615-1-6,P-D-49739-1-8,P-D-22453-1-5,P-D-22193-1-5,P-D-19915-1-10,P-D-19507-1-9",
+        "SkypeAudioLibrary": "P-E-1559656-2-5,P-R-1549951-1-3,P-R-1294203-6-12,P-R-1034141-2-19,P-R-1016281-9-33,P-R-15396-22088-2,P-D-1064615-1-6,P-D-49739-1-8,P-D-22453-1-5,P-D-22193-1-5,P-D-19915-1-10,P-D-19507-1-9",
         "SkypeBilling": "117294",
         "SkypeCalling": "P-R-1221136-3-19,P-R-1099522-2-3,P-R-1085726-2-3,P-R-1056437-2-5,P-R-1056435-2-6,P-R-75937-8-8,P-R-70853-1-3,P-R-67550-8-10,P-D-22705-1-3,P-D-21727-1-5,P-D-19340-1-3",
         "SkypeEngagement": "P-E-1570437-4-4,P-E-1560509-4-5,P-E-1560169-4-5,P-E-1547863-4-8,P-E-1469862-4-8,P-E-1449303-4-4,P-E-1433137-4-4,P-E-1307483-4-4,P-E-1265651-4-4,P-E-1256045-4-8,P-E-1232637-4-4,P-E-1198707-4-4,P-E-1148238-4-4,P-E-1148150-7-8,P-E-1132772-4-4,P-E-1115813-2-3,P-E-1025583-4-6,P-E-1003063-4-8,P-E-25239-2-9,P-E-48381-7-28,P-E-37870-3-6,P-E-37760-4-10,P-E-37860-4-12,P-E-28812-2-6,P-E-37351-6-15,P-E-37292-6-20,P-E-37085-4-7,P-E-37016-4-9,P-E-31909-2-12,P-E-31552-2-8,P-E-27352-2-7,P-E-27377-2-13,P-E-23771-4-32,P-E-23585-4-15,P-D-22627-1-8",
@@ -672,11 +671,10 @@
         "ResourceIdmatch": false
     },
     "ECS_Scorecards_Test": {},
-    "ECS_Scorecards_Test2": {},
     "EventToConfigIdsMapping": {
         "SkypeAudioLibrary": {
-            "mdsc_call_quality_feedback": "P-E-1559656-C1-5,P-R-1294203-6-12",
-            "mdsc_qoe": "P-E-1559656-C1-5,P-R-1294203-6-12"
+            "mdsc_call_quality_feedback": "P-E-1559656-2-5,P-R-1294203-6-12",
+            "mdsc_qoe": "P-E-1559656-2-5,P-R-1294203-6-12"
         },
         "SkypeResourceManager": {
             "mdsc_call_quality_feedback": "P-R-1570178-1-4",
@@ -735,6 +733,22 @@
             },
             "hlsSettings": {
                 "hlsConfig": {
+                    "fragLoadPolicy": {
+                        "default": {
+                            "errorRetry": {
+                                "maxNumRetry": 6,
+                                "maxRetryDelayMs": 8000,
+                                "retryDelayMs": 1000
+                            },
+                            "maxLoadTimeMs": 30000,
+                            "maxTimeToFirstByteMs": 10000,
+                            "timeoutRetry": {
+                                "maxNumRetry": 4,
+                                "maxRetryDelayMs": 0,
+                                "retryDelayMs": 0
+                            }
+                        }
+                    },
                     "liveMaxLatencyDurationCount": 6,
                     "liveSyncDurationCount": 3
                 },
@@ -2300,7 +2314,557 @@
     "PortalWebClient": {
         "CSP": "default-src 'self' blob: https://*.skype.com https://*.skypeassets.com; script-src https://*.skype.com https://*.skypeassets.com https://www.bing.com https://*.virtualearth.net https://*.arkoselabs.com 'unsafe-eval' 'report-sample'; style-src 'self' https://*.skype.com https://*.skypeassets.com https://www.bing.com 'unsafe-inline'; worker-src 'self' blob:; frame-ancestors 'self' https://*.skype.com https://login.microsoftonline.com; connect-src 'self' blob: data: https://*.api.cognitive.microsoft.com/text/analytics/v2.1/entities https://*.cognitiveservices.azure.com/text/analytics/v2.1/entities https://*.msn.com https://browser.events.data.microsoft.com https://*.skype.com https://*.skypeassets.com https://*.bing.com https://*.live.com https://*.aria.microsoft.com https://*.trouter.io wss://*.skype.com wss://*.skype.com:443 https://*.bingapis.com wss://wsapi.skype.net wss://wsapi-dev.skype.net wss://wsapi-qa.skype.net https://*.virtualearth.net https://search.knowledge.store https://outlook.office.com https://dynmsg.modpim.com https://teams.microsoft.com https://*.teams.microsoft.com https://login.microsoftonline.com https://login.windows.net https://substrate.office.com/ https://rink.hockeyapp.net/ https://*.translatorv2.skype.net https://graph.microsoft.com http://www.msftconnecttest.com/ https://api.cortana.ai/ https://gateway.zscaler.net https://gateway.zscalerone.net https://gateway.zscalertwo.net https://gateway.zscalerthree.net https://gateway.zscloud.net https://login.zscalerone.net https://api.tenor.com https://*.msedge.net https://outlook.office365.com https://*.measure.office.com https://api.msn.com https://in.appcenter.ms/logs https://gateway.bingviz.microsoftapp.net https://gateway-skype.bingviz.microsoftapp.net https://eagle.sapphire.microsoftapp.net https://taonow.blob.core.windows.net/ https://flighting.aps.skype.com/ https://*.arkoselabs.com https://*.bing.net/ https://livecms.secure.skypeassets.com; img-src data: blob: https://*.skype.com https://*.skypeassets.com https://*.skypeassets.net https://*.storage.msn.com https://*.storage.live.com https://skypeapps.azureedge.net https://bot-framework.azureedge.net https://botavatar.azureedge.net https://mscorpmedia.azureedge.net https://livecms.secure.skypeassets.com https://botresources.blob.core.windows.net https://*.bing.com https://*.bingapis.com https://*.virtualearth.net https://igx.4sqi.net https://fastly.4sqi.net https://outlook.office.com https://login.microsoftonline.com https://login.windows.net https://*.1drv.com https://spoprod-a.akamaihd.net https://*.measure.office.com https://*.msedge.net https://outlook.office365.com https://*.measure.office.com https://substrate.office.com https://outlook.live.com https://img-s-msn-com.akamaized.net https://assets.msn.com https://assets.msn.cn https://mschannelscdnprod.azureedge.net https://taonow.blob.core.windows.net/ https://cdn.query.prod.cms.msn.com https://*.bing.com https://*.bing.net https://*.lexisnexis.com https://*.giphy.com; media-src skypevideo: blob: https://*; font-src data: https://*.skype.com https://*.skype.net https://*.skypeassets.com; form-action 'self' data: https://login.skype.com https://login.live.com; child-src blob: https://*.skype.com https://*.skype.net https://login.skype.com https://login.live.com https://*.bing.com https://login.microsoftonline.com/ https://skypeapps.azureedge.net/ https://www.msn.com/ https://taonow.azureedge.net/ https://*.arkoselabs.com; report-uri https://edge.skype.com/r/c; block-all-mixed-content ",
         "CallEcsPerRequest": true,
+        "Clients": {
+            "ConnectFlow": {
+                "Id": "351407",
+                "RedirectUris": [
+                    "https://a.login.skype.com/finish"
+                ]
+            },
+            "Havana": {
+                "Id": "987482",
+                "Login": {
+                    "DefaultScenario": "silent",
+                    "Enabled": true,
+                    "SkypetokenScopes": [
+                        "identity",
+                        "identity_update",
+                        "contacts",
+                        "contacts_update",
+                        "commerce",
+                        "communication",
+                        "communication_ro"
+                    ]
+                },
+                "RedirectUris": [
+                    "https://havana.skype.com",
+                    "https://havana-latest.skype.com",
+                    "https://oa.skype.com",
+                    "https://pro.skype.com"
+                ]
+            },
+            "HavanaAlternate": {
+                "Id": "987483",
+                "Login": {
+                    "AlternateIdentity": "oa",
+                    "DefaultScenario": "silent",
+                    "Enabled": true,
+                    "SkypetokenScopes": [
+                        "identity",
+                        "identity_update",
+                        "contacts",
+                        "contacts_update",
+                        "commerce",
+                        "communication",
+                        "communication_ro"
+                    ]
+                },
+                "RedirectUris": [
+                    "https://havana.skype.com",
+                    "https://havana-latest.skype.com",
+                    "https://oa.skype.com",
+                    "https://pro.skype.com"
+                ]
+            },
+            "Mac": {
+                "Id": "797265",
+                "RedirectUris": [
+                    "https://a.login.skype.com/finish"
+                ]
+            },
+            "Skype.com": {
+                "DefaultTheme": "skype-blue",
+                "Id": "815617",
+                "Login": {
+                    "DefaultScenario": "silent",
+                    "Enabled": true,
+                    "SkypetokenScopes": [
+                        "identity",
+                        "identity_update",
+                        "commerce",
+                        "communication",
+                        "contacts_update",
+                        "contacts",
+                        "communication_ro"
+                    ]
+                },
+                "Pnv": {
+                    "DefaultScenario": "default",
+                    "Enabled": true
+                },
+                "RedirectUris": [
+                    "http://www.skype.com/",
+                    "https://www.skype.com/",
+                    "https://wwwstaging.skype.net/"
+                ]
+            },
+            "Skype4Life": {
+                "DefaultTheme": "skype-blue",
+                "Id": "572381",
+                "Login": {
+                    "DefaultScenario": "silent",
+                    "Enabled": true,
+                    "SkypetokenScopes": [
+                        "communication",
+                        "contacts_update",
+                        "identity_update",
+                        "commerce"
+                    ]
+                },
+                "Pnv": {
+                    "DefaultScenario": "default",
+                    "Enabled": true
+                },
+                "RedirectUris": [
+                    "https://preview.web.skype.com",
+                    "https://latest.web.skype.com",
+                    "https://alpha.web.skype.com",
+                    "https://beta.web.skype.com",
+                    "https://dev.web.skype.com",
+                    "https://candidate.web.skype.com",
+                    "https://web.skype.com",
+                    "https://latest-webclient.skype.com"
+                ]
+            },
+            "SkypeDeveloper": {
+                "DefaultTheme": "skype-blue",
+                "Id": "366195",
+                "Login": {
+                    "DefaultScenario": "silent",
+                    "Enabled": true,
+                    "SkypetokenScopes": [
+                        "identity"
+                    ]
+                },
+                "RedirectUris": [
+                    "https://www.skype.com",
+                    "https://wwwstaging.skype.net"
+                ]
+            },
+            "SkypeDocs": {
+                "DefaultTheme": "skype-blue",
+                "Id": "981845",
+                "Login": {
+                    "DefaultScenario": "silent",
+                    "Enabled": true,
+                    "SkypetokenScopes": [
+                        "identity_update",
+                        "commerce",
+                        "communication",
+                        "contacts_update"
+                    ]
+                },
+                "Pnv": {
+                    "DefaultScenario": "default",
+                    "Enabled": true
+                },
+                "RedirectUris": [
+                    "https://docs.skype.net",
+                    "http://localhost:5000",
+                    "http://localhost:8080"
+                ]
+            },
+            "SkypeExtension": {
+                "Id": "370873",
+                "Login": {
+                    "DefaultScenario": "silent",
+                    "Enabled": true,
+                    "SkypetokenScopes": [
+                        "identity_update,commerce,communication,contacts_update"
+                    ]
+                },
+                "RedirectUris": [
+                    "https://web.skype.com",
+                    "https://swc.cdn.skype.com",
+                    "https://latest-swc.cdn.skype.com",
+                    "http://latest-swx.cdn.skype.com",
+                    "https://latest-swx.cdn.skype.com",
+                    "https://latest-lwc.cdn.skype.net"
+                ]
+            },
+            "SkypeFeedback": {
+                "Id": "461236",
+                "Login": {
+                    "DefaultScenario": "silent",
+                    "Enabled": true,
+                    "SkypetokenScopes": [
+                        "identity"
+                    ]
+                },
+                "Pnv": {
+                    "DefaultScenario": "default",
+                    "Enabled": true
+                },
+                "RedirectUris": [
+                    "https://feedback.skype.com",
+                    "https://honzatest01.cloudapp.net",
+                    "https://skypefeedbacktest.cloudapp.net",
+                    "https://skypefeedbacktest2.cloudapp.net",
+                    "https://skypefeedback01.cloudapp.net",
+                    "https://skypefeedback02.cloudapp.net",
+                    "https://skypefeedback03.cloudapp.net",
+                    "https://skypefeedback04.cloudapp.net"
+                ]
+            },
+            "SkypeInverview": {
+                "Id": "741456",
+                "Login": {
+                    "DefaultScenario": "silent",
+                    "Enabled": true,
+                    "SkypetokenScopes": [
+                        "identity_update,commerce,communication,contacts_update"
+                    ]
+                },
+                "RedirectUris": [
+                    "https://interviews.skype.com",
+                    "https://interviews-int.skype.com",
+                    "https://interviews-df.skype.com",
+                    "http://localhost:42824",
+                    "https://auth.call.skype.com",
+                    "https://auth.call-df.skype.net",
+                    "https://auth.call-int.skype.net"
+                ]
+            },
+            "SkypeJoin": {
+                "Id": "371752",
+                "Login": {
+                    "DefaultScenario": "silent",
+                    "Enabled": true,
+                    "SkypetokenScopes": [
+                        "identity,communication"
+                    ]
+                },
+                "RedirectUris": [
+                    "https://dogfood-join.skype.com",
+                    "https://join.skype.com",
+                    "https://latest-join.skype.com"
+                ]
+            },
+            "SkypeLoginInternal": {
+                "Id": "111111",
+                "Login": {
+                    "DefaultScenario": "silent",
+                    "Enabled": true,
+                    "SkypetokenScopes": [
+                        "contacts",
+                        "identity_update"
+                    ]
+                },
+                "RedirectUris": [
+                    "https://login.skype.com"
+                ]
+            },
+            "SkypeManager": {
+                "Id": "633212",
+                "Login": {
+                    "SkypetokenScopes": [
+                        "identity"
+                    ]
+                },
+                "RedirectUris": [
+                    "https://manager.skype.com/my/login",
+                    "https://manager.skype.com/my/dashboard"
+                ]
+            },
+            "SkypeMeetNowDF": {
+                "Id": "971752",
+                "Login": {
+                    "DefaultScenario": "silent",
+                    "Enabled": true,
+                    "SkypetokenScopes": [
+                        "identity,communication"
+                    ]
+                },
+                "RedirectUris": [
+                    "https://api.join.df.skype.com"
+                ]
+            },
+            "SkypeMeetNowINT": {
+                "Id": "971753",
+                "Login": {
+                    "DefaultScenario": "silent",
+                    "Enabled": true,
+                    "SkypetokenScopes": [
+                        "identity,communication"
+                    ]
+                },
+                "RedirectUris": [
+                    "https://qacms.skype.net"
+                ]
+            },
+            "SkypeMeetNowLocal": {
+                "Id": "971755",
+                "Login": {
+                    "DefaultScenario": "silent",
+                    "Enabled": true,
+                    "SkypetokenScopes": [
+                        "identity,communication"
+                    ]
+                },
+                "RedirectUris": [
+                    "https://localhost:3006"
+                ]
+            },
+            "SkypeMeetNowPROD": {
+                "Id": "971754",
+                "Login": {
+                    "DefaultScenario": "silent",
+                    "Enabled": true,
+                    "SkypetokenScopes": [
+                        "identity,communication"
+                    ]
+                },
+                "RedirectUris": [
+                    "https://api.join.skype.com"
+                ]
+            },
+            "SkypeSupport": {
+                "DefaultTheme": "skype-blue",
+                "Id": "965756",
+                "Login": {
+                    "DefaultScenario": "silent",
+                    "Enabled": true,
+                    "SkypetokenScopes": [
+                        "identity"
+                    ]
+                },
+                "Pnv": {
+                    "DefaultScenario": "default",
+                    "Enabled": true
+                },
+                "RedirectUris": [
+                    "https://support.skype.com",
+                    "https://support.cms.skype.net",
+                    "https://support-livecmseastus.cloudapp.net",
+                    "https://support-livecmswesteurope.cloudapp.net",
+                    "https://support.livecms.trafficmanager.net",
+                    "https://support.qacms.skype.net"
+                ]
+            },
+            "SkypeWebExperience": {
+                "Id": "580081",
+                "Login": {
+                    "SkypetokenScopes": [
+                        "communication",
+                        "identity_update",
+                        "contacts_update",
+                        "commerce"
+                    ]
+                },
+                "RedirectUris": [
+                    "https://a.lw.skype.com",
+                    "https://a.login.skype.com/finish",
+                    "https://live.com",
+                    "https://latest-webclient.skype.com",
+                    "https://dogfood-webclient.skype.com",
+                    "https://web.skype.com"
+                ]
+            },
+            "WebClient": {
+                "Id": "578134",
+                "Login": {
+                    "SkypetokenScopes": [
+                        "identity_update",
+                        "commerce",
+                        "communication",
+                        "contacts_update"
+                    ]
+                },
+                "RedirectUris": [
+                    "https://dogfood-webclient.skype.com",
+                    "https://latest-webclient.skype.com",
+                    "https://webapp.skype.com,https://web.skype.com"
+                ]
+            },
+            "WebImSdk": {
+                "Id": "919866",
+                "Login": {
+                    "DefaultScenario": "silent",
+                    "Enabled": true,
+                    "SkypetokenScopes": [
+                        "identity_update,commerce,communication,contacts_update"
+                    ]
+                },
+                "RedirectUris": [
+                    "https://web.skype.com",
+                    "http://latest-swx.cdn.skype.com",
+                    "https://latest-swx.cdn.skype.com",
+                    "https://swc.cdn.skype.com",
+                    "https://latest-swc.cdn.skype.com",
+                    "https://www.bing.com",
+                    "http://www.bing.com",
+                    "https://www.staging-bing-int.com",
+                    "https://www.bing-int.com",
+                    "https://www.skype.com",
+                    "https://devcms.skype.net",
+                    "https://precms.skype.net",
+                    "https://qacms.skype.net",
+                    "https://wwwstaging.skype.net",
+                    "https://outlook.live.com",
+                    "https://outlook-sdf.live.com",
+                    "https://live.com",
+                    "https://interviews.skype.com",
+                    "https://interviews-int.skype.com",
+                    "https://interviews-df.skype.com",
+                    "https://www.msn.com",
+                    "https://int1.msn.com",
+                    "https://preview-responder.microsoft.com",
+                    "https://preview-ambassadors.microsoft.com",
+                    "https://cmspreview2.corp.microsoft.com",
+                    "https://products.office.com",
+                    "https://www.office.com",
+                    "https://call-int.skype.com",
+                    "https://call-df.skype.com",
+                    "https://call.skype.com",
+                    "https://outlook-sdf.office.com",
+                    "https://dev-responder.microsoft.com",
+                    "https://responder.microsoft.com",
+                    "https://education-int.skype.net",
+                    "https://education-df.skype.net",
+                    "https://education.skype.com"
+                ]
+            },
+            "Windows": {
+                "Id": "439400",
+                "RedirectUris": [
+                    "https://a.login.skype.com/finish"
+                ]
+            }
+        },
+        "DeviceIdRateLimitOptions": {
+            "ClientWhitelist": [
+                "db8EkaBVS_6i8ZHtXvhUzK",
+                "cq79ar9cQIGg52lgGH2QIR",
+                "1595FB53-E0B0-410D-8675-BAAE2783A194",
+                "e2e-tests-fcffc040-4eb5-4e7b-890e-2c5131ecb5da",
+                "D48E0E92-EB7E-4845-B75E-1876B7339D73",
+                "B2C54E16-17FC-4A90-8146-D833C651EF4B",
+                "2166f7fcfd4cd14cf92c8ed16be64323",
+                "431777A2-7800-4C95-8C5D-56AF7B46E21C",
+                "58728e6dbd83a311b7beacf1c740a0f8",
+                "OndrasFakeDeviceId"
+            ]
+        },
         "IsMurphyProtected": false,
+        "MicrosoftTeams": {
+            "DefaultTheme": "skype-blue",
+            "Id": "681927",
+            "Login": {
+                "DefaultScenario": "silent",
+                "Enabled": true,
+                "SkypetokenScopes": [
+                    "identity_update",
+                    "commerce",
+                    "communication",
+                    "contacts_update"
+                ]
+            },
+            "RedirectUris": [
+                "https://edge.skype.net",
+                "https://spacetest2.skype.com",
+                "https://spacetest8.skype.com",
+                "https://ssauth.skype.com",
+                "http://dev.local",
+                "https://devspaces.skype.com"
+            ]
+        },
+        "PhoneNumberAuthConfiguration": {
+            "AllowListedNumberHashes": [
+                "54A63417F5DA6CE596B54B69212DB03959704CCF3E00AC831EDBF9367F34CDC9710AA00BBD2477306AA2141B9084FFBE",
+                "D6ACF94B6D2B0CFB399B362E3AB2E7731EA46C2A506AF25D3BA8CA36A0DD8419C075CE9AB3DCC4983153E1779F6CB217",
+                "4AA8BC5534C5D037DC2F3E0692C6AD8A769CD801AEAEE3D11581F30719F0E832356B6C9B001C443986530F241CA06DF9",
+                "69C3DF447BFD1E21DEC4315E3C984E148816C53D13A178203A9931ABA2F9A8614B97DE5842215C4999BF5D194D71FB9F",
+                "2979F6D54962C309EFD0031E46BB8A1A21ECC860694C8B5915D6A10285FBED456369E5A19D31A7E50E656BAC2D57F1D9",
+                "9870BD838F9B0C9CF2F763CCE71552B2C60FBD1BEF2FC36B50D32DD3F24720A22941A35F3BDC0FAB3CC1049019009C70",
+                "0922C03D4AE40F2705FB1BA82B754C9004FA78DF4F3DA4E53F8B05A95B594060BF31547369EDE6379F8BD937B1C523F7",
+                "BCE08822034B0F93E77C104F61C38B0660D2813AE4E65162C6C7C8C6515C3593AB4367213566B4D4EBB872B38BE24652",
+                "EE2313BDD4B03A85F9207381CC31B0AC9D9334E6345290BB11777B5089DC57946628F49EEC7014185D448E91B291CBCB",
+                "8CB52DB86EFD5CF8B94B801B628B306C759DAEF067DBA737C5BD5C42D9F221AEE2021BF983463E768C24613D95AF52D8",
+                "240A0B4A3B3A319086ACCD27D23AD0A86F7308CD36799F90DFD2D836FCA4CC867D6ED9D884C0B4C097F70EDC241EDC01",
+                "AEA3177D31426B333C3AEDAAED9CD61E424679332ECEAED342D5CFD5815D83A7D1B8CDE8C277B9BC51C50C408B280637",
+                "DCAD39F381EA13E85C83B4F7A12596CC850073D724C0525040388E54FD6B94BA690A783F7788B780647E4F80DD512597",
+                "16D7942031788C1FE134D98B09B88FDE900F389A40E658CB17B00703EC25A82345E74D4060B1A6C8BEB8F74B5EBB7715",
+                "BAEC13EAF5E82B245C54552465BD29C4DD4016BFD3740897E50048FA83CB6C6FE3676CE1A1CA81FA24D77CA9B18937C3",
+                "D70694ABA1AF78E6294BD49F26893AD9E1451CAB51B1857157934AF6883A9DC68AED95DC116559D82CC6C45E46E1A266",
+                "6CB2071EBA0822EC93C8DAEB5E1BD5E9F19F2E23921A4D65C7A1024BAC16E5C3CEBCA00C9B3849EB3C136897CCCAF2CC",
+                "AF15D2F4BE68E7C9AA2FCA2E19FD70B3B0A71D04F17C660E2322C061949A20FC0C5AEE202C081B769ADBA6F7E78FD216",
+                "F3E107BF8B4D439329B9DB5410D9F2A582B2F40EE329711B79B92CCC459FB0B82BBB8B96C959F43C9CE9FED1E195C9E4",
+                "DD804ECBD1EF689061C02D630FC6E3DC3D152D845D7F839567AFA603B191126CB396346956AC51A755029BF7BE05D1D0",
+                "711AEA5656C802E12C3D04F4B617400929E4234F3EDAAACC59025E6E91FD96C91393ED769215551FD36E367B10CC6578",
+                "C9E0BC1BACDB1FD78AEBA1FB097ECA040E40F3DFB315B6110067B19723EEEC2C496BFDB00D4E57B3A6104B7EB2B67828",
+                "25440B4C037F3580BA7AA5D35DC986F1A208BC030AF41CA4EE3DE332642643ADD6AC6A998DB536011E985D0EF73DF4EE",
+                "4D2768C92374C6F0FC9AC46B9E9FC2994B2D1DF7A7EB534AFC3B3182B2E9637AF8DA56015A05733D093762006E005F10",
+                "EBE2E849A95899F0D7A94E9D036DB0EC4A6BE0DED99C19D1F16DCB3F54A1469002066B9C86F399F3E6935596DB9B7E52",
+                "3F9312F47BEE159A5063360847FBD8F497E7ECB77EA490B567B0B5E9E585813F5D39840EA6C9897B29DD5229BDFD02E7",
+                "817C89BFED1DCFFBF572B57484E3B4660FA61C3B0EE9B5685A360C0675E1F4EA378F5B4D9A1F5BF40042038BC85CBFF1",
+                "9A06AC970892739ECD7FD8D6910B71895E067A46E212528424D33A58A0E5D5C7DC7DB729865CD50B7324CA5ADA15EC12",
+                "80745A80D3ACB038D65A936FAA94C93DF2A92A6553F5A5B732E8E5E6B17B56BC73DB7CF75B22BA12ECC9A41376E33B95",
+                "96C4C9D6DB0D24964BEADD2B7ED99D9EA94AF716C7ABE6BB4F38F8491E90CA07837C4D345B070C41EDF92FC57AFB2505",
+                "74841D7679C2C9DC36A3CAF6E45D29C7EB3EDDDB4B9862460C6834AF328003FBB1DC69DBB1730CF41F9965AAB2603A7A",
+                "BD1CAE2E4E76E6867AC342E1B12F5C9A31928CE188844952A853609DAFA03683A34016FF3E685C1431A5EB80D21B8F00",
+                "736ADD7307E525967A38F9E2C2E71E82969078538F23865FD1C54C84AFEE9CB289085B3DF2C42B2BC9650B35435E94BE",
+                "E5F3B8C328A4CE171510946722AC793752C9FB66813688B0A1405337AB2AAFDD35A85E49C8142726307CAE4C7FA3D9B1",
+                "B7B222318FC48EBAE8A8AC3FE73820C5C5F71359B4727DB985E3A34EC0D3DA46CAB314B810D725C8C8CD7C1B1DA16205",
+                "EE2FDEDAB01F0C00C8339DE0450680A59E3E502340DB0BB09082591A8CF317E82BA669B19AA91A0CCDF9E536D48BEB6A",
+                "E895E64CE27AAAE3B691FFDC5F99C84C09FFF37BFF219C4C1EA8A93ED536AAD1B6AD2989DE7DC8ACB2D0BDBBFAF8E365",
+                "40233A55512253FFF2E59BFE96A58EF638741977178D4FBAB9E8962A17C3EE81E3073A0CA6E57A8C8C19719D40E483E1",
+                "FB9263026214A075A79413BAF89D039ED81EC5FF6E8B1046107179C489097703F3D02E8F3943ED08F0F4AFB92FBAE5E9",
+                "FD6B8C6A26386470070193BC0D9CBA296F18866328A88A7A3D3348B4157BEC51C12F897A3CCF6509BAB255CC5D55A2DF",
+                "FB63294A8C7FDCE18A675E1D563DB221A81B3ACAA3CC0453EB99D8CE2F8941CE1FA26E08734C47172FCB9FF1D6342218",
+                "7142998930AF1B7664AAC633CF57A97B07A9965AE3209EC7ECE531B44432EA352BF88FB0AB81D5AE5BDEAEF96191A369",
+                "BCD9CA7557BFD4E2DF3E54CE333DD18F614CB3BC02914ADEAEA06F5EACBC382044A1757ED0C596E3D6CCD71E86080D0F",
+                "581A1DEEBDE90BE81D394E7B0E65B40AC792F770C25666F221D339C37CE5D4F404C5F787A543966508C52A92B66A3B5A",
+                "34083796E34E6AAC34803B29E6D8D2B348514EADE536FB6058EAE11120251ED1890B6A8ACA7B0B12F75E3716BEFC211B",
+                "56CD02C49D82FE877EB99F939D7B9761ABE6D5E50952DF954BF8D7E22174A6AD8A0FBACD55C90D9622AA161E2615D25A",
+                "16E2F4268E26B8C4C1254C595B828130ADB2365C721A9D496B30087BC67E584C4523178BD1032D47B7C965F290959B5F",
+                "611F673A8BC6B9F70206D5D19DA9BD772F9B0DE9F2286E2C4DE2527BCAAFDA6B83F2FE4B63DB222A3AA7B38707120260",
+                "1BE866436B8799F2C2C85B247BC885E36249DD86C81D3BDC5080AFB883FD75303AF0DBB4FAF27795DC46E6D77A260F26",
+                "AE2E9F41F4F4E80EB0636C662C8E588CEBE15D173A551AEC040C4572B0D85296FFFBDD8E65A8091AC7546C3EB9D8AC9C",
+                "0FFEBA9DF50F5F7DDDE0A3F0EB4D177986AD22EB42D6127A56E77853A633B352A15E0EE49FCCF23FAD153E51424FB8E1",
+                "2147F9B8CF000DD1B2FA6F4ACEA178AE7620371373F5D73BAD4A6933331280733C5FD0ACF817DAAEF12694493D33B6BC",
+                "0500974AF1C2CD1F55EA22B017CD7C85AA98E832389975F662B2D34E23C9309A6D294AE79B71DE3B348ECE132259508F"
+            ],
+            "DenyPhonePrefixes": [
+                "1900"
+            ]
+        },
+        "PhoneNumberRateLimitOptions": {
+            "ClientWhitelist": [
+                "54A63417F5DA6CE596B54B69212DB03959704CCF3E00AC831EDBF9367F34CDC9710AA00BBD2477306AA2141B9084FFBE",
+                "D6ACF94B6D2B0CFB399B362E3AB2E7731EA46C2A506AF25D3BA8CA36A0DD8419C075CE9AB3DCC4983153E1779F6CB217",
+                "4AA8BC5534C5D037DC2F3E0692C6AD8A769CD801AEAEE3D11581F30719F0E832356B6C9B001C443986530F241CA06DF9",
+                "69C3DF447BFD1E21DEC4315E3C984E148816C53D13A178203A9931ABA2F9A8614B97DE5842215C4999BF5D194D71FB9F",
+                "2979F6D54962C309EFD0031E46BB8A1A21ECC860694C8B5915D6A10285FBED456369E5A19D31A7E50E656BAC2D57F1D9",
+                "9870BD838F9B0C9CF2F763CCE71552B2C60FBD1BEF2FC36B50D32DD3F24720A22941A35F3BDC0FAB3CC1049019009C70",
+                "0922C03D4AE40F2705FB1BA82B754C9004FA78DF4F3DA4E53F8B05A95B594060BF31547369EDE6379F8BD937B1C523F7",
+                "BCE08822034B0F93E77C104F61C38B0660D2813AE4E65162C6C7C8C6515C3593AB4367213566B4D4EBB872B38BE24652",
+                "EE2313BDD4B03A85F9207381CC31B0AC9D9334E6345290BB11777B5089DC57946628F49EEC7014185D448E91B291CBCB",
+                "8CB52DB86EFD5CF8B94B801B628B306C759DAEF067DBA737C5BD5C42D9F221AEE2021BF983463E768C24613D95AF52D8",
+                "240A0B4A3B3A319086ACCD27D23AD0A86F7308CD36799F90DFD2D836FCA4CC867D6ED9D884C0B4C097F70EDC241EDC01",
+                "AEA3177D31426B333C3AEDAAED9CD61E424679332ECEAED342D5CFD5815D83A7D1B8CDE8C277B9BC51C50C408B280637",
+                "DCAD39F381EA13E85C83B4F7A12596CC850073D724C0525040388E54FD6B94BA690A783F7788B780647E4F80DD512597",
+                "16D7942031788C1FE134D98B09B88FDE900F389A40E658CB17B00703EC25A82345E74D4060B1A6C8BEB8F74B5EBB7715",
+                "BAEC13EAF5E82B245C54552465BD29C4DD4016BFD3740897E50048FA83CB6C6FE3676CE1A1CA81FA24D77CA9B18937C3",
+                "D70694ABA1AF78E6294BD49F26893AD9E1451CAB51B1857157934AF6883A9DC68AED95DC116559D82CC6C45E46E1A266",
+                "6CB2071EBA0822EC93C8DAEB5E1BD5E9F19F2E23921A4D65C7A1024BAC16E5C3CEBCA00C9B3849EB3C136897CCCAF2CC",
+                "AF15D2F4BE68E7C9AA2FCA2E19FD70B3B0A71D04F17C660E2322C061949A20FC0C5AEE202C081B769ADBA6F7E78FD216",
+                "F3E107BF8B4D439329B9DB5410D9F2A582B2F40EE329711B79B92CCC459FB0B82BBB8B96C959F43C9CE9FED1E195C9E4",
+                "DD804ECBD1EF689061C02D630FC6E3DC3D152D845D7F839567AFA603B191126CB396346956AC51A755029BF7BE05D1D0",
+                "711AEA5656C802E12C3D04F4B617400929E4234F3EDAAACC59025E6E91FD96C91393ED769215551FD36E367B10CC6578",
+                "C9E0BC1BACDB1FD78AEBA1FB097ECA040E40F3DFB315B6110067B19723EEEC2C496BFDB00D4E57B3A6104B7EB2B67828",
+                "25440B4C037F3580BA7AA5D35DC986F1A208BC030AF41CA4EE3DE332642643ADD6AC6A998DB536011E985D0EF73DF4EE",
+                "4D2768C92374C6F0FC9AC46B9E9FC2994B2D1DF7A7EB534AFC3B3182B2E9637AF8DA56015A05733D093762006E005F10",
+                "EBE2E849A95899F0D7A94E9D036DB0EC4A6BE0DED99C19D1F16DCB3F54A1469002066B9C86F399F3E6935596DB9B7E52",
+                "3F9312F47BEE159A5063360847FBD8F497E7ECB77EA490B567B0B5E9E585813F5D39840EA6C9897B29DD5229BDFD02E7",
+                "817C89BFED1DCFFBF572B57484E3B4660FA61C3B0EE9B5685A360C0675E1F4EA378F5B4D9A1F5BF40042038BC85CBFF1",
+                "80745A80D3ACB038D65A936FAA94C93DF2A92A6553F5A5B732E8E5E6B17B56BC73DB7CF75B22BA12ECC9A41376E33B95",
+                "1FD03AA51B174C4CB646F978004EF176C138CF3AB0C511BC75A2FFF2243F0E0F045273CF98CAF11711280A7CF06CDA73",
+                "9F3995085E40974ECE8240544CEE8801E4298951017FCC24C5D1058F657C5C298AF6FB0EE0F4ECE533166DEED60D270A",
+                "2147F9B8CF000DD1B2FA6F4ACEA178AE7620371373F5D73BAD4A6933331280733C5FD0ACF817DAAEF12694493D33B6BC",
+                "0500974AF1C2CD1F55EA22B017CD7C85AA98E832389975F662B2D34E23C9309A6D294AE79B71DE3B348ECE132259508F"
+            ],
+            "ShouldSendFakeResponse": false
+        },
         "PrefetchLinksJoin": "[{\"Url\":\"https://join.secure.skypeassets.com\",\"Rel\":\"preconnect\",\"IsCors\":false},{\"Url\":\"https://a.lw.skype.com\",\"Rel\":\"preconnect\",\"IsCors\":false},{\"Url\":\"https://login.live.com\",\"Rel\":\"preconnect\",\"IsCors\":false},{\"Url\":\"https://api.join.skype.com\",\"Rel\":\"preconnect\",\"IsCors\":true},{\"Url\":\"https://web.skype.com\",\"Rel\":\"preconnect\",\"IsCors\":false},{\"Url\":\"https://secure.skypeassets.com\",\"Rel\":\"preconnect\",\"IsCors\":false},{\"Url\":\"https://secure.skypeassets.com\",\"Rel\":\"preconnect\",\"IsCors\":true},{\"Url\":\"https://browser.pipe.aria.microsoft.com\",\"Rel\":\"preconnect\",\"IsCors\":true},{\"Url\":\"https://browser.pipe.aria.microsoft.com\",\"Rel\":\"preconnect\",\"IsCors\":false},{\"Url\":\"https://secure.skypeassets.com/wcss/__ASSETSVERSION__/js/vendor2.js\",\"Rel\":\"prefetch\",\"IsCors\":true},{\"Url\":\"https://secure.skypeassets.com/wcss/__ASSETSVERSION__/js/calling.js\",\"Rel\":\"prefetch\",\"IsCors\":true},{\"Url\":\"https://secure.skypeassets.com/wcss/__ASSETSVERSION__/js/core.js\",\"Rel\":\"prefetch\",\"IsCors\":true},{\"Url\":\"https://secure.skypeassets.com/wcss/__ASSETSVERSION__/js/messaging.js\",\"Rel\":\"prefetch\",\"IsCors\":true},{\"Url\":\"https://secure.skypeassets.com/wcss/__ASSETSVERSION__/js/vendor.js\",\"Rel\":\"prefetch\",\"IsCors\":true},{\"Url\":\"https://secure.skypeassets.com/wcss/__ASSETSVERSION__/js/app.js\",\"Rel\":\"prefetch\",\"IsCors\":true}]",
         "S4LAssetsVersion": "8.138.0.213",
         "S4LAssetsVersion-Default-Preview": "8.138.76.213",
@@ -2685,6 +3249,53 @@
         "ECS_ADSP_VQE_unityInitialDAGCWithNoAAGC": "0",
         "ECS_AudioDL_Kingstone": "0",
         "EngineTimerIn100ns": "100000",
+        "NetworkIndicator_BandwidthPoorLimitBps": 12500000,
+        "NetworkIndicator_BandwidthPoorLimitHadVideoBps": 681250,
+        "ULLogUpload": {
+            "conditions": [
+                {
+                    "component": "LMS.DEVICE_GENERIC",
+                    "level": "DEBUG1",
+                    "logId": 1321594419,
+                    "name": "Condition #0"
+                },
+                {
+                    "component": "LMS.DEVICE_GENERIC",
+                    "level": "DEBUG5",
+                    "logId": 605331925,
+                    "matchers": [
+                        {
+                            "arg": 1,
+                            "op": "=",
+                            "value": "12"
+                        }
+                    ],
+                    "name": "Condition #1"
+                },
+                {
+                    "component": "",
+                    "level": "",
+                    "logId": 0,
+                    "matchers": [],
+                    "name": "Condition #2"
+                }
+            ],
+            "experimentTarget": "Native",
+            "filters": [
+                {
+                    "component": "LMS.DEVICE_AUDIOSOURCE",
+                    "level": "DEBUG1"
+                },
+                {
+                    "component": "LMS.DEVICE_GENERIC",
+                    "level": "DEBUG1"
+                }
+            ],
+            "mutualSubmissionType": "none",
+            "name": "DDL for PNS MicOutputSamplingRateNotSupported fallback 2 #4013414",
+            "reenableAfterTriggering": true,
+            "resetCondition": null
+        },
         "UseClockRateForCNSupport": "true"
     },
     "SkypeBilling": {
