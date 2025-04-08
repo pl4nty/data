@@ -1,7 +1,7 @@
 [
   {
     "name": "abseil-cpp",
-    "size": 1660283,
+    "size": 1660284,
     "file_count": 160
   },
   {
@@ -16,7 +16,7 @@
   },
   {
     "name": "android_deps",
-    "size": 10574276,
+    "size": 10575467,
     "file_count": 211
   },
   {
@@ -36,7 +36,7 @@
   },
   {
     "name": "angle",
-    "size": 14599656,
+    "size": 14599480,
     "file_count": 830
   },
   {
@@ -66,8 +66,8 @@
   },
   {
     "name": "blink",
-    "size": 34016429,
-    "file_count": 3956
+    "size": 34027388,
+    "file_count": 3957
   },
   {
     "name": "boringssl",
@@ -126,7 +126,7 @@
   },
   {
     "name": "devtools-frontend",
-    "size": 7314239,
+    "size": 7314247,
     "file_count": 29
   },
   {
@@ -466,7 +466,7 @@
   },
   {
     "name": "perfetto",
-    "size": 1488313,
+    "size": 1490975,
     "file_count": 80
   },
   {
@@ -481,7 +481,7 @@
   },
   {
     "name": "protobuf",
-    "size": 758152,
+    "size": 763583,
     "file_count": 41
   },
   {
@@ -511,7 +511,7 @@
   },
   {
     "name": "skia",
-    "size": 3425839,
+    "size": 3425998,
     "file_count": 1166
   },
   {
@@ -526,7 +526,7 @@
   },
   {
     "name": "spirv-headers",
-    "size": 522397,
+    "size": 522721,
     "file_count": 15
   },
   {
@@ -581,13 +581,13 @@
   },
   {
     "name": "vulkan-utility-libraries",
-    "size": 2157666,
+    "size": 2132157,
     "file_count": 11
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 5722251,
-    "file_count": 161
+    "size": 5722464,
+    "file_count": 160
   },
   {
     "name": "vulkan_memory_allocator",
@@ -596,8 +596,8 @@
   },
   {
     "name": "wayland-protocols",
-    "size": 247467,
-    "file_count": 66
+    "size": 259071,
+    "file_count": 68
   },
   {
     "name": "webgl",
