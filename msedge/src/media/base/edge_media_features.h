@@ -8,7 +8,6 @@
 #include "base/component_export.h"
 #include "base/feature_list.h"
 #include "base/metrics/field_trial_params.h"
-#include "components/media_internals_services/buildflags/buildflags.h"
 #include "components/webrtc_internals/buildflags/buildflags.h"
 #include "edge_embedded_browser/buildflags/buildflags.h"
 #include "media/media_buildflags.h"
@@ -292,11 +291,11 @@ COMPONENT_EXPORT(EDGE_MEDIA_FEATURES)
 extern bool IsWidevinePlatformEnabled();
 #endif  // BUILDFLAG(ENABLE_WIDEVINE)
 
-#if BUILDFLAG(ENABLE_MEDIA_INTERNALS_SERVICES)
 // If enabled, loads the Media Internals Services extension into the browser
+// Used for media diagnostics log. Feature flag can be used as a kill switch if
+// media log is crashing the feedback dialog.
 COMPONENT_EXPORT(EDGE_MEDIA_FEATURES)
 BASE_DECLARE_FEATURE(kMediaInternalsServices);
-#endif  // BUILDFLAG(ENABLE_MEDIA_INTERNALS_SERVICES)
 
 #if BUILDFLAG(ENABLE_WEBRTC_INTERNALS)
 // If enabled, load the Webrtc internals extension for getting Webrtc logs

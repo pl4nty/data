@@ -1,7 +1,7 @@
 [
   {
     "name": "abseil-cpp",
-    "size": 1660284,
+    "size": 1661905,
     "file_count": 160
   },
   {
@@ -36,7 +36,7 @@
   },
   {
     "name": "angle",
-    "size": 14599480,
+    "size": 14599510,
     "file_count": 830
   },
   {
@@ -66,8 +66,8 @@
   },
   {
     "name": "blink",
-    "size": 34027388,
-    "file_count": 3957
+    "size": 31914635,
+    "file_count": 3919
   },
   {
     "name": "boringssl",
@@ -76,7 +76,7 @@
   },
   {
     "name": "breakpad",
-    "size": 17962902,
+    "size": 17962898,
     "file_count": 1009
   },
   {
@@ -261,7 +261,7 @@
   },
   {
     "name": "jdk",
-    "size": 6749,
+    "size": 6782,
     "file_count": 10
   },
   {
@@ -301,8 +301,8 @@
   },
   {
     "name": "libc++",
-    "size": 5992240,
-    "file_count": 910
+    "size": 6090491,
+    "file_count": 928
   },
   {
     "name": "libdisplay-info",
@@ -386,7 +386,7 @@
   },
   {
     "name": "metrics_proto",
-    "size": 12129,
+    "size": 12497,
     "file_count": 2
   },
   {
@@ -411,7 +411,7 @@
   },
   {
     "name": "mutter",
-    "size": 28385354,
+    "size": 28387525,
     "file_count": 1980
   },
   {
@@ -466,7 +466,7 @@
   },
   {
     "name": "perfetto",
-    "size": 1490975,
+    "size": 1491203,
     "file_count": 80
   },
   {
@@ -511,7 +511,7 @@
   },
   {
     "name": "skia",
-    "size": 3425998,
+    "size": 3426236,
     "file_count": 1166
   },
   {
@@ -586,7 +586,7 @@
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 5722464,
+    "size": 5724788,
     "file_count": 160
   },
   {
@@ -606,13 +606,13 @@
   },
   {
     "name": "webrtc",
-    "size": 221235,
-    "file_count": 64
+    "size": 219450,
+    "file_count": 62
   },
   {
     "name": "webrtc_overrides",
-    "size": 8871,
-    "file_count": 5
+    "size": 5274,
+    "file_count": 4
   },
   {
     "name": "win_build_output",

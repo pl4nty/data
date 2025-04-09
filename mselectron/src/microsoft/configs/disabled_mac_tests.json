@@ -22,5 +22,23 @@
   "session module DownloadItem webContents.downloadURL when a save path is specified and the URL is unavailable does not display a save dialog and reports the done state as interrupted",
   
   "// Disabled due to focus failure when upgrading to v33.0.0-alpaha.4",
-  "navigator.clipboard.read returns an error when permission denied"
+  "navigator.clipboard.read returns an error when permission denied",
+
+  "// https://github.com/electron/electron/issues/46455",
+  "BrowserWindow module \"titleBarOverlay\" option sets Window Control Overlay with title bar height of 40",
+  "BrowserWindow module \"transparent\" option correctly returns isMaximized() when the window is maximized then minimized",
+  "BrowserWindow module max/minimize events emits an event when a transparent window is maximized",
+  "BrowserWindow module max/minimize events emits an event when a transparent window is unmaximized",
+  "BrowserWindow module max/minimize events emits an event when window is maximized",
+  "BrowserWindow module max/minimize events emits an event when window is unmaximized",
+  "BrowserWindow module max/minimize events emits only one event when frameless window is maximized",
+  "BrowserWindow module sizing BrowserWindow.getNormalBounds() Maximized state checks normal bounds for maximized transparent window",
+  "BrowserWindow module sizing BrowserWindow.getNormalBounds() Maximized state checks normal bounds when maximized",
+  "BrowserWindow module sizing BrowserWindow.getNormalBounds() Maximized state checks normal bounds when unmaximized",
+  "BrowserWindow module sizing BrowserWindow.getNormalBounds() Maximized state correctly checks transparent window maximization state",
+  "BrowserWindow module sizing BrowserWindow.getNormalBounds() Maximized state correctly reports maximized state after maximizing then fullscreening",
+  "BrowserWindow module sizing BrowserWindow.getNormalBounds() Maximized state correctly reports maximized state after maximizing then minimizing",
+  "BrowserWindow module sizing BrowserWindow.getNormalBounds() Maximized state does not change size for a frameless window with min size",
+  "BrowserWindow module sizing BrowserWindow.getNormalBounds() Maximized state does not crash if maximized, minimized, then restored to maximized state",
+  "BrowserWindow module sizing BrowserWindow.getNormalBounds() Maximized state returns the correct value for windows with an aspect ratio"
 ]

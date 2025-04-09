@@ -116,10 +116,10 @@ index c1df53f6aa9785ea3f9da995405c060b30d3cd9e..5a6596c58ab9ae340e597a9d5fddab7a
  };
  
 diff --git a/lib/internal/errors.js b/lib/internal/errors.js
-index 4389d32e47619e494a0d65f9e6e4ef499fb1fda4..eccd787607a31dc105776a8d61cea56ffc4a683e 100644
+index 356ed1fd94ec1b5ba3812502606456c188f1aa85..bc7d36c21248ebb5e4c09a76d5ae335642d66c05 100644
 --- a/lib/internal/errors.js
 +++ b/lib/internal/errors.js
-@@ -1820,6 +1820,9 @@ E('ERR_UNCAUGHT_EXCEPTION_CAPTURE_ALREADY_SET',
+@@ -1805,6 +1805,9 @@ E('ERR_UNCAUGHT_EXCEPTION_CAPTURE_ALREADY_SET',
    '`process.setupUncaughtExceptionCapture()` was called while a capture ' +
      'callback was already active',
    Error);
@@ -130,7 +130,7 @@ index 4389d32e47619e494a0d65f9e6e4ef499fb1fda4..eccd787607a31dc105776a8d61cea56f
  E('ERR_UNHANDLED_ERROR',
    // Using a default argument here is important so the argument is not counted
 diff --git a/lib/internal/fs/promises.js b/lib/internal/fs/promises.js
-index 4567f7ff36a01d8ad73e61a9078d59857bbd92b2..c420cfa9fbd6e3a0aa205059187d437386ccab15 100644
+index 4567f7ff36a01d8ad73e61a9078d59857bbd92b2..d7c2667a302e0388cb36818a1b2fdbe4cb2ae79e 100644
 --- a/lib/internal/fs/promises.js
 +++ b/lib/internal/fs/promises.js
 @@ -61,6 +61,7 @@ const {
@@ -141,15 +141,22 @@ index 4567f7ff36a01d8ad73e61a9078d59857bbd92b2..c420cfa9fbd6e3a0aa205059187d4373
    preprocessSymlinkDestination,
    stringToFlags,
    stringToSymlinkType,
-@@ -961,6 +962,7 @@ async function readdir(path, options) {
+@@ -969,11 +970,13 @@ async function readdir(path, options) {
+ async function readlink(path, options) {
+   options = getOptions(options);
+   path = getValidatedPath(path, 'oldPath');
+-  return await PromisePrototypeThen(
++  const result = await PromisePrototypeThen(
+     binding.readlink(path, options.encoding, kUsePromises),
      undefined,
      handleErrorFromBinding,
    );
 +  maybeAddHostToUncAllowList(path, result);
-   return options.withFileTypes ?
-     getDirectoryEntriesPromise(path, result) :
-     result;
-@@ -1166,11 +1168,13 @@ async function lutimes(path, atime, mtime) {
++  return result;
+ }
+ 
+ async function symlink(target, path, type_) {
+@@ -1166,11 +1169,13 @@ async function lutimes(path, atime, mtime) {
  
  async function realpath(path, options) {
    options = getOptions(options);
@@ -394,10 +401,10 @@ index 3338e5d0610a1bc4e31adeff24556887cc66352d..8eab587307fef8d85eaf7d9003a1dc4f
    stringToSymlinkType,
    Stats: deprecate(Stats, 'fs.Stats constructor is deprecated.', 'DEP0180'),
 diff --git a/lib/internal/main/worker_thread.js b/lib/internal/main/worker_thread.js
-index f8c410b5b25cb0fe4704e057c1f1726087966807..ac0b2c1b778a9cce19cc8697317661f784555143 100644
+index caf64728b754ccef1f671a9c5503c07cdcd9a0da..92b42f826c75c6cdea53a29379010116ce3e16eb 100644
 --- a/lib/internal/main/worker_thread.js
 +++ b/lib/internal/main/worker_thread.js
-@@ -102,6 +102,8 @@ port.on('message', (message) => {
+@@ -105,6 +105,8 @@ port.on('message', (message) => {
        publicPort,
        workerData,
        mainThreadPort,
@@ -406,7 +413,7 @@ index f8c410b5b25cb0fe4704e057c1f1726087966807..ac0b2c1b778a9cce19cc8697317661f7
      } = message;
  
      if (doEval !== 'internal') {
-@@ -114,6 +116,9 @@ port.on('message', (message) => {
+@@ -117,6 +119,9 @@ port.on('message', (message) => {
        publicWorker.workerData = workerData;
      }
  
@@ -417,7 +424,7 @@ index f8c410b5b25cb0fe4704e057c1f1726087966807..ac0b2c1b778a9cce19cc8697317661f7
      setupMainThreadPort(mainThreadPort);
  
 diff --git a/lib/internal/process/pre_execution.js b/lib/internal/process/pre_execution.js
-index 89660076c41e1c05b26c17609a62a028c1e2ec5a..96a180163de57aeee78d9059ababd3948c3cf5a0 100644
+index 278665921c5160ff10b3178db27d4df319fab6b3..ea293ee3a4eb26dfa08c5240bd7e27c9ba1ff2e5 100644
 --- a/lib/internal/process/pre_execution.js
 +++ b/lib/internal/process/pre_execution.js
 @@ -13,7 +13,10 @@ const {
@@ -442,7 +449,7 @@ index 89660076c41e1c05b26c17609a62a028c1e2ec5a..96a180163de57aeee78d9059ababd394
    setupTraceCategoryState();
    setupInspectorHooks();
    setupNetworkInspection();
-@@ -733,6 +740,33 @@ function markBootstrapComplete() {
+@@ -741,6 +748,33 @@ function markBootstrapComplete() {
    internalBinding('performance').markBootstrapComplete();
  }
  
@@ -476,7 +483,7 @@ index 89660076c41e1c05b26c17609a62a028c1e2ec5a..96a180163de57aeee78d9059ababd394
  // Sequence number for diagnostic filenames
  let sequenceNumOfheapSnapshot = 0;
  
-@@ -760,6 +794,7 @@ function getHeapSnapshotFilename(diagnosticDir) {
+@@ -768,6 +802,7 @@ function getHeapSnapshotFilename(diagnosticDir) {
  
  module.exports = {
    setupUserModules,
@@ -522,10 +529,10 @@ index 809e9697a299908776c8b76bc4b27bef3864bd13..a9d9b4e2355d7d76175631a3a7360692
    lazyDOMException,
    lazyDOMExceptionClass,
 diff --git a/lib/internal/worker.js b/lib/internal/worker.js
-index 84ae104d4b9588f5c4c43710b4ecbe11722a1860..b8956e86cf0248e823bd40be493fa7bdf9428b55 100644
+index e5a2cd06892c75dfb082a38b1632221148fb25c2..88858e87d236a1741a5512ff0ba677e8991f008c 100644
 --- a/lib/internal/worker.js
 +++ b/lib/internal/worker.js
-@@ -279,6 +279,8 @@ class Worker extends EventEmitter {
+@@ -280,6 +280,8 @@ class Worker extends EventEmitter {
        hasStdin: !!options.stdin,
        publicPort: publicPortToWorker,
        mainThreadPort: mainThreadPortToWorker,
@@ -572,10 +579,10 @@ index 5632fa1dea70c1b18c8576b3f90fa409e4955c6f..9a7103a1a857b259b53cfcd0333d7fa0
  function normalizeString(path, allowAboveRoot, separator, isPathSeparator) {
    let res = '';
 diff --git a/src/node_process_object.cc b/src/node_process_object.cc
-index 3f8a4fbd1a65971645e6785e469bc887a1afbad1..44651cd6df1ccdd0a11878c62b0eb8e4f46dd4d5 100644
+index 5de8be7f8ed97e6b110e397fc4cacb9a246892b6..549053d2090e716b1a807a1a0c4ef2aa63e791c5 100644
 --- a/src/node_process_object.cc
 +++ b/src/node_process_object.cc
-@@ -171,6 +171,14 @@ MaybeLocal<Object> CreateProcessObject(Realm* realm) {
+@@ -169,6 +169,14 @@ MaybeLocal<Object> CreateProcessObject(Realm* realm) {
  #endif  // _WIN32
  #endif  // NODE_HAS_RELEASE_URLS
  
@@ -1267,7 +1274,7 @@ index 0000000000000000000000000000000000000000..822579d55c9de8f0bf3ae0d54d3ba249
 +  assert.strictEqual(c, 0);
 +}));
 diff --git a/unofficial.gni b/unofficial.gni
-index 23367db388ce9e83e123d4c6e8c6325266dd52dc..23eebceb44821768023635fd3ba2567b6acc3669 100644
+index d61a9bd5f4f0c92682f10b449976735859ecbc55..e2e22e73df2ca8c7b97250e94a1d8b443b64ef20 100644
 --- a/unofficial.gni
 +++ b/unofficial.gni
 @@ -6,6 +6,9 @@ import("node.gni")
