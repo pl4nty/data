@@ -7,7 +7,7 @@ import xml.dom.minidom
 def fetch_and_prettify_json(url, output_file, key=None):
     try:
         # Fetching JSON data from the URL
-        response = requests.get(url)
+        response = requests.get(url, verify=False)
         response.raise_for_status()
         json_data = response.json()
 
@@ -24,11 +24,6 @@ def fetch_and_prettify_json(url, output_file, key=None):
             file.write(pretty_json)
 
         print(f"Prettified JSON has been written to {output_file}")
-
-    except requests.exceptions.RequestException as e:
-        print(f"Error fetching data from URL: {e}")
-    except json.JSONDecodeError as e:
-        print(f"Error decoding JSON: {e}")
 
 
 def fetch_and_prettify_xml(url, output_file):
