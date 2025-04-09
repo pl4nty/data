@@ -15,7 +15,8 @@ def fetch_and_prettify_json(url, output_file, key=None):
             json_data = json_data[key]
 
         # Prettifying JSON data
-        json_data.pop("Headers", None)
+        if isinstance(json_data, dict):
+            json_data.pop("Headers", None)
         pretty_json = json.dumps(json_data, indent=4, sort_keys=True)
 
         # Writing prettified JSON to the specified file
