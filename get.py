@@ -15,7 +15,7 @@ def fetch_and_prettify_json(url, output_file, key=None):
             json_data = json_data[key]
 
         # Prettifying JSON data
-        json_data.pop("Headers", None)
+        json_data.pop("Headers")
         pretty_json = json.dumps(json_data, indent=4, sort_keys=True)
 
         # Writing prettified JSON to the specified file
@@ -128,6 +128,9 @@ if __name__ == "__main__":
             "https://endpoints.office.com/endpoints/worldwide?clientrequestid=bfefa92b-5f67-46b7-b01a-f3f80672645c", "microsoft_endpoints.json")
         fetch_and_prettify_json(
             "https://endpoints.office.com/endpoints/worldwide?serviceareas=MEM&clientrequestid=bfefa92b-5f67-46b7-b01a-f3f80672645c", "microsoft_endpoints_intune.json")
+        fetch_and_prettify_json("https://geo.dev.do.dsp.mp.microsoft.com/geo", "microsoft_delivery_geo_dev.json")
+        fetch_and_prettify_json("https://kv201.int.do.dsp.mp.microsoft.com/all?doClientVersion=10.1.0.13", "microsoft_delivery_kv_int.json")
+        fetch_and_prettify_json("https://kv501.prod.do.dsp.mp.microsoft.com/all?doClientVersion=10.10.0.13", "microsoft_delivery_kv_prod.json")
     else:
         url = sys.argv[1]
         output_file = sys.argv[2]
