@@ -24,6 +24,10 @@ def fetch_and_prettify_json(url, output_file, key=None):
             file.write(pretty_json)
 
         print(f"Prettified JSON has been written to {output_file}")
+    # except requests.exceptions.RequestException as e:
+    #     print(f"Error fetching data from URL: {e}")
+    except json.JSONDecodeError as e:
+        print(f"Error decoding JSON: {e}")
 
 
 def fetch_and_prettify_xml(url, output_file):
