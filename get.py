@@ -113,9 +113,9 @@ if __name__ == "__main__":
             "https://login.microsoftonline.com/common/.well-known/openid-configuration", "microsoft_oidc_config.json")
         fetch_and_prettify_json(
             "https://login.windows-ppe.net/common/.well-known/openid-configuration", "microsoft_oidc_config_ppe.json")
-        # fetch_and_prettify_json("https://login.microsoftonline.com/common/discovery/keys", "microsoft_jwks.json", "keys")
-        # fetch_and_prettify_json("https://login.microsoftonline.us/common/discovery/keys", "microsoft_jwks_us.json", "keys")
-        # fetch_and_prettify_json("https://login.partner.microsoftonline.cn/common/discovery/keys", "microsoft_jwks_cn.json", "keys")
+        fetch_and_prettify_json("https://login.microsoftonline.com/common/discovery/keys", "microsoft_jwks.json", "keys")
+        fetch_and_prettify_json("https://login.microsoftonline.us/common/discovery/keys", "microsoft_jwks_us.json", "keys")
+        fetch_and_prettify_json("https://login.partner.microsoftonline.cn/common/discovery/keys", "microsoft_jwks_cn.json", "keys")
         fetch_and_prettify_json(
             "https://login.windows-ppe.net/common/discovery/keys", "microsoft_jwks_ppe.json", "keys")
         fetch_and_prettify_json(
@@ -126,6 +126,8 @@ if __name__ == "__main__":
             "https://officeclient.microsoft.com/serverconfig16", "microsoft_office_serverconfig16.json")
         fetch_and_prettify_json(
             "https://endpoints.office.com/endpoints/worldwide?clientrequestid=bfefa92b-5f67-46b7-b01a-f3f80672645c", "microsoft_endpoints.json")
+        fetch_and_prettify_json(
+            "https://endpoints.office.com/endpoints/worldwide?serviceareas=MEM&clientrequestid=bfefa92b-5f67-46b7-b01a-f3f80672645c", "microsoft_endpoints_intune.json")
     else:
         url = sys.argv[1]
         output_file = sys.argv[2]
