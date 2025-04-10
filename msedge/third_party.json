@@ -36,7 +36,7 @@
   },
   {
     "name": "angle",
-    "size": 14599510,
+    "size": 14599384,
     "file_count": 830
   },
   {
@@ -66,7 +66,7 @@
   },
   {
     "name": "blink",
-    "size": 31914635,
+    "size": 31916343,
     "file_count": 3919
   },
   {
@@ -76,7 +76,7 @@
   },
   {
     "name": "breakpad",
-    "size": 17962898,
+    "size": 17962947,
     "file_count": 1009
   },
   {
@@ -126,7 +126,7 @@
   },
   {
     "name": "devtools-frontend",
-    "size": 7314247,
+    "size": 7314299,
     "file_count": 29
   },
   {
@@ -196,8 +196,8 @@
   },
   {
     "name": "glslang",
-    "size": 39618817,
-    "file_count": 3025
+    "size": 39624012,
+    "file_count": 3027
   },
   {
     "name": "googletest",
@@ -221,7 +221,7 @@
   },
   {
     "name": "harfbuzz-ng",
-    "size": 285265,
+    "size": 289388,
     "file_count": 31
   },
   {
@@ -301,7 +301,7 @@
   },
   {
     "name": "libc++",
-    "size": 6090491,
+    "size": 6090343,
     "file_count": 928
   },
   {
@@ -371,8 +371,8 @@
   },
   {
     "name": "llvm-build",
-    "size": 217527975,
-    "file_count": 336
+    "size": 215375380,
+    "file_count": 337
   },
   {
     "name": "logilab",
@@ -396,7 +396,7 @@
   },
   {
     "name": "microsoft_pdf",
-    "size": 18553323,
+    "size": 17667563,
     "file_count": 19
   },
   {
@@ -481,7 +481,7 @@
   },
   {
     "name": "protobuf",
-    "size": 763583,
+    "size": 763660,
     "file_count": 41
   },
   {
@@ -511,7 +511,7 @@
   },
   {
     "name": "skia",
-    "size": 3426236,
+    "size": 3426486,
     "file_count": 1166
   },
   {
@@ -586,7 +586,7 @@
   },
   {
     "name": "vulkan-validation-layers",
-    "size": 5724788,
+    "size": 5743059,
     "file_count": 160
   },
   {
@@ -606,7 +606,7 @@
   },
   {
     "name": "webrtc",
-    "size": 219450,
+    "size": 219612,
     "file_count": 62
   },
   {
