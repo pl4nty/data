@@ -129,6 +129,8 @@ if __name__ == "__main__":
         fetch_and_prettify_json("https://geo.int.do.dsp.mp.microsoft.com/geo", "microsoft_delivery_geo_int.json")
         fetch_and_prettify_json("https://kv201.int.do.dsp.mp.microsoft.com/all?doClientVersion=10.1.0.13", "microsoft_delivery_kv_int.json")
         fetch_and_prettify_json("https://kv501.prod.do.dsp.mp.microsoft.com/all?doClientVersion=10.10.0.13", "microsoft_delivery_kv_prod.json")
+        # https://prod.api.toolbox.azure-test.net/api/tool/Microsoft/DataBoxEdge/1.1.0/artifact/Az.DataBoxEdge.zip
+        fetch_and_prettify_json("https://prod.api.toolbox.azure-test.net/api/tool", "microsoft_gov_toolbox.json")
     else:
         url = sys.argv[1]
         output_file = sys.argv[2]
