@@ -473,7 +473,7 @@
         "ECS": "P-R-1097532-1-5,P-R-76663-1-2,P-D-81604-1-2",
         "ECSCONFIG": "P-D-1147099-1-3,P-D-1147088-1-3,P-D-17910-25541-3,112127",
         "ECSTest2": "P-D-1548497-1-2",
-        "ECS_Scorecards_Test": "P-E-1551938-C1-3,P-E-1551790-2-3",
+        "ECS_Scorecards_Test": "P-E-1551933-C1-3,P-E-1551847-C1-3,P-E-1441735-C1-3,P-E-1239564-2-3",
         "JennyTest2": "P-D-1133790-1-3",
         "Join": "P-D-28714-1-6",
         "JoinLauncher": "113355,113356",
@@ -516,14 +516,14 @@
         "SMSClient": "P-R-16504-26097-32,P-D-16503-23360-7",
         "SWG": "P-E-18277-2-12,119046",
         "Segmentation": "P-R-1286778-1-5,P-R-1286723-10-5,P-R-1086013-1-5,P-R-1085750-2-3,P-R-1057929-1-2,P-R-1057621-1-7,P-R-1050900-1-8,P-R-1040659-1-2,P-R-79661-1-28,P-R-43941-7-19,P-R-25076-1-9,P-R-21476-3747236-1",
-        "SkypeAudioLibrary": "P-E-1559656-2-5,P-R-1294203-6-12,P-R-1034141-2-19,P-R-1016281-9-33,P-R-15396-22088-2,P-D-1064615-1-6,P-D-49739-1-8,P-D-22453-1-5,P-D-22193-1-5,P-D-19915-1-10,P-D-19507-1-9",
+        "SkypeAudioLibrary": "P-E-1559656-C1-5,P-R-1549951-1-3,P-R-1294203-6-12,P-R-1034141-2-19,P-R-1016281-9-33,P-R-15396-22088-2,P-D-1064615-1-6,P-D-49739-1-8,P-D-22453-1-5,P-D-22193-1-5,P-D-19915-1-10,P-D-19507-1-9",
         "SkypeBilling": "117294",
         "SkypeCalling": "P-R-1221136-3-19,P-R-1099522-2-3,P-R-1085726-2-3,P-R-1056437-2-5,P-R-1056435-2-6,P-R-75937-8-8,P-R-70853-1-3,P-R-67550-8-10,P-D-22705-1-3,P-D-21727-1-5,P-D-19340-1-3",
         "SkypeEngagement": "P-E-1570437-4-4,P-E-1560509-4-5,P-E-1560169-4-5,P-E-1547863-4-8,P-E-1469862-4-8,P-E-1449303-4-4,P-E-1433137-4-4,P-E-1307483-4-4,P-E-1265651-4-4,P-E-1256045-4-8,P-E-1232637-4-4,P-E-1198707-4-4,P-E-1148238-4-4,P-E-1148150-7-8,P-E-1132772-4-4,P-E-1115813-2-3,P-E-1025583-4-6,P-E-1003063-4-8,P-E-25239-2-9,P-E-48381-7-28,P-E-37870-3-6,P-E-37760-4-10,P-E-37860-4-12,P-E-28812-2-6,P-E-37351-6-15,P-E-37292-6-20,P-E-37085-4-7,P-E-37016-4-9,P-E-31909-2-12,P-E-31552-2-8,P-E-27352-2-7,P-E-27377-2-13,P-E-23771-4-32,P-E-23585-4-15,P-D-22627-1-8",
         "SkypeFeedbackAndSupport": "P-D-24646-1-2",
         "SkypeM2": "P-R-25599-2-6,P-R-22835-2-4,P-R-22448-1-8",
         "SkypeMediaIntelligence": "123763",
-        "SkypeMediaStack": "P-R-1438359-1-3,P-R-1438353-1-3,P-R-1416126-2-6,P-R-1049939-2-21,P-R-109412-1-6,P-R-70730-1-3,P-R-48447-2-13,P-D-51815-1-3",
+        "SkypeMediaStack": "P-R-1438359-1-3,P-R-1416126-2-6,P-R-1049939-2-21,P-R-109412-1-6,P-R-70730-1-3,P-R-48447-2-13,P-D-51815-1-3",
         "SkypePersonalization": "109919",
         "SkypeResourceManager": "P-R-1570178-1-4,P-R-1238808-1-2,P-R-1167237-1-2,P-R-1120180-1-2,P-R-1120177-1-2,P-R-1105156-1-3,P-R-1097424-1-2,P-R-99795-1-3,P-R-69481-1-3,P-R-26444-1-14,P-D-1291420-1-4,115685,P-D-15348-21989-16,P-D-12245-18745-2",
         "SkypeRootTools": "P-R-1096188-2-7,P-R-36813-1-10",
@@ -3254,8 +3254,51 @@
         "ECS_ADSP_VQE_unityInitialDAGCWithNoAAGC": "0",
         "ECS_AudioDL_Kingstone": "0",
         "EngineTimerIn100ns": "100000",
-        "NetworkIndicator_BandwidthPoorLimitBps": 12500000,
-        "NetworkIndicator_BandwidthPoorLimitHadVideoBps": 681250,
+        "ULLogUpload": {
+            "conditions": [
+                {
+                    "component": "LMS.DEVICE_GENERIC",
+                    "level": "DEBUG1",
+                    "logId": 1321594419,
+                    "name": "Condition #0"
+                },
+                {
+                    "component": "LMS.DEVICE_GENERIC",
+                    "level": "DEBUG5",
+                    "logId": 605331925,
+                    "matchers": [
+                        {
+                            "arg": 1,
+                            "op": "=",
+                            "value": "12"
+                        }
+                    ],
+                    "name": "Condition #1"
+                },
+                {
+                    "component": "",
+                    "level": "",
+                    "logId": 0,
+                    "matchers": [],
+                    "name": "Condition #2"
+                }
+            ],
+            "experimentTarget": "Native",
+            "filters": [
+                {
+                    "component": "LMS.DEVICE_AUDIOSOURCE",
+                    "level": "DEBUG1"
+                },
+                {
+                    "component": "LMS.DEVICE_GENERIC",
+                    "level": "DEBUG1"
+                }
+            ],
+            "mutualSubmissionType": "none",
+            "name": "DDL for PNS MicOutputSamplingRateNotSupported fallback 2 #4013414",
+            "reenableAfterTriggering": true,
+            "resetCondition": null
+        },
         "UseClockRateForCNSupport": "true"
     },
     "SkypeBilling": {
