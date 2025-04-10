@@ -15,6 +15,7 @@ MODULES = [
     'SqlServer',
     'WindowsAutoPilotIntune',
     'Lenovo.Client.Scripting',
+    'DeliveryOptimizationTroubleshooter',
 
     # HP
     'HPCMSL',
