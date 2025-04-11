@@ -25,12 +25,12 @@
         "CLI_FireDrill_25": "P-R-1571412-2-2,P-D-1571243-1-3",
         "CLI_SideCar": "P-R-1565344-8-6,P-R-1547133-8-5,P-R-1479872-8-14,P-D-1550352-1-2",
         "Fundamentals": "P-R-1073747-1-7",
-        "Infra_Fundamentals": "P-D-1535906-1-4,P-D-1527854-1-6",
+        "Infra_Fundamentals": "P-D-1535906-1-4,P-D-1527854-1-7",
         "SVC_AndroidSync": "P-R-1446347-8-11,P-R-1282250-8-12",
         "SVC_CorpDeviceEnrollment": "P-R-1270986-8-26",
-        "SVC_DataInfra": "P-R-1426160-8-32",
+        "SVC_DataInfra": "P-R-1442514-8-7,P-R-1426160-8-32",
         "SVC_Dep": "P-R-1527547-10-6,P-R-1525965-10-7,P-R-1442347-8-14,P-R-1258636-8-12",
-        "SVC_DeviceCheckin": "P-R-1581502-10-15,P-R-1554129-1-8",
+        "SVC_DeviceCheckin": "P-R-1581502-10-16,P-R-1554129-1-8",
         "SVC_DeviceFE": "P-R-1412292-8-12,P-R-1259833-8-10,P-R-1252953-8-14",
         "SVC_IWService": "P-R-1453527-8-22,P-R-1225589-8-21,P-R-1225586-8-20",
         "SVC_Monolith_MAM": "P-R-1522615-13-4,P-R-1291417-8-22,P-R-1248318-8-11",
@@ -125,6 +125,7 @@
                 "SVC_Updates",
                 "SVC_WIPReportServices",
                 "UX_AndroidEnterprise",
+                "UX_AppLifecycle",
                 "UX_Compliance",
                 "UX_DeviceConfig",
                 "UX_EPM",
@@ -155,6 +156,7 @@
     },
     "SVC_DataInfra": {
         "FlightingV2": {
+            "QBSFSICoreMigrationDuplicateBatch2": true,
             "QBSFSICoreMigrationSwitchOverBatch1": true
         }
     },
