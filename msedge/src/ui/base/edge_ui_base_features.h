@@ -608,6 +608,12 @@ BASE_DECLARE_FEATURE(kEdgePrivateClipboard);
 COMPONENT_EXPORT(UI_BASE_FEATURES)
 extern bool IsEdgePrivateClipboardFeatureAvailable();
 
+// If enabled, the profile flyout dialog will use the V2 version.
+COMPONENT_EXPORT(UI_BASE_FEATURES)
+BASE_DECLARE_FEATURE(kEdgeProfileFlyoutV2Enable);
+COMPONENT_EXPORT(UI_BASE_FEATURES)
+extern bool IsEdgeProfileFlyoutV2Enable(bool trigger_usage = false);
+
 }  // namespace edge
 }  // namespace features
 
