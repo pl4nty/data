@@ -332,6 +332,134 @@
             }
         }
     },
+    "ChillTeams": {
+        "Floodgate_Campaign_MicrosoftTeams.09d34bf0-8f65-4899-95a8-322e9bd23e02": {
+            "CampaignId": "09d34bf0-8f65-4899-95a8-322e9bd23e02",
+            "EndTimeUtc": "2025-05-01T07:00:00Z",
+            "GovernedChannelType": 0,
+            "NominationScheme": {
+                "CooldownPeriod": {
+                    "IntervalSeconds": 7776000,
+                    "Type": 0
+                },
+                "FallbackSurveyDurationSeconds": 0,
+                "NominationPeriod": {
+                    "IntervalSeconds": 86400,
+                    "Type": 0
+                },
+                "PercentageDenominator": 100,
+                "PercentageNumerator": 2,
+                "Type": 0
+            },
+            "PrimaryPriority": 3,
+            "StartTimeUtc": "2025-04-01T07:00:00Z",
+            "SurveyTemplate": {
+                "ActivationEvent": {
+                    "Sequence": [
+                        {
+                            "Activity": "genericWebinarNps",
+                            "Count": 1,
+                            "IsAggregate": true,
+                            "Type": 0
+                        }
+                    ],
+                    "Type": 1
+                },
+                "PreferredLaunchType": 0,
+                "Type": 2,
+                "UxSchema": {
+                    "branchingRules": [],
+                    "pages": [
+                        {
+                            "displayName": "Survey Prompt",
+                            "id": "0e19ac6f-d831-499c-9e83-a709e27784b6",
+                            "isFinalPage": false,
+                            "questions": [
+                                {
+                                    "id": "promptSubText1",
+                                    "questionLabel": "We have just 3 questions.",
+                                    "required": false,
+                                    "type": "Label",
+                                    "visible": true
+                                }
+                            ],
+                            "title": "We'd love your feedback on Webinars"
+                        },
+                        {
+                            "displayName": "Horizontal Rating",
+                            "id": "51e6db44-1070-45e6-be30-8c14a5b9e55a",
+                            "isFinalPage": false,
+                            "questions": [
+                                {
+                                    "id": "rating1",
+                                    "leftLegendValue": "Not at all likely",
+                                    "questionLabel": "How satisfied are you with Webinar product?",
+                                    "ratingValues": [
+                                        "1",
+                                        "2",
+                                        "3",
+                                        "4",
+                                        "5"
+                                    ],
+                                    "required": true,
+                                    "rightLegendValue": "Extremely likely",
+                                    "type": "Rating",
+                                    "visible": true
+                                }
+                            ],
+                            "title": "Microsoft would love your perspective"
+                        },
+                        {
+                            "displayName": "Vertical Rating with Verbatim Question",
+                            "id": "050beaf0-2c8a-4234-b496-4df00c79a563",
+                            "isFinalPage": false,
+                            "questions": [
+                                {
+                                    "availableOptions": [
+                                        "5 - Excellent",
+                                        "4",
+                                        "3",
+                                        "2",
+                                        "1 - Poor"
+                                    ],
+                                    "id": "singleselect1",
+                                    "questionLabel": "How was your experience attending the Webinar?",
+                                    "required": true,
+                                    "type": "SingleSelect",
+                                    "visible": true
+                                },
+                                {
+                                    "id": "comment1",
+                                    "questionLabel": "Please tell us how we can improve your experience.",
+                                    "required": false,
+                                    "type": "Comment",
+                                    "visible": true
+                                }
+                            ],
+                            "title": "Microsoft would love your perspective"
+                        },
+                        {
+                            "displayName": "Thank You",
+                            "id": "ddcaefe9-744a-46cc-8e6c-5eebc6abefab",
+                            "isFinalPage": true,
+                            "questions": [
+                                {
+                                    "id": "thankYouText2",
+                                    "questionLabel": "Thank you for taking the time to give your feedback to Microsoft!",
+                                    "required": false,
+                                    "type": "Label",
+                                    "visible": true
+                                }
+                            ],
+                            "title": null
+                        }
+                    ],
+                    "uiStringsUrl": "https://res.cdn.office.net/fg2uxschema/09d34bf0-8f65-4899-95a8-322e9bd23e02/bf52b9e5-849a-4908-b0ed-2f9690df2cc7/Web-MicrosoftTeams/",
+                    "variables": {}
+                }
+            }
+        }
+    },
     "ChillVivaGlint": {
         "Floodgate_Campaign_VivaGlint.64136d79-3325-42a4-83c4-c88d2a3588e2": {
             "CampaignId": "64136d79-3325-42a4-83c4-c88d2a3588e2",
@@ -455,6 +583,7 @@
         "ChillAdminCopilot": "P-R-1562851-1-9",
         "ChillMicrosoftDefenderXdr": "P-R-1578179-1-4",
         "ChillSharePoint": "P-R-1421849-1-5",
+        "ChillTeams": "P-R-1573772-4-8",
         "ChillVivaGlint": "P-R-1542390-1-4,P-R-1542389-1-6"
     }
 }
