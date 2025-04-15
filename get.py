@@ -148,8 +148,7 @@ if __name__ == "__main__":
         fetch_and_prettify_json("https://prod.api.toolbox.azure-test.net/api/tool", "microsoft_gov_toolbox.json")
         
         creds = DefaultAzureCredential()
-        headers = {"Authorization": f"Bearer {creds.get_token('https://management.azure.com//.default')}"}
-        print(headers)
+        headers = {"Authorization": f"Bearer {creds.get_token('https://management.azure.com//.default').token}"}
         fetch_and_prettify_json("https://management.azure.com/subscriptions/8e8bbf73-03c1-44da-a079-6db5df3c079d/providers?api-version=2021-04-01", "microsoft_azure_providers.json", headers=headers)
     else:
         url = sys.argv[1]
