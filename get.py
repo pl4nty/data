@@ -2,12 +2,17 @@ import sys
 import requests
 import json
 import xml.dom.minidom
+from azure.identity import DefaultAzureCredential
 
 
 def fetch_and_prettify_json(url, output_file, key=None, headers=None):
     try:
         # Fetching JSON data from the URL
-        response = requests.get(url, verify=False, headers=headers)
+        try:
+            response = requests.get(url, headers=headers)
+        except requests.exceptions.SSLError as e:
+            response = requests.get(url, verify=False, headers=headers)
+
         response.raise_for_status()
         json_data = response.json()
 
