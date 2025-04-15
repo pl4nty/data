@@ -37,4 +37,4 @@ jobs:
         with:
           default_author: github_actions
           message: "data: ${{ matrix.cmd }}"
-          # pull: '--rebase --autostash ...'
+          pull: "--rebase --autostash"
