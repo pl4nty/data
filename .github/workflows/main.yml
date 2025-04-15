@@ -18,7 +18,6 @@ jobs:
         cmd:
           - python -u android_bulletins_parser.py
           - python -u get.py
-          # TODO decode https://login.microsoftonline.com/common/kerberos
           - python -u powershell_gallery.py
     steps:
       - uses: actions/checkout@v4
@@ -26,6 +25,12 @@ jobs:
         with:
           python-version: 3.x
           cache: pip
+      # azure-identity doesn't support GitHub WIF
+      - uses: azure/login@v2.2.0
+        with:
+          tenant-id: ${{ vars.AZURE_TENANT_ID }}
+          client-id: ${{ vars.AZURE_CLIENT_ID }}
+          allow-no-subscriptions: true
       - run: pip install -r requirements.txt
       - run: ${{ matrix.cmd }}
       - uses: EndBug/add-and-commit@v9.1.4
