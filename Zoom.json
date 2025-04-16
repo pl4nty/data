@@ -15,11 +15,11 @@
             "notesPlugin": {
                 "packageName": "ZoomNotesPluginSetup.msi",
                 "packageNameForIT": "ZoomNotesPluginAdminTool.msi",
-                "version": "6.4.0.1115"
+                "version": "6.4.5.1120"
             },
             "outlookPlugin": {
                 "packageName": "ZoomOutlookPluginSetup.msi",
-                "version": "6.4.0.1114"
+                "version": "6.4.5.1121"
             },
             "showManifestConfigure": false,
             "zoom": {
