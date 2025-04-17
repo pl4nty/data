@@ -222,8 +222,8 @@ def download_zip_contents(zip_handle, exclude_paths=None, output_dir='msedge'):
         if any(filename.startswith(p) for p in exclude_paths):
             return False
         
-        # Check for Edge features.h files
-        if output_dir == 'msedge' and (filename.endswith('features.h') or filename.endswith('switches.h')):
+        # Check for Edge files
+        if output_dir == 'msedge' and (filename.endswith('features.h') or filename.endswith('switches.h') or filename.startswith('edge')):
             return True
         
         # Then check if it matches our extraction patterns
