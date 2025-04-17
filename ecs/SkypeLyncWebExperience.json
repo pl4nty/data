@@ -1,6 +1,6 @@
 {
     "ConfigIDs": {
-        "SkypeLyncWebExperience": "P-R-29040-1-11,P-R-27083-1-8,P-R-23647-1-5,P-R-22489-1-6,P-R-22368-1-6,P-R-22219-1-8,P-R-21836-1-10,P-R-21022-1-6,P-R-20676-1-12"
+        "SkypeLyncWebExperience": "P-R-29040-1-11,P-R-27504-1-6,P-R-27083-1-8,P-R-23647-1-5,P-R-22489-1-6,P-R-22368-1-6,P-R-22219-1-8,P-R-21836-1-10,P-R-21022-1-6,P-R-20676-1-12"
     },
     "SkypeLyncWebExperience": {
         "cqf": {
@@ -8,9 +8,11 @@
             "skypeCallPercentage": 50
         },
         "featureFlags": {
+            "handleMediaOfferFromPushNotification": true,
             "pluginlessCallingChromeNoExtension": true,
             "pluginlessGroupVideoCallingChromeLinux": true,
             "pluginlessPSTNCalling": true,
+            "sendProgressFromCC": true,
             "translatorReceivingEnabled": false,
             "translatorSendingEnabled": false
         },
