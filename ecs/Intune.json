@@ -28,7 +28,7 @@
         "Infra_Fundamentals": "P-D-1535906-1-4,P-D-1527854-1-7",
         "SVC_AndroidSync": "P-R-1446347-8-11,P-R-1282250-8-12",
         "SVC_CorpDeviceEnrollment": "P-R-1270986-8-26",
-        "SVC_DataInfra": "P-R-1442514-8-7,P-R-1426160-8-32",
+        "SVC_DataInfra": "P-R-1426160-8-32",
         "SVC_Dep": "P-R-1527547-10-6,P-R-1525965-10-7,P-R-1442347-8-14,P-R-1258636-8-12",
         "SVC_DeviceCheckin": "P-R-1581502-10-18,P-R-1554129-1-8",
         "SVC_DeviceFE": "P-R-1412292-8-12,P-R-1259833-8-10,P-R-1252953-8-14",
@@ -157,7 +157,6 @@
     },
     "SVC_DataInfra": {
         "FlightingV2": {
-            "QBSFSICoreMigrationDuplicateBatch2": true,
             "QBSFSICoreMigrationSwitchOverBatch1": true
         }
     },
