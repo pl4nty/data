@@ -315,7 +315,6 @@ MEDIA_EXPORT BASE_DECLARE_FEATURE(kMediaFoundationCdm);
 #if BUILDFLAG(IS_WIN)
 MEDIA_EXPORT extern const base::FeatureParam<std::string>
     kMediaFoundationClearKeyCdmPathForTesting;
-MEDIA_EXPORT BASE_DECLARE_FEATURE(kEnableFaultyGPUForMediaFoundation);
 #endif  // BUILDFLAG(IS_WIN)
 
 MEDIA_EXPORT BASE_DECLARE_FEATURE(kMediaLearningExperiment);
@@ -426,11 +425,6 @@ MEDIA_EXPORT BASE_DECLARE_FEATURE(kBuiltInHlsPlayer);
 // media containers, including Fragmented and unfragmented MP4, as well as
 // raw AAC bytestreams. It does nothing if kBuiltInHlsPlayer is disabled.
 MEDIA_EXPORT BASE_DECLARE_FEATURE(kBuiltInHlsMP4);
-
-// This feature enables statistics to be collected from MediaPlayer-based HLS
-// playbacks using the builtin HLS manifest parser. It is enabled by default
-// to act as a kill switch in the event of crashes.
-MEDIA_EXPORT BASE_DECLARE_FEATURE(kMediaPlayerHlsStatistics);
 #endif  // BUILDFLAG(ENABLE_HLS_DEMUXER)
 
 #if BUILDFLAG(USE_CHROMEOS_MEDIA_ACCELERATION)

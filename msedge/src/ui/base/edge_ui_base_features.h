@@ -511,11 +511,6 @@ BASE_DECLARE_FEATURE(kPhoenixTokenCentralized);
 COMPONENT_EXPORT(UI_BASE_FEATURES)
 BASE_DECLARE_FEATURE(kEdgeRewardsMoreMenuAutoPinToolbar);
 
-// If enabled, Edge utilized DevicePostureHandler to determine tablet mode.
-COMPONENT_EXPORT(UI_BASE_FEATURES)
-BASE_DECLARE_FEATURE(kEdgeDevicePostureRecognition);
-COMPONENT_EXPORT(UI_BASE_FEATURES)
-extern bool IsEdgeDevicePostureRecognitionAvailable();
 enum class PhoenixFrameConnTabsColor : int {
   kDefault = 0,
   kBlueTintA = 1,

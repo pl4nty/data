@@ -275,6 +275,47 @@ BASE_DECLARE_FEATURE(kContinuousImportGenerateKeywordSearchTerms);
 // Feature to observe visible browser launch for CI
 COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
 BASE_DECLARE_FEATURE(kContinuousImportVisibleBrowserObserver);
+
+// Feature flag for feature personalized launch with ml suggested tabs
+COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
+BASE_DECLARE_FEATURE(kPersonalizedLaunch);
+
+// Personalized launch genric triggers
+// Trigger to determine if the ML-Suggested Sites setting is enabled
+COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
+BASE_DECLARE_FEATURE_TRIGGER(kSuggestMlSettingIsOn);
+
+// Trigger to determine if the last browser session was Chrome and the ML
+// setting is enabled
+COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
+BASE_DECLARE_FEATURE_TRIGGER(kLastSessionWasChromeMlSettingOn);
+
+// Trigger to determine if the session was launched for a consumer user
+COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
+BASE_DECLARE_FEATURE_TRIGGER(kConsumerSessionLastChromeMlOn);
+
+// Trigger to determine if the session was launched for a consumer user without
+// imported tabs
+COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
+BASE_DECLARE_FEATURE_TRIGGER(kNoImportedTabsConsumerLastChromeMlOn);
+
+// Trigger to determine if the session was launched for a Chrome PB user, a
+// consumer, and without imported tabs
+COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
+BASE_DECLARE_FEATURE_TRIGGER(kNoImportedTabsChromePBUserConsumerLastChromeMlOn);
+
+// Trigger to determine if the session was launched for a Chrome PB user, a
+// consumer, without imported tabs, and with SAN consent
+COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
+BASE_DECLARE_FEATURE_TRIGGER(
+    kChromePBConsentNoImportedTabsConsumerLastChromeMlOn);
+
+// Trigger to determine if the session was launched for a Chrome PB user, a
+// consumer, without imported tabs, with SAN consent, and with startup set to
+// New Tab
+COMPONENT_EXPORT(EDGE_IMPORT_FEATURES)
+BASE_DECLARE_FEATURE_TRIGGER(kChromePBConsentNoImportedTabsNewTabStartup);
+
 }  // namespace edge_continuous_import
 }  // namespace features
 

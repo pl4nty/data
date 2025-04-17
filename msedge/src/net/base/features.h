@@ -191,6 +191,13 @@ NET_EXPORT BASE_DECLARE_FEATURE(kUseMLKEM);
 // Changes the interval between two search engine preconnect attempts.
 NET_EXPORT BASE_DECLARE_FEATURE(kSearchEnginePreconnectInterval);
 
+// Enables a more efficient SearchEnginePreconnector
+NET_EXPORT BASE_DECLARE_FEATURE(kSearchEnginePreconnect2);
+
+// The maximum time to backoff when attempting preconnect retry for
+// SearchEnginePreconnector2.
+NET_EXPORT extern const base::FeatureParam<int> kMaxPreconnectRetryInterval;
+
 // When enabled, the time threshold for Lax-allow-unsafe cookies will be lowered
 // from 2 minutes to 10 seconds. This time threshold refers to the age cutoff
 // for which cookies that default into SameSite=Lax, which are newer than the
@@ -704,6 +711,11 @@ NET_EXPORT BASE_DECLARE_FEATURE(kReportingApiCorsOriginHeader);
 // When enabled, report bodies exceeding kMaxReportBodySizeKB are omitted. This
 // helps prevent excessively large reports json stringification.
 NET_EXPORT BASE_DECLARE_FEATURE(kExcludeLargeBodyReports);
+
+// Enables the Related Website Partition API, allowing members of a Related
+// Website Set to access partitioned non-cookie storage. See
+// https://github.com/explainers-by-googlers/related-website-partition-api.
+NET_EXPORT BASE_DECLARE_FEATURE(kRelatedWebsitePartitionAPI);
 
 #if BUILDFLAG(IS_ANDROID)
 // If enabled, Android OS's certificate verification (CertVerifyProcAndroid) is
