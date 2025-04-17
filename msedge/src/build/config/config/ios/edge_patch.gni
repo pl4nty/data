@@ -1,0 +1,43 @@
+# Copyright (C) Microsoft Corporation. All rights reserved.
+
+# Template to apply patches to a set of files. Patched files are saved to their
+# corresponding source_gen_dir and the original files are left intact.
+#
+# Arguments
+#
+#   sources:
+#       original files to patch
+#
+#   patches:
+#       patch files to apply, positionally aligned with sources.
+#
+# Example
+#
+#     edge_patch("my_patch") {
+#       sources = [ "file1.h", "file2.cc" ]
+#       patches = [ "patch_for_file1.patch", "patch_for_file2.patch" ]
+#     }
+#
+template("edge_patch") {
+  action(target_name) {
+    forward_variables_from(invoker,
+                           [
+                             "data_deps",
+                             "deps",
+                             "public_deps",
+                             "testonly",
+                             "visibility",
+                           ])
+    sources = invoker.sources + invoker.patches
+    outputs = []
+    foreach(source, invoker.sources) {
+      outputs += [ "$target_gen_dir/$source" ]
+    }
+    script = "//build/config/ios/edge_patch.py"
+    args = [
+      string_join(",", rebase_path(invoker.sources, root_build_dir)),
+      string_join(",", rebase_path(invoker.patches, root_build_dir)),
+      string_join(",", rebase_path(outputs, root_build_dir)),
+    ]
+  }
+}

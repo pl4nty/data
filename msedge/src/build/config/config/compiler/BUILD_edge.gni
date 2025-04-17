@@ -1,0 +1,278 @@
+# Copyright (C) Microsoft Corporation. All rights reserved.
+import("//build/config/c++/c++.gni")
+import("//build/config/chrome_build.gni")
+import("//build/config/compiler/compiler.gni")
+import("//build/config/nacl/config.gni")
+import("//build/toolchain/goma.gni")
+import("//build/toolchain/toolchain.gni")
+
+if (current_cpu == "x64") {
+  import("//build/config/x64.gni")
+}
+
+template("edge_overlay_group_all") {
+  # Intentionally empty to make the linking between BUILD.gn and BUILD_edge.gni work by adding targets into the BUILD.gn scope.
+  group(target_name) {
+    forward_variables_from(invoker, "*", [])
+  }
+
+  declare_args() {
+    # The orderfile is trained on PGO builds (for arm64) and AFDO builds (for
+    # arm32), so apply them only in these cases.
+    edge_chrome_orderfile_path = ""
+    if (defined(default_chrome_orderfile)) {
+      if (((current_cpu == "arm64" || current_cpu == "x64") &&
+           chrome_pgo_phase == 2) ||
+          ((current_cpu == "arm" || current_cpu == "x86") &&
+           edge_clang_use_default_sample_profile)) {
+        edge_edge_chrome_orderfile_path = default_chrome_orderfile
+      }
+    } else if (is_clang && is_official_build) {
+      edge_chrome_orderfile_path = "//chrome/build/chrome.$target_cpu.orderfile"
+    }
+  }
+
+  assert(!(llvm_force_head_revision && use_goma),
+         "can't use goma with trunk clang")
+
+  # TODO(task.ms/56539106)
+  # Uncomment this block once we have a link order file for Android
+  #  if (is_android) {
+  #    config("edge_chrome_orderfile_config") {
+  #      if (edge_chrome_orderfile_path != "") {
+  #        ldflags += [
+  #          "-Wl,--symbol-ordering-file",
+  #          "-Wl,$_rebased_orderfile",
+  #          "-Wl,--no-warn-symbol-ordering",
+  #        ]
+  #        inputs += [ edge_chrome_orderfile_path ]
+  #      }
+  #    }
+  #  }
+
+  if (is_win && target_cpu == "x64") {
+    # Use orderfile for linking Chrome on Windows.
+    # This config enables using an orderfile for linking in LLD.
+    config("edge_chrome_orderfile_config") {
+      # Don't try to use an orderfile with call graph sorting, except on Android,
+      # where we care about memory used by code, so we still want to mandate
+      # ordering.
+      if (edge_chrome_orderfile_path != "") {
+        assert(use_lld)
+        _rebased_orderfile =
+            rebase_path(edge_chrome_orderfile_path, root_build_dir)
+        ldflags = [
+          "/order:@$_rebased_orderfile",
+
+          # Ignore warnings about missing functions or functions not in their
+          # own section.
+          "/ignore:4037",
+          "/ignore:4065",
+        ]
+      }
+    }
+  }
+}
+
+template("edge_overlay_config_treat_warnings_as_errors") {
+  config(target_name) {
+    forward_variables_from(invoker, "*", [])
+    # Edge overlays:
+  }
+}
+
+template("edge_overlay_config_default_warnings") {
+  config(target_name) {
+    forward_variables_from(invoker, "*", [])
+  }
+}
+
+template("edge_overlay_config_prevent_unsafe_narrowing") {
+  config(target_name) {
+    forward_variables_from(invoker, "*", [])
+
+    if (is_clang) {
+      cflags += [ "-Wimplicit-int-conversion" ]
+      if (!is_fuchsia) {
+        cflags -= [ "-Wimplicit-int-conversion" ]
+      }
+    }
+  }
+}
+
+template("edge_overlay_config_compiler_cpu_abi") {
+  config(target_name) {
+    forward_variables_from(invoker, "*", [])
+
+    # Edge overlays:
+    if ((is_posix && !is_apple) || is_fuchsia) {
+      # simplicity we always explicitly set the architecture.
+      if (current_cpu == "x64") {
+        cflags += [ "-march=$x64_arch" ]
+      } else if (current_cpu == "x86") {
+        if (!is_nacl) {
+          cflags -= [ "-msse3" ]
+          cflags += [
+            "-msse2",
+            "-mmmx",
+          ]
+        }
+      }
+    }
+  }
+}
+
+template("edge_overlay_config_optimize") {
+  config(target_name) {
+    forward_variables_from(invoker, "*", [])
+
+    # Edge overlays:
+    if (is_win) {
+      cflags -= [
+        "/O2",
+        "/clang:-O2",
+      ]
+
+      # TODO(task.ms/49530439) [Pump follow-up] Validate and update optimize PGO
+      if (chrome_pgo_phase != 2) {
+        # Favor size over speed, /O1 must be before the common flags.
+        # /O1 implies /Os and /GF.
+        # make sure /Oy- is after /O1
+        cflags += [ "/O1" ] + [ "/Oy-" ] + [ "/Oi" ]
+        rustflags -= [ "-Copt-level=3" ]
+        rustflags += [ "-Copt-level=s" ]
+      } else {
+        # PGO requires all translation units to be compiled with /O2. The actual
+        # optimization level will be decided based on the profiling data.
+        cflags = [ "/O1" ] + [ "/Oy-" ] + [ "/Oi" ]
+      }
+    }
+  }
+}
+
+template("edge_overlay_config_symbols") {
+  config(target_name) {
+    forward_variables_from(invoker, "*", [])
+
+    # Edge overlays:
+    if (is_win) {
+      if (is_clang) {
+        cflags -= [
+          # Pump: Include the below arg when an llvm change happens.
+          # Tracked with bug 42316201
+          "-gno-codeview-command-line",
+        ]
+      }
+    }
+  }
+}
+
+template("edge_overlay_config_minimal_symbols") {
+  config(target_name) {
+    forward_variables_from(invoker, "*", [])
+
+    # Edge overlays:
+    if (!is_win) {
+      # TODO(thakis): Figure out if there's a way to make this go for 32-bit,
+      # currently we get "warning:
+      # obj/native_client/src/trusted/service_runtime/sel_asm/nacl_switch_32.o:
+      # DWARF info may be corrupt; offsets in a range list entry are in different
+      # sections" there.  Maybe just a bug in nacl_switch_32.S.
+      if (!is_apple && !is_nacl && current_cpu != "x86" && use_lld) {
+        if (is_clang) {
+          # This flag enables the GNU-format pubnames and pubtypes sections,
+          # which lld needs in order to generate a correct GDB index.
+          # TODO(pcc): Try to make lld understand non-GNU-format pubnames
+          # sections (llvm.org/PR34820).
+          cflags += [ "-ggnu-pubnames" ]
+        }
+        ldflags += [ "-Wl,--gdb-index" ]
+      }
+    }
+  }
+}
+
+template("edge_overlay_config_compiler") {
+  config(target_name) {
+    forward_variables_from(invoker, "*", [])
+
+    # Edge overlays:
+    declare_args() {
+      edge_clang_sample_profile_path = ""
+
+      # Some configurations have default sample profiles. If this is true and
+      # clang_sample_profile_path is empty, we'll fall back to the default.
+      #
+      # We currently only have default profiles for Chromium in-tree, so we disable
+      # this by default for all downstream projects, since these profiles are likely
+      # nonsensical for said projects.
+      edge_clang_use_default_sample_profile =
+          chrome_pgo_phase == 0 && build_with_chromium && is_official_build
+    }
+    declare_args() {
+      # Enable --call-graph-profile-sort selectively for targets where it's
+      # beneficial.
+      edge_enable_call_graph_profile_sort =
+          chrome_pgo_phase == 4 || (edge_clang_use_default_sample_profile ||
+                                    edge_clang_sample_profile_path != "")
+    }
+
+    if (!is_win) {
+      # Edge: To control the size of our debug artifacts, compile our Linux builds
+      # with -fdebug-types-section
+      if (is_posix && !is_apple && !is_nacl) {
+        cflags += [ "-fdebug-types-section" ]
+        ldflags += [ "-fdebug-types-section" ]
+      }
+    }
+
+    if (use_lld && edge_enable_call_graph_profile_sort) {
+      if (is_win) {
+        # Upstream turns it off, remove that.
+        ldflags -= [ "/call-graph-profile-sort:no" ]
+      } else if (is_android) {
+        # Upstream turns it off, remove that.
+        ldflags -= [ "-Wl,--no-call-graph-profile-sort" ]
+      }
+    }
+
+    if (is_apple) {
+      # TODO(crbug.com/1519899): Figure out how to remove this.
+      cflags += [ "-fno-define-target-os-macros" ]
+    }
+
+    # TODO(crbug.com/1253924): Enable on apple/lld for arm64 too once it works.
+    if (invoker.use_icf && is_apple && use_lld && current_cpu == "arm64") {
+      # Remove or modify the ICF flag for Apple ARM64
+      ldflags -= [ "-Wl,--icf=all" ]
+    }
+    if (!is_debug && use_thin_lto && is_a_target_toolchain) {
+      if (is_ios) {
+        # TODO Task 42271118: Remove Edge customization
+        ldflags -= [ "-Wl,-mllvm,-disable-auto-upgrade-debug-info" ]
+      }
+    }
+
+    if (!is_android) {
+      rustflags += [
+        # Stack protection is needed to pass Binskim during Edge official builds.
+        # Without this option, Binskim will fail with BA2014,
+        # (DoNotDisableStackProtectionForFunctions). The `all` option is used for
+        # stack-protector as it is the most stable option as of now. Even still,
+        # `all` is also being stabilized, see:
+        # https://github.com/rust-lang/rust/pull/121742
+      ]
+    }
+
+    if (use_lld && is_apple) {
+      ldflags -= [ "-Wl,--strict-auto-link" ]
+    }
+
+    if (is_clang && !is_nacl && invoker.show_includes) {
+      if (is_win) {
+        # TODO(crbug.com/1223741): Goma mixes the -H and /showIncludes output.
+        assert(!use_goma, "show_includes on Windows is not reliable with goma")
+      }
+    }
+  }
+}

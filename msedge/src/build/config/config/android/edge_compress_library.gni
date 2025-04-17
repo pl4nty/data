@@ -1,0 +1,32 @@
+# Copyright (C) Microsoft Corporation. All rights reserved.
+# Use of this source code is governed by a BSD-style license that can be
+# found in the LICENSE file.
+
+# Chromium removed support for uncompress_shared_libraries=false from build since the min sdk version has upgraded to M,
+# this change will increase the apk size to over 200Mb. However, Edge didn't support app bundle yet, so we need to compress
+# all libraries to keep the size of apk below google play limit.
+# Related chromium commit https://chromium-review.googlesource.com/c/chromium/src/+/4075291 .
+# Related chromium bug link https://bugs.chromium.org/p/chromium/issues/detail?id=1337134
+edge_library_always_compress = [
+  "libwns_push_client.so",
+  "libtelclient.so",
+  "liboneds.so",
+  "libOneAuth.so",
+  "libnative-lib.so",
+  "libmsaoaidsec.so",
+  "libmsaoaidauth.so",
+  "libmip_upe_sdk.so",
+  "libmip_protection_sdk.so",
+  "libmip_core.so",
+  "libmicrosoft_apis.so",
+  "liblearning_tools.so",
+  "libfullsslsdk.so",
+  "libCoreSdkCrypto.so",
+  "libctxlog.so",
+  "liblog4cpp.so",
+  "libchrome_crashpad_handler.so",
+  "libchrome.so",
+  "libc++_shared.so",
+  "libbingopus.so",
+  "libtrace-canary.so",
+]

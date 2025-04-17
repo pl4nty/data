@@ -1,0 +1,10 @@
+EXPORTS
+  LoadWCOSAdapter
+  OpenSharedResource
+  PrepareVisualForWcos
+  CallCreateProcessInputs2
+  GetXboxRasterizationScaleAdjust
+  GetXboxForceDeviceScaleFactor
+  RegisterUIAEndpointBrowser
+  UnregisterUIAEndpointBrowser
+  ConnectUiaHostProviderFromEndpoint

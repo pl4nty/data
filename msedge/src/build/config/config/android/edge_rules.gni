@@ -1,0 +1,39 @@
+# Copyright (C) Microsoft Corporation. All rights reserved.
+
+import("//build/config/python.gni")
+
+# Declare a target for generating Java classes from ts enums.
+#
+# This target generates Java files from ts enums using a script.
+#
+# This target will create a single .srcjar. Adding this target to an
+# android_library target's srcjar_deps will make the generated java files be
+# included in that library's final outputs.
+#
+# Variables
+#   sources: list of files to be processed by the script. For each annotated
+#     enum contained in the sources files the script will generate a .java
+#     file with the same name as the name of the enum.
+#
+# Example
+#   java_ts_enum("foo_generated_enum") {
+#     sources = [
+#       "src/native_foo_header.ts",
+#     ]
+#   }
+template("java_ts_enum") {
+  action_with_pydeps(target_name) {
+    forward_variables_from(invoker, TESTONLY_AND_VISIBILITY + [ "sources" ])
+
+    # The sources aren't compiled so don't check their dependencies.
+    check_includes = false
+    script = "//build/android/gyp/edge_java_ts_enum.py"
+
+    _srcjar_path = "${target_gen_dir}/${target_name}.srcjar"
+    _rebased_srcjar_path = rebase_path(_srcjar_path, root_build_dir)
+    _rebased_sources = rebase_path(invoker.sources, root_build_dir)
+
+    args = [ "--srcjar=$_rebased_srcjar_path" ] + _rebased_sources
+    outputs = [ _srcjar_path ]
+  }
+}

@@ -1,0 +1,23 @@
+# Copyright (C) Microsoft Corporation. All rights reserved.
+
+import("//build/config/python.gni")
+
+template("edge_unzip_jar") {
+  action_with_pydeps(target_name) {
+    script = "//build/android/gyp/edge_unzip_jar.py"
+
+    outputs = [ invoker.output_path ]
+    inputs = [ invoker.jar_path ]
+
+    if (defined(invoker.outputs)) {
+      outputs += invoker.outputs
+    }
+
+    args = [
+      "--jar_path",
+      rebase_path(invoker.jar_path, root_build_dir),
+      "--output_path",
+      rebase_path(invoker.output_path, "."),
+    ]
+  }
+}

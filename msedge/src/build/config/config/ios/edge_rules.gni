@@ -1,0 +1,539 @@
+# Copyright (C) Microsoft Corporation. All rights reserved.
+# Use of this source code is governed by a BSD-style license that can be
+# found in the LICENSE file.
+
+import("//build/config/chrome_build.gni")
+import("//build/config/ios/rules.gni")
+
+# Template to re-package a prebuilt iOS framework for consuming.
+# The new created framework only copies necessary files and complete code sign.
+#
+# Arguments
+#
+#   framework_dir:
+#       the dir to the *.framework
+#       e.g. framework_dir = "lib/Release-universal"
+#
+#   framework_name:
+#       the name of the framework, please don’t include “.framework”
+#       e.g. framework_name = "IntuneMAMWalledGarden"
+#
+#   bundle_resources:
+#       the resources which need be included in the .framework
+#       e.g.
+#       bundle_resources = [
+#           "IntuneMAMResources.bundle",
+#           "Info.plist",
+#           "MAMDebugSettings.plist",
+#           "ThirdPartyNotices.txt",
+#       ]
+#
+# This template defines three targets
+# - $target_name+bundle bundle target.
+# - $target_name+link adds a build-time and link-time dependency. Targets
+#   that depend on it will link against the framework.
+# - $target_name+weak is the same as $target_name+link except that the framework
+#   is weakly linked.
+# - $target_name only adds a build-time dependency. Targets that depend on
+#   it will not link against the framework.
+#
+template("ios_edge_framework_bundle_prebuilt") {
+  _target_name = target_name
+  _link_target_name = _target_name + "+link"
+  _weak_target_name = _target_name + "+weak"
+  _bundle_target_name = _target_name + "+bundle"
+
+  _framework_header_config = _target_name + "_header_config"
+  _framework_link_config = _target_name + "_link_config"
+  _framework_weak_config = _target_name + "_weak_config"
+  _bundle_executable_target = _target_name + "_executable"
+  _bundle_resources_target = _target_name + "_resource"
+  _bundle_repackage_target = _target_name + "_bundle"
+
+  _framework_name = invoker.framework_name
+  _framework_dir = invoker.framework_dir
+  _framework_path = "$_framework_dir/$_framework_name.framework"
+
+  config(_framework_header_config) {
+    visibility = [ ":$_target_name" ]
+    framework_dirs = [ _framework_dir ]
+  }
+
+  config(_framework_link_config) {
+    visibility = [ ":$_link_target_name" ]
+    configs = [ ":$_framework_header_config" ]
+    frameworks = [ "$_framework_name.framework" ]
+  }
+
+  config(_framework_weak_config) {
+    visibility = [ ":$_weak_target_name" ]
+    configs = [ ":$_framework_header_config" ]
+    weak_frameworks = [ "$_framework_name.framework" ]
+  }
+
+  action(_bundle_executable_target) {
+    forward_variables_from(invoker,
+                           [
+                             "data_deps",
+                             "deps",
+                             "public_deps",
+                           ])
+    visibility = [ ":$_bundle_repackage_target" ]
+    sources = [ "$_framework_path/$_framework_name" ]
+    outputs = [ "$target_out_dir/$_framework_name" ]
+    script = "//build/config/ios/edge_binary_strip.py"
+    args = [
+      "--input",
+      rebase_path(sources[0], root_build_dir),
+      "--output",
+      rebase_path(outputs[0], root_build_dir),
+    ]
+    args += [ "--archs" ]
+    _archs = [ target_cpu ] + additional_target_cpus
+    foreach(_arch, _archs) {
+      if (_arch == "x86") {
+        args += [ "i386" ]
+      } else if (_arch == "x64") {
+        args += [ "x86_64" ]
+      } else if (_arch == "arm") {
+        args += [ "armv7" ]
+      } else if (_arch == "arm64") {
+        args += [ "arm64" ]
+      } else {
+        assert(false, "unsupported cpu: $_arch")
+      }
+    }
+  }
+
+  bundle_data(_bundle_resources_target) {
+    forward_variables_from(invoker,
+                           [
+                             "data_deps",
+                             "deps",
+                             "public_deps",
+                           ])
+    visibility = [ ":$_bundle_repackage_target" ]
+    sources = []
+    foreach(_source, invoker.bundle_resources) {
+      sources += [ "$_framework_path/$_source" ]
+    }
+    outputs = [ "{{bundle_contents_dir}}/{{source_file_part}}" ]
+  }
+
+  create_signed_bundle(_bundle_repackage_target) {
+    forward_variables_from(invoker,
+                           [
+                             "bundle_deps",
+                             "bundle_deps_filter",
+                             "data_deps",
+                             "deps",
+                             "enable_code_signing",
+                             "public_configs",
+                             "public_deps",
+                             "testonly",
+                             "visibility",
+                           ])
+
+    product_type = "com.apple.product-type.framework"
+    bundle_extension = ".framework"
+
+    output_name = _framework_name
+    bundle_binary_target = ":$_bundle_executable_target"
+    bundle_binary_output = _framework_name
+    bundle_gen_dir = target_out_dir
+
+    # Framework do not have entitlements nor mobileprovision because they use
+    # the one from the bundle using them (.app or .appex) as they are just
+    # dynamic library with shared code.
+    disable_entitlements = true
+    disable_embedded_mobileprovision = true
+
+    if (!defined(deps)) {
+      deps = []
+    }
+    deps += [ ":$_bundle_resources_target" ]
+  }
+
+  group(_target_name) {
+    forward_variables_from(invoker,
+                           [
+                             "public_configs",
+                             "public_deps",
+                             "testonly",
+                             "visibility",
+                           ])
+    if (!defined(public_deps)) {
+      public_deps = []
+    }
+    public_deps += [ ":$_bundle_repackage_target" ]
+
+    if (!defined(public_configs)) {
+      public_configs = []
+    }
+    public_configs += [ ":$_framework_header_config" ]
+  }
+
+  group(_link_target_name) {
+    forward_variables_from(invoker,
+                           [
+                             "public_configs",
+                             "public_deps",
+                             "testonly",
+                             "visibility",
+                           ])
+    if (!defined(public_deps)) {
+      public_deps = []
+    }
+    public_deps += [ ":$_target_name" ]
+
+    if (!defined(all_dependent_configs)) {
+      all_dependent_configs = []
+    }
+    all_dependent_configs += [ ":$_framework_link_config" ]
+  }
+
+  group(_weak_target_name) {
+    forward_variables_from(invoker,
+                           [
+                             "public_configs",
+                             "public_deps",
+                             "testonly",
+                             "visibility",
+                           ])
+    if (!defined(public_deps)) {
+      public_deps = []
+    }
+    public_deps += [ ":$_target_name" ]
+
+    if (!defined(all_dependent_configs)) {
+      all_dependent_configs = []
+    }
+    all_dependent_configs += [ ":$_framework_weak_config" ]
+  }
+
+  bundle_data(_bundle_target_name) {
+    forward_variables_from(invoker,
+                           [
+                             "testonly",
+                             "visibility",
+                           ])
+    public_deps = [ ":$_target_name" ]
+    sources = [ "$target_out_dir/$_framework_name.framework" ]
+    outputs =
+        [ "{{bundle_resources_dir}}/Frameworks/$_framework_name.framework" ]
+  }
+}
+
+# Template to re-package a prebuilt iOS xcframework for consuming.
+# The new created framework only copies necessary files and complete code sign.
+#
+# Arguments are the same as |ios_edge_framework_bundle_prebuilt| template, plus:
+#
+#   is_fat:
+#       if true, try to use common fat slice name to find the framework.
+#       defaults to false.
+#
+template("ios_edge_xcframework_bundle_prebuilt") {
+  ios_edge_framework_bundle_prebuilt(target_name) {
+    forward_variables_from(invoker, "*", [ "is_fat" ])
+    _name = invoker.framework_name
+    _dir = invoker.framework_dir
+    _slice = "ios"
+    if (defined(invoker.is_fat) && invoker.is_fat) {
+      if (target_environment == "device") {
+        _slice += "-arm64"
+      } else {
+        _slice += "-arm64_x86_64"
+      }
+    } else {
+      if (target_cpu == "x86") {
+        _slice += "-i386"
+      } else if (target_cpu == "x64") {
+        _slice += "-x86_64"
+      } else if (target_cpu == "arm") {
+        _slice += "-armv7"
+      } else if (target_cpu == "arm64") {
+        _slice += "-arm64"
+      } else {
+        assert(false, "unsupported cpu: $target_cpu")
+      }
+    }
+    if (target_environment == "device") {
+    } else if (target_environment == "simulator") {
+      _slice += "-simulator"
+    } else if (target_environment == "catalyst") {
+      _slice += "-maccatalyst"
+    } else {
+      assert(false, "unsupported environment: $target_environment")
+    }
+    framework_dir = "$_dir/$_name.xcframework/$_slice"
+  }
+}
+
+# Template to provide a compatibility layer to build ios_framework_bundle as a
+# static framework.
+# All ios_framework_bundle arguments are supported, except for
+# bundle_deps_filter.
+#
+# This template defines three targets
+# - $target_name
+# - $target_name+link
+# - $target_name+bundle
+#
+template("ios_edge_framework_bundle_static") {
+  _target_name = target_name
+  _output_name = target_name
+  if (defined(invoker.output_name)) {
+    _output_name = invoker.output_name
+  }
+
+  _library_target = _target_name + "_library"
+  _headers_target = _target_name + "_headers"
+  _headers_config = _target_name + "_config"
+
+  _has_public_headers =
+      defined(invoker.public_headers) && invoker.public_headers != []
+
+  if (_has_public_headers) {
+    _framework_name = "$_output_name.framework"
+    _header_map_file = "$target_gen_dir/$_output_name.headers.hmap"
+
+    action(_headers_target) {
+      visibility = [ ":$_library_target" ]
+      forward_variables_from(invoker,
+                             [
+                               "deps",
+                               "public_deps",
+                               "testonly",
+                             ])
+      script = "//build/config/apple/write_framework_hmap.py"
+      outputs = [ _header_map_file ]
+      sources = []
+      foreach(_source, invoker.sources) {
+        if (get_path_info(_source, "extension") == "h") {
+          sources += [ _source ]
+        }
+      }
+      args = [
+               rebase_path(_header_map_file, root_build_dir),
+               _framework_name,
+             ] + rebase_path(sources, root_build_dir)
+    }
+
+    config(_headers_config) {
+      visibility = [
+        ":$_library_target",
+        ":${_target_name}",
+        ":${_target_name}+link",
+      ]
+      include_dirs = [ _header_map_file ]
+    }
+  }
+
+  static_library(_library_target) {
+    forward_variables_from(invoker,
+                           "*",
+                           [
+                             "bundle_deps",
+                             "bundle_deps_filter",
+                             "bundle_extension",
+                             "enable_code_signing",
+                             "entitlements_path",
+                             "entitlements_target",
+                             "extra_substitutions",
+                             "extra_system_frameworks",
+                             "info_plist",
+                             "info_plist_target",
+                             "output_name",
+                             "product_type",
+                           ])
+    output_name = _output_name
+    output_extension = ""
+    output_prefix_override = true
+    if (!defined(deps)) {
+      deps = []
+    }
+    if (_has_public_headers) {
+      deps += [ ":$_headers_target" ]
+      configs += [ ":$_headers_config" ]
+    }
+  }
+
+  group(_target_name) {
+    forward_variables_from(invoker,
+                           [
+                             "public_configs",
+                             "public_deps",
+                             "testonly",
+                             "visibility",
+                           ])
+    if (!defined(public_deps)) {
+      public_deps = []
+    }
+    if (!defined(public_configs)) {
+      public_configs = []
+    }
+    public_deps += [ ":$_library_target" ]
+    if (_has_public_headers) {
+      public_configs += [ ":$_headers_config" ]
+    }
+    if (defined(invoker.bundle_deps)) {
+      deps = invoker.bundle_deps
+    }
+  }
+
+  group(_target_name + "+link") {
+    forward_variables_from(invoker,
+                           [
+                             "public_configs",
+                             "public_deps",
+                             "testonly",
+                             "visibility",
+                           ])
+    if (!defined(public_deps)) {
+      public_deps = []
+    }
+    if (!defined(all_dependent_configs)) {
+      all_dependent_configs = []
+    }
+    public_deps += [ ":$_library_target" ]
+    if (_has_public_headers) {
+      all_dependent_configs += [ ":$_headers_config" ]
+    }
+  }
+
+  group(_target_name + "+bundle") {
+    forward_variables_from(invoker,
+                           [
+                             "testonly",
+                             "visibility",
+                           ])
+    public_deps = [ ":$_target_name" ]
+  }
+}
+
+set_defaults("ios_edge_framework_bundle_static") {
+  configs = default_compiler_configs
+}
+
+# Template to package a static or shared library into an iOS framework bundle.
+#
+# For `checkout_ms_src_internal` build, it packages a staic library for better
+# app launch performance, otherwise it package a dynamic library to keep it same
+# with Chromium.
+template("ios_edge_framework_bundle") {
+  if (checkout_ms_src_internal) {
+    ios_edge_framework_bundle_static(target_name) {
+      forward_variables_from(invoker, "*", [])
+    }
+  } else {
+    ios_framework_bundle(target_name) {
+      forward_variables_from(invoker, "*", [])
+    }
+  }
+}
+
+set_defaults("ios_edge_framework_bundle") {
+  configs = default_compiler_configs
+}
+
+# Template to invoke xcodebuild to integrate dependencies built with Xcode.
+# Usually used with third-party open source frameworks for convenience.
+#
+# Arguments
+#
+#   workspace:
+#       workspace to build.
+#
+#   project:
+#       project to build.
+#
+#   scheme:
+#       scheme to build.
+#
+#   target:
+#       target to build.
+#
+#   configuration:
+#       build configuration to use.
+#
+#   settings:
+#       build settings to override.
+#
+#   products:
+#       build products to add to target outputs.
+#
+template("edge_xcodebuild") {
+  action(target_name) {
+    forward_variables_from(invoker,
+                           [
+                             "data_deps",
+                             "deps",
+                             "public_deps",
+                             "testonly",
+                             "visibility",
+                           ])
+    sources = []
+    outputs = []
+    script = "//build/apple/xcrun.py"
+    args = [
+      "xcodebuild",
+      "build",
+    ]
+    if (defined(invoker.workspace)) {
+      sources += [ invoker.workspace ]
+      args += [
+        "-workspace",
+        rebase_path(invoker.workspace, root_build_dir),
+      ]
+    } else if (defined(invoker.project)) {
+      sources += [ invoker.project ]
+      args += [
+        "-project",
+        rebase_path(invoker.project, root_build_dir),
+      ]
+    } else {
+      assert(false, "xcodebuild requires workspace or project")
+    }
+    if (defined(invoker.scheme)) {
+      args += [
+        "-scheme",
+        invoker.scheme,
+      ]
+    } else if (defined(invoker.target)) {
+      args += [
+        "-target",
+        invoker.target,
+      ]
+    } else {
+      assert(false, "xcodebuild requires scheme or target")
+    }
+    if (defined(invoker.configuration)) {
+      _configuration = invoker.configuration
+    } else {
+      if (is_debug) {
+        _configuration = "Debug"
+      } else {
+        _configuration = "Release"
+      }
+    }
+    args += [
+      "-configuration",
+      _configuration,
+      "-sdk",
+      ios_sdk_name,
+      "-quiet",
+      "-derivedDataPath",
+      rebase_path(target_out_dir, root_build_dir),
+    ]
+    if (defined(invoker.settings)) {
+      args += invoker.settings
+    }
+    _product_dir =
+        "$target_out_dir/Build/Products/$_configuration-$ios_sdk_name"
+    outputs += [ _product_dir ]
+    foreach(_product, invoker.products) {
+      outputs += [ "$_product_dir/$_product" ]
+    }
+  }
+}
